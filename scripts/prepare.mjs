@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.6-ui';
+const uiVersion = 'v1.1.7-ui';
 
 try {
   await fs.access(archive);
@@ -33,8 +33,8 @@ await Promise.all([
   fs.copyFile(path.join(source, 'styles.css'), path.join(output, 'styles.css')),
 ]);
 
-// Accesos por plataforma a Marvel Unlimited. El Worker exige coincidencia exacta
-// de serie + número + año y usa además la fecha GCD cuando está disponible.
+// Accesos por plataforma a Marvel Unlimited. El Worker identifica primero por
+// el slug oficial serie+año+número y usa los metadatos de la ficha como respaldo.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
@@ -64,4 +64,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y coincidencia exacta de Marvel activada.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y resolver Marvel por slug activado.`);
