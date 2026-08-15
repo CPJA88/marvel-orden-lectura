@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.7-ui';
+const uiVersion = 'v1.1.8-ui';
 
 try {
   await fs.access(archive);
@@ -33,8 +33,8 @@ await Promise.all([
   fs.copyFile(path.join(source, 'styles.css'), path.join(output, 'styles.css')),
 ]);
 
-// Accesos por plataforma a Marvel Unlimited. El Worker identifica primero por
-// el slug oficial serie+año+número y usa los metadatos de la ficha como respaldo.
+// Accesos por plataforma a Marvel Unlimited. El Worker conserva deliberadamente
+// el resolver de v1.1.4, última versión confirmada como correcta para identificar números.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
@@ -64,4 +64,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y resolver Marvel por slug activado.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y resolver v1.1.4 restaurado.`);
