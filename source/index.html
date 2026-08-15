@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Marvel Lectura">
+  <meta name="description" content="Orden completo de lectura de Marvel por publicación, con seguimiento local del progreso.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" href="icons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Marvel · Orden de lectura</title>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand" aria-label="Marvel · Orden de lectura">
+      <span class="brand-marvel">MARVEL</span>
+      <span class="brand-copy"><strong>LECTOR</strong><small>ORDEN DE PUBLICACIÓN</small></span>
+    </div>
+    <button id="settingsBtn" class="icon-btn" aria-label="Ajustes">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-kicker">TU RECORRIDO MARVEL</div>
+      <div class="progress-head"><span>Progreso del orden principal</span><strong id="progressText">0 / —</strong></div>
+      <div class="progress-track" aria-label="Progreso de lectura"><div id="progressBar" class="progress-bar"></div></div>
+      <div class="hero-actions">
+        <button id="continueBtn" class="primary"><span class="button-icon">▶</span>Continuar</button>
+        <button id="randomBtn" class="secondary"><span class="button-icon">⌖</span>Mi posición</button>
+      </div>
+      <div class="stats-row">
+        <div><span class="stat-label">LEÍDOS</span><strong id="readCount">0</strong></div>
+        <div><span class="stat-label">PENDIENTES</span><strong id="pendingCount">—</strong></div>
+        <div><span class="stat-label">COMPLETADO</span><strong id="percentCount">0%</strong></div>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="Secciones principales">
+      <button class="tab active" data-view="principal"><span class="tab-glyph">▤</span><span>Lectura</span></button>
+      <button class="tab" data-view="recop"><span class="tab-glyph">▱</span><span>Ediciones</span></button>
+      <button class="tab" data-view="info"><span class="tab-glyph">ⓘ</span><span>Guía</span></button>
+    </nav>
+
+    <section id="principalView" class="view active">
+      <div class="view-head">
+        <div><span class="eyebrow">ORDEN PRINCIPAL</span><h1>Biblioteca</h1></div>
+        <span class="view-head-note">Publicación cronológica</span>
+      </div>
+      <div class="controls sticky-controls">
+        <label class="search-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg>
+          <input id="searchInput" type="search" placeholder="Buscar serie o número…" autocomplete="off">
+        </label>
+        <div class="filter-grid">
+          <select id="statusFilter" aria-label="Estado"><option value="all">Todos</option><option value="pending">Pendientes</option><option value="read">Leídos</option></select>
+          <select id="contentFilter" aria-label="Contenido"><option value="all">Todo el contenido</option><option value="original">Originales</option><option value="mixto">Mixtos</option><option value="reimpresion">Reimpresiones</option><option value="sin-datos">Sin datos</option></select>
+          <select id="eraFilter" aria-label="Etapa"><option value="all">Todas las etapas</option><option value="timely">Timely / Edad de Oro</option><option value="atlas">Atlas / pre-Marvel</option><option value="marvel">Marvel</option></select>
+          <select id="decadeFilter" aria-label="Década"></select>
+        </div>
+        <div id="activeSeries" class="active-series hidden"></div>
+        <div class="result-line"><span id="resultCount">Cargando…</span><button id="clearFilters" class="link-btn">Restablecer</button></div>
+      </div>
+      <div id="issueList" class="issue-list" aria-live="polite"></div>
+      <button id="loadMore" class="load-more hidden">Mostrar más</button>
+    </section>
+
+    <section id="recopView" class="view">
+      <div class="view-head">
+        <div><span class="eyebrow">EDICIONES APARTE</span><h1>Recopilatorios</h1></div>
+        <span class="view-head-note">Sin duplicar lecturas</span>
+      </div>
+      <div class="notice">Tomos, recopilatorios y otras ediciones se mantienen separados para que el orden principal no te obligue a releer material.</div>
+      <div class="controls recop-controls"><select id="recopDecade" aria-label="Década de recopilatorios"></select></div>
+      <div id="recopList" class="issue-list"></div>
+      <button id="recopMore" class="load-more hidden">Mostrar más</button>
+    </section>
+
+    <section id="infoView" class="view prose">
+      <div class="view-head prose-head">
+        <div><span class="eyebrow">METODOLOGÍA</span><h1>Cómo se construye el orden</h1></div>
+      </div>
+      <div class="prose-card">
+        <p>La guía parte del volcado de <strong>Grand Comics Database (GCD)</strong> fechado el <strong id="dumpDate"></strong>, usando el grupo editorial Marvel de GCD. Incluye la etapa Timely, Atlas y Marvel.</p>
+        <p>El orden usa primero la <strong>fecha de venta</strong> registrada por GCD. Cuando falta, emplea una fecha estimada a partir de la información de publicación disponible. Cada ficha indica la precisión para distinguir una fecha exacta de una aproximada.</p>
+        <p>Las <strong>variantes de portada</strong> no cuentan como lecturas distintas. Las <strong>reimpresiones</strong> sí aparecen en el orden completo, pero están etiquetadas y pueden ocultarse. Los recopilatorios y ediciones que duplican material se mantienen en una sección independiente.</p>
+        <p>Los nombres originales de las series se conservan como identificadores bibliográficos. Cuando existe un nombre castellano consolidado en España, la aplicación lo muestra como nombre principal y deja el original debajo.</p>
+      </div>
+      <h2>Guardado</h2>
+      <div class="prose-card"><p>Tu progreso se guarda exclusivamente en este dispositivo mediante IndexedDB. Puedes exportarlo a un archivo JSON e importarlo después. No se envía a ningún servidor.</p></div>
+      <h2>Alcance</h2>
+      <dl class="scope"><div><dt>Números principales</dt><dd id="scopeMain">—</dd></div><div><dt>Recopilatorios/ediciones</dt><dd id="scopeRecop">—</dd></div><div><dt>Primera fecha</dt><dd id="scopeFirst">—</dd></div><div><dt>Última fecha</dt><dd id="scopeLast">—</dd></div></dl>
+    </section>
+  </main>
+
+  <dialog id="issueDialog">
+    <form method="dialog" class="dialog-card">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <button class="dialog-close" value="close" aria-label="Cerrar">×</button>
+      <div id="dialogContent"></div>
+    </form>
+  </dialog>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" class="dialog-card settings-card">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <button class="dialog-close" value="close" aria-label="Cerrar">×</button>
+      <span class="eyebrow">AJUSTES</span>
+      <h2>Datos y progreso</h2>
+      <div class="settings-group">
+        <button id="exportBtn" type="button" class="primary full">Exportar progreso</button>
+        <label class="secondary full file-btn">Importar progreso<input id="importInput" type="file" accept="application/json,.json"></label>
+      </div>
+      <div class="settings-group">
+        <button id="requestStorageBtn" type="button" class="secondary full">Almacenamiento persistente</button>
+        <button id="offlineBtn" type="button" class="secondary full">Descargar base para uso offline</button>
+      </div>
+      <button id="resetBtn" type="button" class="danger full">Borrar todo mi progreso</button>
+      <p class="small muted">Los datos de lectura permanecen en tu dispositivo. Conviene exportar una copia de seguridad de vez en cuando.</p>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
