@@ -62,22 +62,26 @@ function scoreCandidate(html, title, issue, year) {
   const wantedTitle = normalize(title);
   let score = 0;
   if (wantedTitle && heading.includes(wantedTitle)) score += 8;
-  const issueToken = normalize(`#${issue}`);
-  if (issue && heading.includes(issueToken)) score += 4;
+  if (issue && heading.includes(normalize(`#${issue}`))) score += 4;
   if (year && heading.includes(String(year))) score += 3;
   return score;
 }
 
 function extractDigitalLinks(html, issueUrl) {
   const clean = unescapeMarvelHtml(html);
-  const mobileMatch = clean.match(/https:\/\/applink\.marvel\.com\/issue\/(\d+)/i);
+  // Marvel sigue publicando reader_url en sus datos, mientras que el antiguo
+  // applink.marvel.com ya no resuelve. El ID del lector es suficiente para
+  // construir los enlaces nativos de Marvel Unlimited.
   const readerMatch = clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i);
-  const digitalId = mobileMatch?.[1] || readerMatch?.[1] || '';
+  const digitalId = readerMatch?.[1] || '';
   return {
     issueUrl,
     digitalId,
-    mobileUrl: mobileMatch?.[0] || (digitalId ? `https://applink.marvel.com/issue/${digitalId}` : issueUrl),
-    webUrl: readerMatch?.[0] || issueUrl,
+    webUrl: digitalId ? `https://read.marvel.com/#/book/${digitalId}` : issueUrl,
+    iosUrl: digitalId ? `marvelunlimited://reader/${digitalId}` : issueUrl,
+    androidUrl: digitalId
+      ? `intent://reader/${digitalId}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(`https://read.marvel.com/#/book/${digitalId}`)};end`
+      : issueUrl,
   };
 }
 
@@ -85,14 +89,18 @@ async function resolveMarvelComic(title, issue, year) {
   const queryUrl = searchUrl(title, issue, year);
   const searchHtml = await getText(queryUrl);
   const candidates = extractIssueUrls(searchHtml).slice(0, 8);
-  if (!candidates.length) return { issueUrl: queryUrl, mobileUrl: queryUrl, webUrl: queryUrl, digitalId: '' };
+  if (!candidates.length) {
+    return { issueUrl: queryUrl, webUrl: queryUrl, iosUrl: queryUrl, androidUrl: queryUrl, digitalId: '' };
+  }
 
   const checked = await Promise.allSettled(candidates.map(async (url) => {
     const html = await getText(url);
     return { url, html, score: scoreCandidate(html, title, issue, year) };
   }));
   const usable = checked.filter(x => x.status === 'fulfilled').map(x => x.value);
-  if (!usable.length) return { issueUrl: candidates[0], mobileUrl: candidates[0], webUrl: candidates[0], digitalId: '' };
+  if (!usable.length) {
+    return { issueUrl: candidates[0], webUrl: candidates[0], iosUrl: candidates[0], androidUrl: candidates[0], digitalId: '' };
+  }
   usable.sort((a, b) => b.score - a.score);
   const best = usable[0];
   return extractDigitalLinks(best.html, best.url);
@@ -108,24 +116,57 @@ function redirect(location) {
   });
 }
 
+function json(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
+}
+
+function mobileLauncher(target, fallback, label) {
+  const safeTarget = JSON.stringify(target).replace(/</g, '\\u003c');
+  const safeFallback = JSON.stringify(fallback).replace(/</g, '\\u003c');
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Abriendo Marvel Unlimited…</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:white;padding:5px 8px;font-weight:900;font-size:22px;letter-spacing:-1px}.spinner{width:30px;height:30px;margin:24px auto;border:3px solid #ddd8cf;border-top-color:#e62429;border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><div class="spinner"></div><h2>Abriendo Marvel Unlimited</h2><p>Si la aplicación no se abre automáticamente, pulsa el botón.</p><a class="app" id="openApp" href="${target.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${label}</a><a class="web" href="${fallback.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">Abrir en la web</a></div><script>const target=${safeTarget},fallback=${safeFallback};let left=false;document.addEventListener('visibilitychange',()=>{if(document.hidden)left=true});setTimeout(()=>{location.href=target},80);setTimeout(()=>{if(!left)document.querySelector('.spinner').style.display='none'},1600);</script></body></html>`, {
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (url.pathname !== '/api/marvel/open') return env.ASSETS.fetch(request);
+    if (!url.pathname.startsWith('/api/marvel/')) return env.ASSETS.fetch(request);
 
     const title = (url.searchParams.get('title') || '').trim();
     const issue = (url.searchParams.get('issue') || '').trim();
     const year = (url.searchParams.get('year') || '').trim();
-    const mode = (url.searchParams.get('mode') || 'web').toLowerCase();
     if (!title) return new Response('Falta el título del cómic.', { status: 400 });
 
     const fallback = searchUrl(title, issue, year);
     try {
       const comic = await resolveMarvelComic(title, issue, year);
-      if (mode === 'android' || mode === 'ios') return redirect(comic.mobileUrl || comic.issueUrl || fallback);
-      return redirect(comic.webUrl || comic.issueUrl || fallback);
+
+      if (url.pathname === '/api/marvel/resolve') return json(comic);
+
+      if (url.pathname === '/api/marvel/open') {
+        const mode = (url.searchParams.get('mode') || 'web').toLowerCase();
+        if (mode === 'ios' && comic.digitalId) {
+          return mobileLauncher(comic.iosUrl, comic.webUrl, 'Abrir Marvel Unlimited en iOS');
+        }
+        if (mode === 'android' && comic.digitalId) {
+          return mobileLauncher(comic.androidUrl, comic.webUrl, 'Abrir Marvel Unlimited en Android');
+        }
+        return redirect(comic.webUrl || comic.issueUrl || fallback);
+      }
+
+      return new Response('Ruta no encontrada.', { status: 404 });
     } catch (error) {
       console.error('Marvel resolver:', error);
+      if (url.pathname === '/api/marvel/resolve') {
+        return json({ issueUrl: fallback, webUrl: fallback, iosUrl: fallback, androidUrl: fallback, digitalId: '' }, 200);
+      }
       return redirect(fallback);
     }
   },
