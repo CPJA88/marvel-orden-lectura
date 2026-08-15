@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.8-ui';
+const uiVersion = 'v1.1.9-ui';
 
 try {
   await fs.access(archive);
@@ -33,8 +33,8 @@ await Promise.all([
   fs.copyFile(path.join(source, 'styles.css'), path.join(output, 'styles.css')),
 ]);
 
-// Accesos por plataforma a Marvel Unlimited. El Worker conserva deliberadamente
-// el resolver de v1.1.4, última versión confirmada como correcta para identificar números.
+// Los cinco botones se mantienen, pero la identificación del cómic vuelve al
+// método de v1.1.3: búsqueda Google restringida a marvel.com/comics/issue.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
@@ -64,4 +64,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y resolver v1.1.4 restaurado.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y método de identificación v1.1.3 restaurado.`);
