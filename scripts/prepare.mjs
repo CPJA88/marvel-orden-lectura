@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.3-ui';
+const uiVersion = 'v1.1.4-ui';
 
 try {
   await fs.access(archive);
@@ -28,20 +28,17 @@ await fs.rm(output, { recursive: true, force: true });
 await fs.mkdir(output, { recursive: true });
 await extract(archive, { dir: output });
 
-// La base de datos y la lógica siguen viniendo del ZIP; la interfaz se mantiene
-// como archivos de texto normales en GitHub para poder iterarla sin reempaquetar.
 await Promise.all([
   fs.copyFile(path.join(source, 'index.html'), path.join(output, 'index.html')),
   fs.copyFile(path.join(source, 'styles.css'), path.join(output, 'styles.css')),
 ]);
 
-// Sustituye el enlace roto a GCD por accesos a ediciones oficiales.
-// Se usa una búsqueda restringida con salto al primer resultado para resolver
-// los IDs internos de Marvel/Panini sin mantener otra base de datos paralela.
+// Añade accesos por plataforma a Marvel Unlimited. El Worker resuelve al vuelo
+// el ID digital de Marvel a partir de serie, número y año y redirige al deep link.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
-const officialHelper = 'function officialComicLinks(x,s,title){const issue=String(x.n||\'\').trim(),year=String(x.a||\'\').trim(),original=String(s.original||title||\'Marvel\').trim(),spanish=String(title||original).trim();const marvelQuery=\'site:marvel.com/comics/issue/ "\'+original+\'" "\'+(issue?\'#\'+issue:\'\')+\'" \'+year+\' Marvel Unlimited\';const paniniQuery=\'site:panini.es/shp_esp_es/ "\'+spanish+\'" "\'+(issue?\'#\'+issue:\'\')+\'" \'+year+\' Marvel ebook\';const mu=\'https://www.google.com/search?btnI=1&q=\'+encodeURIComponent(marvelQuery),pan=\'https://www.google.com/search?btnI=1&q=\'+encodeURIComponent(paniniQuery);return \'<div class="official-links"><a class="primary full" style="text-decoration:none" target="_blank" rel="noopener" href="\'+esc(mu)+\'">Abrir en Marvel Unlimited ↗</a><a class="secondary full" style="text-decoration:none" target="_blank" rel="noopener" href="\'+esc(pan)+\'">Buscar edición en castellano ↗</a></div>\';}\n';
+const officialHelper = 'function officialComicLinks(x,s,title){const issue=String(x.n||\'\').trim(),year=String(x.a||\'\').trim(),original=String(s.original||title||\'Marvel\').trim(),spanish=String(title||original).trim();const qs=new URLSearchParams({title:original,issue,year});const resolver=mode=>\'/api/marvel/open?\'+qs.toString()+\'&mode=\'+mode;const paniniQuery=\'site:panini.es/shp_esp_es/ "\'+spanish+\'" "\'+(issue?\'#\'+issue:\'\')+\'" \'+year+\' Marvel\';const pan=\'https://www.google.com/search?q=\'+encodeURIComponent(paniniQuery);return \'<div class="official-links"><a class="primary full" style="text-decoration:none" href="\'+esc(resolver(\'android\'))+\'">Abrir en Marvel Unlimited Android</a><a class="primary full" style="text-decoration:none" href="\'+esc(resolver(\'ios\'))+\'">Abrir en Marvel Unlimited iOS</a><a class="secondary full" style="text-decoration:none" target="_blank" rel="noopener" href="\'+esc(resolver(\'web\'))+\'">Abrir en Marvel Unlimited Web</a><a class="secondary full" style="text-decoration:none" target="_blank" rel="noopener" href="\'+esc(pan)+\'">Buscar edición en castellano</a></div>\';}\n';
 if (!app.includes('function officialComicLinks(')) app = app.replace(detailMarker, officialHelper + detailMarker);
 const gcdMarkup = '<a class="gcd-link" target="_blank" rel="noopener" href="https://www.comics.org/issue/${x.id}/">Abrir ficha en GCD ↗</a>';
 if (!app.includes(gcdMarkup)) {
@@ -52,7 +49,6 @@ app = app.replace(gcdMarkup, '${officialComicLinks(x,s,title)}');
 app = app.replace(/marvel-lectura-v1\.0\.1/g, `marvel-lectura-${uiVersion}`);
 await fs.writeFile(appPath, app);
 
-// Fuerza la actualización inmediata del shell PWA tras cambios visuales/funcionales.
 const swPath = path.join(output, 'sw.js');
 let sw = await fs.readFile(swPath, 'utf8');
 sw = sw.replace(/marvel-lectura-v[^'\"]+/g, `marvel-lectura-${uiVersion}`);
@@ -68,4 +64,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y enlaces oficiales activados.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y deep links de Marvel activados.`);
