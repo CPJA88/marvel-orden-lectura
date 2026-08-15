@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.0-ui';
+const uiVersion = 'v1.1.1-ui';
 
 try {
   await fs.access(archive);
@@ -49,8 +49,8 @@ await fs.writeFile(appPath, app);
 
 const manifestPath = path.join(output, 'manifest.webmanifest');
 const manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
-manifest.background_color = '#09090b';
-manifest.theme_color = '#0b0b0d';
+manifest.background_color = '#f3f1ec';
+manifest.theme_color = '#f3f1ec';
 await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
 for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanifest', 'sw.js', 'data/meta.json', 'data/search.json']) {
