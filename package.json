@@ -1,0 +1,13 @@
+{
+  "name": "marvel-orden-lectura",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/prepare.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "extract-zip": "^2.0.1",
+    "wrangler": "^4.123.0"
+  }
+}
