@@ -5,10 +5,12 @@ const MARVEL_SHARE_ORIGIN = 'https://share.marvel.com';
 function unescapeHtml(value = '') {
   return String(value)
     .replace(/\\u002F/gi, '/')
+    .replace(/\\u003A/gi, ':')
     .replace(/\\\//g, '/')
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
+    .replace(/&#39;/g, "'")
+    .replace(/&#58;/g, ':');
 }
 
 function exactGoogleQuery(title, issue, year) {
@@ -41,75 +43,6 @@ function cleanMarvelIssueUrl(value = '') {
   }
 }
 
-function issueReadUrl(issueUrl = '') {
-  try {
-    const url = new URL(issueUrl);
-    const match = url.pathname.match(/^\/comics\/issue\/(\d+)/i);
-    if (!match) return issueUrl;
-    return `${MARVEL_ORIGIN}/comics/issue/${match[1]}/read`;
-  } catch {
-    return issueUrl;
-  }
-}
-
-function shareCatalogUrl(issueUrl = '') {
-  try {
-    const url = new URL(issueUrl);
-    if (!/^\/comics\/issue\/\d+\//i.test(url.pathname)) return '';
-    return `${MARVEL_SHARE_ORIGIN}${url.pathname}`;
-  } catch {
-    return '';
-  }
-}
-
-function extractIssueDrn(html = '') {
-  const normalized = unescapeHtml(html)
-    .replace(/\\u003A/gi, ':')
-    .replace(/%3A/gi, ':')
-    .replace(/&#58;/gi, ':');
-  const match = normalized.match(/drn:src:marvel:unison::prod:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
-  return match?.[0] || '';
-}
-
-async function fetchHtml(url, userAgent = 'Mozilla/5.0 (compatible; MarvelLectura/1.7)') {
-  const response = await fetch(url, {
-    redirect: 'follow',
-    headers: {
-      'User-Agent': userAgent,
-      'Accept': 'text/html,application/xhtml+xml',
-      'Accept-Language': 'en-US,en;q=0.9',
-    },
-  });
-  if (!response.ok) throw new Error(`${url} respondió ${response.status}`);
-  return response.text();
-}
-
-async function resolveCurrentMarvelShareLink(issueUrl = '') {
-  const catalogUrl = shareCatalogUrl(issueUrl);
-  if (!catalogUrl) return { catalogUrl: '', shareUrl: '', drn: '' };
-
-  const sources = [catalogUrl, issueUrl];
-  for (const source of sources) {
-    try {
-      const html = await fetchHtml(source, 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1');
-      const drn = extractIssueDrn(html);
-      if (drn) {
-        return {
-          catalogUrl,
-          drn,
-          shareUrl: `${MARVEL_SHARE_ORIGIN}/sharing/issue/${encodeURIComponent(drn)}`,
-        };
-      }
-    } catch (error) {
-      console.error('Marvel share resolver:', source, error);
-    }
-  }
-
-  // No mandamos al usuario a /comics/issue de share.marvel.com: esa ruta puede
-  // romperse en Safari. Sin DRN no se inventa un deep link.
-  return { catalogUrl, shareUrl: '', drn: '' };
-}
-
 function unwrapGoogleLocation(location = '') {
   try {
     const absolute = new URL(location, GOOGLE_ORIGIN);
@@ -123,23 +56,19 @@ function unwrapGoogleLocation(location = '') {
 }
 
 function extractMarvelIssueFromGoogleHtml(html = '') {
-  const clean = unescapeHtml(html);
-  const decoded = clean.replace(/%2F/gi, '/').replace(/%3A/gi, ':');
-  const candidates = [];
-  const direct = decoded.match(/https?:\/\/(?:www\.)?marvel\.com\/comics\/issue\/\d+\/[A-Za-z0-9_()%.,+\-]+/gi) || [];
-  candidates.push(...direct);
+  const clean = unescapeHtml(html).replace(/%2F/gi, '/').replace(/%3A/gi, ':');
+  const candidates = clean.match(/https?:\/\/(?:www\.)?marvel\.com\/comics\/issue\/\d+\/[A-Za-z0-9_()%.,+\-]+/gi) || [];
+  for (const candidate of candidates) {
+    if (isMarvelIssueUrl(candidate)) return cleanMarvelIssueUrl(candidate);
+  }
 
-  const googleLinks = decoded.match(/\/url\?[^"'<>\s]+/gi) || [];
+  const googleLinks = clean.match(/\/url\?[^"'<>\s]+/gi) || [];
   for (const link of googleLinks) {
     try {
       const parsed = new URL(link.replace(/&amp;/g, '&'), GOOGLE_ORIGIN);
       const target = parsed.searchParams.get('q') || parsed.searchParams.get('url') || '';
-      if (target) candidates.push(target);
+      if (isMarvelIssueUrl(target)) return cleanMarvelIssueUrl(target);
     } catch {}
-  }
-
-  for (const candidate of candidates) {
-    if (isMarvelIssueUrl(candidate)) return cleanMarvelIssueUrl(candidate);
   }
   return '';
 }
@@ -155,17 +84,18 @@ async function fetchGoogle(url, redirect = 'manual') {
   });
 }
 
-// La identificación del número conserva el método estable de v1.1.3.
+// No se modifica: este es el identificador estable que vuelve a encontrar
+// correctamente la ficha de Marvel del número seleccionado.
 async function resolveExactIssueWithGoogle(title, issue, year) {
   const lucky = luckyUrl(title, issue, year);
   try {
     const response = await fetchGoogle(lucky, 'manual');
     const fromLocation = unwrapGoogleLocation(response.headers.get('Location') || '');
-    if (fromLocation) return { issueUrl: fromLocation, source: 'google-lucky-location' };
-    if (isMarvelIssueUrl(response.url)) return { issueUrl: cleanMarvelIssueUrl(response.url), source: 'google-lucky-final-url' };
+    if (fromLocation) return fromLocation;
+    if (isMarvelIssueUrl(response.url)) return cleanMarvelIssueUrl(response.url);
     const html = await response.text();
     const fromHtml = extractMarvelIssueFromGoogleHtml(html);
-    if (fromHtml) return { issueUrl: fromHtml, source: 'google-lucky-html' };
+    if (fromHtml) return fromHtml;
   } catch (error) {
     console.error('Google lucky resolver:', error);
   }
@@ -174,30 +104,73 @@ async function resolveExactIssueWithGoogle(title, issue, year) {
     const response = await fetchGoogle(normalGoogleUrl(title, issue, year), 'follow');
     const html = await response.text();
     const fromHtml = extractMarvelIssueFromGoogleHtml(html);
-    if (fromHtml) return { issueUrl: fromHtml, source: 'google-search-html' };
+    if (fromHtml) return fromHtml;
   } catch (error) {
     console.error('Google normal resolver:', error);
   }
-  return { issueUrl: '', source: 'unresolved' };
+  return '';
 }
 
-async function getMarvelHtml(url) {
-  return fetchHtml(url);
+async function fetchHtml(url) {
+  const response = await fetch(url, {
+    redirect: 'follow',
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.8)',
+      'Accept': 'text/html,application/xhtml+xml',
+      'Accept-Language': 'en-US,en;q=0.9',
+    },
+  });
+  if (!response.ok) throw new Error(`${url} respondió ${response.status}`);
+  return response.text();
 }
 
-function extractDigitalLinks(html, issueUrl) {
+function extractReaderUrl(html, issueUrl) {
   const clean = unescapeHtml(html);
-  const readerMatch = clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i);
-  const readerId = readerMatch?.[1] || '';
-  const webUrl = readerMatch?.[0] || issueReadUrl(issueUrl);
-  return {
-    issueUrl,
-    readerId,
-    webUrl,
-    androidUrl: readerId
-      ? `intent://reader/${readerId}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`
-      : '',
-  };
+  const reader = clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i)?.[0];
+  return reader || issueUrl;
+}
+
+function extractIssueDrn(value = '') {
+  const clean = unescapeHtml(value).replace(/%3A/gi, ':');
+  return clean.match(/drn:src:marvel:unison::prod:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i)?.[0] || '';
+}
+
+function shareSearchUrl(title, issue, year) {
+  const label = `${title}${year ? ` (${year})` : ''}${issue ? ` #${issue}` : ''}`;
+  const query = `site:share.marvel.com/sharing/issue "${label}" Marvel Unlimited`;
+  return `${GOOGLE_ORIGIN}/search?q=${encodeURIComponent(query)}`;
+}
+
+function extractDrnFromShareSearch(html = '') {
+  const clean = unescapeHtml(html)
+    .replace(/%2F/gi, '/')
+    .replace(/%3A/gi, ':');
+  const direct = extractIssueDrn(clean);
+  if (direct) return direct;
+
+  const urls = clean.match(/https?:\/\/share\.marvel\.com\/sharing\/issue\/[^"'<>\s&]+/gi) || [];
+  for (const url of urls) {
+    const drn = extractIssueDrn(url);
+    if (drn) return drn;
+  }
+  return '';
+}
+
+// La app moderna comparte números mediante DRN Unison. Primero intentamos
+// obtener ese ID directamente de la ficha exacta de Marvel; si no está en el
+// HTML, usamos la búsqueda oficial indexada en share.marvel.com.
+async function resolveUnisonDrn(title, issue, year, marvelHtml) {
+  const direct = extractIssueDrn(marvelHtml);
+  if (direct) return direct;
+
+  try {
+    const response = await fetchGoogle(shareSearchUrl(title, issue, year), 'follow');
+    const html = await response.text();
+    return extractDrnFromShareSearch(html);
+  } catch (error) {
+    console.error('Marvel DRN resolver:', error);
+    return '';
+  }
 }
 
 function redirect(location) {
@@ -211,24 +184,21 @@ function escAttr(value = '') {
   return String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-function iosUniversalLinkLauncher(target, fallback) {
+function appLauncher(target, fallback, title = 'Abriendo Marvel Unlimited') {
   const targetAttr = escAttr(target);
   const fallbackAttr = escAttr(fallback);
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Abrir Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px;letter-spacing:-1px}h2{margin:24px 0 8px;font-size:25px}p{color:#74747b;font-size:13px;line-height:1.5;margin:0 0 22px}a{display:block;margin-top:12px;padding:15px;border-radius:14px;text-decoration:none;font-weight:850}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}.note{margin-top:18px;font-size:11px;color:#999}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>Cómic localizado</h2><p>iOS necesita que pulses directamente el enlace oficial de Marvel para entregarlo a Marvel Unlimited.</p><a class="app" href="${targetAttr}">Abrir este cómic en Marvel Unlimited</a><a class="web" href="${fallbackAttr}">Abrir este mismo cómic en la web</a><div class="note">No se usa ninguna redirección automática ni el esquema privado reader.</div></div></body></html>`, {
+  const targetJs = JSON.stringify(target).replace(/</g, '\\u003c');
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${title}</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>${title}</h2><p>El número está identificado. Si la app no se abre automáticamente, pulsa el botón rojo.</p><a class="app" href="${targetAttr}">Abrir Marvel Unlimited</a><a class="web" href="${fallbackAttr}">Abrir este mismo número en la web</a></div><script>const target=${targetJs};setTimeout(()=>{location.href=target},80);</script></body></html>`, {
     headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' },
   });
 }
 
-function mobileLauncher(target, fallback, label) {
-  const targetAttr = escAttr(target);
-  const fallbackAttr = escAttr(fallback);
-  const targetJs = JSON.stringify(target).replace(/</g, '\\u003c');
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>Abriendo Marvel Unlimited</h2><p>La ficha exacta se ha localizado.</p><a class="app" href="${targetAttr}">${label}</a><a class="web" href="${fallbackAttr}">Abrir este mismo número en la web</a></div><script>const target=${targetJs};setTimeout(()=>{location.href=target},100);</script></body></html>`, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' } });
-}
-
-function unresolvedPage(lucky) {
-  const safe = escAttr(lucky);
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>No he podido resolver el enlace de la app</h2><p>No voy a sustituirlo por otro cómic.</p><a href="${safe}">Abrir búsqueda exacta</a></div></body></html>`, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+function unresolvedPage(fallback) {
+  const safe = escAttr(fallback);
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>Número localizado, pero sin ID móvil</h2><p>No voy a mandar otro cómic a Marvel Unlimited.</p><a href="${safe}">Abrir este número en la web</a></div></body></html>`, {
+    status: 404,
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
 }
 
 export default {
@@ -246,30 +216,33 @@ export default {
     if (mode === 'web') return redirect(lucky);
 
     try {
-      const resolved = await resolveExactIssueWithGoogle(title, issue, year);
-      if (!resolved.issueUrl) return unresolvedPage(lucky);
+      const issueUrl = await resolveExactIssueWithGoogle(title, issue, year);
+      if (!issueUrl) return unresolvedPage(lucky);
 
-      const html = await getMarvelHtml(resolved.issueUrl);
-      const comic = extractDigitalLinks(html, resolved.issueUrl);
+      const marvelHtml = await fetchHtml(issueUrl);
+      const webUrl = extractReaderUrl(marvelHtml, issueUrl);
 
       if (mode === 'ios') {
-        const currentShare = await resolveCurrentMarvelShareLink(resolved.issueUrl);
-        if (!currentShare.drn || !currentShare.shareUrl) {
-          return iosUniversalLinkLauncher(comic.webUrl || resolved.issueUrl, comic.webUrl || resolved.issueUrl);
-        }
-        // CLAVE: no hacemos 302 hacia share.marvel.com. El usuario pulsa el
-        // Universal Link directamente desde esta página para que iOS pueda
-        // entregárselo a Marvel Unlimited.
-        return iosUniversalLinkLauncher(currentShare.shareUrl, comic.webUrl || resolved.issueUrl);
+        const drn = await resolveUnisonDrn(title, issue, year, marvelHtml);
+        if (!drn) return unresolvedPage(webUrl);
+
+        // Restauramos el deeplink que YA abría la aplicación. Lo único que
+        // cambia es el payload: se envía el identificador Unison actual del
+        // número, no el ID numérico del lector web antiguo.
+        const target = `marvelunlimited://reader/${encodeURIComponent(drn)}`;
+        return appLauncher(target, webUrl);
       }
 
-      if (mode === 'android' && comic.androidUrl) {
-        return mobileLauncher(comic.androidUrl, comic.webUrl, 'Abrir Marvel Unlimited en Android');
+      if (mode === 'android') {
+        const drn = await resolveUnisonDrn(title, issue, year, marvelHtml);
+        if (!drn) return unresolvedPage(webUrl);
+        const target = `intent://reader/${encodeURIComponent(drn)}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
+        return appLauncher(target, webUrl);
       }
 
-      return redirect(comic.webUrl || comic.issueUrl);
+      return redirect(webUrl);
     } catch (error) {
-      console.error('Marvel mobile resolver:', error);
+      console.error('Marvel resolver:', error);
       return unresolvedPage(lucky);
     }
   },
