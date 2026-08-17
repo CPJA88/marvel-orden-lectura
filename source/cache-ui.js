@@ -1,13 +1,13 @@
-/* Marvel Lector v1.2.19 — portadas GCD + Marvel API oficial */
+/* Marvel Lector v1.2.21 — portadas GCD same-origin + índice MU por año */
 (() => {
-  const ACTIVE_RESOLVER_VERSION=9;
-  const UI_CACHE_VERSION=7;
+  const ACTIVE_RESOLVER_VERSION=12;
+  const UI_CACHE_VERSION=8;
   const UI_META_CONCURRENCY=1;
   const BACKGROUND_PREFETCH_LIMIT=0;
   const NEGATIVE_RETRY_AGE=5*1000;
   const CONFIRMED_UNAVAILABLE_AGE=7*24*60*60*1000;
-  const API_CONFIG_RETRY_AGE=30*1000;
-  const API_NO_MATCH_RETRY_AGE=10*60*1000;
+  const UNKNOWN_META_AGE=6*60*60*1000;
+  const READER_LINK_AGE=60*60*1000;
   const REQUEST_GAP=350;
   const MAX_FAILURE_RETRIES=1;
   const GCD_COVER_MAX_AGE=30*24*60*60*1000;
@@ -28,37 +28,39 @@
     const t=new Date(m[key]).getTime();
     return Number.isFinite(t)?Date.now()-t:Infinity;
   }
-  function isPositiveMeta(m){return Boolean(m?.available&&m?.smartLink&&m?.issueUrl)}
+  function isPositiveMeta(m){return Boolean(m?.smartLink)}
   function isConfirmedUnavailable(m){return Boolean(m?.issueUrl&&m?.reason==='reader-unavailable')}
   function isTransientFailure(m){return Boolean(m&&m.reason==='resolver-error')}
+  function isProxyCover(v){return /^\/api\/gcd\/cover-image\?id=\d+/i.test(String(v||''))}
 
   isFreshMeta=m=>{
     if(!m)return false;
     const age=ageOf(m);
-    if(isPositiveMeta(m))return age<META_MAX_AGE;
+    // Un Smart Link positivo ya comprobado no se invalida por revisiones internas.
+    if(isPositiveMeta(m))return true;
     if(Number(m.resolverVersion)!==ACTIVE_RESOLVER_VERSION||Number(m.uiCacheVersion)!==UI_CACHE_VERSION)return false;
     if(isConfirmedUnavailable(m))return age<CONFIRMED_UNAVAILABLE_AGE;
-    if(m.reason==='api-not-configured'||m.reason==='api-auth-error')return age<API_CONFIG_RETRY_AGE;
-    if(m.reason==='api-no-match')return age<API_NO_MATCH_RETRY_AGE;
+    if(m.reason==='not-verified')return age<UNKNOWN_META_AGE;
+    if(m.reason==='reader-link-found'||m.reason==='drn-unavailable')return age<READER_LINK_AGE;
     return age<NEGATIVE_RETRY_AGE;
   };
 
   unlimitedState=function(m){
     if(isPositiveMeta(m))return{label:'Unlimited ✓',cls:'available'};
     if(isConfirmedUnavailable(m)&&isFreshMeta(m))return{label:'Sin Unlimited',cls:'unavailable'};
-    if(m?.reason==='drn-unavailable')return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
-    if(m?.reason==='api-auth-error')return{label:'Unlimited · error API',cls:'unresolved'};
-    if(m?.reason==='api-not-configured')return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
-    if(m?.reason==='api-no-match')return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
+    if(m?.reason==='reader-link-found'||m?.reason==='drn-unavailable')return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
     if(isTransientFailure(m)&&ageOf(m)<20*1000)return{label:'Unlimited · comprobando',cls:'pending-meta'};
-    return{label:'Unlimited · comprobando',cls:'pending-meta'};
+    return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
   };
   metaBadge=function(id){
     const st=unlimitedState(state.marvel.get(Number(id)));
     return `<span class="badge marvel-state ${st.cls}" data-meta-badge>${st.label}</span>`;
   };
 
-  function cachedCover(id){return state.marvel.get(Number(id))?.coverUrl||''}
+  function cachedCover(id){
+    const m=state.marvel.get(Number(id));
+    return isProxyCover(m?.coverUrl)?m.coverUrl:'';
+  }
 
   card=function(issue,collection=false){
     let s=state.seriesMap.get(issue.s)||{},title=s.es||s.original||'Serie',translated=s.es&&s.es!==s.original,
@@ -74,7 +76,10 @@
       const b=el.querySelector('[data-meta-badge]')||el.querySelector('.marvel-state');
       if(b){const st=unlimitedState(m);b.className=`badge marvel-state ${st.cls}`;b.textContent=st.label}
       const slot=el.querySelector('[data-cover-slot]');
-      if(slot&&m?.coverUrl&&!slot.querySelector('img'))slot.innerHTML=`<img class="issue-cover" loading="lazy" decoding="async" src="${esc(m.coverUrl)}" alt="">`;
+      if(slot&&isProxyCover(m?.coverUrl)){
+        const current=slot.querySelector('img');
+        if(!current||current.getAttribute('src')!==m.coverUrl)slot.innerHTML=`<img class="issue-cover" loading="lazy" decoding="async" src="${esc(m.coverUrl)}" alt="">`;
+      }
     });
   };
 
@@ -82,17 +87,18 @@
     const old=state.marvel.get(Number(id))||{},now=new Date().toISOString();
     const oldPositive=isPositiveMeta(old),incomingPositive=isPositiveMeta(data);
     if(oldPositive&&!incomingPositive){
-      return {...old,id:Number(id),uiCacheVersion:UI_CACHE_VERSION,lastCheckedAt:now,lastAttemptReason:data?.reason||data?.error||'unresolved',coverUrl:old.coverUrl||data?.coverUrl||''};
+      return {...old,id:Number(id),uiCacheVersion:UI_CACHE_VERSION,lastCheckedAt:now,lastAttemptReason:data?.reason||data?.error||'unresolved',coverUrl:isProxyCover(old.coverUrl)?old.coverUrl:(isProxyCover(data?.coverUrl)?data.coverUrl:old.coverUrl||'')};
     }
     const merged={...old,...data,id:Number(id),checkedAt:now,uiCacheVersion:UI_CACHE_VERSION};
-    if(!data?.coverUrl&&old.coverUrl)merged.coverUrl=old.coverUrl;
-    if(!data?.smartLink&&old.smartLink&&oldPositive){
-      merged.available=true;merged.smartLink=old.smartLink;merged.issueUrl=old.issueUrl;merged.sourceId=old.sourceId;merged.readerId=old.readerId;merged.drn=old.drn;merged.reason='ok';
+    // La metadata de Unlimited nunca debe borrar la portada local GCD.
+    if(isProxyCover(old.coverUrl)&&!isProxyCover(data?.coverUrl))merged.coverUrl=old.coverUrl;
+    if(!data?.smartLink&&old.smartLink){
+      merged.available=true;merged.smartLink=old.smartLink;merged.issueUrl=old.issueUrl||data?.issueUrl||'';merged.sourceId=old.sourceId||data?.sourceId||'';merged.readerId=old.readerId||data?.readerId||'';merged.drn=old.drn||data?.drn||'';merged.reason='ok';
     }
     return merged;
   }
 
-  function coverIsFresh(m){return Boolean(m?.coverUrl)||ageOf(m,'gcdCoverCheckedAt')<GCD_COVER_MAX_AGE}
+  function coverIsFresh(m){return isProxyCover(m?.coverUrl)&&ageOf(m,'gcdCoverCheckedAt')<GCD_COVER_MAX_AGE}
   function drainCoverQueue(){
     if(coverActive||!coverQueue.length)return;
     coverActive=true;
@@ -103,7 +109,8 @@
         const r=await fetch(`/api/gcd/cover?id=${encodeURIComponent(id)}`,{cache:'no-store',headers:{Accept:'application/json'}});
         if(!r.ok)throw new Error(`GCD ${r.status}`);
         const data=await r.json(),now=new Date().toISOString();
-        const m={...old,id,gcdCoverCheckedAt:now,coverSource:data.coverUrl?'gcd-api':old.coverSource||'',coverUrl:data.coverUrl||old.coverUrl||''};
+        const localCover=isProxyCover(data.coverUrl)?data.coverUrl:`/api/gcd/cover-image?id=${encodeURIComponent(id)}`;
+        const m={...old,id,gcdCoverCheckedAt:now,coverSource:'gcd-proxy',coverUrl:localCover};
         state.marvel.set(id,m);await DB.put('marvel',m);updateRenderedMeta(id,m);job.resolve(m);
       }catch(e){
         console.warn('GCD cover',id,e);job.resolve(old||null);
