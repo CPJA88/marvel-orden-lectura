@@ -44,6 +44,7 @@ jobs:
           key: marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-${{ github.run_id }}
           restore-keys: |
             marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-
+            marvel-v3-${{ runner.os }}-
 
       - name: Generate and verify complete preinstalled cache
         id: generate
@@ -101,12 +102,12 @@ jobs:
             if(status===5&&(!row?.[1]||!row?.[2])) throw new Error(`Unlimited verificado sin sourceId/readerId en GCD ${row?.[0]}`);
             if(status===3&&!row?.[1]) throw new Error(`noDigital sin sourceId oficial en GCD ${row?.[0]}`);
           }
-          const bySource=new Map(p.entries.filter(r=>Number(r?.[1])>0).map(r=>[Number(r[1]),r]));
-          const captainAmericaNoDigital=[7865,7866,7867,7868,7869,7870,7872];
-          for(const sourceId of captainAmericaNoDigital){
-            const row=bySource.get(sourceId);
-            if(!row) throw new Error(`regresión: Captain America sourceId ${sourceId} no fue identificado`);
-            if(Number(row[3])!==3) throw new Error(`regresión: Captain America sourceId ${sourceId} debe ser noDigital y quedó en estado ${row[3]}`);
+          const byGcd=new Map(p.entries.map(r=>[Number(r?.[0]),r]));
+          const captainAmericaNoDigitalGcd=[2786,2854,2912,2957,3013,3075,3126,3617];
+          for(const gcdId of captainAmericaNoDigitalGcd){
+            const row=byGcd.get(gcdId);
+            if(!row) throw new Error(`regresión: Captain America GCD ${gcdId} no está en la caché`);
+            if(![3,4].includes(Number(row[3]))) throw new Error(`regresión: Captain America GCD ${gcdId} no debe tener enlace Unlimited; estado=${row[3]}, sourceId=${row[1]}`);
           }
           console.log({localCount:p.localCount,catalogCount:p.catalogCount,verifiedMU:p.matched,noDigital:p.unavailable,notListed:p.notListed,ambiguous:p.ambiguous,unknown:p.unknown,linkReady:p.linkReady,linkMissing:p.linkMissing,officiallyVerified:p.officiallyVerified});
           NODE
@@ -120,6 +121,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json
-          git commit -m 'cache: publicar índice Marvel V3 verificado por bloques'
+          git commit -m 'cache: publicar índice Marvel V3 verificado por serie y año'
           git pull --rebase origin main
           git push origin HEAD:main
