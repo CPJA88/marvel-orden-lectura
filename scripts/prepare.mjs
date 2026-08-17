@@ -6,7 +6,7 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.15-series-pagination';
+const uiVersion='v1.2.16-bing-resolver';
 
 for(const file of [archive,path.join(source,'index.html'),path.join(source,'styles.css'),path.join(source,'enhancements.css'),path.join(source,'diagnostics.css'),path.join(source,'app.js'),path.join(source,'diagnostics.js'),path.join(source,'resolver-ui.js'),path.join(source,'cache-ui.js'),path.join(source,'diagnostic-trace.js'),path.join(source,'diagnostic-catalog.js')]){
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
@@ -47,4 +47,4 @@ manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','diagnostic-trace.js','diagnostic-catalog.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: resolución por páginas/offset de la serie oficial, sin walkers masivos ni búsquedas externas para completar el catálogo.`);
+console.log(`PWA Marvel construida con ${uiVersion}: catálogo oficial primero; Bing exacto como fallback, decodificación de redirects y validación estricta de ficha Marvel.`);
