@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.13-ui';
+const uiVersion = 'v1.1.14-ui';
 
 try {
   await fs.access(archive);
@@ -34,9 +34,9 @@ await Promise.all([
 ]);
 
 // Los cinco botones se mantienen. La identificación del cómic conserva el
-// método estable de v1.1.3. En iOS el Worker resuelve el DRN actual de Marvel
-// y muestra un enlace Universal Link para que el usuario lo pulse directamente;
-// no se usa 302 ni el esquema privado reader, que la app actual rechaza.
+// método estable de v1.1.3. El deeplink iOS vuelve a ser marvelunlimited://reader,
+// que ya abría correctamente la app, pero ahora recibe el DRN Unison actual
+// del número en vez del identificador numérico legado del lector web.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
@@ -66,4 +66,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y handoff iOS por Universal Link directo activado.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y deeplink iOS restaurado con DRN Unison.`);
