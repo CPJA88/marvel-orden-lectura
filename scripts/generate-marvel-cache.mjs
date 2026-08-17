@@ -9,10 +9,14 @@ const outDir=path.join(root,'source','marvel-cache');
 const outFile=path.join(outDir,'index.json');
 const START_YEAR=1939;
 const END_YEAR=new Date().getUTCFullYear();
-const UA='Mozilla/5.0 (compatible; MarvelOrdenLecturaCacheBuilder/1.2.24)';
+const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
 const LEGACY='https://share.marvel.com/sharing/legacy/';
+const OFFICIAL='https://www.marvel.com/comics/issue/';
 const DRN_CONCURRENCY=14;
+const VERIFY_CONCURRENCY=10;
+const MAX_CANDIDATES=6;
 
+const STATUS={UNKNOWN:0,MU:1,AMBIGUOUS:2,NO_DIGITAL:3,NOT_LISTED:4,MU_LINK_MISSING:5};
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const asString=v=>v==null?'':String(v);
 function normalize(v=''){
@@ -54,8 +58,8 @@ async function fetchRetry(url,{accept='application/json',tries=5,redirect='follo
       last=new Error(`${new URL(url).hostname} HTTP ${r.status}`);
       if(r.status===404)return null;
       const retry=Number(r.headers.get('retry-after')||0);
-      await sleep(retry?retry*1000:Math.min(12000,700*(2**i)));
-    }catch(e){last=e;await sleep(Math.min(12000,700*(2**i)))}
+      await sleep(retry?retry*1000:Math.min(15000,800*(2**i)));
+    }catch(e){last=e;await sleep(Math.min(15000,800*(2**i)))}
   }
   throw last||new Error(`No se pudo descargar ${url}`);
 }
@@ -123,6 +127,7 @@ async function fetchCatalog(){
     let issues=[],source='geoffrich';
     try{issues=await fetchYearPrimary(year)}catch(e){console.warn(`Año ${year}: __data falló: ${e.message}`)}
     if(!issues.length){source='metadata-api';try{issues=await fetchYearFallback(year)}catch(e){console.warn(`Año ${year}: fallback falló: ${e.message}`)}}
+    if(!issues.length)throw new Error(`El catálogo remoto no devolvió ningún número para ${year}; se aborta para evitar falsos negativos.`);
     for(const issue of issues){
       const sourceId=Number(issue?.id||sourceIdFromUrl(issue?.detailUrl));if(!sourceId)continue;
       const current=bySource.get(sourceId),candidate={sourceId,readerId:Number(issue?.digitalId)||0,issueNumber:asString(issue?.issueNumber??issue?.issue),title:asString(issue?.title),seriesName:asString(issue?.series?.name||issue?.seriesName),seriesYear:seriesStartYear(issue?.series?.name||issue?.seriesName||issue?.title),onSale:asString(issue?.dates?.onSale||issue?.onSaleDate),unlimited:asString(issue?.dates?.unlimited||issue?.unlimitedDate),yearPage:Number(issue?._year_page||year),coverUrl:coverUrl(issue)};
@@ -146,23 +151,92 @@ function remoteSeries(r){return r.seriesName||r.title.replace(/#\s*[^#]+$/,'').t
 function scoreCandidate(local,series,r){
   if(normalizeIssue(local.n)!==normalizeIssue(r.issueNumber))return -Infinity;
   const localTitle=series?.original||series?.es||'',remoteTitle=remoteSeries(r),a=normalizeSeries(localTitle),b=normalizeSeries(remoteTitle),sim=tokenScore(localTitle,remoteTitle);
-  if(!a||!b||sim<0.52)return -Infinity;
+  if(!a||!b||sim<0.42)return -Infinity;
   let score=sim*50;if(a===b)score+=110;else if(a.includes(b)||b.includes(a))score+=20;
   const localSeriesYear=asString(local.a||series?.year||series?.y),remoteSeriesYear=asString(r.seriesYear);if(localSeriesYear&&remoteSeriesYear&&localSeriesYear===remoteSeriesYear)score+=28;
   const localDate=asString(local.sv||local.d),ly=yearOf(localDate);if(ly&&Number(ly)===Number(r.yearPage))score+=24;if(localDate&&r.onSale&&localDate.slice(0,10)===r.onSale.slice(0,10))score+=18;
+  if(r.readerId)score+=2;
   return score;
 }
-function buildCrosswalk(local,remote){
-  const byNumber=new Map();for(const r of remote){const n=normalizeIssue(r.issueNumber);if(!n)continue;if(!byNumber.has(n))byNumber.set(n,[]);byNumber.get(n).push(r)}
-  const entries=[];
+function buildCandidateRows(local,remote){
+  const byNumber=new Map();
+  for(const r of remote){const n=normalizeIssue(r.issueNumber);if(!n)continue;if(!byNumber.has(n))byNumber.set(n,[]);byNumber.get(n).push(r)}
+  const rows=[];
   for(const x of local.issues){
-    const series=local.seriesMap.get(Number(x.s))||{},candidates=byNumber.get(normalizeIssue(x.n))||[],ranked=candidates.map(r=>({r,score:scoreCandidate(x,series,r)})).filter(v=>Number.isFinite(v.score)).sort((a,b)=>b.score-a.score),top=ranked[0],second=ranked[1];
-    let sourceId=0,readerId=0,status=0,cover='';
-    if(top&&top.score>=72&&(!second||top.score-second.score>=7||top.r.sourceId===second.r.sourceId)){
-      sourceId=top.r.sourceId;readerId=top.r.readerId||0;cover=top.r.coverUrl||'';status=readerId?1:3;
-    }else if(top&&top.score>=72)status=2;
-    entries.push([Number(x.id),sourceId,readerId,status,cover,'']);
+    const series=local.seriesMap.get(Number(x.s))||{},localTitle=series?.original||series?.es||'',issueNumber=asString(x.n),candidates=byNumber.get(normalizeIssue(issueNumber))||[];
+    const ranked=candidates.map(r=>({r,score:scoreCandidate(x,series,r)})).filter(v=>Number.isFinite(v.score)).sort((a,b)=>b.score-a.score).slice(0,MAX_CANDIDATES);
+    rows.push({gcdId:Number(x.id),localTitle,issueNumber,candidates:ranked.map(v=>({...v.r,score:v.score}))});
   }
+  return rows;
+}
+
+function decodeHtml(v=''){
+  return asString(v).replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/&nbsp;/gi,' ').replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n)||32));
+}
+function plainHtml(html=''){
+  return decodeHtml(asString(html).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim();
+}
+function pageTitle(html=''){
+  const title=asString(html).match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||asString(html).match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i)?.[1]||'';
+  return decodeHtml(title).replace(/\s*\|\s*Comic Issues\s*\|\s*Marvel.*$/i,'').trim();
+}
+function parseIssueTitle(title=''){
+  const cleaned=decodeHtml(title).trim();
+  const m=cleaned.match(/^(.*?)\s*(?:\(\s*(\d{4})(?:\s*-\s*(?:\d{4}|present))?\s*\))?\s*#\s*([^\s|]+)/i);
+  return m?{series:m[1].trim(),year:m[2]||'',issue:m[3].trim()}:null;
+}
+function sameIssueIdentity(localTitle,issueNumber,officialTitle){
+  const p=parseIssueTitle(officialTitle);if(!p)return false;
+  if(normalizeIssue(p.issue)!==normalizeIssue(issueNumber))return false;
+  const a=normalizeSeries(localTitle),b=normalizeSeries(p.series);if(!a||!b)return false;
+  return a===b||a.includes(b)||b.includes(a)||tokenScore(a,b)>=0.82;
+}
+function availabilityFromHtml(html=''){
+  const text=plainHtml(html).toLowerCase();
+  if(/digital issue (?:is )?not currently available/.test(text))return'no-digital';
+  if(/members get unlimited access to this issue/.test(text)||/get unlimited access to this issue/.test(text))return'mu';
+  return'unknown';
+}
+const officialCache=new Map();
+async function fetchOfficialMeta(sourceId){
+  const key=String(sourceId);if(officialCache.has(key))return officialCache.get(key);
+  const promise=(async()=>{
+    try{
+      const r=await fetchRetry(OFFICIAL+encodeURIComponent(key),{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:4});
+      if(!r)return{ok:false,missing:true,title:'',availability:'unknown'};
+      const html=await r.text();return{ok:true,missing:false,title:pageTitle(html),availability:availabilityFromHtml(html)};
+    }catch(e){return{ok:false,missing:false,title:'',availability:'unknown',error:e.message}}
+  })();officialCache.set(key,promise);return promise;
+}
+async function verifyCandidateRow(row){
+  if(!row.candidates.length)return[row.gcdId,0,0,STATUS.NOT_LISTED,'',''];
+  let unavailable=null,identitySeen=false,networkFailure=false;
+  for(const c of row.candidates){
+    const meta=await fetchOfficialMeta(c.sourceId);
+    if(!meta.ok){if(!meta.missing)networkFailure=true;continue}
+    if(!sameIssueIdentity(row.localTitle,row.issueNumber,meta.title))continue;
+    identitySeen=true;
+    if(meta.availability==='mu'){
+      if(!c.readerId)return[row.gcdId,Number(c.sourceId)||0,0,STATUS.MU_LINK_MISSING,c.coverUrl||'',''];
+      return[row.gcdId,Number(c.sourceId)||0,Number(c.readerId)||0,STATUS.MU,c.coverUrl||'',''];
+    }
+    if(meta.availability==='no-digital'&&!unavailable)unavailable=c;
+  }
+  if(unavailable)return[row.gcdId,Number(unavailable.sourceId)||0,0,STATUS.NO_DIGITAL,unavailable.coverUrl||'',''];
+  if(identitySeen||networkFailure)return[row.gcdId,0,0,STATUS.AMBIGUOUS,'',''];
+  return[row.gcdId,0,0,STATUS.NOT_LISTED,'',''];
+}
+async function verifyCandidateRows(rows){
+  const entries=new Array(rows.length);let cursor=0,done=0;
+  async function worker(){
+    while(true){
+      const i=cursor++;if(i>=rows.length)return;
+      entries[i]=await verifyCandidateRow(rows[i]);done++;
+      if(done%250===0||done===rows.length)console.log(`Verificación Marvel oficial ${done}/${rows.length}`);
+      await sleep(20);
+    }
+  }
+  await Promise.all(Array.from({length:Math.min(VERIFY_CONCURRENCY,rows.length||1)},()=>worker()));
   return entries;
 }
 
@@ -171,8 +245,21 @@ async function loadExisting(){
 }
 function normalizeExistingRow(row){
   const gcdId=Number(row?.[0])||0,sourceId=Number(row?.[1])||0,readerId=Number(row?.[2])||0,oldStatus=Number(row?.[3]),cover=asString(row?.[4]),drn=asString(row?.[5]);
-  let status=0;if(sourceId&&readerId)status=1;else if(sourceId&&!readerId)status=3;else if(oldStatus===2)status=2;
+  let status=STATUS.UNKNOWN;
+  if(oldStatus===STATUS.MU&&sourceId&&readerId&&drn)status=STATUS.MU;
+  else if(oldStatus===STATUS.NO_DIGITAL)status=STATUS.NO_DIGITAL;
+  else if(oldStatus===STATUS.NOT_LISTED)status=STATUS.NOT_LISTED;
+  else if(oldStatus===STATUS.MU_LINK_MISSING&&sourceId)status=STATUS.MU_LINK_MISSING;
+  else if(oldStatus===STATUS.AMBIGUOUS)status=STATUS.AMBIGUOUS;
   return[gcdId,sourceId,readerId,status,cover,drn];
+}
+function reuseExistingDrns(entries,existing){
+  if(!existing?.entries)return;
+  const byReader=new Map();
+  for(const row of existing.entries){const reader=Number(row?.[2])||0,drn=asString(row?.[5]);if(reader&&drn)byReader.set(String(reader),drn)}
+  let reused=0;
+  for(const row of entries){if(row[2]>0&&!row[5]){const drn=byReader.get(String(row[2]));if(drn){row[5]=drn;reused++}}}
+  console.log(`DRN reutilizados de la caché anterior: ${reused}`);
 }
 function decodeRepeated(v=''){
   let s=asString(v).replace(/&amp;/g,'&').replace(/\\u003A/gi,':').replace(/\\u002F/gi,'/');
@@ -185,19 +272,22 @@ function extractDrn(v=''){
 async function resolveDrn(readerId){
   const url=LEGACY+encodeURIComponent(String(readerId));
   try{
-    const first=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:4,redirect:'manual'});if(!first)return '';
+    const first=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:5,redirect:'manual'});if(!first)return '';
     let drn=extractDrn(first.headers.get('location')||'');
     if(!drn&&first.status>=200&&first.status<300)drn=extractDrn(await first.text());
     if(drn)return drn;
   }catch{}
   try{
-    const second=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:3,redirect:'follow'});if(!second)return '';
+    const second=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:4,redirect:'follow'});if(!second)return '';
     return extractDrn(second.url)||extractDrn(await second.text());
   }catch{return ''}
 }
 async function fillDrns(entries){
   const byReader=new Map(),known=new Map();
-  for(const row of entries){if(row[2]>0){if(row[5])known.set(String(row[2]),row[5]);else byReader.set(String(row[2]),true)}}
+  for(const row of entries){
+    if(row[3]!==STATUS.MU&&row[3]!==STATUS.MU_LINK_MISSING)continue;
+    if(row[2]>0){if(row[5])known.set(String(row[2]),row[5]);else byReader.set(String(row[2]),true)}
+  }
   const todo=[...byReader.keys()].filter(id=>!known.has(id));
   console.log(`DRN: ${known.size} ya cacheados; ${todo.length} por resolver.`);
   let cursor=0,done=0,found=0;
@@ -210,37 +300,48 @@ async function fillDrns(entries){
     }
   }
   await Promise.all(Array.from({length:Math.min(DRN_CONCURRENCY,todo.length||1)},()=>worker()));
-  for(const row of entries)if(row[2]>0)row[5]=known.get(String(row[2]))||'';
+  for(const row of entries){
+    if((row[3]===STATUS.MU||row[3]===STATUS.MU_LINK_MISSING)&&row[2]>0){
+      row[5]=known.get(String(row[2]))||'';
+      row[3]=row[5]?STATUS.MU:STATUS.MU_LINK_MISSING;
+    }
+  }
   return{known:known.size,attempted:todo.length,newFound:found};
 }
 function statsOf(entries){
-  let matched=0,unavailable=0,ambiguous=0,unknown=0,linkReady=0,linkMissing=0;
+  let matched=0,unavailable=0,notListed=0,ambiguous=0,unknown=0,linkReady=0,linkMissing=0;
   for(const row of entries){
-    if(row[3]===1){matched++;if(row[5])linkReady++;else linkMissing++}
-    else if(row[3]===3)unavailable++;
-    else if(row[3]===2)ambiguous++;
+    if(row[3]===STATUS.MU){matched++;linkReady++}
+    else if(row[3]===STATUS.MU_LINK_MISSING){matched++;linkMissing++}
+    else if(row[3]===STATUS.NO_DIGITAL)unavailable++;
+    else if(row[3]===STATUS.NOT_LISTED)notListed++;
+    else if(row[3]===STATUS.AMBIGUOUS)ambiguous++;
     else unknown++;
   }
-  return{matched,unavailable,ambiguous,unknown,linkReady,linkMissing};
+  return{matched,unavailable,notListed,ambiguous,unknown,linkReady,linkMissing};
 }
 
 await fs.access(archive);await fs.mkdir(outDir,{recursive:true});
 const existing=await loadExisting();
-let entries,yearStats=[],catalogCount=Number(existing?.catalogCount)||0;
-if(existing&&existing.localCount>=50000&&existing.entries.length===existing.localCount&&process.env.REFRESH_CATALOG!=='1'){
-  console.log(`Reutilizando cruce preinstalado de ${existing.localCount} números; no se repite el análisis completo.`);
-  entries=existing.entries.map(normalizeExistingRow);yearStats=existing.yearStats||[];
+let entries,yearStats=[],catalogCount=Number(existing?.catalogCount)||0,officiallyVerified=false;
+if(existing&&Number(existing.version)>=3&&existing.officiallyVerified&&existing.localCount>=50000&&existing.entries.length===existing.localCount&&process.env.REFRESH_CATALOG!=='1'){
+  console.log(`Reutilizando caché V3 verificada de ${existing.localCount} números.`);
+  entries=existing.entries.map(normalizeExistingRow);yearStats=existing.yearStats||[];officiallyVerified=true;
 }else{
-  console.log('Descargando catálogo Marvel Unlimited…');
+  console.log('Descargando catálogo Marvel y rehaciendo el cruce completo…');
   const catalog=await fetchCatalog();if(catalog.issues.length<20000)throw new Error(`Catálogo demasiado pequeño (${catalog.issues.length}); no se publica una caché incompleta.`);
   catalogCount=catalog.issues.length;yearStats=catalog.yearStats;
   console.log(`Catálogo remoto: ${catalogCount} números únicos.`);
   console.log('Leyendo los números GCD de la PWA…');
-  const local=await loadLocal();console.log(`Orden local: ${local.issues.length} números.`);entries=buildCrosswalk(local,catalog.issues);
+  const local=await loadLocal();console.log(`Orden local: ${local.issues.length} números.`);
+  const candidateRows=buildCandidateRows(local,catalog.issues);
+  console.log('Verificando candidatos contra las páginas oficiales de Marvel…');
+  entries=await verifyCandidateRows(candidateRows);officiallyVerified=true;
+  reuseExistingDrns(entries,existing);
 }
 if(entries.length<50000)throw new Error(`La caché no cubre el orden completo (${entries.length}).`);
 const drnStats=await fillDrns(entries),stats=statsOf(entries);
-const payload={version:2,resolverVersion:13,generatedAt:new Date().toISOString(),ready:true,linksPrebuilt:true,localCount:entries.length,catalogCount,matched:stats.matched,unavailable:stats.unavailable,ambiguous:stats.ambiguous,unknown:stats.unknown,linkReady:stats.linkReady,linkMissing:stats.linkMissing,fields:['gcdId','sourceId','readerId','status(0=unknown,1=MU,2=ambiguous,3=noDigital)','coverUrl','drn'],yearStats,entries};
+const payload={version:3,resolverVersion:14,generatedAt:new Date().toISOString(),ready:true,linksPrebuilt:stats.linkMissing===0,officiallyVerified,localCount:entries.length,catalogCount,matched:stats.matched,unavailable:stats.unavailable,notListed:stats.notListed,ambiguous:stats.ambiguous,unknown:stats.unknown,linkReady:stats.linkReady,linkMissing:stats.linkMissing,fields:['gcdId','sourceId','readerId','status(0=unknown,1=verifiedMU,2=ambiguous,3=verifiedNoDigital,4=notListed,5=verifiedMU-linkMissing)','coverUrl','drn'],yearStats,entries};
 await fs.writeFile(outFile,JSON.stringify(payload));
 console.log(`Caché escrita: ${outFile}`);
-console.log({localCount:payload.localCount,catalogCount:payload.catalogCount,matched:payload.matched,noDigital:payload.unavailable,ambiguous:payload.ambiguous,unknown:payload.unknown,linkReady:payload.linkReady,linkMissing:payload.linkMissing,drn:drnStats});
+console.log({localCount:payload.localCount,catalogCount:payload.catalogCount,verifiedMU:payload.matched,noDigital:payload.unavailable,notListed:payload.notListed,ambiguous:payload.ambiguous,unknown:payload.unknown,linkReady:payload.linkReady,linkMissing:payload.linkMissing,officiallyVerified:payload.officiallyVerified,drn:drnStats});
