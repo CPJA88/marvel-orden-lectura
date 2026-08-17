@@ -1,6 +1,7 @@
-/* Marvel Lector v1.2.20 — estabilización: portada same-origin + Smart Links positivos inmutables */
+/* Marvel Lector v1.2.21 — estabilidad: portada same-origin + Smart Links positivos inmutables */
 (() => {
   const UNKNOWN_TTL=6*60*60*1000;
+  const READER_LINK_TTL=60*60*1000;
   let currentDetailId=0,currentReaderId=0;
 
   function proxyCover(id){return `/api/gcd/cover-image?id=${encodeURIComponent(Number(id))}`}
@@ -14,11 +15,13 @@
     if(positive(m))return true;
     if(m.reason==='reader-unavailable'&&m.issueUrl)return age(m)<7*24*60*60*1000;
     if(m.reason==='not-verified')return age(m)<UNKNOWN_TTL;
+    if(m.reason==='reader-link-found'||m.reason==='drn-unavailable')return age(m)<READER_LINK_TTL;
     return age(m)<5*1000;
   };
   unlimitedState=function(m){
     if(positive(m))return{label:'Unlimited ✓',cls:'available'};
     if(m?.reason==='reader-unavailable'&&m?.issueUrl)return{label:'Sin Unlimited',cls:'unavailable'};
+    if(m?.reason==='reader-link-found'||m?.reason==='drn-unavailable')return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
     return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
   };
 
