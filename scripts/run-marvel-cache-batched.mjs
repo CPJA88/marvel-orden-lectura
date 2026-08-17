@@ -20,6 +20,28 @@ replaceOnce(
   '    if(!issues.length)console.warn(`Año ${year}: sin entradas en el catálogo remoto; se continúa sin inventar resultados.`);',
   'años vacíos'
 );
+replaceOnce(
+`function sameIssueIdentity(localTitle,issueNumber,officialTitle){
+  const p=parseIssueTitle(officialTitle);if(!p)return false;
+  if(normalizeIssue(p.issue)!==normalizeIssue(issueNumber))return false;
+  const a=normalizeSeries(localTitle),b=normalizeSeries(p.series);if(!a||!b)return false;
+  return a===b||a.includes(b)||b.includes(a)||tokenScore(a,b)>=0.82;
+}`,
+`function sameIssueIdentity(localTitle,issueNumber,localSeriesYear,officialTitle){
+  const p=parseIssueTitle(officialTitle);if(!p)return false;
+  if(normalizeIssue(p.issue)!==normalizeIssue(issueNumber))return false;
+  const expectedYear=asString(localSeriesYear).trim();
+  if(expectedYear&&asString(p.year).trim()!==expectedYear)return false;
+  const a=normalizeSeries(localTitle),b=normalizeSeries(p.series);if(!a||!b)return false;
+  return a===b||a.includes(b)||b.includes(a)||tokenScore(a,b)>=0.82;
+}`,
+'identidad estricta por año de serie'
+);
+replaceOnce(
+  '    if(!sameIssueIdentity(row.localTitle,row.issueNumber,meta.title))continue;',
+  '    if(!sameIssueIdentity(row.localTitle,row.issueNumber,row.localSeriesYear,meta.title))continue;',
+  'uso de identidad estricta'
+);
 
 const marker='\nasync function loadExisting(){';
 const helpers=String.raw`
@@ -41,15 +63,19 @@ function buildRemoteNumberIndex(remote){
   }
   return byNumber;
 }
+function localSeriesYearOf(x,local){
+  const series=local.seriesMap.get(Number(x.s))||{};
+  return asString(x.a||series?.year||series?.y).trim();
+}
 function candidateRowBatched(x,local,byNumber){
   const series=local.seriesMap.get(Number(x.s))||{};
-  const localTitle=series?.original||series?.es||'',issueNumber=asString(x.n);
+  const localTitle=series?.original||series?.es||'',issueNumber=asString(x.n),localSeriesYear=localSeriesYearOf(x,local);
   const pool=byNumber.get(normalizeIssue(issueNumber))||[];
   const ranked=pool.map(r=>({r,score:scoreCandidate(x,series,r)}))
     .filter(v=>Number.isFinite(v.score))
     .sort((a,b)=>b.score-a.score)
     .slice(0,MAX_CANDIDATES);
-  return{gcdId:Number(x.id),localTitle,issueNumber,candidates:ranked.map(v=>compactCandidate(v.r,v.score))};
+  return{gcdId:Number(x.id),localTitle,issueNumber,localSeriesYear,candidates:ranked.map(v=>compactCandidate(v.r,v.score))};
 }
 function checkpointSignature(local,remote){
   const firstLocal=local.issues[0],lastLocal=local.issues.at(-1),firstRemote=remote[0],lastRemote=remote.at(-1);
@@ -83,6 +109,32 @@ function unresolvedPositions(entries){
   }
   return out;
 }
+function crossSeriesPositions(local,remote,entries){
+  const bySource=new Map(remote.map(r=>[Number(r.sourceId),r]));
+  const out=[];
+  for(let i=0;i<entries.length;i++){
+    const row=entries[i],status=Number(row?.[3]),sourceId=Number(row?.[1])||0;
+    if(!sourceId||![STATUS.MU,STATUS.MU_LINK_MISSING,STATUS.NO_DIGITAL].includes(status))continue;
+    const remoteIssue=bySource.get(sourceId);if(!remoteIssue)continue;
+    const localYear=localSeriesYearOf(local.issues[i],local),remoteYear=asString(remoteIssue.seriesYear).trim();
+    if(localYear&&remoteYear&&localYear!==remoteYear)out.push(i);
+  }
+  return out;
+}
+async function auditCrossSeries(local,remote,byNumber,entries,signature,total){
+  const positions=crossSeriesPositions(local,remote,entries);
+  if(!positions.length){console.log('Auditoría de año de serie: 0 cruces sospechosos.');return}
+  console.log('Auditoría de año de serie: '+positions.length+' cruces sospechosos serán reverificados.');
+  for(let start=0;start<positions.length;start+=PREBUILD_BATCH_SIZE){
+    const pos=positions.slice(start,start+PREBUILD_BATCH_SIZE),rows=pos.map(i=>candidateRowBatched(local.issues[i],local,byNumber));
+    const verified=await verifyCandidateRows(rows);
+    for(let j=0;j<pos.length;j++)entries[pos[j]]=verified[j];
+    officialCache.clear();
+    await writePrebuildCheckpoint(signature,total,entries,'strict-year-audit');
+    console.log('Auditoría estricta '+Math.min(start+pos.length,positions.length)+'/'+positions.length);
+    if(global.gc)global.gc();
+  }
+}
 async function rescueFinalAmbiguous(local,byNumber,entries,signature,total){
   let positions=unresolvedPositions(entries);
   if(!positions.length)return;
@@ -103,7 +155,7 @@ async function rescueFinalAmbiguous(local,byNumber,entries,signature,total){
     console.error('Persisten '+positions.length+' coincidencias ambiguas tras el rescate final:');
     for(const i of positions){
       const row=candidateRowBatched(local.issues[i],local,byNumber);
-      console.error('AMBIGUO FINAL GCD '+row.gcdId+' | '+row.localTitle+' #'+row.issueNumber+' | candidatos sourceId='+row.candidates.map(c=>c.sourceId).join(','));
+      console.error('AMBIGUO FINAL GCD '+row.gcdId+' | '+row.localTitle+' #'+row.issueNumber+' | año='+row.localSeriesYear+' | candidatos sourceId='+row.candidates.map(c=>c.sourceId).join(','));
     }
   }
 }
@@ -126,6 +178,8 @@ async function verifyBatched(local,remote){
     if(global.gc)global.gc();
   }
 
+  await auditCrossSeries(local,remote,byNumber,entries,signature,total);
+
   for(let pass=1;pass<=2;pass++){
     const positions=unresolvedPositions(entries);
     if(!positions.length)break;
@@ -143,7 +197,7 @@ async function verifyBatched(local,remote){
   }
 
   await rescueFinalAmbiguous(local,byNumber,entries,signature,total);
-  await writePrebuildCheckpoint(signature,total,entries,'verified');
+  await writePrebuildCheckpoint(signature,total,entries,'verified-strict-year');
   return entries;
 }
 `;
