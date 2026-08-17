@@ -7,7 +7,7 @@ const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
 const marvelCacheSource=path.join(source,'marvel-cache');
-const uiVersion='v1.2.23-preinstalled-cache';
+const uiVersion='v1.2.23.1-preinstalled-cache';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'];
 
 for(const name of sourceFiles){
@@ -39,7 +39,7 @@ await fs.writeFile(indexPath,index);
 const swPath=path.join(output,'sw.js');
 let sw=await fs.readFile(swPath,'utf8');
 sw=sw.replace(/marvel-lectura-v[^'\"]+/g,`marvel-lectura-${uiVersion}`);
-sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'");
+sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','data/marvel-cache/index.json'");
 await fs.writeFile(swPath,sw);
 
 const manifestPath=path.join(output,'manifest.webmanifest');
@@ -49,4 +49,5 @@ await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
 const baked=JSON.parse(await fs.readFile(path.join(output,'data','marvel-cache','index.json'),'utf8'));
-console.log(`PWA Marvel construida con ${uiVersion}: caché preinstalada ready=${Boolean(baked.ready)}, registros=${baked.localCount||0}, MU=${baked.matched||0}, ambiguos=${baked.ambiguous||0}. Los IDs se resuelven localmente; solo el DRN se obtiene al abrir un cómic si aún no está cacheado.`);
+if(!baked.ready||baked.localCount<50000)throw new Error(`Caché Marvel incompleta: ready=${Boolean(baked.ready)}, registros=${baked.localCount||0}`);
+console.log(`PWA Marvel construida con ${uiVersion}: caché preinstalada y precacheada; registros=${baked.localCount}, MU=${baked.matched}, ambiguos=${baked.ambiguous}. El scroll no resuelve metadatos en red; solo el DRN puede obtenerse al pulsar un cómic.`);
