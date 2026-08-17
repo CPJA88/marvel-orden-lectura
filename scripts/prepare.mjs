@@ -6,7 +6,7 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.3-marvel-resolver';
+const uiVersion='v1.2.4-stable-handoff';
 
 for(const file of [archive,path.join(source,'index.html'),path.join(source,'styles.css'),path.join(source,'enhancements.css'),path.join(source,'diagnostics.css'),path.join(source,'app.js'),path.join(source,'diagnostics.js'),path.join(source,'resolver-ui.js')]){
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
@@ -41,4 +41,4 @@ manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: resolver Marvel-first, estados Unlimited fiables y diagnóstico V4.`);
+console.log(`PWA Marvel construida con ${uiVersion}: apertura Smart Link estable separada de precarga y diagnóstico.`);
