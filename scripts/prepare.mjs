@@ -6,8 +6,8 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.20.1-stability-recovery';
-const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js'];
+const uiVersion='v1.2.21-year-index';
+const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js','diagnostic-v21.js'];
 
 for(const name of sourceFiles){
   const file=path.join(source,name);
@@ -22,7 +22,7 @@ for(const name of sourceFiles)await fs.copyFile(path.join(source,name),path.join
 
 const indexPath=path.join(output,'index.html');
 let index=await fs.readFile(indexPath,'utf8');
-const scripts=['resolver-ui.js','cache-ui.js','stability-v20.js'];
+const scripts=['resolver-ui.js','cache-ui.js','stability-v20.js','diagnostic-v21.js'];
 let anchor='<script src="diagnostics.js" defer></script>';
 for(const script of scripts){
   if(!index.includes(script)){
@@ -35,7 +35,7 @@ await fs.writeFile(indexPath,index);
 const swPath=path.join(output,'sw.js');
 let sw=await fs.readFile(swPath,'utf8');
 sw=sw.replace(/marvel-lectura-v[^'\"]+/g,`marvel-lectura-${uiVersion}`);
-sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js'");
+sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js','diagnostic-v21.js'");
 await fs.writeFile(swPath,sw);
 
 const manifestPath=path.join(output,'manifest.webmanifest');
@@ -43,5 +43,5 @@ const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
 manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
-for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: portadas GCD servidas por proxy same-origin y recuperación de Smart Links positivos; sin Marvel API ni capas experimentales V8/V9.`);
+for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js','diagnostic-v21.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
+console.log(`PWA Marvel construida con ${uiVersion}: portadas GCD por proxy same-origin; Unlimited resuelto desde índice histórico MU por año (sourceId + readerId) y conversión actual a DRN/Smart Link. Sin Google, Bing, Marvel Search ni claves API.`);
