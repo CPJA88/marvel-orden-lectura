@@ -6,11 +6,11 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.20-stability-recovery';
+const uiVersion='v1.2.20.1-stability-recovery';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js'];
 
 for(const name of sourceFiles){
-  const file=name==='index.html'||name.endsWith('.css')||name.endsWith('.js')?path.join(source,name):path.join(root,name);
+  const file=path.join(source,name);
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
 }
 try{await fs.access(archive)}catch{console.error('Falta Marvel_Orden_de_Lectura_PWA.zip.');process.exit(1)}
