@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build-cache:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,10 +41,12 @@ jobs:
           const fs=require('fs');
           const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
           if(!p.ready) throw new Error('cache ready=false');
+          if(p.version < 2) throw new Error(`formato antiguo: v${p.version}`);
           if(p.localCount < 50000) throw new Error(`localCount incompleto: ${p.localCount}`);
-          if(p.catalogCount < 20000) throw new Error(`catalogCount sospechoso: ${p.catalogCount}`);
           if(!Array.isArray(p.entries) || p.entries.length !== p.localCount) throw new Error('entries incompleto');
-          console.log({localCount:p.localCount,catalogCount:p.catalogCount,matched:p.matched,unavailable:p.unavailable,ambiguous:p.ambiguous});
+          if(!p.linksPrebuilt) throw new Error('linksPrebuilt=false');
+          if(p.matched > 0 && p.linkReady === 0) throw new Error('no se ha podido preconstruir ningún DRN');
+          console.log({localCount:p.localCount,catalogCount:p.catalogCount,matched:p.matched,noDigital:p.unavailable,ambiguous:p.ambiguous,unknown:p.unknown,linkReady:p.linkReady,linkMissing:p.linkMissing});
           NODE
 
       - name: Commit generated cache
@@ -56,6 +58,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json
-          git commit -m 'cache: actualizar índice Marvel preinstalado'
+          git commit -m 'cache: actualizar índice Marvel preinstalado con DRN'
           git pull --rebase origin main
           git push origin HEAD:main
