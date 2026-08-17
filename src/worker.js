@@ -1,6 +1,6 @@
-const MARVEL_ORIGIN = 'https://www.marvel.com';
 const GOOGLE_ORIGIN = 'https://www.google.com';
-const MARVEL_SHARE_ORIGIN = 'https://share.marvel.com';
+const MARVEL_LEGACY_SHARE = 'https://share.marvel.com/sharing/legacy/';
+const MARVEL_SMART_LINK = 'https://marvel.smart.link/fiir7ec77';
 
 function unescapeHtml(value = '') {
   return String(value)
@@ -38,6 +38,14 @@ function cleanMarvelIssueUrl(value = '') {
   try {
     const url = new URL(value, GOOGLE_ORIGIN);
     return `${url.protocol}//${url.host}${url.pathname}`;
+  } catch {
+    return '';
+  }
+}
+
+function sourceIdFromIssueUrl(issueUrl = '') {
+  try {
+    return new URL(issueUrl).pathname.match(/^\/comics\/issue\/(\d+)/i)?.[1] || '';
   } catch {
     return '';
   }
@@ -84,8 +92,8 @@ async function fetchGoogle(url, redirect = 'manual') {
   });
 }
 
-// No se modifica: este es el identificador estable que vuelve a encontrar
-// correctamente la ficha de Marvel del número seleccionado.
+// Se conserva el identificador que ya funciona: Google restringido a la ficha
+// oficial de Marvel. Esta parte no participa en el deep link móvil.
 async function resolveExactIssueWithGoogle(title, issue, year) {
   const lucky = luckyUrl(title, issue, year);
   try {
@@ -115,7 +123,7 @@ async function fetchHtml(url) {
   const response = await fetch(url, {
     redirect: 'follow',
     headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.8)',
+      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/2.0)',
       'Accept': 'text/html,application/xhtml+xml',
       'Accept-Language': 'en-US,en;q=0.9',
     },
@@ -124,59 +132,44 @@ async function fetchHtml(url) {
   return response.text();
 }
 
-function extractReaderUrl(html, issueUrl) {
+function extractReaderData(html, issueUrl) {
   const clean = unescapeHtml(html);
-  const reader = clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i)?.[0];
-  return reader || issueUrl;
+  const match = clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i);
+  return {
+    readerId: match?.[1] || '',
+    webUrl: match?.[0] || issueUrl,
+  };
 }
 
-function extractIssueDrn(value = '') {
-  const clean = unescapeHtml(value).replace(/%3A/gi, ':');
-  return clean.match(/drn:src:marvel:unison::prod:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i)?.[0] || '';
+// Método probado por Marvelous Links: el readerId se convierte al DRN real
+// consultando share.marvel.com/sharing/legacy/<readerId>.
+async function resolveLegacyDrn(readerId) {
+  if (!readerId) return '';
+  const html = await fetchHtml(`${MARVEL_LEGACY_SHARE}${encodeURIComponent(readerId)}`);
+  const clean = unescapeHtml(html).replace(/%3A/gi, ':');
+
+  const explicit = clean.match(/(?:[?&]|\b)drn=([^&"'<>\s]+)/i)?.[1] || '';
+  if (explicit) return decodeURIComponent(explicit);
+
+  return clean.match(/drn:src:marvel:unison::prod:[0-9a-f-]{36}/i)?.[0] || '';
 }
 
-function shareSearchUrl(title, issue, year) {
-  const label = `${title}${year ? ` (${year})` : ''}${issue ? ` #${issue}` : ''}`;
-  const query = `site:share.marvel.com/sharing/issue "${label}" Marvel Unlimited`;
-  return `${GOOGLE_ORIGIN}/search?q=${encodeURIComponent(query)}`;
-}
-
-function extractDrnFromShareSearch(html = '') {
-  const clean = unescapeHtml(html)
-    .replace(/%2F/gi, '/')
-    .replace(/%3A/gi, ':');
-  const direct = extractIssueDrn(clean);
-  if (direct) return direct;
-
-  const urls = clean.match(/https?:\/\/share\.marvel\.com\/sharing\/issue\/[^"'<>\s&]+/gi) || [];
-  for (const url of urls) {
-    const drn = extractIssueDrn(url);
-    if (drn) return drn;
-  }
-  return '';
-}
-
-// La app moderna comparte números mediante DRN Unison. Primero intentamos
-// obtener ese ID directamente de la ficha exacta de Marvel; si no está en el
-// HTML, usamos la búsqueda oficial indexada en share.marvel.com.
-async function resolveUnisonDrn(title, issue, year, marvelHtml) {
-  const direct = extractIssueDrn(marvelHtml);
-  if (direct) return direct;
-
-  try {
-    const response = await fetchGoogle(shareSearchUrl(title, issue, year), 'follow');
-    const html = await response.text();
-    return extractDrnFromShareSearch(html);
-  } catch (error) {
-    console.error('Marvel DRN resolver:', error);
-    return '';
-  }
+function buildSmartLink(drn, sourceId) {
+  if (!drn || !sourceId) return '';
+  const url = new URL(MARVEL_SMART_LINK);
+  url.searchParams.set('type', 'issue');
+  url.searchParams.set('drn', drn);
+  url.searchParams.set('sourceId', sourceId);
+  return url.toString();
 }
 
 function redirect(location) {
   return new Response(null, {
     status: 302,
-    headers: { Location: location, 'Cache-Control': 'private, no-store' },
+    headers: {
+      Location: location,
+      'Cache-Control': 'private, no-store',
+    },
   });
 }
 
@@ -184,19 +177,11 @@ function escAttr(value = '') {
   return String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-function appLauncher(target, fallback, title = 'Abriendo Marvel Unlimited') {
-  const targetAttr = escAttr(target);
-  const fallbackAttr = escAttr(fallback);
-  const targetJs = JSON.stringify(target).replace(/</g, '\\u003c');
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${title}</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>${title}</h2><p>El número está identificado. Si la app no se abre automáticamente, pulsa el botón rojo.</p><a class="app" href="${targetAttr}">Abrir Marvel Unlimited</a><a class="web" href="${fallbackAttr}">Abrir este mismo número en la web</a></div><script>const target=${targetJs};setTimeout(()=>{location.href=target},80);</script></body></html>`, {
-    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' },
-  });
-}
-
-function unresolvedPage(fallback) {
+function unresolvedPage(fallback, reason = 'No he podido obtener el enlace móvil de Marvel.') {
   const safe = escAttr(fallback);
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>Número localizado, pero sin ID móvil</h2><p>No voy a mandar otro cómic a Marvel Unlimited.</p><a href="${safe}">Abrir este número en la web</a></div></body></html>`, {
-    status: 404,
+  const text = escAttr(reason);
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>El número está localizado</h2><p>${text}</p><a href="${safe}">Abrir este número en la web</a></div></body></html>`, {
+    status: 502,
     headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
   });
 }
@@ -217,33 +202,31 @@ export default {
 
     try {
       const issueUrl = await resolveExactIssueWithGoogle(title, issue, year);
-      if (!issueUrl) return unresolvedPage(lucky);
+      if (!issueUrl) return unresolvedPage(lucky, 'No he podido localizar la ficha oficial exacta.');
 
+      const sourceId = sourceIdFromIssueUrl(issueUrl);
       const marvelHtml = await fetchHtml(issueUrl);
-      const webUrl = extractReaderUrl(marvelHtml, issueUrl);
+      const { readerId, webUrl } = extractReaderData(marvelHtml, issueUrl);
+      if (!readerId) return unresolvedPage(webUrl, 'Marvel no publica readerId para este número.');
 
-      if (mode === 'ios') {
-        const drn = await resolveUnisonDrn(title, issue, year, marvelHtml);
-        if (!drn) return unresolvedPage(webUrl);
+      const drn = await resolveLegacyDrn(readerId);
+      if (!drn) return unresolvedPage(webUrl, 'Marvel no ha devuelto el DRN asociado a este número.');
 
-        // Restauramos el deeplink que YA abría la aplicación. Lo único que
-        // cambia es el payload: se envía el identificador Unison actual del
-        // número, no el ID numérico del lector web antiguo.
-        const target = `marvelunlimited://reader/${encodeURIComponent(drn)}`;
-        return appLauncher(target, webUrl);
+      const smartLink = buildSmartLink(drn, sourceId);
+      if (!smartLink) return unresolvedPage(webUrl, 'Falta el identificador necesario para construir el Smart Link.');
+
+      if (mode === 'debug') {
+        return Response.json({ title, issue, year, issueUrl, sourceId, readerId, drn, smartLink, webUrl }, { headers: { 'Cache-Control': 'no-store' } });
       }
 
-      if (mode === 'android') {
-        const drn = await resolveUnisonDrn(title, issue, year, marvelHtml);
-        if (!drn) return unresolvedPage(webUrl);
-        const target = `intent://reader/${encodeURIComponent(drn)}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
-        return appLauncher(target, webUrl);
-      }
+      // iOS y Android usan el mismo Smart Link oficial de Marvel. El servicio
+      // decide la app/plataforma y conserva el número mediante DRN + sourceId.
+      if (mode === 'ios' || mode === 'android') return redirect(smartLink);
 
       return redirect(webUrl);
     } catch (error) {
       console.error('Marvel resolver:', error);
-      return unresolvedPage(lucky);
+      return unresolvedPage(lucky, 'Se ha producido un error al construir el enlace de Marvel Unlimited.');
     }
   },
 };
