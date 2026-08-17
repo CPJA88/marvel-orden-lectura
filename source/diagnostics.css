@@ -1,0 +1,17 @@
+/* Marvel Lector v1.2.1 — diagnóstico de catálogo */
+.diagnostic-card{width:min(92vw,720px);max-height:90dvh}
+.diagnostic-card h2{margin:5px 42px 8px 0;font-size:24px;letter-spacing:-.03em}
+.diagnostic-intro{margin:0 0 16px;color:var(--muted);font-size:12px;line-height:1.5}
+.diagnostic-progress{height:9px;overflow:hidden;border-radius:999px;background:#e3dfd7;box-shadow:inset 0 1px 2px rgba(47,39,30,.08)}
+#diagnosticProgressBar{height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--red-deep),var(--red));transition:width .2s ease}
+.diagnostic-status{margin:8px 2px 12px;color:var(--muted);font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+.diagnostic-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:12px}
+.diagnostic-stats div{padding:10px;border:1px solid var(--line-soft);border-radius:13px;background:var(--surface-2)}
+.diagnostic-stats strong{display:block;font-size:17px;font-variant-numeric:tabular-nums}
+.diagnostic-stats span{display:block;margin-top:3px;color:var(--muted-2);font-size:8.5px;font-weight:750;text-transform:uppercase;letter-spacing:.06em}
+.diagnostic-actions{display:grid;grid-template-columns:1.3fr .8fr .8fr;gap:8px;margin:10px 0}
+.diagnostic-actions.two{grid-template-columns:1fr 1fr}
+.diagnostic-actions button{margin:0;min-width:0}
+#diagnosticReport{display:block;width:100%;height:300px;resize:vertical;margin:12px 0 0;padding:12px;border:1px solid var(--line);border-radius:14px;background:#f8f6f1;color:#34353a;font:10.5px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre;overflow:auto;-webkit-overflow-scrolling:touch}
+#diagnosticReport:focus{outline:2px solid rgba(230,36,41,.35);outline-offset:1px}
+@media(max-width:779px){#diagnosticDialog{width:100%;max-width:none;margin:0;inset:0}#diagnosticDialog .dialog-card{width:100%;height:100dvh;max-height:none;border:0;border-radius:0;padding-top:calc(18px + env(safe-area-inset-top));padding-bottom:calc(18px + env(safe-area-inset-bottom))}#diagnosticDialog .sheet-handle{display:none}#diagnosticDialog .dialog-close{top:calc(11px + env(safe-area-inset-top))}.diagnostic-actions{grid-template-columns:1fr 1fr}.diagnostic-actions #diagnosticStartBtn{grid-column:1/-1}#diagnosticReport{height:42dvh}}
