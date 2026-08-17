@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: marvel-preinstalled-cache
+  group: marvel-preinstalled-cache-v2
   cancel-in-progress: false
 
 jobs:
