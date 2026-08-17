@@ -1,5 +1,6 @@
 const MARVEL_ORIGIN = 'https://www.marvel.com';
 const GOOGLE_ORIGIN = 'https://www.google.com';
+const MARVEL_SHARE_ORIGIN = 'https://share.marvel.com';
 
 function unescapeHtml(value = '') {
   return String(value)
@@ -51,6 +52,51 @@ function issueReadUrl(issueUrl = '') {
   }
 }
 
+function shareCatalogUrl(issueUrl = '') {
+  try {
+    const url = new URL(issueUrl);
+    if (!/^\/comics\/issue\/\d+\//i.test(url.pathname)) return '';
+    return `${MARVEL_SHARE_ORIGIN}${url.pathname}`;
+  } catch {
+    return '';
+  }
+}
+
+function extractIssueDrn(html = '') {
+  const normalized = unescapeHtml(html)
+    .replace(/\\u003A/gi, ':')
+    .replace(/%3A/gi, ':')
+    .replace(/&#58;/gi, ':');
+  const match = normalized.match(/drn:src:marvel:unison::prod:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+  return match?.[0] || '';
+}
+
+async function resolveCurrentMarvelShareLink(issueUrl = '') {
+  const catalogUrl = shareCatalogUrl(issueUrl);
+  if (!catalogUrl) return { catalogUrl: '', shareUrl: '', drn: '' };
+
+  try {
+    const response = await fetch(catalogUrl, {
+      redirect: 'follow',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1',
+        'Accept': 'text/html,application/xhtml+xml',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+    });
+    if (!response.ok) return { catalogUrl, shareUrl: catalogUrl, drn: '' };
+    const html = await response.text();
+    const drn = extractIssueDrn(html);
+    const shareUrl = drn
+      ? `${MARVEL_SHARE_ORIGIN}/sharing/issue/${encodeURIComponent(drn)}`
+      : catalogUrl;
+    return { catalogUrl, shareUrl, drn };
+  } catch (error) {
+    console.error('Marvel share resolver:', error);
+    return { catalogUrl, shareUrl: catalogUrl, drn: '' };
+  }
+}
+
 function unwrapGoogleLocation(location = '') {
   try {
     const absolute = new URL(location, GOOGLE_ORIGIN);
@@ -97,8 +143,8 @@ async function fetchGoogle(url, redirect = 'manual') {
   });
 }
 
-// La identificación conserva exactamente el método de v1.1.3: Google restringido
-// a marvel.com/comics/issue. El buscador interno de Marvel NO decide el número.
+// La identificación del número sigue siendo exactamente la estable de v1.1.3.
+// El cambio de esta versión afecta únicamente al handoff hacia iOS.
 async function resolveExactIssueWithGoogle(title, issue, year) {
   const lucky = luckyUrl(title, issue, year);
 
@@ -134,7 +180,7 @@ async function getMarvelHtml(url) {
   const response = await fetch(url, {
     redirect: 'follow',
     headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.5)',
+      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.6)',
       'Accept': 'text/html,application/xhtml+xml',
       'Accept-Language': 'en-US,en;q=0.9',
     },
@@ -156,11 +202,6 @@ function extractDigitalLinks(html, issueUrl) {
     mobileId,
     readerId,
     webUrl,
-    // iOS deja de usar el esquema privado marvelunlimited://reader/... porque
-    // la versión actual de la app lo abre pero devuelve LOADING ERROR. Se usa
-    // la ruta oficial por ID de catálogo, que puede actuar como Universal Link
-    // y, si Marvel no la asocia a la app, mantiene un fallback web correcto.
-    iosUrl: issueReadUrl(issueUrl),
     androidUrl: readerId
       ? `intent://reader/${readerId}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`
       : '',
@@ -206,14 +247,18 @@ export default {
       const resolved = await resolveExactIssueWithGoogle(title, issue, year);
       if (!resolved.issueUrl) return unresolvedPage(lucky);
 
+      if (mode === 'ios') {
+        // Marvel Unlimited actual comparte números mediante share.marvel.com con
+        // un DRN Unison. Intentamos obtener ese enlace actual desde la ficha exacta.
+        // Si el DRN no está expuesto en el HTML, caemos a la ficha equivalente
+        // de share.marvel.com, nunca a marvel.com ni a un esquema privado roto.
+        const currentShare = await resolveCurrentMarvelShareLink(resolved.issueUrl);
+        return redirect(currentShare.shareUrl || currentShare.catalogUrl || resolved.issueUrl);
+      }
+
       const html = await getMarvelHtml(resolved.issueUrl);
       const comic = extractDigitalLinks(html, resolved.issueUrl);
 
-      if (mode === 'ios') {
-        // No se fuerza un esquema privado: dejamos a iOS/Marvel gestionar la URL
-        // oficial del número. Si no existe asociación con la app, abre el lector web.
-        return redirect(comic.iosUrl || comic.webUrl || comic.issueUrl);
-      }
       if (mode === 'android' && comic.androidUrl) {
         return mobileLauncher(comic.androidUrl, comic.webUrl, 'Abrir Marvel Unlimited en Android');
       }
