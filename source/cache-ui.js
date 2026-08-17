@@ -1,16 +1,19 @@
-/* Marvel Lector v1.2.8 — metadata UI unificada con el mismo resolver que abre la app */
+/* Marvel Lector v1.2.9 — resolución visible serial, reintentos y sin precarga agresiva */
 (() => {
-  const ACTIVE_RESOLVER_VERSION=6;
-  const UI_CACHE_VERSION=3;
-  const UI_META_CONCURRENCY=3;
-  const BACKGROUND_PREFETCH_LIMIT=6;
-  const NEGATIVE_RETRY_AGE=30*1000;
+  const ACTIVE_RESOLVER_VERSION=7;
+  const UI_CACHE_VERSION=4;
+  const UI_META_CONCURRENCY=1;
+  const BACKGROUND_PREFETCH_LIMIT=0;
+  const NEGATIVE_RETRY_AGE=5*1000;
   const CONFIRMED_UNAVAILABLE_AGE=7*24*60*60*1000;
+  const REQUEST_GAP=450;
+  const MAX_VISIBLE_RETRIES=2;
   let uiObserver=null;
   let active=0;
   let seq=0;
   const queue=[];
   const pending=new Map();
+  const retryCounts=new Map();
 
   function ageOf(m){
     if(!m?.checkedAt)return Infinity;
@@ -19,6 +22,7 @@
   }
   function isPositiveMeta(m){return Boolean(m?.available&&m?.smartLink&&m?.issueUrl)}
   function isConfirmedUnavailable(m){return Boolean(m?.issueUrl&&m?.reason==='reader-unavailable')}
+  function isTransientFailure(m){return Boolean(m&&['lookup-unresolved','resolver-error'].includes(m.reason))}
 
   isFreshMeta=m=>{
     if(!m)return false;
@@ -33,6 +37,7 @@
     if(isPositiveMeta(m))return{label:'Unlimited ✓',cls:'available'};
     if(isConfirmedUnavailable(m)&&isFreshMeta(m))return{label:'Sin Unlimited',cls:'unavailable'};
     if(m?.reason==='drn-unavailable'&&isFreshMeta(m))return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
+    if(isTransientFailure(m)&&ageOf(m)<20*1000)return{label:'Unlimited · reintentando',cls:'pending-meta'};
     if(m&&isFreshMeta(m))return{label:'No identificado',cls:'unresolved'};
     return{label:'Unlimited · comprobando',cls:'pending-meta'};
   };
@@ -66,7 +71,7 @@
     const oldPositive=isPositiveMeta(old),incomingPositive=isPositiveMeta(data);
 
     if(oldPositive&&!incomingPositive){
-      return {...old,id:Number(id),uiCacheVersion:UI_CACHE_VERSION,lastCheckedAt:now,lastAttemptReason:data?.reason||data?.error||'unresolved',coverUrl:old.coverUrl||data?.coverUrl||''};
+      return {...old,id:Number(id),resolverVersion:ACTIVE_RESOLVER_VERSION,uiCacheVersion:UI_CACHE_VERSION,lastCheckedAt:now,lastAttemptReason:data?.reason||data?.error||'unresolved',coverUrl:old.coverUrl||data?.coverUrl||''};
     }
 
     const merged={...old,...data,id:Number(id),checkedAt:now,uiCacheVersion:UI_CACHE_VERSION};
@@ -77,21 +82,38 @@
     return merged;
   }
 
+  function scheduleRetry(x,m,priority){
+    const id=Number(x.id);
+    if(priority!==0||!isTransientFailure(m)){retryCounts.delete(id);return}
+    const done=retryCounts.get(id)||0;
+    if(done>=MAX_VISIBLE_RETRIES)return;
+    retryCounts.set(id,done+1);
+    const delay=done===0?1800:4200;
+    setTimeout(()=>{
+      const current=state.marvel.get(id);
+      if(isPositiveMeta(current)||isConfirmedUnavailable(current))return;
+      enqueue(x,0,true);
+    },delay);
+  }
+
   async function runJob(job){
     const x=job.x,id=Number(x.id),old=state.marvel.get(id);
     try{
       const s=state.seriesMap.get(x.s)||{};
-      // mode=meta y mode=app comparten resolveUnifiedMeta() en Worker v6.
       const r=await fetch(marvelQuery(x,s,'meta'),{cache:'no-store',headers:{Accept:'application/json'}});
       if(!r.ok)throw new Error(`Marvel ${r.status}`);
       const data=await r.json(),m=mergeMeta(id,data);
-      state.marvel.set(id,m);await DB.put('marvel',m);updateRenderedMeta(id,m);job.resolve(m);
+      state.marvel.set(id,m);await DB.put('marvel',m);updateRenderedMeta(id,m);scheduleRetry(x,m,job.priority);job.resolve(m);
     }catch(e){
       console.warn('Marvel UI meta',id,e);
       if(old)updateRenderedMeta(id,old);
-      job.resolve(old||null);
+      const fallback=old||{id,checkedAt:new Date().toISOString(),resolverVersion:ACTIVE_RESOLVER_VERSION,uiCacheVersion:UI_CACHE_VERSION,available:false,reason:'resolver-error'};
+      if(!old){state.marvel.set(id,fallback);await DB.put('marvel',fallback);updateRenderedMeta(id,fallback)}
+      scheduleRetry(x,fallback,job.priority);job.resolve(old||fallback);
     }finally{
-      pending.delete(id);active--;drain();
+      pending.delete(id);
+      await new Promise(r=>setTimeout(r,REQUEST_GAP));
+      active--;drain();
     }
   }
   function drain(){
@@ -105,7 +127,7 @@
     const id=Number(x.id),cached=state.marvel.get(id);
     if(!force&&isFreshMeta(cached)){updateRenderedMeta(id,cached);return Promise.resolve(cached)}
     const existing=pending.get(id);
-    if(existing){if(priority<existing.priority)existing.priority=priority;drain();return existing.promise}
+    if(existing){if(priority<existing.priority)existing.priority=priority;return existing.promise}
     let resolve;const promise=new Promise(r=>resolve=r),job={x,priority,seq:seq++,resolve,promise};
     pending.set(id,job);queue.push(job);drain();return promise;
   }
@@ -122,22 +144,18 @@
     const cards=$$(root+' .issue');
     for(const el of cards){const id=Number(el.dataset.id),m=state.marvel.get(id);if(m)updateRenderedMeta(id,m)}
 
-    // Los primeros elementos visibles se resuelven inmediatamente. No esperamos
-    // a IntersectionObserver para la zona que el usuario ya está viendo.
-    cards.slice(0,18).forEach(el=>hydrateIssueMeta(Number(el.dataset.id)));
+    cards.slice(0,10).forEach(el=>hydrateIssueMeta(Number(el.dataset.id)));
 
     if(!('IntersectionObserver'in window))return;
     uiObserver=new IntersectionObserver(entries=>{
       for(const e of entries){if(!e.isIntersecting)continue;const id=Number(e.target.dataset.id);uiObserver?.unobserve(e.target);hydrateIssueMeta(id)}
-    },{rootMargin:'700px 0px'});
-    cards.slice(18).forEach(el=>uiObserver.observe(el));
+    },{rootMargin:'500px 0px'});
+    cards.slice(10).forEach(el=>uiObserver.observe(el));
   };
 
-  prefetchUpcoming=async function(count=PREFETCH_COUNT){
-    const limit=Math.min(Number(count)||0,BACKGROUND_PREFETCH_LIMIT);if(limit<=0)return;
-    const candidates=(state.filtered||[]).filter(x=>!isResolved(x.id)).slice(0,limit);
-    for(const x of candidates)if(!isFreshMeta(state.marvel.get(Number(x.id))))enqueue(x,1,false);
-  };
+  // Sin precarga de metadatos mientras estabilizamos la resolución. Las tarjetas
+  // visibles tienen prioridad absoluta; el modo lectura seguirá resolviendo al abrir.
+  prefetchUpcoming=async function(){return};
 
   function repaint(){document.querySelectorAll('.issue[data-id]').forEach(el=>{const id=Number(el.dataset.id),m=state.marvel.get(id);if(m)updateRenderedMeta(id,m)})}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>requestAnimationFrame(repaint));else requestAnimationFrame(repaint);
