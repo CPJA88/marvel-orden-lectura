@@ -86,7 +86,7 @@ async function fetchGoogle(url, redirect = 'manual') {
   });
 }
 
-// IMPORTANTE: la identificación vuelve a ser la de v1.1.3: Google restringido
+// La identificación conserva exactamente el método de v1.1.3: Google restringido
 // a marvel.com/comics/issue. El buscador interno de Marvel NO decide el número.
 async function resolveExactIssueWithGoogle(title, issue, year) {
   const lucky = luckyUrl(title, issue, year);
@@ -107,8 +107,6 @@ async function resolveExactIssueWithGoogle(title, issue, year) {
     console.error('Google lucky resolver:', error);
   }
 
-  // Segundo intento: misma consulta exacta, sin btnI, tomando el primer resultado
-  // oficial. Nunca se sustituye por el buscador interno de Marvel.
   try {
     const response = await fetchGoogle(normalGoogleUrl(title, issue, year), 'follow');
     const html = await response.text();
@@ -125,7 +123,7 @@ async function getMarvelHtml(url) {
   const response = await fetch(url, {
     redirect: 'follow',
     headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.3)',
+      'User-Agent': 'Mozilla/5.0 (compatible; MarvelLectura/1.4)',
       'Accept': 'text/html,application/xhtml+xml',
       'Accept-Language': 'en-US,en;q=0.9',
     },
@@ -142,14 +140,16 @@ function extractDigitalLinks(html, issueUrl) {
   const readerId = readerMatch?.[1] || '';
   const webUrl = readerMatch?.[0] || issueUrl;
 
+  // La ruta nativa `reader/` consume el mismo ID que Marvel publica en reader_url.
+  // store_url_mobile/applink se conserva solo como dato legado; no se pasa al reader.
   return {
     issueUrl,
     mobileId,
     readerId,
     webUrl,
-    iosUrl: mobileId ? `marvelunlimited://reader/${mobileId}` : '',
-    androidUrl: mobileId
-      ? `intent://reader/${mobileId}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`
+    iosUrl: readerId ? `marvelunlimited://reader/${readerId}` : '',
+    androidUrl: readerId
+      ? `intent://reader/${readerId}#Intent;scheme=marvelunlimited;package=com.marvel.unlimited;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`
       : '',
   };
 }
@@ -165,12 +165,12 @@ function mobileLauncher(target, fallback, label) {
   const targetAttr = String(target).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   const fallbackAttr = String(fallback).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   const targetJs = JSON.stringify(target).replace(/</g, '\\u003c');
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}.spinner{width:30px;height:30px;margin:24px auto;border:3px solid #ddd8cf;border-top-color:#e62429;border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><div class="spinner"></div><h2>Abriendo Marvel Unlimited</h2><p>La ficha exacta se ha localizado con el mismo método de v1.1.3.</p><a class="app" href="${targetAttr}">${label}</a><a class="web" href="${fallbackAttr}">Abrir este mismo número en la web</a></div><script>const target=${targetJs};let left=false;document.addEventListener('visibilitychange',()=>{if(document.hidden)left=true});setTimeout(()=>{location.href=target},100);setTimeout(()=>{if(!left)document.querySelector('.spinner').style.display='none'},1700);</script></body></html>`, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' } });
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}.spinner{width:30px;height:30px;margin:24px auto;border:3px solid #ddd8cf;border-top-color:#e62429;border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}a{display:block;margin-top:14px;padding:14px;border-radius:14px;text-decoration:none;font-weight:800}.app{background:#e62429;color:#fff}.web{background:#fff;color:#333;border:1px solid #ddd8cf}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><div class="spinner"></div><h2>Abriendo Marvel Unlimited</h2><p>La ficha exacta se ha localizado y se está enviando a la app con el ID del lector.</p><a class="app" href="${targetAttr}">${label}</a><a class="web" href="${fallbackAttr}">Abrir este mismo número en la web</a></div><script>const target=${targetJs};let left=false;document.addEventListener('visibilitychange',()=>{if(document.hidden)left=true});setTimeout(()=>{location.href=target},100);setTimeout(()=>{if(!left)document.querySelector('.spinner').style.display='none'},1700);</script></body></html>`, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store' } });
 }
 
 function unresolvedPage(lucky) {
   const safe = String(lucky).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>No he podido resolver el enlace de la app</h2><p>No voy a sustituirlo por otro cómic. Puedes abrir la búsqueda exacta que usaba la versión que funcionaba.</p><a href="${safe}">Abrir búsqueda exacta</a></div></body></html>`, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+  return new Response(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marvel Unlimited</title><style>body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f3f1ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17181c}.box{width:min(88vw,430px);text-align:center}.logo{display:inline-block;background:#e62429;color:#fff;padding:5px 8px;font-weight:900;font-size:22px}a{display:block;margin-top:20px;padding:14px;border-radius:14px;background:#fff;color:#333;border:1px solid #ddd8cf;text-decoration:none;font-weight:800}p{color:#74747b;font-size:13px;line-height:1.5}</style></head><body><div class="box"><span class="logo">MARVEL</span><h2>No he podido resolver el enlace de la app</h2><p>No voy a sustituirlo por otro cómic. Puedes abrir la búsqueda exacta que usa la versión estable.</p><a href="${safe}">Abrir búsqueda exacta</a></div></body></html>`, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
 }
 
 export default {
@@ -186,7 +186,7 @@ export default {
 
     const lucky = luckyUrl(title, issue, year);
 
-    // Web vuelve literalmente al mecanismo de v1.1.3.
+    // Web conserva literalmente el mecanismo de v1.1.3.
     if (mode === 'web') return redirect(lucky);
 
     try {
@@ -203,7 +203,7 @@ export default {
         return mobileLauncher(comic.androidUrl, comic.webUrl, 'Abrir Marvel Unlimited en Android');
       }
 
-      // Si Marvel no publica ID móvil para ese número, nunca buscamos otro número.
+      // Si Marvel no publica reader_url para ese número, nunca buscamos otro número.
       return redirect(comic.webUrl || comic.issueUrl);
     } catch (error) {
       console.error('Marvel mobile resolver:', error);
