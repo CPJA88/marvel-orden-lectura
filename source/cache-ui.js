@@ -1,11 +1,12 @@
-/* Marvel Lector v1.2.23 — caché Marvel completa preinstalada; red solo como fallback */
+/* Marvel Lector v1.2.24 — caché completa preinstalada con DRN/deeplink */
 (() => {
   const ACTIVE_RESOLVER_VERSION=13;
-  const UI_CACHE_VERSION=10;
+  const UI_CACHE_VERSION=11;
   const UI_META_CONCURRENCY=1;
   const REQUEST_GAP=650;
   const NEGATIVE_RETRY_AGE=15*1000;
   const CONFIRMED_UNAVAILABLE_AGE=7*24*60*60*1000;
+  const SMART_BASE='https://marvel.smart.link/fiir7ec77';
   let uiObserver=null,active=0,seq=0,preinstalledPack=null,preinstalledReady=false,preinstalledSeeded=false;
   const queue=[],pending=new Map(),preinstalledMap=new Map();
 
@@ -13,9 +14,13 @@
     const t=new Date(m?.checkedAt||0).getTime();
     return Number.isFinite(t)?Date.now()-t:Infinity;
   }
+  function smartLinkFrom(drn,sourceId){
+    if(!drn||!sourceId)return '';
+    return `${SMART_BASE}?type=issue&drn=${String(drn)}&sourceId=${encodeURIComponent(String(sourceId))}`;
+  }
   function positive(m){return Boolean(m?.smartLink)}
   function knownAvailable(m){return Boolean(positive(m)||m?.preinstalledStatus===1||(m?.available&&m?.sourceId))}
-  function confirmedUnavailable(m){return Boolean(m?.preinstalledStatus===0||(m?.issueUrl&&m?.reason==='reader-unavailable'))}
+  function confirmedUnavailable(m){return Boolean(m?.preinstalledStatus===3||(m?.issueUrl&&m?.reason==='reader-unavailable'))}
   function sourceIdOf(m){
     if(m?.sourceId)return String(m.sourceId);
     const hit=String(m?.issueUrl||'').match(/\/comics\/issue\/(\d+)/i);
@@ -33,17 +38,20 @@
 
   function unpackPreinstalled(row,generatedAt){
     if(!Array.isArray(row)||row.length<4)return null;
-    const id=Number(row[0]),sourceId=Number(row[1])||0,readerId=Number(row[2])||0,status=Number(row[3]),coverUrl=String(row[4]||'');
+    const id=Number(row[0]),sourceId=Number(row[1])||0,readerId=Number(row[2])||0,status=Number(row[3]),coverUrl=String(row[4]||''),drn=String(row[5]||'');
     if(!id)return null;
+    const smartLink=smartLinkFrom(drn,sourceId);
     return {
       id,
       sourceId:sourceId?String(sourceId):'',
       readerId:readerId?String(readerId):'',
       coverUrl,
+      drn,
+      smartLink,
       preinstalled:true,
       preinstalledStatus:status,
       available:status===1,
-      reason:status===1?'preinstalled-mu':status===0?'reader-unavailable':'preinstalled-ambiguous',
+      reason:smartLink?'ok':status===1?'preinstalled-mu':status===3?'reader-unavailable':status===2?'preinstalled-ambiguous':'preinstalled-unknown',
       resolverVersion:ACTIVE_RESOLVER_VERSION,
       uiCacheVersion:UI_CACHE_VERSION,
       checkedAt:generatedAt||'2000-01-01T00:00:00.000Z'
@@ -57,12 +65,15 @@
     if(old.smartLink){
       merged={...baked,...old,preinstalled:true,preinstalledStatus:baked.preinstalledStatus};
       if(!merged.coverUrl&&baked.coverUrl)merged.coverUrl=baked.coverUrl;
+      if(!merged.drn&&baked.drn)merged.drn=baked.drn;
       merged.available=true;merged.reason='ok';
     }else{
       merged={...old,...baked};
-      if(old.drn)merged.drn=old.drn;
+      if(old.drn&&!merged.drn)merged.drn=old.drn;
       if(old.readerId&&!merged.readerId)merged.readerId=old.readerId;
       if(old.sourceId&&!merged.sourceId)merged.sourceId=old.sourceId;
+      if(!merged.smartLink&&merged.drn&&merged.sourceId)merged.smartLink=smartLinkFrom(merged.drn,merged.sourceId);
+      if(merged.smartLink){merged.available=true;merged.reason='ok'}
     }
     state.marvel.set(Number(id),merged);
     return merged;
@@ -76,7 +87,7 @@
   const preinstalledPromise=(async()=>{
     try{
       const pack=await loadJSON('data/marvel-cache/index.json');
-      if(!pack?.ready||!Array.isArray(pack.entries)||!pack.entries.length)return null;
+      if(!pack?.ready||!Array.isArray(pack.entries)||pack.entries.length<50000)return null;
       preinstalledPack=pack;
       for(const row of pack.entries){const item=unpackPreinstalled(row,pack.generatedAt);if(item)preinstalledMap.set(item.id,item)}
       preinstalledReady=true;
@@ -87,13 +98,10 @@
     }
   })();
 
-  // init() de app.js empieza antes que este script, pero se detiene en sus await.
-  // setupMeta se ejecuta después de cargar IndexedDB; lo envolvemos para sembrar
-  // la caché estática sin que pueda ser reemplazada posteriormente por el DB local.
   const baseSetupMeta=setupMeta;
   setupMeta=function(...args){
     const result=baseSetupMeta.apply(this,args);
-    preinstalledPromise.then(()=>{seedAllPreinstalled()});
+    preinstalledPromise.then(()=>seedAllPreinstalled());
     return result;
   };
 
@@ -109,10 +117,11 @@
   unlimitedState=function(m){
     if(knownAvailable(m))return{label:'Unlimited ✓',cls:'available'};
     if(confirmedUnavailable(m))return{label:'Sin Unlimited',cls:'unavailable'};
-    if(m?.preinstalledStatus===2)return{label:'Unlimited · no verificado',cls:'unresolved'};
+    if(m?.preinstalledStatus===2)return{label:'Unlimited · coincidencia dudosa',cls:'unresolved'};
+    if(m?.preinstalledStatus===0)return{label:'No consta en Unlimited',cls:'unresolved'};
     if(m?.reason==='drn-unavailable')return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
     if(m?.reason==='resolver-error')return{label:'Unlimited · reintentando',cls:'pending-meta'};
-    return{label:preinstalledReady?'Unlimited · no consta':'Unlimited · cargando caché',cls:'pending-meta'};
+    return{label:preinstalledReady?'No consta en Unlimited':'Unlimited · cargando caché',cls:'pending-meta'};
   };
   metaBadge=function(id){
     const st=unlimitedState(state.marvel.get(Number(id)));
@@ -162,7 +171,8 @@
     }
     const merged={...(baked||{}),...old,...data,id:Number(id),checkedAt:now,uiCacheVersion:UI_CACHE_VERSION};
     if(old.smartLink&&!merged.smartLink){merged.smartLink=old.smartLink;merged.available=true;merged.reason='ok'}
-    if(!merged.sourceId&&old.sourceId)merged.sourceId=old.sourceId;
+    if(!merged.smartLink&&merged.drn&&merged.sourceId)merged.smartLink=smartLinkFrom(merged.drn,merged.sourceId);
+    if(merged.smartLink){merged.available=true;merged.reason='ok'}
     return merged;
   }
 
@@ -205,7 +215,6 @@
     await preinstalledPromise;
     const n=Number(id),baked=mergePreinstalled(n),cached=baked||state.marvel.get(n);
     if(cached)updateRenderedMeta(n,cached);
-    // Una caché completa no debe volver a analizar tarjetas mientras se hace scroll.
     if(cached?.preinstalled)return cached;
     if(isFreshMeta(cached))return cached;
     const x=await findIssueById(n);if(!x)return null;return enqueue(x,0,false);
@@ -226,7 +235,6 @@
     cards.slice(8).forEach(el=>uiObserver.observe(el));
   };
 
-  // No hay precarga/resolución remota por lotes: el índice estático sustituye ese trabajo.
   prefetchUpcoming=async function(){await preinstalledPromise;return};
 
   function repaint(){
