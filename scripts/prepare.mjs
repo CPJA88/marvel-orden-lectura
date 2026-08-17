@@ -6,7 +6,7 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.5-cache-render';
+const uiVersion='v1.2.6-visible-meta';
 
 for(const file of [archive,path.join(source,'index.html'),path.join(source,'styles.css'),path.join(source,'enhancements.css'),path.join(source,'diagnostics.css'),path.join(source,'app.js'),path.join(source,'diagnostics.js'),path.join(source,'resolver-ui.js'),path.join(source,'cache-ui.js')]){
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
@@ -43,4 +43,4 @@ manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: portadas persistentes al cambiar filtros y metadata Unlimited alineada con resolver v5; apertura Smart Link estable sin cambios.`);
+console.log(`PWA Marvel construida con ${uiVersion}: tarjetas visibles priorizan portada y estado Unlimited mediante el resolver estable; precarga subordinada; apertura Smart Link sin cambios.`);
