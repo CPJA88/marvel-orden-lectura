@@ -24,8 +24,8 @@ replaceOnce(
 const marker='\nasync function loadExisting(){';
 const helpers=String.raw`
 const PREBUILD_BATCH_SIZE=500;
-const PREBUILD_CHECKPOINT_VERSION=3;
-const PREBUILD_CHECKPOINT_TTL=24*60*60*1000;
+const PREBUILD_CHECKPOINT_VERSION=4;
+const PREBUILD_CHECKPOINT_TTL=72*60*60*1000;
 const prebuildCheckpointDir=path.join(root,'.cache','marvel-prebuild-v3');
 const prebuildCheckpointFile=path.join(prebuildCheckpointDir,'checkpoint.json');
 
@@ -75,14 +75,43 @@ async function writePrebuildCheckpoint(signature,total,entries,phase){
   await fs.writeFile(tmp,JSON.stringify(data));
   await fs.rename(tmp,prebuildCheckpointFile);
 }
-async function clearPrebuildCheckpoint(){
-  await fs.rm(prebuildCheckpointFile,{force:true}).catch(()=>{});
+function unresolvedPositions(entries){
+  const out=[];
+  for(let i=0;i<entries.length;i++){
+    const status=Number(entries[i]?.[3]);
+    if(status===STATUS.AMBIGUOUS||status===STATUS.UNKNOWN)out.push(i);
+  }
+  return out;
+}
+async function rescueFinalAmbiguous(local,byNumber,entries,signature,total){
+  let positions=unresolvedPositions(entries);
+  if(!positions.length)return;
+  console.log('Rescate final de '+positions.length+' estados no terminales con verificación secuencial.');
+  for(let pass=1;pass<=3&&positions.length;pass++){
+    console.log('Rescate agresivo, pasada '+pass+': '+positions.length+' pendientes.');
+    for(const i of positions){
+      const row=candidateRowBatched(local.issues[i],local,byNumber);
+      officialCache.clear();
+      await sleep(750*pass);
+      entries[i]=await verifyCandidateRow(row);
+      if(global.gc)global.gc();
+    }
+    await writePrebuildCheckpoint(signature,total,entries,'rescue-'+pass);
+    positions=unresolvedPositions(entries);
+  }
+  if(positions.length){
+    console.error('Persisten '+positions.length+' coincidencias ambiguas tras el rescate final:');
+    for(const i of positions){
+      const row=candidateRowBatched(local.issues[i],local,byNumber);
+      console.error('AMBIGUO FINAL GCD '+row.gcdId+' | '+row.localTitle+' #'+row.issueNumber+' | candidatos sourceId='+row.candidates.map(c=>c.sourceId).join(','));
+    }
+  }
 }
 async function verifyBatched(local,remote){
   const byNumber=buildRemoteNumberIndex(remote),signature=checkpointSignature(local,remote),total=local.issues.length;
   const checkpoint=await readPrebuildCheckpoint(signature,total);
   const entries=checkpoint?.entries||[];
-  if(entries.length)console.log('Checkpoint restaurado: '+entries.length+'/'+total+' números ya verificados.');
+  if(entries.length)console.log('Checkpoint restaurado: '+entries.length+'/'+total+' números ya verificados; fase='+String(checkpoint.phase||'desconocida')+'.');
 
   for(let start=entries.length;start<total;start+=PREBUILD_BATCH_SIZE){
     const end=Math.min(start+PREBUILD_BATCH_SIZE,total);
@@ -98,11 +127,7 @@ async function verifyBatched(local,remote){
   }
 
   for(let pass=1;pass<=2;pass++){
-    const positions=[];
-    for(let i=0;i<entries.length;i++){
-      const status=Number(entries[i]?.[3]);
-      if(status===STATUS.AMBIGUOUS||status===STATUS.UNKNOWN)positions.push(i);
-    }
+    const positions=unresolvedPositions(entries);
     if(!positions.length)break;
     console.log('Reintentando '+positions.length+' estados no terminales (pasada '+pass+').');
     for(let start=0;start<positions.length;start+=PREBUILD_BATCH_SIZE){
@@ -110,13 +135,14 @@ async function verifyBatched(local,remote){
       const verified=await verifyCandidateRows(rows);
       for(let j=0;j<pos.length;j++)entries[pos[j]]=verified[j];
       officialCache.clear();
-      await writePrebuildCheckpoint(signature,total,entries,'verify-retry');
+      await writePrebuildCheckpoint(signature,total,entries,'verify-retry-'+pass);
       console.log('Reverificación '+Math.min(start+pos.length,positions.length)+'/'+positions.length);
       if(global.gc)global.gc();
     }
     await sleep(1500);
   }
 
+  await rescueFinalAmbiguous(local,byNumber,entries,signature,total);
   await writePrebuildCheckpoint(signature,total,entries,'verified');
   return entries;
 }
@@ -132,15 +158,6 @@ replaceOnce(
   entries=await verifyBatched(local,catalog.issues);officiallyVerified=true;
   reuseExistingDrns(entries,existing);`,
 'verificación monolítica'
-);
-
-replaceOnce(
-`await fs.writeFile(outFile,JSON.stringify(payload));
-console.log(\`Caché escrita: \${outFile}\`);`,
-`await fs.writeFile(outFile,JSON.stringify(payload));
-await clearPrebuildCheckpoint();
-console.log(\`Caché escrita: \${outFile}\`);`,
-'limpieza del checkpoint'
 );
 
 await fs.writeFile(tempFile,source);
