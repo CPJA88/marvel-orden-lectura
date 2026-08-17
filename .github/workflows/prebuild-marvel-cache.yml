@@ -12,13 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: marvel-preinstalled-cache-v2
-  cancel-in-progress: false
+  group: marvel-preinstalled-cache-v3
+  cancel-in-progress: true
 
 jobs:
   build-cache:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,21 +33,39 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Generate complete preinstalled cache
-        run: node scripts/generate-marvel-cache.mjs
+      - name: Generate and verify complete preinstalled cache
+        run: REFRESH_CATALOG=1 node scripts/generate-marvel-cache.mjs
 
-      - name: Validate cache
+      - name: Validate cache strictly
         run: |
           node - <<'NODE'
           const fs=require('fs');
           const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
           if(!p.ready) throw new Error('cache ready=false');
-          if(p.version < 2) throw new Error(`formato antiguo: v${p.version}`);
+          if(Number(p.version) < 3) throw new Error(`formato sin verificación oficial: v${p.version}`);
+          if(p.officiallyVerified !== true) throw new Error('officiallyVerified=false');
           if(p.localCount < 50000) throw new Error(`localCount incompleto: ${p.localCount}`);
           if(!Array.isArray(p.entries) || p.entries.length !== p.localCount) throw new Error('entries incompleto');
+          if(Number(p.unknown)!==0) throw new Error(`quedan ${p.unknown} números unknown`);
+          if(Number(p.ambiguous)!==0) throw new Error(`quedan ${p.ambiguous} coincidencias ambiguas`);
+          if(Number(p.linkMissing)!==0) throw new Error(`quedan ${p.linkMissing} números de Unlimited sin DRN`);
           if(!p.linksPrebuilt) throw new Error('linksPrebuilt=false');
-          if(p.matched > 0 && p.linkReady === 0) throw new Error('no se ha podido preconstruir ningún DRN');
-          console.log({localCount:p.localCount,catalogCount:p.catalogCount,matched:p.matched,noDigital:p.unavailable,ambiguous:p.ambiguous,unknown:p.unknown,linkReady:p.linkReady,linkMissing:p.linkMissing});
+          const terminal=Number(p.matched||0)+Number(p.unavailable||0)+Number(p.notListed||0);
+          if(terminal!==Number(p.localCount)) throw new Error(`clasificación no terminal: ${terminal}/${p.localCount}`);
+          for(const row of p.entries){
+            const status=Number(row?.[3]);
+            if(![1,3,4].includes(status)) throw new Error(`estado no terminal ${status} en GCD ${row?.[0]}`);
+            if(status===1&&(!row?.[1]||!row?.[2]||!row?.[5])) throw new Error(`Unlimited sin sourceId/readerId/DRN en GCD ${row?.[0]}`);
+            if(status===3&&!row?.[1]) throw new Error(`noDigital sin sourceId oficial en GCD ${row?.[0]}`);
+          }
+          const bySource=new Map(p.entries.filter(r=>Number(r?.[1])>0).map(r=>[Number(r[1]),r]));
+          const captainAmericaNoDigital=[7865,7866,7867,7868,7869,7870,7872];
+          for(const sourceId of captainAmericaNoDigital){
+            const row=bySource.get(sourceId);
+            if(!row) throw new Error(`regresión: Captain America sourceId ${sourceId} no fue identificado`);
+            if(Number(row[3])!==3) throw new Error(`regresión: Captain America sourceId ${sourceId} debe ser noDigital y quedó en estado ${row[3]}`);
+          }
+          console.log({localCount:p.localCount,catalogCount:p.catalogCount,verifiedMU:p.matched,noDigital:p.unavailable,notListed:p.notListed,ambiguous:p.ambiguous,unknown:p.unknown,linkReady:p.linkReady,linkMissing:p.linkMissing,officiallyVerified:p.officiallyVerified});
           NODE
 
       - name: Commit generated cache
@@ -59,6 +77,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json
-          git commit -m 'cache: actualizar índice Marvel preinstalado con DRN'
+          git commit -m 'cache: publicar índice Marvel V3 verificado'
           git pull --rebase origin main
           git push origin HEAD:main
