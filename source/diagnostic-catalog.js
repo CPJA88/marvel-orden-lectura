@@ -1,6 +1,9 @@
 /* Marvel Lector v1.2.11 — detalles del catálogo oficial en diagnóstico */
 (() => {
   if(typeof diagnosticReport!=='function')return;
+  const CATALOG_SCHEMA_KEY='catalogDiagnosticOfficialSeriesSchema';
+  const CATALOG_SCHEMA_VERSION=1;
+
   const previousDiagnosticReport=diagnosticReport;
   diagnosticReport=function(d){
     const base=previousDiagnosticReport(d)
@@ -24,5 +27,19 @@
       if(f.issueUrl)lines.push(`issueUrl=${f.issueUrl}`);
     }
     return base+lines.join('\n');
+  };
+
+  // No mezclar los siete falsos LOOKUP_UNRESOLVED de la etapa Google/429 con
+  // resultados del nuevo resolver basado en el catálogo oficial de series.
+  const previousOpenDiagnostic=openDiagnostic;
+  openDiagnostic=async function(){
+    const schema=await DB.kvGet(CATALOG_SCHEMA_KEY);
+    if(schema!==CATALOG_SCHEMA_VERSION){
+      await DB.kvSet(DIAGNOSTIC_KEY,null);
+      await DB.kvSet(CATALOG_SCHEMA_KEY,CATALOG_SCHEMA_VERSION);
+      diagnosticState=null;
+    }
+    await previousOpenDiagnostic();
+    const area=$('#diagnosticReport');if(area)area.value=diagnosticReport(diagnosticState);
   };
 })();
