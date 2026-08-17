@@ -14,7 +14,7 @@ function unwrapGoogleLocation(location=''){try{const a=new URL(location,GOOGLE_O
 function extractMarvelIssueFromGoogleHtml(html=''){const clean=unescapeHtml(html).replace(/%2F/gi,'/').replace(/%3A/gi,':');const direct=clean.match(/https?:\/\/(?:www\.)?marvel\.com\/comics\/issue\/\d+\/[A-Za-z0-9_()%.,+\-]+/gi)||[];for(const c of direct)if(isMarvelIssueUrl(c))return cleanMarvelIssueUrl(c);const links=clean.match(/\/url\?[^"'<>\s]+/gi)||[];for(const link of links){try{const p=new URL(link.replace(/&amp;/g,'&'),GOOGLE_ORIGIN),target=p.searchParams.get('q')||p.searchParams.get('url')||'';if(isMarvelIssueUrl(target))return cleanMarvelIssueUrl(target)}catch{}}return ''}
 async function fetchGoogle(url,redirect='manual'){return fetch(url,{redirect,headers:{'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1','Accept':'text/html,application/xhtml+xml','Accept-Language':'es-ES,es;q=0.9,en;q=0.6'}})}
 async function resolveExactIssueWithGoogle(title,issue,year){const lucky=luckyUrl(title,issue,year);try{const response=await fetchGoogle(lucky,'manual'),loc=unwrapGoogleLocation(response.headers.get('Location')||'');if(loc)return loc;if(isMarvelIssueUrl(response.url))return cleanMarvelIssueUrl(response.url);const html=await response.text(),from=extractMarvelIssueFromGoogleHtml(html);if(from)return from}catch(e){console.error('Google lucky resolver:',e)}try{const response=await fetchGoogle(normalGoogleUrl(title,issue,year),'follow'),html=await response.text(),from=extractMarvelIssueFromGoogleHtml(html);if(from)return from}catch(e){console.error('Google normal resolver:',e)}return ''}
-async function fetchHtml(url){const response=await fetch(url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; MarvelLectura/2.2)','Accept':'text/html,application/xhtml+xml','Accept-Language':'en-US,en;q=0.9'}});if(!response.ok)throw new Error(`${url} respondió ${response.status}`);return response.text()}
+async function fetchHtml(url){const response=await fetch(url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; MarvelLectura/2.3)','Accept':'text/html,application/xhtml+xml','Accept-Language':'en-US,en;q=0.9'}});if(!response.ok)throw new Error(`${url} respondió ${response.status}`);return response.text()}
 function extractReaderData(html,issueUrl){const clean=unescapeHtml(html),match=clean.match(/https:\/\/read\.marvel\.com\/#\/book\/(\d+)/i);return{readerId:match?.[1]||'',webUrl:match?.[0]||issueUrl}}
 function absoluteImage(url=''){let v=unescapeHtml(url).trim();if(v.startsWith('//'))v='https:'+v;return /^https?:\/\//i.test(v)?v:''}
 function extractCoverUrl(html=''){const clean=unescapeHtml(html);let patterns=[/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i,/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i,/"image"\s*:\s*"(https?:[^"\\]+(?:\\.[^"\\]*)*)"/i,/"image_url"\s*:\s*"([^"]+)"/i];for(const p of patterns){const m=clean.match(p);if(m){const u=absoluteImage(m[1]);if(u)return u}}return ''}
@@ -26,7 +26,7 @@ async function resolveMeta(title,issue,year,force=false){
   const key=cacheKey(title,issue,year),cache=typeof caches!=='undefined'?caches.default:null;
   if(!force&&cache){const hit=await cache.match(key);if(hit){try{return await hit.json()}catch{}}}
   const issueUrl=await resolveExactIssueWithGoogle(title,issue,year);
-  if(!issueUrl)return{available:false,issueUrl:'',sourceId:'',readerId:'',drn:'',smartLink:'',webUrl:luckyUrl(title,issue,year),coverUrl:'',pageTitle:'',reason:'issue-not-found'};
+  if(!issueUrl)return{available:false,issueUrl:'',sourceId:'',readerId:'',drn:'',smartLink:'',webUrl:luckyUrl(title,issue,year),coverUrl:'',pageTitle:'',reason:'lookup-unresolved'};
   const sourceId=sourceIdFromIssueUrl(issueUrl),html=await fetchHtml(issueUrl),{readerId,webUrl}=extractReaderData(html,issueUrl),coverUrl=extractCoverUrl(html),pageTitle=extractPageTitle(html);
   let drn='',smartLink='';
   if(readerId&&sourceId){try{drn=await resolveLegacyDrn(readerId);smartLink=buildSmartLink(drn,sourceId)}catch(e){console.error('Legacy DRN:',e)}}
@@ -46,14 +46,22 @@ function evaluateMatch(title,issue,year,pageTitle,issueUrl){
   const titleOk=tokenHits>=0.55;
   return{titleOk,issueOk,yearOk,tokenHits:Number(tokenHits.toFixed(2)),possibleMismatch:!(titleOk&&issueOk&&yearOk)}
 }
-async function verifyUrl(url){if(!url)return{ok:false,status:0,location:'',error:'missing-url'};try{const response=await fetch(url,{method:'GET',redirect:'manual',headers:{'User-Agent':'Mozilla/5.0 (compatible; MarvelLectura-Diagnostic/1.0)','Accept':'text/html,*/*;q=0.8'}});return{ok:response.status>=200&&response.status<400,status:response.status,location:response.headers.get('Location')||'',error:''}}catch(e){return{ok:false,status:0,location:'',error:String(e?.message||e)}}}
-async function diagnosticMeta(title,issue,year){
-  const meta=await resolveMeta(title,issue,year,true);
+async function verifyUrl(url){if(!url)return{ok:false,status:0,location:'',error:'missing-url'};try{const response=await fetch(url,{method:'GET',redirect:'manual',headers:{'User-Agent':'Mozilla/5.0 (compatible; MarvelLectura-Diagnostic/1.1)','Accept':'text/html,*/*;q=0.8'}});return{ok:response.status>=200&&response.status<400,status:response.status,location:response.headers.get('Location')||'',error:''}}catch(e){return{ok:false,status:0,location:'',error:String(e?.message||e)}}}
+function knownMetaFromUrl(url){
+  const issueUrl=url.searchParams.get('knownIssueUrl')||'',smartLink=url.searchParams.get('knownSmartLink')||'';
+  if(!issueUrl||!smartLink)return null;
+  return{available:true,issueUrl,sourceId:url.searchParams.get('knownSourceId')||sourceIdFromIssueUrl(issueUrl),readerId:url.searchParams.get('knownReaderId')||'',drn:url.searchParams.get('knownDrn')||'',smartLink,webUrl:url.searchParams.get('knownWebUrl')||issueUrl,coverUrl:'',pageTitle:url.searchParams.get('knownPageTitle')||'',reason:'client-cache'}
+}
+async function diagnosticMeta(title,issue,year,known=null){
+  // El diagnóstico usa exactamente la misma resolución/caché que el botón real.
+  // Si el cliente ya dispone de un Smart Link funcional, se valida ese mismo enlace
+  // en lugar de ignorarlo y volver a resolver el cómic desde cero.
+  const meta=known||await resolveMeta(title,issue,year,false);
   const match=meta.issueUrl?evaluateMatch(title,issue,year,meta.pageTitle,meta.issueUrl):{titleOk:false,issueOk:false,yearOk:false,tokenHits:0,possibleMismatch:false};
   const [appCheck,webCheck]=await Promise.all([meta.smartLink?verifyUrl(meta.smartLink):Promise.resolve({ok:false,status:0,location:'',error:'missing-smartlink'}),meta.webUrl&&meta.readerId?verifyUrl(meta.webUrl):Promise.resolve({ok:false,status:0,location:'',error:'missing-reader'})]);
   let diagnosticCode='OK';
-  if(!meta.issueUrl)diagnosticCode='NO_MARVEL_MATCH';
-  else if(match.possibleMismatch)diagnosticCode='POSSIBLE_MISMATCH';
+  if(!meta.issueUrl)diagnosticCode='LOOKUP_UNRESOLVED';
+  else if(meta.pageTitle&&match.possibleMismatch)diagnosticCode='POSSIBLE_MISMATCH';
   else if(!meta.readerId)diagnosticCode='NOT_IN_UNLIMITED';
   else if(!meta.drn)diagnosticCode='DRN_MISSING';
   else if(!meta.smartLink)diagnosticCode='SMARTLINK_MISSING';
@@ -69,7 +77,7 @@ export default{async fetch(request,env){
   const title=(url.searchParams.get('title')||'').trim(),issue=(url.searchParams.get('issue')||'').trim(),year=(url.searchParams.get('year')||'').trim(),mode=(url.searchParams.get('mode')||'web').toLowerCase();
   if(!title)return new Response('Falta el título del cómic.',{status:400});const lucky=luckyUrl(title,issue,year);if(mode==='web')return redirect(lucky);
   try{
-    if(mode==='diagnostic'){const data=await diagnosticMeta(title,issue,year);return Response.json({title,issue,year,...data},{headers:{'Cache-Control':'no-store'}})}
+    if(mode==='diagnostic'){const data=await diagnosticMeta(title,issue,year,knownMetaFromUrl(url));return Response.json({title,issue,year,...data},{headers:{'Cache-Control':'no-store'}})}
     const meta=await resolveMeta(title,issue,year,false);
     if(mode==='meta')return Response.json(meta,{headers:{'Cache-Control':`public, max-age=${META_TTL}`}});
     if(mode==='debug')return Response.json({title,issue,year,...meta},{headers:{'Cache-Control':'no-store'}});
