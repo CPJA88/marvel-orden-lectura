@@ -2,7 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "marvel-orden-lectura",
   "compatibility_date": "2026-08-15",
-  "main": "./src/worker-stability-v20.js",
+  "main": "./src/worker-stability-v21.js",
   "build": {
     "command": "npm run build"
   },
