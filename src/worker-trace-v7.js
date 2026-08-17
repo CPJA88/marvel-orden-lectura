@@ -1,4 +1,4 @@
-import baseWorker from './worker-loadmore-v14.js';
+import baseWorker from './worker-loadmore-v15.js';
 
 function classify(f){
   if(f?.smartLink)return'OK';
