@@ -6,7 +6,7 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.12-canonical-catalog';
+const uiVersion='v1.2.13-catalog-map';
 
 for(const file of [archive,path.join(source,'index.html'),path.join(source,'styles.css'),path.join(source,'enhancements.css'),path.join(source,'diagnostics.css'),path.join(source,'app.js'),path.join(source,'diagnostics.js'),path.join(source,'resolver-ui.js'),path.join(source,'cache-ui.js'),path.join(source,'diagnostic-trace.js'),path.join(source,'diagnostic-catalog.js')]){
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
@@ -47,4 +47,4 @@ manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','diagnostic-trace.js','diagnostic-catalog.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: índice canónico www.marvel.com, recorrido y caché por serie, Google solo como último fallback y diagnóstico V2 sin búsquedas repetitivas.`);
+console.log(`PWA Marvel construida con ${uiVersion}: mapa compacto por serie sin recorridos masivos, alias históricos por año y diagnóstico V3 con claves del catálogo.`);
