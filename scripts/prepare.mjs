@@ -6,19 +6,23 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.22-structured-links';
+const marvelCacheSource=path.join(source,'marvel-cache');
+const uiVersion='v1.2.23-preinstalled-cache';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'];
 
 for(const name of sourceFiles){
   const file=path.join(source,name);
   try{await fs.access(file)}catch{console.error(`Falta ${path.relative(root,file)}.`);process.exit(1)}
 }
+try{await fs.access(path.join(marvelCacheSource,'index.json'))}catch{console.error('Falta source/marvel-cache/index.json.');process.exit(1)}
 try{await fs.access(archive)}catch{console.error('Falta Marvel_Orden_de_Lectura_PWA.zip.');process.exit(1)}
 
 await fs.rm(output,{recursive:true,force:true});
 await fs.mkdir(output,{recursive:true});
 await extract(archive,{dir:output});
 for(const name of sourceFiles)await fs.copyFile(path.join(source,name),path.join(output,name));
+await fs.mkdir(path.join(output,'data','marvel-cache'),{recursive:true});
+await fs.cp(marvelCacheSource,path.join(output,'data','marvel-cache'),{recursive:true});
 
 const indexPath=path.join(output,'index.html');
 let index=await fs.readFile(indexPath,'utf8');
@@ -43,5 +47,6 @@ const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
 manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
-for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: sourceId y digitalId desde metadata estructurada; DRN desde share.marvel.com; Smart Link exacto marvel.smart.link; portada Marvel por sourceId con GCD solo como fallback.`);
+for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
+const baked=JSON.parse(await fs.readFile(path.join(output,'data','marvel-cache','index.json'),'utf8'));
+console.log(`PWA Marvel construida con ${uiVersion}: caché preinstalada ready=${Boolean(baked.ready)}, registros=${baked.localCount||0}, MU=${baked.matched||0}, ambiguos=${baked.ambiguous||0}. Los IDs se resuelven localmente; solo el DRN se obtiene al abrir un cómic si aún no está cacheado.`);
