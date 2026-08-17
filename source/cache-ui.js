@@ -1,23 +1,52 @@
-/* Marvel Lector v1.2.6 — hidratación visible prioritaria y resolver estable */
+/* Marvel Lector v1.2.7 — caché Marvel no destructiva + reintento de no resueltos */
 (() => {
   const ACTIVE_RESOLVER_VERSION=5;
+  const UI_CACHE_VERSION=2;
   const UI_META_CONCURRENCY=3;
   const BACKGROUND_PREFETCH_LIMIT=8;
+  const NEGATIVE_RETRY_AGE=2*60*1000;
+  const CONFIRMED_UNAVAILABLE_AGE=7*24*60*60*1000;
   let uiObserver=null;
   let uiMetaActive=0;
   let jobSeq=0;
   const uiJobs=[];
   const uiPending=new Map();
 
-  // La interfaz solo considera fresca metadata del Worker estable actual.
-  // Las portadas antiguas pueden seguir mostrándose aunque sus metadatos
-  // necesiten revalidación.
-  isFreshMeta=m=>Boolean(
-    m&&Number(m.resolverVersion)===ACTIVE_RESOLVER_VERSION&&m.checkedAt&&
-    Date.now()-new Date(m.checkedAt).getTime()<META_MAX_AGE
-  );
+  function ageOf(m){
+    if(!m?.checkedAt)return Infinity;
+    const t=new Date(m.checkedAt).getTime();
+    return Number.isFinite(t)?Date.now()-t:Infinity;
+  }
+  function isPositiveMeta(m){return Boolean(m?.available&&m?.smartLink&&m?.issueUrl)}
+  function isConfirmedUnavailable(m){return Boolean(m?.issueUrl&&m?.reason==='reader-unavailable')}
+
+  // Un Smart Link ya resuelto es un dato positivo y se conserva aunque proceda
+  // de la versión anterior. Los negativos ambiguos duran solo dos minutos.
+  isFreshMeta=m=>{
+    if(!m)return false;
+    const age=ageOf(m);
+    if(isPositiveMeta(m))return age<META_MAX_AGE;
+    if(Number(m.resolverVersion)!==ACTIVE_RESOLVER_VERSION||Number(m.uiCacheVersion)!==UI_CACHE_VERSION)return false;
+    if(isConfirmedUnavailable(m))return age<CONFIRMED_UNAVAILABLE_AGE;
+    return age<NEGATIVE_RETRY_AGE;
+  };
 
   function cachedCover(id){return state.marvel.get(Number(id))?.coverUrl||''}
+
+  // El estado visual nunca degrada un Smart Link conocido a gris solo porque
+  // toque revalidarlo. Si ya funcionó, se muestra como disponible.
+  unlimitedState=function(m){
+    if(isPositiveMeta(m))return{label:'Unlimited ✓',cls:'available'};
+    if(isConfirmedUnavailable(m)&&isFreshMeta(m))return{label:'Sin Unlimited',cls:'unavailable'};
+    if(m?.reason==='possible-mismatch'&&isFreshMeta(m))return{label:'Coincidencia dudosa',cls:'unresolved'};
+    if(m?.reason==='drn-unavailable'&&isFreshMeta(m))return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
+    if(m&&isFreshMeta(m))return{label:'No identificado',cls:'unresolved'};
+    return{label:'Unlimited · comprobando',cls:'pending-meta'};
+  };
+  metaBadge=function(id){
+    const st=unlimitedState(state.marvel.get(Number(id)));
+    return `<span class="badge marvel-state ${st.cls}" data-meta-badge>${st.label}</span>`;
+  };
 
   // Mantener cualquier portada ya conocida al reconstruir tarjetas por filtros.
   card=function(issue,collection=false){
@@ -31,15 +60,53 @@
 
   function mergeMeta(id,data){
     const old=state.marvel.get(Number(id))||{};
-    return {...old,id:Number(id),checkedAt:new Date().toISOString(),...data};
+    const now=new Date().toISOString();
+    const incomingPositive=isPositiveMeta(data);
+    const oldPositive=isPositiveMeta(old);
+
+    // Si ya teníamos un enlace funcional, una respuesta ambigua o un fallo
+    // temporal NO puede destruirlo. Guardamos el intento para diagnóstico.
+    if(oldPositive&&!incomingPositive){
+      return {
+        ...old,
+        id:Number(id),
+        checkedAt:old.checkedAt||now,
+        uiCacheVersion:UI_CACHE_VERSION,
+        lastCheckedAt:now,
+        lastAttemptReason:data?.reason||data?.error||'unresolved',
+        coverUrl:old.coverUrl||data?.coverUrl||''
+      };
+    }
+
+    const merged={
+      ...old,
+      ...data,
+      id:Number(id),
+      checkedAt:now,
+      uiCacheVersion:UI_CACHE_VERSION
+    };
+    // Nunca borrar una portada buena porque una respuesta nueva no incluya og:image.
+    merged.coverUrl=data?.coverUrl||old.coverUrl||'';
+    // Tampoco borrar identificadores positivos con cadenas vacías en una actualización.
+    if(incomingPositive){
+      merged.issueUrl=data.issueUrl||old.issueUrl||'';
+      merged.sourceId=data.sourceId||old.sourceId||'';
+      merged.readerId=data.readerId||old.readerId||'';
+      merged.drn=data.drn||old.drn||'';
+      merged.smartLink=data.smartLink||old.smartLink||'';
+      merged.webUrl=data.webUrl||old.webUrl||'';
+      merged.available=Boolean(merged.smartLink);
+      merged.reason=merged.available?'ok':data.reason;
+    }
+    return merged;
   }
 
   async function runUiMetaJob(job){
     const x=job.x,id=Number(x.id),old=state.marvel.get(id);
     try{
       const s=state.seriesMap.get(x.s)||{};
-      // mode=debug usa resolveAppMeta(): el resolver estable del botón que abre
-      // Marvel Unlimited. No usa el resolver masivo del diagnóstico.
+      // mode=debug y mode=app comparten resolveAppMeta en el Worker estable.
+      // Se solicita JSON para poder pintar portada + estado sin navegar fuera.
       const r=await fetch(marvelQuery(x,s,'debug'),{cache:'no-store',headers:{Accept:'application/json'}});
       if(!r.ok)throw new Error(`Marvel ${r.status}`);
       const data=await r.json(),m=mergeMeta(id,data);
@@ -49,7 +116,6 @@
       job.resolve(m);
     }catch(e){
       console.warn('Marvel visible meta',id,e);
-      // Nunca sustituir una portada/Smart Link válido por un error transitorio.
       if(old)updateRenderedMeta(id,old);
       job.resolve(old||null);
     }finally{
@@ -61,7 +127,6 @@
 
   function drainUiMetaQueue(){
     while(uiMetaActive<UI_META_CONCURRENCY&&uiJobs.length){
-      // priority 0 = visible/interactivo; priority 1 = precarga.
       let best=0;
       for(let i=1;i<uiJobs.length;i++){
         if(uiJobs[i].priority<uiJobs[best].priority||
@@ -81,7 +146,6 @@
     }
     const existing=uiPending.get(id);
     if(existing){
-      // Si estaba en precarga y ahora es visible, subir su prioridad.
       if(priority<existing.priority)existing.priority=priority;
       drainUiMetaQueue();
       return existing.promise;
@@ -95,7 +159,6 @@
     return promise;
   }
 
-  // Todas las llamadas UI (ficha, modo lectura, tarjetas) usan el resolver estable.
   fetchMarvelMeta=async function(x,force=false){return enqueueUiMeta(x,0,force)};
 
   hydrateIssueMeta=async function(id){
@@ -106,8 +169,9 @@
     return enqueueUiMeta(x,0,false);
   };
 
-  // Cada render crea observación nueva. No se reutilizan nodos de una era/filtro
-  // anterior, que era la causa de tarjetas nuevas que nunca llegaban a hidratarse.
+  // Cada render: los primeros elementos se hidratan inmediatamente. El observer
+  // solo se usa para lo que queda por debajo, por lo que Safari no puede dejar
+  // toda la vista inicial eternamente en placeholders.
   observeVisibleCards=function(root){
     if(uiObserver){uiObserver.disconnect();uiObserver=null}
     const cards=$$(root+' .issue');
@@ -115,10 +179,8 @@
       const id=Number(el.dataset.id),cached=state.marvel.get(id);
       if(cached)updateRenderedMeta(id,cached);
     }
-    if(!('IntersectionObserver'in window)){
-      cards.slice(0,24).forEach(el=>hydrateIssueMeta(Number(el.dataset.id)));
-      return;
-    }
+    cards.slice(0,18).forEach(el=>hydrateIssueMeta(Number(el.dataset.id)));
+    if(!('IntersectionObserver'in window))return;
     uiObserver=new IntersectionObserver(entries=>{
       for(const e of entries){
         if(!e.isIntersecting)continue;
@@ -126,12 +188,10 @@
         uiObserver?.unobserve(e.target);
         hydrateIssueMeta(id);
       }
-    },{rootMargin:'650px 0px'});
-    cards.forEach(el=>uiObserver.observe(el));
+    },{rootMargin:'700px 0px'});
+    cards.slice(18).forEach(el=>uiObserver.observe(el));
   };
 
-  // La precarga conserva su utilidad, pero va siempre detrás de lo que el usuario
-  // está viendo. Nunca puede ocupar la cola por delante de una portada visible.
   prefetchUpcoming=async function(count=PREFETCH_COUNT){
     const limit=Math.min(Number(count)||0,BACKGROUND_PREFETCH_LIMIT);
     if(limit<=0)return;
