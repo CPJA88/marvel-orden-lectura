@@ -1,15 +1,15 @@
-/* Marvel Lector v1.2.4 — apertura estable separada del diagnóstico */
+/* Marvel Lector v1.2.20 — apertura estable: un Smart Link positivo nunca se invalida */
 const UI_RESOLVER_VERSION=5;
 
-// Solo la metadata del resolver actual se considera fresca. Los resultados
-// negativos del resolver anterior se vuelven a comprobar automáticamente.
+// Se conserva por compatibilidad para metadata negativa/pendiente. Los positivos
+// no dependen de esta función: si existe un Smart Link, se usa directamente.
 isFreshMeta=m=>Boolean(m&&Number(m.resolverVersion)===UI_RESOLVER_VERSION&&m.checkedAt&&Date.now()-new Date(m.checkedAt).getTime()<META_MAX_AGE);
 
 function stableAppHref(x,s){
   const m=state.marvel.get(Number(x.id));
-  // Si ya conocemos el Smart Link exacto, el toque del usuario va directamente
-  // al enlace oficial de Marvel. Si no, usamos el endpoint interactivo estable.
-  if(isFreshMeta(m)&&m.available&&m.smartLink)return m.smartLink;
+  // Un Smart Link ya obtenido es el dato más valioso que tenemos: no se vuelve
+  // a resolver ni se invalida por cambios de versión o por diagnósticos posteriores.
+  if(m?.smartLink)return m.smartLink;
   return marvelQuery(x,s,'app');
 }
 
