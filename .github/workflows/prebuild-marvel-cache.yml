@@ -1,0 +1,65 @@
+name: Prebuild Marvel cache
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate-marvel-cache.mjs'
+      - '.github/workflows/prebuild-marvel-cache.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * 0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-preinstalled-cache
+  cancel-in-progress: false
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate complete preinstalled cache
+        run: node scripts/generate-marvel-cache.mjs
+
+      - name: Validate cache
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          if(!p.ready) throw new Error('cache ready=false');
+          if(p.localCount < 50000) throw new Error(`localCount incompleto: ${p.localCount}`);
+          if(p.catalogCount < 20000) throw new Error(`catalogCount sospechoso: ${p.catalogCount}`);
+          if(!Array.isArray(p.entries) || p.entries.length !== p.localCount) throw new Error('entries incompleto');
+          console.log({localCount:p.localCount,catalogCount:p.catalogCount,matched:p.matched,unavailable:p.unavailable,ambiguous:p.ambiguous});
+          NODE
+
+      - name: Commit generated cache
+        run: |
+          if git diff --quiet -- source/marvel-cache/index.json; then
+            echo 'La caché no ha cambiado.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json
+          git commit -m 'cache: actualizar índice Marvel preinstalado'
+          git pull --rebase origin main
+          git push origin HEAD:main
