@@ -6,7 +6,7 @@ const root = process.cwd();
 const archive = path.join(root, 'Marvel_Orden_de_Lectura_PWA.zip');
 const output = path.join(root, 'public');
 const source = path.join(root, 'source');
-const uiVersion = 'v1.1.10-ui';
+const uiVersion = 'v1.1.11-ui';
 
 try {
   await fs.access(archive);
@@ -34,7 +34,9 @@ await Promise.all([
 ]);
 
 // Los cinco botones se mantienen. La identificación del cómic conserva el
-// método estable de v1.1.3; los enlaces nativos usan ahora el ID de reader_url.
+// método estable de v1.1.3; iOS usa ahora la URL oficial /comics/issue/<id>/read
+// en lugar del esquema privado marvelunlimited://reader/... que la app actual
+// abre pero rechaza con LOADING ERROR.
 const appPath = path.join(output, 'app.js');
 let app = await fs.readFile(appPath, 'utf8');
 const detailMarker = 'async function openDetail(id,collection){';
@@ -64,4 +66,4 @@ for (const required of ['index.html', 'app.js', 'styles.css', 'manifest.webmanif
   await fs.access(path.join(output, required));
 }
 
-console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y deep links reader corregidos.`);
+console.log(`PWA Marvel extraída, UI ${uiVersion} aplicada y handoff iOS actualizado a URL oficial de lectura.`);
