@@ -1,0 +1,31 @@
+/* Marvel Lector v1.2 — lectura continua, series, portadas y estados de reimpresión */
+.issue{grid-template-columns:36px 50px minmax(0,1fr) auto;gap:9px}
+.issue .cover-slot{width:50px;height:70px;overflow:hidden;border-radius:8px;background:#ece8df;box-shadow:0 2px 8px rgba(40,32,25,.09)}
+.issue-cover{display:block;width:100%;height:100%;object-fit:cover;background:#ece8df}
+.cover-placeholder{display:grid;place-items:center;width:100%;height:100%;background:linear-gradient(145deg,#e62429,#a90f16);color:#fff;font-size:18px;font-weight:950;letter-spacing:-1px}
+.cover-placeholder.large{height:220px;border-radius:16px;font-size:28px}
+.issue.skipped{border-color:#e8d7b8;background:linear-gradient(90deg,#fff7e7,#fff 42%)}
+.issue.partial{border-color:#ddd2f1;background:linear-gradient(90deg,#f5f1ff,#fff 42%)}
+.issue.skipped .check{border-color:#b78735;background:#b78735;color:#fff}
+.issue.partial .check{border-color:#7458be;background:#7458be;color:#fff}
+.progress-badge.read{background:#eef8f2;border-color:#cfe6d9;color:#367552}
+.progress-badge.skipped-reprint{background:#fff7e7;border-color:#ecd9b4;color:#8e631b}
+.progress-badge.new-material{background:#f5f1ff;border-color:#ded5f3;color:#6753a8}
+.marvel-state.available{background:#eef8f2;border-color:#cfe6d9;color:#26714b}
+.marvel-state.unavailable{background:#f3f1ed;border-color:#dfdbd4;color:#8c8985}
+.pending-meta{opacity:.72}
+.detail-cover{width:132px;aspect-ratio:2/3;margin:0 auto 16px;overflow:hidden;border-radius:16px;background:#ece8df;box-shadow:0 12px 26px rgba(47,39,30,.14)}
+.detail-cover img{display:block;width:100%;height:100%;object-fit:cover}
+.official-links a{text-decoration:none}
+.reprint-advice{margin:14px 0;padding:13px 14px;border-radius:15px;border:1px solid var(--line-soft);font-size:12px;line-height:1.45}
+.reprint-advice strong{font-size:13px}.reprint-advice p{margin:6px 0 10px;color:#696970}
+.reprint-advice.pure{background:#fff8e9;border-color:#ead8b6}.reprint-advice.mixed{background:#f7f3ff;border-color:#ddd2f1}
+.reader-dialog-card{padding-top:18px}.reader-progress{display:flex;justify-content:space-between;gap:12px;margin:0 38px 14px 0;color:#8c898d;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.055em}
+.reader-cover{width:min(54vw,210px);aspect-ratio:2/3;margin:0 auto 18px;overflow:hidden;border-radius:18px;background:#eae6dd;box-shadow:0 17px 36px rgba(47,39,30,.18)}
+.reader-cover img{display:block;width:100%;height:100%;object-fit:cover}.reader-cover-placeholder{display:grid;place-items:center;width:100%;height:100%;background:linear-gradient(145deg,#e62429,#9b0e14);color:white;font-size:30px;font-weight:950}
+#readerContent h2{margin:5px 40px 2px 0;font-size:24px;line-height:1.1;letter-spacing:-.035em}.reader-original{margin:5px 0 12px;color:#8b898e;font-size:11px}.reader-tags{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0 14px}.reader-launch{text-decoration:none}.reader-actions{display:grid;grid-template-columns:1fr;gap:8px;margin-top:12px}.return-prompt{margin:12px 0;padding:13px 14px;border-radius:15px;background:#eef8f2;border:1px solid #cfe6d9}.return-prompt p{margin:4px 0 0;color:#557060;font-size:11.5px;line-height:1.4}.next-hint{margin:12px 4px 0;text-align:center;color:#8b898d;font-size:10.5px}
+.series-dialog-card{padding-left:12px;padding-right:12px}.series-dialog-card #seriesHeader{padding:4px 6px 12px}.series-dialog-card h2{margin:4px 42px 2px 0;font-size:25px;letter-spacing:-.035em}.series-dialog-card #seriesHeader>p{margin:5px 0 12px;color:#8d8b90;font-size:11px}.series-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:14px 0}.series-stats div{padding:10px;border:1px solid var(--line-soft);border-radius:13px;background:#f8f6f1}.series-stats strong{display:block;font-size:18px}.series-stats span{display:block;margin-top:3px;color:#918f93;font-size:8.5px;text-transform:uppercase;letter-spacing:.06em}.series-issue-list{padding:0 0 10px}
+.issue.collection{grid-template-columns:40px minmax(0,1fr) auto}
+@media(max-width:430px){.issue{grid-template-columns:34px 44px minmax(0,1fr) auto;gap:8px;padding-left:8px;padding-right:8px}.issue .cover-slot{width:44px;height:62px}.order-col{min-width:62px}.issue-title{font-size:13px}.issue-meta{gap:4px}.badge{padding:3px 5px;font-size:8px}}
+@media(max-width:779px){#readerDialog,#seriesDialog{width:100%;max-width:none;margin:0;inset:0}#readerDialog .dialog-card,#seriesDialog .dialog-card{height:100dvh;max-height:none;border:0;border-radius:0;padding-top:calc(18px + env(safe-area-inset-top));padding-bottom:calc(18px + env(safe-area-inset-bottom))}#readerDialog .sheet-handle,#seriesDialog .sheet-handle{display:none}#readerDialog .dialog-close,#seriesDialog .dialog-close{top:calc(11px + env(safe-area-inset-top))}}
+@media(min-width:780px){#seriesDialog{width:min(94vw,900px)}#readerDialog{width:min(92vw,560px)}.series-dialog-card{max-height:88dvh}.reader-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
