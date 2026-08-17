@@ -7,8 +7,6 @@ on:
       - 'scripts/generate-marvel-cache.mjs'
       - '.github/workflows/prebuild-marvel-cache.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '17 4 * * 0'
 
 permissions:
   contents: write
