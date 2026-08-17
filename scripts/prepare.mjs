@@ -7,7 +7,7 @@ const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
 const marvelCacheSource=path.join(source,'marvel-cache');
-const uiVersion='v1.2.23.1-preinstalled-cache';
+const uiVersion='v1.2.24-preinstalled-deeplinks';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'];
 
 for(const name of sourceFiles){
@@ -50,4 +50,4 @@ await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
 const baked=JSON.parse(await fs.readFile(path.join(output,'data','marvel-cache','index.json'),'utf8'));
 if(!baked.ready||baked.localCount<50000)throw new Error(`Caché Marvel incompleta: ready=${Boolean(baked.ready)}, registros=${baked.localCount||0}`);
-console.log(`PWA Marvel construida con ${uiVersion}: caché preinstalada y precacheada; registros=${baked.localCount}, MU=${baked.matched}, ambiguos=${baked.ambiguous}. El scroll no resuelve metadatos en red; solo el DRN puede obtenerse al pulsar un cómic.`);
+console.log(`PWA Marvel construida con ${uiVersion}: índice preinstalado=${baked.localCount}; MU=${baked.matched}; deeplinks preconstruidos=${baked.linkReady||0}; deeplinks pendientes=${baked.linkMissing||0}. El scroll no resuelve metadata en red.`);
