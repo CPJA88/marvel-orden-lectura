@@ -49,12 +49,28 @@ jobs:
         id: generate
         run: NODE_OPTIONS=--max-old-space-size=4096 REFRESH_CATALOG=1 node --expose-gc scripts/run-marvel-cache-batched.mjs
 
+      - name: Save checkpoint after generation
+        if: steps.generate.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/marvel-prebuild-v3
+          key: marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-${{ github.run_id }}
+
       - name: Save checkpoint if generation fails
         if: failure() && steps.generate.outcome == 'failure'
         uses: actions/cache/save@v4
         with:
           path: .cache/marvel-prebuild-v3
           key: marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-${{ github.run_id }}
+
+      - name: Preserve generated cache candidate
+        if: steps.generate.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-cache-v3-candidate-${{ github.run_id }}
+          path: source/marvel-cache/index.json
+          retention-days: 3
+          if-no-files-found: error
 
       - name: Validate cache strictly
         run: |
@@ -66,8 +82,16 @@ jobs:
           if(p.officiallyVerified !== true) throw new Error('officiallyVerified=false');
           if(p.localCount < 50000) throw new Error(`localCount incompleto: ${p.localCount}`);
           if(!Array.isArray(p.entries) || p.entries.length !== p.localCount) throw new Error('entries incompleto');
-          if(Number(p.unknown)!==0) throw new Error(`quedan ${p.unknown} números unknown`);
-          if(Number(p.ambiguous)!==0) throw new Error(`quedan ${p.ambiguous} coincidencias ambiguas`);
+          if(Number(p.unknown)!==0) {
+            const rows=p.entries.filter(r=>Number(r?.[3])===0).map(r=>r?.[0]);
+            console.error('GCD unknown:',rows);
+            throw new Error(`quedan ${p.unknown} números unknown`);
+          }
+          if(Number(p.ambiguous)!==0) {
+            const rows=p.entries.filter(r=>Number(r?.[3])===2).map(r=>r?.[0]);
+            console.error('GCD ambiguos:',rows);
+            throw new Error(`quedan ${p.ambiguous} coincidencias ambiguas`);
+          }
           const terminal=Number(p.matched||0)+Number(p.unavailable||0)+Number(p.notListed||0);
           if(terminal!==Number(p.localCount)) throw new Error(`clasificación no terminal: ${terminal}/${p.localCount}`);
           for(const row of p.entries){
