@@ -1,16 +1,17 @@
-/* Marvel Lector v1.2.18 — portadas GCD + resolución Marvel por vecinos */
+/* Marvel Lector v1.2.19 — portadas GCD + Marvel API oficial */
 (() => {
-  const ACTIVE_RESOLVER_VERSION=8;
-  const UI_CACHE_VERSION=6;
+  const ACTIVE_RESOLVER_VERSION=9;
+  const UI_CACHE_VERSION=7;
   const UI_META_CONCURRENCY=1;
   const BACKGROUND_PREFETCH_LIMIT=0;
   const NEGATIVE_RETRY_AGE=5*1000;
   const CONFIRMED_UNAVAILABLE_AGE=7*24*60*60*1000;
-  const REQUEST_GAP=450;
-  const MAX_CRAWL_RETRIES=8;
-  const MAX_FAILURE_RETRIES=2;
+  const API_CONFIG_RETRY_AGE=30*1000;
+  const API_NO_MATCH_RETRY_AGE=10*60*1000;
+  const REQUEST_GAP=350;
+  const MAX_FAILURE_RETRIES=1;
   const GCD_COVER_MAX_AGE=30*24*60*60*1000;
-  const GCD_COVER_GAP=450;
+  const GCD_COVER_GAP=350;
   let uiObserver=null;
   let active=0;
   let seq=0;
@@ -29,7 +30,7 @@
   }
   function isPositiveMeta(m){return Boolean(m?.available&&m?.smartLink&&m?.issueUrl)}
   function isConfirmedUnavailable(m){return Boolean(m?.issueUrl&&m?.reason==='reader-unavailable')}
-  function isTransientFailure(m){return Boolean(m&&['lookup-unresolved','resolver-error','series-crawl-pending'].includes(m.reason))}
+  function isTransientFailure(m){return Boolean(m&&m.reason==='resolver-error')}
 
   isFreshMeta=m=>{
     if(!m)return false;
@@ -37,17 +38,20 @@
     if(isPositiveMeta(m))return age<META_MAX_AGE;
     if(Number(m.resolverVersion)!==ACTIVE_RESOLVER_VERSION||Number(m.uiCacheVersion)!==UI_CACHE_VERSION)return false;
     if(isConfirmedUnavailable(m))return age<CONFIRMED_UNAVAILABLE_AGE;
+    if(m.reason==='api-not-configured'||m.reason==='api-auth-error')return age<API_CONFIG_RETRY_AGE;
+    if(m.reason==='api-no-match')return age<API_NO_MATCH_RETRY_AGE;
     return age<NEGATIVE_RETRY_AGE;
   };
 
   unlimitedState=function(m){
     if(isPositiveMeta(m))return{label:'Unlimited ✓',cls:'available'};
     if(isConfirmedUnavailable(m)&&isFreshMeta(m))return{label:'Sin Unlimited',cls:'unavailable'};
-    if(m?.reason==='drn-unavailable'&&isFreshMeta(m))return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
-    if(m?.reason==='series-crawl-pending')return{label:'Unlimited · comprobando',cls:'pending-meta'};
+    if(m?.reason==='drn-unavailable')return{label:'Unlimited · enlace pendiente',cls:'unresolved'};
+    if(m?.reason==='api-auth-error')return{label:'Unlimited · error API',cls:'unresolved'};
+    if(m?.reason==='api-not-configured')return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
+    if(m?.reason==='api-no-match')return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
     if(isTransientFailure(m)&&ageOf(m)<20*1000)return{label:'Unlimited · comprobando',cls:'pending-meta'};
-    if(m?.reason==='reader-id-unresolved')return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
-    return{label:'Unlimited · sin comprobar',cls:'pending-meta'};
+    return{label:'Unlimited · comprobando',cls:'pending-meta'};
   };
   metaBadge=function(id){
     const st=unlimitedState(state.marvel.get(Number(id)));
@@ -120,15 +124,14 @@
   function scheduleRetry(x,m,priority){
     const id=Number(x.id);
     if(priority!==0||!isTransientFailure(m)){retryCounts.delete(id);return}
-    const done=retryCounts.get(id)||0,max=m?.reason==='series-crawl-pending'?MAX_CRAWL_RETRIES:MAX_FAILURE_RETRIES;
-    if(done>=max)return;
+    const done=retryCounts.get(id)||0;
+    if(done>=MAX_FAILURE_RETRIES)return;
     retryCounts.set(id,done+1);
-    const delay=m?.reason==='series-crawl-pending'?650+done*300:(done===0?1800:4200);
     setTimeout(()=>{
       const current=state.marvel.get(id);
       if(isPositiveMeta(current)||isConfirmedUnavailable(current))return;
       enqueue(x,0,true);
-    },delay);
+    },1800);
   }
 
   async function runJob(job){
