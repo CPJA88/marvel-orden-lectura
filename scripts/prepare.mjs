@@ -6,7 +6,7 @@ const root=process.cwd();
 const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
-const uiVersion='v1.2.21-year-index';
+const uiVersion='v1.2.21.1-year-index';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v20.js','diagnostic-v21.js'];
 
 for(const name of sourceFiles){
