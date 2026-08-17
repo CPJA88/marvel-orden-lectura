@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/generate-marvel-cache.mjs'
+      - 'scripts/run-marvel-cache-batched.mjs'
       - '.github/workflows/prebuild-marvel-cache.yml'
   workflow_dispatch:
 
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   build-cache:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 360
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,23 +34,27 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Hotfix generator runtime
-        run: |
-          node - <<'NODE'
-          const fs=require('fs');
-          const file='scripts/generate-marvel-cache.mjs';
-          let s=fs.readFileSync(file,'utf8');
-          const fatal="    if(!issues.length)throw new Error(`El catálogo remoto no devolvió ningún número para ${year}; se aborta para evitar falsos negativos.`);";
-          const safe="    if(!issues.length)console.warn(`Año ${year}: sin entradas en el catálogo remoto; se continúa y esos números se clasificarán como no listados salvo verificación oficial.`);";
-          if(!s.includes(fatal)) throw new Error('No se encontró la guarda de años vacíos que debía corregirse.');
-          s=s.replace(fatal,safe);
-          s=s.replace('const VERIFY_CONCURRENCY=10;','const VERIFY_CONCURRENCY=6;');
-          s=s.replace('await sleep(20);','await sleep(60);');
-          fs.writeFileSync(file,s);
-          NODE
+      - name: Validate batched runner syntax
+        run: node --check scripts/run-marvel-cache-batched.mjs
+
+      - name: Restore prebuild checkpoint
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/marvel-prebuild-v3
+          key: marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-${{ github.run_id }}
+          restore-keys: |
+            marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-
 
       - name: Generate and verify complete preinstalled cache
-        run: REFRESH_CATALOG=1 node scripts/generate-marvel-cache.mjs
+        id: generate
+        run: NODE_OPTIONS=--max-old-space-size=4096 REFRESH_CATALOG=1 node --expose-gc scripts/run-marvel-cache-batched.mjs
+
+      - name: Save checkpoint if generation fails
+        if: failure() && steps.generate.outcome == 'failure'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/marvel-prebuild-v3
+          key: marvel-v3-${{ runner.os }}-${{ hashFiles('Marvel_Orden_de_Lectura_PWA.zip', 'scripts/generate-marvel-cache.mjs', 'scripts/run-marvel-cache-batched.mjs') }}-${{ github.run_id }}
 
       - name: Validate cache strictly
         run: |
@@ -91,6 +96,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json
-          git commit -m 'cache: publicar índice Marvel V3 verificado'
+          git commit -m 'cache: publicar índice Marvel V3 verificado por bloques'
           git pull --rebase origin main
           git push origin HEAD:main
