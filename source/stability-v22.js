@@ -1,19 +1,39 @@
-/* Marvel Lector v1.2.22 — invariantes: Smart Link positivo y portada por sourceId */
+/* Marvel Lector v1.2.23 — Smart Link estable + sourceId/readerId preinstalados */
 (() => {
   function sourceIdOf(m){
     if(m?.sourceId)return String(m.sourceId);
     return String(m?.issueUrl||'').match(/\/comics\/issue\/(\d+)/i)?.[1]||'';
   }
+  function gcdCover(id){return `/api/gcd/cover-image?id=${encodeURIComponent(Number(id))}`}
   function coverFor(id,m){
+    const existing=String(m?.coverUrl||'').trim();
+    if(/^https?:\/\//i.test(existing))return existing;
+    if(/^\/api\/marvel\/cover\?sourceId=/i.test(existing))return existing;
     const sid=sourceIdOf(m);
-    return sid?`/api/marvel/cover?sourceId=${encodeURIComponent(sid)}`:`/api/gcd/cover-image?id=${encodeURIComponent(Number(id))}`;
+    return sid?`/api/marvel/cover?sourceId=${encodeURIComponent(sid)}`:gcdCover(id);
   }
   function install(container,id,m){
     if(!container||!id)return;
-    const src=coverFor(id,m),img=document.createElement('img');img.src=src;img.alt='';img.decoding='async';
-    img.onerror=()=>{const p=document.createElement('div');p.className=container.classList.contains('reader-cover')?'reader-cover-placeholder':'cover-placeholder large';p.textContent='M';container.replaceChildren(p)};
+    const src=coverFor(id,m),fallback=gcdCover(id),img=document.createElement('img');img.src=src;img.alt='';img.decoding='async';
+    img.onerror=()=>{
+      if(img.dataset.gcdFallback!=='1'&&img.src!==new URL(fallback,location.href).href){img.dataset.gcdFallback='1';img.src=fallback;return}
+      const p=document.createElement('div');p.className=container.classList.contains('reader-cover')?'reader-cover-placeholder':'cover-placeholder large';p.textContent='M';container.replaceChildren(p);
+    };
     container.replaceChildren(img);
   }
+
+  // Cualquier botón Marvel recibe los IDs que ya vienen en la caché de la PWA.
+  // Así el Worker no vuelve a buscar el cómic: solo obtiene el DRN si aún falta.
+  const baseMarvelQuery=marvelQuery;
+  marvelQuery=function(x,s,mode){
+    const raw=baseMarvelQuery(x,s,mode),m=state.marvel.get(Number(x.id));
+    if(!m?.sourceId&&!m?.readerId)return raw;
+    const u=new URL(raw,location.origin);
+    if(m.sourceId)u.searchParams.set('sourceId',String(m.sourceId));
+    if(m.readerId)u.searchParams.set('readerId',String(m.readerId));
+    if(m.preinstalledStatus!==undefined)u.searchParams.set('preinstalledStatus',String(m.preinstalledStatus));
+    return u.pathname+u.search;
+  };
 
   stableAppHref=function(x,s){
     const m=state.marvel.get(Number(x.id));
