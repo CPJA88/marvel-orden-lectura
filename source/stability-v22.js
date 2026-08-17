@@ -22,12 +22,12 @@
     container.replaceChildren(img);
   }
 
-  // Cualquier botón Marvel recibe los IDs que ya vienen en la caché de la PWA.
+  // Cualquier botón Marvel recibe los IDs/estado que ya vienen en la caché de la PWA.
   // Así el Worker no vuelve a buscar el cómic: solo obtiene el DRN si aún falta.
   const baseMarvelQuery=marvelQuery;
   marvelQuery=function(x,s,mode){
     const raw=baseMarvelQuery(x,s,mode),m=state.marvel.get(Number(x.id));
-    if(!m?.sourceId&&!m?.readerId)return raw;
+    if(!m||(!m.sourceId&&!m.readerId&&m.preinstalledStatus===undefined))return raw;
     const u=new URL(raw,location.origin);
     if(m.sourceId)u.searchParams.set('sourceId',String(m.sourceId));
     if(m.readerId)u.searchParams.set('readerId',String(m.readerId));
