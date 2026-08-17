@@ -1,27 +1,34 @@
-/* Marvel Lector v1.2.11 — detalles del catálogo oficial en diagnóstico */
+/* Marvel Lector v1.2.12 — diagnóstico del catálogo canónico v2 */
 (() => {
   if(typeof diagnosticReport!=='function')return;
   const CATALOG_SCHEMA_KEY='catalogDiagnosticOfficialSeriesSchema';
-  const CATALOG_SCHEMA_VERSION=1;
+  const CATALOG_SCHEMA_VERSION=2;
+
+  if(typeof DIAGNOSTIC_LABELS==='object'){
+    DIAGNOSTIC_LABELS.READER_ID_MISSING='Ficha Marvel localizada sin readerId';
+  }
 
   const previousDiagnosticReport=diagnosticReport;
   diagnosticReport=function(d){
     const base=previousDiagnosticReport(d)
-      .replace('Versión: v1.2.10-trace-diagnostic','Versión: v1.2.11-catalog-diagnostic');
+      .replace('Versión: v1.2.10-trace-diagnostic','Versión: v1.2.12-catalog-v2-diagnostic')
+      .replace('Versión: v1.2.11-catalog-diagnostic','Versión: v1.2.12-catalog-v2-diagnostic')
+      .replace('Esquema: 1 | Resolver esperado: 7','Esquema: 2 | Resolver esperado: 7');
     if(!d)return base;
     const rows=[];
     for(const arr of Object.values(d.samples||{})){
       for(const s of arr||[]){
         const f=s?.trace?.final;
         if(!f)continue;
-        if(f.catalogReason||f.seriesUrl||f.seriesLabel||f.resolverSource==='share-series-catalog')rows.push({s,f});
+        if(f.catalogReason||f.seriesUrl||f.seriesLabel||String(f.resolverSource||'').includes('series-catalog'))rows.push({s,f});
       }
     }
     if(!rows.length)return base;
-    const lines=['','CATÁLOGO OFICIAL MARVEL — RESOLUCIÓN POR SERIE'];
+    const lines=['','CATÁLOGO OFICIAL MARVEL — RESOLUCIÓN POR SERIE V2'];
     for(const {s,f} of rows){
       lines.push('',`=== orden=${s.order??'?'} | ${s.title||'Serie'} #${s.issue||'[s/n]'} ===`);
       lines.push(`resolverSource=${f.resolverSource||''} | catalogReason=${f.catalogReason||''}`);
+      lines.push(`catalogWalked=${f.catalogWalked??0} | catalogKnownIssues=${f.catalogKnownIssues??0}`);
       if(f.seriesLabel)lines.push(`seriesLabel=${f.seriesLabel}`);
       if(f.seriesUrl)lines.push(`seriesUrl=${f.seriesUrl}`);
       if(f.issueUrl)lines.push(`issueUrl=${f.issueUrl}`);
@@ -29,8 +36,6 @@
     return base+lines.join('\n');
   };
 
-  // No mezclar los siete falsos LOOKUP_UNRESOLVED de la etapa Google/429 con
-  // resultados del nuevo resolver basado en el catálogo oficial de series.
   const previousOpenDiagnostic=openDiagnostic;
   openDiagnostic=async function(){
     const schema=await DB.kvGet(CATALOG_SCHEMA_KEY);
@@ -40,6 +45,8 @@
       diagnosticState=null;
     }
     await previousOpenDiagnostic();
+    const intro=$('#diagnosticDialog .diagnostic-intro');
+    if(intro)intro.textContent='Diagnóstico V2: comprueba primero el índice oficial de series de Marvel y el recorrido interno de números. Ya no repite cinco búsquedas externas por cada fallo.';
     const area=$('#diagnosticReport');if(area)area.value=diagnosticReport(diagnosticState);
   };
 })();
