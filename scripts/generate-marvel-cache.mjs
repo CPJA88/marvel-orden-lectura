@@ -9,7 +9,9 @@ const outDir=path.join(root,'source','marvel-cache');
 const outFile=path.join(outDir,'index.json');
 const START_YEAR=1939;
 const END_YEAR=new Date().getUTCFullYear();
-const UA='Mozilla/5.0 (compatible; MarvelOrdenLecturaCacheBuilder/1.2.23)';
+const UA='Mozilla/5.0 (compatible; MarvelOrdenLecturaCacheBuilder/1.2.24)';
+const LEGACY='https://share.marvel.com/sharing/legacy/';
+const DRN_CONCURRENCY=14;
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const asString=v=>v==null?'':String(v);
@@ -43,17 +45,17 @@ function coverUrl(issue){
   return `${p}/portrait_incredible.${ext}`;
 }
 
-async function fetchRetry(url,{accept='application/json',tries=5}={}){
+async function fetchRetry(url,{accept='application/json',tries=5,redirect='follow'}={}){
   let last;
   for(let i=0;i<tries;i++){
     try{
-      const r=await fetch(url,{redirect:'follow',headers:{'User-Agent':UA,'Accept':accept,'Accept-Language':'en-US,en;q=0.9'}});
-      if(r.ok)return r;
+      const r=await fetch(url,{redirect,headers:{'User-Agent':UA,'Accept':accept,'Accept-Language':'en-US,en;q=0.9'}});
+      if(r.ok||redirect==='manual'&&(r.status>=300&&r.status<400))return r;
       last=new Error(`${new URL(url).hostname} HTTP ${r.status}`);
       if(r.status===404)return null;
       const retry=Number(r.headers.get('retry-after')||0);
-      await sleep(retry?retry*1000:Math.min(15000,900*(2**i)));
-    }catch(e){last=e;await sleep(Math.min(15000,900*(2**i)))}
+      await sleep(retry?retry*1000:Math.min(12000,700*(2**i)));
+    }catch(e){last=e;await sleep(Math.min(12000,700*(2**i)))}
   }
   throw last||new Error(`No se pudo descargar ${url}`);
 }
@@ -97,13 +99,10 @@ function decodeYearPayload(payload,year){
   }
   return out;
 }
-
 async function fetchYearPrimary(year){
-  const url=`https://marvel.geoffrich.net/year/${year}/__data.json`;
-  const r=await fetchRetry(url);
+  const r=await fetchRetry(`https://marvel.geoffrich.net/year/${year}/__data.json`);
   if(!r)return [];
-  const payload=await r.json();
-  return decodeYearPayload(payload,year);
+  return decodeYearPayload(await r.json(),year);
 }
 async function fetchYearFallback(year){
   const out=[];let offset=0,total=Infinity;
@@ -114,8 +113,7 @@ async function fetchYearFallback(year){
     const data=await r.json(),items=Array.isArray(data?.items)?data.items:[];
     total=Number(data?.total)||items.length;
     for(const x of items)out.push({id:x.id,digitalId:null,title:x.title,issue:x.issueNumber,issueNumber:x.issueNumber,detailUrl:x.detailUrl,series:{id:x.seriesId,name:x.seriesName},dates:{onSale:x.onSaleDate,unlimited:x.unlimitedDate},cover:null,_year_page:year});
-    if(!items.length)break;offset+=items.length;
-    await sleep(1150);
+    if(!items.length)break;offset+=items.length;await sleep(1000);
   }
   return out;
 }
@@ -124,31 +122,13 @@ async function fetchCatalog(){
   for(let year=START_YEAR;year<=END_YEAR;year++){
     let issues=[],source='geoffrich';
     try{issues=await fetchYearPrimary(year)}catch(e){console.warn(`Año ${year}: __data falló: ${e.message}`)}
-    if(!issues.length){
-      source='metadata-api';
-      try{issues=await fetchYearFallback(year)}catch(e){console.warn(`Año ${year}: fallback falló: ${e.message}`)}
-    }
+    if(!issues.length){source='metadata-api';try{issues=await fetchYearFallback(year)}catch(e){console.warn(`Año ${year}: fallback falló: ${e.message}`)}}
     for(const issue of issues){
-      const sourceId=Number(issue?.id||sourceIdFromUrl(issue?.detailUrl));
-      if(!sourceId)continue;
-      const current=bySource.get(sourceId);
-      const candidate={
-        sourceId,
-        readerId:Number(issue?.digitalId)||0,
-        issueNumber:asString(issue?.issueNumber??issue?.issue),
-        title:asString(issue?.title),
-        seriesName:asString(issue?.series?.name||issue?.seriesName),
-        seriesYear:seriesStartYear(issue?.series?.name||issue?.seriesName||issue?.title),
-        onSale:asString(issue?.dates?.onSale||issue?.onSaleDate),
-        unlimited:asString(issue?.dates?.unlimited||issue?.unlimitedDate),
-        yearPage:Number(issue?._year_page||year),
-        coverUrl:coverUrl(issue)
-      };
+      const sourceId=Number(issue?.id||sourceIdFromUrl(issue?.detailUrl));if(!sourceId)continue;
+      const current=bySource.get(sourceId),candidate={sourceId,readerId:Number(issue?.digitalId)||0,issueNumber:asString(issue?.issueNumber??issue?.issue),title:asString(issue?.title),seriesName:asString(issue?.series?.name||issue?.seriesName),seriesYear:seriesStartYear(issue?.series?.name||issue?.seriesName||issue?.title),onSale:asString(issue?.dates?.onSale||issue?.onSaleDate),unlimited:asString(issue?.dates?.unlimited||issue?.unlimitedDate),yearPage:Number(issue?._year_page||year),coverUrl:coverUrl(issue)};
       if(!current||(!current.readerId&&candidate.readerId)||(!current.coverUrl&&candidate.coverUrl))bySource.set(sourceId,{...current,...candidate});
     }
-    yearStats.push([year,issues.length,source]);
-    console.log(`${year}: ${issues.length} (${source})`);
-    await sleep(180);
+    yearStats.push([year,issues.length,source]);console.log(`${year}: ${issues.length} (${source})`);await sleep(150);
   }
   return{issues:[...bySource.values()],yearStats};
 }
@@ -157,77 +137,110 @@ async function loadLocal(){
   const tmp=await fs.mkdtemp(path.join(os.tmpdir(),'marvel-lector-'));
   try{
     await extract(archive,{dir:tmp});
-    const dataDir=path.join(tmp,'data');
-    const meta=JSON.parse(await fs.readFile(path.join(dataDir,'meta.json'),'utf8'));
-    const series=JSON.parse(await fs.readFile(path.join(dataDir,'series.json'),'utf8'));
-    const seriesMap=new Map(series.map(s=>[Number(s.id),s]));
-    const issues=[];
-    for(const chunk of meta.chunks||[]){
-      const rows=JSON.parse(await fs.readFile(path.join(dataDir,chunk.file),'utf8'));
-      issues.push(...rows);
-    }
+    const dataDir=path.join(tmp,'data'),meta=JSON.parse(await fs.readFile(path.join(dataDir,'meta.json'),'utf8')),series=JSON.parse(await fs.readFile(path.join(dataDir,'series.json'),'utf8')),seriesMap=new Map(series.map(s=>[Number(s.id),s])),issues=[];
+    for(const chunk of meta.chunks||[])issues.push(...JSON.parse(await fs.readFile(path.join(dataDir,chunk.file),'utf8')));
     return{meta,seriesMap,issues};
   }finally{await fs.rm(tmp,{recursive:true,force:true})}
 }
 function remoteSeries(r){return r.seriesName||r.title.replace(/#\s*[^#]+$/,'').trim()}
 function scoreCandidate(local,series,r){
   if(normalizeIssue(local.n)!==normalizeIssue(r.issueNumber))return -Infinity;
-  const localTitle=series?.original||series?.es||'',remoteTitle=remoteSeries(r);
-  const a=normalizeSeries(localTitle),b=normalizeSeries(remoteTitle),sim=tokenScore(localTitle,remoteTitle);
+  const localTitle=series?.original||series?.es||'',remoteTitle=remoteSeries(r),a=normalizeSeries(localTitle),b=normalizeSeries(remoteTitle),sim=tokenScore(localTitle,remoteTitle);
   if(!a||!b||sim<0.52)return -Infinity;
-  let score=sim*50;
-  if(a===b)score+=110;
-  else if(a.includes(b)||b.includes(a))score+=20;
-  const localSeriesYear=asString(local.a||series?.year||series?.y),remoteSeriesYear=asString(r.seriesYear);
-  if(localSeriesYear&&remoteSeriesYear&&localSeriesYear===remoteSeriesYear)score+=28;
-  const localDate=asString(local.sv||local.d),ly=yearOf(localDate);
-  if(ly&&Number(ly)===Number(r.yearPage))score+=24;
-  if(localDate&&r.onSale&&localDate.slice(0,10)===r.onSale.slice(0,10))score+=18;
+  let score=sim*50;if(a===b)score+=110;else if(a.includes(b)||b.includes(a))score+=20;
+  const localSeriesYear=asString(local.a||series?.year||series?.y),remoteSeriesYear=asString(r.seriesYear);if(localSeriesYear&&remoteSeriesYear&&localSeriesYear===remoteSeriesYear)score+=28;
+  const localDate=asString(local.sv||local.d),ly=yearOf(localDate);if(ly&&Number(ly)===Number(r.yearPage))score+=24;if(localDate&&r.onSale&&localDate.slice(0,10)===r.onSale.slice(0,10))score+=18;
   return score;
 }
 function buildCrosswalk(local,remote){
-  const byNumber=new Map();
-  for(const r of remote){const n=normalizeIssue(r.issueNumber);if(!n)continue;if(!byNumber.has(n))byNumber.set(n,[]);byNumber.get(n).push(r)}
-  const entries=[],stats={matched:0,unavailable:0,ambiguous:0};
+  const byNumber=new Map();for(const r of remote){const n=normalizeIssue(r.issueNumber);if(!n)continue;if(!byNumber.has(n))byNumber.set(n,[]);byNumber.get(n).push(r)}
+  const entries=[];
   for(const x of local.issues){
-    const series=local.seriesMap.get(Number(x.s))||{},candidates=byNumber.get(normalizeIssue(x.n))||[];
-    const ranked=candidates.map(r=>({r,score:scoreCandidate(x,series,r)})).filter(v=>Number.isFinite(v.score)).sort((a,b)=>b.score-a.score);
-    const top=ranked[0],second=ranked[1];
-    let status=0,sourceId=0,readerId=0,cover='';
+    const series=local.seriesMap.get(Number(x.s))||{},candidates=byNumber.get(normalizeIssue(x.n))||[],ranked=candidates.map(r=>({r,score:scoreCandidate(x,series,r)})).filter(v=>Number.isFinite(v.score)).sort((a,b)=>b.score-a.score),top=ranked[0],second=ranked[1];
+    let sourceId=0,readerId=0,status=0,cover='';
     if(top&&top.score>=72&&(!second||top.score-second.score>=7||top.r.sourceId===second.r.sourceId)){
-      status=1;sourceId=top.r.sourceId;readerId=top.r.readerId||0;cover=top.r.coverUrl||'';stats.matched++;
-    }else if(top&&top.score>=72){status=2;stats.ambiguous++}
-    else stats.unavailable++;
-    entries.push([Number(x.id),sourceId,readerId,status,cover]);
+      sourceId=top.r.sourceId;readerId=top.r.readerId||0;cover=top.r.coverUrl||'';status=readerId?1:3;
+    }else if(top&&top.score>=72)status=2;
+    entries.push([Number(x.id),sourceId,readerId,status,cover,'']);
   }
-  return{entries,stats};
+  return entries;
 }
 
-await fs.access(archive);
-console.log('Descargando catálogo Marvel Unlimited…');
-const catalog=await fetchCatalog();
-if(catalog.issues.length<20000)throw new Error(`Catálogo demasiado pequeño (${catalog.issues.length}); no se publica una caché incompleta.`);
-console.log(`Catálogo remoto: ${catalog.issues.length} números únicos.`);
-console.log('Leyendo los números GCD de la PWA…');
-const local=await loadLocal();
-console.log(`Orden local: ${local.issues.length} números.`);
-const cross=buildCrosswalk(local,catalog.issues);
-if(cross.entries.length!==local.issues.length)throw new Error('La caché no cubre todo el orden local.');
-await fs.mkdir(outDir,{recursive:true});
-const payload={
-  version:1,
-  resolverVersion:13,
-  generatedAt:new Date().toISOString(),
-  ready:true,
-  localCount:cross.entries.length,
-  catalogCount:catalog.issues.length,
-  matched:cross.stats.matched,
-  unavailable:cross.stats.unavailable,
-  ambiguous:cross.stats.ambiguous,
-  fields:['gcdId','sourceId','readerId','status(0=noMU,1=MU,2=ambiguous)','coverUrl'],
-  yearStats:catalog.yearStats,
-  entries:cross.entries
-};
+async function loadExisting(){
+  try{const p=JSON.parse(await fs.readFile(outFile,'utf8'));return p?.ready&&Array.isArray(p.entries)?p:null}catch{return null}
+}
+function normalizeExistingRow(row){
+  const gcdId=Number(row?.[0])||0,sourceId=Number(row?.[1])||0,readerId=Number(row?.[2])||0,oldStatus=Number(row?.[3]),cover=asString(row?.[4]),drn=asString(row?.[5]);
+  let status=0;if(sourceId&&readerId)status=1;else if(sourceId&&!readerId)status=3;else if(oldStatus===2)status=2;
+  return[gcdId,sourceId,readerId,status,cover,drn];
+}
+function decodeRepeated(v=''){
+  let s=asString(v).replace(/&amp;/g,'&').replace(/\\u003A/gi,':').replace(/\\u002F/gi,'/');
+  for(let i=0;i<3;i++){try{const d=decodeURIComponent(s);if(d===s)break;s=d}catch{break}}return s;
+}
+function extractDrn(v=''){
+  const s=decodeRepeated(v).replace(/%3A/gi,':');
+  return s.match(/drn:src:marvel:unison::prod:[0-9a-f-]{36}/i)?.[0]||'';
+}
+async function resolveDrn(readerId){
+  const url=LEGACY+encodeURIComponent(String(readerId));
+  try{
+    const first=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:4,redirect:'manual'});if(!first)return '';
+    let drn=extractDrn(first.headers.get('location')||'');
+    if(!drn&&first.status>=200&&first.status<300)drn=extractDrn(await first.text());
+    if(drn)return drn;
+  }catch{}
+  try{
+    const second=await fetchRetry(url,{accept:'text/html,application/xhtml+xml,*/*;q=0.8',tries:3,redirect:'follow'});if(!second)return '';
+    return extractDrn(second.url)||extractDrn(await second.text());
+  }catch{return ''}
+}
+async function fillDrns(entries){
+  const byReader=new Map(),known=new Map();
+  for(const row of entries){if(row[2]>0){if(row[5])known.set(String(row[2]),row[5]);else byReader.set(String(row[2]),true)}}
+  const todo=[...byReader.keys()].filter(id=>!known.has(id));
+  console.log(`DRN: ${known.size} ya cacheados; ${todo.length} por resolver.`);
+  let cursor=0,done=0,found=0;
+  async function worker(){
+    while(true){
+      const i=cursor++;if(i>=todo.length)return;
+      const id=todo[i],drn=await resolveDrn(id);if(drn){known.set(id,drn);found++}
+      done++;if(done%250===0||done===todo.length)console.log(`DRN ${done}/${todo.length}; nuevos=${found}; total=${known.size}`);
+      await sleep(35);
+    }
+  }
+  await Promise.all(Array.from({length:Math.min(DRN_CONCURRENCY,todo.length||1)},()=>worker()));
+  for(const row of entries)if(row[2]>0)row[5]=known.get(String(row[2]))||'';
+  return{known:known.size,attempted:todo.length,newFound:found};
+}
+function statsOf(entries){
+  let matched=0,unavailable=0,ambiguous=0,unknown=0,linkReady=0,linkMissing=0;
+  for(const row of entries){
+    if(row[3]===1){matched++;if(row[5])linkReady++;else linkMissing++}
+    else if(row[3]===3)unavailable++;
+    else if(row[3]===2)ambiguous++;
+    else unknown++;
+  }
+  return{matched,unavailable,ambiguous,unknown,linkReady,linkMissing};
+}
+
+await fs.access(archive);await fs.mkdir(outDir,{recursive:true});
+const existing=await loadExisting();
+let entries,yearStats=[],catalogCount=Number(existing?.catalogCount)||0;
+if(existing&&existing.localCount>=50000&&existing.entries.length===existing.localCount&&process.env.REFRESH_CATALOG!=='1'){
+  console.log(`Reutilizando cruce preinstalado de ${existing.localCount} números; no se repite el análisis completo.`);
+  entries=existing.entries.map(normalizeExistingRow);yearStats=existing.yearStats||[];
+}else{
+  console.log('Descargando catálogo Marvel Unlimited…');
+  const catalog=await fetchCatalog();if(catalog.issues.length<20000)throw new Error(`Catálogo demasiado pequeño (${catalog.issues.length}); no se publica una caché incompleta.`);
+  catalogCount=catalog.issues.length;yearStats=catalog.yearStats;
+  console.log(`Catálogo remoto: ${catalogCount} números únicos.`);
+  console.log('Leyendo los números GCD de la PWA…');
+  const local=await loadLocal();console.log(`Orden local: ${local.issues.length} números.`);entries=buildCrosswalk(local,catalog.issues);
+}
+if(entries.length<50000)throw new Error(`La caché no cubre el orden completo (${entries.length}).`);
+const drnStats=await fillDrns(entries),stats=statsOf(entries);
+const payload={version:2,resolverVersion:13,generatedAt:new Date().toISOString(),ready:true,linksPrebuilt:true,localCount:entries.length,catalogCount,matched:stats.matched,unavailable:stats.unavailable,ambiguous:stats.ambiguous,unknown:stats.unknown,linkReady:stats.linkReady,linkMissing:stats.linkMissing,fields:['gcdId','sourceId','readerId','status(0=unknown,1=MU,2=ambiguous,3=noDigital)','coverUrl','drn'],yearStats,entries};
 await fs.writeFile(outFile,JSON.stringify(payload));
 console.log(`Caché escrita: ${outFile}`);
-console.log(`Coincidencias MU=${payload.matched}; sin MU=${payload.unavailable}; ambiguas=${payload.ambiguous}`);
+console.log({localCount:payload.localCount,catalogCount:payload.catalogCount,matched:payload.matched,noDigital:payload.unavailable,ambiguous:payload.ambiguous,unknown:payload.unknown,linkReady:payload.linkReady,linkMissing:payload.linkMissing,drn:drnStats});
