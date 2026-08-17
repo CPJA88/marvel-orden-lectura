@@ -1,0 +1,81 @@
+name: Audit Marvel Unlimited links
+
+on:
+  workflow_run:
+    workflows: ['Prebuild Marvel cache']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-unlimited-link-audit
+  cancel-in-progress: true
+
+jobs:
+  audit-links:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate auditor syntax
+        run: node --check scripts/audit-marvel-unlimited-links.mjs
+
+      - name: Restore link-audit checkpoint
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/marvel-link-audit-v1
+          key: marvel-link-audit-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            marvel-link-audit-${{ runner.os }}-
+
+      - name: Verify every Marvel Unlimited DRN and hyperlink
+        id: audit
+        env:
+          LINK_VERIFY_CONCURRENCY: '6'
+        run: node scripts/audit-marvel-unlimited-links.mjs
+
+      - name: Save link-audit checkpoint
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/marvel-link-audit-v1
+          key: marvel-link-audit-${{ runner.os }}-${{ github.run_id }}
+
+      - name: Preserve audit report and repaired candidate
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-unlimited-link-audit-${{ github.run_id }}
+          path: |
+            artifacts/marvel-unlimited-link-audit.json
+            source/marvel-cache/index.json
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Commit fully audited cache
+        if: steps.audit.outcome == 'success'
+        run: |
+          if git diff --quiet -- source/marvel-cache/index.json; then
+            echo 'La auditoría no cambió la caché.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json
+          git commit -m 'cache: auditar DRN y deeplinks Marvel Unlimited uno a uno'
+          git pull --rebase origin main
+          git push origin HEAD:main
