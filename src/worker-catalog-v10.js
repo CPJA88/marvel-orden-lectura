@@ -107,8 +107,9 @@ function issueNumberFromSlug(url,seriesYear=''){
   return '';
 }
 function issueNumberFromLink(text,url,seriesYear=''){
+  const canonical=issueNumberFromSlug(url,seriesYear);if(canonical)return canonical;
   const clean=stripTags(text),m=clean.match(/#\s*([0-9]+(?:\.[0-9]+)?|[A-Za-z0-9]+(?:[-/][A-Za-z0-9]+)?)/i);
-  return m?normalizeIssue(m[1]):issueNumberFromSlug(url,seriesYear);
+  return m?normalizeIssue(m[1]):'';
 }
 function urlLooksLikeSeries(url,title,year){
   let slug='';try{slug=normalizeText(decodeURIComponent(new URL(url,MARVEL_ORIGIN).pathname.split('/').pop()||''))}catch{}
@@ -178,7 +179,7 @@ function extractPageTitle(html=''){
   const clean=unescapeHtml(html);for(const re of [/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i,/<title[^>]*>([^<]+)<\/title>/i]){const m=clean.match(re);if(m)return stripTags(m[1])}return '';
 }
 function pageMatches(html,title,issue,year){
-  const pt=extractPageTitle(html),norm=normalizeSeries(pt.replace(/#.*$/,'').replace(/\|.*$/,''));
+  const pt=extractPageTitle(html),base=pt.replace(/\(\s*\d{4}(?:\s*-\s*(?:\d{4}|Present))?\s*\)/gi,' ').replace(/#.*$/,'').replace(/\|.*$/,' '),norm=normalizeSeries(base);
   const titleOk=similarity(title,norm)>=0.72||normalizeSeries(title)===norm;
   const issueOk=!issue||new RegExp(`#\\s*${String(issue).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?:\\b|\\s|$)`,'i').test(pt);
   const yearOk=!year||pt.includes(`(${year})`)||normalizeText(pt).includes(String(year));
@@ -189,9 +190,9 @@ function extractReaderData(html,issueUrl){
   return{readerId:m?.[1]||'',webUrl:m?.[0]||issueUrl,explicitlyUnavailable:/Digital issue is not currently available/i.test(clean),explicitlyUnlimited:/Members get unlimited access|Marvel Unlimited/i.test(clean)};
 }
 async function fetchValidatedIssueHtml(issueUrl,title,issue,year){
-  const attempts=[shareIssueUrl(issueUrl),publicIssueUrl(issueUrl)].filter(Boolean);let last='';
-  for(const url of attempts){try{const html=await fetchHtml(url);last=html;if(pageMatches(html,title,issue,year))return html}catch{}}
-  if(last)return last;throw new Error('issue-page-unavailable');
+  const attempts=[shareIssueUrl(issueUrl),publicIssueUrl(issueUrl)].filter(Boolean);
+  for(const url of attempts){try{const html=await fetchHtml(url);if(pageMatches(html,title,issue,year))return html}catch{}}
+  throw new Error('issue-page-mismatch-or-unavailable');
 }
 async function resolveLegacyDrn(readerId){
   if(!readerId)return '';
