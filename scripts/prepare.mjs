@@ -7,8 +7,8 @@ const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
 const marvelCacheSource=path.join(source,'marvel-cache');
-const uiBaseVersion='v1.2.25-verified-cache';
-const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'];
+const uiBaseVersion='v1.2.26-marmota';
+const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js'];
 
 for(const name of sourceFiles){
   const file=path.join(source,name);
@@ -31,7 +31,7 @@ const uiVersion=`${uiBaseVersion}-${cacheStamp}`;
 
 const indexPath=path.join(output,'index.html');
 let index=await fs.readFile(indexPath,'utf8');
-const scripts=['resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js'];
+const scripts=['resolver-ui.js','cache-ui.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js'];
 let anchor='<script src="diagnostics.js" defer></script>';
 for(const script of scripts){
   if(!index.includes(script)){
@@ -44,7 +44,7 @@ await fs.writeFile(indexPath,index);
 const swPath=path.join(output,'sw.js');
 let sw=await fs.readFile(swPath,'utf8');
 sw=sw.replace(/marvel-lectura-v[^'\"]+/g,`marvel-lectura-${uiVersion}`);
-sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','data/marvel-cache/index.json'");
+sw=sw.replace("'styles.css','app.js'","'styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js','data/marvel-cache/index.json'");
 await fs.writeFile(swPath,sw);
 
 const manifestPath=path.join(output,'manifest.webmanifest');
@@ -52,5 +52,5 @@ const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
 manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
-for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: índice preinstalado=${baked.localCount}; formato=${baked.version||1}; verificación oficial=${Boolean(baked.officiallyVerified)}; MU=${baked.matched}; deeplinks preconstruidos=${baked.linkReady||0}; deeplinks pendientes=${baked.linkMissing||0}. El scroll no resuelve metadata en red.`);
+for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
+console.log(`PWA Marvel construida con ${uiVersion}: índice preinstalado=${baked.localCount}; formato=${baked.version||1}; verificación oficial=${Boolean(baked.officiallyVerified)}; MU=${baked.matched}; deeplinks preconstruidos=${baked.linkReady||0}; deeplinks pendientes=${baked.linkMissing||0}. Marmota integrado por colección. El scroll no resuelve metadata en red.`);
