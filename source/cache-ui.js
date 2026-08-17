@@ -1,7 +1,7 @@
-/* Marvel Lector v1.2.9 — resolución visible serial, reintentos y sin precarga agresiva */
+/* Marvel Lector v1.2.14 — resolución visible serial y caché negativa V5 */
 (() => {
   const ACTIVE_RESOLVER_VERSION=7;
-  const UI_CACHE_VERSION=4;
+  const UI_CACHE_VERSION=5;
   const UI_META_CONCURRENCY=1;
   const BACKGROUND_PREFETCH_LIMIT=0;
   const NEGATIVE_RETRY_AGE=5*1000;
@@ -153,8 +153,6 @@
     cards.slice(10).forEach(el=>uiObserver.observe(el));
   };
 
-  // Sin precarga de metadatos mientras estabilizamos la resolución. Las tarjetas
-  // visibles tienen prioridad absoluta; el modo lectura seguirá resolviendo al abrir.
   prefetchUpcoming=async function(){return};
 
   function repaint(){document.querySelectorAll('.issue[data-id]').forEach(el=>{const id=Number(el.dataset.id),m=state.marvel.get(id);if(m)updateRenderedMeta(id,m)})}
