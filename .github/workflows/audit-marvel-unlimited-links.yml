@@ -45,7 +45,7 @@ jobs:
       - name: Verify every Marvel Unlimited DRN and hyperlink
         id: audit
         env:
-          LINK_VERIFY_CONCURRENCY: '6'
+          LINK_VERIFY_CONCURRENCY: '4'
         run: node scripts/audit-marvel-unlimited-links.mjs
 
       - name: Save link-audit checkpoint
