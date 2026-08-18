@@ -1,0 +1,2132 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T17:56:26.642Z",
+  "mode": "series-anchor-pilot",
+  "writesCache": false,
+  "baseline": {
+    "localCount": 51002,
+    "matched": 25329,
+    "noDigital": 1057,
+    "notListed": 24616
+  },
+  "catalog": {
+    "issues": 37526,
+    "remoteSeries": 6989,
+    "positiveRowsWithSource": 25329,
+    "positiveAnchorsFound": 25329
+  },
+  "seriesMappings": {
+    "localSeriesWithVotes": 2870,
+    "trusted": 2353,
+    "strong": 1474,
+    "singleExact": 879,
+    "rejectedConflict": 190
+  },
+  "candidateRecovery": {
+    "notListed": 24616,
+    "anchoredSeriesCandidates": 1520,
+    "strong": 1503,
+    "singleExact": 17
+  },
+  "pilot": {
+    "checked": 197,
+    "exactRemote": 194,
+    "mu": 189,
+    "noDigital": 5,
+    "unknown": 0,
+    "remoteIdentityMismatch": 1,
+    "retryable": 0,
+    "readerRouteConfirmed": 189
+  },
+  "examples": {
+    "mu": [
+      {
+        "gcdId": 202853,
+        "local": {
+          "gcdId": 202853,
+          "seriesId": 3140,
+          "title": "Girl Comics",
+          "issueNumber": "1",
+          "seriesYear": "1949",
+          "date": "1949-06-30"
+        },
+        "mapping": {
+          "localSeriesId": 3140,
+          "localTitle": "Girl Comics",
+          "remoteKey": "id:9311",
+          "remoteSeriesId": 9311,
+          "remoteSeriesName": "Girl Comics (2010)",
+          "remoteSeriesYear": "2010",
+          "anchorVotes": 3,
+          "totalVotes": 3,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 30238,
+          "readerId": 13962,
+          "seriesId": 9311,
+          "seriesName": "Girl Comics (2010)",
+          "seriesYear": "2010",
+          "issueNumber": "1",
+          "onSale": "2010-03-03T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 30238,
+          "title": "Girl Comics (2010) #1",
+          "availability": "mu",
+          "readerId": 13962,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Girl Comics (2010) #1",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 13962,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13962"
+        }
+      },
+      {
+        "gcdId": 202854,
+        "local": {
+          "gcdId": 202854,
+          "seriesId": 3140,
+          "title": "Girl Comics",
+          "issueNumber": "2",
+          "seriesYear": "1949",
+          "date": "1949-09-26"
+        },
+        "mapping": {
+          "localSeriesId": 3140,
+          "localTitle": "Girl Comics",
+          "remoteKey": "id:9311",
+          "remoteSeriesId": 9311,
+          "remoteSeriesName": "Girl Comics (2010)",
+          "remoteSeriesYear": "2010",
+          "anchorVotes": 3,
+          "totalVotes": 3,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 30239,
+          "readerId": 14656,
+          "seriesId": 9311,
+          "seriesName": "Girl Comics (2010)",
+          "seriesYear": "2010",
+          "issueNumber": "2",
+          "onSale": "2010-05-19T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 30239,
+          "title": "Girl Comics (2010) #2",
+          "availability": "mu",
+          "readerId": 14656,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Girl Comics (2010) #2",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 14656,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14656"
+        }
+      },
+      {
+        "gcdId": 202855,
+        "local": {
+          "gcdId": 202855,
+          "seriesId": 3140,
+          "title": "Girl Comics",
+          "issueNumber": "3",
+          "seriesYear": "1949",
+          "date": "1950-01-03"
+        },
+        "mapping": {
+          "localSeriesId": 3140,
+          "localTitle": "Girl Comics",
+          "remoteKey": "id:9311",
+          "remoteSeriesId": 9311,
+          "remoteSeriesName": "Girl Comics (2010)",
+          "remoteSeriesYear": "2010",
+          "anchorVotes": 3,
+          "totalVotes": 3,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 30240,
+          "readerId": 15213,
+          "seriesId": 9311,
+          "seriesName": "Girl Comics (2010)",
+          "seriesYear": "2010",
+          "issueNumber": "3",
+          "onSale": "2010-07-14T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 30240,
+          "title": "Girl Comics (2010) #3",
+          "availability": "mu",
+          "readerId": 15213,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Girl Comics (2010) #3",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 15213,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=15213"
+        }
+      },
+      {
+        "gcdId": 215841,
+        "local": {
+          "gcdId": 215841,
+          "seriesId": 5422,
+          "title": "Mystic",
+          "issueNumber": "1",
+          "seriesYear": "1951",
+          "date": "1950-11-19"
+        },
+        "mapping": {
+          "localSeriesId": 5422,
+          "localTitle": "Mystic",
+          "remoteKey": "id:13782",
+          "remoteSeriesId": 13782,
+          "remoteSeriesName": "Mystic (2011)",
+          "remoteSeriesYear": "2011",
+          "anchorVotes": 4,
+          "totalVotes": 4,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 38267,
+          "readerId": 22734,
+          "seriesId": 13782,
+          "seriesName": "Mystic (2011)",
+          "seriesYear": "2011",
+          "issueNumber": "1",
+          "onSale": "2011-08-03T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 38267,
+          "title": "Mystic (2011) #1",
+          "availability": "mu",
+          "readerId": 22734,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Mystic (2011) #1",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 22734,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22734"
+        }
+      },
+      {
+        "gcdId": 215842,
+        "local": {
+          "gcdId": 215842,
+          "seriesId": 5422,
+          "title": "Mystic",
+          "issueNumber": "2",
+          "seriesYear": "1951",
+          "date": "1951-01-19"
+        },
+        "mapping": {
+          "localSeriesId": 5422,
+          "localTitle": "Mystic",
+          "remoteKey": "id:13782",
+          "remoteSeriesId": 13782,
+          "remoteSeriesName": "Mystic (2011)",
+          "remoteSeriesYear": "2011",
+          "anchorVotes": 4,
+          "totalVotes": 4,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 38289,
+          "readerId": 23616,
+          "seriesId": 13782,
+          "seriesName": "Mystic (2011)",
+          "seriesYear": "2011",
+          "issueNumber": "2",
+          "onSale": "2011-09-07T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 38289,
+          "title": "Mystic (2011) #2",
+          "availability": "mu",
+          "readerId": 23616,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Mystic (2011) #2",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 23616,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23616"
+        }
+      },
+      {
+        "gcdId": 215843,
+        "local": {
+          "gcdId": 215843,
+          "seriesId": 5422,
+          "title": "Mystic",
+          "issueNumber": "3",
+          "seriesYear": "1951",
+          "date": "1951-03-21"
+        },
+        "mapping": {
+          "localSeriesId": 5422,
+          "localTitle": "Mystic",
+          "remoteKey": "id:13782",
+          "remoteSeriesId": 13782,
+          "remoteSeriesName": "Mystic (2011)",
+          "remoteSeriesYear": "2011",
+          "anchorVotes": 4,
+          "totalVotes": 4,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 38268,
+          "readerId": 23928,
+          "seriesId": 13782,
+          "seriesName": "Mystic (2011)",
+          "seriesYear": "2011",
+          "issueNumber": "3",
+          "onSale": "2011-10-05T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 38268,
+          "title": "Mystic (2011) #3",
+          "availability": "mu",
+          "readerId": 23928,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Mystic (2011) #3",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 23928,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23928"
+        }
+      },
+      {
+        "gcdId": 215844,
+        "local": {
+          "gcdId": 215844,
+          "seriesId": 5422,
+          "title": "Mystic",
+          "issueNumber": "4",
+          "seriesYear": "1951",
+          "date": "1951-05-22"
+        },
+        "mapping": {
+          "localSeriesId": 5422,
+          "localTitle": "Mystic",
+          "remoteKey": "id:13782",
+          "remoteSeriesId": 13782,
+          "remoteSeriesName": "Mystic (2011)",
+          "remoteSeriesYear": "2011",
+          "anchorVotes": 4,
+          "totalVotes": 4,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 38288,
+          "readerId": 24453,
+          "seriesId": 13782,
+          "seriesName": "Mystic (2011)",
+          "seriesYear": "2011",
+          "issueNumber": "4",
+          "onSale": "2011-11-02T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 38288,
+          "title": "Mystic (2011) #4",
+          "availability": "mu",
+          "readerId": 24453,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Mystic (2011) #4",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 24453,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=24453"
+        }
+      },
+      {
+        "gcdId": 11235,
+        "local": {
+          "gcdId": 11235,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "33",
+          "seriesYear": "1954",
+          "date": "1954-01-17"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17088,
+          "readerId": 10343,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "33",
+          "onSale": "1971-01-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17088,
+          "title": "Sub-Mariner (1968) #33",
+          "availability": "mu",
+          "readerId": 10343,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #33",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 10343,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=10343"
+        }
+      },
+      {
+        "gcdId": 11369,
+        "local": {
+          "gcdId": 11369,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "34",
+          "seriesYear": "1954",
+          "date": "1954-03-19"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17089,
+          "readerId": 11541,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "34",
+          "onSale": "1971-02-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17089,
+          "title": "Sub-Mariner (1968) #34",
+          "availability": "mu",
+          "readerId": 11541,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #34",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 11541,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11541"
+        }
+      },
+      {
+        "gcdId": 11499,
+        "local": {
+          "gcdId": 11499,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "35",
+          "seriesYear": "1954",
+          "date": "1954-05-19"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17090,
+          "readerId": 11542,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "35",
+          "onSale": "1971-03-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17090,
+          "title": "Sub-Mariner (1968) #35",
+          "availability": "mu",
+          "readerId": 11542,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #35",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 11542,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11542"
+        }
+      },
+      {
+        "gcdId": 11559,
+        "local": {
+          "gcdId": 11559,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "36",
+          "seriesYear": "1954",
+          "date": "1954-08-10"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17091,
+          "readerId": 48216,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "36",
+          "onSale": "1971-04-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17091,
+          "title": "Sub-Mariner (1968) #36",
+          "availability": "mu",
+          "readerId": 48216,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #36",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48216,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48216"
+        }
+      },
+      {
+        "gcdId": 11745,
+        "local": {
+          "gcdId": 11745,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "37",
+          "seriesYear": "1954",
+          "date": "1954-09-18"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17092,
+          "readerId": 48217,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "37",
+          "onSale": "1971-05-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17092,
+          "title": "Sub-Mariner (1968) #37",
+          "availability": "mu",
+          "readerId": 48217,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #37",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48217,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48217"
+        }
+      },
+      {
+        "gcdId": 11891,
+        "local": {
+          "gcdId": 11891,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "38",
+          "seriesYear": "1954",
+          "date": "1954-11-11"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17093,
+          "readerId": 48218,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "38",
+          "onSale": "1971-06-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17093,
+          "title": "Sub-Mariner (1968) #38",
+          "availability": "mu",
+          "readerId": 48218,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #38",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48218,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48218"
+        }
+      },
+      {
+        "gcdId": 12009,
+        "local": {
+          "gcdId": 12009,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "39",
+          "seriesYear": "1954",
+          "date": "1955-01-09"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17094,
+          "readerId": 48365,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "39",
+          "onSale": "1971-07-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17094,
+          "title": "Sub-Mariner (1968) #39",
+          "availability": "mu",
+          "readerId": 48365,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #39",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48365,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48365"
+        }
+      },
+      {
+        "gcdId": 12123,
+        "local": {
+          "gcdId": 12123,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "40",
+          "seriesYear": "1954",
+          "date": "1955-03-11"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17096,
+          "readerId": 48366,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "40",
+          "onSale": "1971-08-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17096,
+          "title": "Sub-Mariner (1968) #40",
+          "availability": "mu",
+          "readerId": 48366,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #40",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48366,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48366"
+        }
+      },
+      {
+        "gcdId": 167098,
+        "local": {
+          "gcdId": 167098,
+          "seriesId": 4000,
+          "title": "Jungle Action",
+          "issueNumber": "6",
+          "seriesYear": "1954",
+          "date": "1955-05-04"
+        },
+        "mapping": {
+          "localSeriesId": 4000,
+          "localTitle": "Jungle Action",
+          "remoteKey": "id:22991",
+          "remoteSeriesId": 22991,
+          "remoteSeriesName": "Jungle Action (1972 - 1976)",
+          "remoteSeriesYear": "1972",
+          "anchorVotes": 19,
+          "totalVotes": 19,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 62639,
+          "readerId": 44351,
+          "seriesId": 22991,
+          "seriesName": "Jungle Action (1972 - 1976)",
+          "seriesYear": "1972",
+          "issueNumber": "6",
+          "onSale": "1973-09-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 62639,
+          "title": "Jungle Action (1972) #6",
+          "availability": "mu",
+          "readerId": 44351,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Jungle Action (1972) #6",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 44351,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=44351"
+        }
+      },
+      {
+        "gcdId": 12264,
+        "local": {
+          "gcdId": 12264,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "41",
+          "seriesYear": "1954",
+          "date": "1955-05-11"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17097,
+          "readerId": 48367,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "41",
+          "onSale": "1971-09-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17097,
+          "title": "Sub-Mariner (1968) #41",
+          "availability": "mu",
+          "readerId": 48367,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #41",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48367,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48367"
+        }
+      },
+      {
+        "gcdId": 12394,
+        "local": {
+          "gcdId": 12394,
+          "seriesId": 7460,
+          "title": "Sub-Mariner",
+          "issueNumber": "42",
+          "seriesYear": "1954",
+          "date": "1955-07-11"
+        },
+        "mapping": {
+          "localSeriesId": 7460,
+          "localTitle": "Sub-Mariner",
+          "remoteKey": "id:2989",
+          "remoteSeriesId": 2989,
+          "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+          "remoteSeriesYear": "1968",
+          "anchorVotes": 72,
+          "totalVotes": 78,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17098,
+          "readerId": 48368,
+          "seriesId": 2989,
+          "seriesName": "Sub-Mariner (1968 - 1974)",
+          "seriesYear": "1968",
+          "issueNumber": "42",
+          "onSale": "1971-10-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17098,
+          "title": "Sub-Mariner (1968) #42",
+          "availability": "mu",
+          "readerId": 48368,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Sub-Mariner (1968) #42",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 48368,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48368"
+        }
+      },
+      {
+        "gcdId": 21797,
+        "local": {
+          "gcdId": 21797,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "102",
+          "seriesYear": "1968",
+          "date": "1968-01-09"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 8913,
+          "readerId": 39888,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "102",
+          "onSale": "1968-04-10T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 8913,
+          "title": "Incredible Hulk (1962) #102",
+          "availability": "mu",
+          "readerId": 39888,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #102",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 39888,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=39888"
+        }
+      },
+      {
+        "gcdId": 21869,
+        "local": {
+          "gcdId": 21869,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "103",
+          "seriesYear": "1968",
+          "date": "1968-02-08"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17158,
+          "readerId": 4782,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "103",
+          "onSale": "1968-05-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17158,
+          "title": "Incredible Hulk (1962) #103",
+          "availability": "mu",
+          "readerId": 4782,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #103",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4782,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4782"
+        }
+      },
+      {
+        "gcdId": 21940,
+        "local": {
+          "gcdId": 21940,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "104",
+          "seriesYear": "1968",
+          "date": "1968-03-07"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17159,
+          "readerId": 4783,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "104",
+          "onSale": "1968-06-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17159,
+          "title": "Incredible Hulk (1962) #104",
+          "availability": "mu",
+          "readerId": 4783,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #104",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4783,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4783"
+        }
+      },
+      {
+        "gcdId": 22016,
+        "local": {
+          "gcdId": 22016,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "105",
+          "seriesYear": "1968",
+          "date": "1968-04-09"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17160,
+          "readerId": 4784,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "105",
+          "onSale": "1968-07-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17160,
+          "title": "Incredible Hulk (1962) #105",
+          "availability": "mu",
+          "readerId": 4784,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #105",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4784,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4784"
+        }
+      },
+      {
+        "gcdId": 22092,
+        "local": {
+          "gcdId": 22092,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "106",
+          "seriesYear": "1968",
+          "date": "1968-05-09"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17161,
+          "readerId": 4785,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "106",
+          "onSale": "1968-08-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17161,
+          "title": "Incredible Hulk (1962) #106",
+          "availability": "mu",
+          "readerId": 4785,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #106",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4785,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4785"
+        }
+      },
+      {
+        "gcdId": 22172,
+        "local": {
+          "gcdId": 22172,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "107",
+          "seriesYear": "1968",
+          "date": "1968-06-11"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17162,
+          "readerId": 4786,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "107",
+          "onSale": "1968-09-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17162,
+          "title": "Incredible Hulk (1962) #107",
+          "availability": "mu",
+          "readerId": 4786,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #107",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4786,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4786"
+        }
+      },
+      {
+        "gcdId": 22247,
+        "local": {
+          "gcdId": 22247,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "108",
+          "seriesYear": "1968",
+          "date": "1968-07-11"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17163,
+          "readerId": 4787,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "108",
+          "onSale": "1968-10-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17163,
+          "title": "Incredible Hulk (1962) #108",
+          "availability": "mu",
+          "readerId": 4787,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #108",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4787,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4787"
+        }
+      },
+      {
+        "gcdId": 22330,
+        "local": {
+          "gcdId": 22330,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "109",
+          "seriesYear": "1968",
+          "date": "1968-08-08"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17164,
+          "readerId": 4788,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "109",
+          "onSale": "1968-11-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17164,
+          "title": "Incredible Hulk (1962) #109",
+          "availability": "mu",
+          "readerId": 4788,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #109",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4788,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4788"
+        }
+      },
+      {
+        "gcdId": 22401,
+        "local": {
+          "gcdId": 22401,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "110",
+          "seriesYear": "1968",
+          "date": "1968-09-10"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 17165,
+          "readerId": 4789,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "110",
+          "onSale": "1968-12-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 17165,
+          "title": "Incredible Hulk (1962) #110",
+          "availability": "mu",
+          "readerId": 4789,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #110",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 4789,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4789"
+        }
+      },
+      {
+        "gcdId": 22469,
+        "local": {
+          "gcdId": 22469,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "111",
+          "seriesYear": "1968",
+          "date": "1968-10-10"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 8922,
+          "readerId": 12973,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "111",
+          "onSale": "1969-01-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 8922,
+          "title": "Incredible Hulk (1962) #111",
+          "availability": "mu",
+          "readerId": 12973,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #111",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 12973,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12973"
+        }
+      },
+      {
+        "gcdId": 22532,
+        "local": {
+          "gcdId": 22532,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "112",
+          "seriesYear": "1968",
+          "date": "1968-11-12"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 8923,
+          "readerId": 12974,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "112",
+          "onSale": "1969-02-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 8923,
+          "title": "Incredible Hulk (1962) #112",
+          "availability": "mu",
+          "readerId": 12974,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #112",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 12974,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12974"
+        }
+      },
+      {
+        "gcdId": 22596,
+        "local": {
+          "gcdId": 22596,
+          "seriesId": 7843,
+          "title": "The Incredible Hulk",
+          "issueNumber": "113",
+          "seriesYear": "1968",
+          "date": "1968-12-12"
+        },
+        "mapping": {
+          "localSeriesId": 7843,
+          "localTitle": "The Incredible Hulk",
+          "remoteKey": "id:2021",
+          "remoteSeriesId": 2021,
+          "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+          "remoteSeriesYear": "1962",
+          "anchorVotes": 6,
+          "totalVotes": 6,
+          "trust": "strong",
+          "reason": "multi-anchor-majority"
+        },
+        "candidate": {
+          "sourceId": 8924,
+          "readerId": 12975,
+          "seriesId": 2021,
+          "seriesName": "Incredible Hulk (1962 - 1999)",
+          "seriesYear": "1962",
+          "issueNumber": "113",
+          "onSale": "1969-03-01T00:00:00+0000"
+        },
+        "official": {
+          "kind": "exact-remote",
+          "sourceId": 8924,
+          "title": "Incredible Hulk (1962) #113",
+          "availability": "mu",
+          "readerId": 12975,
+          "drn": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Incredible Hulk (1962) #113",
+          "remoteIdentity": true,
+          "availability": "mu",
+          "readerId": 12975,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12975"
+        }
+      }
+    ],
+    "mismatch": [
+      {
+        "gcdId": 695290,
+        "local": {
+          "gcdId": 695290,
+          "seriesId": 358,
+          "title": "Amazing Spider-Man: Extra!",
+          "issueNumber": "1",
+          "seriesYear": "2008",
+          "date": "2008-07-30"
+        },
+        "mapping": {
+          "localSeriesId": 358,
+          "localTitle": "Amazing Spider-Man: Extra!",
+          "remoteKey": "id:6604",
+          "remoteSeriesId": 6604,
+          "remoteSeriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+          "remoteSeriesYear": "2008",
+          "anchorVotes": 1,
+          "totalVotes": 1,
+          "trust": "singleExact",
+          "reason": "single-anchor-title-year"
+        },
+        "candidate": {
+          "sourceId": 23069,
+          "readerId": 10677,
+          "seriesId": 6604,
+          "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+          "seriesYear": "2008",
+          "issueNumber": "1",
+          "onSale": "2008-07-30T00:00:00+0000"
+        },
+        "official": {
+          "kind": "remote-identity-mismatch",
+          "sourceId": 23069,
+          "title": "Spider-Man: Brand New Day - Extra!! (2008) #1"
+        },
+        "reader": null
+      }
+    ],
+    "mappings": [
+      {
+        "localSeriesId": 4750,
+        "localTitle": "Marvel Mystery Comics",
+        "remoteKey": "id:2981",
+        "remoteSeriesId": 2981,
+        "remoteSeriesName": "Marvel Mystery Comics (1939 - 1949)",
+        "remoteSeriesYear": "1939",
+        "anchorVotes": 33,
+        "totalVotes": 33,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 1835,
+        "localTitle": "Daring Mystery Comics",
+        "remoteKey": "id:4776",
+        "remoteSeriesId": 4776,
+        "remoteSeriesName": "Daring Mystery Comics (1940 - 1942)",
+        "remoteSeriesYear": "1940",
+        "anchorVotes": 8,
+        "totalVotes": 8,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5429,
+        "localTitle": "Mystic Comics",
+        "remoteKey": "id:23758",
+        "remoteSeriesId": 23758,
+        "remoteSeriesName": "Mystic Comics (1940 - 1942)",
+        "remoteSeriesYear": "1940",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 6040,
+        "localTitle": "Red Raven Comics",
+        "remoteKey": "id:23759",
+        "remoteSeriesId": 23759,
+        "remoteSeriesName": "Red Raven Comics (1940)",
+        "remoteSeriesYear": "1940",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 7833,
+        "localTitle": "The Human Torch",
+        "remoteKey": "id:2019",
+        "remoteSeriesId": 2019,
+        "remoteSeriesName": "Human Torch Comics (1940 - 1954)",
+        "remoteSeriesYear": "1940",
+        "anchorVotes": 14,
+        "totalVotes": 14,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 1191,
+        "localTitle": "Captain America Comics",
+        "remoteKey": "id:1998",
+        "remoteSeriesId": 1998,
+        "remoteSeriesName": "Captain America Comics (1941 - 1954)",
+        "remoteSeriesYear": "1941",
+        "anchorVotes": 20,
+        "totalVotes": 20,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7463,
+        "localTitle": "Sub-Mariner Comics",
+        "remoteKey": "id:2077",
+        "remoteSeriesId": 2077,
+        "remoteSeriesName": "Sub-Mariner Comics (1941 - 1955)",
+        "remoteSeriesYear": "1941",
+        "anchorVotes": 18,
+        "totalVotes": 18,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 244,
+        "localTitle": "All-Winners Comics",
+        "remoteKey": "id:2114",
+        "remoteSeriesId": 2114,
+        "remoteSeriesName": "All-Winners Comics (1941 - 1947)",
+        "remoteSeriesYear": "1941",
+        "anchorVotes": 14,
+        "totalVotes": 14,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 1033,
+        "localTitle": "Blonde Phantom Comics",
+        "remoteKey": "id:24489",
+        "remoteSeriesId": 24489,
+        "remoteSeriesName": "Blonde Phantom (1946)",
+        "remoteSeriesYear": "1946",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 5459,
+        "localTitle": "Namora",
+        "remoteKey": "id:31336",
+        "remoteSeriesId": 31336,
+        "remoteSeriesName": "Namora (1948)",
+        "remoteSeriesYear": "1948",
+        "anchorVotes": 3,
+        "totalVotes": 4,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 9194,
+        "localTitle": "Venus",
+        "remoteKey": "id:16374",
+        "remoteSeriesId": 16374,
+        "remoteSeriesName": "Venus (1948 - 1952)",
+        "remoteSeriesYear": "1948",
+        "anchorVotes": 9,
+        "totalVotes": 9,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4400,
+        "localTitle": "Marvel Boy",
+        "remoteKey": "id:2036",
+        "remoteSeriesId": 2036,
+        "remoteSeriesName": "Marvel Boy (2000 - 2001)",
+        "remoteSeriesYear": "2000",
+        "anchorVotes": 6,
+        "totalVotes": 8,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 492,
+        "localTitle": "Astonishing",
+        "remoteKey": "id:2982",
+        "remoteSeriesId": 2982,
+        "remoteSeriesName": "Astonishing (1951 - 1957)",
+        "remoteSeriesYear": "1951",
+        "anchorVotes": 4,
+        "totalVotes": 4,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7439,
+        "localTitle": "Strange Tales",
+        "remoteKey": "id:2076",
+        "remoteSeriesId": 2076,
+        "remoteSeriesName": "Strange Tales (1951 - 1968)",
+        "remoteSeriesYear": "1951",
+        "anchorVotes": 129,
+        "totalVotes": 134,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5181,
+        "localTitle": "Menace",
+        "remoteKey": "id:20931",
+        "remoteSeriesId": 20931,
+        "remoteSeriesName": "Menace (1953)",
+        "remoteSeriesYear": "1953",
+        "anchorVotes": 11,
+        "totalVotes": 11,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4204,
+        "localTitle": "Lorna the Jungle Queen",
+        "remoteKey": "id:16356",
+        "remoteSeriesId": 16356,
+        "remoteSeriesName": "Lorna the Jungle Queen (1953 - 1954)",
+        "remoteSeriesYear": "1953",
+        "anchorVotes": 5,
+        "totalVotes": 5,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 10385,
+        "localTitle": "Young Men",
+        "remoteKey": "id:2980",
+        "remoteSeriesId": 2980,
+        "remoteSeriesName": "Young Men (1950 - 1953)",
+        "remoteSeriesYear": "1950",
+        "anchorVotes": 5,
+        "totalVotes": 5,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5180,
+        "localTitle": "Men's Adventures",
+        "remoteKey": "id:6678",
+        "remoteSeriesId": 6678,
+        "remoteSeriesName": "Men's Adventures (1950 - 1954)",
+        "remoteSeriesYear": "1950",
+        "anchorVotes": 2,
+        "totalVotes": 2,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7548,
+        "localTitle": "Tales of Suspense",
+        "remoteKey": "id:2079",
+        "remoteSeriesId": 2079,
+        "remoteSeriesName": "Tales of Suspense (1959 - 1968)",
+        "remoteSeriesYear": "1959",
+        "anchorVotes": 99,
+        "totalVotes": 99,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7565,
+        "localTitle": "Tales to Astonish",
+        "remoteKey": "id:2080",
+        "remoteSeriesId": 2080,
+        "remoteSeriesName": "Tales to Astonish (1959 - 1968)",
+        "remoteSeriesYear": "1959",
+        "anchorVotes": 101,
+        "totalVotes": 101,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4208,
+        "localTitle": "Love Romances",
+        "remoteKey": "id:2033",
+        "remoteSeriesId": 2033,
+        "remoteSeriesName": "Love Romances (1949 - 1963)",
+        "remoteSeriesYear": "1949",
+        "anchorVotes": 4,
+        "totalVotes": 5,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5255,
+        "localTitle": "Millie the Model Comics",
+        "remoteKey": "id:3707",
+        "remoteSeriesId": 3707,
+        "remoteSeriesName": "Millie the Model (1945 - 1965)",
+        "remoteSeriesYear": "1945",
+        "anchorVotes": 6,
+        "totalVotes": 6,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 269,
+        "localTitle": "Amazing Adventures",
+        "remoteKey": "id:6666",
+        "remoteSeriesId": 6666,
+        "remoteSeriesName": "Amazing Adventures (1970 - 1976)",
+        "remoteSeriesYear": "1970",
+        "anchorVotes": 39,
+        "totalVotes": 45,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5753,
+        "localTitle": "Patsy Walker",
+        "remoteKey": "id:31240",
+        "remoteSeriesId": 31240,
+        "remoteSeriesName": "Patsy Walker (1945 - 1965)",
+        "remoteSeriesYear": "1945",
+        "anchorVotes": 6,
+        "totalVotes": 6,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4029,
+        "localTitle": "Kathy",
+        "remoteKey": "id:30212",
+        "remoteSeriesId": 30212,
+        "remoteSeriesName": "Kathy (1959 - Present)",
+        "remoteSeriesYear": "1959",
+        "anchorVotes": 3,
+        "totalVotes": 3,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4162,
+        "localTitle": "Life with Millie",
+        "remoteKey": "id:33880",
+        "remoteSeriesId": 33880,
+        "remoteSeriesName": "Life with Millie (1960 - Present)",
+        "remoteSeriesYear": "1960",
+        "anchorVotes": 2,
+        "totalVotes": 2,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4041,
+        "localTitle": "Kid Colt Outlaw",
+        "remoteKey": "id:30117",
+        "remoteSeriesId": 30117,
+        "remoteSeriesName": "Kid Colt: Outlaw (1949 - Present)",
+        "remoteSeriesYear": "1949",
+        "anchorVotes": 5,
+        "totalVotes": 5,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 4164,
+        "localTitle": "Linda Carter, Student Nurse",
+        "remoteKey": "id:33881",
+        "remoteSeriesId": 33881,
+        "remoteSeriesName": "Linda Carter, Student Nurse (1961 - Present)",
+        "remoteSeriesYear": "1961",
+        "anchorVotes": 2,
+        "totalVotes": 2,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 266,
+        "localTitle": "Amazing Adult Fantasy",
+        "remoteKey": "id:3616",
+        "remoteSeriesId": 3616,
+        "remoteSeriesName": "Amazing Adult Fantasy (1961 - 1962)",
+        "remoteSeriesYear": "1961",
+        "anchorVotes": 8,
+        "totalVotes": 8,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 3234,
+        "localTitle": "Gunsmoke Western",
+        "remoteKey": "id:33878",
+        "remoteSeriesId": 33878,
+        "remoteSeriesName": "Gunsmoke Western (1955 - Present)",
+        "remoteSeriesYear": "1955",
+        "anchorVotes": 2,
+        "totalVotes": 2,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7617,
+        "localTitle": "Teen-Age Romance",
+        "remoteKey": "id:29805",
+        "remoteSeriesId": 29805,
+        "remoteSeriesName": "Teen-Age Romance (1960 - 1962)",
+        "remoteSeriesYear": "1960",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 5750,
+        "localTitle": "Patsy and Hedy",
+        "remoteKey": "id:31239",
+        "remoteSeriesId": 31239,
+        "remoteSeriesName": "Patsy and Hedy (1952 - 1967)",
+        "remoteSeriesYear": "1952",
+        "anchorVotes": 5,
+        "totalVotes": 5,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7843,
+        "localTitle": "The Incredible Hulk",
+        "remoteKey": "id:2021",
+        "remoteSeriesId": 2021,
+        "remoteSeriesName": "Incredible Hulk (1962 - 1999)",
+        "remoteSeriesYear": "1962",
+        "anchorVotes": 6,
+        "totalVotes": 6,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 6354,
+        "localTitle": "Sgt. Fury",
+        "remoteKey": "id:2067",
+        "remoteSeriesId": 2067,
+        "remoteSeriesName": "Sgt. Fury (1963 - 1974)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 43,
+        "totalVotes": 43,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7440,
+        "localTitle": "Strange Tales Annual",
+        "remoteKey": "id:5853",
+        "remoteSeriesId": 5853,
+        "remoteSeriesName": "Strange Tales Annual (1962 - 1963)",
+        "remoteSeriesYear": "1962",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 2611,
+        "localTitle": "Fantastic Four Annual",
+        "remoteKey": "id:2012",
+        "remoteSeriesId": 2012,
+        "remoteSeriesName": "Fantastic Four Annual (1963 - 1994)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 23,
+        "totalVotes": 26,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5285,
+        "localTitle": "Modeling with Millie",
+        "remoteKey": "id:3705",
+        "remoteSeriesId": 3705,
+        "remoteSeriesName": "Modeling with Millie (1963 - 1966)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 4,
+        "totalVotes": 4,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 5751,
+        "localTitle": "Patsy and Hedy Annual",
+        "remoteKey": "id:26069",
+        "remoteSeriesId": 26069,
+        "remoteSeriesName": "Patsy and Hedy Annual (1963)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 7726,
+        "localTitle": "The Avengers",
+        "remoteKey": "id:1991",
+        "remoteSeriesId": 1991,
+        "remoteSeriesName": "Avengers (1963 - 1996)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 402,
+        "totalVotes": 403,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 8175,
+        "localTitle": "The X-Men",
+        "remoteKey": "id:2258",
+        "remoteSeriesId": 2258,
+        "remoteSeriesName": "Uncanny X-Men (1963 - 2011)",
+        "remoteSeriesYear": "1963",
+        "anchorVotes": 114,
+        "totalVotes": 114,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7691,
+        "localTitle": "The Amazing Spider-Man Annual",
+        "remoteKey": "id:2984",
+        "remoteSeriesId": 2984,
+        "remoteSeriesName": "Amazing Spider-Man Annual (1964 - 2018)",
+        "remoteSeriesYear": "1964",
+        "anchorVotes": 24,
+        "totalVotes": 24,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 8193,
+        "localTitle": "Thor",
+        "remoteKey": "id:2083",
+        "remoteSeriesId": 2083,
+        "remoteSeriesName": "Thor (1966 - 1996)",
+        "remoteSeriesYear": "1966",
+        "anchorVotes": 378,
+        "totalVotes": 458,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 8208,
+        "localTitle": "Thor Annual",
+        "remoteKey": "id:2978",
+        "remoteSeriesId": 2978,
+        "remoteSeriesName": "Thor Annual (1966 - 2001)",
+        "remoteSeriesYear": "1966",
+        "anchorVotes": 15,
+        "totalVotes": 19,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7814,
+        "localTitle": "The Ghost Rider",
+        "remoteKey": "id:23767",
+        "remoteSeriesId": 23767,
+        "remoteSeriesName": "The Ghost Rider (1967)",
+        "remoteSeriesYear": "1967",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 5618,
+        "localTitle": "Not Brand Echh",
+        "remoteKey": "id:23791",
+        "remoteSeriesId": 23791,
+        "remoteSeriesName": "Not Brand Echh (1967 - 1969)",
+        "remoteSeriesYear": "1967",
+        "anchorVotes": 12,
+        "totalVotes": 12,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 7730,
+        "localTitle": "The Avengers Annual",
+        "remoteKey": "id:1988",
+        "remoteSeriesId": 1988,
+        "remoteSeriesName": "Avengers Annual (1967 - 1994)",
+        "remoteSeriesYear": "1967",
+        "anchorVotes": 20,
+        "totalVotes": 20,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 3799,
+        "localTitle": "Iron Man & Sub-Mariner",
+        "remoteKey": "id:2030",
+        "remoteSeriesId": 2030,
+        "remoteSeriesName": "Iron Man and the Sub-Mariner (1968)",
+        "remoteSeriesYear": "1968",
+        "anchorVotes": 1,
+        "totalVotes": 1,
+        "trust": "singleExact",
+        "reason": "single-anchor-title-year"
+      },
+      {
+        "localSeriesId": 7460,
+        "localTitle": "Sub-Mariner",
+        "remoteKey": "id:2989",
+        "remoteSeriesId": 2989,
+        "remoteSeriesName": "Sub-Mariner (1968 - 1974)",
+        "remoteSeriesYear": "1968",
+        "anchorVotes": 72,
+        "totalVotes": 78,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 3792,
+        "localTitle": "Iron Man",
+        "remoteKey": "id:2029",
+        "remoteSeriesId": 2029,
+        "remoteSeriesName": "Iron Man (1968 - 1996)",
+        "remoteSeriesYear": "1968",
+        "anchorVotes": 332,
+        "totalVotes": 393,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      },
+      {
+        "localSeriesId": 8066,
+        "localTitle": "The Spectacular Spider-Man",
+        "remoteKey": "id:2271",
+        "remoteSeriesId": 2271,
+        "remoteSeriesName": "Peter Parker, the Spectacular Spider-Man (1976 - 1998)",
+        "remoteSeriesYear": "1976",
+        "anchorVotes": 206,
+        "totalVotes": 208,
+        "trust": "strong",
+        "reason": "multi-anchor-majority"
+      }
+    ]
+  },
+  "safety": {
+    "cacheWritten": false,
+    "targetStatus": 4,
+    "protectedRows": 26386
+  }
+}
