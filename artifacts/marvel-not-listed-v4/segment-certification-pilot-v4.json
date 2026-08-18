@@ -1,0 +1,97 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T22:30:06.354Z",
+  "mode": "segment-certification-pilot-v4",
+  "writesCache": false,
+  "baseline": {
+    "localCount": 51002,
+    "matched": 29155,
+    "noDigital": 1135,
+    "notListed": 20712,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "publishAllowed": false,
+    "allThreeAnchorsRequiredPerSegment": true,
+    "exactSourceIdRequired": true,
+    "exactIssueIdentityRequired": true,
+    "exactRemoteVolumeStartYearRequired": true,
+    "exactOfficialCatalogDateRequired": true,
+    "exactReaderIdRequired": true,
+    "readerIdentityRequired": true
+  },
+  "summary": {
+    "targetSegments": 2,
+    "targetAnchors": 6,
+    "certifiedSegments": 0,
+    "verifiedAnchors": 0,
+    "failedAnchors": 6,
+    "certifiedPendingRows": 0,
+    "writesCache": false
+  },
+  "segments": [
+    {
+      "segmentId": "5546|new x men 2004 2008",
+      "localSeriesId": 5546,
+      "localTitle": "New X-Men",
+      "remoteSeriesName": "New X-Men (2004 - 2008)",
+      "pendingUniqueCount": 19,
+      "certified": false,
+      "anchors": [
+        {
+          "ok": false,
+          "sourceId": 3059,
+          "reason": "official-date",
+          "expectedDate": "2005-11-09",
+          "officialDate": ""
+        },
+        {
+          "ok": false,
+          "sourceId": 5669,
+          "reason": "official-date",
+          "expectedDate": "2006-12-13",
+          "officialDate": ""
+        },
+        {
+          "ok": false,
+          "sourceId": 17595,
+          "reason": "official-date",
+          "expectedDate": "2008-01-16",
+          "officialDate": ""
+        }
+      ]
+    },
+    {
+      "segmentId": "499|astonishing tales 1970",
+      "localSeriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "remoteSeriesName": "Astonishing Tales (1970)",
+      "pendingUniqueCount": 15,
+      "certified": false,
+      "anchors": [
+        {
+          "ok": false,
+          "sourceId": 57810,
+          "reason": "official-date",
+          "expectedDate": "1972-06-01",
+          "officialDate": ""
+        },
+        {
+          "ok": false,
+          "sourceId": 57811,
+          "reason": "official-date",
+          "expectedDate": "1972-08-01",
+          "officialDate": ""
+        },
+        {
+          "ok": false,
+          "sourceId": 43424,
+          "reason": "official-date",
+          "expectedDate": "1974-10-01",
+          "officialDate": ""
+        }
+      ]
+    }
+  ]
+}
