@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-08-18T22:30:06.354Z",
+  "generatedAt": "2026-08-18T22:31:37.677Z",
   "mode": "segment-certification-pilot-v4",
   "writesCache": false,
   "baseline": {
@@ -24,10 +24,10 @@
   "summary": {
     "targetSegments": 2,
     "targetAnchors": 6,
-    "certifiedSegments": 0,
-    "verifiedAnchors": 0,
-    "failedAnchors": 6,
-    "certifiedPendingRows": 0,
+    "certifiedSegments": 2,
+    "verifiedAnchors": 6,
+    "failedAnchors": 0,
+    "certifiedPendingRows": 34,
     "writesCache": false
   },
   "segments": [
@@ -37,28 +37,46 @@
       "localTitle": "New X-Men",
       "remoteSeriesName": "New X-Men (2004 - 2008)",
       "pendingUniqueCount": 19,
-      "certified": false,
+      "certified": true,
       "anchors": [
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 291247,
           "sourceId": 3059,
-          "reason": "official-date",
-          "expectedDate": "2005-11-09",
-          "officialDate": ""
+          "readerId": 169,
+          "issueNumber": "20",
+          "remoteIssueNumber": "20",
+          "localDate": "2005-11-09",
+          "officialDate": "2005-11-09",
+          "availability": "mu",
+          "officialTitle": "New X-Men (2004) #20",
+          "readerTitle": "New X-Men (2004) #20"
         },
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 338961,
           "sourceId": 5669,
-          "reason": "official-date",
-          "expectedDate": "2006-12-13",
-          "officialDate": ""
+          "readerId": 3989,
+          "issueNumber": "33",
+          "remoteIssueNumber": "33",
+          "localDate": "2006-12-13",
+          "officialDate": "2006-12-13",
+          "availability": "mu",
+          "officialTitle": "New X-Men (2004) #33",
+          "readerTitle": "New X-Men (2004) #33"
         },
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 393055,
           "sourceId": 17595,
-          "reason": "official-date",
-          "expectedDate": "2008-01-16",
-          "officialDate": ""
+          "readerId": 11377,
+          "issueNumber": "46",
+          "remoteIssueNumber": "46",
+          "localDate": "2008-01-16",
+          "officialDate": "2008-01-16",
+          "availability": "mu",
+          "officialTitle": "New X-Men (2004) #46",
+          "readerTitle": "New X-Men (2004) #46"
         }
       ]
     },
@@ -68,28 +86,46 @@
       "localTitle": "Astonishing Tales",
       "remoteSeriesName": "Astonishing Tales (1970)",
       "pendingUniqueCount": 15,
-      "certified": false,
+      "certified": true,
       "anchors": [
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 25186,
           "sourceId": 57810,
-          "reason": "official-date",
-          "expectedDate": "1972-06-01",
-          "officialDate": ""
+          "readerId": 40166,
+          "issueNumber": "12",
+          "remoteIssueNumber": "12",
+          "localDate": "1972-03-21",
+          "officialDate": "1972-06-01",
+          "availability": "mu",
+          "officialTitle": "Astonishing Tales (1970) #12",
+          "readerTitle": "Astonishing Tales (1970) #12"
         },
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 25358,
           "sourceId": 57811,
-          "reason": "official-date",
-          "expectedDate": "1972-08-01",
-          "officialDate": ""
+          "readerId": 40167,
+          "issueNumber": "13",
+          "remoteIssueNumber": "13",
+          "localDate": "1972-05-23",
+          "officialDate": "1972-08-01",
+          "availability": "mu",
+          "officialTitle": "Astonishing Tales (1970) #13",
+          "readerTitle": "Astonishing Tales (1970) #13"
         },
         {
-          "ok": false,
+          "ok": true,
+          "gcdId": 27819,
           "sourceId": 43424,
-          "reason": "official-date",
-          "expectedDate": "1974-10-01",
-          "officialDate": ""
+          "readerId": 35151,
+          "issueNumber": "26",
+          "remoteIssueNumber": "26",
+          "localDate": "1974-07-23",
+          "officialDate": "1974-10-01",
+          "availability": "mu",
+          "officialTitle": "Astonishing Tales (1970) #26",
+          "readerTitle": "Astonishing Tales (1970) #26"
         }
       ]
     }
