@@ -1,0 +1,60 @@
+name: Diagnose Marvel identity mismatch v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose-marvel-identity-mismatch-v4.mjs'
+      - '.github/workflows/diagnose-marvel-identity-mismatch-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate diagnostic
+        run: node --check scripts/diagnose-marvel-identity-mismatch-v4.mjs
+      - name: Diagnose 493 identity mismatches
+        run: node scripts/diagnose-marvel-identity-mismatch-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/identity-mismatch-diagnostic.json','utf8'));
+          const s=r.summary;
+          console.log('## Marvel identity mismatch · Fase A');
+          console.log(`- Mismatches: ${s.totalMismatch}`);
+          console.log(`- Títulos oficiales parseados: ${s.parsed}`);
+          console.log(`- Número exacto: ${s.issueExact}`);
+          console.log(`- Número distinto: ${s.issueMismatch}`);
+          console.log(`- sourceId ya ocupado por resultado terminal: ${s.sourceIdOccupiedByTerminal}`);
+          console.log(`- Filas en patrones de alias repetidos: ${s.repeatedAliasPairRows}`);
+          console.log(`- Pares de alias repetidos: ${s.repeatedAliasPairs}`);
+          console.log(`- Elegibles para piloto oficial: ${s.pilotEligible}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-identity-mismatch-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/identity-mismatch-diagnostic.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Commit diagnostic only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/identity-mismatch-diagnostic.json
+          git commit -m 'audit: guardar diagnóstico identity mismatch v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
