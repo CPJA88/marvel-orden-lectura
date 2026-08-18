@@ -1,0 +1,583 @@
+{
+  "version": 3,
+  "generatedAt": "2026-08-18T17:21:14.255Z",
+  "mode": "research-only",
+  "writesCache": false,
+  "scope": {
+    "targets": [
+      {
+        "gcdId": 29395,
+        "sourceId": 78145,
+        "readerId": 55204
+      },
+      {
+        "gcdId": 29387,
+        "sourceId": 78120,
+        "readerId": 55203
+      },
+      {
+        "gcdId": 60401,
+        "sourceId": 18116,
+        "readerId": 73928
+      },
+      {
+        "gcdId": 338373,
+        "sourceId": 2133,
+        "readerId": 535
+      },
+      {
+        "gcdId": 521503,
+        "sourceId": 5888,
+        "readerId": 6307
+      },
+      {
+        "gcdId": 521504,
+        "sourceId": 6037,
+        "readerId": 6308
+      },
+      {
+        "gcdId": 1244835,
+        "sourceId": 49010,
+        "readerId": 34127
+      }
+    ],
+    "control": {
+      "readerId": 60481,
+      "purpose": "routing regression only; never a target candidate"
+    }
+  },
+  "dns": {
+    "applink.marvel.com": {
+      "ok": false,
+      "error": "getaddrinfo ENOTFOUND applink.marvel.com",
+      "code": "ENOTFOUND"
+    },
+    "comicstore.marvel.com": {
+      "ok": false,
+      "error": "getaddrinfo ENOTFOUND comicstore.marvel.com",
+      "code": "ENOTFOUND"
+    },
+    "share.marvel.com": {
+      "ok": true,
+      "addresses": [
+        {
+          "address": "100.50.215.163",
+          "family": 4
+        },
+        {
+          "address": "3.94.154.59",
+          "family": 4
+        },
+        {
+          "address": "34.231.157.191",
+          "family": 4
+        }
+      ]
+    },
+    "marvel.smart.link": {
+      "ok": true,
+      "addresses": [
+        {
+          "address": "34.36.249.118",
+          "family": 4
+        },
+        {
+          "address": "2600:1901:0:9096::",
+          "family": 6
+        }
+      ]
+    }
+  },
+  "controlLegacy": {
+    "label": "known-working-legacy-control",
+    "readerId": 60481,
+    "url": "https://share.marvel.com/sharing/legacy/60481",
+    "status": 200,
+    "finalUrl": "https://share.marvel.com/sharing/legacy/60481",
+    "error": "",
+    "cause": "",
+    "drns": [
+      "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f"
+    ],
+    "snippets": [
+      {
+        "term": "drn:src:marvel:unison",
+        "snippet": "<body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div><"
+      },
+      {
+        "term": "drn:src:marvel:unison",
+        "snippet": "ttps://share.marvel.com/sharing/legacy/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5"
+      },
+      {
+        "term": "drn:src:marvel:unison",
+        "snippet": "nlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition\",\"alt\":\"M"
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "rvel-mu/db60fbc5012c-2023.12.37/client/css/sharing.app.css\"]},\"device\":\"mobile\",\"modifier\":\"app\",\"edition\":{\"key\":\"\",\"translations\":{}},\"flags\":{},\"tms\":null,\"debug\":{\"on\":false}},\"ads\":{},\"analytics\":{},\"routing\":{\"location\":{\"pathname\":\"/sharing/legacy/60481\",\"port\":\"\",\"hash\":\"\",\"path\":\"/sharing/legacy/60481\",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"60481\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\""
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "app.css\"]},\"device\":\"mobile\",\"modifier\":\"app\",\"edition\":{\"key\":\"\",\"translations\":{}},\"flags\":{},\"tms\":null,\"debug\":{\"on\":false}},\"ads\":{},\"analytics\":{},\"routing\":{\"location\":{\"pathname\":\"/sharing/legacy/60481\",\"port\":\"\",\"hash\":\"\",\"path\":\"/sharing/legacy/60481\",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"60481\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This conten"
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "ef\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"label\":\"Help\",\"href\":\"https://help.marvel.com/hc/en-us/sections/4404279768091-Marvel-Unlimited\",\"target\":\"_self\"}],\"title\":\"Marvel Treasury Edition\",\"url\":\"https://share.marvel.com/sharing/legacy/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-a"
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition\",\"alt\":\"Marvel Treasury Edition\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/60481\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path\":\"/sharing/legacy/60481\",\"forwarded-proto\":\"https\",\"device\":\"mobile\"}},\"viewport\":{\"width\":414,\"height\":0,\"scrollX\":0,\"scrollY\":0}};</script> <script type='text/j"
+      },
+      {
+        "term": "sourceId",
+        "snippet": "<div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='text/javascript'"
+      },
+      {
+        "term": "sourceId",
+        "snippet": "in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/f"
+      },
+      {
+        "term": "sourceId",
+        "snippet": "d\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition\",\"alt\":\"Marvel Treasury Edition\",\"type\":\"issue\"}}}},\"request\":{"
+      },
+      {
+        "term": "contentType",
+        "snippet": "ed App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"tit"
+      },
+      {
+        "term": "smart.link",
+        "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton"
+      },
+      {
+        "term": "smart.link",
+        "snippet": "\":\"Marvel Treasury Edition\",\"url\":\"https://share.marvel.com/sharing/legacy/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"htt"
+      },
+      {
+        "term": "__marvel_mu__",
+        "snippet": "rget=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='text/javascript' >window['__marvel_mu__']={\"app\":{\"uid\":\"marvel-mu\",\"mode\":\"universal\",\"apiEnv\":\"production\",\"envName\":\"prod\",\"cdnPath\":\"//d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client\",\"webpack\":{},\"nochunks\":false,\"allowMocks\":false,\"mockDataPort\":1981"
+      }
+    ],
+    "scripts": [
+      "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/marvel-mu.app.js",
+      "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/sharing.app.js"
+    ]
+  },
+  "targetLegacyExample": {
+    "label": "target-55204",
+    "readerId": 55204,
+    "url": "https://share.marvel.com/sharing/legacy/55204",
+    "status": 200,
+    "finalUrl": "https://share.marvel.com/sharing/legacy/55204",
+    "error": "",
+    "cause": "",
+    "drns": [],
+    "snippets": [
+      {
+        "term": "sharing/legacy",
+        "snippet": "rvel-mu/db60fbc5012c-2023.12.37/client/css/sharing.app.css\"]},\"device\":\"mobile\",\"modifier\":\"app\",\"edition\":{\"key\":\"\",\"translations\":{}},\"flags\":{},\"tms\":null,\"debug\":{\"on\":false}},\"ads\":{},\"analytics\":{},\"routing\":{\"location\":{\"pathname\":\"/sharing/legacy/55204\",\"port\":\"\",\"hash\":\"\",\"path\":\"/sharing/legacy/55204\",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"55204\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\""
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "app.css\"]},\"device\":\"mobile\",\"modifier\":\"app\",\"edition\":{\"key\":\"\",\"translations\":{}},\"flags\":{},\"tms\":null,\"debug\":{\"on\":false}},\"ads\":{},\"analytics\":{},\"routing\":{\"location\":{\"pathname\":\"/sharing/legacy/55204\",\"port\":\"\",\"hash\":\"\",\"path\":\"/sharing/legacy/55204\",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"55204\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This conten"
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"label\":\"Help\",\"href\":\"https://help.marvel.com/hc/en-us/sections/4404279768091-Marvel-Unlimited\",\"target\":\"_self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"ca"
+      },
+      {
+        "term": "sharing/legacy",
+        "snippet": "ted\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path\":\"/sharing/legacy/55204\",\"forwarded-proto\":\"https\",\"device\":\"mobile\"}},\"viewport\":{\"width\":414,\"height\":0,\"scrollX\":0,\"scrollY\":0}};</script> <script type='text/j"
+      },
+      {
+        "term": "sourceId",
+        "snippet": "m/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path\":\"/sharing/legacy/"
+      },
+      {
+        "term": "contentType",
+        "snippet": "https://share.marvel.com/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"pat"
+      },
+      {
+        "term": "smart.link",
+        "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='t"
+      },
+      {
+        "term": "smart.link",
+        "snippet": "limited\",\"target\":\"_self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\""
+      },
+      {
+        "term": "__marvel_mu__",
+        "snippet": "rget=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='text/javascript' >window['__marvel_mu__']={\"app\":{\"uid\":\"marvel-mu\",\"mode\":\"universal\",\"apiEnv\":\"production\",\"envName\":\"prod\",\"cdnPath\":\"//d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client\",\"webpack\":{},\"nochunks\":false,\"allowMocks\":false,\"mockDataPort\":1981"
+      }
+    ],
+    "scripts": [
+      "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/marvel-mu.app.js",
+      "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/sharing.app.js"
+    ]
+  },
+  "bundles": [
+    {
+      "url": "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/marvel-mu.app.js",
+      "status": 200,
+      "finalUrl": "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/marvel-mu.app.js",
+      "error": "",
+      "cause": "",
+      "drns": [],
+      "endpointHints": [
+        "sharing",
+        "sharing.app",
+        "sharing/app"
+      ],
+      "snippets": []
+    },
+    {
+      "url": "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/sharing.app.js",
+      "status": 200,
+      "finalUrl": "https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/sharing.app.js",
+      "error": "",
+      "cause": "",
+      "drns": [],
+      "endpointHints": [
+        "https://www.google.com/recaptcha/api.js",
+        "https://www.marvel.com/unlimited",
+        "https://help.marvel.com/hc/en-us/sections/4404279768091-Marvel-Unlimited",
+        "https://marvel.smart.link/fiir7ec77?",
+        "https://marvel-test.smart.link/5ilhddjtu?",
+        "apiEnv",
+        "sharing-",
+        "sharing.app",
+        "reader",
+        "/:pageType(sharing)/:type(readingList|reader|series|issue|legacy|reading-list|character|creator)/:id/:format(raw|debug)?",
+        "/:pageType(sharing)"
+      ],
+      "snippets": [
+        {
+          "term": "sourceId",
+          "snippet": "\",np=\"home\",rp=\"fitt\",op=\"isObjLike\",ip=\"requestHandler\",up=\"cachePolicy\",ap=\"validate\",sp=\"makeDataRequest\",cp=\"queryDir\",lp=\"fileName\",fp=\"metrics\",dp=\"mockDataPort\",hp=\"metricsCfg\",vp=\"portfolioId\",mp=\"device\",pp=\"mock\",bp=\"preview\",yp=\"sourceId\",gp=\"digitalId\",_p=\"sharing-\",wp=\"solid\",jp=\"./node_modules/script-loader/addScript.js\",Ep=\"priorityLevel\",Sp=\"keyPrefix\",Ap=\"result\",kp=\"REACT_TAG_MAP\",Tp=\"htmlAttributes\",Op=\"bodyAttributes\",xp=\"handleClientStateChange\",Cp=\"reducePropsTo"
+        },
+        {
+          "term": "sourceId",
+          "snippet": "E=\"Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.\",EE=\"browser\",SE='\" to match \"',AE=\"partial\",kE=\"abcdefghijklmnopqrst\",TE=\"$transformId\",OE=\"sourceObject\",xE=\"sourceIdentifier\",CE=\"reportExceptionInDerivation\",RE=\"runReaction\",PE=\"onInvalidate\",IE=\"_addValue\",LE=\"_updateValue\",ME=\"You tried to assign a modifier wrapped value to a collection, please define modifiers when creating the collection, not when"
+        },
+        {
+          "term": "sourceId",
+          "snippet": ",i,a,s=e&&e[ow];this.shouldCapture(e)&&(r=t&&t[vr],o=t&&t.url,i=s?u()-s:null,a=JSON[po]({u:o,d:i,s:r}),l[ys](this[hC],{data:a}))},getMockAttrs:function(e){var t,n=e&&e[cC],r=e&&e[Ld],o=n&&n[rw],i=this.parseMockParams(r,n),u=i.fileNames[i.resourceIdx];return u&&\"mock\"===o&&(t=this[fC]+u),{url:t}}},a(m,v),e[n]=m},\"./node_modules/@fitt/app-shell/requestHandler/RequestHandler.js\":function(e,t,r){\"use strict\";var i=r(z),u=i[Jn],a=i[Ve],s=i[Xn],c=i[uu],l=r(\"./node_modules/@fitt/app-shell/r"
+        },
+        {
+          "term": "sourceId",
+          "snippet": "=e&&e[vl];return t[mo]=e,t[vl]=u,t[nw]=i,t[hp]=o,t[lC]=l(e,r),t[sa][B](t)}f[u]={request:function(e,t){},getMockAttrs:function(e){},parseMockParams:function(e,t){var n=a(t[pl]),r=a(t[lp]),o=n[we](ci);return{fileNames:r[we](ci),endpoints:o,resourceIdx:c(o,e)}},onSuccess:function(e,t){var n=this;return setTimeout((function(){n[tw][o](n,e,t)}),0),t},onError:function(e,t){throw this[tw][o](this,e,null,t),t},isTracing:function(e){return e&&e[ms]},isMetricsEnabled:function(){var e=this[hp];"
+        },
+        {
+          "term": "smart.link",
+          "snippet": "=arguments[e]>0&&void 0!==arguments[0]?arguments[0]:a,n=t[sa]||a,r=n[WO]||a,o=r[Ut],i=n.url,u=r[\"forwarded-proto\"]||ug;return[u,An,iw,o,i][X](\"\")}(r),N=I||\"debug\"===i,D=function(e,t,n,r,o){var i=e[lw]||t,u={type:i,drn:n},a=\"https://marvel.smart.link/fiir7ec77?\";i===Md&&(u[c]=\"issue\");r&&(u[yp]=r);\"qa\"!==o&&o!==Vx||(a=\"https://marvel-test.smart.link/5ilhddjtu?\");return{label:\"Open in Marvel Unlimited\",href:a+m(u)[M](null,null,null,null,!0)}}(o,d,_,P,l),F=v({},S,{title:w||E,url:L,descrip"
+        },
+        {
+          "term": "smart.link",
+          "snippet": "arded-proto\"]||ug;return[u,An,iw,o,i][X](\"\")}(r),N=I||\"debug\"===i,D=function(e,t,n,r,o){var i=e[lw]||t,u={type:i,drn:n},a=\"https://marvel.smart.link/fiir7ec77?\";i===Md&&(u[c]=\"issue\");r&&(u[yp]=r);\"qa\"!==o&&o!==Vx||(a=\"https://marvel-test.smart.link/5ilhddjtu?\");return{label:\"Open in Marvel Unlimited\",href:a+m(u)[M](null,null,null,null,!0)}}(o,d,_,P,l),F=v({},S,{title:w||E,url:L,description:R||y,siteName:\"Marvel Unlimited App\",type:C(d),cta:D,contentType:d},g);return{data:I?b:F,isJSON:"
+        },
+        {
+          "term": "contentType",
+          "snippet": ",background:\"#131619\"});u=new d({componentName:\"LandingPage\",render:function(){var e=m(this,\"props.state.page.content.sharing\")||f,t=e.url,n=e[qe],r=e[c],o=e.logo,u=e.card||f,a=u.src,s=e.links,l=e[Uv],d=e.cta,p=e.siteName,g=e[ac];return e.contentType===Md?h[i](y,{size:hl,type:wp,label:\"READ NOW\",url:d[At]}):h[i](Fe,{style:_},h[i](v,{encodeSpecialCharacters:!1},h[i](qe,null,n),h[i](fn,{name:ac,content:g}),h[i](fn,{property:\"fb:app_id\",content:\"193166954153103\"}),h[i](fn,{property:\"og:url"
+        },
+        {
+          "term": "contentType",
+          "snippet": "!==Vx||(a=\"https://marvel-test.smart.link/5ilhddjtu?\");return{label:\"Open in Marvel Unlimited\",href:a+m(u)[M](null,null,null,null,!0)}}(o,d,_,P,l),F=v({},S,{title:w||E,url:L,description:R||y,siteName:\"Marvel Unlimited App\",type:C(d),cta:D,contentType:d},g);return{data:I?b:F,isJSON:N}}},\"./src/routes/index.js\":function(e,t,r){\"use strict\";var o=r(iu),i=An+Nn,u=An+\"character\",a=An+\"subPageType(on-screen|in-comics)\",s=An+\"\"[j](\"profile\",\"(\")[j](\"profile\",Me),l=[\"\",\"characters\",u],f=l[j](a)"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "gcdId": 29395,
+      "sourceId": 78145,
+      "readerId": 55204,
+      "applinkUrl": "https://applink.marvel.com/issue/55204",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/55204",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55204\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/55204",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55204\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/55204",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55204\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 29387,
+      "sourceId": 78120,
+      "readerId": 55203,
+      "applinkUrl": "https://applink.marvel.com/issue/55203",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/55203",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55203\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/55203",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55203\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/55203",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/55203\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 60401,
+      "sourceId": 18116,
+      "readerId": 73928,
+      "applinkUrl": "https://applink.marvel.com/issue/73928",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/73928",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/73928\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/73928",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/73928\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/73928",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/73928\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 338373,
+      "sourceId": 2133,
+      "readerId": 535,
+      "applinkUrl": "https://applink.marvel.com/issue/535",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/535",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/535\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/535",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/535\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/535",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/535\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 521503,
+      "sourceId": 5888,
+      "readerId": 6307,
+      "applinkUrl": "https://applink.marvel.com/issue/6307",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/6307",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6307\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/6307",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6307\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/6307",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6307\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 521504,
+      "sourceId": 6037,
+      "readerId": 6308,
+      "applinkUrl": "https://applink.marvel.com/issue/6308",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/6308",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6308\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/6308",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6308\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/6308",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/6308\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    },
+    {
+      "gcdId": 1244835,
+      "sourceId": 49010,
+      "readerId": 34127,
+      "applinkUrl": "https://applink.marvel.com/issue/34127",
+      "probes": [
+        {
+          "label": "curl-default",
+          "url": "https://applink.marvel.com/issue/34127",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/34127\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-http1.1",
+          "url": "https://applink.marvel.com/issue/34127",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/34127\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        },
+        {
+          "label": "curl-ipv4-http1.1",
+          "url": "https://applink.marvel.com/issue/34127",
+          "exitCode": 6,
+          "stderr": "curl: (6) Could not resolve host: applink.marvel.com",
+          "error": "Command failed: curl --http1.1 -4 -sS -D - -o /dev/null --max-redirs 0 --connect-timeout 10 --max-time 22 -A Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 https://applink.marvel.com/issue/34127\ncurl: (6) Could not resolve host: applink.marvel.com\n",
+          "hops": [],
+          "drns": [],
+          "locations": []
+        }
+      ],
+      "authenticCandidates": [],
+      "verified": [],
+      "acceptedDrns": []
+    }
+  ],
+  "summary": {
+    "targets": 7,
+    "applinkWithHttpResponse": 0,
+    "targetsWithAuthenticDrn": 0,
+    "acceptedDrnCount": 0
+  }
+}

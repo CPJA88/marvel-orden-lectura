@@ -1,0 +1,17 @@
+Routing v3: diagnóstico 7-only + un control positivo, sin escritura de caché.
+Bundle 1/2: https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/marvel-mu.app.js
+Bundle 2/2: https://d36p4bn3kyfcus.cloudfront.net/marvel-mu/db60fbc5012c-2023.12.37/client/sharing.app.js
+[1/7] curl applink GCD=29395 readerId=55204
+[2/7] curl applink GCD=29387 readerId=55203
+[3/7] curl applink GCD=60401 readerId=73928
+[4/7] curl applink GCD=338373 readerId=535
+[5/7] curl applink GCD=521503 readerId=6307
+[6/7] curl applink GCD=521504 readerId=6308
+[7/7] curl applink GCD=1244835 readerId=34127
+{
+  "targets": 7,
+  "applinkWithHttpResponse": 0,
+  "targetsWithAuthenticDrn": 0,
+  "acceptedDrnCount": 0
+}
+Informe routing v3: /home/runner/work/marvel-orden-lectura/marvel-orden-lectura/artifacts/marvel-missing-drn-seven/routing-v3.json
