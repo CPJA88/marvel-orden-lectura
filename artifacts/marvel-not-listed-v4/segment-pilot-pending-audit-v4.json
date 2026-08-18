@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-08-18T22:35:58.275Z",
+  "generatedAt": "2026-08-18T22:40:51.801Z",
   "mode": "segment-pilot-pending-audit-v4",
   "writesCache": false,
   "baseline": {
@@ -24,7 +24,16 @@
     "exactOfficialCatalogDate": true,
     "muRequiresExactReaderIdAndIdentity": true,
     "noDigitalRequiresOfficialExplicitSignal": true,
-    "slugFallbackForLegacyIssueRoutes": true
+    "officialRouteFallbacks": [
+      "bare",
+      "read",
+      "ajax/aggregate",
+      "mobile-app",
+      "slug",
+      "slug/read",
+      "slug/ajax/aggregate",
+      "slug/mobile-app"
+    ]
   },
   "summary": {
     "targets": 34,
@@ -54,7 +63,68 @@
       "remoteOnSale": "2004-05-19T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/654",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x-men_2004_1?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -69,7 +139,68 @@
       "remoteOnSale": "2004-06-16T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/711",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x-men_2004_2?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -84,7 +215,68 @@
       "remoteOnSale": "2004-07-21T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/533",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x-men_2004_3?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -99,7 +291,68 @@
       "remoteOnSale": "2004-08-18T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/755",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x-men_2004_4?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -114,7 +367,68 @@
       "remoteOnSale": "2004-09-15T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/827",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x-men_2004_5?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -129,7 +443,68 @@
       "remoteOnSale": "2004-10-20T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/910",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x-men_2004_6?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -144,7 +519,68 @@
       "remoteOnSale": "2004-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/80",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x-men_2004_7?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -159,7 +595,68 @@
       "remoteOnSale": "2005-01-12T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/1483",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x-men_2004_8?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -174,7 +671,68 @@
       "remoteOnSale": "2005-01-26T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/1568",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x-men_2004_9?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -189,7 +747,68 @@
       "remoteOnSale": "2005-02-16T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/1657",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x-men_2004_10?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -204,7 +823,68 @@
       "remoteOnSale": "2005-03-23T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/1751",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x-men_2004_11?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -219,7 +899,68 @@
       "remoteOnSale": "2005-04-20T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/1857",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x-men_2004_12?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -234,7 +975,68 @@
       "remoteOnSale": "2005-05-04T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2007",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x-men_2004_13?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -249,7 +1051,68 @@
       "remoteOnSale": "2005-05-18T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2008",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x-men_2004_14?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -264,7 +1127,68 @@
       "remoteOnSale": "2005-06-22T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2112",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x-men_2004_15?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -279,7 +1203,68 @@
       "remoteOnSale": "2005-07-27T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2221",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x-men_2004_16?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -294,7 +1279,68 @@
       "remoteOnSale": "2005-08-24T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2991",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x-men_2004_17?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -309,7 +1355,68 @@
       "remoteOnSale": "2005-09-28T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2466",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x-men_2004_18?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -324,7 +1431,68 @@
       "remoteOnSale": "2005-10-26T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/2518",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x-men_2004_19?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -339,7 +1507,48 @@
       "remoteOnSale": "1971-08-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62389",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -354,7 +1563,48 @@
       "remoteOnSale": "1971-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62390",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -369,7 +1619,48 @@
       "remoteOnSale": "1972-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61926",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -384,7 +1675,48 @@
       "remoteOnSale": "1972-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62391",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -399,7 +1731,48 @@
       "remoteOnSale": "1972-10-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62392",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -414,7 +1787,48 @@
       "remoteOnSale": "1972-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61927",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -429,7 +1843,48 @@
       "remoteOnSale": "1973-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61928",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -444,7 +1899,48 @@
       "remoteOnSale": "1973-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61929",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -459,7 +1955,48 @@
       "remoteOnSale": "1973-06-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61930",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -474,7 +2011,48 @@
       "remoteOnSale": "1973-08-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61931",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -489,7 +2067,48 @@
       "remoteOnSale": "1973-10-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/61932",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -504,7 +2123,48 @@
       "remoteOnSale": "1973-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62393",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -519,7 +2179,48 @@
       "remoteOnSale": "1974-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62394",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -534,7 +2235,48 @@
       "remoteOnSale": "1974-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62395",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23?mobile-app=true"
+        }
+      ]
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -549,7 +2291,48 @@
       "remoteOnSale": "1974-06-01T00:00:00+0000",
       "catalogMode": "exact-title",
       "kind": "not-found",
-      "http": 404
+      "attempts": [
+        {
+          "url": "https://www.marvel.com/comics/issue/62396",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396?mobile-app=true"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24/read",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24/read"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24/ajax/aggregate",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24/ajax/aggregate"
+        },
+        {
+          "url": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24?mobile-app=true",
+          "status": 404,
+          "finalUrl": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24?mobile-app=true"
+        }
+      ]
     }
   ]
 }
