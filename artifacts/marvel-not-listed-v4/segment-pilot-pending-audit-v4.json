@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "generatedAt": "2026-08-18T22:54:42.789Z",
-  "mode": "segment-pilot-pending-deeplink-audit-v4",
+  "generatedAt": "2026-08-18T22:57:09.982Z",
+  "mode": "segment-pilot-pending-drm-button-audit-v4",
   "writesCache": false,
   "baseline": {
     "matched": 29155,
@@ -19,25 +19,25 @@
     "segmentCertificationRequired": true,
     "status4Required": true,
     "sourceCollisionProtection": true,
-    "muPrimaryEvidence": "exact official reader identity + official legacy UUID DRN + functional Marvel smart-link",
-    "muFallbackEvidence": "exact official issue identity/date + explicit MU + functional reader smart-link",
-    "noDigitalRequiresOfficialExplicitSignal": true,
-    "catalogCandidateStillDiscoveryOnly": true
+    "catalogCandidateStillDiscoveryOnly": true,
+    "readerIdBoundByExactCatalogCandidate": true,
+    "muPrimaryEvidence": "certified exact catalog candidate -> readerId -> official legacy UUID DRN -> official sharing/issue DRN page says available in Marvel Unlimited + Open in Marvel Unlimited -> functional smart-link",
+    "readerShellNotUsedAsIdentityGate": true,
+    "noDigitalRequiresOfficialExplicitSignal": true
   },
   "summary": {
     "targets": 34,
-    "mu": 0,
-    "muUuid": 0,
+    "mu": 34,
+    "muUuid": 34,
     "muReaderFallback": 0,
     "noDigital": 0,
     "drnMissing": 0,
-    "readerFail": 34,
     "legacyFail": 0,
+    "landingFail": 0,
     "smartlinkFail": 0,
-    "unresolved": 0,
     "sourceCollision": 0,
     "exception": 0,
-    "verified": 0,
+    "verified": 34,
     "writesCache": false
   },
   "results": [
@@ -53,34 +53,21 @@
       "remoteIssueNumber": "1",
       "remoteOnSale": "2004-05-19T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 654,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/654/new_x_men_2004_1",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/654/new_x_men_2004_1"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/654",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/654"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/654/new_x_men_2004_1"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/654",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/654"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:2593aefb-1fcc-4ea0-bef9-1a7ab1191179",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A2593aefb-1fcc-4ea0-bef9-1a7ab1191179",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:2593aefb-1fcc-4ea0-bef9-1a7ab1191179",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -94,34 +81,21 @@
       "remoteIssueNumber": "2",
       "remoteOnSale": "2004-06-16T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 711,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/711/new_x_men_2004_2",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/711/new_x_men_2004_2"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/711",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/711"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/711/new_x_men_2004_2"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/711",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/711"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:24931dec-5903-4195-ad20-15bef3a69cc6",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A24931dec-5903-4195-ad20-15bef3a69cc6",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:24931dec-5903-4195-ad20-15bef3a69cc6",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -135,34 +109,21 @@
       "remoteIssueNumber": "3",
       "remoteOnSale": "2004-07-21T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 533,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/533/new_x_men_2004_3",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/533/new_x_men_2004_3"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/533",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/533"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/533/new_x_men_2004_3"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/533",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/533"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:0a68bd30-9f3c-4c3f-9879-d6d43a678f1a",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A0a68bd30-9f3c-4c3f-9879-d6d43a678f1a",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:0a68bd30-9f3c-4c3f-9879-d6d43a678f1a",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -176,34 +137,21 @@
       "remoteIssueNumber": "4",
       "remoteOnSale": "2004-08-18T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 755,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/755/new_x_men_2004_4",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/755/new_x_men_2004_4"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/755",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/755"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/755/new_x_men_2004_4"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/755",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/755"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:04e7604d-c3c1-4a03-9fff-30bfefa1dfe1",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A04e7604d-c3c1-4a03-9fff-30bfefa1dfe1",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:04e7604d-c3c1-4a03-9fff-30bfefa1dfe1",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -217,34 +165,21 @@
       "remoteIssueNumber": "5",
       "remoteOnSale": "2004-09-15T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 827,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/827/new_x_men_2004_5",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/827/new_x_men_2004_5"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/827",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/827"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/827/new_x_men_2004_5"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/827",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/827"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:e55ea767-db77-4d2d-a58b-c14297c920f9",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ae55ea767-db77-4d2d-a58b-c14297c920f9",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:e55ea767-db77-4d2d-a58b-c14297c920f9",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -258,34 +193,21 @@
       "remoteIssueNumber": "6",
       "remoteOnSale": "2004-10-20T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 910,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/910/new_x_men_2004_6",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/910/new_x_men_2004_6"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/910",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/910"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/910/new_x_men_2004_6"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/910",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/910"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:356138f8-e127-446b-b629-8f61e3bfe7bb",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A356138f8-e127-446b-b629-8f61e3bfe7bb",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:356138f8-e127-446b-b629-8f61e3bfe7bb",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -299,34 +221,21 @@
       "remoteIssueNumber": "7",
       "remoteOnSale": "2004-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 80,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/80/new_x_men_2004_7",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/80/new_x_men_2004_7"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/80",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/80"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/80/new_x_men_2004_7"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/80",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/80"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:762981ff-d95d-4a7e-97af-6a85e476dd0d",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A762981ff-d95d-4a7e-97af-6a85e476dd0d",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:762981ff-d95d-4a7e-97af-6a85e476dd0d",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -340,34 +249,21 @@
       "remoteIssueNumber": "8",
       "remoteOnSale": "2005-01-12T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 1483,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/1483/new_x_men_2004_8",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/1483/new_x_men_2004_8"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/1483",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1483"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1483/new_x_men_2004_8"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1483",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1483"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:7f5643b9-685f-4df7-9d97-088ee38a8d9d",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A7f5643b9-685f-4df7-9d97-088ee38a8d9d",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:7f5643b9-685f-4df7-9d97-088ee38a8d9d",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -381,34 +277,21 @@
       "remoteIssueNumber": "9",
       "remoteOnSale": "2005-01-26T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 1568,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/1568/new_x_men_2004_9",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/1568/new_x_men_2004_9"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/1568",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1568"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1568/new_x_men_2004_9"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1568",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1568"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:c128009c-744e-4284-b6dc-743abe5e745e",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ac128009c-744e-4284-b6dc-743abe5e745e",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:c128009c-744e-4284-b6dc-743abe5e745e",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -422,34 +305,21 @@
       "remoteIssueNumber": "10",
       "remoteOnSale": "2005-02-16T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 1657,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/1657/new_x_men_2004_10",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/1657/new_x_men_2004_10"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/1657",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1657"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1657/new_x_men_2004_10"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1657",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1657"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:02b001b2-ee13-4827-818b-f7924b15b5b0",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A02b001b2-ee13-4827-818b-f7924b15b5b0",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:02b001b2-ee13-4827-818b-f7924b15b5b0",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -463,34 +333,21 @@
       "remoteIssueNumber": "11",
       "remoteOnSale": "2005-03-23T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 1751,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/1751/new_x_men_2004_11",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1751/new_x_men_2004_11"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/1751",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1751"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1751/new_x_men_2004_11"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1751",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1751"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:25d97963-ad7d-420e-a67d-c80fa478ebfb",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A25d97963-ad7d-420e-a67d-c80fa478ebfb",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:25d97963-ad7d-420e-a67d-c80fa478ebfb",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -504,34 +361,21 @@
       "remoteIssueNumber": "12",
       "remoteOnSale": "2005-04-20T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 1857,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/1857/new_x_men_2004_12",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/1857/new_x_men_2004_12"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/1857",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/1857"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1857/new_x_men_2004_12"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/1857",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/1857"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:91b53d3d-c759-47aa-8397-f56f7b7707b8",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A91b53d3d-c759-47aa-8397-f56f7b7707b8",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:91b53d3d-c759-47aa-8397-f56f7b7707b8",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -545,34 +389,21 @@
       "remoteIssueNumber": "13",
       "remoteOnSale": "2005-05-04T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2007,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2007/new_x_men_2004_13",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2007/new_x_men_2004_13"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2007",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2007"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2007/new_x_men_2004_13"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2007",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2007"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:7b98d4da-b69b-49b1-a45a-c6b368e7f041",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A7b98d4da-b69b-49b1-a45a-c6b368e7f041",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:7b98d4da-b69b-49b1-a45a-c6b368e7f041",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -586,34 +417,21 @@
       "remoteIssueNumber": "14",
       "remoteOnSale": "2005-05-18T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2008,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2008/new_x_men_2004_14",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2008/new_x_men_2004_14"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2008",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2008"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2008/new_x_men_2004_14"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2008",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2008"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:c4a67c00-fc09-45ed-a238-e0d99288805a",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ac4a67c00-fc09-45ed-a238-e0d99288805a",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:c4a67c00-fc09-45ed-a238-e0d99288805a",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -627,34 +445,21 @@
       "remoteIssueNumber": "15",
       "remoteOnSale": "2005-06-22T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2112,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2112/new_x_men_2004_15",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/2112/new_x_men_2004_15"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2112",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2112"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2112/new_x_men_2004_15"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2112",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2112"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:d562f1b0-43fc-4b54-bc7b-30549a23c7dc",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ad562f1b0-43fc-4b54-bc7b-30549a23c7dc",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:d562f1b0-43fc-4b54-bc7b-30549a23c7dc",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -668,34 +473,21 @@
       "remoteIssueNumber": "16",
       "remoteOnSale": "2005-07-27T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2221,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2221/new_x_men_2004_16",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2221/new_x_men_2004_16"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2221",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2221"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2221/new_x_men_2004_16"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2221",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2221"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:27d545b3-e65e-41ff-92ef-3fd5d7b5ec29",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A27d545b3-e65e-41ff-92ef-3fd5d7b5ec29",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:27d545b3-e65e-41ff-92ef-3fd5d7b5ec29",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -709,34 +501,21 @@
       "remoteIssueNumber": "17",
       "remoteOnSale": "2005-08-24T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2991,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2991/new_x_men_2004_17",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/2991/new_x_men_2004_17"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2991",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2991"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2991/new_x_men_2004_17"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2991",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2991"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:97015300-ee71-490d-b605-f10a57149c00",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A97015300-ee71-490d-b605-f10a57149c00",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:97015300-ee71-490d-b605-f10a57149c00",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -750,34 +529,21 @@
       "remoteIssueNumber": "18",
       "remoteOnSale": "2005-09-28T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2466,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2466/new_x_men_2004_18",
-            "status": 0,
-            "error": "HTTP 504 https://share.marvel.com/comics/issue/2466/new_x_men_2004_18"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2466",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2466"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2466/new_x_men_2004_18"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2466",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2466"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:4dc1d13c-1979-4ee8-b493-3250936a6b5f",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4dc1d13c-1979-4ee8-b493-3250936a6b5f",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:4dc1d13c-1979-4ee8-b493-3250936a6b5f",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "5546|new x men 2004 2008",
@@ -791,34 +557,21 @@
       "remoteIssueNumber": "19",
       "remoteOnSale": "2005-10-26T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 2518,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/2518/new_x_men_2004_19",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/2518/new_x_men_2004_19"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/2518",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/2518"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2518/new_x_men_2004_19"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/2518",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/2518"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:213d3ef4-7aaf-4e58-813d-4af936a9a2be",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A213d3ef4-7aaf-4e58-813d-4af936a9a2be",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:213d3ef4-7aaf-4e58-813d-4af936a9a2be",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -832,34 +585,21 @@
       "remoteIssueNumber": "7",
       "remoteOnSale": "1971-08-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62389,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62389/astonishing_tales_1970_7",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62389/astonishing_tales_1970_7"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62389",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62389"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62389/astonishing_tales_1970_7"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62389",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62389"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:6dde1e1f-d789-4541-934f-6c5b7a924612",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6dde1e1f-d789-4541-934f-6c5b7a924612",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:6dde1e1f-d789-4541-934f-6c5b7a924612",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -873,34 +613,21 @@
       "remoteIssueNumber": "9",
       "remoteOnSale": "1971-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62390,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62390/astonishing_tales_1970_9",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62390/astonishing_tales_1970_9"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62390",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62390"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62390/astonishing_tales_1970_9"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62390",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62390"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:b54f30a7-f1f4-4c58-8fb5-d317106a46fa",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ab54f30a7-f1f4-4c58-8fb5-d317106a46fa",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:b54f30a7-f1f4-4c58-8fb5-d317106a46fa",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -914,34 +641,21 @@
       "remoteIssueNumber": "10",
       "remoteOnSale": "1972-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61926,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61926/astonishing_tales_1970_10",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61926/astonishing_tales_1970_10"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61926",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61926"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61926/astonishing_tales_1970_10"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61926",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61926"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:77cba272-1bb7-4b0f-8e25-30dab4dd4fdf",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A77cba272-1bb7-4b0f-8e25-30dab4dd4fdf",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:77cba272-1bb7-4b0f-8e25-30dab4dd4fdf",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -955,34 +669,21 @@
       "remoteIssueNumber": "11",
       "remoteOnSale": "1972-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62391,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62391/astonishing_tales_1970_11",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62391/astonishing_tales_1970_11"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62391",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62391"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62391/astonishing_tales_1970_11"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62391",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62391"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:880b9355-03e6-4003-a792-06dc7d720fe4",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A880b9355-03e6-4003-a792-06dc7d720fe4",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:880b9355-03e6-4003-a792-06dc7d720fe4",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -996,34 +697,21 @@
       "remoteIssueNumber": "14",
       "remoteOnSale": "1972-10-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62392,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62392/astonishing_tales_1970_14",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62392/astonishing_tales_1970_14"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62392",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62392"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62392/astonishing_tales_1970_14"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62392",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62392"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:1114e9a5-abcf-440b-a2e1-103eb94f22d6",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A1114e9a5-abcf-440b-a2e1-103eb94f22d6",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:1114e9a5-abcf-440b-a2e1-103eb94f22d6",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1037,34 +725,21 @@
       "remoteIssueNumber": "15",
       "remoteOnSale": "1972-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61927,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61927/astonishing_tales_1970_15",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61927/astonishing_tales_1970_15"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61927",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61927"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61927/astonishing_tales_1970_15"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61927",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61927"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:7af2fc29-2dc0-43b8-a7f7-1a0f8231955b",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A7af2fc29-2dc0-43b8-a7f7-1a0f8231955b",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:7af2fc29-2dc0-43b8-a7f7-1a0f8231955b",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1078,34 +753,21 @@
       "remoteIssueNumber": "16",
       "remoteOnSale": "1973-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61928,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61928/astonishing_tales_1970_16",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61928/astonishing_tales_1970_16"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61928",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61928"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61928/astonishing_tales_1970_16"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61928",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61928"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:1a3f992d-eed8-421c-96b7-f75264549aab",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A1a3f992d-eed8-421c-96b7-f75264549aab",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:1a3f992d-eed8-421c-96b7-f75264549aab",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1119,34 +781,21 @@
       "remoteIssueNumber": "17",
       "remoteOnSale": "1973-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61929,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61929/astonishing_tales_1970_17",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61929/astonishing_tales_1970_17"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61929",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61929"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61929/astonishing_tales_1970_17"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61929",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61929"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:93285668-9db0-4ace-8d26-9ef82844d618",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A93285668-9db0-4ace-8d26-9ef82844d618",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:93285668-9db0-4ace-8d26-9ef82844d618",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1160,34 +809,21 @@
       "remoteIssueNumber": "18",
       "remoteOnSale": "1973-06-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61930,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61930/astonishing_tales_1970_18",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61930/astonishing_tales_1970_18"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61930",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61930"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61930/astonishing_tales_1970_18"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61930",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61930"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:0cfc4b32-cfdc-461e-a18d-c707774b69a0",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A0cfc4b32-cfdc-461e-a18d-c707774b69a0",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:0cfc4b32-cfdc-461e-a18d-c707774b69a0",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1201,34 +837,21 @@
       "remoteIssueNumber": "19",
       "remoteOnSale": "1973-08-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61931,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61931/astonishing_tales_1970_19",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61931/astonishing_tales_1970_19"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61931",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61931"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61931/astonishing_tales_1970_19"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61931",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61931"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:69e0c8a3-323e-44e3-b26a-1d486a3a1ed5",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A69e0c8a3-323e-44e3-b26a-1d486a3a1ed5",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:69e0c8a3-323e-44e3-b26a-1d486a3a1ed5",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1242,34 +865,21 @@
       "remoteIssueNumber": "20",
       "remoteOnSale": "1973-10-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 61932,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/61932/astonishing_tales_1970_20",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/61932/astonishing_tales_1970_20"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/61932",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/61932"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61932/astonishing_tales_1970_20"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/61932",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/61932"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:4c97cc04-2ffd-495d-b588-89f55d1993ed",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4c97cc04-2ffd-495d-b588-89f55d1993ed",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:4c97cc04-2ffd-495d-b588-89f55d1993ed",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1283,34 +893,21 @@
       "remoteIssueNumber": "21",
       "remoteOnSale": "1973-12-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62393,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62393/astonishing_tales_1970_21",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62393/astonishing_tales_1970_21"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62393",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62393"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62393/astonishing_tales_1970_21"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62393",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62393"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:25277f11-f90f-45e7-896c-dc1f0a57dc83",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A25277f11-f90f-45e7-896c-dc1f0a57dc83",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:25277f11-f90f-45e7-896c-dc1f0a57dc83",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1324,34 +921,21 @@
       "remoteIssueNumber": "22",
       "remoteOnSale": "1974-02-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62394,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62394/astonishing_tales_1970_22",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62394/astonishing_tales_1970_22"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62394",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62394"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62394/astonishing_tales_1970_22"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62394",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62394"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:c085e7ed-c483-4e58-a4ea-052fc616558f",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ac085e7ed-c483-4e58-a4ea-052fc616558f",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:c085e7ed-c483-4e58-a4ea-052fc616558f",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1365,34 +949,21 @@
       "remoteIssueNumber": "23",
       "remoteOnSale": "1974-04-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62395,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62395/astonishing_tales_1970_23",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62395/astonishing_tales_1970_23"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62395",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62395"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62395/astonishing_tales_1970_23"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62395",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62395"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:20fdda1e-0b87-4bc7-8d9a-5d6377603fb0",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A20fdda1e-0b87-4bc7-8d9a-5d6377603fb0",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:20fdda1e-0b87-4bc7-8d9a-5d6377603fb0",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     },
     {
       "segmentId": "499|astonishing tales 1970",
@@ -1406,34 +977,21 @@
       "remoteIssueNumber": "24",
       "remoteOnSale": "1974-06-01T00:00:00+0000",
       "catalogMode": "exact-title",
-      "kind": "reader-identity-fail",
-      "titles": [],
-      "fallback": {
-        "kind": "unresolved",
-        "sourceId": 62396,
-        "attempts": [
-          {
-            "url": "https://share.marvel.com/comics/issue/62396/astonishing_tales_1970_24",
-            "status": 0,
-            "error": "HTTP 500 https://share.marvel.com/comics/issue/62396/astonishing_tales_1970_24"
-          },
-          {
-            "url": "https://share.marvel.com/comics/issue/62396",
-            "status": 404,
-            "finalUrl": "https://share.marvel.com/comics/issue/62396"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62396/astonishing_tales_1970_24"
-          },
-          {
-            "url": "https://www.marvel.com/comics/issue/62396",
-            "status": 404,
-            "finalUrl": "https://www.marvel.com/comics/issue/62396"
-          }
-        ]
-      }
+      "kind": "mu",
+      "evidence": "official-drm-landing-button",
+      "linkMode": "uuid",
+      "readerShell": {
+        "status": 200,
+        "titles": []
+      },
+      "drn": "drn:src:marvel:unison::prod:0cc57fb1-76ac-44f6-bb81-2c7f53f63139",
+      "landingUrl": "https://share.marvel.com/sharing/issue/drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A0cc57fb1-76ac-44f6-bb81-2c7f53f63139",
+      "landingUnlimited": true,
+      "landingOpenButton": true,
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:0cc57fb1-76ac-44f6-bb81-2c7f53f63139",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
     }
   ]
 }
