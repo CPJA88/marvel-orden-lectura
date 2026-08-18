@@ -9,6 +9,7 @@ on:
       - '.github/workflows/test-ui-search-filters.yml'
       - 'source/app.js'
       - 'source/index.html'
+      - 'source/enhancements.css'
       - 'source/search-filter-fix-v132.js'
       - 'Marvel_Orden_de_Lectura_PWA.zip'
   workflow_dispatch:
@@ -43,12 +44,18 @@ jobs:
         id: build
         continue-on-error: true
         run: npm run build
-      - name: Validate built patch
+      - name: Validate built patch and boot screen
         id: built
         continue-on-error: true
         run: |
           grep -q 'search-filter-fix-v132.js' public/index.html
           grep -q 'search-filter-fix-v132.js' public/sw.js
+          grep -q 'id="bootScreen"' public/index.html
+          grep -q 'id="bootBar"' public/index.html
+          grep -q 'id="bootRetry"' public/index.html
+          grep -q 'boot-screen' public/enhancements.css
+          grep -q 'v1.2.33' public/search-filter-fix-v132.js
+          grep -q 'v1.2.33-boot-progress' public/sw.js
           ! grep -q 'search-filter-fix-v131.js' public/index.html
       - name: Test search and filter data contract
         id: data
@@ -84,7 +91,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Los informes no han cambiado.'
           else
-            git commit -m 'diagnóstico: validar búsqueda y filtros v1.2.32'
+            git commit -m 'diagnóstico: validar búsqueda, filtros y arranque v1.2.33'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
