@@ -1,0 +1,116 @@
+name: Audit Marvel NOT_LISTED exact candidates v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-not-listed-exact-v4.mjs'
+      - 'scripts/summarize-marvel-not-listed-exact-v4.mjs'
+      - '.github/workflows/audit-marvel-not-listed-exact-v4.yml'
+
+permissions:
+  contents: write
+
+env:
+  SHARD_COUNT: '6'
+
+jobs:
+  scan:
+    name: Exact official scan shard ${{ matrix.shard }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Restore global Marvel discovery catalog
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+      - name: Restore shard checkpoint
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-not-listed-exact-v4/shard-${{ matrix.shard }}.json
+          key: marvel-not-listed-exact-v4-${{ matrix.shard }}-${{ github.sha }}
+          restore-keys: |
+            marvel-not-listed-exact-v4-${{ matrix.shard }}-
+      - name: Validate scanner
+        run: node --check scripts/audit-marvel-not-listed-exact-v4.mjs
+      - name: Scan official Marvel pages
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        run: node scripts/audit-marvel-not-listed-exact-v4.mjs
+      - name: Upload shard
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-exact-v4-shard-${{ matrix.shard }}
+          path: artifacts/marvel-not-listed-v4/exact-v4-shards/shard-${{ matrix.shard }}.json
+          retention-days: 14
+          if-no-files-found: error
+
+  summarize:
+    name: Merge exact official audit
+    needs: scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: marvel-not-listed-exact-v4-shard-*
+          path: artifacts/marvel-not-listed-v4/exact-v4-shards
+          merge-multiple: true
+      - run: node --check scripts/summarize-marvel-not-listed-exact-v4.mjs
+      - run: node scripts/summarize-marvel-not-listed-exact-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/exact-v4-summary.json','utf8'));
+          console.log('## NOT_LISTED V4 · auditoría oficial exacta');
+          console.log(`- Candidatos: ${r.totalCandidates}`);
+          console.log(`- Unlimited: ${r.mu}`);
+          console.log(`- Unlimited con apertura funcional: ${r.muFunctional}`);
+          console.log(`- NO_DIGITAL: ${r.noDigital}`);
+          console.log(`- Unknown: ${r.unknown}`);
+          console.log(`- No encontrados: ${r.notFound}`);
+          console.log(`- Identity mismatch: ${r.identityMismatch}`);
+          console.log(`- Retryable: ${r.retryable}`);
+          console.log(`- Safety failure: ${r.safetyFailure}`);
+          console.log(`- Reader funcional: ${r.readerFunctional}`);
+          console.log(`- UUID funcional: ${r.uuidFunctional}`);
+          NODE
+      - name: Preserve merged research result
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-exact-v4-merged-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/exact-v4-summary.json
+            artifacts/marvel-not-listed-v4/exact-v4-results.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/exact-v4-summary.json artifacts/marvel-not-listed-v4/exact-v4-results.json
+          git commit -m 'audit: guardar resultado oficial exacto NOT_LISTED v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
