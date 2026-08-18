@@ -1,0 +1,71 @@
+name: Build Marvel alias dictionary v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-marvel-alias-dictionary-v4.mjs'
+      - '.github/workflows/build-marvel-alias-dictionary-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-marvel-alias-dictionary-v4
+  cancel-in-progress: false
+
+jobs:
+  build-aliases:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Restore global Marvel discovery catalog
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+      - name: Validate alias builder
+        run: node --check scripts/build-marvel-alias-dictionary-v4.mjs
+      - name: Build trusted alias dictionary and discovery candidates
+        run: node scripts/build-marvel-alias-dictionary-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/alias-dictionary-v4.json','utf8'));
+          console.log('## Marvel V4 · diccionario oficial de alias');
+          console.log(`- Alias fiables: ${r.summary.trustedAliases}`);
+          console.log(`- Conflictos: ${r.summary.conflicts}`);
+          console.log(`- Evidencias oficiales: ${r.summary.evidenceRows}`);
+          console.log(`- Pendientes en series con alias: ${r.summary.pendingInAliasSeries}`);
+          console.log(`- Candidatos únicos de descubrimiento: ${r.summary.uniqueDiscoveryCandidates}`);
+          console.log(`- Ambiguos: ${r.summary.ambiguous}`);
+          console.log(`- Colisiones sourceId: ${r.summary.sourceCollision}`);
+          console.log(`- Sin candidato: ${r.summary.noCandidate}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-alias-dictionary-v4-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/alias-dictionary-v4.json
+            artifacts/marvel-not-listed-v4/alias-candidates-v4.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/alias-dictionary-v4.json artifacts/marvel-not-listed-v4/alias-candidates-v4.json
+          git commit -m 'audit: guardar diccionario oficial de alias v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
