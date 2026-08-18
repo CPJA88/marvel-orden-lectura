@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/investigate-marvel-missing-drn-seven.mjs'
       - 'scripts/investigate-marvel-drn-routing-v3.mjs'
+      - 'scripts/investigate-marvel-drn-routing-v4.mjs'
       - '.github/workflows/investigate-marvel-missing-drn-seven.yml'
 
 permissions:
@@ -40,6 +41,7 @@ jobs:
         run: |
           node --check scripts/investigate-marvel-missing-drn-seven.mjs
           node --check scripts/investigate-marvel-drn-routing-v3.mjs
+          node --check scripts/investigate-marvel-drn-routing-v4.mjs
 
       - name: Investigate exactly seven missing DRNs
         id: investigate
@@ -55,6 +57,13 @@ jobs:
         run: |
           set -o pipefail
           node scripts/investigate-marvel-drn-routing-v3.mjs 2>&1 | tee artifacts/marvel-missing-drn-seven/routing-v3.log
+
+      - name: Diagnose sharing issue and reader routes
+        id: routing_v4
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          node scripts/investigate-marvel-drn-routing-v4.mjs 2>&1 | tee artifacts/marvel-missing-drn-seven/routing-v4.log
 
       - name: Publish investigation summary
         if: always()
@@ -92,6 +101,21 @@ jobs:
           console.log(`- DNS applink.marvel.com: ${r.dns['applink.marvel.com']?.ok?'OK':'FALLO'}`);
           NODE
           fi
+          if [ -f artifacts/marvel-missing-drn-seven/routing-v4.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-missing-drn-seven/routing-v4.json','utf8'));
+          console.log('');
+          console.log('## Routing v4');
+          console.log('');
+          console.log(`- Resueltos por rutas sharing: ${r.summary.resolved}/${r.summary.targets}`);
+          console.log(`- Rutas con sourceId exacto: ${r.summary.routesWithExactSource}`);
+          console.log(`- DRN aceptados: ${r.summary.acceptedDrnCount}`);
+          for(const x of r.results){
+            console.log(`- GCD ${x.gcdId}: **${x.outcome}**${x.resolvedDrn?` · \`${x.resolvedDrn}\``:''}`);
+          }
+          NODE
+          fi
 
       - name: Preserve seven-case investigation artifact
         if: always()
@@ -103,6 +127,8 @@ jobs:
             artifacts/marvel-missing-drn-seven/run.log
             artifacts/marvel-missing-drn-seven/routing-v3.json
             artifacts/marvel-missing-drn-seven/routing-v3.log
+            artifacts/marvel-missing-drn-seven/routing-v4.json
+            artifacts/marvel-missing-drn-seven/routing-v4.log
           retention-days: 14
           if-no-files-found: warn
           overwrite: true
@@ -116,7 +142,9 @@ jobs:
             artifacts/marvel-missing-drn-seven/run.log \
             artifacts/marvel-missing-drn-seven/investigation.json \
             artifacts/marvel-missing-drn-seven/routing-v3.log \
-            artifacts/marvel-missing-drn-seven/routing-v3.json; do
+            artifacts/marvel-missing-drn-seven/routing-v3.json \
+            artifacts/marvel-missing-drn-seven/routing-v4.log \
+            artifacts/marvel-missing-drn-seven/routing-v4.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --cached --quiet; then
@@ -128,5 +156,5 @@ jobs:
           git push origin HEAD:main
 
       - name: Fail if an isolated diagnostic failed
-        if: steps.investigate.outcome != 'success' || steps.routing.outcome != 'success'
+        if: steps.investigate.outcome != 'success' || steps.routing.outcome != 'success' || steps.routing_v4.outcome != 'success'
         run: exit 1
