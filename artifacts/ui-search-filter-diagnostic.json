@@ -1,0 +1,70 @@
+{
+  "mainCount": 51002,
+  "issueCount": 51002,
+  "searchCount": 51002,
+  "chunkIds": [
+    "1930",
+    "1940",
+    "1950",
+    "1960",
+    "1970",
+    "1980",
+    "1990",
+    "2000",
+    "2010",
+    "2020"
+  ],
+  "chunkIdTypes": [
+    "string"
+  ],
+  "searchDecadeTypes": [
+    "string"
+  ],
+  "searchRowsWithRawDecade": 51002,
+  "searchRowsWithStringDecade": 51002,
+  "issueContentValues": {
+    "mixto": 2661,
+    "original": 41586,
+    "reimpresion": 2993,
+    "sin-datos": 3762
+  },
+  "searchContentValues": {
+    "mixto": 2661,
+    "original": 41586,
+    "reimpresion": 2993,
+    "sin-datos": 3762
+  },
+  "issueEraValues": {
+    "atlas": 3031,
+    "marvel": 46206,
+    "timely": 1765
+  },
+  "searchEraValues": {
+    "atlas": 3031,
+    "marvel": 46206,
+    "timely": 1765
+  },
+  "expectedContentMissing": [],
+  "expectedEraMissing": [],
+  "missingIssueRefs": [],
+  "missingSearchRefs": [],
+  "searchFieldMismatches": 0,
+  "mismatchSamples": [],
+  "initialChunk": {
+    "id": "1930",
+    "file": "principal-1930.json",
+    "count": 6,
+    "content": {
+      "mixto": 2,
+      "original": 4
+    },
+    "era": {
+      "timely": 6
+    }
+  },
+  "captainAmerica": {
+    "global": 1102,
+    "initialChunk": 0,
+    "currentSearchLogic": 0
+  }
+}
