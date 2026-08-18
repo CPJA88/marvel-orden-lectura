@@ -1,0 +1,86 @@
+name: Pilot Marvel NOT_LISTED series map v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/pilot-marvel-not-listed-series-map-v4.mjs'
+      - '.github/workflows/pilot-marvel-not-listed-series-map-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-not-listed-series-map-v4-pilot
+  cancel-in-progress: true
+
+jobs:
+  pilot:
+    name: Recover NOT_LISTED through series anchored by verified MU rows
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Restore global Marvel discovery catalog
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+
+      - name: Validate pilot syntax
+        run: node --check scripts/pilot-marvel-not-listed-series-map-v4.mjs
+
+      - name: Run anchored-series pilot
+        run: node scripts/pilot-marvel-not-listed-series-map-v4.mjs
+
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/pilot-series-map.json','utf8'));
+          console.log('## Marvel NOT_LISTED V4 · series ancladas');
+          console.log('');
+          console.log(`- Positivos usados como anclas: ${r.catalog.positiveAnchorsFound}/${r.catalog.positiveRowsWithSource}`);
+          console.log(`- Series GCD con mapeo confiable: ${r.seriesMappings.trusted}`);
+          console.log(`- NOT_LISTED con candidato por serie: ${r.candidateRecovery.anchoredSeriesCandidates}`);
+          console.log(`- Piloto comprobado oficialmente: ${r.pilot.checked}`);
+          console.log(`- Página Marvel exacta: ${r.pilot.exactRemote}`);
+          console.log(`- Unlimited recuperados: ${r.pilot.mu}`);
+          console.log(`- Identity mismatch remoto: ${r.pilot.remoteIdentityMismatch}`);
+          console.log(`- Reader route confirmada: ${r.pilot.readerRouteConfirmed}`);
+          NODE
+
+      - name: Preserve pilot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-series-map-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/pilot-series-map.json
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Commit pilot report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/pilot-series-map.json
+          if git diff --cached --quiet; then
+            echo 'El piloto no cambió.'
+            exit 0
+          fi
+          git commit -m 'audit: guardar piloto de series ancladas NOT_LISTED v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
