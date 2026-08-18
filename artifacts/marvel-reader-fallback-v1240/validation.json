@@ -1,0 +1,15 @@
+{
+  "version": "1.2.40",
+  "validatedAt": "2026-08-18T17:34:13.451Z",
+  "runId": "32166252653",
+  "testedCommit": "16d0f87229b5284afb05bc98401fc430b179dac7",
+  "targets": 7,
+  "fallbackMode": "official-reader-smartlink",
+  "cache": {
+    "localCount": 51002,
+    "matched": 25329,
+    "uuidLinkReady": 25322,
+    "uuidLinkMissing": 7
+  },
+  "result": "pass"
+}
