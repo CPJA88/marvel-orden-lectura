@@ -1,0 +1,115 @@
+name: Pilot Marvel NOT_LISTED unique anchors v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/pilot-marvel-not-listed-unique-anchors-v4.mjs'
+      - '.github/workflows/pilot-marvel-not-listed-unique-anchors-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-not-listed-unique-anchors-v4
+  cancel-in-progress: true
+
+jobs:
+  pilot:
+    name: Recover NOT_LISTED using unique positive anchors
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Restore global Marvel discovery catalog
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+
+      - name: Validate pilot syntax
+        run: node --check scripts/pilot-marvel-not-listed-unique-anchors-v4.mjs
+
+      - name: Run unique-anchor pilot
+        id: unique
+        continue-on-error: true
+        run: |
+          mkdir -p artifacts/marvel-not-listed-v4
+          set -o pipefail
+          node scripts/pilot-marvel-not-listed-unique-anchors-v4.mjs 2>&1 | tee artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.log
+
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.json','utf8'));
+          console.log('## Marvel NOT_LISTED V4 · anclas únicas');
+          console.log('');
+          console.log(`- Positivos existentes: ${r.anchorSafety.positiveRows}`);
+          console.log(`- Anclas únicas usadas: ${r.anchorSafety.uniqueAnchorRows}`);
+          console.log(`- Anclas ambiguas excluidas: ${r.anchorSafety.excludedAmbiguousAnchors}`);
+          console.log(`- Series confiables: ${r.seriesMappings.trusted}`);
+          console.log(`- NOT_LISTED candidatos: ${r.candidateRecovery.candidates}`);
+          console.log(`- Series con candidatos: ${r.candidateRecovery.seriesWithCandidates}`);
+          console.log(`- Piloto comprobado: ${r.pilot.checked}`);
+          console.log(`- Unlimited: ${r.pilot.mu}`);
+          console.log(`- NO_DIGITAL: ${r.pilot.noDigital}`);
+          console.log(`- Mismatch oficial: ${r.pilot.remoteIdentityMismatch}`);
+          console.log(`- Retry: ${r.pilot.retryable}`);
+          console.log(`- Ventana de fecha inválida: ${r.pilot.badDateWindow}`);
+          console.log(`- Diferencias de año nominal (informativas): ${r.pilot.seriesYearDifferencesInformational}`);
+          console.log(`- Reader route confirmada: ${r.pilot.readerRouteConfirmed}`);
+          NODE
+          else
+            echo '## Marvel NOT_LISTED V4 · piloto sin JSON' >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo 'Revisar pilot-unique-anchors-v4.log.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Preserve pilot artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-unique-anchors-v4-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.json
+            artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.log
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: Commit diagnostics only
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for f in artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.json artifacts/marvel-not-listed-v4/pilot-unique-anchors-v4.log; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if git diff --cached --quiet; then
+            echo 'Sin cambios de diagnóstico.'
+            exit 0
+          fi
+          git commit -m 'audit: guardar piloto NOT_LISTED con anclas únicas v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Fail if pilot safety rejected results
+        if: steps.unique.outcome != 'success'
+        run: exit 1
