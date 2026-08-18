@@ -7,7 +7,7 @@ const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
 const marvelCacheSource=path.join(source,'marvel-cache');
-const uiBaseVersion='v1.2.32-search-filters-memory';
+const uiBaseVersion='v1.2.33-boot-progress';
 const sourceFiles=['index.html','styles.css','enhancements.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','cache-authority-v129.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js','search-filter-fix-v132.js'];
 
 for(const name of sourceFiles){
@@ -53,4 +53,4 @@ manifest.background_color='#f3f1ec';manifest.theme_color='#f3f1ec';
 await fs.writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 
 for(const required of ['index.html','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','cache-authority-v129.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js','search-filter-fix-v132.js','styles.css','enhancements.css','diagnostics.css','manifest.webmanifest','sw.js','data/meta.json','data/search.json','data/series.json','data/marvel-cache/index.json'])await fs.access(path.join(output,required));
-console.log(`PWA Marvel construida con ${uiVersion}: índice preinstalado=${baked.localCount}; formato=${baked.version||1}; verificación oficial=${Boolean(baked.officiallyVerified)}; MU=${baked.matched}; deeplinks preconstruidos=${baked.linkReady||0}; deeplinks pendientes=${baked.linkMissing||0}. Filtros globales cargados en memoria y búsqueda sin bloqueos. Marmota integrado por colección. La caché V3 prevalece sobre IndexedDB antiguo. El scroll no resuelve metadata en red.`);
+console.log(`PWA Marvel construida con ${uiVersion}: índice preinstalado=${baked.localCount}; formato=${baked.version||1}; verificación oficial=${Boolean(baked.officiallyVerified)}; MU=${baked.matched}; deeplinks preconstruidos=${baked.linkReady||0}; deeplinks pendientes=${baked.linkMissing||0}. Pantalla inicial con progreso real de carga; filtros globales cargados en memoria y búsqueda sin bloqueos. Marmota integrado por colección. La caché V3 prevalece sobre IndexedDB antiguo. El scroll no resuelve metadata en red.`);
