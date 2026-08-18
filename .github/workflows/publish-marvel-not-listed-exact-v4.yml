@@ -1,0 +1,64 @@
+name: Publish Marvel NOT_LISTED exact results v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'artifacts/marvel-not-listed-v4/exact-v4-results.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-marvel-not-listed-exact-v4
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate publisher
+        run: node --check scripts/publish-marvel-not-listed-exact-v4.mjs
+      - name: Publish terminal official results only
+        run: node scripts/publish-marvel-not-listed-exact-v4.mjs
+      - name: Validate generated reader allowlist
+        run: |
+          node --check source/marvel-reader-fallback-v1240.js
+          node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Validate published build
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/publish-summary.json','utf8'));
+          const src=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          const built=JSON.parse(fs.readFileSync('public/data/marvel-cache/index.json','utf8'));
+          if(src.localCount!==51002||built.localCount!==51002)throw new Error('Cambió localCount.');
+          for(const k of ['matched','noDigital','notListed','linkReady','linkMissing','readerFallbackReady','functionalLinkReady','functionalLinkMissing'])if(Number(src[k])!==Number(s.after[k])||Number(built[k])!==Number(s.after[k]))throw new Error(`Conteo ${k} inconsistente.`);
+          if(fs.readFileSync('source/marvel-reader-fallback-v1240.js','utf8')!==fs.readFileSync('public/marvel-reader-fallback-v1240.js','utf8'))throw new Error('El build no contiene la allowlist reader publicada.');
+          if(Number(s.unchangedRows)+Number(s.changedRows)!==51002)throw new Error('Scope de publicación inválido.');
+          console.log('Publicación V4 validada',s.after);
+          NODE
+      - name: Commit verified cache publication
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json source/marvel-reader-fallback-v1240.js artifacts/marvel-not-listed-v4/publish-summary.json
+          if git diff --cached --quiet; then
+            echo 'No hay cambios publicables.'
+            exit 0
+          fi
+          git commit -m 'cache: publicar resultados exactos NOT_LISTED v4 verificados'
+          git pull --rebase origin main
+          git push origin HEAD:main
