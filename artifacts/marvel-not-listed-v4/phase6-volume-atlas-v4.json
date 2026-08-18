@@ -1,0 +1,3459 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T23:28:38.244Z",
+  "mode": "phase6-volume-atlas-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31102,
+    "noDigital": 1135,
+    "notListed": 18765,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "catalogDiscoveryOnly": true,
+    "noNegativeClassification": true,
+    "terminalSourceCollisionSeparated": true,
+    "crossPendingSourceDuplicatesSeparated": true,
+    "knownDrnMissingKeptPending": true
+  },
+  "counts": {
+    "pending": 18765,
+    "uniqueRaw": 108,
+    "safeUnique": 70,
+    "safeUniqueDrnMissing": 70,
+    "safeUniqueOther": 0,
+    "crossPendingDuplicateSourceGroups": 19,
+    "crossPendingDuplicateAffectedRows": 38,
+    "ambiguous": 3,
+    "terminalCollision": 27,
+    "noCandidate": 18627,
+    "candidateLinked": 138,
+    "volumeQueueSeries": 41
+  },
+  "duplicateSourceGroups": [
+    {
+      "sourceId": 67002,
+      "gcdIds": [
+        1669891,
+        1802357
+      ]
+    },
+    {
+      "sourceId": 70712,
+      "gcdIds": [
+        1928471,
+        1931984
+      ]
+    },
+    {
+      "sourceId": 70714,
+      "gcdIds": [
+        1941739,
+        1944096
+      ]
+    },
+    {
+      "sourceId": 70715,
+      "gcdIds": [
+        1947781,
+        1950666
+      ]
+    },
+    {
+      "sourceId": 70716,
+      "gcdIds": [
+        1952631,
+        1955574
+      ]
+    },
+    {
+      "sourceId": 77118,
+      "gcdIds": [
+        2156287,
+        2157720
+      ]
+    },
+    {
+      "sourceId": 77119,
+      "gcdIds": [
+        2158999,
+        2161119
+      ]
+    },
+    {
+      "sourceId": 77120,
+      "gcdIds": [
+        2162888,
+        2162895
+      ]
+    },
+    {
+      "sourceId": 77121,
+      "gcdIds": [
+        2164459,
+        2168974
+      ]
+    },
+    {
+      "sourceId": 77122,
+      "gcdIds": [
+        2174351,
+        2180867
+      ]
+    },
+    {
+      "sourceId": 89533,
+      "gcdIds": [
+        2275007,
+        2278139
+      ]
+    },
+    {
+      "sourceId": 95750,
+      "gcdIds": [
+        2282531,
+        2285262
+      ]
+    },
+    {
+      "sourceId": 95758,
+      "gcdIds": [
+        2324818,
+        2331578
+      ]
+    },
+    {
+      "sourceId": 95762,
+      "gcdIds": [
+        2378081,
+        2379243
+      ]
+    },
+    {
+      "sourceId": 110362,
+      "gcdIds": [
+        2594878,
+        2785599
+      ]
+    },
+    {
+      "sourceId": 114937,
+      "gcdIds": [
+        2702789,
+        2826003
+      ]
+    },
+    {
+      "sourceId": 114938,
+      "gcdIds": [
+        2713048,
+        2833406
+      ]
+    },
+    {
+      "sourceId": 114939,
+      "gcdIds": [
+        2717302,
+        2838595
+      ]
+    },
+    {
+      "sourceId": 114940,
+      "gcdIds": [
+        2723982,
+        2847349
+      ]
+    }
+  ],
+  "volumeQueue": [
+    {
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "pendingCount": 28,
+      "candidateLinked": 28,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 26,
+      "ambiguous": 0,
+      "terminalCollision": 2,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "The Amazing Spider-Man (2018 - 2022)",
+          "count": 28
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1824075,
+          "issueNumber": "1 (802)",
+          "date": "2018-07-11",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 67631,
+              "readerId": 48576,
+              "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+              "issueNumber": "1",
+              "onSale": "2018-07-11T00:00:00+0000",
+              "terminalOwners": [
+                1762467
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 1827252,
+          "issueNumber": "2 (803)",
+          "date": "2018-07-25",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 67633,
+              "readerId": 48577,
+              "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+              "issueNumber": "2",
+              "onSale": "2018-07-25T00:00:00+0000",
+              "terminalOwners": [
+                2239793
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 1928471,
+          "issueNumber": "16 (817)",
+          "date": "2019-02-27",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70712,
+            "readerId": 50621,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "16",
+            "onSale": "2019-02-27T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1931984,
+          "issueNumber": "16.HU",
+          "date": "2019-03-06",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70712,
+            "readerId": 50621,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "16",
+            "onSale": "2019-02-27T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1941739,
+          "issueNumber": "18 (819)",
+          "date": "2019-03-27",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70714,
+            "readerId": 51050,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "18",
+            "onSale": "2019-03-27T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1944096,
+          "issueNumber": "18.HU",
+          "date": "2019-04-03",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70714,
+            "readerId": 51050,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "18",
+            "onSale": "2019-03-27T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1947781,
+          "issueNumber": "19 (820)",
+          "date": "2019-04-10",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70715,
+            "readerId": 51134,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "19",
+            "onSale": "2019-04-10T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1950666,
+          "issueNumber": "19.HU",
+          "date": "2019-04-17",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70715,
+            "readerId": 51134,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "19",
+            "onSale": "2019-04-10T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1952631,
+          "issueNumber": "20 (821)",
+          "date": "2019-04-24",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70716,
+            "readerId": 51179,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "20",
+            "onSale": "2019-04-24T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1955574,
+          "issueNumber": "20.HU",
+          "date": "2019-05-01",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 70716,
+            "readerId": 51179,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "20",
+            "onSale": "2019-04-24T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2156287,
+          "issueNumber": "50 (851)",
+          "date": "2020-10-14",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 77118,
+            "readerId": 55541,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "50",
+            "onSale": "2020-10-14T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2157720,
+          "issueNumber": "50.LR",
+          "date": "2020-10-21",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 77118,
+            "readerId": 55541,
+            "seriesName": "The Amazing Spider-Man (2018 - 2022)",
+            "issueNumber": "50",
+            "onSale": "2020-10-14T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 1591,
+      "title": "Conan the Barbarian",
+      "seriesYear": "1970",
+      "pendingCount": 64,
+      "candidateLinked": 25,
+      "safeUniqueDrnMissing": 24,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 39,
+      "remoteVolumes": [
+        {
+          "name": "Conan the Barbarian (2019 - 2021)",
+          "count": 25
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1890329,
+          "issueNumber": "1 (276)",
+          "date": "2019-01-02",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 71644,
+              "readerId": 50327,
+              "seriesName": "Conan the Barbarian (2019 - 2021)",
+              "issueNumber": "1",
+              "onSale": "2019-01-02T00:00:00+0000",
+              "terminalOwners": [
+                1889466
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 1905262,
+          "issueNumber": "2 (277)",
+          "date": "2019-01-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71646,
+            "readerId": 50328,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "2",
+            "onSale": "2019-01-16T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1918092,
+          "issueNumber": "3 (278)",
+          "date": "2019-02-06",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71648,
+            "readerId": 50572,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "3",
+            "onSale": "2019-02-06T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1931991,
+          "issueNumber": "4 (279)",
+          "date": "2019-03-06",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71649,
+            "readerId": 50870,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "4",
+            "onSale": "2019-03-06T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1944115,
+          "issueNumber": "5 (280)",
+          "date": "2019-04-03",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71650,
+            "readerId": 51078,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "5",
+            "onSale": "2019-04-03T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1961145,
+          "issueNumber": "6 (281)",
+          "date": "2019-05-08",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71651,
+            "readerId": 51353,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "6",
+            "onSale": "2019-05-08T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1980714,
+          "issueNumber": "7 (282)",
+          "date": "2019-06-26",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71652,
+            "readerId": 51668,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "7",
+            "onSale": "2019-06-26T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2004689,
+          "issueNumber": "8 (283)",
+          "date": "2019-07-31",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71653,
+            "readerId": 51991,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "8",
+            "onSale": "2019-07-31T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2013359,
+          "issueNumber": "9 (284)",
+          "date": "2019-09-04",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71654,
+            "readerId": 52484,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "9",
+            "onSale": "2019-09-04T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2028416,
+          "issueNumber": "10 (285)",
+          "date": "2019-10-30",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71655,
+            "readerId": 52732,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "10",
+            "onSale": "2019-10-30T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2039676,
+          "issueNumber": "11 (286)",
+          "date": "2019-11-20",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71656,
+            "readerId": 52979,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "11",
+            "onSale": "2019-11-20T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2063702,
+          "issueNumber": "12 (287)",
+          "date": "2020-01-29",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 71657,
+            "readerId": 53221,
+            "seriesName": "Conan the Barbarian (2019 - 2021)",
+            "issueNumber": "12",
+            "onSale": "2020-01-29T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 6216,
+      "title": "Savage Sword of Conan",
+      "seriesYear": "2019",
+      "pendingCount": 12,
+      "candidateLinked": 12,
+      "safeUniqueDrnMissing": 12,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Savage Sword of Conan (2019)",
+          "count": 12
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1924030,
+          "issueNumber": "1 (236)",
+          "date": "2019-02-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74051,
+            "readerId": 50613,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "1",
+            "onSale": "2019-02-13T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1928559,
+          "issueNumber": "2 (237)",
+          "date": "2019-02-27",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74053,
+            "readerId": 50614,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "2",
+            "onSale": "2019-02-27T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1939001,
+          "issueNumber": "3 (238)",
+          "date": "2019-03-20",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74055,
+            "readerId": 50925,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "3",
+            "onSale": "2019-03-20T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1947817,
+          "issueNumber": "4 (239)",
+          "date": "2019-04-10",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74056,
+            "readerId": 51090,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "4",
+            "onSale": "2019-04-10T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1961162,
+          "issueNumber": "5 (240)",
+          "date": "2019-05-08",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74057,
+            "readerId": 51365,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "5",
+            "onSale": "2019-05-08T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1978162,
+          "issueNumber": "6 (241)",
+          "date": "2019-06-19",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74058,
+            "readerId": 51682,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "6",
+            "onSale": "2019-06-19T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1987832,
+          "issueNumber": "7 (242)",
+          "date": "2019-07-10",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74059,
+            "readerId": 51894,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "7",
+            "onSale": "2019-07-10T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2011029,
+          "issueNumber": "8 (243)",
+          "date": "2019-08-21",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74060,
+            "readerId": 52324,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "8",
+            "onSale": "2019-08-21T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2019480,
+          "issueNumber": "9 (244)",
+          "date": "2019-09-18",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74061,
+            "readerId": 52501,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "9",
+            "onSale": "2019-09-18T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2024833,
+          "issueNumber": "10 (245)",
+          "date": "2019-10-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74062,
+            "readerId": 52706,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "10",
+            "onSale": "2019-10-16T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2037384,
+          "issueNumber": "11 (246)",
+          "date": "2019-11-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74063,
+            "readerId": 53018,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "11",
+            "onSale": "2019-11-13T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2047436,
+          "issueNumber": "12 (247)",
+          "date": "2019-12-11",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 74064,
+            "readerId": 53284,
+            "seriesName": "Savage Sword of Conan (2019)",
+            "issueNumber": "12",
+            "onSale": "2019-12-11T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 6209,
+      "title": "Savage Avengers",
+      "seriesYear": "2019",
+      "pendingCount": 11,
+      "candidateLinked": 11,
+      "safeUniqueDrnMissing": 11,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Savage Avengers (2022 - 2023)",
+          "count": 10
+        },
+        {
+          "name": "Savage Avengers (2019 - 2022)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2077666,
+          "issueNumber": "0",
+          "date": "2020-02-07",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 83977,
+            "readerId": 54003,
+            "seriesName": "Savage Avengers (2019 - 2022)",
+            "issueNumber": "0",
+            "onSale": "2020-02-05T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2403728,
+          "issueNumber": "1 (29)",
+          "date": "2022-05-18",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98795,
+            "readerId": 59366,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "1",
+            "onSale": "2022-05-18T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2411234,
+          "issueNumber": "2 (30)",
+          "date": "2022-06-08",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98797,
+            "readerId": 59626,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "2",
+            "onSale": "2022-06-08T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2418368,
+          "issueNumber": "3 (31)",
+          "date": "2022-07-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98799,
+            "readerId": 60013,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "3",
+            "onSale": "2022-07-13T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2426095,
+          "issueNumber": "4 (32)",
+          "date": "2022-08-17",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98800,
+            "readerId": 60205,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "4",
+            "onSale": "2022-08-17T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2432561,
+          "issueNumber": "5 (33)",
+          "date": "2022-09-14",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98801,
+            "readerId": 60352,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "5",
+            "onSale": "2022-09-14T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2439453,
+          "issueNumber": "6 (34)",
+          "date": "2022-10-05",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98802,
+            "readerId": 60581,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "6",
+            "onSale": "2022-10-05T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2447466,
+          "issueNumber": "7 (35)",
+          "date": "2022-11-02",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98803,
+            "readerId": 60762,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "7",
+            "onSale": "2022-11-02T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2466514,
+          "issueNumber": "8 (36)",
+          "date": "2022-12-14",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98804,
+            "readerId": 61069,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "8",
+            "onSale": "2022-12-14T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2479064,
+          "issueNumber": "9 (37)",
+          "date": "2023-01-11",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98805,
+            "readerId": 61238,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "9",
+            "onSale": "2023-01-11T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2497337,
+          "issueNumber": "10 (38)",
+          "date": "2023-02-22",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 98806,
+            "readerId": 61868,
+            "seriesName": "Savage Avengers (2022 - 2023)",
+            "issueNumber": "10",
+            "onSale": "2023-02-22T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "1996",
+      "pendingCount": 25,
+      "candidateLinked": 9,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 8,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 16,
+      "remoteVolumes": [
+        {
+          "name": "Iron Man (2024 - Present)",
+          "count": 8
+        },
+        {
+          "name": "Iron Man (2012 - 2014)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1174470,
+          "issueNumber": "20.INH",
+          "date": "2014-01-22",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 48763,
+              "readerId": 32943,
+              "seriesName": "Iron Man (2012 - 2014)",
+              "issueNumber": "20",
+              "onSale": "2014-01-08T00:00:00+0000",
+              "terminalOwners": [
+                1172687
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2702789,
+          "issueNumber": "4 (674)",
+          "date": "2025-01-22",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114937,
+            "readerId": 71105,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "4",
+            "onSale": "2025-01-22T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2713048,
+          "issueNumber": "5 (675)",
+          "date": "2025-02-26",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114938,
+            "readerId": 69487,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "5",
+            "onSale": "2025-02-26T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2717302,
+          "issueNumber": "6 (676)",
+          "date": "2025-03-12",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114939,
+            "readerId": 70002,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "6",
+            "onSale": "2025-03-12T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2723982,
+          "issueNumber": "7 (677)",
+          "date": "2025-04-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114940,
+            "readerId": 72583,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "7",
+            "onSale": "2025-04-16T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2826003,
+          "issueNumber": "4 (684)",
+          "date": "2026-04-08",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114937,
+            "readerId": 71105,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "4",
+            "onSale": "2025-01-22T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2833406,
+          "issueNumber": "5 (685)",
+          "date": "2026-05-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114938,
+            "readerId": 69487,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "5",
+            "onSale": "2025-02-26T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2838595,
+          "issueNumber": "6 (686)",
+          "date": "2026-06-03",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114939,
+            "readerId": 70002,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "6",
+            "onSale": "2025-03-12T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2847349,
+          "issueNumber": "7 (687)",
+          "date": "2026-07-01",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 114940,
+            "readerId": 72583,
+            "seriesName": "Iron Man (2024 - Present)",
+            "issueNumber": "7",
+            "onSale": "2025-04-16T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 4054,
+      "title": "King Conan",
+      "seriesYear": "2022",
+      "pendingCount": 6,
+      "candidateLinked": 6,
+      "safeUniqueDrnMissing": 6,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "King Conan (2021 - 2022)",
+          "count": 6
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2295876,
+          "issueNumber": "1 (56)",
+          "date": "2021-12-22",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93610,
+            "readerId": 58185,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "1",
+            "onSale": "2021-12-22T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2347925,
+          "issueNumber": "2 (57)",
+          "date": "2022-01-12",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93611,
+            "readerId": 58528,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "2",
+            "onSale": "2022-01-12T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2363308,
+          "issueNumber": "3 (58)",
+          "date": "2022-02-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93612,
+            "readerId": 58634,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "3",
+            "onSale": "2022-02-16T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2400523,
+          "issueNumber": "4 (59)",
+          "date": "2022-05-11",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93613,
+            "readerId": 58817,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "4",
+            "onSale": "2022-05-11T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2409303,
+          "issueNumber": "5 (60)",
+          "date": "2022-06-01",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93614,
+            "readerId": 59146,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "5",
+            "onSale": "2022-06-01T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2417399,
+          "issueNumber": "6 (61)",
+          "date": "2022-07-06",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 93615,
+            "readerId": 59351,
+            "seriesName": "King Conan (2021 - 2022)",
+            "issueNumber": "6",
+            "onSale": "2022-07-06T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "1999",
+      "pendingCount": 17,
+      "candidateLinked": 5,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 5,
+      "noCandidate": 12,
+      "remoteVolumes": [
+        {
+          "name": "Doctor Strange (2023 - Present)",
+          "count": 4
+        },
+        {
+          "name": "Doctor Strange (2018 - 2019)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1675031,
+          "issueNumber": "1.MU",
+          "date": "2017-02-15",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 68287,
+              "readerId": 48243,
+              "seriesName": "Doctor Strange (2018 - 2019)",
+              "issueNumber": "1",
+              "onSale": "2018-06-06T00:00:00+0000",
+              "terminalOwners": [
+                1814761
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2508741,
+          "issueNumber": "1 (427)",
+          "date": "2023-03-22",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 105848,
+              "readerId": 61970,
+              "seriesName": "Doctor Strange (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-03-22T00:00:00+0000",
+              "terminalOwners": [
+                2459920
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2524212,
+          "issueNumber": "2 (428)",
+          "date": "2023-04-26",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 105849,
+              "readerId": 62193,
+              "seriesName": "Doctor Strange (2023 - Present)",
+              "issueNumber": "2",
+              "onSale": "2023-04-26T00:00:00+0000",
+              "terminalOwners": [
+                2472746
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2538314,
+          "issueNumber": "3 (429)",
+          "date": "2023-05-31",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 105850,
+              "readerId": 62500,
+              "seriesName": "Doctor Strange (2023 - Present)",
+              "issueNumber": "3",
+              "onSale": "2023-05-31T00:00:00+0000",
+              "terminalOwners": [
+                2487208
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2544999,
+          "issueNumber": "4 (430)",
+          "date": "2023-06-14",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 105851,
+              "readerId": 62759,
+              "seriesName": "Doctor Strange (2023 - Present)",
+              "issueNumber": "4",
+              "onSale": "2023-06-14T00:00:00+0000",
+              "terminalOwners": [
+                2499010
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 7681,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "1969",
+      "pendingCount": 28,
+      "candidateLinked": 4,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 4,
+      "noCandidate": 24,
+      "remoteVolumes": [
+        {
+          "name": "The Amazing Spider-Man (2025 - Present)",
+          "count": 4
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2728853,
+          "issueNumber": "2 (966)",
+          "date": "2025-04-23",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119344,
+              "readerId": 72707,
+              "seriesName": "The Amazing Spider-Man (2025 - Present)",
+              "issueNumber": "2",
+              "onSale": "2025-04-23T00:00:00+0000",
+              "terminalOwners": [
+                2784007
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2731733,
+          "issueNumber": "3 (967)",
+          "date": "2025-05-07",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119345,
+              "readerId": 73414,
+              "seriesName": "The Amazing Spider-Man (2025 - Present)",
+              "issueNumber": "3",
+              "onSale": "2025-05-07T00:00:00+0000",
+              "terminalOwners": [
+                2795890
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2738714,
+          "issueNumber": "4 (968)",
+          "date": "2025-05-21",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119346,
+              "readerId": 73415,
+              "seriesName": "The Amazing Spider-Man (2025 - Present)",
+              "issueNumber": "4",
+              "onSale": "2025-05-21T00:00:00+0000",
+              "terminalOwners": [
+                2805480
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2744458,
+          "issueNumber": "5 (969)",
+          "date": "2025-06-04",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119347,
+              "readerId": 73959,
+              "seriesName": "The Amazing Spider-Man (2025 - Present)",
+              "issueNumber": "5",
+              "onSale": "2025-06-04T00:00:00+0000",
+              "terminalOwners": [
+                2814565
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 9830,
+      "title": "X-Men",
+      "seriesYear": "1991",
+      "pendingCount": 20,
+      "candidateLinked": 3,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 3,
+      "noCandidate": 17,
+      "remoteVolumes": [
+        {
+          "name": "X-Men (2024 - Present)",
+          "count": 3
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2644336,
+          "issueNumber": "1 (301)",
+          "date": "2024-07-10",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 115440,
+              "readerId": 67890,
+              "seriesName": "X-Men (2024 - Present)",
+              "issueNumber": "1",
+              "onSale": "2024-07-10T00:00:00+0000",
+              "terminalOwners": [
+                2584847,
+                2590799
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2766240,
+          "issueNumber": "21 (321)",
+          "date": "2025-08-27",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119453,
+              "readerId": 74874,
+              "seriesName": "X-Men (2024 - Present)",
+              "issueNumber": "21",
+              "onSale": "2025-08-27T00:00:00+0000",
+              "terminalOwners": [
+                2781717
+              ]
+            }
+          ]
+        },
+        {
+          "gcdId": 2772207,
+          "issueNumber": "22 (322)",
+          "date": "2025-09-24",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 119454,
+              "readerId": 73892,
+              "seriesName": "X-Men (2024 - Present)",
+              "issueNumber": "22",
+              "onSale": "2025-09-24T00:00:00+0000",
+              "terminalOwners": [
+                2790853
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 1122,
+      "title": "Captain America",
+      "seriesYear": "1996",
+      "pendingCount": 16,
+      "candidateLinked": 2,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 2,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 14,
+      "remoteVolumes": [
+        {
+          "name": "Captain America (2023 - Present)",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2594878,
+          "issueNumber": "5 (755)",
+          "date": "2024-01-03",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 110362,
+            "readerId": 64495,
+            "seriesName": "Captain America (2023 - Present)",
+            "issueNumber": "5",
+            "onSale": "2024-01-03T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2785599,
+          "issueNumber": "5 (776)",
+          "date": "2025-11-19",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 110362,
+            "readerId": 64495,
+            "seriesName": "Captain America (2023 - Present)",
+            "issueNumber": "5",
+            "onSale": "2024-01-03T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 538,
+      "title": "Avengers",
+      "seriesYear": "1996",
+      "pendingCount": 12,
+      "candidateLinked": 2,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 2,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 10,
+      "remoteVolumes": [
+        {
+          "name": "Avengers (2018 - 2023)",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1669891,
+          "issueNumber": "1.MU",
+          "date": "2017-01-25",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 67002,
+            "readerId": 47926,
+            "seriesName": "Avengers (2018 - 2023)",
+            "issueNumber": "1",
+            "onSale": "2018-05-02T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 1802357,
+          "issueNumber": "1 (691)",
+          "date": "2018-05-02",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 67002,
+            "readerId": 47926,
+            "seriesName": "Avengers (2018 - 2023)",
+            "issueNumber": "1",
+            "onSale": "2018-05-02T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 5267,
+      "title": "Miracleman by Gaiman and Buckingham: The Silver Age",
+      "seriesYear": "2022",
+      "pendingCount": 4,
+      "candidateLinked": 2,
+      "safeUniqueDrnMissing": 2,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 2,
+      "remoteVolumes": [
+        {
+          "name": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2456983,
+          "issueNumber": "2 (24)",
+          "date": "2022-11-23",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 58530,
+            "readerId": 41897,
+            "seriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+            "issueNumber": "2",
+            "onSale": "2022-11-23T00:00:00+0000"
+          }
+        },
+        {
+          "gcdId": 2600118,
+          "issueNumber": "7 (29)",
+          "date": "2024-01-17",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 59979,
+            "readerId": 62519,
+            "seriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+            "issueNumber": "7",
+            "onSale": "2024-01-17T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 3015,
+      "title": "Ghost Rider",
+      "seriesYear": "1973",
+      "pendingCount": 53,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 52,
+      "remoteVolumes": [
+        {
+          "name": "Ghost Rider (2019 - 2020)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2020441,
+          "issueNumber": "1 (237)",
+          "date": "2019-10-02",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 76985,
+              "readerId": 52860,
+              "seriesName": "Ghost Rider (2019 - 2020)",
+              "issueNumber": "1",
+              "onSale": "2019-10-02T00:00:00+0000",
+              "terminalOwners": [
+                2024806
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 6631,
+      "title": "Spider-Man",
+      "seriesYear": "1990",
+      "pendingCount": 32,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 31,
+      "remoteVolumes": [
+        {
+          "name": "Spider-Man (2022 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2438431,
+          "issueNumber": "1 (157)",
+          "date": "2022-10-05",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 99743,
+              "readerId": 60584,
+              "seriesName": "Spider-Man (2022 - Present)",
+              "issueNumber": "1",
+              "onSale": "2022-10-05T00:00:00+0000",
+              "terminalOwners": [
+                2295014
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 9760,
+      "title": "X-Factor",
+      "seriesYear": "1986",
+      "pendingCount": 32,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 31,
+      "remoteVolumes": [
+        {
+          "name": "X-Factor (2005 - 2013)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 386796,
+          "issueNumber": "26",
+          "date": "2007-12-12",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 21915,
+            "readerId": 13878,
+            "seriesName": "X-Factor (2005 - 2013)",
+            "issueNumber": "26",
+            "onSale": "2007-12-12T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 2579,
+      "title": "Fantastic Four",
+      "seriesYear": "1996",
+      "pendingCount": 14,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 13,
+      "remoteVolumes": [
+        {
+          "name": "Fantastic Four (2022 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2449978,
+          "issueNumber": "1 (694)",
+          "date": "2022-11-09",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 98724,
+              "readerId": 60739,
+              "seriesName": "Fantastic Four (2022 - Present)",
+              "issueNumber": "1",
+              "onSale": "2022-11-09T00:00:00+0000",
+              "terminalOwners": [
+                2278135
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 904,
+      "title": "Black Cat",
+      "seriesYear": "2021",
+      "pendingCount": 10,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 9,
+      "remoteVolumes": [
+        {
+          "name": "Black Cat (2019 - 2020)",
+          "count": 1
+        },
+        {
+          "name": "Black Cat (2020 - 2021)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2177125,
+          "issueNumber": "1 (13)",
+          "date": "2020-12-16",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 76150,
+              "readerId": 51665,
+              "seriesName": "Black Cat (2019 - 2020)",
+              "issueNumber": "1",
+              "onSale": "2019-06-05T00:00:00+0000",
+              "terminalOwners": [
+                1974772
+              ]
+            },
+            {
+              "sourceId": 91367,
+              "readerId": 55786,
+              "seriesName": "Black Cat (2020 - 2021)",
+              "issueNumber": "1",
+              "onSale": "2020-12-16T00:00:00+0000",
+              "terminalOwners": [
+                2036865
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2015",
+      "pendingCount": 7,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 6,
+      "remoteVolumes": [
+        {
+          "name": "Guardians of the Galaxy (2023 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2519320,
+          "issueNumber": "1 (181)",
+          "date": "2023-04-12",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 105859,
+              "readerId": 62200,
+              "seriesName": "Guardians of the Galaxy (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-04-12T00:00:00+0000",
+              "terminalOwners": [
+                2454056
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 8081,
+      "title": "The Stand: The Night Has Come",
+      "seriesYear": "2011",
+      "pendingCount": 6,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 5,
+      "remoteVolumes": [
+        {
+          "name": "THE STAND: THE NIGHT HAS COME (2011)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 868771,
+          "issueNumber": "1",
+          "date": "2011-08-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 32083,
+            "readerId": 78271,
+            "seriesName": "THE STAND: THE NIGHT HAS COME (2011)",
+            "issueNumber": "1",
+            "onSale": "2012-02-15T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 1895,
+      "title": "Dark Tower: The Gunslinger - The Battle of Tull",
+      "seriesYear": "2011",
+      "pendingCount": 5,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 4,
+      "remoteVolumes": [
+        {
+          "name": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (2010 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 845982,
+          "issueNumber": "1",
+          "date": "2011-06-01",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 33953,
+            "readerId": 78264,
+            "seriesName": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (2010 - Present)",
+            "issueNumber": "1",
+            "onSale": "2012-01-11T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 7775,
+      "title": "The Deadly Hands of Kung Fu",
+      "seriesYear": "1974",
+      "pendingCount": 2,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 1,
+      "remoteVolumes": [
+        {
+          "name": "Deadly Hands of Kung Fu (1974 - 1977)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 27317,
+          "issueNumber": "1 (4)",
+          "date": "1974-02-05",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 51036,
+            "readerId": 35269,
+            "seriesName": "Deadly Hands of Kung Fu (1974 - 1977)",
+            "issueNumber": "1",
+            "onSale": "1974-04-01T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 9069,
+      "title": "Universe X",
+      "seriesYear": "2000",
+      "pendingCount": 2,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 1,
+      "terminalCollision": 0,
+      "noCandidate": 1,
+      "remoteVolumes": [
+        {
+          "name": "Universe X (2000 - 2001)",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 88575,
+          "issueNumber": "0",
+          "date": "2000-08-01",
+          "kind": "ambiguous",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 11914,
+              "readerId": 7477,
+              "seriesName": "Universe X (2000 - 2001)",
+              "issueNumber": "0",
+              "onSale": "2000-09-01T00:00:00+0000",
+              "terminalOwners": []
+            },
+            {
+              "sourceId": 11901,
+              "readerId": 7478,
+              "seriesName": "Universe X (2000 - 2001)",
+              "issueNumber": "0",
+              "onSale": "2001-10-01T00:00:00+0000",
+              "terminalOwners": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 358,
+      "title": "Amazing Spider-Man: Extra!",
+      "seriesYear": "2008",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Amazing Spider-Man: Extra! (2008 - 2009)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 695290,
+          "issueNumber": "1",
+          "date": "2008-07-30",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 23069,
+              "readerId": 10677,
+              "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+              "issueNumber": "1",
+              "onSale": "2008-07-30T00:00:00+0000",
+              "terminalOwners": [
+                640038
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 916,
+      "title": "Black Panther",
+      "seriesYear": "2023",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Black Panther (2023 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2546677,
+          "issueNumber": "1 (213)",
+          "date": "2023-06-14",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 104798,
+              "readerId": 62743,
+              "seriesName": "Black Panther (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-06-14T00:00:00+0000",
+              "terminalOwners": [
+                2451131
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 1437,
+      "title": "Champions",
+      "seriesYear": "2016",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Champions (2016 - 2019)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1676277,
+          "issueNumber": "1.MU",
+          "date": "2017-02-22",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 61442,
+              "readerId": 42893,
+              "seriesName": "Champions (2016 - 2019)",
+              "issueNumber": "1",
+              "onSale": "2016-10-05T00:00:00+0000",
+              "terminalOwners": [
+                1635329
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 2411,
+      "title": "Ender's Shadow: Battle School",
+      "seriesYear": "2009",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 1,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ender's Shadow: Battle School (2008 - 2009)",
+          "count": 1
+        },
+        {
+          "name": "Ender's Shadow: Battle School (2009)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 565319,
+          "issueNumber": "1",
+          "date": "2008-12-20",
+          "kind": "ambiguous",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 22970,
+              "readerId": 12701,
+              "seriesName": "Ender's Shadow: Battle School (2008 - 2009)",
+              "issueNumber": "1",
+              "onSale": "2008-12-03T00:00:00+0000",
+              "terminalOwners": []
+            },
+            {
+              "sourceId": 105604,
+              "readerId": 63776,
+              "seriesName": "Ender's Shadow: Battle School (2009)",
+              "issueNumber": "1",
+              "onSale": "2009-07-15T00:00:00-0400",
+              "terminalOwners": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 3005,
+      "title": "Genis-Vell: Marvel Tales",
+      "seriesYear": "2022",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Genis-Vell: Marvel Tales (2021)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2278136,
+          "issueNumber": "1",
+          "date": "2021-11-17",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 92771,
+            "readerId": 57904,
+            "seriesName": "Genis-Vell: Marvel Tales (2021)",
+            "issueNumber": "1",
+            "onSale": "2021-11-17T00:00:00-0500"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 3048,
+      "title": "Ghost Rider: Danny Ketch - Marvel Tales",
+      "seriesYear": "2023",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ghost Rider: Danny Ketch - Marvel Tales (2022)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2791675,
+          "issueNumber": "1",
+          "date": "2022-11-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 105921,
+            "readerId": 60744,
+            "seriesName": "Ghost Rider: Danny Ketch - Marvel Tales (2022)",
+            "issueNumber": "1",
+            "onSale": "2022-11-16T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 3331,
+      "title": "Hellstrom: Marvel Tales",
+      "seriesYear": "2021",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Hellstrom: Marvel Tales (2020)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2161101,
+          "issueNumber": "1",
+          "date": "2020-11-04",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 78616,
+            "readerId": 54907,
+            "seriesName": "Hellstrom: Marvel Tales (2020)",
+            "issueNumber": "1",
+            "onSale": "2020-11-04T00:00:00-0500"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 4013,
+      "title": "Ka-Zar: Marvel Tales",
+      "seriesYear": "2021",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ka-Zar: Marvel Tales (2021)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2572212,
+          "issueNumber": "1",
+          "date": "2021-09-08",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 92765,
+            "readerId": 57670,
+            "seriesName": "Ka-Zar: Marvel Tales (2021)",
+            "issueNumber": "1",
+            "onSale": "2021-09-08T00:00:00-0400"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 4185,
+      "title": "Loki",
+      "seriesYear": "2023",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Loki (2023 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2544458,
+          "issueNumber": "1 (27)",
+          "date": "2023-06-07",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 97121,
+              "readerId": 62772,
+              "seriesName": "Loki (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-06-07T00:00:00+0000",
+              "terminalOwners": [
+                2568223
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 4772,
+      "title": "Marvel Rising",
+      "seriesYear": "2018",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Marvel Rising (2018)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1802007,
+          "issueNumber": "0",
+          "date": "2018-04-25",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 66916,
+            "readerId": 47810,
+            "seriesName": "Marvel Rising (2018)",
+            "issueNumber": "0",
+            "onSale": "2018-04-25T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 5382,
+      "title": "Ms. Marvel: Marvel Tales",
+      "seriesYear": "2021",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ms. Marvel: Marvel Tales (2021)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2269907,
+          "issueNumber": "1",
+          "date": "2021-10-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 92769,
+            "readerId": 57797,
+            "seriesName": "Ms. Marvel: Marvel Tales (2021)",
+            "issueNumber": "1",
+            "onSale": "2021-10-13T00:00:00-0400"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 5771,
+      "title": "Peter Parker: Spider-Man",
+      "seriesYear": "1999",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Peter Parker: Spider-Man (1999 - 2003)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 87693,
+          "issueNumber": "31 (129)",
+          "date": "2001-05-16",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 10541,
+            "readerId": 2360,
+            "seriesName": "Peter Parker: Spider-Man (1999 - 2003)",
+            "issueNumber": "31",
+            "onSale": "2001-05-16T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 6649,
+      "title": "Spider-Man / Deadpool",
+      "seriesYear": "2016",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Spider-Man/Deadpool (2016 - 2019)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1669892,
+          "issueNumber": "1.MU",
+          "date": "2017-01-25",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 52557,
+              "readerId": 40807,
+              "seriesName": "Spider-Man/Deadpool (2016 - 2019)",
+              "issueNumber": "1",
+              "onSale": "2016-01-06T00:00:00+0000",
+              "terminalOwners": [
+                1523561
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 7069,
+      "title": "Spine-Tingling Spider-Man",
+      "seriesYear": "2023",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Spine-Tingling Spider-Man (2023 - Present)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2568233,
+          "issueNumber": "0",
+          "date": "2023-09-13",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 108996,
+            "readerId": 63682,
+            "seriesName": "Spine-Tingling Spider-Man (2023 - Present)",
+            "issueNumber": "0",
+            "onSale": "2023-09-13T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 7636,
+      "title": "Thanos Quest",
+      "seriesYear": "2012",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "THANOS QUEST (2012)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 1026223,
+          "issueNumber": "1",
+          "date": "2012-09-05",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 44512,
+            "readerId": 27612,
+            "seriesName": "THANOS QUEST (2012)",
+            "issueNumber": "1",
+            "onSale": "2012-09-05T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 7885,
+      "title": "The Last Avengers Story: Marvel Tales",
+      "seriesYear": "2022",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "The Last Avengers Story: Marvel Tales (2021)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2295875,
+          "issueNumber": "1",
+          "date": "2021-12-22",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 92772,
+            "readerId": 58204,
+            "seriesName": "The Last Avengers Story: Marvel Tales (2021)",
+            "issueNumber": "1",
+            "onSale": "2021-12-22T00:00:00-0500"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 8515,
+      "title": "True Believers: Conan: Serpent War - The Valley of the Worm",
+      "seriesYear": "2020",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 1,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2045230,
+          "issueNumber": "0",
+          "date": "2019-12-04",
+          "kind": "unique",
+          "catalogMode": "exact-title",
+          "candidate": {
+            "sourceId": 83856,
+            "readerId": 54191,
+            "seriesName": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+            "issueNumber": "0",
+            "onSale": "2019-12-04T00:00:00+0000"
+          }
+        }
+      ]
+    },
+    {
+      "seriesId": 8816,
+      "title": "Ultimate Comics Spider-Man",
+      "seriesYear": "2011",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 0,
+      "terminalCollision": 1,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ultimate Comics Spider-Man (2011 - 2013)",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 875744,
+          "issueNumber": "1",
+          "date": "2011-09-14",
+          "kind": "terminal-collision",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 38394,
+              "readerId": 23712,
+              "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+              "issueNumber": "1",
+              "onSale": "2011-09-14T00:00:00+0000",
+              "terminalOwners": [
+                816506
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seriesId": 8920,
+      "title": "Ultimate Universe",
+      "seriesYear": "2024",
+      "pendingCount": 1,
+      "candidateLinked": 1,
+      "safeUniqueDrnMissing": 0,
+      "safeUniqueOther": 0,
+      "crossDuplicate": 0,
+      "ambiguous": 1,
+      "terminalCollision": 0,
+      "noCandidate": 0,
+      "remoteVolumes": [
+        {
+          "name": "Ultimate Universe (2023 - Present)",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "gcdId": 2575546,
+          "issueNumber": "1",
+          "date": "2023-11-01",
+          "kind": "ambiguous",
+          "catalogMode": "exact-title",
+          "candidates": [
+            {
+              "sourceId": 112990,
+              "readerId": 64136,
+              "seriesName": "Ultimate Universe (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-11-01T00:00:00+0000",
+              "terminalOwners": []
+            },
+            {
+              "sourceId": 115480,
+              "readerId": 64476,
+              "seriesName": "Ultimate Universe (2023 - Present)",
+              "issueNumber": "1",
+              "onSale": "2023-11-01T00:00:00+0000",
+              "terminalOwners": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "noCandidateTop": [
+    {
+      "seriesId": 4850,
+      "title": "Marvel Tales",
+      "seriesYear": "1949",
+      "pendingCount": 355,
+      "noCandidate": 355
+    },
+    {
+      "seriesId": 4041,
+      "title": "Kid Colt Outlaw",
+      "seriesYear": "1949",
+      "pendingCount": 220,
+      "noCandidate": 220
+    },
+    {
+      "seriesId": 3979,
+      "title": "Joker",
+      "seriesYear": "1941",
+      "pendingCount": 180,
+      "noCandidate": 180
+    },
+    {
+      "seriesId": 2933,
+      "title": "G.I. Joe, a Real American Hero",
+      "seriesYear": "1982",
+      "pendingCount": 158,
+      "noCandidate": 158
+    },
+    {
+      "seriesId": 5255,
+      "title": "Millie the Model Comics",
+      "seriesYear": "1945",
+      "pendingCount": 137,
+      "noCandidate": 137
+    },
+    {
+      "seriesId": 8773,
+      "title": "Two Gun Kid",
+      "seriesYear": "1953",
+      "pendingCount": 122,
+      "noCandidate": 122
+    },
+    {
+      "seriesId": 6350,
+      "title": "Sergio Aragonés Groo the Wanderer",
+      "seriesYear": "1985",
+      "pendingCount": 120,
+      "noCandidate": 120
+    },
+    {
+      "seriesId": 8043,
+      "title": "The Savage Sword of Conan",
+      "seriesYear": "1974",
+      "pendingCount": 119,
+      "noCandidate": 119
+    },
+    {
+      "seriesId": 5753,
+      "title": "Patsy Walker",
+      "seriesYear": "1945",
+      "pendingCount": 118,
+      "noCandidate": 118
+    },
+    {
+      "seriesId": 8014,
+      "title": "The Rawhide Kid",
+      "seriesYear": "1960",
+      "pendingCount": 114,
+      "noCandidate": 114
+    },
+    {
+      "seriesId": 3632,
+      "title": "Incredible Hulk",
+      "seriesYear": "2000",
+      "pendingCount": 114,
+      "noCandidate": 114
+    },
+    {
+      "seriesId": 5750,
+      "title": "Patsy and Hedy",
+      "seriesYear": "1952",
+      "pendingCount": 105,
+      "noCandidate": 105
+    },
+    {
+      "seriesId": 1409,
+      "title": "Cartoons and Gags",
+      "seriesYear": "1959",
+      "pendingCount": 101,
+      "noCandidate": 101
+    },
+    {
+      "seriesId": 4208,
+      "title": "Love Romances",
+      "seriesYear": "1949",
+      "pendingCount": 97,
+      "noCandidate": 97
+    },
+    {
+      "seriesId": 1589,
+      "title": "Conan Saga",
+      "seriesYear": "1987",
+      "pendingCount": 97,
+      "noCandidate": 97
+    },
+    {
+      "seriesId": 4841,
+      "title": "Marvel Super-Heroes",
+      "seriesYear": "1967",
+      "pendingCount": 95,
+      "noCandidate": 95
+    },
+    {
+      "seriesId": 1651,
+      "title": "Crazy Magazine",
+      "seriesYear": "1973",
+      "pendingCount": 94,
+      "noCandidate": 94
+    },
+    {
+      "seriesId": 4130,
+      "title": "Laugh Parade",
+      "seriesYear": "1961",
+      "pendingCount": 86,
+      "noCandidate": 86
+    },
+    {
+      "seriesId": 3964,
+      "title": "Jest",
+      "seriesYear": "1941",
+      "pendingCount": 83,
+      "noCandidate": 83
+    },
+    {
+      "seriesId": 4003,
+      "title": "Justice",
+      "seriesYear": "1947",
+      "pendingCount": 83,
+      "noCandidate": 83
+    },
+    {
+      "seriesId": 5274,
+      "title": "Miss America Magazine",
+      "seriesYear": "1944",
+      "pendingCount": 82,
+      "noCandidate": 82
+    },
+    {
+      "seriesId": 5894,
+      "title": "Punisher",
+      "seriesYear": "1995",
+      "pendingCount": 82,
+      "noCandidate": 82
+    },
+    {
+      "seriesId": 5825,
+      "title": "Popular Jokes",
+      "seriesYear": "1961",
+      "pendingCount": 81,
+      "noCandidate": 81
+    },
+    {
+      "seriesId": 8102,
+      "title": "The Transformers",
+      "seriesYear": "1984",
+      "pendingCount": 80,
+      "noCandidate": 80
+    },
+    {
+      "seriesId": 5188,
+      "title": "Micronauts",
+      "seriesYear": "1979",
+      "pendingCount": 79,
+      "noCandidate": 79
+    },
+    {
+      "seriesId": 1574,
+      "title": "Comedy",
+      "seriesYear": "1942",
+      "pendingCount": 78,
+      "noCandidate": 78
+    },
+    {
+      "seriesId": 6354,
+      "title": "Sgt. Fury",
+      "seriesYear": "1963",
+      "pendingCount": 77,
+      "noCandidate": 77
+    },
+    {
+      "seriesId": 6119,
+      "title": "Rom",
+      "seriesYear": "1979",
+      "pendingCount": 75,
+      "noCandidate": 75
+    },
+    {
+      "seriesId": 248,
+      "title": "Alpha Flight",
+      "seriesYear": "1983",
+      "pendingCount": 75,
+      "noCandidate": 75
+    },
+    {
+      "seriesId": 5016,
+      "title": "Marvel's Greatest Comics",
+      "seriesYear": "1969",
+      "pendingCount": 74,
+      "noCandidate": 74
+    },
+    {
+      "seriesId": 5417,
+      "title": "My Own Romance",
+      "seriesYear": "1949",
+      "pendingCount": 73,
+      "noCandidate": 73
+    },
+    {
+      "seriesId": 7439,
+      "title": "Strange Tales",
+      "seriesYear": "1951",
+      "pendingCount": 72,
+      "noCandidate": 72
+    },
+    {
+      "seriesId": 1407,
+      "title": "Cartoon Laughs",
+      "seriesYear": "1962",
+      "pendingCount": 72,
+      "noCandidate": 72
+    },
+    {
+      "seriesId": 841,
+      "title": "Battle",
+      "seriesYear": "1951",
+      "pendingCount": 70,
+      "noCandidate": 70
+    },
+    {
+      "seriesId": 8993,
+      "title": "Uncanny Tales",
+      "seriesYear": "1952",
+      "pendingCount": 68,
+      "noCandidate": 68
+    },
+    {
+      "seriesId": 9298,
+      "title": "Web of Spider-Man",
+      "seriesYear": "1985",
+      "pendingCount": 67,
+      "noCandidate": 67
+    },
+    {
+      "seriesId": 9900,
+      "title": "X-Men Classic",
+      "seriesYear": "1990",
+      "pendingCount": 65,
+      "noCandidate": 65
+    },
+    {
+      "seriesId": 4213,
+      "title": "Lovers",
+      "seriesYear": "1949",
+      "pendingCount": 64,
+      "noCandidate": 64
+    },
+    {
+      "seriesId": 5253,
+      "title": "Millie the Model",
+      "seriesYear": "1966",
+      "pendingCount": 64,
+      "noCandidate": 64
+    },
+    {
+      "seriesId": 835,
+      "title": "Barbie",
+      "seriesYear": "1991",
+      "pendingCount": 63,
+      "noCandidate": 63
+    },
+    {
+      "seriesId": 5422,
+      "title": "Mystic",
+      "seriesYear": "1951",
+      "pendingCount": 61,
+      "noCandidate": 61
+    },
+    {
+      "seriesId": 3981,
+      "title": "Journey into Mystery",
+      "seriesYear": "1952",
+      "pendingCount": 61,
+      "noCandidate": 61
+    },
+    {
+      "seriesId": 7626,
+      "title": "Terry-Toons Comics",
+      "seriesYear": "1942",
+      "pendingCount": 59,
+      "noCandidate": 59
+    },
+    {
+      "seriesId": 5828,
+      "title": "Power Man and Iron Fist",
+      "seriesYear": "1981",
+      "pendingCount": 59,
+      "noCandidate": 59
+    },
+    {
+      "seriesId": 8066,
+      "title": "The Spectacular Spider-Man",
+      "seriesYear": "1976",
+      "pendingCount": 59,
+      "noCandidate": 59
+    },
+    {
+      "seriesId": 4750,
+      "title": "Marvel Mystery Comics",
+      "seriesYear": "1939",
+      "pendingCount": 58,
+      "noCandidate": 58
+    },
+    {
+      "seriesId": 3990,
+      "title": "Journey into Unknown Worlds",
+      "seriesYear": "1950",
+      "pendingCount": 58,
+      "noCandidate": 58
+    },
+    {
+      "seriesId": 492,
+      "title": "Astonishing",
+      "seriesYear": "1951",
+      "pendingCount": 57,
+      "noCandidate": 57
+    },
+    {
+      "seriesId": 7063,
+      "title": "Spidey Super Stories",
+      "seriesYear": "1974",
+      "pendingCount": 57,
+      "noCandidate": 57
+    },
+    {
+      "seriesId": 3311,
+      "title": "Heathcliff",
+      "seriesYear": "1985",
+      "pendingCount": 56,
+      "noCandidate": 56
+    },
+    {
+      "seriesId": 9459,
+      "title": "Wild Western",
+      "seriesYear": "1948",
+      "pendingCount": 55,
+      "noCandidate": 55
+    },
+    {
+      "seriesId": 1056,
+      "title": "Breezy",
+      "seriesYear": "1954",
+      "pendingCount": 55,
+      "noCandidate": 55
+    },
+    {
+      "seriesId": 5824,
+      "title": "Popular Cartoons",
+      "seriesYear": "1968",
+      "pendingCount": 55,
+      "noCandidate": 55
+    },
+    {
+      "seriesId": 683,
+      "title": "Avengers West Coast",
+      "seriesYear": "1989",
+      "pendingCount": 55,
+      "noCandidate": 55
+    },
+    {
+      "seriesId": 5421,
+      "title": "Mystery Tales",
+      "seriesYear": "1952",
+      "pendingCount": 54,
+      "noCandidate": 54
+    },
+    {
+      "seriesId": 1571,
+      "title": "Combat Kelly",
+      "seriesYear": "1951",
+      "pendingCount": 53,
+      "noCandidate": 53
+    },
+    {
+      "seriesId": 837,
+      "title": "Barbie Fashion",
+      "seriesYear": "1991",
+      "pendingCount": 53,
+      "noCandidate": 53
+    },
+    {
+      "seriesId": 10396,
+      "title": "Zip",
+      "seriesYear": "1964",
+      "pendingCount": 52,
+      "noCandidate": 52
+    },
+    {
+      "seriesId": 3015,
+      "title": "Ghost Rider",
+      "seriesYear": "1973",
+      "pendingCount": 53,
+      "noCandidate": 52
+    },
+    {
+      "seriesId": 2904,
+      "title": "Fun House Comedy",
+      "seriesYear": "1964",
+      "pendingCount": 51,
+      "noCandidate": 51
+    },
+    {
+      "seriesId": 4882,
+      "title": "Marvel Triple Action",
+      "seriesYear": "1972",
+      "pendingCount": 50,
+      "noCandidate": 50
+    },
+    {
+      "seriesId": 156,
+      "title": "ALF",
+      "seriesYear": "1988",
+      "pendingCount": 50,
+      "noCandidate": 50
+    },
+    {
+      "seriesId": 8000,
+      "title": "The Punisher War Journal",
+      "seriesYear": "1988",
+      "pendingCount": 50,
+      "noCandidate": 50
+    },
+    {
+      "seriesId": 9220,
+      "title": "War Comics",
+      "seriesYear": "1950",
+      "pendingCount": 49,
+      "noCandidate": 49
+    },
+    {
+      "seriesId": 5849,
+      "title": "Powers",
+      "seriesYear": "2004",
+      "pendingCount": 49,
+      "noCandidate": 49
+    },
+    {
+      "seriesId": 1191,
+      "title": "Captain America Comics",
+      "seriesYear": "1941",
+      "pendingCount": 48,
+      "noCandidate": 48
+    },
+    {
+      "seriesId": 846,
+      "title": "Battlefront",
+      "seriesYear": "1952",
+      "pendingCount": 48,
+      "noCandidate": 48
+    },
+    {
+      "seriesId": 7974,
+      "title": "The Outlaw Kid",
+      "seriesYear": "1954",
+      "pendingCount": 48,
+      "noCandidate": 48
+    },
+    {
+      "seriesId": 1401,
+      "title": "Cartoon Capers",
+      "seriesYear": "1966",
+      "pendingCount": 47,
+      "noCandidate": 47
+    },
+    {
+      "seriesId": 6357,
+      "title": "Sgt. Fury and His Howling Commandos",
+      "seriesYear": "1974",
+      "pendingCount": 47,
+      "noCandidate": 47
+    },
+    {
+      "seriesId": 5412,
+      "title": "My Friend Irma",
+      "seriesYear": "1950",
+      "pendingCount": 46,
+      "noCandidate": 46
+    },
+    {
+      "seriesId": 7928,
+      "title": "The Mighty Marvel Western",
+      "seriesYear": "1968",
+      "pendingCount": 46,
+      "noCandidate": 46
+    },
+    {
+      "seriesId": 3234,
+      "title": "Gunsmoke Western",
+      "seriesYear": "1955",
+      "pendingCount": 44,
+      "noCandidate": 44
+    },
+    {
+      "seriesId": 8016,
+      "title": "The Ren & Stimpy Show",
+      "seriesYear": "1992",
+      "pendingCount": 44,
+      "noCandidate": 44
+    },
+    {
+      "seriesId": 5271,
+      "title": "Miss America",
+      "seriesYear": "1953",
+      "pendingCount": 43,
+      "noCandidate": 43
+    },
+    {
+      "seriesId": 7964,
+      "title": "The Official Handbook of the Marvel Universe",
+      "seriesYear": "1983",
+      "pendingCount": 43,
+      "noCandidate": 43
+    },
+    {
+      "seriesId": 3980,
+      "title": "Joker Comics",
+      "seriesYear": "1942",
+      "pendingCount": 42,
+      "noCandidate": 42
+    },
+    {
+      "seriesId": 5414,
+      "title": "My Love",
+      "seriesYear": "1949",
+      "pendingCount": 42,
+      "noCandidate": 42
+    },
+    {
+      "seriesId": 4874,
+      "title": "Marvel Team-Up",
+      "seriesYear": "1972",
+      "pendingCount": 42,
+      "noCandidate": 42
+    },
+    {
+      "seriesId": 9338,
+      "title": "Western Gunfighters",
+      "seriesYear": "1956",
+      "pendingCount": 41,
+      "noCandidate": 41
+    },
+    {
+      "seriesId": 2967,
+      "title": "Gee-Whiz!",
+      "seriesYear": "1955",
+      "pendingCount": 40,
+      "noCandidate": 40
+    },
+    {
+      "seriesId": 7984,
+      "title": "The Punisher",
+      "seriesYear": "1987",
+      "pendingCount": 40,
+      "noCandidate": 40
+    },
+    {
+      "seriesId": 2215,
+      "title": "Doctor Aphra",
+      "seriesYear": "2017",
+      "pendingCount": 40,
+      "noCandidate": 40
+    },
+    {
+      "seriesId": 4210,
+      "title": "Love Tales",
+      "seriesYear": "1949",
+      "pendingCount": 39,
+      "noCandidate": 39
+    },
+    {
+      "seriesId": 6576,
+      "title": "Spellbound",
+      "seriesYear": "1952",
+      "pendingCount": 39,
+      "noCandidate": 39
+    },
+    {
+      "seriesId": 1591,
+      "title": "Conan the Barbarian",
+      "seriesYear": "1970",
+      "pendingCount": 64,
+      "noCandidate": 39
+    },
+    {
+      "seriesId": 4806,
+      "title": "Marvel Super Action",
+      "seriesYear": "1976",
+      "pendingCount": 39,
+      "noCandidate": 39
+    },
+    {
+      "seriesId": 5450,
+      "title": "Namor, the Sub-Mariner",
+      "seriesYear": "1990",
+      "pendingCount": 39,
+      "noCandidate": 39
+    },
+    {
+      "seriesId": 8764,
+      "title": "True Secrets",
+      "seriesYear": "1950",
+      "pendingCount": 38,
+      "noCandidate": 38
+    },
+    {
+      "seriesId": 9441,
+      "title": "Where Monsters Dwell",
+      "seriesYear": "1970",
+      "pendingCount": 38,
+      "noCandidate": 38
+    },
+    {
+      "seriesId": 170,
+      "title": "Alien Legion",
+      "seriesYear": "1984",
+      "pendingCount": 38,
+      "noCandidate": 38
+    },
+    {
+      "seriesId": 155,
+      "title": "Akira",
+      "seriesYear": "1988",
+      "pendingCount": 38,
+      "noCandidate": 38
+    },
+    {
+      "seriesId": 8945,
+      "title": "Ultimates",
+      "seriesYear": "2011",
+      "pendingCount": 38,
+      "noCandidate": 38
+    },
+    {
+      "seriesId": 5723,
+      "title": "Our Love Story",
+      "seriesYear": "1969",
+      "pendingCount": 37,
+      "noCandidate": 37
+    },
+    {
+      "seriesId": 4840,
+      "title": "Marvel Super Special",
+      "seriesYear": "1978",
+      "pendingCount": 37,
+      "noCandidate": 37
+    },
+    {
+      "seriesId": 1575,
+      "title": "Comedy Comics",
+      "seriesYear": "1942",
+      "pendingCount": 36,
+      "noCandidate": 36
+    },
+    {
+      "seriesId": 3012,
+      "title": "Georgie Comics",
+      "seriesYear": "1945",
+      "pendingCount": 36,
+      "noCandidate": 36
+    },
+    {
+      "seriesId": 5470,
+      "title": "Nellie the Nurse Comics",
+      "seriesYear": "1945",
+      "pendingCount": 36,
+      "noCandidate": 36
+    },
+    {
+      "seriesId": 4407,
+      "title": "Marvel Classics Comics",
+      "seriesYear": "1976",
+      "pendingCount": 36,
+      "noCandidate": 36
+    },
+    {
+      "seriesId": 1603,
+      "title": "Conan the King",
+      "seriesYear": "1984",
+      "pendingCount": 36,
+      "noCandidate": 36
+    }
+  ]
+}
