@@ -1,0 +1,21 @@
+{
+  "version": 4,
+  "publishedAt": "2026-08-18T21:07:21.200Z",
+  "changedRows": 35,
+  "promotedMU": 31,
+  "promotedReader": 31,
+  "promotedUuid": 0,
+  "confirmedNoDigital": 4,
+  "remainingFrom54": 19,
+  "after": {
+    "matched": 29137,
+    "noDigital": 1135,
+    "notListed": 20730,
+    "linkReady": 25322,
+    "linkMissing": 3815,
+    "readerFallbackReady": 3815,
+    "functionalLinkReady": 29137,
+    "functionalLinkMissing": 0
+  },
+  "unchangedRows": 50967
+}
