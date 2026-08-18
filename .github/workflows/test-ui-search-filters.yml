@@ -4,11 +4,12 @@ on:
   push:
     paths:
       - 'scripts/test-ui-search-filters.mjs'
+      - 'scripts/test-ui-search-filters-v132.mjs'
       - 'scripts/prepare.mjs'
       - '.github/workflows/test-ui-search-filters.yml'
       - 'source/app.js'
       - 'source/index.html'
-      - 'source/search-filter-fix-v131.js'
+      - 'source/search-filter-fix-v132.js'
       - 'Marvel_Orden_de_Lectura_PWA.zip'
   workflow_dispatch:
 
@@ -37,7 +38,7 @@ jobs:
       - name: Validate search/filter patch syntax
         id: syntax
         continue-on-error: true
-        run: node --check source/search-filter-fix-v131.js
+        run: node --check source/search-filter-fix-v132.js
       - name: Build PWA
         id: build
         continue-on-error: true
@@ -46,12 +47,17 @@ jobs:
         id: built
         continue-on-error: true
         run: |
-          grep -q 'search-filter-fix-v131.js' public/index.html
-          grep -q 'search-filter-fix-v131.js' public/sw.js
+          grep -q 'search-filter-fix-v132.js' public/index.html
+          grep -q 'search-filter-fix-v132.js' public/sw.js
+          ! grep -q 'search-filter-fix-v131.js' public/index.html
       - name: Test search and filter data contract
         id: data
         continue-on-error: true
         run: node scripts/test-ui-search-filters.mjs
+      - name: Test real global filtering behavior
+        id: behavior
+        continue-on-error: true
+        run: node scripts/test-ui-search-filters-v132.mjs
       - name: Write CI result
         if: always()
         run: |
@@ -63,7 +69,8 @@ jobs:
             "syntax": "${{ steps.syntax.outcome }}",
             "build": "${{ steps.build.outcome }}",
             "builtPatch": "${{ steps.built.outcome }}",
-            "dataContract": "${{ steps.data.outcome }}"
+            "dataContract": "${{ steps.data.outcome }}",
+            "behavior": "${{ steps.behavior.outcome }}"
           }
           JSON
       - name: Publish diagnostic report
@@ -73,10 +80,11 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add artifacts/ui-search-filter-ci-status.json
           if test -f artifacts/ui-search-filter-diagnostic.json; then git add artifacts/ui-search-filter-diagnostic.json; fi
+          if test -f artifacts/ui-filter-v132-behavior.json; then git add artifacts/ui-filter-v132-behavior.json; fi
           if git diff --cached --quiet; then
             echo 'Los informes no han cambiado.'
           else
-            git commit -m 'diagnóstico: validar búsqueda y filtros v1.2.31'
+            git commit -m 'diagnóstico: validar búsqueda y filtros v1.2.32'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -87,9 +95,10 @@ jobs:
           name: ui-search-filter-diagnostic-${{ github.run_id }}
           path: |
             artifacts/ui-search-filter-diagnostic.json
+            artifacts/ui-filter-v132-behavior.json
             artifacts/ui-search-filter-ci-status.json
           retention-days: 3
           if-no-files-found: warn
       - name: Fail if UI validation is broken
-        if: steps.syntax.outcome == 'failure' || steps.build.outcome == 'failure' || steps.built.outcome == 'failure' || steps.data.outcome == 'failure'
+        if: steps.syntax.outcome == 'failure' || steps.build.outcome == 'failure' || steps.built.outcome == 'failure' || steps.data.outcome == 'failure' || steps.behavior.outcome == 'failure'
         run: exit 1
