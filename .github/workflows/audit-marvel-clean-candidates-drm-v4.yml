@@ -1,0 +1,93 @@
+name: Audit Marvel clean candidates DRM v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-clean-candidates-drm-v4.mjs'
+      - 'scripts/summarize-marvel-clean-candidates-drm-v4.mjs'
+      - '.github/workflows/audit-marvel-clean-candidates-drm-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-clean-candidates-drm-v4
+  cancel-in-progress: false
+
+env:
+  SHARD_COUNT: '8'
+
+jobs:
+  scan:
+    name: DRM clean shard ${{ matrix.shard }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate scanner
+        run: node --check scripts/audit-marvel-clean-candidates-drm-v4.mjs
+      - name: Audit clean candidates via official DRM button
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        run: node scripts/audit-marvel-clean-candidates-drm-v4.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-clean-candidates-drm-v4-shard-${{ matrix.shard }}
+          path: artifacts/marvel-not-listed-v4/clean-candidates-v4-shards/shard-${{ matrix.shard }}.json
+          retention-days: 14
+
+  summarize:
+    name: Merge clean candidate DRM audit
+    needs: scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: marvel-clean-candidates-drm-v4-shard-*
+          path: artifacts/marvel-not-listed-v4/clean-candidates-v4-shards
+          merge-multiple: true
+      - name: Validate summarizer
+        run: node --check scripts/summarize-marvel-clean-candidates-drm-v4.mjs
+      - name: Merge results
+        run: node scripts/summarize-marvel-clean-candidates-drm-v4.mjs
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/clean-candidates-drm-v4-summary.json','utf8'));
+          console.log('## Phase 5 · candidatos limpios por botón oficial');for(const [k,v] of Object.entries(s))if(typeof v!=='object')console.log(`- ${k}: ${v}`);console.log('');console.log('### kindCounts');for(const [k,v] of Object.entries(s.kindCounts))console.log(`- ${k}: ${v}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-clean-candidates-drm-v4-merged-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/clean-candidates-drm-v4-summary.json
+            artifacts/marvel-not-listed-v4/clean-candidates-drm-v4-results.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/clean-candidates-drm-v4-summary.json artifacts/marvel-not-listed-v4/clean-candidates-drm-v4-results.json
+          git commit -m 'audit: guardar DRM de 1983 candidatos limpios v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
