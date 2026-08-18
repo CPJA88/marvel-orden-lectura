@@ -59,6 +59,7 @@ jobs:
 
       - name: Verify every Marvel Unlimited DRN and hyperlink
         id: audit
+        continue-on-error: true
         env:
           LINK_VERIFY_CONCURRENCY: '2'
         run: node scripts/audit-marvel-unlimited-links.mjs
@@ -81,8 +82,24 @@ jobs:
           retention-days: 7
           if-no-files-found: warn
 
-      - name: Commit fully audited cache
-        if: steps.audit.outcome == 'success'
+      - name: Validate publishable audited state
+        if: always()
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-unlimited-link-audit.json','utf8'));
+          if(Number(r.unlimitedTargets)!==25329) throw new Error(`Targets inesperados: ${r.unlimitedTargets}`);
+          if(Number(r.passed)+Number(r.failed)!==Number(r.unlimitedTargets)) throw new Error('El informe no cubre todos los targets');
+          if(Number(r.hardFailed)!==0) throw new Error(`Hay ${r.hardFailed} enlaces realmente rotos; no se publica`);
+          if(Number(r.failed)!==Number(r.missingDrn)||Number(r.failed)!==Number(r.linkMissing)) {
+            throw new Error(`Fallos no explicados solo por DRN faltantes: failed=${r.failed}, missingDrn=${r.missingDrn}, linkMissing=${r.linkMissing}`);
+          }
+          if(Number(r.passed)<25322) throw new Error(`Se perdieron enlaces previamente verificados: ${r.passed}`);
+          console.log(`Estado publicable: ${r.passed}/${r.unlimitedTargets} verificados; ${r.linkMissing} pendientes exclusivamente por DRN; hardFailed=0.`);
+          NODE
+
+      - name: Commit audited cache, including isolated missing-DRN cases
+        if: always()
         run: |
           if git diff --quiet -- source/marvel-cache/index.json; then
             echo 'La auditoría no cambió la caché.'
@@ -91,6 +108,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json
-          git commit -m 'cache: auditar DRN y deeplinks Marvel Unlimited uno a uno'
+          git commit -m 'cache: publicar 25322 deeplinks verificados y aislar 7 DRN pendientes'
           git pull --rebase origin main
           git push origin HEAD:main
