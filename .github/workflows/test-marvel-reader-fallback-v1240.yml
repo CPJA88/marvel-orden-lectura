@@ -1,0 +1,48 @@
+name: Test Marvel reader fallback v1.2.40
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'source/marvel-reader-fallback-v1240.js'
+      - 'scripts/test-marvel-reader-fallback-v1240.mjs'
+      - 'scripts/prepare.mjs'
+      - '.github/workflows/test-marvel-reader-fallback-v1240.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check fallback syntax
+        run: node --check source/marvel-reader-fallback-v1240.js
+      - name: Test exact seven-reader allowlist
+        run: node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Verify build and immutable cache counts
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const pack=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          if(pack.localCount!==51002)throw new Error(`localCount=${pack.localCount}`);
+          if(pack.matched!==25329)throw new Error(`matched=${pack.matched}`);
+          if(pack.linkReady!==25322)throw new Error(`linkReady=${pack.linkReady}`);
+          if(pack.linkMissing!==7)throw new Error(`linkMissing=${pack.linkMissing}`);
+          const html=fs.readFileSync('public/index.html','utf8');
+          if(!html.includes('marvel-reader-fallback-v1240.js'))throw new Error('El fallback no se inyectó en public/index.html');
+          if(!fs.existsSync('public/marvel-reader-fallback-v1240.js'))throw new Error('El fallback no se copió a public/');
+          const built=JSON.parse(fs.readFileSync('public/data/marvel-cache/index.json','utf8'));
+          if(JSON.stringify([built.localCount,built.matched,built.linkReady,built.linkMissing])!==JSON.stringify([51002,25329,25322,7]))throw new Error('El build alteró los contadores de caché.');
+          console.log('Build validado: caché intacta y fallback reader incluido.');
+          NODE
