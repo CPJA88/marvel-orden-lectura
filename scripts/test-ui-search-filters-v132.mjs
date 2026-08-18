@@ -29,7 +29,8 @@ const report={
   marvelEra:apply({era:'marvel'}).length,
   originals:apply({content:'original'}).length,
   captainAmerica:apply({q:'captain america'}).length,
-  captainAmericaAccent:apply({q:'capitán america'}).length,
+  capitanAmericaPlain:apply({q:'capitan america'}).length,
+  capitanAmericaAccent:apply({q:'capitán america'}).length,
   captain38:apply({q:'captain america 38'}).length,
   decade1940:apply({decade:'1940'}).length,
   timely:apply({era:'timely'}).length,
@@ -44,7 +45,8 @@ if(report.all!==report.total)failures.push('Todas las décadas no devuelve toda 
 if(report.marvelEra<=0)failures.push('Filtro Marvel vacío');
 if(report.originals<=0)failures.push('Filtro Originales vacío');
 if(report.captainAmerica<=0)failures.push('Búsqueda Captain America vacía');
-if(report.captainAmerica!==report.captainAmericaAccent)failures.push('La búsqueda con/sin tilde no coincide');
+if(report.capitanAmericaPlain<=0)failures.push('Búsqueda Capitan America vacía');
+if(report.capitanAmericaPlain!==report.capitanAmericaAccent)failures.push('La búsqueda Capitan/Capitán no coincide');
 if(report.captain38<=0)failures.push('Búsqueda Captain America 38 vacía');
 if(report.decade1940<=0)failures.push('Década 1940 vacía');
 if(report.combined1940TimelyOriginal<=0)failures.push('Filtros encadenados 1940+Timely+Original vacío');
