@@ -1,0 +1,131 @@
+{
+  "version": 4,
+  "publishedAt": "2026-08-18T21:45:00.974Z",
+  "changedRows": 18,
+  "promotedMU": 18,
+  "promotedReader": 18,
+  "promotedUuid": 0,
+  "confirmedNoDigital": 0,
+  "strongUnnumberedDeferred": 49,
+  "after": {
+    "matched": 29155,
+    "noDigital": 1135,
+    "notListed": 20712,
+    "linkReady": 25322,
+    "linkMissing": 3833,
+    "readerFallbackReady": 3833,
+    "functionalLinkReady": 29155,
+    "functionalLinkMissing": 0
+  },
+  "published": [
+    {
+      "gcdId": 1875111,
+      "sourceId": 71459,
+      "readerId": 49770,
+      "title": "Uncanny X-Men (2018) #2"
+    },
+    {
+      "gcdId": 2656662,
+      "sourceId": 115381,
+      "readerId": 68524,
+      "title": "Uncanny X-Men (2024) #2"
+    },
+    {
+      "gcdId": 2660595,
+      "sourceId": 115382,
+      "readerId": 68526,
+      "title": "Uncanny X-Men (2024) #3"
+    },
+    {
+      "gcdId": 2667492,
+      "sourceId": 115383,
+      "readerId": 68946,
+      "title": "Uncanny X-Men (2024) #4"
+    },
+    {
+      "gcdId": 2677596,
+      "sourceId": 115384,
+      "readerId": 69181,
+      "title": "Uncanny X-Men (2024) #5"
+    },
+    {
+      "gcdId": 2683449,
+      "sourceId": 115385,
+      "readerId": 69182,
+      "title": "Uncanny X-Men (2024) #6"
+    },
+    {
+      "gcdId": 2686316,
+      "sourceId": 115386,
+      "readerId": 69971,
+      "title": "Uncanny X-Men (2024) #7"
+    },
+    {
+      "gcdId": 2694917,
+      "sourceId": 115387,
+      "readerId": 69972,
+      "title": "Uncanny X-Men (2024) #8"
+    },
+    {
+      "gcdId": 2703220,
+      "sourceId": 115388,
+      "readerId": 71160,
+      "title": "Uncanny X-Men (2024) #9"
+    },
+    {
+      "gcdId": 2711655,
+      "sourceId": 115389,
+      "readerId": 69594,
+      "title": "Uncanny X-Men (2024) #10"
+    },
+    {
+      "gcdId": 2716445,
+      "sourceId": 115390,
+      "readerId": 72242,
+      "title": "Uncanny X-Men (2024) #11"
+    },
+    {
+      "gcdId": 2719439,
+      "sourceId": 115391,
+      "readerId": 71486,
+      "title": "Uncanny X-Men (2024) #12"
+    },
+    {
+      "gcdId": 2722988,
+      "sourceId": 115392,
+      "readerId": 71487,
+      "title": "Uncanny X-Men (2024) #13"
+    },
+    {
+      "gcdId": 2734699,
+      "sourceId": 115393,
+      "readerId": 73143,
+      "title": "Uncanny X-Men (2024) #14"
+    },
+    {
+      "gcdId": 2741307,
+      "sourceId": 115394,
+      "readerId": 73144,
+      "title": "Uncanny X-Men (2024) #15"
+    },
+    {
+      "gcdId": 2749778,
+      "sourceId": 115395,
+      "readerId": 73887,
+      "title": "Uncanny X-Men (2024) #16"
+    },
+    {
+      "gcdId": 2755222,
+      "sourceId": 115396,
+      "readerId": 74290,
+      "title": "Uncanny X-Men (2024) #17"
+    },
+    {
+      "gcdId": 2767858,
+      "sourceId": 119442,
+      "readerId": 75542,
+      "title": "Uncanny X-Men (2024) #20"
+    }
+  ],
+  "unchangedRows": 50984
+}
