@@ -1,4 +1,4 @@
-/* Marvel Lector v1.2.43 — fallback reader oficial verificado; generado por auditoría */
+/* Marvel Lector v1.2.45 — fallback reader oficial verificado; generado por auditoría */
 (() => {
   const SMART_BASE='https://marvel.smart.link/fiir7ec77';
   const TARGETS=new Map([
@@ -2264,6 +2264,7 @@
     [1206085,'33854'],
     [1206105,'33847'],
     [1206106,'33872'],
+    [1206423,'33477'],
     [1207327,'33905'],
     [1207341,'33890'],
     [1208415,'33964'],
