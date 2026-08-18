@@ -1,0 +1,63 @@
+name: Publish Marvel alias official v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish-marvel-alias-official-v4.mjs'
+      - '.github/workflows/publish-marvel-alias-official-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-marvel-alias-official-v4
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate D publisher
+        run: node --check scripts/publish-marvel-alias-official-v4.mjs
+      - name: Publish only verified Ultimate Spider-Man 200
+        run: node scripts/publish-marvel-alias-official-v4.mjs
+      - name: Validate reader fallback
+        run: |
+          node --check source/marvel-reader-fallback-v1240.js
+          node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Validate published build
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/alias-official-publish-summary-v4.json','utf8'));
+          const src=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          const built=JSON.parse(fs.readFileSync('public/data/marvel-cache/index.json','utf8'));
+          if(s.changedRows!==1||s.promotedMU!==1||s.published?.[0]?.gcdId!==1206423)throw new Error('Scope D inesperado.');
+          if(s.rejectedIdentityMismatch?.length!==1||s.rejectedIdentityMismatch[0]!==60543)throw new Error('X-Men #-1 no quedó protegido.');
+          for(const k of ['matched','noDigital','notListed','linkReady','linkMissing','readerFallbackReady','functionalLinkReady','functionalLinkMissing']){
+            if(Number(src[k])!==Number(s.after[k])||Number(built[k])!==Number(s.after[k]))throw new Error(`Conteo ${k} inconsistente.`);
+          }
+          if(Number(s.after.matched)!==29106||Number(s.after.noDigital)!==1131||Number(s.after.notListed)!==20765||Number(s.after.functionalLinkMissing)!==0)throw new Error('Totales finales D incorrectos.');
+          console.log('D publicado y validado',s.after);
+          NODE
+      - name: Commit verified D publication
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json source/marvel-reader-fallback-v1240.js artifacts/marvel-not-listed-v4/alias-official-publish-summary-v4.json
+          git commit -m 'cache: publicar alias D verificado' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
