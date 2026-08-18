@@ -1,0 +1,78 @@
+name: Diagnose Marvel NOT_LISTED v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose-marvel-not-listed-v4.mjs'
+      - '.github/workflows/diagnose-marvel-not-listed-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-not-listed-v4-diagnostic
+  cancel-in-progress: true
+
+jobs:
+  diagnose:
+    name: Classify identifiers for the 24,616 NOT_LISTED rows
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate diagnostic syntax
+        run: node --check scripts/diagnose-marvel-not-listed-v4.mjs
+
+      - name: Diagnose NOT_LISTED identifier coverage
+        run: node scripts/diagnose-marvel-not-listed-v4.mjs
+
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/diagnostic.json','utf8'));
+          const c=r.identifierCoverage;
+          console.log('## Marvel NOT_LISTED v4 · diagnóstico');
+          console.log('');
+          console.log(`- NOT_LISTED: ${r.safety.targetRows}`);
+          console.log(`- Protegidos fuera de alcance: ${r.safety.protectedRows}`);
+          console.log(`- sourceId + readerId: ${c.both}`);
+          console.log(`- sólo sourceId: ${c.sourceOnly}`);
+          console.log(`- sólo readerId: ${c.readerOnly}`);
+          console.log(`- sin ambos identificadores: ${c.neither}`);
+          console.log(`- atacables directamente por ruta oficial: ${c.directOfficialRouteCandidates} (${c.directOfficialRoutePct}%)`);
+          console.log(`- requieren descubrimiento: ${c.discoveryRequired} (${c.discoveryRequiredPct}%)`);
+          NODE
+
+      - name: Preserve diagnostic artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/diagnostic.json
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Commit diagnostic report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/diagnostic.json
+          if git diff --cached --quiet; then
+            echo 'El diagnóstico no cambió.'
+            exit 0
+          fi
+          git commit -m 'audit: guardar diagnóstico de 24616 NOT_LISTED v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
