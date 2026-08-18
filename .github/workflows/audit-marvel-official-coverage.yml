@@ -49,7 +49,7 @@ jobs:
           overwrite: true
 
   scan:
-    name: Scan NOT_LISTED shard ${{ matrix.shard }}
+    name: Scan unresolved/negative shard ${{ matrix.shard }}
     needs: pilot
     runs-on: ubuntu-latest
     timeout-minutes: 330
@@ -69,25 +69,25 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Restore official coverage checkpoint
+      - name: Restore official coverage v2 checkpoint
         uses: actions/cache/restore@v4
         with:
-          path: .cache/marvel-official-coverage-v1
-          key: official-coverage-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .cache/marvel-official-coverage-v2
+          key: official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            official-coverage-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-
-      - name: Search every unresolved comic on official Marvel
+            official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-
+      - name: Search unresolved and negative comics on official Marvel
         env:
           SHARD_INDEX: ${{ matrix.shard }}
           SHARD_COUNT: 8
           COVERAGE_CONCURRENCY: 1
         run: node scripts/audit-marvel-official-coverage.mjs scan
-      - name: Save official coverage checkpoint
+      - name: Save official coverage v2 checkpoint
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: .cache/marvel-official-coverage-v1
-          key: official-coverage-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .cache/marvel-official-coverage-v2
+          key: official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Preserve shard result
         if: always()
         uses: actions/upload-artifact@v4
@@ -99,7 +99,7 @@ jobs:
           overwrite: true
 
   merge:
-    name: Merge verified official coverage
+    name: Merge verified official coverage v2
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -125,13 +125,13 @@ jobs:
         env:
           SHARD_COUNT: 8
         run: node scripts/audit-marvel-official-coverage.mjs merge
-      - name: Strictly validate merged coverage
+      - name: Strictly validate merged coverage v2
         run: |
           node - <<'NODE'
           const fs=require('fs');
           const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
           if(!p.ready||p.localCount<50000||p.officiallyVerified!==true)throw new Error('Caché base inválida');
-          if(!p.officialCoverageAudit?.completed)throw new Error('Auditoría oficial incompleta');
+          if(!p.officialCoverageAudit?.completed||Number(p.officialCoverageAudit.version)<2)throw new Error('Auditoría oficial v2 incompleta');
           if(p.unknown||p.ambiguous)throw new Error(`unknown=${p.unknown}, ambiguous=${p.ambiguous}`);
           const st=p.entries.find(r=>Number(r[0])===8972);
           if(!st||![1,5].includes(Number(st[3]))||Number(st[1])!==11016)throw new Error('Strange Tales #1 sigue sin Unlimited oficial');
@@ -146,11 +146,11 @@ jobs:
             artifacts/official-coverage/summary.json
           retention-days: 7
           if-no-files-found: error
-      - name: Commit officially audited coverage
+      - name: Commit officially audited coverage v2
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json artifacts/official-coverage/summary.json
-          git commit -m 'cache: completar cobertura contra búsqueda oficial Marvel'
+          git commit -m 'cache: revalidar falsos negativos contra Marvel oficial'
           git pull --rebase origin main
           git push origin HEAD:main
