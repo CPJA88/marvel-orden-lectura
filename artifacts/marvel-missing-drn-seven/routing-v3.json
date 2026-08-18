@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-18T17:21:14.255Z",
+  "generatedAt": "2026-08-18T17:27:28.896Z",
   "mode": "research-only",
   "writesCache": false,
   "scope": {
@@ -61,11 +61,11 @@
       "ok": true,
       "addresses": [
         {
-          "address": "100.50.215.163",
+          "address": "3.94.154.59",
           "family": 4
         },
         {
-          "address": "3.94.154.59",
+          "address": "100.50.215.163",
           "family": 4
         },
         {
@@ -198,7 +198,7 @@
       },
       {
         "term": "smart.link",
-        "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='t"
+        "snippet": "s-issue.css\"/> </head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script type='t"
       },
       {
         "term": "smart.link",

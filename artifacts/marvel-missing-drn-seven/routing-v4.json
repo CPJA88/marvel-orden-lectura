@@ -1,0 +1,1774 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T17:27:46.047Z",
+  "mode": "research-only",
+  "writesCache": false,
+  "control": {
+    "sourceId": 80277,
+    "readerId": 60481,
+    "title": "Marvel Treasury Edition #25",
+    "gcdId": 0,
+    "probes": [
+      {
+        "label": "legacy",
+        "idKind": "readerId",
+        "id": 60481,
+        "url": "https://share.marvel.com/sharing/legacy/60481",
+        "status": 200,
+        "finalUrl": "https://share.marvel.com/sharing/legacy/60481",
+        "error": "",
+        "cause": "",
+        "pageTitle": "Marvel Treasury Edition",
+        "sourceIds": [
+          80277
+        ],
+        "drns": [
+          "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f"
+        ],
+        "ctaUrls": [
+          "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277"
+        ],
+        "exactSource": true,
+        "linkedDrns": [
+          "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f"
+        ],
+        "acceptedDrns": [
+          "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f"
+        ],
+        "snippets": [
+          {
+            "term": "sourceId",
+            "snippet": "\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div> <script ty"
+          },
+          {
+            "term": "sourceId",
+            "snippet": "App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\""
+          },
+          {
+            "term": "sourceId",
+            "snippet": "arvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition\",\"alt\":\"Marvel Treasury Edition\",\"type\":\"is"
+          },
+          {
+            "term": "drn:src:marvel:unison",
+            "snippet": "<div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div>"
+          },
+          {
+            "term": "drn:src:marvel:unison",
+            "snippet": "com/sharing/legacy/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2"
+          },
+          {
+            "term": "drn:src:marvel:unison",
+            "snippet": ":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasu"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><di"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "dition\",\"url\":\"https://share.marvel.com/sharing/legacy/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277"
+          },
+          {
+            "term": "contentType",
+            "snippet": "Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f&sourceId=80277\"},\"contentType\":\"legacy\",\"id\":\"drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f\",\"sourceId\":\"80277\",\"card\":{\"src\":\"https://i.marvelfe.com/m/4f9a2b01-868e-483e-8c7c-5fe6efe0a485/63195d8ae4c0c.jpg\",\"fallback\":\"/assets/fa"
+          },
+          {
+            "term": "This content",
+            "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"60481\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+          }
+        ]
+      },
+      {
+        "label": "reader",
+        "idKind": "readerId",
+        "id": 60481,
+        "url": "https://share.marvel.com/sharing/reader/60481",
+        "status": 200,
+        "finalUrl": "https://share.marvel.com/sharing/reader/60481",
+        "error": "",
+        "cause": "",
+        "pageTitle": "Marvel Treasury Edition (1974) #25",
+        "sourceIds": [],
+        "drns": [],
+        "ctaUrls": [
+          "https://marvel.smart.link/fiir7ec77?type=reader&drn=60481"
+        ],
+        "exactSource": false,
+        "linkedDrns": [],
+        "acceptedDrns": [],
+        "snippets": [
+          {
+            "term": "smart.link",
+            "snippet": "s=\"Landing__Card__Title\">Marvel Treasury Edition (1974) #25</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=60481\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "#25\",\"url\":\"https://share.marvel.com/sharing/reader/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=60481\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/d/68/0000060481/thumbnails/0_25ac/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3Mi"
+          },
+          {
+            "term": "contentType",
+            "snippet": "eader/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=60481\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/d/68/0000060481/thumbnails/0_25ac/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDQ5LjQ1OTg"
+          },
+          {
+            "term": "This content",
+            "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+          },
+          {
+            "term": "This content",
+            "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"60481\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+          }
+        ]
+      },
+      {
+        "label": "issue",
+        "idKind": "sourceId",
+        "id": 80277,
+        "url": "https://share.marvel.com/sharing/issue/80277",
+        "status": 200,
+        "finalUrl": "https://share.marvel.com/sharing/issue/80277",
+        "error": "",
+        "cause": "",
+        "pageTitle": "",
+        "sourceIds": [],
+        "drns": [],
+        "ctaUrls": [
+          "https://marvel.smart.link/fiir7ec77?type=issue&drn=80277"
+        ],
+        "exactSource": false,
+        "linkedDrns": [],
+        "acceptedDrns": [],
+        "snippets": [
+          {
+            "term": "smart.link",
+            "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=80277\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/80277\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=80277\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+          },
+          {
+            "term": "contentType",
+            "snippet": "ing/issue/80277\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=80277\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/80277\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+          },
+          {
+            "term": "This content",
+            "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+          },
+          {
+            "term": "This content",
+            "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"80277\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+          }
+        ]
+      },
+      {
+        "label": "issue",
+        "idKind": "readerId",
+        "id": 60481,
+        "url": "https://share.marvel.com/sharing/issue/60481",
+        "status": 200,
+        "finalUrl": "https://share.marvel.com/sharing/issue/60481",
+        "error": "",
+        "cause": "",
+        "pageTitle": "",
+        "sourceIds": [],
+        "drns": [],
+        "ctaUrls": [
+          "https://marvel.smart.link/fiir7ec77?type=issue&drn=60481"
+        ],
+        "exactSource": false,
+        "linkedDrns": [],
+        "acceptedDrns": [],
+        "snippets": [
+          {
+            "term": "smart.link",
+            "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=60481\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=60481\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+          },
+          {
+            "term": "contentType",
+            "snippet": "ing/issue/60481\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=60481\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/60481\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+          },
+          {
+            "term": "This content",
+            "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+          },
+          {
+            "term": "This content",
+            "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"60481\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+          }
+        ]
+      },
+      {
+        "label": "reader",
+        "idKind": "sourceId",
+        "id": 80277,
+        "url": "https://share.marvel.com/sharing/reader/80277",
+        "status": 200,
+        "finalUrl": "https://share.marvel.com/sharing/reader/80277",
+        "error": "",
+        "cause": "",
+        "pageTitle": "1776 (2025) #5 (Variant)",
+        "sourceIds": [],
+        "drns": [],
+        "ctaUrls": [
+          "https://marvel.smart.link/fiir7ec77?type=reader&drn=80277"
+        ],
+        "exactSource": false,
+        "linkedDrns": [],
+        "acceptedDrns": [],
+        "snippets": [
+          {
+            "term": "smart.link",
+            "snippet": "re><p class=\"Landing__Card__Title\">1776 (2025) #5 (Variant)</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=80277\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+          },
+          {
+            "term": "smart.link",
+            "snippet": "nt)\",\"url\":\"https://share.marvel.com/sharing/reader/80277\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=80277\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"1776 (2025) #5 (Variant)\",\"alt\":\"1776 (2025) #5 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"htt"
+          },
+          {
+            "term": "contentType",
+            "snippet": "eader/80277\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=80277\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"1776 (2025) #5 (Variant)\",\"alt\":\"1776 (2025) #5 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/"
+          },
+          {
+            "term": "This content",
+            "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+          },
+          {
+            "term": "This content",
+            "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"80277\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+          }
+        ]
+      }
+    ],
+    "acceptedDrns": [
+      "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f"
+    ],
+    "resolvedDrn": "drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f",
+    "outcome": "resolved"
+  },
+  "results": [
+    {
+      "gcdId": 29395,
+      "sourceId": 78145,
+      "readerId": 55204,
+      "title": "Marvel Treasury Edition #13",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 55204,
+          "url": "https://share.marvel.com/sharing/legacy/55204",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/55204",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "04\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"pat"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/552"
+            },
+            {
+              "term": "contentType",
+              "snippet": ".com/sharing/legacy/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55204\",\"vary\":{\"host\":\"share.marvel.com"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"55204\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 55204,
+          "url": "https://share.marvel.com/sharing/reader/55204",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/55204",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Marvel Treasury Edition (1974) #13",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=55204"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "s=\"Landing__Card__Title\">Marvel Treasury Edition (1974) #13</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55204\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#13\",\"url\":\"https://share.marvel.com/sharing/reader/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55204\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition (1974) #13\",\"alt\":\"Marvel Treasury Edition (1974) #13\",\"type\":\"series\"}}}},\"request"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55204\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition (1974) #13\",\"alt\":\"Marvel Treasury Edition (1974) #13\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"G"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"55204\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 78145,
+          "url": "https://share.marvel.com/sharing/issue/78145",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/78145",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=78145"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78145\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/78145\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78145\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/78145\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78145\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/78145\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"78145\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 55204,
+          "url": "https://share.marvel.com/sharing/issue/55204",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/55204",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=55204"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55204\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55204\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/55204\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55204\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/55204\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"55204\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 78145,
+          "url": "https://share.marvel.com/sharing/reader/78145",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/78145",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Rogue Storm (2025) #1 (Variant)",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=78145"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "lass=\"Landing__Card__Title\">Rogue Storm (2025) #1 (Variant)</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78145\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "nt)\",\"url\":\"https://share.marvel.com/sharing/reader/78145\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78145\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Rogue Storm (2025) #1 (Variant)\",\"alt\":\"Rogue Storm (2025) #1 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"he"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/78145\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78145\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Rogue Storm (2025) #1 (Variant)\",\"alt\":\"Rogue Storm (2025) #1 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"u"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"78145\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 29387,
+      "sourceId": 78120,
+      "readerId": 55203,
+      "title": "Marvel Treasury Edition #9",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 55203,
+          "url": "https://share.marvel.com/sharing/legacy/55203",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/55203",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "03\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55203\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"pat"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/552"
+            },
+            {
+              "term": "contentType",
+              "snippet": ".com/sharing/legacy/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/55203\",\"vary\":{\"host\":\"share.marvel.com"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"55203\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 55203,
+          "url": "https://share.marvel.com/sharing/reader/55203",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/55203",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Marvel Treasury Edition (1974) #9",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=55203"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "ss=\"Landing__Card__Title\">Marvel Treasury Edition (1974) #9</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55203\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#9\",\"url\":\"https://share.marvel.com/sharing/reader/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55203\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition (1974) #9\",\"alt\":\"Marvel Treasury Edition (1974) #9\",\"type\":\"series\"}}}},\"request\":"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=55203\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Marvel Treasury Edition (1974) #9\",\"alt\":\"Marvel Treasury Edition (1974) #9\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"55203\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 78120,
+          "url": "https://share.marvel.com/sharing/issue/78120",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/78120",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=78120"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78120\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/78120\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78120\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/78120\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=78120\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/78120\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"78120\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 55203,
+          "url": "https://share.marvel.com/sharing/issue/55203",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/55203",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=55203"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55203\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55203\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/55203\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=55203\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/55203\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"55203\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 78120,
+          "url": "https://share.marvel.com/sharing/reader/78120",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/78120",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Omega Kids (2025) #1 (Variant)",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=78120"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "class=\"Landing__Card__Title\">Omega Kids (2025) #1 (Variant)</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78120\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "nt)\",\"url\":\"https://share.marvel.com/sharing/reader/78120\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78120\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Omega Kids (2025) #1 (Variant)\",\"alt\":\"Omega Kids (2025) #1 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"head"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/78120\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=78120\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Omega Kids (2025) #1 (Variant)\",\"alt\":\"Omega Kids (2025) #1 (Variant)\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"78120\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 60401,
+      "sourceId": 18116,
+      "readerId": 73928,
+      "title": "X-Men Unlimited #15",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 73928,
+          "url": "https://share.marvel.com/sharing/legacy/73928",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/73928",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "28\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/73928\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"pat"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/739"
+            },
+            {
+              "term": "contentType",
+              "snippet": ".com/sharing/legacy/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/73928\",\"vary\":{\"host\":\"share.marvel.com"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"73928\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 73928,
+          "url": "https://share.marvel.com/sharing/reader/73928",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/73928",
+          "error": "",
+          "cause": "",
+          "pageTitle": "X-Men Unlimited (1993) #15",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=73928"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "><p class=\"Landing__Card__Title\">X-Men Unlimited (1993) #15</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=73928\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#15\",\"url\":\"https://share.marvel.com/sharing/reader/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=73928\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/6/ea/0000073928/thumbnails/f799/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOi"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=73928\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/6/ea/0000073928/thumbnails/f799/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDU2LjYzNDQ3M"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"73928\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 18116,
+          "url": "https://share.marvel.com/sharing/issue/18116",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/18116",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=18116"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=18116\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/18116\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=18116\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/18116\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=18116\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/18116\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"18116\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 73928,
+          "url": "https://share.marvel.com/sharing/issue/73928",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/73928",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=73928"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=73928\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=73928\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/73928\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=73928\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/73928\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"73928\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 18116,
+          "url": "https://share.marvel.com/sharing/reader/18116",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/18116",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=18116"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=18116\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "f\"}],\"url\":\"https://share.marvel.com/sharing/reader/18116\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=18116\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/reader/18116\",\"vary\":"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/18116\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=18116\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/reader/18116\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path\""
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"18116\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 338373,
+      "sourceId": 2133,
+      "readerId": 535,
+      "title": "Last Hero Standing #1",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 535,
+          "url": "https://share.marvel.com/sharing/legacy/535",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/535",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "35\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/535\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path\""
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "\"_self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/535"
+            },
+            {
+              "term": "contentType",
+              "snippet": "el.com/sharing/legacy/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/535\",\"vary\":{\"host\":\"share.marvel.com\","
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"535\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 535,
+          "url": "https://share.marvel.com/sharing/reader/535",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/535",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Last Hero Standing (2005) #1",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=535"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "p class=\"Landing__Card__Title\">Last Hero Standing (2005) #1</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=535\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "5) #1\",\"url\":\"https://share.marvel.com/sharing/reader/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=535\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/1/c7/0000000535/thumbnails/0_7830/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOi"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ng/reader/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=535\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/1/c7/0000000535/thumbnails/0_7830/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDU4LjU4OTg"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"535\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 2133,
+          "url": "https://share.marvel.com/sharing/issue/2133",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/2133",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=2133"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=2133\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/2133\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=2133\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue"
+            },
+            {
+              "term": "contentType",
+              "snippet": "aring/issue/2133\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=2133\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/2133\",\"vary\":{\"host\":\"share.marvel.com\",\"cac"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"2133\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 535,
+          "url": "https://share.marvel.com/sharing/issue/535",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/535",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=535"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=535\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"AnchorL"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "\"title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=535\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/"
+            },
+            {
+              "term": "contentType",
+              "snippet": "sharing/issue/535\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=535\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/535\",\"vary\":{\"host\":\"share.marvel.com\",\"cach"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"535\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 2133,
+          "url": "https://share.marvel.com/sharing/reader/2133",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/2133",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Marvel Age Spider-Man Team-Up (2004) #4",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=2133"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "nding__Card__Title\">Marvel Age Spider-Man Team-Up (2004) #4</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=2133\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": ") #4\",\"url\":\"https://share.marvel.com/sharing/reader/2133\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=2133\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/8/6a/0000002133/thumbnails/cov/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJN"
+            },
+            {
+              "term": "contentType",
+              "snippet": "/reader/2133\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=2133\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/8/6a/0000002133/thumbnails/cov/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDU5Ljc2NjMxOS"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"2133\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 521503,
+      "sourceId": 5888,
+      "readerId": 6307,
+      "title": "Magician Apprentice #5",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 6307,
+          "url": "https://share.marvel.com/sharing/legacy/6307",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/6307",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "07\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/6307\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "_self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/630"
+            },
+            {
+              "term": "contentType",
+              "snippet": "l.com/sharing/legacy/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/6307\",\"vary\":{\"host\":\"share.marvel.com\""
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"6307\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 6307,
+          "url": "https://share.marvel.com/sharing/reader/6307",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/6307",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Magician Apprentice (2006) #5",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=6307"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "class=\"Landing__Card__Title\">Magician Apprentice (2006) #5</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6307\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": ") #5\",\"url\":\"https://share.marvel.com/sharing/reader/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6307\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/c/1c/0000006307/thumbnails/1_6544/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiO"
+            },
+            {
+              "term": "contentType",
+              "snippet": "/reader/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6307\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/c/1c/0000006307/thumbnails/1_6544/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDYwLjQ1MzE"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"6307\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 5888,
+          "url": "https://share.marvel.com/sharing/issue/5888",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/5888",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=5888"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=5888\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/5888\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=5888\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue"
+            },
+            {
+              "term": "contentType",
+              "snippet": "aring/issue/5888\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=5888\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/5888\",\"vary\":{\"host\":\"share.marvel.com\",\"cac"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"5888\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 6307,
+          "url": "https://share.marvel.com/sharing/issue/6307",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/6307",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=6307"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6307\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6307\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue"
+            },
+            {
+              "term": "contentType",
+              "snippet": "aring/issue/6307\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6307\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/6307\",\"vary\":{\"host\":\"share.marvel.com\",\"cac"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"6307\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 5888,
+          "url": "https://share.marvel.com/sharing/reader/5888",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/5888",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Fantastic Four (1961) #246",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=5888"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "><p class=\"Landing__Card__Title\">Fantastic Four (1961) #246</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=5888\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#246\",\"url\":\"https://share.marvel.com/sharing/reader/5888\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=5888\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/4/e5/0000005888/thumbnails/0_6c5e/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiO"
+            },
+            {
+              "term": "contentType",
+              "snippet": "/reader/5888\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=5888\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/4/e5/0000005888/thumbnails/0_6c5e/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDYxLjY0Njk"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"5888\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 521504,
+      "sourceId": 6037,
+      "readerId": 6308,
+      "title": "Magician Apprentice #6",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 6308,
+          "url": "https://share.marvel.com/sharing/legacy/6308",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/6308",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "08\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/6308\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"path"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "_self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/630"
+            },
+            {
+              "term": "contentType",
+              "snippet": "l.com/sharing/legacy/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/6308\",\"vary\":{\"host\":\"share.marvel.com\""
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"6308\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 6308,
+          "url": "https://share.marvel.com/sharing/reader/6308",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/6308",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Magician Apprentice (2006) #6",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=6308"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "class=\"Landing__Card__Title\">Magician Apprentice (2006) #6</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6308\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": ") #6\",\"url\":\"https://share.marvel.com/sharing/reader/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6308\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/7/1a/0000006308/thumbnails/0_ba83/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiO"
+            },
+            {
+              "term": "contentType",
+              "snippet": "/reader/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6308\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/7/1a/0000006308/thumbnails/0_ba83/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDYyLjI5MzE"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"6308\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 6037,
+          "url": "https://share.marvel.com/sharing/issue/6037",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/6037",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=6037"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6037\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/6037\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6037\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue"
+            },
+            {
+              "term": "contentType",
+              "snippet": "aring/issue/6037\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6037\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/6037\",\"vary\":{\"host\":\"share.marvel.com\",\"cac"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"6037\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 6308,
+          "url": "https://share.marvel.com/sharing/issue/6308",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/6308",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=6308"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6308\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anchor"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "title\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6308\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue"
+            },
+            {
+              "term": "contentType",
+              "snippet": "aring/issue/6308\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=6308\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/6308\",\"vary\":{\"host\":\"share.marvel.com\",\"cac"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": ",\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"6308\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 6037,
+          "url": "https://share.marvel.com/sharing/reader/6037",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/6037",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Guardians (2004) #5",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=6037"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "/figure><p class=\"Landing__Card__Title\">Guardians (2004) #5</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6037\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": ") #5\",\"url\":\"https://share.marvel.com/sharing/reader/6037\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6037\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/6/84/0000006037/thumbnails/0_34c4/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiO"
+            },
+            {
+              "term": "contentType",
+              "snippet": "/reader/6037\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=6037\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/6/84/0000006037/thumbnails/0_34c4/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDYzLjQ0ODA"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"6037\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    },
+    {
+      "gcdId": 1244835,
+      "sourceId": 49010,
+      "readerId": 34127,
+      "title": "100th Anniversary Special: Avengers #1",
+      "probes": [
+        {
+          "label": "legacy",
+          "idKind": "readerId",
+          "id": 34127,
+          "url": "https://share.marvel.com/sharing/legacy/34127",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/legacy/34127",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "sourceId",
+              "snippet": "27\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/34127\",\"vary\":{\"host\":\"share.marvel.com\",\"cached\":true,\"pat"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "</head> <body> <div id=\"mu-header\"></div> <div id=\"marvel-mu\"><div class=\"bp-mobile bp-mobileLG bp-mobileTablet bp-mobileMDPlus bp-mobileLGPlus\"><a href=\"https://marvel.smart.link/fiir7ec77?type=issue\" target=\"_blank\"><button class=\"Button--unstyled SlantButton SlantButton--solid SlantButton--red\" tabindex=\"0\"><div class=\"SlantButton__InnerFill\">READ NOW</div></button></a></div></div>"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "self\"}],\"url\":\"https://share.marvel.com/sharing/legacy/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/341"
+            },
+            {
+              "term": "contentType",
+              "snippet": ".com/sharing/legacy/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue\"},\"contentType\":\"legacy\",\"sourceId\":\"\",\"card\":{\"src\":\"\",\"fallback\":\"/assets/fallback_2x3.png\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/legacy/34127\",\"vary\":{\"host\":\"share.marvel.com"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-legacy\",\"id\":\"34127\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "readerId",
+          "id": 34127,
+          "url": "https://share.marvel.com/sharing/reader/34127",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/34127",
+          "error": "",
+          "cause": "",
+          "pageTitle": "100Th Anniversary Special (2014) #1",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=34127"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "=\"Landing__Card__Title\">100Th Anniversary Special (2014) #1</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=34127\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#1\",\"url\":\"https://share.marvel.com/sharing/reader/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=34127\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/9/30/0000034127/thumbnails/cov/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=34127\"},\"contentType\":\"reader\",\"card\":{\"src\":\"https://cdn.marvel.com/s/prod/marvel/digitalcomic/9/30/0000034127/thumbnails/cov/uncanny.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJNYXJ2ZWwgQVBJIiwiaWF0IjoxNzg3MDc0MDY0LjEwMDYyNy"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"34127\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "sourceId",
+          "id": 49010,
+          "url": "https://share.marvel.com/sharing/issue/49010",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/49010",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=49010"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=49010\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/49010\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=49010\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/49010\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=49010\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/49010\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"49010\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "issue",
+          "idKind": "readerId",
+          "id": 34127,
+          "url": "https://share.marvel.com/sharing/issue/34127",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/issue/34127",
+          "error": "",
+          "cause": "",
+          "pageTitle": "",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=issue&drn=34127"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "BAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/></div></figure></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=issue&drn=34127\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Ancho"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "itle\":\"\",\"url\":\"https://share.marvel.com/sharing/issue/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=34127\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issu"
+            },
+            {
+              "term": "contentType",
+              "snippet": "ing/issue/34127\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"book\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=issue&drn=34127\"},\"contentType\":\"issue\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"\",\"alt\":\"\",\"type\":\"issue\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharing/issue/34127\",\"vary\":{\"host\":\"share.marvel.com\",\"ca"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--issue\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--issue\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div class"
+            },
+            {
+              "term": "This content",
+              "snippet": "\"host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-issue\",\"id\":\"34127\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        },
+        {
+          "label": "reader",
+          "idKind": "sourceId",
+          "id": 49010,
+          "url": "https://share.marvel.com/sharing/reader/49010",
+          "status": 200,
+          "finalUrl": "https://share.marvel.com/sharing/reader/49010",
+          "error": "",
+          "cause": "",
+          "pageTitle": "Tomb Of Dracula (1979) #2",
+          "sourceIds": [],
+          "drns": [],
+          "ctaUrls": [
+            "https://marvel.smart.link/fiir7ec77?type=reader&drn=49010"
+          ],
+          "exactSource": false,
+          "linkedDrns": [],
+          "acceptedDrns": [],
+          "snippets": [
+            {
+              "term": "smart.link",
+              "snippet": "e><p class=\"Landing__Card__Title\">Tomb Of Dracula (1979) #2</p></div><div class=\"Landing__CTA\"><a class=\"AnchorLink Button Button--lg Button--anchorLink Button--default Landing__Button\" tabindex=\"0\" href=\"https://marvel.smart.link/fiir7ec77?type=reader&drn=49010\"><span class=\"Landing__Button__Label\">Open in Marvel Unlimited</span></a></div><div class=\"Landing__Links\"><ul class=\"Landing__Links__List\"><li class=\"Landing__Links__Item\"><a class=\"Anch"
+            },
+            {
+              "term": "smart.link",
+              "snippet": "#2\",\"url\":\"https://share.marvel.com/sharing/reader/49010\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=49010\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Tomb Of Dracula (1979) #2\",\"alt\":\"Tomb Of Dracula (1979) #2\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"h"
+            },
+            {
+              "term": "contentType",
+              "snippet": "eader/49010\",\"description\":\"Read in Marvel Unlimited App\",\"siteName\":\"Marvel Unlimited App\",\"type\":\"website\",\"cta\":{\"label\":\"Open in Marvel Unlimited\",\"href\":\"https://marvel.smart.link/fiir7ec77?type=reader&drn=49010\"},\"contentType\":\"reader\",\"card\":{\"fallback\":\"/assets/fallback_2x3.png\",\"title\":\"Tomb Of Dracula (1979) #2\",\"alt\":\"Tomb Of Dracula (1979) #2\",\"type\":\"series\"}}}},\"request\":{\"headers\":{},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/sharin"
+            },
+            {
+              "term": "This content",
+              "snippet": "anding__Wrapper\"><img alt=\"Marvel Unlimited\" class=\"Image Logo Landing__Logo Logo__xxxl\" data-mptype=\"image\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><p class=\"Landing__Copy\">This content is available through Marvel Unlimited</p><div class=\"Landing__Card Landing__Card--series\"><figure class=\"Image aspect-ratio--parent Landing__Card__Image--series\"><div class=\"RatioFrame aspect-ratio--auto\"></div><div cla"
+            },
+            {
+              "term": "This content",
+              "snippet": "host\":\"\",\"protocol\":\"\",\"params\":\"\",\"query\":{}},\"params\":{\"pageType\":\"sharing\",\"type\":\"sharing-reader\",\"id\":\"49010\",\"modifier\":\"app\"}},\"page\":{\"key\":\"\",\"title\":\"\",\"type\":\"sharing\",\"meta\":{},\"content\":{\"sharing\":{\"label\":\"This content is available through Marvel Unlimited\",\"logo\":{\"alt\":\"Marvel Unlimited\",\"src\":\"/assets/mu-logo.png\",\"size\":\"xxxl\"},\"links\":[{\"label\":\"marvel.com/unlimited\",\"href\":\"https://www.marvel.com/unlimited\",\"target\":\"_self\"},{\"l"
+            }
+          ]
+        }
+      ],
+      "acceptedDrns": [],
+      "resolvedDrn": "",
+      "outcome": "unresolved"
+    }
+  ],
+  "summary": {
+    "targets": 7,
+    "resolved": 0,
+    "unresolved": 7,
+    "ambiguous": 0,
+    "routesWithExactSource": 0,
+    "acceptedDrnCount": 0
+  }
+}

@@ -1,0 +1,25 @@
+Routing v4: prueba de /sharing/legacy, /sharing/reader y /sharing/issue; 7-only, sin escritura de caché.
+Control positivo: resolved · drn:src:marvel:unison::prod:bc4a607d-ad8d-4dd6-bdff-8f867894097f
+[1/7] Marvel Treasury Edition #13 · sourceId=78145 · readerId=55204
+  -> unresolved
+[2/7] Marvel Treasury Edition #9 · sourceId=78120 · readerId=55203
+  -> unresolved
+[3/7] X-Men Unlimited #15 · sourceId=18116 · readerId=73928
+  -> unresolved
+[4/7] Last Hero Standing #1 · sourceId=2133 · readerId=535
+  -> unresolved
+[5/7] Magician Apprentice #5 · sourceId=5888 · readerId=6307
+  -> unresolved
+[6/7] Magician Apprentice #6 · sourceId=6037 · readerId=6308
+  -> unresolved
+[7/7] 100th Anniversary Special: Avengers #1 · sourceId=49010 · readerId=34127
+  -> unresolved
+{
+  "targets": 7,
+  "resolved": 0,
+  "unresolved": 7,
+  "ambiguous": 0,
+  "routesWithExactSource": 0,
+  "acceptedDrnCount": 0
+}
+Informe routing v4: /home/runner/work/marvel-orden-lectura/marvel-orden-lectura/artifacts/marvel-missing-drn-seven/routing-v4.json
