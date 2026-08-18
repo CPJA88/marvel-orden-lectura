@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'artifacts/marvel-not-listed-v4/exact-v4-results.json'
+      - '.github/workflows/publish-marvel-not-listed-exact-v4.yml'
 
 permissions:
   contents: write
