@@ -1,4 +1,4 @@
-/* Marvel Lector v1.2.29 — la caché V3 verificada manda sobre metadata antigua */
+/* Marvel Lector v1.2.34 — la caché verificada manda, pero NOT_LISTED no equivale a ausencia */
 (() => {
   const terminalNegative=new Set([0,2,3,4]);
 
@@ -14,11 +14,10 @@
       clean.readerId='';
       clean.available=false;
       if(status===3)clean.reason='reader-unavailable';
-      else if(status===4){clean.reason='preinstalled-not-listed';clean.sourceId=''}
+      else if(status===4){clean.reason='official-coverage-pending';clean.sourceId=''}
       else if(status===2)clean.reason='preinstalled-ambiguous';
-      else clean.reason='preinstalled-unknown';
+      else clean.reason='official-coverage-pending';
     }else if(status===5){
-      // Unlimited verificado, pero sin deeplink fiable. No reutilizar uno antiguo.
       clean.smartLink='';
       clean.drn='';
       clean.available=true;
@@ -46,10 +45,10 @@
     unlimitedState=function(m){
       const clean=sanitizePreinstalled(m),status=Number(clean?.preinstalledStatus);
       if(status===3)return{label:'Sin Unlimited',cls:'unavailable'};
-      if(status===4)return{label:'No consta en Unlimited',cls:'unresolved'};
+      if(status===4)return{label:'Pendiente de verificación oficial',cls:'unresolved'};
       if(status===5)return{label:'Unlimited ✓ · enlace pendiente',cls:'unresolved'};
       if(status===2)return{label:'Unlimited · coincidencia dudosa',cls:'unresolved'};
-      if(status===0)return{label:'No consta en Unlimited',cls:'unresolved'};
+      if(status===0)return{label:'Pendiente de verificación oficial',cls:'unresolved'};
       return baseUnlimitedState(clean);
     };
   }
@@ -81,8 +80,6 @@
     };
   }
 
-  // La precarga V3 de cache-ui es asíncrona; varias pasadas limpian IndexedDB antiguo
-  // sin volver a consultar Marvel durante el scroll.
   sweep();
   setTimeout(sweep,250);
   setTimeout(sweep,1200);
