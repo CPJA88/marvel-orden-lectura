@@ -1,0 +1,71 @@
+name: Audit Marvel phase6 reader fallback 71 v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-phase6-reader-fallback-71-v4.mjs'
+      - '.github/workflows/audit-marvel-phase6-reader-fallback-71-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-phase6-reader-fallback-71-v4
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Snapshot protected files
+        run: |
+          sha256sum source/marvel-cache/index.json > /tmp/cache.sha
+          sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Validate reader fallback auditor
+        run: node --check scripts/audit-marvel-phase6-reader-fallback-71-v4.mjs
+      - name: Audit 71 missing DRN through official reader
+        run: node scripts/audit-marvel-phase6-reader-fallback-71-v4.mjs
+      - name: Validate read-only result
+        run: |
+          sha256sum -c /tmp/cache.sha
+          sha256sum -c /tmp/fallback.sha
+          node - <<'NODE'
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/phase6-reader-fallback-71-v4.json','utf8'));
+          const s=r.summary||{};
+          if(r.mode!=='phase6-reader-fallback-71-v4'||r.writesCache!==false)throw new Error('Informe inválido');
+          if(r.baseline.matched!==31121||r.baseline.noDigital!==1135||r.baseline.notListed!==18746||r.baseline.linkReady!==27288||r.baseline.readerFallbackReady!==3833||r.baseline.functionalLinkReady!==31121||r.baseline.functionalLinkMissing!==0)throw new Error('Baseline inválida');
+          if(s.targets!==71||s.readerMu+s.unresolved+s.terminalCollision+s.exception!==71||s.writesCache!==false)throw new Error('Desglose fallback inválido');
+          console.log(JSON.stringify(s,null,2));
+          NODE
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/phase6-reader-fallback-71-v4.json','utf8'));
+          console.log('## Fase 6 · fallback reader para 71 DRN ausentes');
+          for(const [k,v] of Object.entries(r.summary))console.log(`- ${k}: ${v}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-phase6-reader-fallback-71-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/phase6-reader-fallback-71-v4.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/phase6-reader-fallback-71-v4.json
+          git commit -m 'audit: guardar fallback reader de 71 DRN ausentes v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
