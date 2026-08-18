@@ -11,7 +11,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: ui-search-filter-diagnostic
+  cancel-in-progress: true
 
 jobs:
   test-ui-data:
@@ -20,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -27,7 +33,23 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Test search and filter data contract
+        id: test
+        continue-on-error: true
         run: node scripts/test-ui-search-filters.mjs
+      - name: Publish diagnostic report
+        if: always()
+        run: |
+          test -f artifacts/ui-search-filter-diagnostic.json || exit 1
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/ui-search-filter-diagnostic.json
+          if git diff --cached --quiet; then
+            echo 'El informe no ha cambiado.'
+          else
+            git commit -m 'diagnóstico: resultado de búsqueda y filtros'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: Preserve diagnostic
         if: always()
         uses: actions/upload-artifact@v4
@@ -36,3 +58,6 @@ jobs:
           path: artifacts/ui-search-filter-diagnostic.json
           retention-days: 3
           if-no-files-found: warn
+      - name: Fail if contract is broken
+        if: steps.test.outcome == 'failure'
+        run: exit 1
