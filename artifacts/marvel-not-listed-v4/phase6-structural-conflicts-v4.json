@@ -1,0 +1,2808 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T23:33:22.470Z",
+  "mode": "phase6-structural-conflicts-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31102,
+    "noDigital": 1135,
+    "notListed": 18765,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "noNegativeClassification": true,
+    "duplicateWinnerRequiresUniqueStructuralDecision": true,
+    "terminalOwnersNeverModified": true,
+    "officialLegacyDrnRequired": true,
+    "officialLandingUnlimitedAndOpenButtonRequired": true,
+    "functionalSmartLinkRequired": true
+  },
+  "summary": {
+    "structuralTargets": 68,
+    "duplicateSourceGroups": 19,
+    "duplicateAffectedRows": 38,
+    "duplicateResolvedGroups": 19,
+    "duplicateWinnerCandidates": 19,
+    "duplicateLosersKeptPending": 19,
+    "duplicateUnresolvedGroups": 0,
+    "ambiguousRows": 3,
+    "ambiguousResolved": 1,
+    "ambiguousUnresolved": 2,
+    "terminalCollisionRows": 27,
+    "terminalReviewCandidates": 28,
+    "terminalPendingClearlyBetter": 22,
+    "candidateWinners": 20,
+    "publishableMU": 19,
+    "drnMissing": 1,
+    "otherVerificationFailure": 0
+  },
+  "duplicateDecisions": [
+    {
+      "sourceId": 67002,
+      "readerId": 47926,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 1802357,
+      "rows": [
+        {
+          "gcdId": 1669891,
+          "seriesId": 538,
+          "title": "Avengers",
+          "seriesYear": "2017",
+          "issueNumber": "1.MU",
+          "date": "2017-01-25",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "MU"
+          },
+          "sourceId": 67002,
+          "readerId": 47926,
+          "remoteSeriesName": "Avengers (2018 - 2023)",
+          "remoteIssueNumber": "1",
+          "remoteOnSale": "2018-05-02T00:00:00+0000"
+        },
+        {
+          "gcdId": 1802357,
+          "seriesId": 538,
+          "title": "Avengers",
+          "seriesYear": "2018",
+          "issueNumber": "1 (691)",
+          "date": "2018-05-02",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 67002,
+          "readerId": 47926,
+          "remoteSeriesName": "Avengers (2018 - 2023)",
+          "remoteIssueNumber": "1",
+          "remoteOnSale": "2018-05-02T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 70712,
+      "readerId": 50621,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 1928471,
+      "rows": [
+        {
+          "gcdId": 1928471,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "16 (817)",
+          "date": "2019-02-27",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 70712,
+          "readerId": 50621,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "16",
+          "remoteOnSale": "2019-02-27T00:00:00+0000"
+        },
+        {
+          "gcdId": 1931984,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "16.HU",
+          "date": "2019-03-06",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "HU"
+          },
+          "sourceId": 70712,
+          "readerId": 50621,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "16",
+          "remoteOnSale": "2019-02-27T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 70714,
+      "readerId": 51050,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 1941739,
+      "rows": [
+        {
+          "gcdId": 1941739,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "18 (819)",
+          "date": "2019-03-27",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 70714,
+          "readerId": 51050,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "18",
+          "remoteOnSale": "2019-03-27T00:00:00+0000"
+        },
+        {
+          "gcdId": 1944096,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "18.HU",
+          "date": "2019-04-03",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "HU"
+          },
+          "sourceId": 70714,
+          "readerId": 51050,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "18",
+          "remoteOnSale": "2019-03-27T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 70715,
+      "readerId": 51134,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 1947781,
+      "rows": [
+        {
+          "gcdId": 1947781,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "19 (820)",
+          "date": "2019-04-10",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 70715,
+          "readerId": 51134,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "19",
+          "remoteOnSale": "2019-04-10T00:00:00+0000"
+        },
+        {
+          "gcdId": 1950666,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "19.HU",
+          "date": "2019-04-17",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "HU"
+          },
+          "sourceId": 70715,
+          "readerId": 51134,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "19",
+          "remoteOnSale": "2019-04-10T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 70716,
+      "readerId": 51179,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 1952631,
+      "rows": [
+        {
+          "gcdId": 1952631,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "20 (821)",
+          "date": "2019-04-24",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 70716,
+          "readerId": 51179,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "20",
+          "remoteOnSale": "2019-04-24T00:00:00+0000"
+        },
+        {
+          "gcdId": 1955574,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "20.HU",
+          "date": "2019-05-01",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "HU"
+          },
+          "sourceId": 70716,
+          "readerId": 51179,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "20",
+          "remoteOnSale": "2019-04-24T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 77118,
+      "readerId": 55541,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2156287,
+      "rows": [
+        {
+          "gcdId": 2156287,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "50 (851)",
+          "date": "2020-10-14",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 77118,
+          "readerId": 55541,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "50",
+          "remoteOnSale": "2020-10-14T00:00:00+0000"
+        },
+        {
+          "gcdId": 2157720,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "50.LR",
+          "date": "2020-10-21",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "LR"
+          },
+          "sourceId": 77118,
+          "readerId": 55541,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "50",
+          "remoteOnSale": "2020-10-14T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 77119,
+      "readerId": 55542,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2158999,
+      "rows": [
+        {
+          "gcdId": 2158999,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "51 (852)",
+          "date": "2020-10-28",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 77119,
+          "readerId": 55542,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "51",
+          "remoteOnSale": "2020-10-28T00:00:00+0000"
+        },
+        {
+          "gcdId": 2161119,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "51.LR",
+          "date": "2020-11-04",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "LR"
+          },
+          "sourceId": 77119,
+          "readerId": 55542,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "51",
+          "remoteOnSale": "2020-10-28T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 77120,
+      "readerId": 55674,
+      "resolved": true,
+      "reason": "legacy-main-vs-suffix",
+      "winnerGcdId": 2162888,
+      "rows": [
+        {
+          "gcdId": 2162888,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "52 (853)",
+          "date": "2020-11-11",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 77120,
+          "readerId": 55674,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "52",
+          "remoteOnSale": "2020-11-11T00:00:00+0000"
+        },
+        {
+          "gcdId": 2162895,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "52.LR",
+          "date": "2020-11-11",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "LR"
+          },
+          "sourceId": 77120,
+          "readerId": 55674,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "52",
+          "remoteOnSale": "2020-11-11T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 77121,
+      "readerId": 55675,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2164459,
+      "rows": [
+        {
+          "gcdId": 2164459,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "53 (854)",
+          "date": "2020-11-18",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 77121,
+          "readerId": 55675,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "53",
+          "remoteOnSale": "2020-11-18T00:00:00+0000"
+        },
+        {
+          "gcdId": 2168974,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "53.LR",
+          "date": "2020-11-25",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "LR"
+          },
+          "sourceId": 77121,
+          "readerId": 55675,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "53",
+          "remoteOnSale": "2020-11-18T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 77122,
+      "readerId": 55781,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2174351,
+      "rows": [
+        {
+          "gcdId": 2174351,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "54 (855)",
+          "date": "2020-12-09",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 77122,
+          "readerId": 55781,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "54",
+          "remoteOnSale": "2020-12-09T00:00:00+0000"
+        },
+        {
+          "gcdId": 2180867,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "54.LR",
+          "date": "2020-12-23",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "LR"
+          },
+          "sourceId": 77122,
+          "readerId": 55781,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "54",
+          "remoteOnSale": "2020-12-09T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 89533,
+      "readerId": 57881,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2275007,
+      "rows": [
+        {
+          "gcdId": 2275007,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "78 (879)",
+          "date": "2021-11-10",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 89533,
+          "readerId": 57881,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "78",
+          "remoteOnSale": "2021-11-10T00:00:00+0000"
+        },
+        {
+          "gcdId": 2278139,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "78.BEY",
+          "date": "2021-11-17",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "BEY"
+          },
+          "sourceId": 89533,
+          "readerId": 57881,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "78",
+          "remoteOnSale": "2021-11-10T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 95750,
+      "readerId": 57883,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2282531,
+      "rows": [
+        {
+          "gcdId": 2282531,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "80 (881)",
+          "date": "2021-12-01",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 95750,
+          "readerId": 57883,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "80",
+          "remoteOnSale": "2021-12-01T00:00:00+0000"
+        },
+        {
+          "gcdId": 2285262,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "80.BEY",
+          "date": "2021-12-08",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "BEY"
+          },
+          "sourceId": 95750,
+          "readerId": 57883,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "80",
+          "remoteOnSale": "2021-12-01T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 95758,
+      "readerId": 58607,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2324818,
+      "rows": [
+        {
+          "gcdId": 2324818,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "88 (889)",
+          "date": "2022-02-02",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 95758,
+          "readerId": 58607,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "88",
+          "remoteOnSale": "2022-02-02T00:00:00+0000"
+        },
+        {
+          "gcdId": 2331578,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "88.BEY",
+          "date": "2022-02-09",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "BEY"
+          },
+          "sourceId": 95758,
+          "readerId": 58607,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "88",
+          "remoteOnSale": "2022-02-02T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 95762,
+      "readerId": 58786,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2378081,
+      "rows": [
+        {
+          "gcdId": 2378081,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "92 (893)",
+          "date": "2022-03-09",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 95762,
+          "readerId": 58786,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "92",
+          "remoteOnSale": "2022-03-09T00:00:00+0000"
+        },
+        {
+          "gcdId": 2379243,
+          "seriesId": 287,
+          "title": "Amazing Spider-Man",
+          "seriesYear": "2018",
+          "issueNumber": "92.BEY",
+          "date": "2022-03-16",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": false,
+            "suffix": true,
+            "suffixCode": "BEY"
+          },
+          "sourceId": 95762,
+          "readerId": 58786,
+          "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+          "remoteIssueNumber": "92",
+          "remoteOnSale": "2022-03-09T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 110362,
+      "readerId": 64495,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2594878,
+      "rows": [
+        {
+          "gcdId": 2594878,
+          "seriesId": 1122,
+          "title": "Captain America",
+          "seriesYear": "2023",
+          "issueNumber": "5 (755)",
+          "date": "2024-01-03",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 110362,
+          "readerId": 64495,
+          "remoteSeriesName": "Captain America (2023 - Present)",
+          "remoteIssueNumber": "5",
+          "remoteOnSale": "2024-01-03T00:00:00+0000"
+        },
+        {
+          "gcdId": 2785599,
+          "seriesId": 1122,
+          "title": "Captain America",
+          "seriesYear": "2025",
+          "issueNumber": "5 (776)",
+          "date": "2025-11-19",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 110362,
+          "readerId": 64495,
+          "remoteSeriesName": "Captain America (2023 - Present)",
+          "remoteIssueNumber": "5",
+          "remoteOnSale": "2024-01-03T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 114937,
+      "readerId": 71105,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2702789,
+      "rows": [
+        {
+          "gcdId": 2702789,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2024",
+          "issueNumber": "4 (674)",
+          "date": "2025-01-22",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114937,
+          "readerId": 71105,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "4",
+          "remoteOnSale": "2025-01-22T00:00:00+0000"
+        },
+        {
+          "gcdId": 2826003,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2026",
+          "issueNumber": "4 (684)",
+          "date": "2026-04-08",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114937,
+          "readerId": 71105,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "4",
+          "remoteOnSale": "2025-01-22T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 114938,
+      "readerId": 69487,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2713048,
+      "rows": [
+        {
+          "gcdId": 2713048,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2024",
+          "issueNumber": "5 (675)",
+          "date": "2025-02-26",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114938,
+          "readerId": 69487,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "5",
+          "remoteOnSale": "2025-02-26T00:00:00+0000"
+        },
+        {
+          "gcdId": 2833406,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2026",
+          "issueNumber": "5 (685)",
+          "date": "2026-05-13",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114938,
+          "readerId": 69487,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "5",
+          "remoteOnSale": "2025-02-26T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 114939,
+      "readerId": 70002,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2717302,
+      "rows": [
+        {
+          "gcdId": 2717302,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2024",
+          "issueNumber": "6 (676)",
+          "date": "2025-03-12",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114939,
+          "readerId": 70002,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "6",
+          "remoteOnSale": "2025-03-12T00:00:00+0000"
+        },
+        {
+          "gcdId": 2838595,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2026",
+          "issueNumber": "6 (686)",
+          "date": "2026-06-03",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114939,
+          "readerId": 70002,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "6",
+          "remoteOnSale": "2025-03-12T00:00:00+0000"
+        }
+      ]
+    },
+    {
+      "sourceId": 114940,
+      "readerId": 72583,
+      "resolved": true,
+      "reason": "exact-date",
+      "winnerGcdId": 2723982,
+      "rows": [
+        {
+          "gcdId": 2723982,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2024",
+          "issueNumber": "7 (677)",
+          "date": "2025-04-16",
+          "dateExact": true,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114940,
+          "readerId": 72583,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "7",
+          "remoteOnSale": "2025-04-16T00:00:00+0000"
+        },
+        {
+          "gcdId": 2847349,
+          "seriesId": 3792,
+          "title": "Iron Man",
+          "seriesYear": "2026",
+          "issueNumber": "7 (687)",
+          "date": "2026-07-01",
+          "dateExact": false,
+          "shape": {
+            "rawExact": false,
+            "legacyTotal": true,
+            "suffix": false,
+            "suffixCode": ""
+          },
+          "sourceId": 114940,
+          "readerId": 72583,
+          "remoteSeriesName": "Iron Man (2024 - Present)",
+          "remoteIssueNumber": "7",
+          "remoteOnSale": "2025-04-16T00:00:00+0000"
+        }
+      ]
+    }
+  ],
+  "ambiguousDecisions": [
+    {
+      "gcdId": 88575,
+      "seriesId": 9069,
+      "title": "Universe X",
+      "seriesYear": "2000",
+      "issueNumber": "0",
+      "date": "2000-08-01",
+      "resolved": false,
+      "reason": "unresolved",
+      "candidates": [
+        {
+          "sourceId": 11914,
+          "readerId": 7477,
+          "seriesName": "Universe X (2000 - 2001)",
+          "issueNumber": "0",
+          "onSale": "2000-09-01T00:00:00+0000",
+          "startYear": 2000
+        },
+        {
+          "sourceId": 11901,
+          "readerId": 7478,
+          "seriesName": "Universe X (2000 - 2001)",
+          "issueNumber": "0",
+          "onSale": "2001-10-01T00:00:00+0000",
+          "startYear": 2000
+        }
+      ],
+      "winner": null
+    },
+    {
+      "gcdId": 565319,
+      "seriesId": 2411,
+      "title": "Ender's Shadow: Battle School",
+      "seriesYear": "2009",
+      "issueNumber": "1",
+      "date": "2008-12-20",
+      "resolved": true,
+      "reason": "remote-volume-start-year",
+      "candidates": [
+        {
+          "sourceId": 22970,
+          "readerId": 12701,
+          "seriesName": "Ender's Shadow: Battle School (2008 - 2009)",
+          "issueNumber": "1",
+          "onSale": "2008-12-03T00:00:00+0000",
+          "startYear": 2008
+        },
+        {
+          "sourceId": 105604,
+          "readerId": 63776,
+          "seriesName": "Ender's Shadow: Battle School (2009)",
+          "issueNumber": "1",
+          "onSale": "2009-07-15T00:00:00-0400",
+          "startYear": 2009
+        }
+      ],
+      "winner": {
+        "sourceId": 105604,
+        "readerId": 63776,
+        "seriesName": "Ender's Shadow: Battle School (2009)",
+        "issueNumber": "1",
+        "onSale": "2009-07-15T00:00:00-0400"
+      }
+    },
+    {
+      "gcdId": 2575546,
+      "seriesId": 8920,
+      "title": "Ultimate Universe",
+      "seriesYear": "2024",
+      "issueNumber": "1",
+      "date": "2023-11-01",
+      "resolved": false,
+      "reason": "unresolved",
+      "candidates": [
+        {
+          "sourceId": 112990,
+          "readerId": 64136,
+          "seriesName": "Ultimate Universe (2023 - Present)",
+          "issueNumber": "1",
+          "onSale": "2023-11-01T00:00:00+0000",
+          "startYear": 2023
+        },
+        {
+          "sourceId": 115480,
+          "readerId": 64476,
+          "seriesName": "Ultimate Universe (2023 - Present)",
+          "issueNumber": "1",
+          "onSale": "2023-11-01T00:00:00+0000",
+          "startYear": 2023
+        }
+      ],
+      "winner": null
+    }
+  ],
+  "terminalReviews": [
+    {
+      "gcdId": 695290,
+      "seriesId": 358,
+      "title": "Amazing Spider-Man: Extra!",
+      "seriesYear": "2008",
+      "issueNumber": "1",
+      "date": "2008-07-30",
+      "sourceId": 23069,
+      "readerId": 10677,
+      "remoteSeriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2008-07-30T00:00:00+0000",
+      "pendingScore": 11,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 640038,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 640038,
+            "seriesId": 6835,
+            "title": "Spider-Man: Brand New Day - Extra",
+            "issueNumber": "1",
+            "date": "2008-07-19",
+            "seriesYear": "2008"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 875744,
+      "seriesId": 8816,
+      "title": "Ultimate Comics Spider-Man",
+      "seriesYear": "2011",
+      "issueNumber": "1",
+      "date": "2011-09-14",
+      "sourceId": 38394,
+      "readerId": 23712,
+      "remoteSeriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2011-09-14T00:00:00+0000",
+      "pendingScore": 11,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 816506,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 816506,
+            "seriesId": 8899,
+            "title": "Ultimate Spider-Man MGC",
+            "issueNumber": "1",
+            "date": "2011-03-30",
+            "seriesYear": "2011"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1174470,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2013",
+      "issueNumber": "20.INH",
+      "date": "2014-01-22",
+      "sourceId": 48763,
+      "readerId": 32943,
+      "remoteSeriesName": "Iron Man (2012 - 2014)",
+      "remoteIssueNumber": "20",
+      "remoteOnSale": "2014-01-08T00:00:00+0000",
+      "pendingScore": 3,
+      "bestOwnerScore": 9,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1172687,
+          "status": 5,
+          "score": 9,
+          "local": {
+            "gcdId": 1172687,
+            "seriesId": 3792,
+            "title": "Iron Man",
+            "issueNumber": "20",
+            "date": "2014-01-08",
+            "seriesYear": "2013"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1669892,
+      "seriesId": 6649,
+      "title": "Spider-Man / Deadpool",
+      "seriesYear": "2016",
+      "issueNumber": "1.MU",
+      "date": "2017-01-25",
+      "sourceId": 52557,
+      "readerId": 40807,
+      "remoteSeriesName": "Spider-Man/Deadpool (2016 - 2019)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2016-01-06T00:00:00+0000",
+      "pendingScore": 5,
+      "bestOwnerScore": 11,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1523561,
+          "status": 1,
+          "score": 11,
+          "local": {
+            "gcdId": 1523561,
+            "seriesId": 6649,
+            "title": "Spider-Man / Deadpool",
+            "issueNumber": "1",
+            "date": "2016-01-06",
+            "seriesYear": "2016"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1675031,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2015",
+      "issueNumber": "1.MU",
+      "date": "2017-02-15",
+      "sourceId": 68287,
+      "readerId": 48243,
+      "remoteSeriesName": "Doctor Strange (2018 - 2019)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-06-06T00:00:00+0000",
+      "pendingScore": 3,
+      "bestOwnerScore": 11,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1814761,
+          "status": 1,
+          "score": 11,
+          "local": {
+            "gcdId": 1814761,
+            "seriesId": 2227,
+            "title": "Doctor Strange",
+            "issueNumber": "1",
+            "date": "2018-06-06",
+            "seriesYear": "2018"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1676277,
+      "seriesId": 1437,
+      "title": "Champions",
+      "seriesYear": "2016",
+      "issueNumber": "1.MU",
+      "date": "2017-02-22",
+      "sourceId": 61442,
+      "readerId": 42893,
+      "remoteSeriesName": "Champions (2016 - 2019)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2016-10-05T00:00:00+0000",
+      "pendingScore": 5,
+      "bestOwnerScore": 11,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1635329,
+          "status": 1,
+          "score": 11,
+          "local": {
+            "gcdId": 1635329,
+            "seriesId": 1437,
+            "title": "Champions",
+            "issueNumber": "1",
+            "date": "2016-10-05",
+            "seriesYear": "2016"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1824075,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "1 (802)",
+      "date": "2018-07-11",
+      "sourceId": 67631,
+      "readerId": 48576,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-07-11T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 1762467,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 1762467,
+            "seriesId": 382,
+            "title": "Amazing Spider-Man: Venom Inc. Alpha",
+            "issueNumber": "1",
+            "date": "2017-12-06",
+            "seriesYear": "2018"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1827252,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "2 (803)",
+      "date": "2018-07-25",
+      "sourceId": 67633,
+      "readerId": 48577,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2018-07-25T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2239793,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2239793,
+            "seriesId": 313,
+            "title": "Amazing Spider-Man Annual",
+            "issueNumber": "2",
+            "date": "2021-07-07",
+            "seriesYear": "2018"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 1890329,
+      "seriesId": 1591,
+      "title": "Conan the Barbarian",
+      "seriesYear": "2019",
+      "issueNumber": "1 (276)",
+      "date": "2019-01-02",
+      "sourceId": 71644,
+      "readerId": 50327,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-01-02T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 9,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1889466,
+          "status": 3,
+          "score": 9,
+          "local": {
+            "gcdId": 1889466,
+            "seriesId": 8514,
+            "title": "True Believers: Conan the Barbarian",
+            "issueNumber": "1",
+            "date": "2019-01-02",
+            "seriesYear": "2019"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2020441,
+      "seriesId": 3015,
+      "title": "Ghost Rider",
+      "seriesYear": "2019",
+      "issueNumber": "1 (237)",
+      "date": "2019-10-02",
+      "sourceId": 76985,
+      "readerId": 52860,
+      "remoteSeriesName": "Ghost Rider (2019 - 2020)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-10-02T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2024806,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2024806,
+            "seriesId": 4863,
+            "title": "Marvel Tales: Ghost Rider",
+            "issueNumber": "1",
+            "date": "2019-10-16",
+            "seriesYear": "2019"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2177125,
+      "seriesId": 904,
+      "title": "Black Cat",
+      "seriesYear": "2021",
+      "issueNumber": "1 (13)",
+      "date": "2020-12-16",
+      "sourceId": 76150,
+      "readerId": 51665,
+      "remoteSeriesName": "Black Cat (2019 - 2020)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-06-05T00:00:00+0000",
+      "pendingScore": 4,
+      "bestOwnerScore": 11,
+      "pendingClearlyBetter": false,
+      "owners": [
+        {
+          "gcdId": 1974772,
+          "status": 1,
+          "score": 11,
+          "local": {
+            "gcdId": 1974772,
+            "seriesId": 904,
+            "title": "Black Cat",
+            "issueNumber": "1",
+            "date": "2019-06-05",
+            "seriesYear": "2019"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2177125,
+      "seriesId": 904,
+      "title": "Black Cat",
+      "seriesYear": "2021",
+      "issueNumber": "1 (13)",
+      "date": "2020-12-16",
+      "sourceId": 91367,
+      "readerId": 55786,
+      "remoteSeriesName": "Black Cat (2020 - 2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2020-12-16T00:00:00+0000",
+      "pendingScore": 8,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2036865,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2036865,
+            "seriesId": 905,
+            "title": "Black Cat Annual",
+            "issueNumber": "1",
+            "date": "2019-11-13",
+            "seriesYear": "2020"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2438431,
+      "seriesId": 6631,
+      "title": "Spider-Man",
+      "seriesYear": "2022",
+      "issueNumber": "1 (157)",
+      "date": "2022-10-05",
+      "sourceId": 99743,
+      "readerId": 60584,
+      "remoteSeriesName": "Spider-Man (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-10-05T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2295014,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2295014,
+            "seriesId": 7773,
+            "title": "The Darkhold: Spider-Man",
+            "issueNumber": "1",
+            "date": "2021-12-22",
+            "seriesYear": "2022"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2449978,
+      "seriesId": 2579,
+      "title": "Fantastic Four",
+      "seriesYear": "2023",
+      "issueNumber": "1 (694)",
+      "date": "2022-11-09",
+      "sourceId": 98724,
+      "readerId": 60739,
+      "remoteSeriesName": "Fantastic Four (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-11-09T00:00:00+0000",
+      "pendingScore": 8,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2278135,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2278135,
+            "seriesId": 2610,
+            "title": "Fantastic Four Anniversary Tribute",
+            "issueNumber": "1",
+            "date": "2021-11-17",
+            "seriesYear": "2022"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2508741,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "1 (427)",
+      "date": "2023-03-22",
+      "sourceId": 105848,
+      "readerId": 61970,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-03-22T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2459920,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2459920,
+            "seriesId": 2253,
+            "title": "Doctor Strange: Fall Sunrise",
+            "issueNumber": "1",
+            "date": "2022-11-23",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2519320,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2023",
+      "issueNumber": "1 (181)",
+      "date": "2023-04-12",
+      "sourceId": 105859,
+      "readerId": 62200,
+      "remoteSeriesName": "Guardians of the Galaxy (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-04-12T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2454056,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2454056,
+            "seriesId": 3211,
+            "title": "Guardians of the Galaxy: Cosmic Rewind",
+            "issueNumber": "1",
+            "date": "2022-11-02",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2524212,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "2 (428)",
+      "date": "2023-04-26",
+      "sourceId": 105849,
+      "readerId": 62193,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2023-04-26T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2472746,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2472746,
+            "seriesId": 2253,
+            "title": "Doctor Strange: Fall Sunrise",
+            "issueNumber": "2",
+            "date": "2022-12-28",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2538314,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "3 (429)",
+      "date": "2023-05-31",
+      "sourceId": 105850,
+      "readerId": 62500,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2023-05-31T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2487208,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2487208,
+            "seriesId": 2253,
+            "title": "Doctor Strange: Fall Sunrise",
+            "issueNumber": "3",
+            "date": "2023-01-25",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2544458,
+      "seriesId": 4185,
+      "title": "Loki",
+      "seriesYear": "2023",
+      "issueNumber": "1 (27)",
+      "date": "2023-06-07",
+      "sourceId": 97121,
+      "readerId": 62772,
+      "remoteSeriesName": "Loki (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-07T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2568223,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2568223,
+            "seriesId": 246,
+            "title": "Alligator Loki",
+            "issueNumber": "1",
+            "date": "2023-09-13",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2546677,
+      "seriesId": 916,
+      "title": "Black Panther",
+      "seriesYear": "2023",
+      "issueNumber": "1 (213)",
+      "date": "2023-06-14",
+      "sourceId": 104798,
+      "readerId": 62743,
+      "remoteSeriesName": "Black Panther (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2451131,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2451131,
+            "seriesId": 966,
+            "title": "Black Panther: Unconquered",
+            "issueNumber": "1",
+            "date": "2022-11-09",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2544999,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "4 (430)",
+      "date": "2023-06-14",
+      "sourceId": 105851,
+      "readerId": 62759,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2499010,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2499010,
+            "seriesId": 2253,
+            "title": "Doctor Strange: Fall Sunrise",
+            "issueNumber": "4",
+            "date": "2023-02-22",
+            "seriesYear": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2644336,
+      "seriesId": 9830,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "1 (301)",
+      "date": "2024-07-10",
+      "sourceId": 115440,
+      "readerId": 67890,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2024-07-10T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2584847,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2584847,
+            "seriesId": 9886,
+            "title": "X-Men Blue: Origins",
+            "issueNumber": "1",
+            "date": "2023-11-29",
+            "seriesYear": "2024"
+          }
+        },
+        {
+          "gcdId": 2590799,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2590799,
+            "seriesId": 5706,
+            "title": "Original X-Men",
+            "issueNumber": "1",
+            "date": "2023-12-20",
+            "seriesYear": "2024"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2728853,
+      "seriesId": 7681,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "2 (966)",
+      "date": "2025-04-23",
+      "sourceId": 119344,
+      "readerId": 72707,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2025-04-23T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2784007,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2784007,
+            "seriesId": 379,
+            "title": "Amazing Spider-Man: Torn",
+            "issueNumber": "2",
+            "date": "2025-11-12",
+            "seriesYear": "2025"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2731733,
+      "seriesId": 7681,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "3 (967)",
+      "date": "2025-05-07",
+      "sourceId": 119345,
+      "readerId": 73414,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2025-05-07T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2795890,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2795890,
+            "seriesId": 379,
+            "title": "Amazing Spider-Man: Torn",
+            "issueNumber": "3",
+            "date": "2025-12-17",
+            "seriesYear": "2025"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2738714,
+      "seriesId": 7681,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "4 (968)",
+      "date": "2025-05-21",
+      "sourceId": 119346,
+      "readerId": 73415,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2025-05-21T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2805480,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2805480,
+            "seriesId": 379,
+            "title": "Amazing Spider-Man: Torn",
+            "issueNumber": "4",
+            "date": "2026-01-14",
+            "seriesYear": "2025"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2744458,
+      "seriesId": 7681,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "5 (969)",
+      "date": "2025-06-04",
+      "sourceId": 119347,
+      "readerId": 73959,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2025-06-04T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2814565,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2814565,
+            "seriesId": 379,
+            "title": "Amazing Spider-Man: Torn",
+            "issueNumber": "5",
+            "date": "2026-02-11",
+            "seriesYear": "2025"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2766240,
+      "seriesId": 9830,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "21 (321)",
+      "date": "2025-08-27",
+      "sourceId": 119453,
+      "readerId": 74874,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "21",
+      "remoteOnSale": "2025-08-27T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2781717,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2781717,
+            "seriesId": 8934,
+            "title": "Ultimate X-Men",
+            "issueNumber": "21",
+            "date": "2025-11-05",
+            "seriesYear": "2024"
+          }
+        }
+      ]
+    },
+    {
+      "gcdId": 2772207,
+      "seriesId": 9830,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "22 (322)",
+      "date": "2025-09-24",
+      "sourceId": 119454,
+      "readerId": 73892,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "22",
+      "remoteOnSale": "2025-09-24T00:00:00+0000",
+      "pendingScore": 10,
+      "bestOwnerScore": 5,
+      "pendingClearlyBetter": true,
+      "owners": [
+        {
+          "gcdId": 2790853,
+          "status": 1,
+          "score": 5,
+          "local": {
+            "gcdId": 2790853,
+            "seriesId": 8934,
+            "title": "Ultimate X-Men",
+            "issueNumber": "22",
+            "date": "2025-12-03",
+            "seriesYear": "2024"
+          }
+        }
+      ]
+    }
+  ],
+  "verifications": [
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1802357,
+      "seriesId": 538,
+      "title": "Avengers",
+      "seriesYear": "2018",
+      "issueNumber": "1 (691)",
+      "date": "2018-05-02",
+      "sourceId": 67002,
+      "readerId": 47926,
+      "remoteSeriesName": "Avengers (2018 - 2023)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-05-02T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:5cdc91b7-46da-48f3-9a56-179e7523c429",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5cdc91b7-46da-48f3-9a56-179e7523c429&sourceId=67002",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1928471,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "16 (817)",
+      "date": "2019-02-27",
+      "sourceId": 70712,
+      "readerId": 50621,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "16",
+      "remoteOnSale": "2019-02-27T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:72114429-bbc9-4918-aa17-2dfc156c4b36",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A72114429-bbc9-4918-aa17-2dfc156c4b36&sourceId=70712",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1941739,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "18 (819)",
+      "date": "2019-03-27",
+      "sourceId": 70714,
+      "readerId": 51050,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "18",
+      "remoteOnSale": "2019-03-27T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:cad090cb-f2a0-4a4f-8be2-9af3f82da9d9",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Acad090cb-f2a0-4a4f-8be2-9af3f82da9d9&sourceId=70714",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1947781,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "19 (820)",
+      "date": "2019-04-10",
+      "sourceId": 70715,
+      "readerId": 51134,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "19",
+      "remoteOnSale": "2019-04-10T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:5262fb7f-ff10-428d-80d3-42eb0d50e637",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5262fb7f-ff10-428d-80d3-42eb0d50e637&sourceId=70715",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1952631,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "20 (821)",
+      "date": "2019-04-24",
+      "sourceId": 70716,
+      "readerId": 51179,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "20",
+      "remoteOnSale": "2019-04-24T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:df21232e-2397-4aef-84d1-b7bf173980ad",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Adf21232e-2397-4aef-84d1-b7bf173980ad&sourceId=70716",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2156287,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "50 (851)",
+      "date": "2020-10-14",
+      "sourceId": 77118,
+      "readerId": 55541,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "50",
+      "remoteOnSale": "2020-10-14T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:6ac401c5-ce18-489e-bb94-6914d93abc46",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6ac401c5-ce18-489e-bb94-6914d93abc46&sourceId=77118",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2158999,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "51 (852)",
+      "date": "2020-10-28",
+      "sourceId": 77119,
+      "readerId": 55542,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "51",
+      "remoteOnSale": "2020-10-28T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:fd7fef76-cd38-46cf-ad9e-dcc0e92e363d",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afd7fef76-cd38-46cf-ad9e-dcc0e92e363d&sourceId=77119",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "legacy-main-vs-suffix",
+      "gcdId": 2162888,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "52 (853)",
+      "date": "2020-11-11",
+      "sourceId": 77120,
+      "readerId": 55674,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "52",
+      "remoteOnSale": "2020-11-11T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:d4e108db-504d-433d-a631-a56156d5be1e",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ad4e108db-504d-433d-a631-a56156d5be1e&sourceId=77120",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2164459,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "53 (854)",
+      "date": "2020-11-18",
+      "sourceId": 77121,
+      "readerId": 55675,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "53",
+      "remoteOnSale": "2020-11-18T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:dbbb2a6e-9c12-474b-845c-f3a5d4ff6324",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Adbbb2a6e-9c12-474b-845c-f3a5d4ff6324&sourceId=77121",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2174351,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "54 (855)",
+      "date": "2020-12-09",
+      "sourceId": 77122,
+      "readerId": 55781,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "54",
+      "remoteOnSale": "2020-12-09T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:6d1f021f-6c3f-4d79-96ae-30dc000775d7",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6d1f021f-6c3f-4d79-96ae-30dc000775d7&sourceId=77122",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2275007,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "78 (879)",
+      "date": "2021-11-10",
+      "sourceId": 89533,
+      "readerId": 57881,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "78",
+      "remoteOnSale": "2021-11-10T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:0564ba2e-c018-4e0b-8fa6-22c0dbd67a10",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A0564ba2e-c018-4e0b-8fa6-22c0dbd67a10&sourceId=89533",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2282531,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "80 (881)",
+      "date": "2021-12-01",
+      "sourceId": 95750,
+      "readerId": 57883,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "80",
+      "remoteOnSale": "2021-12-01T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:cb2d8f15-e199-4cae-84c1-88fbb9bd037f",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Acb2d8f15-e199-4cae-84c1-88fbb9bd037f&sourceId=95750",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2324818,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "88 (889)",
+      "date": "2022-02-02",
+      "sourceId": 95758,
+      "readerId": 58607,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "88",
+      "remoteOnSale": "2022-02-02T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:9f55182f-f27d-49df-b2ea-1f85bb8c848d",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A9f55182f-f27d-49df-b2ea-1f85bb8c848d&sourceId=95758",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2378081,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "92 (893)",
+      "date": "2022-03-09",
+      "sourceId": 95762,
+      "readerId": 58786,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "92",
+      "remoteOnSale": "2022-03-09T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:4545ead8-cf86-4e45-8fc0-91241827e84f",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4545ead8-cf86-4e45-8fc0-91241827e84f&sourceId=95762",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2594878,
+      "seriesId": 1122,
+      "title": "Captain America",
+      "seriesYear": "2023",
+      "issueNumber": "5 (755)",
+      "date": "2024-01-03",
+      "sourceId": 110362,
+      "readerId": 64495,
+      "remoteSeriesName": "Captain America (2023 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2024-01-03T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:9441d850-f5ff-4d81-aba2-85d6551936b9",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A9441d850-f5ff-4d81-aba2-85d6551936b9&sourceId=110362",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2702789,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "4 (674)",
+      "date": "2025-01-22",
+      "sourceId": 114937,
+      "readerId": 71105,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2025-01-22T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:20a0f512-2779-491a-9704-0ccceaead9d0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A20a0f512-2779-491a-9704-0ccceaead9d0&sourceId=114937",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2713048,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "5 (675)",
+      "date": "2025-02-26",
+      "sourceId": 114938,
+      "readerId": 69487,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2025-02-26T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:376d4a6a-6a6a-4b2d-8a0d-5498a8e420d5",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A376d4a6a-6a6a-4b2d-8a0d-5498a8e420d5&sourceId=114938",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2717302,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "6 (676)",
+      "date": "2025-03-12",
+      "sourceId": 114939,
+      "readerId": 70002,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2025-03-12T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:e39bf6fc-8f34-4aed-b88c-a2359a526569",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ae39bf6fc-8f34-4aed-b88c-a2359a526569&sourceId=114939",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2723982,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "7 (677)",
+      "date": "2025-04-16",
+      "sourceId": 114940,
+      "readerId": 72583,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2025-04-16T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:80567760-38eb-478c-9e3d-e0bb83d1bda3",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A80567760-38eb-478c-9e3d-e0bb83d1bda3&sourceId=114940",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "ambiguous-volume",
+      "reason": "remote-volume-start-year",
+      "gcdId": 565319,
+      "seriesId": 2411,
+      "title": "Ender's Shadow: Battle School",
+      "seriesYear": "2009",
+      "issueNumber": "1",
+      "date": "2008-12-20",
+      "sourceId": 105604,
+      "readerId": 63776,
+      "remoteSeriesName": "Ender's Shadow: Battle School (2009)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2009-07-15T00:00:00-0400",
+      "block": "",
+      "verification": "drn-missing"
+    }
+  ],
+  "publishable": [
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1802357,
+      "seriesId": 538,
+      "title": "Avengers",
+      "seriesYear": "2018",
+      "issueNumber": "1 (691)",
+      "date": "2018-05-02",
+      "sourceId": 67002,
+      "readerId": 47926,
+      "remoteSeriesName": "Avengers (2018 - 2023)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-05-02T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:5cdc91b7-46da-48f3-9a56-179e7523c429",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5cdc91b7-46da-48f3-9a56-179e7523c429&sourceId=67002",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1928471,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "16 (817)",
+      "date": "2019-02-27",
+      "sourceId": 70712,
+      "readerId": 50621,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "16",
+      "remoteOnSale": "2019-02-27T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:72114429-bbc9-4918-aa17-2dfc156c4b36",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A72114429-bbc9-4918-aa17-2dfc156c4b36&sourceId=70712",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1941739,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "18 (819)",
+      "date": "2019-03-27",
+      "sourceId": 70714,
+      "readerId": 51050,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "18",
+      "remoteOnSale": "2019-03-27T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:cad090cb-f2a0-4a4f-8be2-9af3f82da9d9",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Acad090cb-f2a0-4a4f-8be2-9af3f82da9d9&sourceId=70714",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1947781,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "19 (820)",
+      "date": "2019-04-10",
+      "sourceId": 70715,
+      "readerId": 51134,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "19",
+      "remoteOnSale": "2019-04-10T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:5262fb7f-ff10-428d-80d3-42eb0d50e637",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5262fb7f-ff10-428d-80d3-42eb0d50e637&sourceId=70715",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 1952631,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "20 (821)",
+      "date": "2019-04-24",
+      "sourceId": 70716,
+      "readerId": 51179,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "20",
+      "remoteOnSale": "2019-04-24T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:df21232e-2397-4aef-84d1-b7bf173980ad",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Adf21232e-2397-4aef-84d1-b7bf173980ad&sourceId=70716",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2156287,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "50 (851)",
+      "date": "2020-10-14",
+      "sourceId": 77118,
+      "readerId": 55541,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "50",
+      "remoteOnSale": "2020-10-14T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:6ac401c5-ce18-489e-bb94-6914d93abc46",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6ac401c5-ce18-489e-bb94-6914d93abc46&sourceId=77118",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2158999,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "51 (852)",
+      "date": "2020-10-28",
+      "sourceId": 77119,
+      "readerId": 55542,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "51",
+      "remoteOnSale": "2020-10-28T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:fd7fef76-cd38-46cf-ad9e-dcc0e92e363d",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afd7fef76-cd38-46cf-ad9e-dcc0e92e363d&sourceId=77119",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "legacy-main-vs-suffix",
+      "gcdId": 2162888,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "52 (853)",
+      "date": "2020-11-11",
+      "sourceId": 77120,
+      "readerId": 55674,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "52",
+      "remoteOnSale": "2020-11-11T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:d4e108db-504d-433d-a631-a56156d5be1e",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ad4e108db-504d-433d-a631-a56156d5be1e&sourceId=77120",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2164459,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "53 (854)",
+      "date": "2020-11-18",
+      "sourceId": 77121,
+      "readerId": 55675,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "53",
+      "remoteOnSale": "2020-11-18T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:dbbb2a6e-9c12-474b-845c-f3a5d4ff6324",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Adbbb2a6e-9c12-474b-845c-f3a5d4ff6324&sourceId=77121",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2174351,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "54 (855)",
+      "date": "2020-12-09",
+      "sourceId": 77122,
+      "readerId": 55781,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "54",
+      "remoteOnSale": "2020-12-09T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:6d1f021f-6c3f-4d79-96ae-30dc000775d7",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6d1f021f-6c3f-4d79-96ae-30dc000775d7&sourceId=77122",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2275007,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "78 (879)",
+      "date": "2021-11-10",
+      "sourceId": 89533,
+      "readerId": 57881,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "78",
+      "remoteOnSale": "2021-11-10T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:0564ba2e-c018-4e0b-8fa6-22c0dbd67a10",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A0564ba2e-c018-4e0b-8fa6-22c0dbd67a10&sourceId=89533",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2282531,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "80 (881)",
+      "date": "2021-12-01",
+      "sourceId": 95750,
+      "readerId": 57883,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "80",
+      "remoteOnSale": "2021-12-01T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:cb2d8f15-e199-4cae-84c1-88fbb9bd037f",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Acb2d8f15-e199-4cae-84c1-88fbb9bd037f&sourceId=95750",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2324818,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "88 (889)",
+      "date": "2022-02-02",
+      "sourceId": 95758,
+      "readerId": 58607,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "88",
+      "remoteOnSale": "2022-02-02T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:9f55182f-f27d-49df-b2ea-1f85bb8c848d",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A9f55182f-f27d-49df-b2ea-1f85bb8c848d&sourceId=95758",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2378081,
+      "seriesId": 287,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "92 (893)",
+      "date": "2022-03-09",
+      "sourceId": 95762,
+      "readerId": 58786,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "92",
+      "remoteOnSale": "2022-03-09T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:4545ead8-cf86-4e45-8fc0-91241827e84f",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4545ead8-cf86-4e45-8fc0-91241827e84f&sourceId=95762",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2594878,
+      "seriesId": 1122,
+      "title": "Captain America",
+      "seriesYear": "2023",
+      "issueNumber": "5 (755)",
+      "date": "2024-01-03",
+      "sourceId": 110362,
+      "readerId": 64495,
+      "remoteSeriesName": "Captain America (2023 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2024-01-03T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:9441d850-f5ff-4d81-aba2-85d6551936b9",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A9441d850-f5ff-4d81-aba2-85d6551936b9&sourceId=110362",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2702789,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "4 (674)",
+      "date": "2025-01-22",
+      "sourceId": 114937,
+      "readerId": 71105,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2025-01-22T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:20a0f512-2779-491a-9704-0ccceaead9d0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A20a0f512-2779-491a-9704-0ccceaead9d0&sourceId=114937",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2713048,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "5 (675)",
+      "date": "2025-02-26",
+      "sourceId": 114938,
+      "readerId": 69487,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2025-02-26T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:376d4a6a-6a6a-4b2d-8a0d-5498a8e420d5",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A376d4a6a-6a6a-4b2d-8a0d-5498a8e420d5&sourceId=114938",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2717302,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "6 (676)",
+      "date": "2025-03-12",
+      "sourceId": 114939,
+      "readerId": 70002,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2025-03-12T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:e39bf6fc-8f34-4aed-b88c-a2359a526569",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ae39bf6fc-8f34-4aed-b88c-a2359a526569&sourceId=114939",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    },
+    {
+      "origin": "duplicate-source",
+      "reason": "exact-date",
+      "gcdId": 2723982,
+      "seriesId": 3792,
+      "title": "Iron Man",
+      "seriesYear": "2024",
+      "issueNumber": "7 (677)",
+      "date": "2025-04-16",
+      "sourceId": 114940,
+      "readerId": 72583,
+      "remoteSeriesName": "Iron Man (2024 - Present)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2025-04-16T00:00:00+0000",
+      "block": "",
+      "verification": "mu",
+      "drn": "drn:src:marvel:unison::prod:80567760-38eb-478c-9e3d-e0bb83d1bda3",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A80567760-38eb-478c-9e3d-e0bb83d1bda3&sourceId=114940",
+      "smartStatus": 302,
+      "smartLocation": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8",
+      "functional": true
+    }
+  ]
+}
