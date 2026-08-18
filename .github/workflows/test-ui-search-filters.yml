@@ -1,0 +1,38 @@
+name: Test UI search and filters
+
+on:
+  push:
+    paths:
+      - 'scripts/test-ui-search-filters.mjs'
+      - '.github/workflows/test-ui-search-filters.yml'
+      - 'source/app.js'
+      - 'source/index.html'
+      - 'Marvel_Orden_de_Lectura_PWA.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-ui-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Test search and filter data contract
+        run: node scripts/test-ui-search-filters.mjs
+      - name: Preserve diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-search-filter-diagnostic-${{ github.run_id }}
+          path: artifacts/ui-search-filter-diagnostic.json
+          retention-days: 3
+          if-no-files-found: warn
