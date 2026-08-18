@@ -1,0 +1,20 @@
+{
+  "version": 4,
+  "publishedAt": "2026-08-18T23:11:07.650Z",
+  "changedRows": 1913,
+  "promotedMU": 1913,
+  "promotedUuid": 1913,
+  "confirmedNoDigital": 0,
+  "remainingUnresolvedFromPass": 70,
+  "unchangedRows": 49089,
+  "after": {
+    "matched": 31102,
+    "noDigital": 1135,
+    "notListed": 18765,
+    "linkReady": 27269,
+    "linkMissing": 3833,
+    "readerFallbackReady": 3833,
+    "functionalLinkReady": 31102,
+    "functionalLinkMissing": 0
+  }
+}
