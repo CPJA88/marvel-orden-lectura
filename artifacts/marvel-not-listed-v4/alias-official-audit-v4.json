@@ -1,0 +1,81 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T20:22:46.214Z",
+  "mode": "alias-official-audit-v4",
+  "baseline": {
+    "matched": 29105,
+    "noDigital": 1131,
+    "notListed": 20766
+  },
+  "summary": {
+    "targets": 2,
+    "mu": 1,
+    "noDigital": 0,
+    "muLinkMissing": 0,
+    "unknown": 0,
+    "identityMismatch": 1,
+    "notFound": 0,
+    "retryable": 0,
+    "safetyFailure": 0,
+    "functional": 1,
+    "writesCache": false
+  },
+  "results": [
+    {
+      "gcdId": 60543,
+      "seriesId": 8131,
+      "localTitle": "The Uncanny X-Men",
+      "issueNumber": "-1",
+      "date": "1997-05-07",
+      "aliasId": "uncanny x men=>x men",
+      "sourceId": 61788,
+      "officialTitle": "X-Men (1991)",
+      "officialDate": "",
+      "identityExact": false,
+      "dateCompatible": true,
+      "availability": "mu",
+      "readerId": 42566,
+      "drn": "",
+      "cover": "",
+      "reader": {
+        "ok": false,
+        "reason": "reader-identity-mismatch",
+        "titles": [
+          "X-Men (1991)"
+        ]
+      },
+      "uuid": {
+        "ok": false
+      },
+      "functional": false,
+      "kind": "identity-mismatch"
+    },
+    {
+      "gcdId": 1206423,
+      "seriesId": 8816,
+      "localTitle": "Ultimate Comics Spider-Man",
+      "issueNumber": "200",
+      "date": "2014-04-02",
+      "aliasId": "ultimate comics spider man=>ultimate spider man",
+      "sourceId": 50446,
+      "officialTitle": "Ultimate Spider-Man (2011) #200",
+      "officialDate": "",
+      "identityExact": true,
+      "dateCompatible": true,
+      "availability": "mu",
+      "readerId": 33477,
+      "drn": "",
+      "cover": "",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #200",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33477"
+      },
+      "uuid": {
+        "ok": false
+      },
+      "functional": true,
+      "kind": "mu"
+    }
+  ]
+}
