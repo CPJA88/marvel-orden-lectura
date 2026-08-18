@@ -61,16 +61,20 @@ jobs:
           const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/pilot-series-map-strict.json','utf8'));
           console.log('## Marvel NOT_LISTED V4 · series ancladas estrictas');
           console.log('');
+          console.log(`- Positivos con sourceId: ${r.catalog.positiveRowsWithSource}`);
+          console.log(`- Anclas únicas utilizables: ${r.catalog.uniqueAnchorRows}`);
+          console.log(`- Filas excluidas por sourceId duplicado: ${r.catalog.duplicateAnchorRowsExcluded}`);
           console.log(`- Series con mapeo confiable: ${r.seriesMappings.trusted}`);
-          console.log(`- Rechazadas por época: ${r.seriesMappings.rejectedSeriesYear}`);
+          console.log(`- Rechazadas por nombre: ${r.seriesMappings.rejectedName}`);
           console.log(`- Rechazadas por fechas de ancla: ${r.seriesMappings.rejectedAnchorDates}`);
           console.log(`- NOT_LISTED candidatos estrictos: ${r.candidateRecovery.strictAnchoredCandidates}`);
           console.log(`- Piloto oficial: ${r.pilot.checked}`);
           console.log(`- Unlimited: ${r.pilot.mu}`);
           console.log(`- NO_DIGITAL: ${r.pilot.noDigital}`);
           console.log(`- Mismatch remoto: ${r.pilot.remoteIdentityMismatch}`);
-          console.log(`- Fuera de época: ${r.pilot.badSeriesEra}`);
+          console.log(`- Nombre de serie inseguro: ${r.pilot.badSeriesName}`);
           console.log(`- Fuera de ventana de fecha: ${r.pilot.badDateWindow}`);
+          console.log(`- Inicio de serie distinto (informativo): ${r.pilot.startYearDifferent}`);
           console.log(`- Reader route confirmada: ${r.pilot.readerRouteConfirmed}`);
           NODE
           else
