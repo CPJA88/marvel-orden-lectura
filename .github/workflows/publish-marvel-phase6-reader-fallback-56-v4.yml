@@ -1,0 +1,61 @@
+name: Publish Marvel phase6 reader fallback 56 v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish-marvel-phase6-reader-fallback-56-v4.mjs'
+      - '.github/workflows/publish-marvel-phase6-reader-fallback-56-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-marvel-phase6-reader-fallback-56-v4
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate publisher
+        run: node --check scripts/publish-marvel-phase6-reader-fallback-56-v4.mjs
+      - name: Publish 56 verified official reader fallbacks
+        run: node scripts/publish-marvel-phase6-reader-fallback-56-v4.mjs
+      - name: Validate reader fallbacks
+        run: node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Validate final cache
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/phase6-reader-fallback-56-publish-summary-v4.json','utf8'));
+          if(p.entries.length!==51002||p.matched!==31177||p.noDigital!==1135||p.notListed!==18690||p.linkReady!==27288||p.linkMissing!==3889||p.readerFallbackReady!==3889||p.functionalLinkReady!==31177||p.functionalLinkMissing!==0)throw new Error('Conteos finales incorrectos');
+          if(s.changedRows!==56||s.promotedMU!==56||s.promotedUuid!==0||s.promotedReaderFallback!==56||s.remainingUnresolved!==15||s.unchangedRows!==50946)throw new Error('Scope final incorrecto');
+          console.log(JSON.stringify(s.after,null,2));
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-phase6-reader-fallback-56-publish-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/phase6-reader-fallback-56-publish-summary-v4.json
+          retention-days: 14
+      - name: Commit verified phase6 reader fallbacks
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json source/marvel-reader-fallback-v1240.js artifacts/marvel-not-listed-v4/phase6-reader-fallback-56-publish-summary-v4.json
+          git commit -m 'cache: publicar 56 fallbacks reader oficiales v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
