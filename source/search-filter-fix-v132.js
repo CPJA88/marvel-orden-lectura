@@ -1,10 +1,11 @@
-/* Marvel Lector v1.2.32 — filtros en memoria, carga paralela y sin bloqueos */
+/* Marvel Lector v1.2.33 — biblioteca en memoria + pantalla de compilación inicial */
 (() => {
   let refreshTicket=0;
   let allIssues=null;
   let allIssuesPromise=null;
   let bindingsInstalled=false;
   let searchTimer=null;
+  let bootFinished=false;
   const issueDecade=new Map();
 
   const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -14,6 +15,41 @@
     .replace(/[^a-z0-9.]+/g,' ')
     .trim();
   const tokensOf=v=>normalize(v).split(/\s+/).filter(Boolean);
+
+  function bootEls(){return{
+    root:document.getElementById('bootScreen'),
+    bar:document.getElementById('bootBar'),
+    percent:document.getElementById('bootPercent'),
+    stage:document.getElementById('bootStage'),
+    detail:document.getElementById('bootDetail'),
+    retry:document.getElementById('bootRetry')
+  }}
+  function bootProgress(percent,stage,detail=''){
+    const e=bootEls(),pct=Math.max(0,Math.min(100,Math.round(percent)));
+    if(e.root){e.root.hidden=false;e.root.classList.remove('boot-error','boot-complete');e.root.setAttribute('aria-busy','true')}
+    if(e.bar)e.bar.style.width=pct+'%';
+    if(e.percent)e.percent.textContent=pct+'%';
+    if(e.stage&&stage)e.stage.textContent=stage;
+    if(e.detail)e.detail.textContent=detail;
+    if(e.retry)e.retry.hidden=true;
+  }
+  function bootError(err){
+    const e=bootEls();
+    if(e.root){e.root.hidden=false;e.root.classList.add('boot-error');e.root.setAttribute('aria-busy','false')}
+    if(e.stage)e.stage.textContent='No se pudo preparar la biblioteca';
+    if(e.detail)e.detail.textContent=String(err?.message||err||'Error desconocido');
+    if(e.retry)e.retry.hidden=false;
+  }
+  async function finishBoot(){
+    if(bootFinished)return;
+    bootFinished=true;
+    bootProgress(100,'Biblioteca preparada','51.002 cómics listos para buscar y filtrar');
+    const e=bootEls();
+    if(e.root)e.root.classList.add('boot-complete');
+    await sleep(260);
+    if(e.root){e.root.hidden=true;e.root.setAttribute('aria-busy','false')}
+    document.body.classList.remove('booting');
+  }
 
   async function fetchJSON(url,tries=3){
     let last=null;
@@ -48,19 +84,27 @@
     allIssuesPromise=(async()=>{
       const chunks=Array.isArray(state.meta?.chunks)?state.meta.chunks:[];
       if(!chunks.length)throw new Error('No hay bloques de la biblioteca disponibles.');
+      const total=Number(state.meta?.mainCount)||chunks.reduce((n,c)=>n+Number(c.count||0),0)||51002;
+      let loadedRows=0,completedChunks=0;
+      bootProgress(7,'Preparando biblioteca',`0 / ${fmt.format(total)} cómics`);
       const loaded=await Promise.all(chunks.map(async c=>{
         const rows=await loadPrincipalChunk(c);
         for(const x of rows)issueDecade.set(Number(x.id),String(c.id));
+        loadedRows+=rows.length;
+        completedChunks++;
+        const pct=7+(loadedRows/total)*83;
+        const decade=String(c.id)==='sin-fecha'?'sin fecha':`${c.id}–${Number(c.id)+9}`;
+        bootProgress(pct,'Cargando biblioteca',`${fmt.format(loadedRows)} / ${fmt.format(total)} cómics · ${completedChunks}/${chunks.length} bloques · ${decade}`);
         return rows;
       }));
+      bootProgress(93,'Ordenando cronología',`${fmt.format(loadedRows)} cómics cargados`);
       const flat=loaded.flat();
       flat.sort((a,b)=>Number(a.o)-Number(b.o));
-      if(Number(state.meta?.mainCount)&&flat.length!==Number(state.meta.mainCount)){
-        throw new Error(`Biblioteca incompleta: ${flat.length}/${state.meta.mainCount}`);
-      }
+      if(total&&flat.length!==total)throw new Error(`Biblioteca incompleta: ${flat.length}/${total}`);
+      bootProgress(97,'Preparando búsqueda y filtros',`${fmt.format(flat.length)} cómics indexados en memoria`);
       allIssues=flat;
       return allIssues;
-    })().catch(e=>{allIssuesPromise=null;throw e});
+    })().catch(e=>{allIssuesPromise=null;bootError(e);throw e});
     return allIssuesPromise;
   }
 
@@ -72,7 +116,7 @@
     return tokens.every(t=>hay.includes(t));
   }
 
-  async function refreshV132(){
+  async function refreshV133(){
     const ticket=++refreshTicket;
     const search=document.getElementById('searchInput');
     const status=document.getElementById('statusFilter');
@@ -83,7 +127,7 @@
     if(!search||!status||!content||!era||!decade)return;
 
     state.page=0;
-    if(count)count.textContent='Cargando biblioteca…';
+    if(count&&!allIssues)count.textContent='Preparando biblioteca…';
 
     try{
       const source=await ensureAllIssues();
@@ -109,23 +153,32 @@
       state.filtered=filtered;
       renderIssues();
       updateActiveSeries();
+      if(!bootFinished)await finishBoot();
     }catch(e){
       if(ticket!==refreshTicket)return;
-      console.error('Búsqueda/filtros v1.2.32',e);
+      console.error('Búsqueda/filtros v1.2.33',e);
       if(count)count.textContent='Error al cargar la biblioteca';
       const list=document.getElementById('issueList');
-      if(list&&!state.filtered?.length)list.innerHTML='<div class="notice">No se pudo cargar la biblioteca completa. Pulsa Restablecer para reintentar.</div>';
-      if(typeof toast==='function')toast('No se pudo cargar la biblioteca completa');
+      if(list&&!state.filtered?.length)list.innerHTML='<div class="notice">No se pudo cargar la biblioteca completa. Usa Reintentar en la pantalla de preparación.</div>';
     }
   }
 
   // Sustituimos la ruta antigua antes de que init() termine sus cargas asíncronas.
-  refresh=refreshV132;
+  refresh=refreshV133;
   selectInitialDecade=async function(){
     const decade=document.getElementById('decadeFilter');
     if(decade)decade.value='all';
-    await refreshV132();
+    bootProgress(3,'Iniciando Marvel Lector','Preparando datos locales…');
+    await refreshV133();
   };
+
+  function retryBoot(){
+    allIssuesPromise=null;
+    bootFinished=false;
+    document.body.classList.add('booting');
+    bootProgress(3,'Reintentando preparación','Comprobando los bloques pendientes…');
+    refreshV133();
+  }
 
   function installBindings(){
     if(bindingsInstalled)return;
@@ -133,6 +186,7 @@
     const controls=ids.map(id=>document.getElementById(id));
     const search=document.getElementById('searchInput');
     const clear=document.getElementById('clearFilters');
+    const retry=document.getElementById('bootRetry');
     if(controls.some(x=>!x)||!search||!clear)return;
     bindingsInstalled=true;
 
@@ -140,13 +194,13 @@
     for(const el of controls){
       el.addEventListener('change',ev=>{
         ev.stopImmediatePropagation();
-        refreshV132();
+        refreshV133();
       },true);
     }
     search.addEventListener('input',ev=>{
       ev.stopImmediatePropagation();
       clearTimeout(searchTimer);
-      searchTimer=setTimeout(refreshV132,120);
+      searchTimer=setTimeout(refreshV133,120);
     },true);
     clear.addEventListener('click',ev=>{
       ev.preventDefault();
@@ -154,9 +208,9 @@
       for(const el of controls)el.value='all';
       search.value='';
       state.activeSeries=null;
-      allIssuesPromise=allIssues?Promise.resolve(allIssues):null;
-      refreshV132();
+      refreshV133();
     },true);
+    if(retry)retry.onclick=retryBoot;
   }
 
   const baseBind=typeof bind==='function'?bind:null;
@@ -172,6 +226,7 @@
     installBindings();
     if(!bindingsInstalled)setTimeout(waitForInit,100);
   }
+  bootProgress(1,'Iniciando Marvel Lector','Preparando biblioteca…');
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',waitForInit,{once:true});
   else waitForInit();
 })();
