@@ -1,0 +1,27 @@
+Investigación aislada: 7 objetivos; 25.322 deeplinks previos quedan fuera del alcance.
+[1/7] GCD=29395 · Marvel Treasury Edition #13 · sourceId=78145 · readerId=55204
+  -> transient
+[2/7] GCD=29387 · Marvel Treasury Edition #9 · sourceId=78120 · readerId=55203
+  -> transient
+[3/7] GCD=60401 · X-Men Unlimited #15 · sourceId=18116 · readerId=73928
+  -> transient
+[4/7] GCD=338373 · Last Hero Standing #1 · sourceId=2133 · readerId=535
+  -> transient
+[5/7] GCD=521503 · Magician Apprentice #5 · sourceId=5888 · readerId=6307
+  -> transient
+[6/7] GCD=521504 · Magician Apprentice #6 · sourceId=6037 · readerId=6308
+  -> transient
+[7/7] GCD=1244835 · 100th Anniversary Special: Avengers #1 · sourceId=49010 · readerId=34127
+  -> transient
+{
+  "total": 7,
+  "identityMatched": 7,
+  "unlimitedConfirmed": 7,
+  "noDigitalConfirmed": 0,
+  "resolved": 0,
+  "unresolved": 7,
+  "transient": 7,
+  "coverageCorrectionsRecommended": 0,
+  "verifiedDrnCandidates": 0
+}
+Informe: /home/runner/work/marvel-orden-lectura/marvel-orden-lectura/artifacts/marvel-missing-drn-seven/investigation.json
