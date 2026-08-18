@@ -1,0 +1,62 @@
+name: Audit Marvel strong unnumbered v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-strong-unnumbered-v4.mjs'
+      - '.github/workflows/audit-marvel-strong-unnumbered-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-strong-unnumbered-v4
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate official-number auditor
+        run: node --check scripts/audit-marvel-strong-unnumbered-v4.mjs
+      - name: Audit 49 strong unnumbered cases
+        run: node scripts/audit-marvel-strong-unnumbered-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/strong-unnumbered-audit-v4.json','utf8'));
+          console.log('## Marvel V4 · numeración oficial de strong-unnumbered');
+          console.log(`- Objetivos: ${r.summary.targets}`);
+          console.log(`- Verificados: ${r.summary.verified}`);
+          console.log(`- Unlimited: ${r.summary.mu}`);
+          console.log(`- NO_DIGITAL: ${r.summary.noDigital}`);
+          console.log(`- Evidencia de número incompleta: ${r.summary.numberEvidenceIncomplete}`);
+          console.log(`- Sin resolver: ${r.summary.unresolved}`);
+          console.log(`- Colisiones: ${r.summary.collisions}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-strong-unnumbered-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/strong-unnumbered-audit-v4.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/strong-unnumbered-audit-v4.json
+          git commit -m 'audit: guardar numeración oficial strong-unnumbered v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
