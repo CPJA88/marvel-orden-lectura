@@ -1,0 +1,19 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T18:28:52.551Z",
+  "mode": "official-exact-summary",
+  "writesCache": false,
+  "shardCount": 6,
+  "totalCandidates": 4009,
+  "mu": 3344,
+  "muFunctional": 3344,
+  "noDigital": 74,
+  "unknown": 0,
+  "notFound": 98,
+  "identityMismatch": 493,
+  "retryable": 0,
+  "safetyFailure": 0,
+  "readerFunctional": 3344,
+  "uuidFunctional": 0,
+  "muWithoutFunctionalLink": 0
+}
