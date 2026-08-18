@@ -1,0 +1,30 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T23:08:32.378Z",
+  "mode": "clean-candidates-drm-v4-summary",
+  "writesCache": false,
+  "totalTargets": 1983,
+  "muRaw": 1913,
+  "muPublishable": 1913,
+  "muExcludedByCrossResultCollision": 0,
+  "unresolved": 70,
+  "duplicatePositiveSourceGroups": 0,
+  "duplicatePositiveReaderGroups": 0,
+  "duplicatePositiveDrnGroups": 0,
+  "kindCounts": {
+    "mu": 1913,
+    "drn-missing": 70
+  },
+  "baseline": {
+    "matched": 29189,
+    "noDigital": 1135,
+    "notListed": 20678,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "noNegativeClassificationFromFailure": true,
+    "publishableRequiresMuButtonAndFunctionalLink": true,
+    "crossResultSourceReaderDrnCollisionsExcluded": true
+  }
+}
