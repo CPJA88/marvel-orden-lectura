@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "publishedAt": "2026-08-18T23:53:44.491Z",
+  "changedRows": 38,
+  "transferredOwnership": 19,
+  "promotedCorrectOwners": 19,
+  "demotedWrongOwnersToPending": 19,
+  "status1Transfers": 19,
+  "status5Transfers": 0,
+  "coverageCountChanged": false,
+  "pairs": [
+    {
+      "newGcdId": 1824075,
+      "oldGcdId": 1762467,
+      "sourceId": 67631,
+      "readerId": 48576,
+      "drn": "drn:src:marvel:unison::prod:ed336228-1d3a-4e14-8f18-77d06dfcb3cf"
+    },
+    {
+      "newGcdId": 1827252,
+      "oldGcdId": 2239793,
+      "sourceId": 67633,
+      "readerId": 48577,
+      "drn": "drn:src:marvel:unison::prod:5a604e21-c23a-45e2-82b1-9e923b6e548a"
+    },
+    {
+      "newGcdId": 2020441,
+      "oldGcdId": 2024806,
+      "sourceId": 76985,
+      "readerId": 52860,
+      "drn": "drn:src:marvel:unison::prod:89f705ec-a0a4-4ece-9197-0aa51ec87862"
+    },
+    {
+      "newGcdId": 2177125,
+      "oldGcdId": 2036865,
+      "sourceId": 91367,
+      "readerId": 55786,
+      "drn": "drn:src:marvel:unison::prod:3030a1a1-4d32-4ca4-a533-fb17e277973e"
+    },
+    {
+      "newGcdId": 2438431,
+      "oldGcdId": 2295014,
+      "sourceId": 99743,
+      "readerId": 60584,
+      "drn": "drn:src:marvel:unison::prod:99ad9b26-d2ec-4aaf-8ba0-a39af9dba16f"
+    },
+    {
+      "newGcdId": 2449978,
+      "oldGcdId": 2278135,
+      "sourceId": 98724,
+      "readerId": 60739,
+      "drn": "drn:src:marvel:unison::prod:622828f8-1399-42ca-b25e-8661134942af"
+    },
+    {
+      "newGcdId": 2508741,
+      "oldGcdId": 2459920,
+      "sourceId": 105848,
+      "readerId": 61970,
+      "drn": "drn:src:marvel:unison::prod:e3b5e6ca-f8d3-40f5-8bb7-484bf8256432"
+    },
+    {
+      "newGcdId": 2519320,
+      "oldGcdId": 2454056,
+      "sourceId": 105859,
+      "readerId": 62200,
+      "drn": "drn:src:marvel:unison::prod:060e67df-7c6b-4be5-958f-a7f1b6012a4f"
+    },
+    {
+      "newGcdId": 2524212,
+      "oldGcdId": 2472746,
+      "sourceId": 105849,
+      "readerId": 62193,
+      "drn": "drn:src:marvel:unison::prod:d2daa2c3-73c1-4ebb-9769-840af361fb41"
+    },
+    {
+      "newGcdId": 2538314,
+      "oldGcdId": 2487208,
+      "sourceId": 105850,
+      "readerId": 62500,
+      "drn": "drn:src:marvel:unison::prod:a5b602db-2823-4c29-8a50-f4c73d973be0"
+    },
+    {
+      "newGcdId": 2544458,
+      "oldGcdId": 2568223,
+      "sourceId": 97121,
+      "readerId": 62772,
+      "drn": "drn:src:marvel:unison::prod:ca782c49-fe05-4f6d-974e-757511d09c52"
+    },
+    {
+      "newGcdId": 2546677,
+      "oldGcdId": 2451131,
+      "sourceId": 104798,
+      "readerId": 62743,
+      "drn": "drn:src:marvel:unison::prod:c8172959-53ca-4a81-acc3-5f972516f203"
+    },
+    {
+      "newGcdId": 2544999,
+      "oldGcdId": 2499010,
+      "sourceId": 105851,
+      "readerId": 62759,
+      "drn": "drn:src:marvel:unison::prod:eb21844b-90eb-4d3d-a0a4-2e274fcedb76"
+    },
+    {
+      "newGcdId": 2728853,
+      "oldGcdId": 2784007,
+      "sourceId": 119344,
+      "readerId": 72707,
+      "drn": "drn:src:marvel:unison::prod:b8b88c5e-fcf5-4298-8968-ccde586f8648"
+    },
+    {
+      "newGcdId": 2731733,
+      "oldGcdId": 2795890,
+      "sourceId": 119345,
+      "readerId": 73414,
+      "drn": "drn:src:marvel:unison::prod:7fe1a556-bcb8-42eb-a5f5-8a2f0ff109db"
+    },
+    {
+      "newGcdId": 2738714,
+      "oldGcdId": 2805480,
+      "sourceId": 119346,
+      "readerId": 73415,
+      "drn": "drn:src:marvel:unison::prod:d2a1b924-5ef4-495e-bdc5-3c6f217711c9"
+    },
+    {
+      "newGcdId": 2744458,
+      "oldGcdId": 2814565,
+      "sourceId": 119347,
+      "readerId": 73959,
+      "drn": "drn:src:marvel:unison::prod:d31ac855-d9f2-4e81-b570-614841f754e1"
+    },
+    {
+      "newGcdId": 2766240,
+      "oldGcdId": 2781717,
+      "sourceId": 119453,
+      "readerId": 74874,
+      "drn": "drn:src:marvel:unison::prod:3871d051-bc2e-4e6a-9c37-7e2482afa19a"
+    },
+    {
+      "newGcdId": 2772207,
+      "oldGcdId": 2790853,
+      "sourceId": 119454,
+      "readerId": 73892,
+      "drn": "drn:src:marvel:unison::prod:681a9c80-c4c7-40f1-832d-73d771896760"
+    }
+  ],
+  "after": {
+    "matched": 31177,
+    "noDigital": 1135,
+    "notListed": 18690,
+    "linkReady": 27288,
+    "linkMissing": 3889,
+    "readerFallbackReady": 3889,
+    "functionalLinkReady": 31177,
+    "functionalLinkMissing": 0
+  }
+}
