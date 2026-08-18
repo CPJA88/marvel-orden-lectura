@@ -1,0 +1,66 @@
+name: Publish Marvel identity mismatch v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish-marvel-identity-mismatch-v4.mjs'
+      - '.github/workflows/publish-marvel-identity-mismatch-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-marvel-identity-mismatch-v4
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate publisher
+        run: node --check scripts/publish-marvel-identity-mismatch-v4.mjs
+      - name: Publish 429 verified reader fallbacks
+        run: node scripts/publish-marvel-identity-mismatch-v4.mjs
+      - name: Validate reader allowlist
+        run: |
+          node --check source/marvel-reader-fallback-v1240.js
+          node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Validate published build
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/identity-mismatch-publish-summary.json','utf8'));
+          const src=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          const built=JSON.parse(fs.readFileSync('public/data/marvel-cache/index.json','utf8'));
+          const expected={matched:29102,noDigital:1131,notListed:20769,linkReady:25322,linkMissing:3780,readerFallbackReady:3780,functionalLinkReady:29102,functionalLinkMissing:0};
+          if(src.localCount!==51002||built.localCount!==51002)throw new Error('Cambió localCount.');
+          for(const [k,v] of Object.entries(expected))if(Number(src[k])!==v||Number(built[k])!==v||Number(s.after[k])!==v)throw new Error(`Conteo ${k} inconsistente.`);
+          if(Number(s.changedRows)!==429||Number(s.unchangedRows)!==50573)throw new Error('Scope de publicación inválido.');
+          if(fs.readFileSync('source/marvel-reader-fallback-v1240.js','utf8')!==fs.readFileSync('public/marvel-reader-fallback-v1240.js','utf8'))throw new Error('Build sin allowlist actualizada.');
+          console.log('Identity mismatch V4 publicado y validado',expected);
+          NODE
+      - name: Commit verified publication
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json source/marvel-reader-fallback-v1240.js artifacts/marvel-not-listed-v4/identity-mismatch-publish-summary.json
+          if git diff --cached --quiet; then
+            echo 'No hay cambios publicables.'
+            exit 0
+          fi
+          git commit -m 'cache: publicar 429 identity mismatch verificados'
+          git pull --rebase origin main
+          git push origin HEAD:main
