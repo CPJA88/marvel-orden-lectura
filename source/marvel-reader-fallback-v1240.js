@@ -1,4 +1,4 @@
-/* Marvel Lector v1.2.42 — fallback reader oficial verificado; generado por auditoría */
+/* Marvel Lector v1.2.43 — fallback reader oficial verificado; generado por auditoría */
 (() => {
   const SMART_BASE='https://marvel.smart.link/fiir7ec77';
   const TARGETS=new Map([
@@ -118,6 +118,7 @@
     [27245,'31232'],
     [27321,'31233'],
     [27333,'56766'],
+    [27397,'1929'],
     [27399,'31234'],
     [27478,'4468'],
     [27567,'8262'],
@@ -764,6 +765,7 @@
     [214052,'89'],
     [214053,'7446'],
     [214806,'7447'],
+    [220167,'2769'],
     [220172,'936'],
     [220187,'2721'],
     [220188,'2722'],
@@ -1483,6 +1485,7 @@
     [682423,'17632'],
     [682424,'17634'],
     [682425,'13721'],
+    [682486,'18386'],
     [682488,'17664'],
     [682489,'13626'],
     [682491,'17013'],
@@ -3783,18 +3786,9 @@
     [2769474,'75222'],
     [2845049,'72646'],
   ]);
-
-  function readerFallbackHref(m){
-    if(!m||Number(m.preinstalledStatus)!==5)return '';
-    const expected=TARGETS.get(Number(m.id));
-    const readerId=String(m.readerId||'').trim();
-    if(!expected||readerId!==expected||!/^\d+$/.test(readerId))return '';
-    return `${SMART_BASE}?type=reader&drn=${encodeURIComponent(readerId)}`;
-  }
-
-  if(typeof unlimitedState==='function'){const baseUnlimitedState=unlimitedState;unlimitedState=function(m){if(readerFallbackHref(m))return{label:'Unlimited ✓',cls:'available'};return baseUnlimitedState(m)}}
-  if(typeof stableAppHref==='function'){const baseStableAppHref=stableAppHref;stableAppHref=function(x,s){const m=typeof state!=='undefined'&&state?.marvel?state.marvel.get(Number(x?.id)):null;return readerFallbackHref(m)||baseStableAppHref(x,s)}}
+  function readerFallbackHref(m){if(!m||Number(m.preinstalledStatus)!==5)return '';const expected=TARGETS.get(Number(m.id));const readerId=String(m.readerId||'').trim();if(!expected||readerId!==expected||!/^\d+$/.test(readerId))return '';return `${SMART_BASE}?type=reader&drn=${encodeURIComponent(readerId)}`;}
+  if(typeof unlimitedState==='function'){const base=unlimitedState;unlimitedState=function(m){if(readerFallbackHref(m))return{label:'Unlimited ✓',cls:'available'};return base(m);};}
+  if(typeof stableAppHref==='function'){const base=stableAppHref;stableAppHref=function(x,s){const m=typeof state!=='undefined'&&state?.marvel?state.marvel.get(Number(x?.id)):null;return readerFallbackHref(m)||base(x,s);};}
   function repaintTargets(){if(typeof state==='undefined'||!state?.marvel||typeof updateRenderedMeta!=='function')return;for(const id of TARGETS.keys()){const m=state.marvel.get(id);if(m)updateRenderedMeta(id,m)}}
-  if(typeof requestAnimationFrame==='function')requestAnimationFrame(repaintTargets);
-  if(typeof setTimeout==='function'){setTimeout(repaintTargets,500);setTimeout(repaintTargets,1800)}
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(repaintTargets);if(typeof setTimeout==='function'){setTimeout(repaintTargets,500);setTimeout(repaintTargets,1800)}
 })();
