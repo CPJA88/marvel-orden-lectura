@@ -1,0 +1,7151 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T21:18:19.624Z",
+  "mode": "hard-tail-a3-b2-v4",
+  "baseline": {
+    "matched": 29137,
+    "noDigital": 1135,
+    "notListed": 20730
+  },
+  "summary": {
+    "unionTargets": 177,
+    "series19": {
+      "targets": 19,
+      "unique": 18,
+      "mu": 18,
+      "noDigital": 0,
+      "strongUnnumbered": 0,
+      "ambiguous": 0,
+      "noCandidate": 1
+    },
+    "notFound98": {
+      "targets": 98,
+      "unique": 0,
+      "mu": 0,
+      "noDigital": 0,
+      "strongUnnumbered": 0,
+      "ambiguous": 0,
+      "noCandidate": 98
+    },
+    "identity61": {
+      "targets": 61,
+      "unique": 0,
+      "mu": 0,
+      "noDigital": 0,
+      "strongUnnumbered": 49,
+      "ambiguous": 0,
+      "noCandidate": 12
+    },
+    "uniqueTotal": 18,
+    "muTotal": 18,
+    "noDigitalTotal": 0,
+    "strongUnnumberedTotal": 49,
+    "ambiguousTotal": 0,
+    "noCandidateTotal": 110,
+    "writesCache": false
+  },
+  "rows": [
+    {
+      "gcdId": 875744,
+      "seriesId": 8816,
+      "localTitle": "Ultimate Comics Spider-Man",
+      "issueNumber": "1",
+      "date": "2011-09-14",
+      "categories": [
+        "identity61",
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "ultimate comics spider man",
+          "count": 28
+        },
+        {
+          "series": "ultimate spider man",
+          "count": 1
+        }
+      ],
+      "catalogCandidates": [],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1875111,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "2 (621)",
+      "date": "2018-11-21",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 71459,
+          "readerId": 49770,
+          "seriesName": "Uncanny X-Men (2018 - 2019)",
+          "issueNumber": "2",
+          "onSale": "2018-11-21T00:00:00+0000",
+          "yearPage": 2018
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 71459,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2018) #2"
+          ],
+          "officialTitle": "Uncanny X-Men (2018) #2",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 49770,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #2"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2018 - 2019)",
+            "issueNumber": "2",
+            "onSale": "2018-11-21T00:00:00+0000",
+            "yearPage": 2018
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 71459,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2018) #2"
+        ],
+        "officialTitle": "Uncanny X-Men (2018) #2",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 49770,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #2"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2018 - 2019)",
+          "issueNumber": "2",
+          "onSale": "2018-11-21T00:00:00+0000",
+          "yearPage": 2018
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2656662,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "2 (702)",
+      "date": "2024-09-11",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115381,
+          "readerId": 68524,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "2",
+          "onSale": "2024-09-11T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115381,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #2"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #2",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 68524,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #2"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "2",
+            "onSale": "2024-09-11T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115381,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #2"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #2",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 68524,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #2"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "2",
+          "onSale": "2024-09-11T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2660595,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "3 (703)",
+      "date": "2024-09-25",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115382,
+          "readerId": 68526,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "3",
+          "onSale": "2024-09-25T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115382,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #3"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #3",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 68526,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #3"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "3",
+            "onSale": "2024-09-25T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115382,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #3"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #3",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 68526,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #3"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "3",
+          "onSale": "2024-09-25T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2667492,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "4 (704)",
+      "date": "2024-10-16",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115383,
+          "readerId": 68946,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "4",
+          "onSale": "2024-10-16T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115383,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #4"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #4",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 68946,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #4"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "4",
+            "onSale": "2024-10-16T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115383,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #4"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #4",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 68946,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #4"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "4",
+          "onSale": "2024-10-16T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2677596,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "5 (705)",
+      "date": "2024-11-13",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115384,
+          "readerId": 69181,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "5",
+          "onSale": "2024-11-13T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115384,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #5"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #5",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 69181,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #5"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "5",
+            "onSale": "2024-11-13T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115384,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #5"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #5",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 69181,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #5"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "5",
+          "onSale": "2024-11-13T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2683449,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "6 (706)",
+      "date": "2024-11-27",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115385,
+          "readerId": 69182,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "6",
+          "onSale": "2024-11-27T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115385,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #6"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #6",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 69182,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #6"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "6",
+            "onSale": "2024-11-27T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115385,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #6"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #6",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 69182,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #6"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "6",
+          "onSale": "2024-11-27T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2686316,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "7 (707)",
+      "date": "2024-12-11",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115386,
+          "readerId": 69971,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "7",
+          "onSale": "2024-12-11T00:00:00+0000",
+          "yearPage": 2024
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115386,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #7"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #7",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 69971,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #7"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "7",
+            "onSale": "2024-12-11T00:00:00+0000",
+            "yearPage": 2024
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115386,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #7"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #7",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 69971,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #7"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "7",
+          "onSale": "2024-12-11T00:00:00+0000",
+          "yearPage": 2024
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2694917,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "8 (708)",
+      "date": "2025-01-08",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115387,
+          "readerId": 69972,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "8",
+          "onSale": "2025-01-08T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115387,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #8"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #8",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 69972,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #8"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "8",
+            "onSale": "2025-01-08T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115387,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #8"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #8",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 69972,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #8"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "8",
+          "onSale": "2025-01-08T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2703220,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "9 (709)",
+      "date": "2025-01-22",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115388,
+          "readerId": 71160,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "9",
+          "onSale": "2025-01-22T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115388,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #9"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #9",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 71160,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #9"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "9",
+            "onSale": "2025-01-22T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115388,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #9"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #9",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 71160,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #9"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "9",
+          "onSale": "2025-01-22T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2711655,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "10 (710)",
+      "date": "2025-02-19",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115389,
+          "readerId": 69594,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "10",
+          "onSale": "2025-02-19T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115389,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #10"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #10",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 69594,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #10"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "10",
+            "onSale": "2025-02-19T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115389,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #10"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #10",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 69594,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #10"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "10",
+          "onSale": "2025-02-19T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2716445,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "11 (711)",
+      "date": "2025-03-05",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115390,
+          "readerId": 72242,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "11",
+          "onSale": "2025-03-05T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115390,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #11"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #11",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72242,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #11"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "11",
+            "onSale": "2025-03-05T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115390,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #11"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #11",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72242,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #11"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "11",
+          "onSale": "2025-03-05T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2719439,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "12 (712)",
+      "date": "2025-03-26",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115391,
+          "readerId": 71486,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "12",
+          "onSale": "2025-03-26T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115391,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #12"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #12",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 71486,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #12"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "12",
+            "onSale": "2025-03-26T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115391,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #12"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #12",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 71486,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #12"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "12",
+          "onSale": "2025-03-26T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2722988,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "13 (713)",
+      "date": "2025-04-09",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115392,
+          "readerId": 71487,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "13",
+          "onSale": "2025-04-09T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115392,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #13"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #13",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 71487,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #13"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "13",
+            "onSale": "2025-04-09T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115392,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #13"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #13",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 71487,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #13"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "13",
+          "onSale": "2025-04-09T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2734699,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "14 (714)",
+      "date": "2025-05-14",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115393,
+          "readerId": 73143,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "14",
+          "onSale": "2025-05-14T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115393,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #14"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #14",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 73143,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #14"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "14",
+            "onSale": "2025-05-14T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115393,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #14"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #14",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 73143,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #14"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "14",
+          "onSale": "2025-05-14T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2741307,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "15 (715)",
+      "date": "2025-05-28",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115394,
+          "readerId": 73144,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "15",
+          "onSale": "2025-05-28T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115394,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #15"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #15",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 73144,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #15"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "15",
+            "onSale": "2025-05-28T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115394,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #15"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #15",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 73144,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #15"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "15",
+          "onSale": "2025-05-28T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2749778,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "16 (716)",
+      "date": "2025-06-25",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115395,
+          "readerId": 73887,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "16",
+          "onSale": "2025-06-25T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115395,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #16"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #16",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 73887,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #16"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "16",
+            "onSale": "2025-06-25T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115395,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #16"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #16",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 73887,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #16"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "16",
+          "onSale": "2025-06-25T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2755222,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "17 (717)",
+      "date": "2025-07-09",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 115396,
+          "readerId": 74290,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "17",
+          "onSale": "2025-07-09T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 115396,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #17"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #17",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 74290,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #17"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "17",
+            "onSale": "2025-07-09T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 115396,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #17"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #17",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 74290,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #17"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "17",
+          "onSale": "2025-07-09T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 2767858,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "20 (720)",
+      "date": "2025-09-03",
+      "categories": [
+        "series19"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 44
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 119442,
+          "readerId": 75542,
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "20",
+          "onSale": "2025-09-03T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "unique",
+      "strictCandidates": [
+        {
+          "sourceId": 119442,
+          "kind": "page",
+          "titles": [
+            "Uncanny X-Men (2024) #20"
+          ],
+          "officialTitle": "Uncanny X-Men (2024) #20",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 75542,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #20"
+          },
+          "functional": true,
+          "strict": true,
+          "catalogStrong": true,
+          "unnumberedStrong": false,
+          "catalog": {
+            "seriesName": "Uncanny X-Men (2024 - Present)",
+            "issueNumber": "20",
+            "onSale": "2025-09-03T00:00:00+0000",
+            "yearPage": 2025
+          }
+        }
+      ],
+      "unnumberedCandidates": [],
+      "selected": {
+        "sourceId": 119442,
+        "kind": "page",
+        "titles": [
+          "Uncanny X-Men (2024) #20"
+        ],
+        "officialTitle": "Uncanny X-Men (2024) #20",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 75542,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #20"
+        },
+        "functional": true,
+        "strict": true,
+        "catalogStrong": true,
+        "unnumberedStrong": false,
+        "catalog": {
+          "seriesName": "Uncanny X-Men (2024 - Present)",
+          "issueNumber": "20",
+          "onSale": "2025-09-03T00:00:00+0000",
+          "yearPage": 2025
+        }
+      },
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 24423,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "7",
+      "date": "1971-05-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62389,
+          "readerId": 46874,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "7",
+          "onSale": "1971-08-01T00:00:00+0000",
+          "yearPage": 1971
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 24704,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "9",
+      "date": "1971-09-14",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62390,
+          "readerId": 46875,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "9",
+          "onSale": "1971-12-01T00:00:00+0000",
+          "yearPage": 1971
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 24874,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "10",
+      "date": "1971-11-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61926,
+          "readerId": 42744,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "10",
+          "onSale": "1972-02-01T00:00:00+0000",
+          "yearPage": 1972
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25024,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "11",
+      "date": "1972-01-25",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62391,
+          "readerId": 46876,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "11",
+          "onSale": "1972-04-01T00:00:00+0000",
+          "yearPage": 1972
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25535,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "14",
+      "date": "1972-07-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62392,
+          "readerId": 56110,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "14",
+          "onSale": "1972-10-01T00:00:00+0000",
+          "yearPage": 1972
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25720,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "15",
+      "date": "1972-09-12",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61927,
+          "readerId": 42745,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "15",
+          "onSale": "1972-12-01T00:00:00+0000",
+          "yearPage": 1972
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25926,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "16",
+      "date": "1972-11-14",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61928,
+          "readerId": 42746,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "16",
+          "onSale": "1973-02-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26125,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "17",
+      "date": "1973-01-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61929,
+          "readerId": 42747,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "17",
+          "onSale": "1973-04-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26305,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "18",
+      "date": "1973-03-20",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61930,
+          "readerId": 42748,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "18",
+          "onSale": "1973-06-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26528,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "19",
+      "date": "1973-05-22",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61931,
+          "readerId": 42749,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "19",
+          "onSale": "1973-08-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26757,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "20",
+      "date": "1973-07-17",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61932,
+          "readerId": 42750,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "20",
+          "onSale": "1973-10-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26970,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "21",
+      "date": "1973-09-11",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62393,
+          "readerId": 46530,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "21",
+          "onSale": "1973-12-01T00:00:00+0000",
+          "yearPage": 1973
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27164,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "22",
+      "date": "1973-11-06",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62394,
+          "readerId": 56111,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "22",
+          "onSale": "1974-02-01T00:00:00+0000",
+          "yearPage": 1974
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27314,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "23",
+      "date": "1974-01-22",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62395,
+          "readerId": 56116,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "23",
+          "onSale": "1974-04-01T00:00:00+0000",
+          "yearPage": 1974
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27467,
+      "seriesId": 499,
+      "localTitle": "Astonishing Tales",
+      "issueNumber": "24",
+      "date": "1974-03-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62396,
+          "readerId": 52198,
+          "seriesName": "Astonishing Tales (1970)",
+          "issueNumber": "24",
+          "onSale": "1974-06-01T00:00:00+0000",
+          "yearPage": 1974
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60612,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "2",
+      "date": "1997-06-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62005,
+          "readerId": 42767,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "2",
+          "onSale": "1997-08-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60735,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "3",
+      "date": "1997-07-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62006,
+          "readerId": 42768,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "3",
+          "onSale": "1997-09-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60852,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "4",
+      "date": "1997-08-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62007,
+          "readerId": 42769,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "4",
+          "onSale": "1997-10-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60972,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "5",
+      "date": "1997-09-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62008,
+          "readerId": 42770,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "5",
+          "onSale": "1997-11-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61083,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "6",
+      "date": "1997-10-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62009,
+          "readerId": 42771,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "6",
+          "onSale": "1997-12-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61286,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "7",
+      "date": "1997-11-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 50676,
+          "readerId": 32897,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "7",
+          "onSale": "1998-01-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61411,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "8",
+      "date": "1997-12-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62011,
+          "readerId": 42773,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "8",
+          "onSale": "1998-02-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61797,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "12",
+      "date": "1998-04-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62012,
+          "readerId": 42775,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "12",
+          "onSale": "1998-06-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61891,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "13",
+      "date": "1998-05-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62013,
+          "readerId": 42776,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "13",
+          "onSale": "1998-07-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62001,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "14",
+      "date": "1998-06-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62014,
+          "readerId": 42777,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "14",
+          "onSale": "1998-08-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62266,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "17",
+      "date": "1998-09-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62015,
+          "readerId": 42778,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "17",
+          "onSale": "1998-11-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62396,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "18",
+      "date": "1998-10-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62016,
+          "readerId": 42779,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "18",
+          "onSale": "1998-12-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62497,
+      "seriesId": 3352,
+      "localTitle": "Heroes for Hire",
+      "issueNumber": "19",
+      "date": "1998-11-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "heroes for hire",
+          "count": 11
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62017,
+          "readerId": 42780,
+          "seriesName": "Heroes for Hire (1997 - 1999)",
+          "issueNumber": "19",
+          "onSale": "1999-01-01T00:00:00+0000",
+          "yearPage": 1999
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 215946,
+      "seriesId": 7565,
+      "localTitle": "Tales to Astonish",
+      "issueNumber": "1",
+      "date": "1994-10-04",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 66352,
+          "readerId": 47377,
+          "seriesName": "Tales to Astonish (1994)",
+          "issueNumber": "1",
+          "onSale": "1994-12-01T00:00:00+0000",
+          "yearPage": 1994
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 215947,
+      "seriesId": 7548,
+      "localTitle": "Tales of Suspense",
+      "issueNumber": "1",
+      "date": "1994-11-01",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "tales of suspense",
+          "count": 5
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 66351,
+          "readerId": 47376,
+          "seriesName": "Tales of Suspense (1959 - 1968)",
+          "issueNumber": "1",
+          "onSale": "1995-01-01T00:00:00+0000",
+          "yearPage": 1995
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291228,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "1",
+      "date": "2004-05-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 654,
+          "readerId": 1034,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "1",
+          "onSale": "2004-05-19T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291229,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "2",
+      "date": "2004-06-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 711,
+          "readerId": 3419,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "2",
+          "onSale": "2004-06-16T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291230,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "3",
+      "date": "2004-07-21",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 533,
+          "readerId": 3420,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "3",
+          "onSale": "2004-07-21T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291231,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "4",
+      "date": "2004-08-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 755,
+          "readerId": 3421,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "4",
+          "onSale": "2004-08-18T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291232,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "5",
+      "date": "2004-09-15",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 827,
+          "readerId": 3422,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "5",
+          "onSale": "2004-09-15T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291233,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "6",
+      "date": "2004-10-20",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 910,
+          "readerId": 3423,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "6",
+          "onSale": "2004-10-20T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291234,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "7",
+      "date": "2004-12-01",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 80,
+          "readerId": 3424,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "7",
+          "onSale": "2004-12-01T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291235,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "8",
+      "date": "2005-01-12",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 1483,
+          "readerId": 2308,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "8",
+          "onSale": "2005-01-12T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291236,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "9",
+      "date": "2005-01-26",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 1568,
+          "readerId": 2309,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "9",
+          "onSale": "2005-01-26T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291237,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "10",
+      "date": "2005-02-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 1657,
+          "readerId": 2295,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "10",
+          "onSale": "2005-02-16T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291238,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "11",
+      "date": "2005-03-23",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 1751,
+          "readerId": 2296,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "11",
+          "onSale": "2005-03-23T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291239,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "12",
+      "date": "2005-04-20",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 1857,
+          "readerId": 2297,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "12",
+          "onSale": "2005-04-20T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291240,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "13",
+      "date": "2005-05-04",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2007,
+          "readerId": 2298,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "13",
+          "onSale": "2005-05-04T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291241,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "14",
+      "date": "2005-05-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2008,
+          "readerId": 2299,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "14",
+          "onSale": "2005-05-18T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291242,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "15",
+      "date": "2005-06-22",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2112,
+          "readerId": 2300,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "15",
+          "onSale": "2005-06-22T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291243,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "16",
+      "date": "2005-07-27",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2221,
+          "readerId": 2301,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "16",
+          "onSale": "2005-07-27T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291244,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "17",
+      "date": "2005-08-24",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2991,
+          "readerId": 4131,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "17",
+          "onSale": "2005-08-24T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291245,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "18",
+      "date": "2005-09-28",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2466,
+          "readerId": 2303,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "18",
+          "onSale": "2005-09-28T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291246,
+      "seriesId": 5546,
+      "localTitle": "New X-Men",
+      "issueNumber": "19",
+      "date": "2005-10-26",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2518,
+          "readerId": 2304,
+          "seriesName": "New X-Men (2004 - 2008)",
+          "issueNumber": "19",
+          "onSale": "2005-10-26T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 386796,
+      "seriesId": 9760,
+      "localTitle": "X-Factor",
+      "issueNumber": "26",
+      "date": "2007-12-12",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "x factor",
+          "count": 113
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 21915,
+          "readerId": 13878,
+          "seriesName": "X-Factor (2005 - 2013)",
+          "issueNumber": "26",
+          "onSale": "2007-12-12T00:00:00+0000",
+          "yearPage": 2007
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 534726,
+      "seriesId": 1315,
+      "localTitle": "Captain America: White",
+      "issueNumber": "0",
+      "date": "2008-07-10",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 21599,
+          "readerId": 10993,
+          "seriesName": "Captain America: White (2015)",
+          "issueNumber": "0",
+          "onSale": "2008-07-09T00:00:00+0000",
+          "yearPage": 2008
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 695292,
+      "seriesId": 358,
+      "localTitle": "Amazing Spider-Man: Extra!",
+      "issueNumber": "3",
+      "date": "2009-03-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 23834,
+          "readerId": 19945,
+          "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+          "issueNumber": "3",
+          "onSale": "2009-03-18T00:00:00+0000",
+          "yearPage": 2009
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 771495,
+      "seriesId": 3401,
+      "localTitle": "Hit-Monkey",
+      "issueNumber": "2",
+      "date": "2010-12-31",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 32490,
+          "readerId": 15451,
+          "seriesName": "Hit-Monkey (2010)",
+          "issueNumber": "2",
+          "onSale": "2010-08-04T00:00:00+0000",
+          "yearPage": 2010
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 791641,
+      "seriesId": 8259,
+      "localTitle": "Thor: For Asgard",
+      "issueNumber": "5",
+      "date": "2010-12-02",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 36245,
+          "readerId": 18169,
+          "seriesName": "Thor: For Asgard (2010 - 2011)",
+          "issueNumber": "5",
+          "onSale": "2010-12-01T00:00:00+0000",
+          "yearPage": 2010
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 802516,
+      "seriesId": 8259,
+      "localTitle": "Thor: For Asgard",
+      "issueNumber": "6",
+      "date": "2011-02-02",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 34715,
+          "readerId": 19116,
+          "seriesName": "Thor: For Asgard (2010 - 2011)",
+          "issueNumber": "6",
+          "onSale": "2011-02-02T00:00:00+0000",
+          "yearPage": 2011
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 811563,
+      "seriesId": 9501,
+      "localTitle": "Wolverine / Hercules: Myths, Monsters & Mutants",
+      "issueNumber": "1",
+      "date": "2011-03-02",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 36096,
+          "readerId": 19825,
+          "seriesName": "Wolverine/Hercules: Myths, Monsters & Mutants (2011)",
+          "issueNumber": "1",
+          "onSale": "2011-03-02T00:00:00+0000",
+          "yearPage": 2011
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 901961,
+      "seriesId": 3632,
+      "localTitle": "Incredible Hulk",
+      "issueNumber": "3",
+      "date": "2011-12-21",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 33283,
+          "readerId": 25071,
+          "seriesName": "Incredible Hulk (2011 - 2012)",
+          "issueNumber": "3",
+          "onSale": "2011-12-21T00:00:00+0000",
+          "yearPage": 2011
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 904844,
+      "seriesId": 3632,
+      "localTitle": "Incredible Hulk",
+      "issueNumber": "4",
+      "date": "2012-01-11",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 33285,
+          "readerId": 25217,
+          "seriesName": "Incredible Hulk (2011 - 2012)",
+          "issueNumber": "4",
+          "onSale": "2012-01-11T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 927103,
+      "seriesId": 122,
+      "localTitle": "Age of Apocalypse",
+      "issueNumber": "1",
+      "date": "2012-03-07",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 41274,
+          "readerId": 25708,
+          "seriesName": "Age of Apocalypse (2012 - 2013)",
+          "issueNumber": "1",
+          "onSale": "2012-03-07T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 942141,
+      "seriesId": 122,
+      "localTitle": "Age of Apocalypse",
+      "issueNumber": "3",
+      "date": "2012-05-02",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 41264,
+          "readerId": 26282,
+          "seriesName": "Age of Apocalypse (2012 - 2013)",
+          "issueNumber": "3",
+          "onSale": "2012-05-02T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 948110,
+      "seriesId": 3632,
+      "localTitle": "Incredible Hulk",
+      "issueNumber": "8",
+      "date": "2012-05-30",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 40586,
+          "readerId": 26550,
+          "seriesName": "Incredible Hulk (2011 - 2012)",
+          "issueNumber": "8",
+          "onSale": "2012-05-30T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1012947,
+      "seriesId": 122,
+      "localTitle": "Age of Apocalypse",
+      "issueNumber": "8",
+      "date": "2012-10-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 41267,
+          "readerId": 27765,
+          "seriesName": "Age of Apocalypse (2012 - 2013)",
+          "issueNumber": "8",
+          "onSale": "2012-10-03T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1015261,
+      "seriesId": 2795,
+      "localTitle": "First X-Men",
+      "issueNumber": "3",
+      "date": "2012-10-10",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "first x men",
+          "count": 4
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 42337,
+          "readerId": 27758,
+          "seriesName": "First X-Men (2011 - 2013)",
+          "issueNumber": "3",
+          "onSale": "2012-10-10T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1016426,
+      "seriesId": 1335,
+      "localTitle": "Captain Marvel",
+      "issueNumber": "5",
+      "date": "2012-10-17",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "captain marvel",
+          "count": 6
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 42674,
+          "readerId": 27844,
+          "seriesName": "Captain Marvel (2012 - 2013)",
+          "issueNumber": "5",
+          "onSale": "2012-10-17T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1030281,
+      "seriesId": 122,
+      "localTitle": "Age of Apocalypse",
+      "issueNumber": "9",
+      "date": "2012-11-07",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 41265,
+          "readerId": 27967,
+          "seriesName": "Age of Apocalypse (2012 - 2013)",
+          "issueNumber": "9",
+          "onSale": "2012-11-07T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1034768,
+      "seriesId": 1335,
+      "localTitle": "Captain Marvel",
+      "issueNumber": "7",
+      "date": "2012-11-21",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "captain marvel",
+          "count": 6
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 42672,
+          "readerId": 28034,
+          "seriesName": "Captain Marvel (2012 - 2013)",
+          "issueNumber": "7",
+          "onSale": "2012-11-21T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1051673,
+      "seriesId": 1335,
+      "localTitle": "Captain Marvel",
+      "issueNumber": "9",
+      "date": "2013-01-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "captain marvel",
+          "count": 6
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 45988,
+          "readerId": 28394,
+          "seriesName": "Captain Marvel (2012 - 2013)",
+          "issueNumber": "9",
+          "onSale": "2013-01-16T00:00:00+0000",
+          "yearPage": 2013
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1120955,
+      "seriesId": 1335,
+      "localTitle": "Captain Marvel",
+      "issueNumber": "13",
+      "date": "2013-06-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "captain marvel",
+          "count": 6
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 46857,
+          "readerId": 30241,
+          "seriesName": "Captain Marvel (2012 - 2013)",
+          "issueNumber": "13",
+          "onSale": "2013-06-19T00:00:00+0000",
+          "yearPage": 2013
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1246805,
+      "seriesId": 5700,
+      "localTitle": "Original Sin",
+      "issueNumber": "7",
+      "date": "2014-08-13",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 49526,
+          "readerId": 34677,
+          "seriesName": "Original Sin (2014)",
+          "issueNumber": "7",
+          "onSale": "2014-08-13T00:00:00+0000",
+          "yearPage": 2014
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1250700,
+      "seriesId": 5700,
+      "localTitle": "Original Sin",
+      "issueNumber": "8",
+      "date": "2014-09-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 49530,
+          "readerId": 34719,
+          "seriesName": "Original Sin (2014)",
+          "issueNumber": "8",
+          "onSale": "2014-09-03T00:00:00+0000",
+          "yearPage": 2014
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1287878,
+      "seriesId": 3181,
+      "localTitle": "Guardians 3000",
+      "issueNumber": "3",
+      "date": "2014-12-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 51140,
+          "readerId": 35822,
+          "seriesName": "Guardians 3000 (2014 - 2015)",
+          "issueNumber": "3",
+          "onSale": "2014-12-03T00:00:00+0000",
+          "yearPage": 2014
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1301069,
+      "seriesId": 401,
+      "localTitle": "Angela: Asgard's Assassin",
+      "issueNumber": "2",
+      "date": "2015-01-07",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "angela asgard s assassin",
+          "count": 5
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 53273,
+          "readerId": 36158,
+          "seriesName": "Angela: Asgard's Assassin (2014 - 2015)",
+          "issueNumber": "2",
+          "onSale": "2015-01-07T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1447137,
+      "seriesId": 4124,
+      "localTitle": "Lando",
+      "issueNumber": "2",
+      "date": "2015-08-12",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 56758,
+          "readerId": 39679,
+          "seriesName": "Lando (2015)",
+          "issueNumber": "2",
+          "onSale": "2015-08-12T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1450276,
+      "seriesId": 6164,
+      "localTitle": "S.H.I.E.L.D.",
+      "issueNumber": "9",
+      "date": "2015-08-26",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "s h i e l d",
+          "count": 5
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 52432,
+          "readerId": 39770,
+          "seriesName": "S.H.I.E.L.D. (2014 - 2015)",
+          "issueNumber": "9",
+          "onSale": "2015-08-26T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1451576,
+      "seriesId": 4124,
+      "localTitle": "Lando",
+      "issueNumber": "3",
+      "date": "2015-08-26",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 57419,
+          "readerId": 39765,
+          "seriesName": "Lando (2015)",
+          "issueNumber": "3",
+          "onSale": "2015-08-26T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1516929,
+      "seriesId": 1315,
+      "localTitle": "Captain America: White",
+      "issueNumber": "5",
+      "date": "2015-12-30",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 53623,
+          "readerId": 40735,
+          "seriesName": "Captain America: White (2015)",
+          "issueNumber": "5",
+          "onSale": "2015-12-30T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1696218,
+      "seriesId": 3218,
+      "localTitle": "Guardians of the Galaxy: Mother Entropy",
+      "issueNumber": "1",
+      "date": "2017-05-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62822,
+          "readerId": 44812,
+          "seriesName": "Guardians of the Galaxy: Mother Entropy (2017)",
+          "issueNumber": "1",
+          "onSale": "2017-05-03T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1697961,
+      "seriesId": 3218,
+      "localTitle": "Guardians of the Galaxy: Mother Entropy",
+      "issueNumber": "2",
+      "date": "2017-05-10",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62823,
+          "readerId": 44813,
+          "seriesName": "Guardians of the Galaxy: Mother Entropy (2017)",
+          "issueNumber": "2",
+          "onSale": "2017-05-10T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1699938,
+      "seriesId": 3218,
+      "localTitle": "Guardians of the Galaxy: Mother Entropy",
+      "issueNumber": "3",
+      "date": "2017-05-17",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62824,
+          "readerId": 44814,
+          "seriesName": "Guardians of the Galaxy: Mother Entropy (2017)",
+          "issueNumber": "3",
+          "onSale": "2017-05-17T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1704721,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "2",
+      "date": "2017-05-24",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61514,
+          "readerId": 44731,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "2",
+          "onSale": "2017-05-24T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1704728,
+      "seriesId": 3218,
+      "localTitle": "Guardians of the Galaxy: Mother Entropy",
+      "issueNumber": "4",
+      "date": "2017-05-24",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62825,
+          "readerId": 44815,
+          "seriesName": "Guardians of the Galaxy: Mother Entropy (2017)",
+          "issueNumber": "4",
+          "onSale": "2017-05-24T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1708618,
+      "seriesId": 3218,
+      "localTitle": "Guardians of the Galaxy: Mother Entropy",
+      "issueNumber": "5",
+      "date": "2017-05-31",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62826,
+          "readerId": 44810,
+          "seriesName": "Guardians of the Galaxy: Mother Entropy (2017)",
+          "issueNumber": "5",
+          "onSale": "2017-05-31T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1710035,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "3",
+      "date": "2017-06-07",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61515,
+          "readerId": 45013,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "3",
+          "onSale": "2017-06-07T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1716901,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "4",
+      "date": "2017-06-21",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61516,
+          "readerId": 45014,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "4",
+          "onSale": "2017-06-21T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1718730,
+      "seriesId": 7259,
+      "localTitle": "Star Wars: Droids Unplugged",
+      "issueNumber": "1",
+      "date": "2017-06-28",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 63141,
+          "readerId": 45071,
+          "seriesName": "Star Wars: Droids Unplugged (2017)",
+          "issueNumber": "1",
+          "onSale": "2017-06-28T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1720094,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "5",
+      "date": "2017-07-05",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61517,
+          "readerId": 45205,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "5",
+          "onSale": "2017-07-05T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1722620,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "6",
+      "date": "2017-07-19",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61518,
+          "readerId": 45308,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "6",
+          "onSale": "2017-07-19T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1724394,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "7",
+      "date": "2017-08-02",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61519,
+          "readerId": 45534,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "7",
+          "onSale": "2017-08-02T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1728045,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "8",
+      "date": "2017-08-16",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61520,
+          "readerId": 45535,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "8",
+          "onSale": "2017-08-16T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1732361,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "9",
+      "date": "2017-09-06",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61521,
+          "readerId": 45839,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "9",
+          "onSale": "2017-09-06T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1735447,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "10",
+      "date": "2017-09-20",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61522,
+          "readerId": 45838,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "10",
+          "onSale": "2017-09-20T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1741365,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "11",
+      "date": "2017-10-04",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61523,
+          "readerId": 46038,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "11",
+          "onSale": "2017-10-04T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1744048,
+      "seriesId": 207,
+      "localTitle": "All-New Guardians of the Galaxy",
+      "issueNumber": "12",
+      "date": "2017-10-18",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61524,
+          "readerId": 46039,
+          "seriesName": "All-New Guardians of the Galaxy (2017)",
+          "issueNumber": "12",
+          "onSale": "2017-10-18T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1970818,
+      "seriesId": 7143,
+      "localTitle": "Star Wars",
+      "issueNumber": "108",
+      "date": "2019-05-29",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 74809,
+          "readerId": 51371,
+          "seriesName": "Star Wars (1977 - 1986)",
+          "issueNumber": "108",
+          "onSale": "2019-05-29T00:00:00+0000",
+          "yearPage": 2019
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2110772,
+      "seriesId": 4393,
+      "localTitle": "Marvel Atlas",
+      "issueNumber": "2",
+      "date": "2008-03-26",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 20878,
+          "readerId": 49350,
+          "seriesName": "MARVEL ATLAS (2007 - 2008)",
+          "issueNumber": "2",
+          "onSale": "2008-03-26T00:00:00+0000",
+          "yearPage": 2008
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2395067,
+      "seriesId": 1122,
+      "localTitle": "Captain America",
+      "issueNumber": "0",
+      "date": "2022-04-20",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [
+        {
+          "series": "captain america",
+          "count": 94
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 98662,
+          "readerId": 59125,
+          "seriesName": "Captain America (2018 - 2022)",
+          "issueNumber": "0",
+          "onSale": "2022-04-20T00:00:00+0000",
+          "yearPage": 2022
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2433442,
+      "seriesId": 2161,
+      "localTitle": "Demon Wars: The Iron Samurai",
+      "issueNumber": "1",
+      "date": "2022-08-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 101176,
+          "readerId": 59992,
+          "seriesName": "Demon Wars: The Iron Samurai (2022)",
+          "issueNumber": "1",
+          "onSale": "2022-08-03T00:00:00+0000",
+          "yearPage": 2022
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2767630,
+      "seriesId": 2227,
+      "localTitle": "Doctor Strange",
+      "issueNumber": "450",
+      "date": "2025-09-03",
+      "categories": [
+        "notFound98"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 131409,
+          "readerId": 74901,
+          "seriesName": "Doctor Strange (2025 - Present)",
+          "issueNumber": "450",
+          "onSale": "2025-09-03T00:00:00+0000",
+          "yearPage": 2025
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 55530,
+      "seriesId": 5117,
+      "localTitle": "Marvels",
+      "issueNumber": "0",
+      "date": "1994-06-16",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 10279,
+          "readerId": 6460,
+          "seriesName": "Marvels (1994)",
+          "issueNumber": "0",
+          "onSale": "1994-08-01T00:00:00+0000",
+          "yearPage": 1994
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 10279,
+          "kind": "page",
+          "titles": [
+            "Marvels (1994)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 6460,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Marvels (1994)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Marvels (1994)",
+            "issueNumber": "0",
+            "onSale": "1994-08-01T00:00:00+0000",
+            "yearPage": 1994
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60498,
+      "seriesId": 1722,
+      "localTitle": "Daredevil",
+      "issueNumber": "-1",
+      "date": "1997-04-08",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "daredevil",
+          "count": 45
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 56759,
+          "readerId": 39710,
+          "seriesName": "Daredevil (1964 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 56759,
+          "kind": "page",
+          "titles": [
+            "Daredevil (1964)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 39710,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Daredevil (1964)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Daredevil (1964 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60499,
+      "seriesId": 2975,
+      "localTitle": "Generation X",
+      "issueNumber": "-1",
+      "date": "1997-05-12",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 22734,
+          "readerId": 63981,
+          "seriesName": "Generation X (1994 - 2001)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 22734,
+          "kind": "page",
+          "titles": [
+            "Generation X (1994)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 63981,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Generation X (1994)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Generation X (1994 - 2001)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60505,
+      "seriesId": 8051,
+      "localTitle": "The Sensational Spider-Man",
+      "issueNumber": "-1",
+      "date": "1997-05-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 63895,
+          "readerId": 45336,
+          "seriesName": "Sensational Spider-Man (1996)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 63895,
+          "kind": "page",
+          "titles": [
+            "Sensational Spider-Man (1996)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 45336,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Sensational Spider-Man (1996)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Sensational Spider-Man (1996)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60538,
+      "seriesId": 1087,
+      "localTitle": "Cable",
+      "issueNumber": "-1",
+      "date": "1997-05-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 7373,
+          "readerId": 43581,
+          "seriesName": "Cable (1993 - 2002)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 7373,
+          "kind": "page",
+          "titles": [
+            "Cable (1993)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 43581,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Cable (1993)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Cable (1993 - 2002)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60539,
+      "seriesId": 1962,
+      "localTitle": "Deadpool",
+      "issueNumber": "-1",
+      "date": "1997-05-26",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "deadpool",
+          "count": 86
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 47243,
+          "readerId": 28291,
+          "seriesName": "Deadpool (1997 - 2002)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 47243,
+          "kind": "page",
+          "titles": [
+            "Deadpool (1997)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 28291,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Deadpool (1997)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Deadpool (1997 - 2002)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60543,
+      "seriesId": 8131,
+      "localTitle": "The Uncanny X-Men",
+      "issueNumber": "-1",
+      "date": "1997-05-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "uncanny x men",
+          "count": 401
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 61787,
+          "readerId": 42565,
+          "seriesName": "Uncanny X-Men (1963 - 2011)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62596,
+      "seriesId": 2337,
+      "localTitle": "Earth X",
+      "issueNumber": "0",
+      "date": "1999-01-22",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 8546,
+          "readerId": 5728,
+          "seriesName": "Earth X (1999 - 2000)",
+          "issueNumber": "0",
+          "onSale": "1999-03-01T00:00:00+0000",
+          "yearPage": 1999
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 8546,
+          "kind": "page",
+          "titles": [
+            "Earth X (1999)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 5728,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Earth X (1999)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Earth X (1999 - 2000)",
+            "issueNumber": "0",
+            "onSale": "1999-03-01T00:00:00+0000",
+            "yearPage": 1999
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62699,
+      "seriesId": 6842,
+      "localTitle": "Spider-Man: Chapter One",
+      "issueNumber": "0",
+      "date": "1999-02-04",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 43224,
+          "readerId": 26287,
+          "seriesName": "Spider-Man: Chapter One (1998 - 1999)",
+          "issueNumber": "0",
+          "onSale": "1999-05-01T00:00:00+0000",
+          "yearPage": 1999
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 43224,
+          "kind": "page",
+          "titles": [
+            "Spider-Man: Chapter One (1998)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 26287,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Man: Chapter One (1998)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Man: Chapter One (1998 - 1999)",
+            "issueNumber": "0",
+            "onSale": "1999-05-01T00:00:00+0000",
+            "yearPage": 1999
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 68751,
+      "seriesId": 9479,
+      "localTitle": "Wolverine",
+      "issueNumber": "-1",
+      "date": "1997-05-29",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 14035,
+          "readerId": 44452,
+          "seriesName": "Wolverine (1988 - 2003)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 14035,
+          "kind": "page",
+          "titles": [
+            "Wolverine (1988)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 44452,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Wolverine (1988)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Wolverine (1988 - 2003)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 83552,
+      "seriesId": 9789,
+      "localTitle": "X-Force",
+      "issueNumber": "-1",
+      "date": "1997-05-28",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "x force",
+          "count": 50
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 17941,
+          "readerId": 58761,
+          "seriesName": "X-Force (1991 - 2004)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 17941,
+          "kind": "page",
+          "titles": [
+            "X-Force (1991)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 58761,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "X-Force (1991)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "X-Force (1991 - 2004)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 84018,
+      "seriesId": 6990,
+      "localTitle": "Spider-Man: The Mutant Agenda",
+      "issueNumber": "0",
+      "date": "1993-12-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 65254,
+          "readerId": 46710,
+          "seriesName": "Spider-Man: The Mutant Agenda (1994)",
+          "issueNumber": "0",
+          "onSale": "1994-02-01T00:00:00+0000",
+          "yearPage": 1994
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 65254,
+          "kind": "page",
+          "titles": [
+            "Spider-Man: The Mutant Agenda (1994)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 46710,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Man: The Mutant Agenda (1994)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Man: The Mutant Agenda (1994)",
+            "issueNumber": "0",
+            "onSale": "1994-02-01T00:00:00+0000",
+            "yearPage": 1994
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 85459,
+      "seriesId": 2513,
+      "localTitle": "Excalibur",
+      "issueNumber": "-1",
+      "date": "1997-05-21",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 8561,
+          "readerId": 39080,
+          "seriesName": "Excalibur (1988 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 8561,
+          "kind": "page",
+          "titles": [
+            "Excalibur (1988)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 39080,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Excalibur (1988)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Excalibur (1988 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 87661,
+      "seriesId": 6586,
+      "localTitle": "Spider-Girl",
+      "issueNumber": "0",
+      "date": "1998-08-06",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "spider girl",
+          "count": 8
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 13325,
+          "readerId": 2453,
+          "seriesName": "Spider-Girl (1998 - 2006)",
+          "issueNumber": "0",
+          "onSale": "1998-10-01T00:00:00+0000",
+          "yearPage": 1998
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 13325,
+          "kind": "page",
+          "titles": [
+            "Spider-Girl (1998)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 2453,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Girl (1998)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Girl (1998 - 2006)",
+            "issueNumber": "0",
+            "onSale": "1998-10-01T00:00:00+0000",
+            "yearPage": 1998
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 87662,
+      "seriesId": 6631,
+      "localTitle": "Spider-Man",
+      "issueNumber": "-1",
+      "date": "1997-05-21",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 10766,
+          "readerId": 71833,
+          "seriesName": "Spider-Man (1990 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 10766,
+          "kind": "page",
+          "titles": [
+            "Spider-Man (1990)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 71833,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Man (1990)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 97657,
+      "seriesId": 8051,
+      "localTitle": "The Sensational Spider-Man",
+      "issueNumber": "0",
+      "date": "1995-11-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61247,
+          "readerId": 42506,
+          "seriesName": "Sensational Spider-Man (1996)",
+          "issueNumber": "0",
+          "onSale": "1996-01-01T00:00:00+0000",
+          "yearPage": 1996
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 61247,
+          "kind": "page",
+          "titles": [
+            "Sensational Spider-Man (1996)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 42506,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Sensational Spider-Man (1996)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Sensational Spider-Man (1996)",
+            "issueNumber": "0",
+            "onSale": "1996-01-01T00:00:00+0000",
+            "yearPage": 1996
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 100415,
+      "seriesId": 5744,
+      "localTitle": "Paradise X",
+      "issueNumber": "0",
+      "date": "2002-02-16",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 10492,
+          "readerId": 4045,
+          "seriesName": "Paradise X (2002 - 2003)",
+          "issueNumber": "0",
+          "onSale": "2002-04-01T00:00:00+0000",
+          "yearPage": 2002
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 10492,
+          "kind": "page",
+          "titles": [
+            "Paradise X (2002)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 4045,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Paradise X (2002)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Paradise X (2002 - 2003)",
+            "issueNumber": "0",
+            "onSale": "2002-04-01T00:00:00+0000",
+            "yearPage": 2002
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 125295,
+      "seriesId": 9830,
+      "localTitle": "X-Men",
+      "issueNumber": "-1",
+      "date": "1997-05-21",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61788,
+          "readerId": 42566,
+          "seriesName": "X-Men (1991 - 2001)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 61788,
+          "kind": "page",
+          "titles": [
+            "X-Men (1991)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 42566,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "X-Men (1991)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 219569,
+      "seriesId": 7948,
+      "localTitle": "The New Invaders",
+      "issueNumber": "0",
+      "date": "2004-07-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 37748,
+          "readerId": 16062,
+          "seriesName": "New Invaders (2004 - 2005)",
+          "issueNumber": "0",
+          "onSale": "2004-08-01T00:00:00+0000",
+          "yearPage": 2004
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 37748,
+          "kind": "page",
+          "titles": [
+            "New Invaders (2004)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 16062,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "New Invaders (2004)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "New Invaders (2004 - 2005)",
+            "issueNumber": "0",
+            "onSale": "2004-08-01T00:00:00+0000",
+            "yearPage": 2004
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 251832,
+      "seriesId": 4337,
+      "localTitle": "Marvel Adventures Fantastic Four",
+      "issueNumber": "0",
+      "date": "2005-05-25",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 2035,
+          "readerId": 2072,
+          "seriesName": "Marvel Adventures Fantastic Four (2005 - 2009)",
+          "issueNumber": "0",
+          "onSale": "2005-07-01T00:00:00+0000",
+          "yearPage": 2005
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 2035,
+          "kind": "page",
+          "titles": [
+            "Marvel Adventures Fantastic Four (2005)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 2072,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Marvel Adventures Fantastic Four (2005)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Marvel Adventures Fantastic Four (2005 - 2009)",
+            "issueNumber": "0",
+            "onSale": "2005-07-01T00:00:00+0000",
+            "yearPage": 2005
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 271141,
+      "seriesId": 6443,
+      "localTitle": "Silver Surfer",
+      "issueNumber": "-1",
+      "date": "1997-05-26",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 76696,
+          "readerId": 51536,
+          "seriesName": "Silver Surfer (1987 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 76696,
+          "kind": "page",
+          "titles": [
+            "Silver Surfer (1987)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51536,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Silver Surfer (1987)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Silver Surfer (1987 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 275874,
+      "seriesId": 9169,
+      "localTitle": "Venom: Seed of Darkness",
+      "issueNumber": "-1",
+      "date": "1997-05-21",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 73540,
+          "readerId": 49701,
+          "seriesName": "Venom: Seed of Darkness (1997)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 73540,
+          "kind": "page",
+          "titles": [
+            "Venom: Seed of Darkness (1997)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 49701,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Venom: Seed of Darkness (1997)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Venom: Seed of Darkness (1997)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 277211,
+      "seriesId": 2356,
+      "localTitle": "Elektra",
+      "issueNumber": "-1",
+      "date": "1997-06-13",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "elektra",
+          "count": 2
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 62729,
+          "readerId": 44587,
+          "seriesName": "Elektra (1996 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 62729,
+          "kind": "page",
+          "titles": [
+            "Elektra (1996)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 44587,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Elektra (1996)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Elektra (1996 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 305114,
+      "seriesId": 3981,
+      "localTitle": "Journey into Mystery",
+      "issueNumber": "-1",
+      "date": "1997-05-10",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 37754,
+          "readerId": 47890,
+          "seriesName": "Journey Into Mystery (1996 - 1998)",
+          "issueNumber": "-1",
+          "onSale": "1997-07-01T00:00:00+0000",
+          "yearPage": 1997
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 37754,
+          "kind": "page",
+          "titles": [
+            "Journey Into Mystery (1996)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 47890,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Journey Into Mystery (1996)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Journey Into Mystery (1996 - 1998)",
+            "issueNumber": "-1",
+            "onSale": "1997-07-01T00:00:00+0000",
+            "yearPage": 1997
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 311260,
+      "seriesId": 286,
+      "localTitle": "Amazing Spider-Girl",
+      "issueNumber": "0",
+      "date": "2006-10-04",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 5286,
+          "readerId": 1354,
+          "seriesName": "Amazing Spider-Girl (2006 - 2009)",
+          "issueNumber": "0",
+          "onSale": "2006-10-04T00:00:00+0000",
+          "yearPage": 2006
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 5286,
+          "kind": "page",
+          "titles": [
+            "Amazing Spider-Girl (2006)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 1354,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Amazing Spider-Girl (2006)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Amazing Spider-Girl (2006 - 2009)",
+            "issueNumber": "0",
+            "onSale": "2006-10-04T00:00:00+0000",
+            "yearPage": 2006
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 328991,
+      "seriesId": 8924,
+      "localTitle": "Ultimate Vision",
+      "issueNumber": "0",
+      "date": "2006-11-29",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 4354,
+          "readerId": 129,
+          "seriesName": "Ultimate Vision (2005)",
+          "issueNumber": "0",
+          "onSale": "2006-11-29T00:00:00+0000",
+          "yearPage": 2006
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 4354,
+          "kind": "page",
+          "titles": [
+            "Ultimate Vision (2007)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 129,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Ultimate Vision (2007)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Ultimate Vision (2005)",
+            "issueNumber": "0",
+            "onSale": "2006-11-29T00:00:00+0000",
+            "yearPage": 2006
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 623362,
+      "seriesId": 4385,
+      "localTitle": "Marvel Apes",
+      "issueNumber": "0",
+      "date": "2008-12-10",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 22927,
+          "readerId": 40370,
+          "seriesName": "Marvel Apes (2008)",
+          "issueNumber": "0",
+          "onSale": "2008-12-10T00:00:00+0000",
+          "yearPage": 2008
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 22927,
+          "kind": "page",
+          "titles": [
+            "Marvel Apes (2008)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 40370,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Marvel Apes (2008)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Marvel Apes (2008)",
+            "issueNumber": "0",
+            "onSale": "2008-12-10T00:00:00+0000",
+            "yearPage": 2008
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 695290,
+      "seriesId": 358,
+      "localTitle": "Amazing Spider-Man: Extra!",
+      "issueNumber": "1",
+      "date": "2008-07-30",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 845982,
+      "seriesId": 1895,
+      "localTitle": "Dark Tower: The Gunslinger - The Battle of Tull",
+      "issueNumber": "1",
+      "date": "2011-06-01",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 33953,
+          "readerId": 78264,
+          "seriesName": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (2010 - Present)",
+          "issueNumber": "1",
+          "onSale": "2012-01-11T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 868771,
+      "seriesId": 8081,
+      "localTitle": "The Stand: The Night Has Come",
+      "issueNumber": "1",
+      "date": "2011-08-13",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 32083,
+          "readerId": 78271,
+          "seriesName": "THE STAND: THE NIGHT HAS COME (2011)",
+          "issueNumber": "1",
+          "onSale": "2012-02-15T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 934750,
+      "seriesId": 675,
+      "localTitle": "Avengers vs. X-Men",
+      "issueNumber": "0",
+      "date": "2012-03-28",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 42332,
+          "readerId": 25730,
+          "seriesName": "Avengers Vs. X-Men (2012)",
+          "issueNumber": "0",
+          "onSale": "2012-03-28T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 42332,
+          "kind": "page",
+          "titles": [
+            "Avengers Vs. X-Men (2012)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 25730,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Avengers Vs. X-Men (2012)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Avengers Vs. X-Men (2012)",
+            "issueNumber": "0",
+            "onSale": "2012-03-28T00:00:00+0000",
+            "yearPage": 2012
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1026223,
+      "seriesId": 7636,
+      "localTitle": "Thanos Quest",
+      "issueNumber": "1",
+      "date": "2012-09-05",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 44512,
+          "readerId": 27612,
+          "seriesName": "THANOS QUEST (2012)",
+          "issueNumber": "1",
+          "onSale": "2012-09-05T00:00:00+0000",
+          "yearPage": 2012
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 44512,
+          "kind": "page",
+          "titles": [
+            "THANOS QUEST ()"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "THANOS QUEST (2012)",
+            "issueNumber": "1",
+            "onSale": "2012-09-05T00:00:00+0000",
+            "yearPage": 2012
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1124758,
+      "seriesId": 7384,
+      "localTitle": "Star-Lord: The Hollow Crown",
+      "issueNumber": "1",
+      "date": "2013-06-26",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 47773,
+          "readerId": 30379,
+          "seriesName": "Star-Lord: The Hollow Crown (2013)",
+          "issueNumber": "1",
+          "onSale": "2013-06-26T00:00:00+0000",
+          "yearPage": 2013
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1198587,
+      "seriesId": 5700,
+      "localTitle": "Original Sin",
+      "issueNumber": "0",
+      "date": "2014-04-23",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 50642,
+          "readerId": 33563,
+          "seriesName": "Original Sin (2014)",
+          "issueNumber": "0",
+          "onSale": "2014-04-23T00:00:00+0000",
+          "yearPage": 2014
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 50642,
+          "kind": "page",
+          "titles": [
+            "Original Sin (2014)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 33563,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Original Sin (2014)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Original Sin (2014)",
+            "issueNumber": "0",
+            "onSale": "2014-04-23T00:00:00+0000",
+            "yearPage": 2014
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1250705,
+      "seriesId": 3300,
+      "localTitle": "Hawkeye vs. Deadpool",
+      "issueNumber": "0",
+      "date": "2014-09-03",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 50950,
+          "readerId": 34827,
+          "seriesName": "Hawkeye vs. Deadpool (2014)",
+          "issueNumber": "0",
+          "onSale": "2014-09-03T00:00:00+0000",
+          "yearPage": 2014
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 50950,
+          "kind": "page",
+          "titles": [
+            "Hawkeye Vs. Deadpool (2014)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 34827,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Hawkeye Vs. Deadpool (2014)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Hawkeye vs. Deadpool (2014)",
+            "issueNumber": "0",
+            "onSale": "2014-09-03T00:00:00+0000",
+            "yearPage": 2014
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1338350,
+      "seriesId": 8986,
+      "localTitle": "Uncanny Inhumans",
+      "issueNumber": "0",
+      "date": "2015-04-01",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 52855,
+          "readerId": 37150,
+          "seriesName": "Uncanny Inhumans (2015 - 2017)",
+          "issueNumber": "0",
+          "onSale": "2015-04-01T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 52855,
+          "kind": "page",
+          "titles": [
+            "Uncanny Inhumans (2015)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 37150,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Uncanny Inhumans (2015)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Uncanny Inhumans (2015 - 2017)",
+            "issueNumber": "0",
+            "onSale": "2015-04-01T00:00:00+0000",
+            "yearPage": 2015
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1491601,
+      "seriesId": 6600,
+      "localTitle": "Spider-Gwen",
+      "issueNumber": "0",
+      "date": "2015-11-04",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 57464,
+          "readerId": 40533,
+          "seriesName": "Spider-Gwen (2015 - 2018)",
+          "issueNumber": "0",
+          "onSale": "2015-11-04T00:00:00+0000",
+          "yearPage": 2015
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 57464,
+          "kind": "page",
+          "titles": [
+            "Spider-Gwen (2015)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 40533,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Gwen (2015)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Gwen (2015 - 2018)",
+            "issueNumber": "0",
+            "onSale": "2015-11-04T00:00:00+0000",
+            "yearPage": 2015
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1572462,
+      "seriesId": 1478,
+      "localTitle": "Civil War II",
+      "issueNumber": "0",
+      "date": "2016-05-18",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 59386,
+          "readerId": 41544,
+          "seriesName": "Civil War II (2016)",
+          "issueNumber": "0",
+          "onSale": "2016-05-18T00:00:00+0000",
+          "yearPage": 2016
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 59386,
+          "kind": "page",
+          "titles": [
+            "Civil War Ii (2016)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 41544,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Civil War Ii (2016)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Civil War II (2016)",
+            "issueNumber": "0",
+            "onSale": "2016-05-18T00:00:00+0000",
+            "yearPage": 2016
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1655288,
+      "seriesId": 3926,
+      "localTitle": "IVX",
+      "issueNumber": "0",
+      "date": "2016-11-30",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [
+        {
+          "series": "ivx",
+          "count": 6
+        }
+      ],
+      "catalogCandidates": [
+        {
+          "sourceId": 61593,
+          "readerId": 43273,
+          "seriesName": "Ivx (2016 - 2017)",
+          "issueNumber": "0",
+          "onSale": "2016-11-30T00:00:00+0000",
+          "yearPage": 2016
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 61593,
+          "kind": "page",
+          "titles": [
+            "Ivx (2016)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 43273,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Ivx (2016)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Ivx (2016 - 2017)",
+            "issueNumber": "0",
+            "onSale": "2016-11-30T00:00:00+0000",
+            "yearPage": 2016
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1660175,
+      "seriesId": 7927,
+      "localTitle": "The Mighty Captain Marvel",
+      "issueNumber": "0",
+      "date": "2016-12-21",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62427,
+          "readerId": 43489,
+          "seriesName": "The Mighty Captain Marvel (2017 - 2018)",
+          "issueNumber": "0",
+          "onSale": "2016-12-21T00:00:00+0000",
+          "yearPage": 2016
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 62427,
+          "kind": "page",
+          "titles": [
+            "The Mighty Captain Marvel (2016)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 43489,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "The Mighty Captain Marvel (2016)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "The Mighty Captain Marvel (2017 - 2018)",
+            "issueNumber": "0",
+            "onSale": "2016-12-21T00:00:00+0000",
+            "yearPage": 2016
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1692429,
+      "seriesId": 6250,
+      "localTitle": "Secret Empire",
+      "issueNumber": "0",
+      "date": "2017-04-19",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 62725,
+          "readerId": 44582,
+          "seriesName": "Secret Empire (2017)",
+          "issueNumber": "0",
+          "onSale": "2017-04-19T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 62725,
+          "kind": "page",
+          "titles": [
+            "Secret Empire (2017)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 44582,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Secret Empire (2017)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Secret Empire (2017)",
+            "issueNumber": "0",
+            "onSale": "2017-04-19T00:00:00+0000",
+            "yearPage": 2017
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1710039,
+      "seriesId": 1079,
+      "localTitle": "Bullseye",
+      "issueNumber": "5",
+      "date": "2017-06-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 61264,
+          "readerId": 45042,
+          "seriesName": "Bullseye (2017)",
+          "issueNumber": "5",
+          "onSale": "2017-06-07T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 61264,
+          "kind": "page",
+          "titles": [
+            "Bullseye (2017) #1.5"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 45042,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Bullseye (2017) #1.5"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Bullseye (2017)",
+            "issueNumber": "5",
+            "onSale": "2017-06-07T00:00:00+0000",
+            "yearPage": 2017
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1722037,
+      "seriesId": 10399,
+      "localTitle": "Zombies Assemble",
+      "issueNumber": "0",
+      "date": "2017-07-12",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 63872,
+          "readerId": 45330,
+          "seriesName": "Zombies Assemble (2017)",
+          "issueNumber": "0",
+          "onSale": "2017-07-12T00:00:00+0000",
+          "yearPage": 2017
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 63872,
+          "kind": "page",
+          "titles": [
+            "Zombies Assemble (2017)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 45330,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Zombies Assemble (2017)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Zombies Assemble (2017)",
+            "issueNumber": "0",
+            "onSale": "2017-07-12T00:00:00+0000",
+            "yearPage": 2017
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1802007,
+      "seriesId": 4772,
+      "localTitle": "Marvel Rising",
+      "issueNumber": "0",
+      "date": "2018-04-25",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 66916,
+          "readerId": 47810,
+          "seriesName": "Marvel Rising (2018)",
+          "issueNumber": "0",
+          "onSale": "2018-04-25T00:00:00+0000",
+          "yearPage": 2018
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 66916,
+          "kind": "page",
+          "titles": [
+            "Marvel Rising (2018)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 47810,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Marvel Rising (2018)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Marvel Rising (2018)",
+            "issueNumber": "0",
+            "onSale": "2018-04-25T00:00:00+0000",
+            "yearPage": 2018
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1866378,
+      "seriesId": 6583,
+      "localTitle": "Spider-Geddon",
+      "issueNumber": "0",
+      "date": "2018-09-26",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 71335,
+          "readerId": 49210,
+          "seriesName": "Spider-Geddon (2018 - 2019)",
+          "issueNumber": "0",
+          "onSale": "2018-09-26T00:00:00+0000",
+          "yearPage": 2018
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 71335,
+          "kind": "page",
+          "titles": [
+            "Spider-Geddon (2018)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 49210,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Spider-Geddon (2018)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spider-Geddon (2018 - 2019)",
+            "issueNumber": "0",
+            "onSale": "2018-09-26T00:00:00+0000",
+            "yearPage": 2018
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2006015,
+      "seriesId": 4264,
+      "localTitle": "Major X",
+      "issueNumber": "0",
+      "date": "2019-08-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 78428,
+          "readerId": 52431,
+          "seriesName": "Major X (2019)",
+          "issueNumber": "0",
+          "onSale": "2019-08-07T00:00:00+0000",
+          "yearPage": 2019
+        },
+        {
+          "sourceId": 74851,
+          "readerId": 52838,
+          "seriesName": "Major X (2019)",
+          "issueNumber": "0",
+          "onSale": "2019-10-02T00:00:00-0400",
+          "yearPage": 2019
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 78428,
+          "kind": "page",
+          "titles": [
+            "Major X (2019)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 52431,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Major X (2019)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Major X (2019)",
+            "issueNumber": "0",
+            "onSale": "2019-08-07T00:00:00+0000",
+            "yearPage": 2019
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2045230,
+      "seriesId": 8515,
+      "localTitle": "True Believers: Conan: Serpent War - The Valley of the Worm",
+      "issueNumber": "0",
+      "date": "2019-12-04",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 83856,
+          "readerId": 54191,
+          "seriesName": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+          "issueNumber": "0",
+          "onSale": "2019-12-04T00:00:00+0000",
+          "yearPage": 2019
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 83856,
+          "kind": "page",
+          "titles": [
+            "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+            "issueNumber": "0",
+            "onSale": "2019-12-04T00:00:00+0000",
+            "yearPage": 2019
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2077666,
+      "seriesId": 6209,
+      "localTitle": "Savage Avengers",
+      "issueNumber": "0",
+      "date": "2020-02-07",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 83977,
+          "readerId": 54003,
+          "seriesName": "Savage Avengers (2019 - 2022)",
+          "issueNumber": "0",
+          "onSale": "2020-02-05T00:00:00+0000",
+          "yearPage": 2020
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 83977,
+          "kind": "page",
+          "titles": [
+            "Savage Avengers (2019)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Savage Avengers (2019 - 2022)",
+            "issueNumber": "0",
+            "onSale": "2020-02-05T00:00:00+0000",
+            "yearPage": 2020
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2123233,
+      "seriesId": 2388,
+      "localTitle": "Empyre: Avengers",
+      "issueNumber": "0",
+      "date": "2020-06-24",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 82353,
+          "readerId": 54608,
+          "seriesName": "Empyre: Avengers (2020)",
+          "issueNumber": "0",
+          "onSale": "2020-06-24T00:00:00+0000",
+          "yearPage": 2020
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 82353,
+          "kind": "page",
+          "titles": [
+            "Empyre: Avengers (2020)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 54608,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Empyre: Avengers (2020)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Empyre: Avengers (2020)",
+            "issueNumber": "0",
+            "onSale": "2020-06-24T00:00:00+0000",
+            "yearPage": 2020
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2125381,
+      "seriesId": 2392,
+      "localTitle": "Empyre: Fantastic Four",
+      "issueNumber": "0",
+      "date": "2020-07-08",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 82352,
+          "readerId": 54610,
+          "seriesName": "Empyre: Fantastic Four (2020)",
+          "issueNumber": "0",
+          "onSale": "2020-07-08T00:00:00+0000",
+          "yearPage": 2020
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 82352,
+          "kind": "page",
+          "titles": [
+            "Empyre: Fantastic Four (2020)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 54610,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Empyre: Fantastic Four (2020)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Empyre: Fantastic Four (2020)",
+            "issueNumber": "0",
+            "onSale": "2020-07-08T00:00:00+0000",
+            "yearPage": 2020
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2149178,
+      "seriesId": 3589,
+      "localTitle": "Immortal Hulk",
+      "issueNumber": "0",
+      "date": "2020-09-16",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 88707,
+          "readerId": 55411,
+          "seriesName": "Immortal Hulk (2020)",
+          "issueNumber": "0",
+          "onSale": "2020-09-16T00:00:00+0000",
+          "yearPage": 2020
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 88707,
+          "kind": "page",
+          "titles": [
+            "Immortal Hulk (2020)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 55411,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Immortal Hulk (2020)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Immortal Hulk (2020)",
+            "issueNumber": "0",
+            "onSale": "2020-09-16T00:00:00+0000",
+            "yearPage": 2020
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2161101,
+      "seriesId": 3331,
+      "localTitle": "Hellstrom: Marvel Tales",
+      "issueNumber": "1",
+      "date": "2020-11-04",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 78616,
+          "readerId": 54907,
+          "seriesName": "Hellstrom: Marvel Tales (2020)",
+          "issueNumber": "1",
+          "onSale": "2020-11-04T00:00:00-0500",
+          "yearPage": 2020
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2269907,
+      "seriesId": 5382,
+      "localTitle": "Ms. Marvel: Marvel Tales",
+      "issueNumber": "1",
+      "date": "2021-10-13",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 92769,
+          "readerId": 57797,
+          "seriesName": "Ms. Marvel: Marvel Tales (2021)",
+          "issueNumber": "1",
+          "onSale": "2021-10-13T00:00:00-0400",
+          "yearPage": 2021
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2278136,
+      "seriesId": 3005,
+      "localTitle": "Genis-Vell: Marvel Tales",
+      "issueNumber": "1",
+      "date": "2021-11-17",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 92771,
+          "readerId": 57904,
+          "seriesName": "Genis-Vell: Marvel Tales (2021)",
+          "issueNumber": "1",
+          "onSale": "2021-11-17T00:00:00-0500",
+          "yearPage": 2021
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2295875,
+      "seriesId": 7885,
+      "localTitle": "The Last Avengers Story: Marvel Tales",
+      "issueNumber": "1",
+      "date": "2021-12-22",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 92772,
+          "readerId": 58204,
+          "seriesName": "The Last Avengers Story: Marvel Tales (2021)",
+          "issueNumber": "1",
+          "onSale": "2021-12-22T00:00:00-0500",
+          "yearPage": 2021
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2436000,
+      "seriesId": 5264,
+      "localTitle": "Miracleman",
+      "issueNumber": "0",
+      "date": "2022-10-05",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 101174,
+          "readerId": 60573,
+          "seriesName": "Miracleman (2022)",
+          "issueNumber": "0",
+          "onSale": "2022-10-05T00:00:00+0000",
+          "yearPage": 2022
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 101174,
+          "kind": "page",
+          "titles": [
+            "Miracleman (2022)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 60573,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Miracleman (2022)"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Miracleman (2022)",
+            "issueNumber": "0",
+            "onSale": "2022-10-05T00:00:00+0000",
+            "yearPage": 2022
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2565735,
+      "seriesId": 4363,
+      "localTitle": "Marvel Age",
+      "issueNumber": "1000",
+      "date": "2023-08-30",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 106796,
+          "readerId": 63167,
+          "seriesName": "Marvel Age (2023)",
+          "issueNumber": "1000",
+          "onSale": "2023-08-30T00:00:00+0000",
+          "yearPage": 2023
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 106796,
+          "kind": "page",
+          "titles": [
+            "Marvel Age (2023) #1"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 63167,
+          "reader": {
+            "ok": false,
+            "titles": [
+              "Marvel Age (2023) #1"
+            ]
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Marvel Age (2023)",
+            "issueNumber": "1000",
+            "onSale": "2023-08-30T00:00:00+0000",
+            "yearPage": 2023
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2568233,
+      "seriesId": 7069,
+      "localTitle": "Spine-Tingling Spider-Man",
+      "issueNumber": "0",
+      "date": "2023-09-13",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 108996,
+          "readerId": 63682,
+          "seriesName": "Spine-Tingling Spider-Man (2023 - Present)",
+          "issueNumber": "0",
+          "onSale": "2023-09-13T00:00:00+0000",
+          "yearPage": 2023
+        }
+      ],
+      "kind": "strong-unnumbered",
+      "strictCandidates": [],
+      "unnumberedCandidates": [
+        {
+          "sourceId": 108996,
+          "kind": "page",
+          "titles": [
+            "Spine-Tingling Spider-Man (2023)"
+          ],
+          "officialTitle": "",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false,
+          "strict": false,
+          "catalogStrong": true,
+          "unnumberedStrong": true,
+          "catalog": {
+            "seriesName": "Spine-Tingling Spider-Man (2023 - Present)",
+            "issueNumber": "0",
+            "onSale": "2023-09-13T00:00:00+0000",
+            "yearPage": 2023
+          }
+        }
+      ],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2572212,
+      "seriesId": 4013,
+      "localTitle": "Ka-Zar: Marvel Tales",
+      "issueNumber": "1",
+      "date": "2021-09-08",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 92765,
+          "readerId": 57670,
+          "seriesName": "Ka-Zar: Marvel Tales (2021)",
+          "issueNumber": "1",
+          "onSale": "2021-09-08T00:00:00-0400",
+          "yearPage": 2021
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2791675,
+      "seriesId": 3048,
+      "localTitle": "Ghost Rider: Danny Ketch - Marvel Tales",
+      "issueNumber": "1",
+      "date": "2022-11-16",
+      "categories": [
+        "identity61"
+      ],
+      "anchorSeries": [],
+      "catalogCandidates": [
+        {
+          "sourceId": 105921,
+          "readerId": 60744,
+          "seriesName": "Ghost Rider: Danny Ketch - Marvel Tales (2022)",
+          "issueNumber": "1",
+          "onSale": "2022-11-16T00:00:00+0000",
+          "yearPage": 2022
+        }
+      ],
+      "kind": "none",
+      "strictCandidates": [],
+      "unnumberedCandidates": [],
+      "selected": null,
+      "proposedKind": ""
+    }
+  ]
+}
