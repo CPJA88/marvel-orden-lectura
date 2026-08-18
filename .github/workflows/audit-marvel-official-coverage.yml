@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'scripts/audit-marvel-official-coverage.mjs'
+      - 'scripts/audit-marvel-official-coverage-v3.mjs'
       - '.github/workflows/audit-marvel-official-coverage.yml'
 
 permissions:
@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   pilot:
-    name: Verify official search pilot
+    name: Verify direct official-page regressions
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -34,15 +34,15 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Validate coverage auditor syntax
-        run: node --check scripts/audit-marvel-official-coverage.mjs
-      - name: Verify Strange Tales regression against Marvel official
-        run: node scripts/audit-marvel-official-coverage.mjs pilot
+      - name: Validate coverage auditor v3 syntax
+        run: node --check scripts/audit-marvel-official-coverage-v3.mjs
+      - name: Verify official pages without Marvel search
+        run: node scripts/audit-marvel-official-coverage-v3.mjs pilot
       - name: Preserve pilot report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: official-coverage-pilot-${{ github.run_id }}
+          name: official-coverage-pilot-v3-${{ github.run_id }}
           path: artifacts/official-coverage/pilot.json
           retention-days: 7
           if-no-files-found: warn
@@ -69,37 +69,37 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Restore official coverage v2 checkpoint
+      - name: Restore official coverage v3 checkpoint
         uses: actions/cache/restore@v4
         with:
-          path: .cache/marvel-official-coverage-v2
-          key: official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .cache/marvel-official-coverage-v3
+          key: official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-
-      - name: Search unresolved and negative comics on official Marvel
+            official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-
+      - name: Revalidate negative and unresolved comics
         env:
           SHARD_INDEX: ${{ matrix.shard }}
           SHARD_COUNT: 8
           COVERAGE_CONCURRENCY: 1
-        run: node scripts/audit-marvel-official-coverage.mjs scan
-      - name: Save official coverage v2 checkpoint
+        run: node scripts/audit-marvel-official-coverage-v3.mjs scan
+      - name: Save official coverage v3 checkpoint
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: .cache/marvel-official-coverage-v2
-          key: official-coverage-v2-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .cache/marvel-official-coverage-v3
+          key: official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Preserve shard result
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: official-coverage-shard-${{ matrix.shard }}
+          name: official-coverage-v3-shard-${{ matrix.shard }}
           path: artifacts/official-coverage/shard-${{ matrix.shard }}.json
           retention-days: 7
           if-no-files-found: warn
           overwrite: true
 
   merge:
-    name: Merge verified official coverage v2
+    name: Merge verified official coverage v3
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -118,39 +118,43 @@ jobs:
       - name: Download all shard reports
         uses: actions/download-artifact@v4
         with:
-          pattern: official-coverage-shard-*
+          pattern: official-coverage-v3-shard-*
           path: artifacts/official-coverage
           merge-multiple: true
-      - name: Merge official results into preinstalled cache
+      - name: Merge into isolated cache candidate
         env:
           SHARD_COUNT: 8
-        run: node scripts/audit-marvel-official-coverage.mjs merge
-      - name: Strictly validate merged coverage v2
+        run: node scripts/audit-marvel-official-coverage-v3.mjs merge
+      - name: Strictly validate candidate before publication
         run: |
           node - <<'NODE'
           const fs=require('fs');
           const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
-          if(!p.ready||p.localCount<50000||p.officiallyVerified!==true)throw new Error('Caché base inválida');
-          if(!p.officialCoverageAudit?.completed||Number(p.officialCoverageAudit.version)<2)throw new Error('Auditoría oficial v2 incompleta');
+          if(!p.ready||Number(p.localCount)!==51002||!Array.isArray(p.entries)||p.entries.length!==51002)throw new Error('Caché base inválida');
+          if(new Set(p.entries.map(r=>Number(r[0]))).size!==51002)throw new Error('IDs GCD duplicados o perdidos');
+          if(!p.officialCoverageAudit?.completed||Number(p.officialCoverageAudit.version)<3)throw new Error('Auditoría oficial v3 incompleta');
           if(p.unknown||p.ambiguous)throw new Error(`unknown=${p.unknown}, ambiguous=${p.ambiguous}`);
           const st=p.entries.find(r=>Number(r[0])===8972);
           if(!st||![1,5].includes(Number(st[3]))||Number(st[1])!==11016)throw new Error('Strange Tales #1 sigue sin Unlimited oficial');
+          const cap=p.entries.find(r=>Number(r[0])===3617);
+          if(cap&&[1,5].includes(Number(cap[3]))&&Number(cap[1])===12798)throw new Error('Captain America Comics #38 volvió a enlazarse con Captain America (1998) #38');
+          if(p.linkAudit?.allLinksVerified===true)throw new Error('La auditoría de enlaces no puede seguir marcada como válida después de cambiar cobertura');
           console.log(JSON.stringify({matched:p.matched,notListed:p.notListed,noDigital:p.noDigital,linkReady:p.linkReady,linkMissing:p.linkMissing,audit:p.officialCoverageAudit},null,2));
           NODE
       - name: Preserve merged candidate
         uses: actions/upload-artifact@v4
         with:
-          name: marvel-cache-official-coverage-${{ github.run_id }}
+          name: marvel-cache-official-coverage-v3-${{ github.run_id }}
           path: |
             source/marvel-cache/index.json
             artifacts/official-coverage/summary.json
           retention-days: 7
           if-no-files-found: error
-      - name: Commit officially audited coverage v2
+      - name: Commit audited cache atomically
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add source/marvel-cache/index.json artifacts/official-coverage/summary.json
-          git commit -m 'cache: revalidar falsos negativos contra Marvel oficial'
+          git commit -m 'cache: publicar cobertura Unlimited oficial v3 revalidada'
           git pull --rebase origin main
           git push origin HEAD:main
