@@ -1,0 +1,54 @@
+name: Audit Marvel tail A2 and B v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-tail-a2-b-v4.mjs'
+      - '.github/workflows/audit-marvel-tail-a2-b-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-tail-a2-b-v4
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate A2+B auditor
+        run: node --check scripts/audit-marvel-tail-a2-b-v4.mjs
+      - name: Audit 64 identity mismatches and 98 not-found
+        run: node scripts/audit-marvel-tail-a2-b-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/tail-a2-b-audit.json','utf8'));
+          console.log(JSON.stringify(r.summary,null,2));
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-tail-a2-b-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/tail-a2-b-audit.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/tail-a2-b-audit.json
+          git commit -m 'audit: guardar diagnóstico A2 y B v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
