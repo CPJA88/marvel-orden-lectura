@@ -11,7 +11,7 @@ on:
       - '.github/workflows/test-marvel-reader-fallback-v1240.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -46,3 +48,26 @@ jobs:
           if(JSON.stringify([built.localCount,built.matched,built.linkReady,built.linkMissing])!==JSON.stringify([51002,25329,25322,7]))throw new Error('El build alteró los contadores de caché.');
           console.log('Build validado: caché intacta y fallback reader incluido.');
           NODE
+      - name: Publish successful validation marker
+        run: |
+          mkdir -p artifacts/marvel-reader-fallback-v1240
+          node - <<'NODE'
+          const fs=require('fs');
+          const payload={
+            version:'1.2.40',
+            validatedAt:new Date().toISOString(),
+            runId:process.env.GITHUB_RUN_ID,
+            testedCommit:process.env.GITHUB_SHA,
+            targets:7,
+            fallbackMode:'official-reader-smartlink',
+            cache:{localCount:51002,matched:25329,uuidLinkReady:25322,uuidLinkMissing:7},
+            result:'pass'
+          };
+          fs.writeFileSync('artifacts/marvel-reader-fallback-v1240/validation.json',JSON.stringify(payload,null,2)+'\n');
+          NODE
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-reader-fallback-v1240/validation.json
+          git commit -m 'test: validar fallback reader v1.2.40'
+          git pull --rebase origin main
+          git push origin HEAD:main
