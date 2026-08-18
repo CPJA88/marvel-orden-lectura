@@ -1,9 +1,9 @@
 {
-  "commit": "773410a981069beae50682b9b26205023947e4f6",
-  "runId": "32109289538",
+  "commit": "f87ff9c4be3626a0ed267d8f210d663607bc419e",
+  "runId": "32109366133",
   "syntax": "success",
   "build": "success",
   "builtPatch": "success",
   "dataContract": "success",
-  "behavior": "failure"
+  "behavior": "success"
 }
