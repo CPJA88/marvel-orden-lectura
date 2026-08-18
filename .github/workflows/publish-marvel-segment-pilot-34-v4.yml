@@ -1,0 +1,70 @@
+name: Publish Marvel segment pilot 34 v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish-marvel-segment-pilot-34-v4.mjs'
+      - '.github/workflows/publish-marvel-segment-pilot-34-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-marvel-segment-pilot-34-v4
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Snapshot reader fallback
+        run: sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Validate publisher
+        run: node --check scripts/publish-marvel-segment-pilot-34-v4.mjs
+      - name: Publish exactly 34 certified UUID deeplinks
+        run: node scripts/publish-marvel-segment-pilot-34-v4.mjs
+      - name: Verify reader fallback unchanged
+        run: sha256sum -c /tmp/fallback.sha
+      - name: Validate reader fallback behavior
+        run: node scripts/test-marvel-reader-fallback-v1240.mjs
+      - name: Build PWA
+        run: npm run build
+      - name: Validate published cache and scope
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p=JSON.parse(fs.readFileSync('source/marvel-cache/index.json','utf8'));
+          const s=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/segment-pilot-34-publish-summary-v4.json','utf8'));
+          if(p.entries.length!==51002||p.matched!==29189||p.noDigital!==1135||p.notListed!==20678||p.functionalLinkReady!==29189||p.functionalLinkMissing!==0) throw new Error('Conteos finales incorrectos');
+          if(s.changedRows!==34||s.promotedMU!==34||s.promotedUuid!==34||s.confirmedNoDigital!==0||s.unchangedRows!==50968) throw new Error('Scope final incorrecto');
+          if(!Array.isArray(s.changedGcdIds)||s.changedGcdIds.length!==34||new Set(s.changedGcdIds).size!==34) throw new Error('IDs publicados incorrectos');
+          const byId=new Map(p.entries.map(r=>[Number(r[0]),r]));
+          const drn=/^drn:src:marvel:unison::prod:[0-9a-f-]{36}$/i;
+          for(const id of s.changedGcdIds){const r=byId.get(Number(id));if(!r||Number(r[3])!==1||!Number(r[1])||!Number(r[2])||!drn.test(String(r[5]||'')))throw new Error(`GCD ${id} no quedó como MU UUID`)}
+          console.log(JSON.stringify(s.after,null,2));
+          NODE
+      - name: Upload publication summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-segment-pilot-34-publish-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/segment-pilot-34-publish-summary-v4.json
+          retention-days: 14
+      - name: Commit verified segment publication
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source/marvel-cache/index.json artifacts/marvel-not-listed-v4/segment-pilot-34-publish-summary-v4.json
+          git commit -m 'cache: publicar 34 deeplinks certificados v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
