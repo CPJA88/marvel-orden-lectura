@@ -1,4 +1,4 @@
-Investigación aislada: 7 objetivos; 25.322 deeplinks previos quedan fuera del alcance.
+Investigación aislada v2: 7 objetivos; 25.322 deeplinks previos quedan fuera del alcance.
 [1/7] GCD=29395 · Marvel Treasury Edition #13 · sourceId=78145 · readerId=55204
   -> transient
 [2/7] GCD=29387 · Marvel Treasury Edition #9 · sourceId=78120 · readerId=55203
@@ -18,10 +18,11 @@ Investigación aislada: 7 objetivos; 25.322 deeplinks previos quedan fuera del a
   "identityMatched": 7,
   "unlimitedConfirmed": 7,
   "noDigitalConfirmed": 0,
+  "applinkExposed": 7,
   "resolved": 0,
   "unresolved": 7,
   "transient": 7,
   "coverageCorrectionsRecommended": 0,
-  "verifiedDrnCandidates": 0
+  "authenticTargetDrnCandidates": 0
 }
 Informe: /home/runner/work/marvel-orden-lectura/marvel-orden-lectura/artifacts/marvel-missing-drn-seven/investigation.json
