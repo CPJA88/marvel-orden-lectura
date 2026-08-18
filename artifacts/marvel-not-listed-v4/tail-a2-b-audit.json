@@ -1,0 +1,5266 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T19:58:16.663Z",
+  "mode": "tail-a2-b-audit",
+  "baseline": {
+    "matched": 29102,
+    "noDigital": 1131,
+    "notListed": 20769
+  },
+  "summary": {
+    "a2": {
+      "targets": 64,
+      "recoverable": 3,
+      "existingSource": 3,
+      "alternateSource": 0,
+      "mu": 3,
+      "noDigital": 0,
+      "unresolved": 61,
+      "tiers": {
+        "singleton-alias-pair": 3,
+        "parse-failure": 57,
+        "source-collision": 2,
+        "issue-mismatch": 2
+      }
+    },
+    "b": {
+      "targets": 98,
+      "uniqueRecovered": 0,
+      "mu": 0,
+      "noDigital": 0,
+      "noCandidate": 98,
+      "ambiguous": 0
+    },
+    "writesCache": false
+  },
+  "a2": [
+    {
+      "gcdId": 27397,
+      "local": {
+        "gcdId": 27397,
+        "seriesId": 3119,
+        "title": "Giant-Size Super-Stars",
+        "issueNumber": "1",
+        "date": "1974-03-07",
+        "seriesYear": "1974"
+      },
+      "oldTier": "singleton-alias-pair",
+      "oldSourceId": 8796,
+      "oldPageTitle": "Giant-Size Fantastic Four (1974) #1",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 8796,
+        "kind": "page",
+        "titles": [
+          "Giant-Size Fantastic Four (1974) #1"
+        ],
+        "availability": "mu",
+        "readerId": 1929,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Giant-Size Fantastic Four (1974) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=1929"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "selected": {
+        "sourceId": 8796,
+        "kind": "page",
+        "titles": [
+          "Giant-Size Fantastic Four (1974) #1"
+        ],
+        "availability": "mu",
+        "readerId": 1929,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Giant-Size Fantastic Four (1974) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=1929"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "route": "existing-source",
+      "recoverable": true,
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 55530,
+      "local": {
+        "gcdId": 55530,
+        "seriesId": 5117,
+        "title": "Marvels",
+        "issueNumber": "0",
+        "date": "1994-06-16",
+        "seriesYear": "1994"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 10279,
+      "oldPageTitle": "Marvels (1994)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 10279,
+        "kind": "page",
+        "titles": [
+          "Marvels (1994)"
+        ],
+        "availability": "mu",
+        "readerId": 6460,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Marvels (1994)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60498,
+      "local": {
+        "gcdId": 60498,
+        "seriesId": 1722,
+        "title": "Daredevil",
+        "issueNumber": "-1",
+        "date": "1997-04-08",
+        "seriesYear": "1964"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 56759,
+      "oldPageTitle": "Daredevil (1964)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 56759,
+        "kind": "page",
+        "titles": [
+          "Daredevil (1964)"
+        ],
+        "availability": "mu",
+        "readerId": 39710,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Daredevil (1964)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60499,
+      "local": {
+        "gcdId": 60499,
+        "seriesId": 2975,
+        "title": "Generation X",
+        "issueNumber": "-1",
+        "date": "1997-05-12",
+        "seriesYear": "1994"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 22734,
+      "oldPageTitle": "Generation X (1994)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 22734,
+        "kind": "page",
+        "titles": [
+          "Generation X (1994)"
+        ],
+        "availability": "mu",
+        "readerId": 63981,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Generation X (1994)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60505,
+      "local": {
+        "gcdId": 60505,
+        "seriesId": 8051,
+        "title": "The Sensational Spider-Man",
+        "issueNumber": "-1",
+        "date": "1997-05-07",
+        "seriesYear": "1996"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 63895,
+      "oldPageTitle": "Sensational Spider-Man (1996)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 63895,
+        "kind": "page",
+        "titles": [
+          "Sensational Spider-Man (1996)"
+        ],
+        "availability": "mu",
+        "readerId": 45336,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Sensational Spider-Man (1996)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60538,
+      "local": {
+        "gcdId": 60538,
+        "seriesId": 1087,
+        "title": "Cable",
+        "issueNumber": "-1",
+        "date": "1997-05-07",
+        "seriesYear": "1993"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 7373,
+      "oldPageTitle": "Cable (1993)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 7373,
+        "kind": "page",
+        "titles": [
+          "Cable (1993)"
+        ],
+        "availability": "mu",
+        "readerId": 43581,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Cable (1993)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60539,
+      "local": {
+        "gcdId": 60539,
+        "seriesId": 1962,
+        "title": "Deadpool",
+        "issueNumber": "-1",
+        "date": "1997-05-26",
+        "seriesYear": "1997"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 47243,
+      "oldPageTitle": "Deadpool (1997)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 47243,
+        "kind": "page",
+        "titles": [
+          "Deadpool (1997)"
+        ],
+        "availability": "mu",
+        "readerId": 28291,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Deadpool (1997)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60543,
+      "local": {
+        "gcdId": 60543,
+        "seriesId": 8131,
+        "title": "The Uncanny X-Men",
+        "issueNumber": "-1",
+        "date": "1997-05-07",
+        "seriesYear": "1981"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 61787,
+      "oldPageTitle": "X-Men (1963)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 61787,
+        "kind": "page",
+        "titles": [
+          "X-Men (1963)"
+        ],
+        "availability": "mu",
+        "readerId": 42565,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "X-Men (1963)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62596,
+      "local": {
+        "gcdId": 62596,
+        "seriesId": 2337,
+        "title": "Earth X",
+        "issueNumber": "0",
+        "date": "1999-01-22",
+        "seriesYear": "1999"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 8546,
+      "oldPageTitle": "Earth X (1999)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 8546,
+        "kind": "page",
+        "titles": [
+          "Earth X (1999)"
+        ],
+        "availability": "mu",
+        "readerId": 5728,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Earth X (1999)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62699,
+      "local": {
+        "gcdId": 62699,
+        "seriesId": 6842,
+        "title": "Spider-Man: Chapter One",
+        "issueNumber": "0",
+        "date": "1999-02-04",
+        "seriesYear": "1998"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 43224,
+      "oldPageTitle": "Spider-Man: Chapter One (1998)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 43224,
+        "kind": "page",
+        "titles": [
+          "Spider-Man: Chapter One (1998)"
+        ],
+        "availability": "mu",
+        "readerId": 26287,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Man: Chapter One (1998)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 68751,
+      "local": {
+        "gcdId": 68751,
+        "seriesId": 9479,
+        "title": "Wolverine",
+        "issueNumber": "-1",
+        "date": "1997-05-29",
+        "seriesYear": "1988"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 14035,
+      "oldPageTitle": "Wolverine (1988)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 14035,
+        "kind": "page",
+        "titles": [
+          "Wolverine (1988)"
+        ],
+        "availability": "mu",
+        "readerId": 44452,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Wolverine (1988)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 83552,
+      "local": {
+        "gcdId": 83552,
+        "seriesId": 9789,
+        "title": "X-Force",
+        "issueNumber": "-1",
+        "date": "1997-05-28",
+        "seriesYear": "1991"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 17941,
+      "oldPageTitle": "X-Force (1991)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 17941,
+        "kind": "page",
+        "titles": [
+          "X-Force (1991)"
+        ],
+        "availability": "mu",
+        "readerId": 58761,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "X-Force (1991)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 84018,
+      "local": {
+        "gcdId": 84018,
+        "seriesId": 6990,
+        "title": "Spider-Man: The Mutant Agenda",
+        "issueNumber": "0",
+        "date": "1993-12-07",
+        "seriesYear": "1994"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 65254,
+      "oldPageTitle": "Spider-Man: The Mutant Agenda (1994)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 65254,
+        "kind": "page",
+        "titles": [
+          "Spider-Man: The Mutant Agenda (1994)"
+        ],
+        "availability": "mu",
+        "readerId": 46710,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Man: The Mutant Agenda (1994)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 85459,
+      "local": {
+        "gcdId": 85459,
+        "seriesId": 2513,
+        "title": "Excalibur",
+        "issueNumber": "-1",
+        "date": "1997-05-21",
+        "seriesYear": "1988"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 8561,
+      "oldPageTitle": "Excalibur (1988)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 8561,
+        "kind": "page",
+        "titles": [
+          "Excalibur (1988)"
+        ],
+        "availability": "mu",
+        "readerId": 39080,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Excalibur (1988)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 87661,
+      "local": {
+        "gcdId": 87661,
+        "seriesId": 6586,
+        "title": "Spider-Girl",
+        "issueNumber": "0",
+        "date": "1998-08-06",
+        "seriesYear": "1998"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 13325,
+      "oldPageTitle": "Spider-Girl (1998)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 13325,
+        "kind": "page",
+        "titles": [
+          "Spider-Girl (1998)"
+        ],
+        "availability": "mu",
+        "readerId": 2453,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Girl (1998)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 87662,
+      "local": {
+        "gcdId": 87662,
+        "seriesId": 6631,
+        "title": "Spider-Man",
+        "issueNumber": "-1",
+        "date": "1997-05-21",
+        "seriesYear": "1990"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 10766,
+      "oldPageTitle": "Spider-Man (1990)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 10766,
+        "kind": "page",
+        "titles": [
+          "Spider-Man (1990)"
+        ],
+        "availability": "mu",
+        "readerId": 71833,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Man (1990)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 97657,
+      "local": {
+        "gcdId": 97657,
+        "seriesId": 8051,
+        "title": "The Sensational Spider-Man",
+        "issueNumber": "0",
+        "date": "1995-11-07",
+        "seriesYear": "1996"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 61247,
+      "oldPageTitle": "Sensational Spider-Man (1996)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 61247,
+        "kind": "page",
+        "titles": [
+          "Sensational Spider-Man (1996)"
+        ],
+        "availability": "mu",
+        "readerId": 42506,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Sensational Spider-Man (1996)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 100415,
+      "local": {
+        "gcdId": 100415,
+        "seriesId": 5744,
+        "title": "Paradise X",
+        "issueNumber": "0",
+        "date": "2002-02-16",
+        "seriesYear": "2002"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 10492,
+      "oldPageTitle": "Paradise X (2002)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 10492,
+        "kind": "page",
+        "titles": [
+          "Paradise X (2002)"
+        ],
+        "availability": "mu",
+        "readerId": 4045,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Paradise X (2002)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 125295,
+      "local": {
+        "gcdId": 125295,
+        "seriesId": 9830,
+        "title": "X-Men",
+        "issueNumber": "-1",
+        "date": "1997-05-21",
+        "seriesYear": "1991"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 61788,
+      "oldPageTitle": "X-Men (1991)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 61788,
+        "kind": "page",
+        "titles": [
+          "X-Men (1991)"
+        ],
+        "availability": "mu",
+        "readerId": 42566,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "X-Men (1991)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 219569,
+      "local": {
+        "gcdId": 219569,
+        "seriesId": 7948,
+        "title": "The New Invaders",
+        "issueNumber": "0",
+        "date": "2004-07-07",
+        "seriesYear": "2004"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 37748,
+      "oldPageTitle": "New Invaders (2004)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 37748,
+        "kind": "page",
+        "titles": [
+          "New Invaders (2004)"
+        ],
+        "availability": "mu",
+        "readerId": 16062,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "New Invaders (2004)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 220167,
+      "local": {
+        "gcdId": 220167,
+        "seriesId": 9353,
+        "title": "What If Karen Page Had Lived?",
+        "issueNumber": "1",
+        "date": "2004-12-29",
+        "seriesYear": "2005"
+      },
+      "oldTier": "singleton-alias-pair",
+      "oldSourceId": 1473,
+      "oldPageTitle": "What If? (2004) #1",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 1473,
+        "kind": "page",
+        "titles": [
+          "What If? (2004) #1"
+        ],
+        "availability": "mu",
+        "readerId": 2769,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "What If? (2004) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2769"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "selected": {
+        "sourceId": 1473,
+        "kind": "page",
+        "titles": [
+          "What If? (2004) #1"
+        ],
+        "availability": "mu",
+        "readerId": 2769,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "What If? (2004) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2769"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "route": "existing-source",
+      "recoverable": true,
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 251832,
+      "local": {
+        "gcdId": 251832,
+        "seriesId": 4337,
+        "title": "Marvel Adventures Fantastic Four",
+        "issueNumber": "0",
+        "date": "2005-05-25",
+        "seriesYear": "2005"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 2035,
+      "oldPageTitle": "Marvel Adventures Fantastic Four (2005)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 2035,
+        "kind": "page",
+        "titles": [
+          "Marvel Adventures Fantastic Four (2005)"
+        ],
+        "availability": "mu",
+        "readerId": 2072,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Marvel Adventures Fantastic Four (2005)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 271141,
+      "local": {
+        "gcdId": 271141,
+        "seriesId": 6443,
+        "title": "Silver Surfer",
+        "issueNumber": "-1",
+        "date": "1997-05-26",
+        "seriesYear": "1987"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 76696,
+      "oldPageTitle": "Silver Surfer (1987)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 76696,
+        "kind": "page",
+        "titles": [
+          "Silver Surfer (1987)"
+        ],
+        "availability": "mu",
+        "readerId": 51536,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Silver Surfer (1987)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 275874,
+      "local": {
+        "gcdId": 275874,
+        "seriesId": 9169,
+        "title": "Venom: Seed of Darkness",
+        "issueNumber": "-1",
+        "date": "1997-05-21",
+        "seriesYear": "1997"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 73540,
+      "oldPageTitle": "Venom: Seed of Darkness (1997)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 73540,
+        "kind": "page",
+        "titles": [
+          "Venom: Seed of Darkness (1997)"
+        ],
+        "availability": "mu",
+        "readerId": 49701,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Venom: Seed of Darkness (1997)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 277211,
+      "local": {
+        "gcdId": 277211,
+        "seriesId": 2356,
+        "title": "Elektra",
+        "issueNumber": "-1",
+        "date": "1997-06-13",
+        "seriesYear": "1996"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 62729,
+      "oldPageTitle": "Elektra (1996)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 62729,
+        "kind": "page",
+        "titles": [
+          "Elektra (1996)"
+        ],
+        "availability": "mu",
+        "readerId": 44587,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Elektra (1996)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 305114,
+      "local": {
+        "gcdId": 305114,
+        "seriesId": 3981,
+        "title": "Journey into Mystery",
+        "issueNumber": "-1",
+        "date": "1997-05-10",
+        "seriesYear": "1996"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 37754,
+      "oldPageTitle": "Journey Into Mystery (1996)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 37754,
+        "kind": "page",
+        "titles": [
+          "Journey Into Mystery (1996)"
+        ],
+        "availability": "mu",
+        "readerId": 47890,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Journey Into Mystery (1996)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 311260,
+      "local": {
+        "gcdId": 311260,
+        "seriesId": 286,
+        "title": "Amazing Spider-Girl",
+        "issueNumber": "0",
+        "date": "2006-10-04",
+        "seriesYear": "2006"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 5286,
+      "oldPageTitle": "Amazing Spider-Girl (2006)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 5286,
+        "kind": "page",
+        "titles": [
+          "Amazing Spider-Girl (2006)"
+        ],
+        "availability": "mu",
+        "readerId": 1354,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Amazing Spider-Girl (2006)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 328991,
+      "local": {
+        "gcdId": 328991,
+        "seriesId": 8924,
+        "title": "Ultimate Vision",
+        "issueNumber": "0",
+        "date": "2006-11-29",
+        "seriesYear": "2007"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 4354,
+      "oldPageTitle": "Ultimate Vision (2007)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 4354,
+        "kind": "page",
+        "titles": [
+          "Ultimate Vision (2007)"
+        ],
+        "availability": "mu",
+        "readerId": 129,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Ultimate Vision (2007)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 623362,
+      "local": {
+        "gcdId": 623362,
+        "seriesId": 4385,
+        "title": "Marvel Apes",
+        "issueNumber": "0",
+        "date": "2008-12-10",
+        "seriesYear": "2008"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 22927,
+      "oldPageTitle": "Marvel Apes (2008)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 22927,
+        "kind": "page",
+        "titles": [
+          "Marvel Apes (2008)"
+        ],
+        "availability": "mu",
+        "readerId": 40370,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Marvel Apes (2008)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 682486,
+      "local": {
+        "gcdId": 682486,
+        "seriesId": 8230,
+        "title": "Thor Giant-Size Finale",
+        "issueNumber": "1",
+        "date": "2009-11-25",
+        "seriesYear": "2010"
+      },
+      "oldTier": "singleton-alias-pair",
+      "oldSourceId": 37957,
+      "oldPageTitle": "Thor: Defining Moments Giant-Size (2009) #1",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 37957,
+        "kind": "page",
+        "titles": [
+          "Thor: Defining Moments Giant-Size (2009) #1"
+        ],
+        "availability": "mu",
+        "readerId": 18386,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Thor: Defining Moments Giant-Size (2009) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18386"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "selected": {
+        "sourceId": 37957,
+        "kind": "page",
+        "titles": [
+          "Thor: Defining Moments Giant-Size (2009) #1"
+        ],
+        "availability": "mu",
+        "readerId": 18386,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Thor: Defining Moments Giant-Size (2009) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18386"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "route": "existing-source",
+      "recoverable": true,
+      "proposedKind": "mu"
+    },
+    {
+      "gcdId": 695290,
+      "local": {
+        "gcdId": 695290,
+        "seriesId": 358,
+        "title": "Amazing Spider-Man: Extra!",
+        "issueNumber": "1",
+        "date": "2008-07-30",
+        "seriesYear": "2008"
+      },
+      "oldTier": "source-collision",
+      "oldSourceId": 23069,
+      "oldPageTitle": "Spider-Man: Brand New Day - Extra!! (2008) #1",
+      "sourceCollision": [
+        {
+          "gcdId": 640038,
+          "status": 1
+        }
+      ],
+      "direct": {
+        "sourceId": 23069,
+        "kind": "page",
+        "titles": [
+          "Spider-Man: Brand New Day - Extra!! (2008) #1"
+        ],
+        "availability": "mu",
+        "readerId": 10677,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Spider-Man: Brand New Day - Extra!! (2008) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=10677"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 845982,
+      "local": {
+        "gcdId": 845982,
+        "seriesId": 1895,
+        "title": "Dark Tower: The Gunslinger - The Battle of Tull",
+        "issueNumber": "1",
+        "date": "2011-06-01",
+        "seriesYear": "2011"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 33953,
+      "oldPageTitle": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (Hardcover)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 33953,
+        "kind": "page",
+        "titles": [
+          "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (Hardcover)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 868771,
+      "local": {
+        "gcdId": 868771,
+        "seriesId": 8081,
+        "title": "The Stand: The Night Has Come",
+        "issueNumber": "1",
+        "date": "2011-08-13",
+        "seriesYear": "2011"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 32083,
+      "oldPageTitle": "THE STAND: THE NIGHT HAS COME (Hardcover)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 32083,
+        "kind": "page",
+        "titles": [
+          "THE STAND: THE NIGHT HAS COME (Hardcover)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 875744,
+      "local": {
+        "gcdId": 875744,
+        "seriesId": 8816,
+        "title": "Ultimate Comics Spider-Man",
+        "issueNumber": "1",
+        "date": "2011-09-14",
+        "seriesYear": "2011"
+      },
+      "oldTier": "source-collision",
+      "oldSourceId": 38394,
+      "oldPageTitle": "Ultimate Spider-Man (2011) #1",
+      "sourceCollision": [
+        {
+          "gcdId": 816506,
+          "status": 1
+        }
+      ],
+      "direct": {
+        "sourceId": 38394,
+        "kind": "page",
+        "titles": [
+          "Ultimate Spider-Man (2011) #1"
+        ],
+        "availability": "mu",
+        "readerId": 23712,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": true,
+        "reader": {
+          "ok": true,
+          "title": "Ultimate Spider-Man (2011) #1",
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23712"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": true,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 934750,
+      "local": {
+        "gcdId": 934750,
+        "seriesId": 675,
+        "title": "Avengers vs. X-Men",
+        "issueNumber": "0",
+        "date": "2012-03-28",
+        "seriesYear": "2012"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 42332,
+      "oldPageTitle": "Avengers Vs. X-Men (2012)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 42332,
+        "kind": "page",
+        "titles": [
+          "Avengers Vs. X-Men (2012)"
+        ],
+        "availability": "mu",
+        "readerId": 25730,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Avengers Vs. X-Men (2012)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1026223,
+      "local": {
+        "gcdId": 1026223,
+        "seriesId": 7636,
+        "title": "Thanos Quest",
+        "issueNumber": "1",
+        "date": "2012-09-05",
+        "seriesYear": "2012"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 44512,
+      "oldPageTitle": "THANOS QUEST ()",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 44512,
+        "kind": "page",
+        "titles": [
+          "THANOS QUEST ()"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1124758,
+      "local": {
+        "gcdId": 1124758,
+        "seriesId": 7384,
+        "title": "Star-Lord: The Hollow Crown",
+        "issueNumber": "1",
+        "date": "2013-06-26",
+        "seriesYear": "2013"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 47773,
+      "oldPageTitle": "Star-Lord: The Hollow Crown (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 47773,
+        "kind": "page",
+        "titles": [
+          "Star-Lord: The Hollow Crown (Trade Paperback)"
+        ],
+        "availability": "mu",
+        "readerId": 30379,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Star-Lord: The Hollow Crown (Trade Paperback)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1198587,
+      "local": {
+        "gcdId": 1198587,
+        "seriesId": 5700,
+        "title": "Original Sin",
+        "issueNumber": "0",
+        "date": "2014-04-23",
+        "seriesYear": "2014"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 50642,
+      "oldPageTitle": "Original Sin (2014)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 50642,
+        "kind": "page",
+        "titles": [
+          "Original Sin (2014)"
+        ],
+        "availability": "mu",
+        "readerId": 33563,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Original Sin (2014)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1250705,
+      "local": {
+        "gcdId": 1250705,
+        "seriesId": 3300,
+        "title": "Hawkeye vs. Deadpool",
+        "issueNumber": "0",
+        "date": "2014-09-03",
+        "seriesYear": "2014"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 50950,
+      "oldPageTitle": "Hawkeye Vs. Deadpool (2014)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 50950,
+        "kind": "page",
+        "titles": [
+          "Hawkeye Vs. Deadpool (2014)"
+        ],
+        "availability": "mu",
+        "readerId": 34827,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Hawkeye Vs. Deadpool (2014)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1338350,
+      "local": {
+        "gcdId": 1338350,
+        "seriesId": 8986,
+        "title": "Uncanny Inhumans",
+        "issueNumber": "0",
+        "date": "2015-04-01",
+        "seriesYear": "2015"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 52855,
+      "oldPageTitle": "Uncanny Inhumans (2015)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 52855,
+        "kind": "page",
+        "titles": [
+          "Uncanny Inhumans (2015)"
+        ],
+        "availability": "mu",
+        "readerId": 37150,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Uncanny Inhumans (2015)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1491601,
+      "local": {
+        "gcdId": 1491601,
+        "seriesId": 6600,
+        "title": "Spider-Gwen",
+        "issueNumber": "0",
+        "date": "2015-11-04",
+        "seriesYear": "2016"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 57464,
+      "oldPageTitle": "Spider-Gwen (2015)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 57464,
+        "kind": "page",
+        "titles": [
+          "Spider-Gwen (2015)"
+        ],
+        "availability": "mu",
+        "readerId": 40533,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Gwen (2015)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1572462,
+      "local": {
+        "gcdId": 1572462,
+        "seriesId": 1478,
+        "title": "Civil War II",
+        "issueNumber": "0",
+        "date": "2016-05-18",
+        "seriesYear": "2016"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 59386,
+      "oldPageTitle": "Civil War Ii (2016)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 59386,
+        "kind": "page",
+        "titles": [
+          "Civil War Ii (2016)"
+        ],
+        "availability": "mu",
+        "readerId": 41544,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Civil War Ii (2016)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1655288,
+      "local": {
+        "gcdId": 1655288,
+        "seriesId": 3926,
+        "title": "IVX",
+        "issueNumber": "0",
+        "date": "2016-11-30",
+        "seriesYear": "2017"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 61593,
+      "oldPageTitle": "Ivx (2016)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 61593,
+        "kind": "page",
+        "titles": [
+          "Ivx (2016)"
+        ],
+        "availability": "mu",
+        "readerId": 43273,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Ivx (2016)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1660175,
+      "local": {
+        "gcdId": 1660175,
+        "seriesId": 7927,
+        "title": "The Mighty Captain Marvel",
+        "issueNumber": "0",
+        "date": "2016-12-21",
+        "seriesYear": "2017"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 62427,
+      "oldPageTitle": "The Mighty Captain Marvel (2016)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 62427,
+        "kind": "page",
+        "titles": [
+          "The Mighty Captain Marvel (2016)"
+        ],
+        "availability": "mu",
+        "readerId": 43489,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "The Mighty Captain Marvel (2016)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1692429,
+      "local": {
+        "gcdId": 1692429,
+        "seriesId": 6250,
+        "title": "Secret Empire",
+        "issueNumber": "0",
+        "date": "2017-04-19",
+        "seriesYear": "2017"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 62725,
+      "oldPageTitle": "Secret Empire (2017)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 62725,
+        "kind": "page",
+        "titles": [
+          "Secret Empire (2017)"
+        ],
+        "availability": "mu",
+        "readerId": 44582,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Secret Empire (2017)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1710039,
+      "local": {
+        "gcdId": 1710039,
+        "seriesId": 1079,
+        "title": "Bullseye",
+        "issueNumber": "5",
+        "date": "2017-06-07",
+        "seriesYear": "2017"
+      },
+      "oldTier": "issue-mismatch",
+      "oldSourceId": 61264,
+      "oldPageTitle": "Bullseye (2017) #1.5",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 61264,
+        "kind": "page",
+        "titles": [
+          "Bullseye (2017) #1.5"
+        ],
+        "availability": "mu",
+        "readerId": 45042,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Bullseye (2017) #1.5"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1722037,
+      "local": {
+        "gcdId": 1722037,
+        "seriesId": 10399,
+        "title": "Zombies Assemble",
+        "issueNumber": "0",
+        "date": "2017-07-12",
+        "seriesYear": "2017"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 63872,
+      "oldPageTitle": "Zombies Assemble (2017)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 63872,
+        "kind": "page",
+        "titles": [
+          "Zombies Assemble (2017)"
+        ],
+        "availability": "mu",
+        "readerId": 45330,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Zombies Assemble (2017)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1802007,
+      "local": {
+        "gcdId": 1802007,
+        "seriesId": 4772,
+        "title": "Marvel Rising",
+        "issueNumber": "0",
+        "date": "2018-04-25",
+        "seriesYear": "2018"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 66916,
+      "oldPageTitle": "Marvel Rising (2018)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 66916,
+        "kind": "page",
+        "titles": [
+          "Marvel Rising (2018)"
+        ],
+        "availability": "mu",
+        "readerId": 47810,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Marvel Rising (2018)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1866378,
+      "local": {
+        "gcdId": 1866378,
+        "seriesId": 6583,
+        "title": "Spider-Geddon",
+        "issueNumber": "0",
+        "date": "2018-09-26",
+        "seriesYear": "2018"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 71335,
+      "oldPageTitle": "Spider-Geddon (2018)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 71335,
+        "kind": "page",
+        "titles": [
+          "Spider-Geddon (2018)"
+        ],
+        "availability": "mu",
+        "readerId": 49210,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Spider-Geddon (2018)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2006015,
+      "local": {
+        "gcdId": 2006015,
+        "seriesId": 4264,
+        "title": "Major X",
+        "issueNumber": "0",
+        "date": "2019-08-07",
+        "seriesYear": "2019"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 78428,
+      "oldPageTitle": "Major X (2019)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 78428,
+        "kind": "page",
+        "titles": [
+          "Major X (2019)"
+        ],
+        "availability": "mu",
+        "readerId": 52431,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Major X (2019)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2045230,
+      "local": {
+        "gcdId": 2045230,
+        "seriesId": 8515,
+        "title": "True Believers: Conan: Serpent War - The Valley of the Worm",
+        "issueNumber": "0",
+        "date": "2019-12-04",
+        "seriesYear": "2020"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 83856,
+      "oldPageTitle": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 83856,
+        "kind": "page",
+        "titles": [
+          "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2077666,
+      "local": {
+        "gcdId": 2077666,
+        "seriesId": 6209,
+        "title": "Savage Avengers",
+        "issueNumber": "0",
+        "date": "2020-02-07",
+        "seriesYear": "2019"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 83977,
+      "oldPageTitle": "Savage Avengers (2019)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 83977,
+        "kind": "page",
+        "titles": [
+          "Savage Avengers (2019)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2123233,
+      "local": {
+        "gcdId": 2123233,
+        "seriesId": 2388,
+        "title": "Empyre: Avengers",
+        "issueNumber": "0",
+        "date": "2020-06-24",
+        "seriesYear": "2020"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 82353,
+      "oldPageTitle": "Empyre: Avengers (2020)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 82353,
+        "kind": "page",
+        "titles": [
+          "Empyre: Avengers (2020)"
+        ],
+        "availability": "mu",
+        "readerId": 54608,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Empyre: Avengers (2020)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2125381,
+      "local": {
+        "gcdId": 2125381,
+        "seriesId": 2392,
+        "title": "Empyre: Fantastic Four",
+        "issueNumber": "0",
+        "date": "2020-07-08",
+        "seriesYear": "2020"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 82352,
+      "oldPageTitle": "Empyre: Fantastic Four (2020)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 82352,
+        "kind": "page",
+        "titles": [
+          "Empyre: Fantastic Four (2020)"
+        ],
+        "availability": "mu",
+        "readerId": 54610,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Empyre: Fantastic Four (2020)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2149178,
+      "local": {
+        "gcdId": 2149178,
+        "seriesId": 3589,
+        "title": "Immortal Hulk",
+        "issueNumber": "0",
+        "date": "2020-09-16",
+        "seriesYear": "2018"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 88707,
+      "oldPageTitle": "Immortal Hulk (2020)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 88707,
+        "kind": "page",
+        "titles": [
+          "Immortal Hulk (2020)"
+        ],
+        "availability": "mu",
+        "readerId": 55411,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Immortal Hulk (2020)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2161101,
+      "local": {
+        "gcdId": 2161101,
+        "seriesId": 3331,
+        "title": "Hellstrom: Marvel Tales",
+        "issueNumber": "1",
+        "date": "2020-11-04",
+        "seriesYear": "2021"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 78616,
+      "oldPageTitle": "Hellstrom: Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 78616,
+        "kind": "page",
+        "titles": [
+          "Hellstrom: Marvel Tales (Trade Paperback)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2269907,
+      "local": {
+        "gcdId": 2269907,
+        "seriesId": 5382,
+        "title": "Ms. Marvel: Marvel Tales",
+        "issueNumber": "1",
+        "date": "2021-10-13",
+        "seriesYear": "2021"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 92769,
+      "oldPageTitle": "Ms. Marvel: Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 92769,
+        "kind": "retryable",
+        "reason": "HTTP 403"
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2278136,
+      "local": {
+        "gcdId": 2278136,
+        "seriesId": 3005,
+        "title": "Genis-Vell: Marvel Tales",
+        "issueNumber": "1",
+        "date": "2021-11-17",
+        "seriesYear": "2022"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 92771,
+      "oldPageTitle": "Genis-Vell: Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 92771,
+        "kind": "page",
+        "titles": [
+          "Genis-Vell: Marvel Tales (Trade Paperback)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2295875,
+      "local": {
+        "gcdId": 2295875,
+        "seriesId": 7885,
+        "title": "The Last Avengers Story: Marvel Tales",
+        "issueNumber": "1",
+        "date": "2021-12-22",
+        "seriesYear": "2022"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 92772,
+      "oldPageTitle": "The Last Avengers Story: Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 92772,
+        "kind": "page",
+        "titles": [
+          "The Last Avengers Story: Marvel Tales (Trade Paperback)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2436000,
+      "local": {
+        "gcdId": 2436000,
+        "seriesId": 5264,
+        "title": "Miracleman",
+        "issueNumber": "0",
+        "date": "2022-10-05",
+        "seriesYear": "2022"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 101174,
+      "oldPageTitle": "Miracleman (2022)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 101174,
+        "kind": "page",
+        "titles": [
+          "Miracleman (2022)"
+        ],
+        "availability": "mu",
+        "readerId": 60573,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Miracleman (2022)"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2565735,
+      "local": {
+        "gcdId": 2565735,
+        "seriesId": 4363,
+        "title": "Marvel Age",
+        "issueNumber": "1000",
+        "date": "2023-08-30",
+        "seriesYear": "2023"
+      },
+      "oldTier": "issue-mismatch",
+      "oldSourceId": 106796,
+      "oldPageTitle": "Marvel Age (2023) #1",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 106796,
+        "kind": "page",
+        "titles": [
+          "Marvel Age (2023) #1"
+        ],
+        "availability": "mu",
+        "readerId": 63167,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "reader-identity-mismatch",
+          "titles": [
+            "Marvel Age (2023) #1"
+          ]
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2568233,
+      "local": {
+        "gcdId": 2568233,
+        "seriesId": 7069,
+        "title": "Spine-Tingling Spider-Man",
+        "issueNumber": "0",
+        "date": "2023-09-13",
+        "seriesYear": "2023"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 108996,
+      "oldPageTitle": "Spine-Tingling Spider-Man (2023)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 108996,
+        "kind": "page",
+        "titles": [
+          "Spine-Tingling Spider-Man (2023)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2572212,
+      "local": {
+        "gcdId": 2572212,
+        "seriesId": 4013,
+        "title": "Ka-Zar: Marvel Tales",
+        "issueNumber": "1",
+        "date": "2021-09-08",
+        "seriesYear": "2021"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 92765,
+      "oldPageTitle": "Ka-Zar: Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 92765,
+        "kind": "page",
+        "titles": [
+          "Ka-Zar: Marvel Tales (Trade Paperback)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2791675,
+      "local": {
+        "gcdId": 2791675,
+        "seriesId": 3048,
+        "title": "Ghost Rider: Danny Ketch - Marvel Tales",
+        "issueNumber": "1",
+        "date": "2022-11-16",
+        "seriesYear": "2023"
+      },
+      "oldTier": "parse-failure",
+      "oldSourceId": 105921,
+      "oldPageTitle": "Ghost Rider: Danny Ketch - Marvel Tales (Trade Paperback)",
+      "sourceCollision": [],
+      "direct": {
+        "sourceId": 105921,
+        "kind": "page",
+        "titles": [
+          "Ghost Rider: Danny Ketch - Marvel Tales (Trade Paperback)"
+        ],
+        "availability": "no-digital",
+        "readerId": 0,
+        "drn": "",
+        "cover": "",
+        "pageDate": "",
+        "pageExact": false,
+        "pageAllowed": false,
+        "reader": {
+          "ok": false,
+          "reason": "missing-reader-id"
+        },
+        "uuid": {
+          "ok": false
+        },
+        "functional": false,
+        "dateCompatible": true
+      },
+      "selected": null,
+      "route": "",
+      "recoverable": false,
+      "proposedKind": ""
+    }
+  ],
+  "b": [
+    {
+      "gcdId": 24423,
+      "local": {
+        "gcdId": 24423,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "7",
+        "date": "1971-05-18",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62389,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 24704,
+      "local": {
+        "gcdId": 24704,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "9",
+        "date": "1971-09-14",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62390,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 24874,
+      "local": {
+        "gcdId": 24874,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "10",
+        "date": "1971-11-16",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61926,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25024,
+      "local": {
+        "gcdId": 25024,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "11",
+        "date": "1972-01-25",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62391,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25535,
+      "local": {
+        "gcdId": 25535,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "14",
+        "date": "1972-07-18",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62392,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25720,
+      "local": {
+        "gcdId": 25720,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "15",
+        "date": "1972-09-12",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61927,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 25926,
+      "local": {
+        "gcdId": 25926,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "16",
+        "date": "1972-11-14",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61928,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26125,
+      "local": {
+        "gcdId": 26125,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "17",
+        "date": "1973-01-16",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61929,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26305,
+      "local": {
+        "gcdId": 26305,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "18",
+        "date": "1973-03-20",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61930,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26528,
+      "local": {
+        "gcdId": 26528,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "19",
+        "date": "1973-05-22",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61931,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26757,
+      "local": {
+        "gcdId": 26757,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "20",
+        "date": "1973-07-17",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 61932,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 26970,
+      "local": {
+        "gcdId": 26970,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "21",
+        "date": "1973-09-11",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62393,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27164,
+      "local": {
+        "gcdId": 27164,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "22",
+        "date": "1973-11-06",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62394,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27314,
+      "local": {
+        "gcdId": 27314,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "23",
+        "date": "1974-01-22",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62395,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 27467,
+      "local": {
+        "gcdId": 27467,
+        "seriesId": 499,
+        "title": "Astonishing Tales",
+        "issueNumber": "24",
+        "date": "1974-03-19",
+        "seriesYear": "1970"
+      },
+      "oldSourceId": 62396,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60612,
+      "local": {
+        "gcdId": 60612,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "2",
+        "date": "1997-06-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62005,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60735,
+      "local": {
+        "gcdId": 60735,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "3",
+        "date": "1997-07-19",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62006,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60852,
+      "local": {
+        "gcdId": 60852,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "4",
+        "date": "1997-08-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62007,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 60972,
+      "local": {
+        "gcdId": 60972,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "5",
+        "date": "1997-09-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62008,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61083,
+      "local": {
+        "gcdId": 61083,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "6",
+        "date": "1997-10-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62009,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61286,
+      "local": {
+        "gcdId": 61286,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "7",
+        "date": "1997-11-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 50676,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61411,
+      "local": {
+        "gcdId": 61411,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "8",
+        "date": "1997-12-19",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62011,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61797,
+      "local": {
+        "gcdId": 61797,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "12",
+        "date": "1998-04-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62012,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 61891,
+      "local": {
+        "gcdId": 61891,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "13",
+        "date": "1998-05-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62013,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62001,
+      "local": {
+        "gcdId": 62001,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "14",
+        "date": "1998-06-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62014,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62266,
+      "local": {
+        "gcdId": 62266,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "17",
+        "date": "1998-09-16",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62015,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62396,
+      "local": {
+        "gcdId": 62396,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "18",
+        "date": "1998-10-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62016,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 62497,
+      "local": {
+        "gcdId": 62497,
+        "seriesId": 3352,
+        "title": "Heroes for Hire",
+        "issueNumber": "19",
+        "date": "1998-11-18",
+        "seriesYear": "1997"
+      },
+      "oldSourceId": 62017,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 215946,
+      "local": {
+        "gcdId": 215946,
+        "seriesId": 7565,
+        "title": "Tales to Astonish",
+        "issueNumber": "1",
+        "date": "1994-10-04",
+        "seriesYear": "1994"
+      },
+      "oldSourceId": 66352,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 215947,
+      "local": {
+        "gcdId": 215947,
+        "seriesId": 7548,
+        "title": "Tales of Suspense",
+        "issueNumber": "1",
+        "date": "1994-11-01",
+        "seriesYear": "1995"
+      },
+      "oldSourceId": 66351,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291228,
+      "local": {
+        "gcdId": 291228,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "1",
+        "date": "2004-05-19",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 654,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291229,
+      "local": {
+        "gcdId": 291229,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "2",
+        "date": "2004-06-16",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 711,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291230,
+      "local": {
+        "gcdId": 291230,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "3",
+        "date": "2004-07-21",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 533,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291231,
+      "local": {
+        "gcdId": 291231,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "4",
+        "date": "2004-08-18",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 755,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291232,
+      "local": {
+        "gcdId": 291232,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "5",
+        "date": "2004-09-15",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 827,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291233,
+      "local": {
+        "gcdId": 291233,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "6",
+        "date": "2004-10-20",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 910,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291234,
+      "local": {
+        "gcdId": 291234,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "7",
+        "date": "2004-12-01",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 80,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291235,
+      "local": {
+        "gcdId": 291235,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "8",
+        "date": "2005-01-12",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 1483,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291236,
+      "local": {
+        "gcdId": 291236,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "9",
+        "date": "2005-01-26",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 1568,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291237,
+      "local": {
+        "gcdId": 291237,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "10",
+        "date": "2005-02-16",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 1657,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291238,
+      "local": {
+        "gcdId": 291238,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "11",
+        "date": "2005-03-23",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 1751,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291239,
+      "local": {
+        "gcdId": 291239,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "12",
+        "date": "2005-04-20",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 1857,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291240,
+      "local": {
+        "gcdId": 291240,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "13",
+        "date": "2005-05-04",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2007,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291241,
+      "local": {
+        "gcdId": 291241,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "14",
+        "date": "2005-05-18",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2008,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291242,
+      "local": {
+        "gcdId": 291242,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "15",
+        "date": "2005-06-22",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2112,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291243,
+      "local": {
+        "gcdId": 291243,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "16",
+        "date": "2005-07-27",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2221,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291244,
+      "local": {
+        "gcdId": 291244,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "17",
+        "date": "2005-08-24",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2991,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291245,
+      "local": {
+        "gcdId": 291245,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "18",
+        "date": "2005-09-28",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2466,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 291246,
+      "local": {
+        "gcdId": 291246,
+        "seriesId": 5546,
+        "title": "New X-Men",
+        "issueNumber": "19",
+        "date": "2005-10-26",
+        "seriesYear": "2004"
+      },
+      "oldSourceId": 2518,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 386796,
+      "local": {
+        "gcdId": 386796,
+        "seriesId": 9760,
+        "title": "X-Factor",
+        "issueNumber": "26",
+        "date": "2007-12-12",
+        "seriesYear": "2006"
+      },
+      "oldSourceId": 21915,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 534726,
+      "local": {
+        "gcdId": 534726,
+        "seriesId": 1315,
+        "title": "Captain America: White",
+        "issueNumber": "0",
+        "date": "2008-07-10",
+        "seriesYear": "2008"
+      },
+      "oldSourceId": 21599,
+      "searchIds": [],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 695292,
+      "local": {
+        "gcdId": 695292,
+        "seriesId": 358,
+        "title": "Amazing Spider-Man: Extra!",
+        "issueNumber": "3",
+        "date": "2009-03-18",
+        "seriesYear": "2008"
+      },
+      "oldSourceId": 23834,
+      "searchIds": [],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 771495,
+      "local": {
+        "gcdId": 771495,
+        "seriesId": 3401,
+        "title": "Hit-Monkey",
+        "issueNumber": "2",
+        "date": "2010-12-31",
+        "seriesYear": "2010"
+      },
+      "oldSourceId": 32490,
+      "searchIds": [],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 791641,
+      "local": {
+        "gcdId": 791641,
+        "seriesId": 8259,
+        "title": "Thor: For Asgard",
+        "issueNumber": "5",
+        "date": "2010-12-02",
+        "seriesYear": "2010"
+      },
+      "oldSourceId": 36245,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 802516,
+      "local": {
+        "gcdId": 802516,
+        "seriesId": 8259,
+        "title": "Thor: For Asgard",
+        "issueNumber": "6",
+        "date": "2011-02-02",
+        "seriesYear": "2010"
+      },
+      "oldSourceId": 34715,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 811563,
+      "local": {
+        "gcdId": 811563,
+        "seriesId": 9501,
+        "title": "Wolverine / Hercules: Myths, Monsters & Mutants",
+        "issueNumber": "1",
+        "date": "2011-03-02",
+        "seriesYear": "2011"
+      },
+      "oldSourceId": 36096,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 901961,
+      "local": {
+        "gcdId": 901961,
+        "seriesId": 3632,
+        "title": "Incredible Hulk",
+        "issueNumber": "3",
+        "date": "2011-12-21",
+        "seriesYear": "2011"
+      },
+      "oldSourceId": 33283,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 904844,
+      "local": {
+        "gcdId": 904844,
+        "seriesId": 3632,
+        "title": "Incredible Hulk",
+        "issueNumber": "4",
+        "date": "2012-01-11",
+        "seriesYear": "2011"
+      },
+      "oldSourceId": 33285,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 927103,
+      "local": {
+        "gcdId": 927103,
+        "seriesId": 122,
+        "title": "Age of Apocalypse",
+        "issueNumber": "1",
+        "date": "2012-03-07",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 41274,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 942141,
+      "local": {
+        "gcdId": 942141,
+        "seriesId": 122,
+        "title": "Age of Apocalypse",
+        "issueNumber": "3",
+        "date": "2012-05-02",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 41264,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 948110,
+      "local": {
+        "gcdId": 948110,
+        "seriesId": 3632,
+        "title": "Incredible Hulk",
+        "issueNumber": "8",
+        "date": "2012-05-30",
+        "seriesYear": "2011"
+      },
+      "oldSourceId": 40586,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1012947,
+      "local": {
+        "gcdId": 1012947,
+        "seriesId": 122,
+        "title": "Age of Apocalypse",
+        "issueNumber": "8",
+        "date": "2012-10-03",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 41267,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1015261,
+      "local": {
+        "gcdId": 1015261,
+        "seriesId": 2795,
+        "title": "First X-Men",
+        "issueNumber": "3",
+        "date": "2012-10-10",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 42337,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1016426,
+      "local": {
+        "gcdId": 1016426,
+        "seriesId": 1335,
+        "title": "Captain Marvel",
+        "issueNumber": "5",
+        "date": "2012-10-17",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 42674,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1030281,
+      "local": {
+        "gcdId": 1030281,
+        "seriesId": 122,
+        "title": "Age of Apocalypse",
+        "issueNumber": "9",
+        "date": "2012-11-07",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 41265,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1034768,
+      "local": {
+        "gcdId": 1034768,
+        "seriesId": 1335,
+        "title": "Captain Marvel",
+        "issueNumber": "7",
+        "date": "2012-11-21",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 42672,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1051673,
+      "local": {
+        "gcdId": 1051673,
+        "seriesId": 1335,
+        "title": "Captain Marvel",
+        "issueNumber": "9",
+        "date": "2013-01-16",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 45988,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1120955,
+      "local": {
+        "gcdId": 1120955,
+        "seriesId": 1335,
+        "title": "Captain Marvel",
+        "issueNumber": "13",
+        "date": "2013-06-19",
+        "seriesYear": "2012"
+      },
+      "oldSourceId": 46857,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1246805,
+      "local": {
+        "gcdId": 1246805,
+        "seriesId": 5700,
+        "title": "Original Sin",
+        "issueNumber": "7",
+        "date": "2014-08-13",
+        "seriesYear": "2014"
+      },
+      "oldSourceId": 49526,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1250700,
+      "local": {
+        "gcdId": 1250700,
+        "seriesId": 5700,
+        "title": "Original Sin",
+        "issueNumber": "8",
+        "date": "2014-09-03",
+        "seriesYear": "2014"
+      },
+      "oldSourceId": 49530,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1287878,
+      "local": {
+        "gcdId": 1287878,
+        "seriesId": 3181,
+        "title": "Guardians 3000",
+        "issueNumber": "3",
+        "date": "2014-12-03",
+        "seriesYear": "2014"
+      },
+      "oldSourceId": 51140,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1301069,
+      "local": {
+        "gcdId": 1301069,
+        "seriesId": 401,
+        "title": "Angela: Asgard's Assassin",
+        "issueNumber": "2",
+        "date": "2015-01-07",
+        "seriesYear": "2015"
+      },
+      "oldSourceId": 53273,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1447137,
+      "local": {
+        "gcdId": 1447137,
+        "seriesId": 4124,
+        "title": "Lando",
+        "issueNumber": "2",
+        "date": "2015-08-12",
+        "seriesYear": "2015"
+      },
+      "oldSourceId": 56758,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1450276,
+      "local": {
+        "gcdId": 1450276,
+        "seriesId": 6164,
+        "title": "S.H.I.E.L.D.",
+        "issueNumber": "9",
+        "date": "2015-08-26",
+        "seriesYear": "2015"
+      },
+      "oldSourceId": 52432,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1451576,
+      "local": {
+        "gcdId": 1451576,
+        "seriesId": 4124,
+        "title": "Lando",
+        "issueNumber": "3",
+        "date": "2015-08-26",
+        "seriesYear": "2015"
+      },
+      "oldSourceId": 57419,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1516929,
+      "local": {
+        "gcdId": 1516929,
+        "seriesId": 1315,
+        "title": "Captain America: White",
+        "issueNumber": "5",
+        "date": "2015-12-30",
+        "seriesYear": "2015"
+      },
+      "oldSourceId": 53623,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1696218,
+      "local": {
+        "gcdId": 1696218,
+        "seriesId": 3218,
+        "title": "Guardians of the Galaxy: Mother Entropy",
+        "issueNumber": "1",
+        "date": "2017-05-03",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 62822,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1697961,
+      "local": {
+        "gcdId": 1697961,
+        "seriesId": 3218,
+        "title": "Guardians of the Galaxy: Mother Entropy",
+        "issueNumber": "2",
+        "date": "2017-05-10",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 62823,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1699938,
+      "local": {
+        "gcdId": 1699938,
+        "seriesId": 3218,
+        "title": "Guardians of the Galaxy: Mother Entropy",
+        "issueNumber": "3",
+        "date": "2017-05-17",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 62824,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1704721,
+      "local": {
+        "gcdId": 1704721,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "2",
+        "date": "2017-05-24",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61514,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1704728,
+      "local": {
+        "gcdId": 1704728,
+        "seriesId": 3218,
+        "title": "Guardians of the Galaxy: Mother Entropy",
+        "issueNumber": "4",
+        "date": "2017-05-24",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 62825,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1708618,
+      "local": {
+        "gcdId": 1708618,
+        "seriesId": 3218,
+        "title": "Guardians of the Galaxy: Mother Entropy",
+        "issueNumber": "5",
+        "date": "2017-05-31",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 62826,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1710035,
+      "local": {
+        "gcdId": 1710035,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "3",
+        "date": "2017-06-07",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61515,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1716901,
+      "local": {
+        "gcdId": 1716901,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "4",
+        "date": "2017-06-21",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61516,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1718730,
+      "local": {
+        "gcdId": 1718730,
+        "seriesId": 7259,
+        "title": "Star Wars: Droids Unplugged",
+        "issueNumber": "1",
+        "date": "2017-06-28",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 63141,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1720094,
+      "local": {
+        "gcdId": 1720094,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "5",
+        "date": "2017-07-05",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61517,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1722620,
+      "local": {
+        "gcdId": 1722620,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "6",
+        "date": "2017-07-19",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61518,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1724394,
+      "local": {
+        "gcdId": 1724394,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "7",
+        "date": "2017-08-02",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61519,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1728045,
+      "local": {
+        "gcdId": 1728045,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "8",
+        "date": "2017-08-16",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61520,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1732361,
+      "local": {
+        "gcdId": 1732361,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "9",
+        "date": "2017-09-06",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61521,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1735447,
+      "local": {
+        "gcdId": 1735447,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "10",
+        "date": "2017-09-20",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61522,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1741365,
+      "local": {
+        "gcdId": 1741365,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "11",
+        "date": "2017-10-04",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61523,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1744048,
+      "local": {
+        "gcdId": 1744048,
+        "seriesId": 207,
+        "title": "All-New Guardians of the Galaxy",
+        "issueNumber": "12",
+        "date": "2017-10-18",
+        "seriesYear": "2017"
+      },
+      "oldSourceId": 61524,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 1970818,
+      "local": {
+        "gcdId": 1970818,
+        "seriesId": 7143,
+        "title": "Star Wars",
+        "issueNumber": "108",
+        "date": "2019-05-29",
+        "seriesYear": "2019"
+      },
+      "oldSourceId": 74809,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2110772,
+      "local": {
+        "gcdId": 2110772,
+        "seriesId": 4393,
+        "title": "Marvel Atlas",
+        "issueNumber": "2",
+        "date": "2008-03-26",
+        "seriesYear": "2007"
+      },
+      "oldSourceId": 20878,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2395067,
+      "local": {
+        "gcdId": 2395067,
+        "seriesId": 1122,
+        "title": "Captain America",
+        "issueNumber": "0",
+        "date": "2022-04-20",
+        "seriesYear": "2022"
+      },
+      "oldSourceId": 98662,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2433442,
+      "local": {
+        "gcdId": 2433442,
+        "seriesId": 2161,
+        "title": "Demon Wars: The Iron Samurai",
+        "issueNumber": "1",
+        "date": "2022-08-03",
+        "seriesYear": "2022"
+      },
+      "oldSourceId": 101176,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    },
+    {
+      "gcdId": 2767630,
+      "local": {
+        "gcdId": 2767630,
+        "seriesId": 2227,
+        "title": "Doctor Strange",
+        "issueNumber": "450",
+        "date": "2025-09-03",
+        "seriesYear": "2025"
+      },
+      "oldSourceId": 131409,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "exactCandidates": [],
+      "unique": false,
+      "selected": null,
+      "proposedKind": ""
+    }
+  ]
+}
