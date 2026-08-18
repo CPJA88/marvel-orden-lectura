@@ -1,0 +1,27 @@
+{
+  "before": {
+    "matched": 25242,
+    "noDigital": 1060,
+    "notListed": 24700
+  },
+  "after": {
+    "matched": 25329,
+    "noDigital": 1057,
+    "notListed": 24616,
+    "linkReady": 25322,
+    "linkMissing": 7
+  },
+  "audit": {
+    "version": 3,
+    "completed": true,
+    "completedAt": "2026-08-18T12:31:43.469Z",
+    "authority": "marvel.com/comics/issue; discovery only via cached sourceId, catalog mirrors and marvel.com/search",
+    "checked": 25760,
+    "promotedMU": 87,
+    "falseNegativeNoDigital": 0,
+    "confirmedNoDigital": 1057,
+    "demotedUnconfirmedNoDigital": 5,
+    "remainingNotListed": 24616,
+    "localCount": 51002
+  }
+}
