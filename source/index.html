@@ -16,7 +16,19 @@
   <link rel="stylesheet" href="diagnostics.css">
   <title>Marvel · Orden de lectura</title>
 </head>
-<body>
+<body class="booting">
+<div id="bootScreen" class="boot-screen" role="status" aria-live="polite" aria-busy="true">
+  <div class="boot-card">
+    <div class="boot-brand"><span class="boot-marvel">MARVEL</span><span class="boot-reader">LECTOR</span></div>
+    <div class="boot-kicker">PREPARANDO BIBLIOTECA</div>
+    <h1 id="bootStage">Iniciando Marvel Lector</h1>
+    <p id="bootDetail">Preparando biblioteca…</p>
+    <div class="boot-progress-head"><span>Índice local</span><strong id="bootPercent">0%</strong></div>
+    <div class="boot-track" aria-label="Progreso de preparación"><div id="bootBar" class="boot-bar"></div></div>
+    <p class="boot-hint">La primera carga prepara los cómics para que después la búsqueda y los filtros funcionen directamente en memoria.</p>
+    <button id="bootRetry" class="secondary boot-retry" type="button" hidden>Reintentar</button>
+  </div>
+</div>
 <div id="app">
   <header class="topbar">
     <div class="brand" aria-label="Marvel · Orden de lectura"><span class="brand-marvel">MARVEL</span><span class="brand-copy"><strong>LECTOR</strong><small>ORDEN DE PUBLICACIÓN</small></span></div>
@@ -42,7 +54,7 @@
           <select id="decadeFilter" aria-label="Década"></select>
         </div>
         <div id="activeSeries" class="active-series hidden"></div>
-        <div class="result-line"><span id="resultCount">Cargando…</span><button id="clearFilters" class="link-btn">Restablecer</button></div>
+        <div class="result-line"><span id="resultCount">Preparando biblioteca…</span><button id="clearFilters" class="link-btn">Restablecer</button></div>
       </div>
       <div id="issueList" class="issue-list" aria-live="polite"></div><button id="loadMore" class="load-more hidden">Mostrar más</button>
     </section>
