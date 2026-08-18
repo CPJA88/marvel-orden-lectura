@@ -1,0 +1,63 @@
+name: Audit Marvel alias candidates v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-alias-official-v4.mjs'
+      - '.github/workflows/audit-marvel-alias-official-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-alias-official-v4
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Validate alias official auditor
+        run: node --check scripts/audit-marvel-alias-official-v4.mjs
+      - name: Audit 2 alias discovery candidates
+        run: node scripts/audit-marvel-alias-official-v4.mjs
+      - name: Publish summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/alias-official-audit-v4.json','utf8'));
+          console.log('## Marvel V4 · auditoría oficial de candidatos por alias');
+          console.log(`- Objetivos: ${r.summary.targets}`);
+          console.log(`- Unlimited funcionales: ${r.summary.mu}`);
+          console.log(`- NO_DIGITAL: ${r.summary.noDigital}`);
+          console.log(`- MU sin enlace: ${r.summary.muLinkMissing}`);
+          console.log(`- Identity mismatch: ${r.summary.identityMismatch}`);
+          console.log(`- Not found: ${r.summary.notFound}`);
+          console.log(`- Retryable: ${r.summary.retryable}`);
+          console.log(`- Safety failure: ${r.summary.safetyFailure}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-alias-official-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/alias-official-audit-v4.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/alias-official-audit-v4.json
+          git commit -m 'audit: guardar verificación oficial de alias v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
