@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/audit-marvel-official-coverage-v3.mjs'
+      - 'scripts/retry-marvel-official-coverage-v3.mjs'
       - '.github/workflows/audit-marvel-official-coverage.yml'
 
 permissions:
@@ -35,7 +36,9 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Validate coverage auditor v3 syntax
-        run: node --check scripts/audit-marvel-official-coverage-v3.mjs
+        run: |
+          node --check scripts/audit-marvel-official-coverage-v3.mjs
+          node --check scripts/retry-marvel-official-coverage-v3.mjs
       - name: Verify official pages without Marvel search
         run: node scripts/audit-marvel-official-coverage-v3.mjs pilot
       - name: Preserve pilot report
@@ -49,12 +52,13 @@ jobs:
           overwrite: true
 
   scan:
-    name: Scan unresolved/negative shard ${{ matrix.shard }}
+    name: Retry unresolved shard ${{ matrix.shard }}
     needs: pilot
     runs-on: ubuntu-latest
     timeout-minutes: 330
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         shard: [0,1,2,3,4,5,6,7]
     steps:
@@ -76,19 +80,20 @@ jobs:
           key: official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-
-      - name: Revalidate negative and unresolved comics
+      - name: Retry only transient official responses
         env:
           SHARD_INDEX: ${{ matrix.shard }}
           SHARD_COUNT: 8
           COVERAGE_CONCURRENCY: 1
-        run: node scripts/audit-marvel-official-coverage-v3.mjs scan
+          RETRY_MAX_PASSES: 4
+        run: node scripts/retry-marvel-official-coverage-v3.mjs
       - name: Save official coverage v3 checkpoint
         if: always()
         uses: actions/cache/save@v4
         with:
           path: .cache/marvel-official-coverage-v3
           key: official-coverage-v3-${{ runner.os }}-${{ hashFiles('source/marvel-cache/index.json') }}-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Preserve shard result
+      - name: Preserve normalized shard result
         if: always()
         uses: actions/upload-artifact@v4
         with:
