@@ -45,11 +45,18 @@ jobs:
         run: node --check scripts/pilot-marvel-not-listed-series-map-strict-v4.mjs
 
       - name: Run strict anchored-series pilot
-        run: node scripts/pilot-marvel-not-listed-series-map-strict-v4.mjs
+        id: strict
+        continue-on-error: true
+        run: |
+          mkdir -p artifacts/marvel-not-listed-v4
+          set -o pipefail
+          node scripts/pilot-marvel-not-listed-series-map-strict-v4.mjs 2>&1 | tee artifacts/marvel-not-listed-v4/pilot-series-map-strict.log
 
       - name: Publish summary
+        if: always()
         run: |
-          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          if [ -f artifacts/marvel-not-listed-v4/pilot-series-map-strict.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
           const fs=require('fs');
           const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/pilot-series-map-strict.json','utf8'));
           console.log('## Marvel NOT_LISTED V4 · series ancladas estrictas');
@@ -66,24 +73,39 @@ jobs:
           console.log(`- Fuera de ventana de fecha: ${r.pilot.badDateWindow}`);
           console.log(`- Reader route confirmada: ${r.pilot.readerRouteConfirmed}`);
           NODE
+          else
+            echo '## Marvel NOT_LISTED V4 · piloto estricto fallido antes de publicar JSON' >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo 'Revisar pilot-series-map-strict.log.' >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Preserve strict pilot artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: marvel-not-listed-series-map-strict-v4-${{ github.run_id }}
-          path: artifacts/marvel-not-listed-v4/pilot-series-map-strict.json
+          path: |
+            artifacts/marvel-not-listed-v4/pilot-series-map-strict.json
+            artifacts/marvel-not-listed-v4/pilot-series-map-strict.log
           retention-days: 14
-          if-no-files-found: error
+          if-no-files-found: warn
 
-      - name: Commit strict pilot report only
+      - name: Commit strict pilot diagnostics only
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artifacts/marvel-not-listed-v4/pilot-series-map-strict.json
+          for f in artifacts/marvel-not-listed-v4/pilot-series-map-strict.json artifacts/marvel-not-listed-v4/pilot-series-map-strict.log; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then
-            echo 'El piloto no cambió.'
+            echo 'El diagnóstico estricto no cambió.'
             exit 0
           fi
-          git commit -m 'audit: guardar piloto estricto de series NOT_LISTED v4'
+          git commit -m 'audit: guardar diagnóstico estricto de series NOT_LISTED v4'
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Fail if strict pilot rejected candidates
+        if: steps.strict.outcome != 'success'
+        run: exit 1
