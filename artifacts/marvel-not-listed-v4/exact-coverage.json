@@ -1,0 +1,779 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T18:16:56.945Z",
+  "mode": "coverage-only",
+  "writesCache": false,
+  "baseline": {
+    "localCount": 51002,
+    "matched": 25329,
+    "noDigital": 1057,
+    "notListed": 24616
+  },
+  "catalogIssues": 37526,
+  "coverage": {
+    "uniqueCandidate": 4009,
+    "tieBrokenByExactDate": 146,
+    "ambiguous": 5,
+    "noCandidate": 20602,
+    "missingLocalDate": 0,
+    "uniquePct": 16.29
+  },
+  "byDecade": {
+    "1940s": {
+      "total": 1136,
+      "unique": 0,
+      "ambiguous": 0,
+      "none": 1136
+    },
+    "1950s": {
+      "total": 3123,
+      "unique": 13,
+      "ambiguous": 0,
+      "none": 3110
+    },
+    "1960s": {
+      "total": 1203,
+      "unique": 50,
+      "ambiguous": 0,
+      "none": 1153
+    },
+    "1970s": {
+      "total": 2561,
+      "unique": 147,
+      "ambiguous": 0,
+      "none": 2414
+    },
+    "1980s": {
+      "total": 2779,
+      "unique": 242,
+      "ambiguous": 0,
+      "none": 2537
+    },
+    "1990s": {
+      "total": 4454,
+      "unique": 274,
+      "ambiguous": 0,
+      "none": 4180
+    },
+    "2000s": {
+      "total": 3251,
+      "unique": 903,
+      "ambiguous": 2,
+      "none": 2346
+    },
+    "2010s": {
+      "total": 3568,
+      "unique": 1893,
+      "ambiguous": 2,
+      "none": 1673
+    },
+    "2020s": {
+      "total": 2541,
+      "unique": 487,
+      "ambiguous": 1,
+      "none": 2053
+    }
+  },
+  "examples": [
+    {
+      "gcdId": 11235,
+      "title": "Sub-Mariner",
+      "issueNumber": "33",
+      "date": "1954-01-17",
+      "sourceId": 23523
+    },
+    {
+      "gcdId": 11230,
+      "title": "Captain America",
+      "issueNumber": "76",
+      "date": "1954-01-18",
+      "sourceId": 22639
+    },
+    {
+      "gcdId": 11437,
+      "title": "Captain America",
+      "issueNumber": "77",
+      "date": "1954-03-19",
+      "sourceId": 23243
+    },
+    {
+      "gcdId": 11369,
+      "title": "Sub-Mariner",
+      "issueNumber": "34",
+      "date": "1954-03-19",
+      "sourceId": 23524
+    },
+    {
+      "gcdId": 11499,
+      "title": "Sub-Mariner",
+      "issueNumber": "35",
+      "date": "1954-05-19",
+      "sourceId": 23525
+    },
+    {
+      "gcdId": 11555,
+      "title": "Captain America",
+      "issueNumber": "78",
+      "date": "1954-06-19",
+      "sourceId": 23244
+    },
+    {
+      "gcdId": 11559,
+      "title": "Sub-Mariner",
+      "issueNumber": "36",
+      "date": "1954-08-10",
+      "sourceId": 23526
+    },
+    {
+      "gcdId": 11745,
+      "title": "Sub-Mariner",
+      "issueNumber": "37",
+      "date": "1954-09-18",
+      "sourceId": 23527
+    },
+    {
+      "gcdId": 11891,
+      "title": "Sub-Mariner",
+      "issueNumber": "38",
+      "date": "1954-11-11",
+      "sourceId": 23528
+    },
+    {
+      "gcdId": 12009,
+      "title": "Sub-Mariner",
+      "issueNumber": "39",
+      "date": "1955-01-09",
+      "sourceId": 23529
+    },
+    {
+      "gcdId": 12123,
+      "title": "Sub-Mariner",
+      "issueNumber": "40",
+      "date": "1955-03-11",
+      "sourceId": 23530
+    },
+    {
+      "gcdId": 12264,
+      "title": "Sub-Mariner",
+      "issueNumber": "41",
+      "date": "1955-05-11",
+      "sourceId": 23531
+    },
+    {
+      "gcdId": 12394,
+      "title": "Sub-Mariner",
+      "issueNumber": "42",
+      "date": "1955-07-11",
+      "sourceId": 23532
+    },
+    {
+      "gcdId": 15779,
+      "title": "The Rawhide Kid",
+      "issueNumber": "17",
+      "date": "1960-03-28",
+      "sourceId": 16979
+    },
+    {
+      "gcdId": 15888,
+      "title": "The Rawhide Kid",
+      "issueNumber": "18",
+      "date": "1960-05-31",
+      "sourceId": 16980
+    },
+    {
+      "gcdId": 16014,
+      "title": "The Rawhide Kid",
+      "issueNumber": "19",
+      "date": "1960-07-28",
+      "sourceId": 16981
+    },
+    {
+      "gcdId": 16110,
+      "title": "The Rawhide Kid",
+      "issueNumber": "20",
+      "date": "1960-09-28",
+      "sourceId": 16982
+    },
+    {
+      "gcdId": 16203,
+      "title": "The Rawhide Kid",
+      "issueNumber": "21",
+      "date": "1961-01-05",
+      "sourceId": 16983
+    },
+    {
+      "gcdId": 16299,
+      "title": "The Rawhide Kid",
+      "issueNumber": "22",
+      "date": "1961-03-07",
+      "sourceId": 16984
+    },
+    {
+      "gcdId": 16394,
+      "title": "The Rawhide Kid",
+      "issueNumber": "23",
+      "date": "1961-05-09",
+      "sourceId": 16985
+    },
+    {
+      "gcdId": 16505,
+      "title": "The Rawhide Kid",
+      "issueNumber": "24",
+      "date": "1961-07-11",
+      "sourceId": 16986
+    },
+    {
+      "gcdId": 16641,
+      "title": "The Rawhide Kid",
+      "issueNumber": "25",
+      "date": "1961-09-05",
+      "sourceId": 16987
+    },
+    {
+      "gcdId": 16779,
+      "title": "The Rawhide Kid",
+      "issueNumber": "26",
+      "date": "1961-11-09",
+      "sourceId": 16988
+    },
+    {
+      "gcdId": 16880,
+      "title": "The Rawhide Kid",
+      "issueNumber": "27",
+      "date": "1962-01-09",
+      "sourceId": 16989
+    },
+    {
+      "gcdId": 16990,
+      "title": "The Rawhide Kid",
+      "issueNumber": "28",
+      "date": "1962-03-08",
+      "sourceId": 16990
+    },
+    {
+      "gcdId": 17101,
+      "title": "The Rawhide Kid",
+      "issueNumber": "29",
+      "date": "1962-05-08",
+      "sourceId": 16991
+    },
+    {
+      "gcdId": 17213,
+      "title": "The Rawhide Kid",
+      "issueNumber": "30",
+      "date": "1962-07-10",
+      "sourceId": 16992
+    },
+    {
+      "gcdId": 17276,
+      "title": "Two Gun Kid",
+      "issueNumber": "60",
+      "date": "1962-08-02",
+      "sourceId": 18581
+    },
+    {
+      "gcdId": 17324,
+      "title": "The Rawhide Kid",
+      "issueNumber": "31",
+      "date": "1962-09-11",
+      "sourceId": 16993
+    },
+    {
+      "gcdId": 17518,
+      "title": "The Rawhide Kid",
+      "issueNumber": "32",
+      "date": "1962-11-08",
+      "sourceId": 16994
+    },
+    {
+      "gcdId": 17620,
+      "title": "The Rawhide Kid",
+      "issueNumber": "33",
+      "date": "1963-01-10",
+      "sourceId": 16995
+    },
+    {
+      "gcdId": 17725,
+      "title": "The Rawhide Kid",
+      "issueNumber": "34",
+      "date": "1963-03-12",
+      "sourceId": 16996
+    },
+    {
+      "gcdId": 17838,
+      "title": "The Rawhide Kid",
+      "issueNumber": "35",
+      "date": "1963-05-09",
+      "sourceId": 16997
+    },
+    {
+      "gcdId": 17948,
+      "title": "The Rawhide Kid",
+      "issueNumber": "36",
+      "date": "1963-07-09",
+      "sourceId": 16998
+    },
+    {
+      "gcdId": 18011,
+      "title": "Two Gun Kid",
+      "issueNumber": "66",
+      "date": "1963-08-01",
+      "sourceId": 18587
+    },
+    {
+      "gcdId": 18399,
+      "title": "Two Gun Kid",
+      "issueNumber": "69",
+      "date": "1964-02-04",
+      "sourceId": 18590
+    },
+    {
+      "gcdId": 18448,
+      "title": "The Rawhide Kid",
+      "issueNumber": "40",
+      "date": "1964-03-10",
+      "sourceId": 17002
+    },
+    {
+      "gcdId": 19380,
+      "title": "The Rawhide Kid",
+      "issueNumber": "47",
+      "date": "1965-05-04",
+      "sourceId": 17009
+    },
+    {
+      "gcdId": 19469,
+      "title": "Two Gun Kid",
+      "issueNumber": "77",
+      "date": "1965-06-01",
+      "sourceId": 18598
+    },
+    {
+      "gcdId": 21797,
+      "title": "The Incredible Hulk",
+      "issueNumber": "102",
+      "date": "1968-01-09",
+      "sourceId": 8913
+    },
+    {
+      "gcdId": 21869,
+      "title": "The Incredible Hulk",
+      "issueNumber": "103",
+      "date": "1968-02-08",
+      "sourceId": 17158
+    },
+    {
+      "gcdId": 21940,
+      "title": "The Incredible Hulk",
+      "issueNumber": "104",
+      "date": "1968-03-07",
+      "sourceId": 17159
+    },
+    {
+      "gcdId": 22016,
+      "title": "The Incredible Hulk",
+      "issueNumber": "105",
+      "date": "1968-04-09",
+      "sourceId": 17160
+    },
+    {
+      "gcdId": 22092,
+      "title": "The Incredible Hulk",
+      "issueNumber": "106",
+      "date": "1968-05-09",
+      "sourceId": 17161
+    },
+    {
+      "gcdId": 22172,
+      "title": "The Incredible Hulk",
+      "issueNumber": "107",
+      "date": "1968-06-11",
+      "sourceId": 17162
+    },
+    {
+      "gcdId": 22247,
+      "title": "The Incredible Hulk",
+      "issueNumber": "108",
+      "date": "1968-07-11",
+      "sourceId": 17163
+    },
+    {
+      "gcdId": 22330,
+      "title": "The Incredible Hulk",
+      "issueNumber": "109",
+      "date": "1968-08-08",
+      "sourceId": 17164
+    },
+    {
+      "gcdId": 22401,
+      "title": "The Incredible Hulk",
+      "issueNumber": "110",
+      "date": "1968-09-10",
+      "sourceId": 17165
+    },
+    {
+      "gcdId": 22469,
+      "title": "The Incredible Hulk",
+      "issueNumber": "111",
+      "date": "1968-10-10",
+      "sourceId": 8922
+    },
+    {
+      "gcdId": 22532,
+      "title": "The Incredible Hulk",
+      "issueNumber": "112",
+      "date": "1968-11-12",
+      "sourceId": 8923
+    },
+    {
+      "gcdId": 22596,
+      "title": "The Incredible Hulk",
+      "issueNumber": "113",
+      "date": "1968-12-12",
+      "sourceId": 8924
+    },
+    {
+      "gcdId": 22661,
+      "title": "The Incredible Hulk",
+      "issueNumber": "114",
+      "date": "1969-01-09",
+      "sourceId": 8925
+    },
+    {
+      "gcdId": 22724,
+      "title": "The Incredible Hulk",
+      "issueNumber": "115",
+      "date": "1969-02-11",
+      "sourceId": 8926
+    },
+    {
+      "gcdId": 22789,
+      "title": "The Incredible Hulk",
+      "issueNumber": "116",
+      "date": "1969-03-11",
+      "sourceId": 8927
+    },
+    {
+      "gcdId": 22844,
+      "title": "The Incredible Hulk",
+      "issueNumber": "117",
+      "date": "1969-04-10",
+      "sourceId": 8928
+    },
+    {
+      "gcdId": 22906,
+      "title": "The Incredible Hulk",
+      "issueNumber": "118",
+      "date": "1969-05-13",
+      "sourceId": 8929
+    },
+    {
+      "gcdId": 22969,
+      "title": "The Incredible Hulk",
+      "issueNumber": "119",
+      "date": "1969-06-17",
+      "sourceId": 8930
+    },
+    {
+      "gcdId": 23041,
+      "title": "The Incredible Hulk",
+      "issueNumber": "120",
+      "date": "1969-07-15",
+      "sourceId": 8931
+    },
+    {
+      "gcdId": 23101,
+      "title": "The Incredible Hulk",
+      "issueNumber": "121",
+      "date": "1969-08-12",
+      "sourceId": 8932
+    },
+    {
+      "gcdId": 23170,
+      "title": "The Incredible Hulk",
+      "issueNumber": "122",
+      "date": "1969-09-16",
+      "sourceId": 8933
+    },
+    {
+      "gcdId": 23233,
+      "title": "The Incredible Hulk",
+      "issueNumber": "123",
+      "date": "1969-10-14",
+      "sourceId": 8934
+    },
+    {
+      "gcdId": 23292,
+      "title": "The Incredible Hulk",
+      "issueNumber": "124",
+      "date": "1969-11-18",
+      "sourceId": 8935
+    },
+    {
+      "gcdId": 23347,
+      "title": "The Incredible Hulk",
+      "issueNumber": "125",
+      "date": "1969-12-16",
+      "sourceId": 8936
+    },
+    {
+      "gcdId": 23405,
+      "title": "The Incredible Hulk",
+      "issueNumber": "126",
+      "date": "1970-01-13",
+      "sourceId": 8937
+    },
+    {
+      "gcdId": 23464,
+      "title": "The Incredible Hulk",
+      "issueNumber": "127",
+      "date": "1970-02-17",
+      "sourceId": 8938
+    },
+    {
+      "gcdId": 23531,
+      "title": "The Incredible Hulk",
+      "issueNumber": "128",
+      "date": "1970-03-17",
+      "sourceId": 8939
+    },
+    {
+      "gcdId": 23584,
+      "title": "The Incredible Hulk",
+      "issueNumber": "129",
+      "date": "1970-04-14",
+      "sourceId": 8940
+    },
+    {
+      "gcdId": 23653,
+      "title": "The Incredible Hulk",
+      "issueNumber": "130",
+      "date": "1970-05-12",
+      "sourceId": 8941
+    },
+    {
+      "gcdId": 23716,
+      "title": "The Incredible Hulk",
+      "issueNumber": "131",
+      "date": "1970-06-09",
+      "sourceId": 8942
+    },
+    {
+      "gcdId": 23778,
+      "title": "The Incredible Hulk",
+      "issueNumber": "132",
+      "date": "1970-07-14",
+      "sourceId": 8943
+    },
+    {
+      "gcdId": 23836,
+      "title": "The Incredible Hulk",
+      "issueNumber": "133",
+      "date": "1970-08-11",
+      "sourceId": 8944
+    },
+    {
+      "gcdId": 23901,
+      "title": "The Incredible Hulk",
+      "issueNumber": "134",
+      "date": "1970-09-08",
+      "sourceId": 8945
+    },
+    {
+      "gcdId": 23977,
+      "title": "The Incredible Hulk",
+      "issueNumber": "135",
+      "date": "1970-10-13",
+      "sourceId": 8946
+    },
+    {
+      "gcdId": 24045,
+      "title": "The Incredible Hulk",
+      "issueNumber": "136",
+      "date": "1970-11-10",
+      "sourceId": 8947
+    },
+    {
+      "gcdId": 24100,
+      "title": "The Incredible Hulk",
+      "issueNumber": "137",
+      "date": "1970-11-10",
+      "sourceId": 8948
+    },
+    {
+      "gcdId": 24167,
+      "title": "The Incredible Hulk",
+      "issueNumber": "138",
+      "date": "1971-01-12",
+      "sourceId": 8949
+    },
+    {
+      "gcdId": 24231,
+      "title": "The Incredible Hulk",
+      "issueNumber": "139",
+      "date": "1971-02-09",
+      "sourceId": 8950
+    },
+    {
+      "gcdId": 24299,
+      "title": "The Incredible Hulk",
+      "issueNumber": "140",
+      "date": "1971-02-09",
+      "sourceId": 8951
+    },
+    {
+      "gcdId": 24363,
+      "title": "The Incredible Hulk",
+      "issueNumber": "141",
+      "date": "1971-04-13",
+      "sourceId": 8952
+    },
+    {
+      "gcdId": 24429,
+      "title": "The Incredible Hulk",
+      "issueNumber": "142",
+      "date": "1971-05-11",
+      "sourceId": 8953
+    },
+    {
+      "gcdId": 24423,
+      "title": "Astonishing Tales",
+      "issueNumber": "7",
+      "date": "1971-05-18",
+      "sourceId": 62389
+    },
+    {
+      "gcdId": 24496,
+      "title": "The Incredible Hulk",
+      "issueNumber": "143",
+      "date": "1971-06-08",
+      "sourceId": 8954
+    },
+    {
+      "gcdId": 24570,
+      "title": "The Incredible Hulk",
+      "issueNumber": "144",
+      "date": "1971-07-13",
+      "sourceId": 8955
+    },
+    {
+      "gcdId": 24639,
+      "title": "The Incredible Hulk",
+      "issueNumber": "145",
+      "date": "1971-08-10",
+      "sourceId": 8956
+    },
+    {
+      "gcdId": 24710,
+      "title": "The Incredible Hulk",
+      "issueNumber": "146",
+      "date": "1971-09-07",
+      "sourceId": 8957
+    },
+    {
+      "gcdId": 24704,
+      "title": "Astonishing Tales",
+      "issueNumber": "9",
+      "date": "1971-09-14",
+      "sourceId": 62390
+    },
+    {
+      "gcdId": 24803,
+      "title": "The Incredible Hulk",
+      "issueNumber": "147",
+      "date": "1971-10-12",
+      "sourceId": 8958
+    },
+    {
+      "gcdId": 24880,
+      "title": "The Incredible Hulk",
+      "issueNumber": "148",
+      "date": "1971-11-09",
+      "sourceId": 8959
+    },
+    {
+      "gcdId": 24874,
+      "title": "Astonishing Tales",
+      "issueNumber": "10",
+      "date": "1971-11-16",
+      "sourceId": 61926
+    },
+    {
+      "gcdId": 24949,
+      "title": "The Incredible Hulk",
+      "issueNumber": "149",
+      "date": "1971-12-07",
+      "sourceId": 8960
+    },
+    {
+      "gcdId": 25029,
+      "title": "The Incredible Hulk",
+      "issueNumber": "150",
+      "date": "1972-01-11",
+      "sourceId": 8961
+    },
+    {
+      "gcdId": 25024,
+      "title": "Astonishing Tales",
+      "issueNumber": "11",
+      "date": "1972-01-25",
+      "sourceId": 62391
+    },
+    {
+      "gcdId": 25107,
+      "title": "The Incredible Hulk",
+      "issueNumber": "151",
+      "date": "1972-02-15",
+      "sourceId": 8962
+    },
+    {
+      "gcdId": 25194,
+      "title": "The Incredible Hulk",
+      "issueNumber": "152",
+      "date": "1972-03-14",
+      "sourceId": 8963
+    },
+    {
+      "gcdId": 25275,
+      "title": "The Incredible Hulk",
+      "issueNumber": "153",
+      "date": "1972-04-11",
+      "sourceId": 8964
+    },
+    {
+      "gcdId": 25368,
+      "title": "The Incredible Hulk",
+      "issueNumber": "154",
+      "date": "1972-05-09",
+      "sourceId": 8965
+    },
+    {
+      "gcdId": 25438,
+      "title": "The Incredible Hulk",
+      "issueNumber": "155",
+      "date": "1972-06-06",
+      "sourceId": 8966
+    },
+    {
+      "gcdId": 25547,
+      "title": "The Incredible Hulk",
+      "issueNumber": "156",
+      "date": "1972-07-04",
+      "sourceId": 8967
+    },
+    {
+      "gcdId": 25535,
+      "title": "Astonishing Tales",
+      "issueNumber": "14",
+      "date": "1972-07-18",
+      "sourceId": 62392
+    },
+    {
+      "gcdId": 25632,
+      "title": "The Incredible Hulk",
+      "issueNumber": "157",
+      "date": "1972-08-01",
+      "sourceId": 8968
+    }
+  ]
+}
