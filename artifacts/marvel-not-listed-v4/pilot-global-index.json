@@ -1,0 +1,3588 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T17:49:05.581Z",
+  "mode": "pilot-research-only",
+  "writesCache": false,
+  "baseline": {
+    "localCount": 51002,
+    "matched": 25329,
+    "noDigital": 1057,
+    "notListed": 24616,
+    "linkReady": 25322,
+    "linkMissing": 7
+  },
+  "catalog": {
+    "issues": 37526,
+    "years": "1939-2027"
+  },
+  "candidateCoverage": {
+    "total": 24616,
+    "none": 15258,
+    "low": 3551,
+    "medium": 1626,
+    "high": 4181,
+    "anyCandidate": 9358,
+    "highOrMedium": 5807
+  },
+  "pilot": {
+    "checked": 180,
+    "exact": 11,
+    "mu": 11,
+    "noDigital": 0,
+    "unknown": 0,
+    "identityMismatch": 129,
+    "retryable": 0,
+    "readerRouteConfirmed": 11
+  },
+  "examples": {
+    "mu": [
+      {
+        "gcdId": 165622,
+        "local": {
+          "gcdId": 165622,
+          "title": "Marvel Knights 4",
+          "issueNumber": "1",
+          "seriesYear": "2004",
+          "date": "2004-02-11"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 356,
+            "readerId": 84,
+            "seriesName": "4 (2004 - 2006)",
+            "issueNumber": "1",
+            "seriesYear": "2004",
+            "onSale": "2004-02-11T00:00:00+0000",
+            "score": 288
+          },
+          {
+            "sourceId": 2605,
+            "readerId": 43935,
+            "seriesName": "MARVEL KNIGHTS 4 VOL. 1: WOLF AT THE DOOR (2005)",
+            "issueNumber": "1",
+            "seriesYear": "2005",
+            "onSale": "2004-10-01T00:00:00+0000",
+            "score": 183
+          },
+          {
+            "sourceId": 16049,
+            "readerId": 50458,
+            "seriesName": "Marvel Knights (2002)",
+            "issueNumber": "1",
+            "seriesYear": "2002",
+            "onSale": "2002-05-01T00:00:00+0000",
+            "score": 119
+          },
+          {
+            "sourceId": 16055,
+            "readerId": 3914,
+            "seriesName": "Marvel Knights (2000 - 2001)",
+            "issueNumber": "1",
+            "seriesYear": "2000",
+            "onSale": "2000-07-01T00:00:00+0000",
+            "score": 99
+          },
+          {
+            "sourceId": 10008,
+            "readerId": 3034,
+            "seriesName": "Marvel Comics (1939)",
+            "issueNumber": "1",
+            "seriesYear": "1939",
+            "onSale": "1939-08-31T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 356,
+          "title": "Marvel Knights 4 (2004) #1",
+          "availability": "mu",
+          "readerId": 84,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Marvel Knights 4 (2004) #1",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 84,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=84"
+        }
+      },
+      {
+        "gcdId": 1527947,
+        "local": {
+          "gcdId": 1527947,
+          "title": "Kanan",
+          "issueNumber": "10",
+          "seriesYear": "2015",
+          "date": "2016-01-27"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 56104,
+            "readerId": 41000,
+            "seriesName": "Kanan - The Last Padawan (2015 - 2016)",
+            "issueNumber": "10",
+            "seriesYear": "2015",
+            "onSale": "2016-01-27T00:00:00+0000",
+            "score": 288
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 56104,
+          "title": "Kanan - The Last Padawan (2015) #10",
+          "availability": "mu",
+          "readerId": 41000,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Kanan - The Last Padawan (2015) #10",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 41000,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41000"
+        }
+      },
+      {
+        "gcdId": 22095,
+        "local": {
+          "gcdId": 22095,
+          "title": "Marvel's Space-Born Superhero! Captain Marvel",
+          "issueNumber": "4",
+          "seriesYear": "1968",
+          "date": "1968-05-09"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 17170,
+            "readerId": 4794,
+            "seriesName": "Captain Marvel (1968 - 1979)",
+            "issueNumber": "4",
+            "seriesYear": "1968",
+            "onSale": "1968-08-01T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 20557,
+            "readerId": 5463,
+            "seriesName": "Captain Marvel (2000 - 2002)",
+            "issueNumber": "4",
+            "seriesYear": "2000",
+            "onSale": "2000-04-01T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 22834,
+            "readerId": 10393,
+            "seriesName": "Captain Marvel (2002 - 2004)",
+            "issueNumber": "4",
+            "seriesYear": "2002",
+            "onSale": "2003-02-01T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 20675,
+            "readerId": 10776,
+            "seriesName": "Captain Marvel (2007 - 2008)",
+            "issueNumber": "4",
+            "seriesYear": "2007",
+            "onSale": "2008-03-19T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 42675,
+            "readerId": 27719,
+            "seriesName": "Captain Marvel (2012 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2012",
+            "onSale": "2012-09-26T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 17170,
+          "title": "Captain Marvel (1968) #4",
+          "availability": "mu",
+          "readerId": 4794,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Captain Marvel (1968) #4",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 4794,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4794"
+        }
+      },
+      {
+        "gcdId": 2610069,
+        "local": {
+          "gcdId": 2610069,
+          "title": "Iron Man & Force Works: Collector's Preview",
+          "issueNumber": "1",
+          "seriesYear": "1994",
+          "date": "1994-09-16"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 60097,
+            "readerId": 41965,
+            "seriesName": "Force Works (1994 - 1996)",
+            "issueNumber": "1",
+            "seriesYear": "1994",
+            "onSale": "1994-07-01T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 16328,
+            "readerId": 3992,
+            "seriesName": "Iron Man (1996 - 1998)",
+            "issueNumber": "1",
+            "seriesYear": "1996",
+            "onSale": "1996-11-01T00:00:00+0000",
+            "score": 119
+          },
+          {
+            "sourceId": 37769,
+            "readerId": 25919,
+            "seriesName": "Iron Man (1998 - 2004)",
+            "issueNumber": "1",
+            "seriesYear": "1998",
+            "onSale": "1998-02-01T00:00:00+0000",
+            "score": 99
+          },
+          {
+            "sourceId": 9327,
+            "readerId": 4291,
+            "seriesName": "Iron Man (1968 - 1996)",
+            "issueNumber": "1",
+            "seriesYear": "1968",
+            "onSale": "1968-05-01T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 43944,
+            "readerId": 27961,
+            "seriesName": "Iron Man (2012 - 2014)",
+            "issueNumber": "1",
+            "seriesYear": "2012",
+            "onSale": "2012-11-07T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 60097,
+          "title": "Force Works (1994) #1",
+          "availability": "mu",
+          "readerId": 41965,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Force Works (1994) #1",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 41965,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41965"
+        }
+      },
+      {
+        "gcdId": 1077151,
+        "local": {
+          "gcdId": 1077151,
+          "title": "Hulk Chronicles: WWH",
+          "issueNumber": "2",
+          "seriesYear": "2008",
+          "date": "2008-08-13"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 20668,
+            "readerId": 9890,
+            "seriesName": "Hulk (2008 - 2012)",
+            "issueNumber": "2",
+            "seriesYear": "2008",
+            "onSale": "2008-02-20T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 50375,
+            "readerId": 33567,
+            "seriesName": "Hulk (2014 - 2015)",
+            "issueNumber": "2",
+            "seriesYear": "2014",
+            "onSale": "2014-04-30T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 61532,
+            "readerId": 43812,
+            "seriesName": "Hulk (2016 - 2017)",
+            "issueNumber": "2",
+            "seriesYear": "2016",
+            "onSale": "2017-01-25T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 14272,
+            "readerId": 16477,
+            "seriesName": "Hulk (1999 - 2008)",
+            "issueNumber": "2",
+            "seriesYear": "1999",
+            "onSale": "1999-05-01T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 91721,
+            "readerId": 58180,
+            "seriesName": "Hulk (2021 - Present)",
+            "issueNumber": "2",
+            "seriesYear": "2021",
+            "onSale": "2021-12-15T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 20668,
+          "title": "Hulk (2008) #2",
+          "availability": "mu",
+          "readerId": 9890,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Hulk (2008) #2",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 9890,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=9890"
+        }
+      },
+      {
+        "gcdId": 1824000,
+        "local": {
+          "gcdId": 1824000,
+          "title": "True Believers: Fantastic Four vs. Doctor Doom",
+          "issueNumber": "1",
+          "seriesYear": "2018",
+          "date": "2018-07-11"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 68007,
+            "readerId": 48841,
+            "seriesName": "Fantastic Four (2018 - Present)",
+            "issueNumber": "1",
+            "seriesYear": "2018",
+            "onSale": "2018-08-08T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 78642,
+            "readerId": 52759,
+            "seriesName": "Doctor Doom (2019 - 2020)",
+            "issueNumber": "1",
+            "seriesYear": "2019",
+            "onSale": "2019-10-09T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 49771,
+            "readerId": 33046,
+            "seriesName": "Fantastic Four (2014 - 2015)",
+            "issueNumber": "1",
+            "seriesYear": "2014",
+            "onSale": "2014-02-26T00:00:00+0000",
+            "score": 99
+          },
+          {
+            "sourceId": 98724,
+            "readerId": 60739,
+            "seriesName": "Fantastic Four (2022 - Present)",
+            "issueNumber": "1",
+            "seriesYear": "2022",
+            "onSale": "2022-11-09T00:00:00+0000",
+            "score": 99
+          },
+          {
+            "sourceId": 43831,
+            "readerId": 27999,
+            "seriesName": "Fantastic Four (2012 - 2014)",
+            "issueNumber": "1",
+            "seriesYear": "2012",
+            "onSale": "2012-11-14T00:00:00+0000",
+            "score": 87
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 68007,
+          "title": "Fantastic Four (2018) #1",
+          "availability": "mu",
+          "readerId": 48841,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Fantastic Four (2018) #1",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 48841,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48841"
+        }
+      },
+      {
+        "gcdId": 38675,
+        "local": {
+          "gcdId": 38675,
+          "title": "Hercules",
+          "issueNumber": "3",
+          "seriesYear": "1984",
+          "date": "1984-01-24"
+        },
+        "existingSourceId": 0,
+        "confidence": "medium",
+        "ranked": [
+          {
+            "sourceId": 43413,
+            "readerId": 48699,
+            "seriesName": "Hercules: Prince of Power (1984)",
+            "issueNumber": "3",
+            "seriesYear": "1984",
+            "onSale": "1984-05-01T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 43408,
+            "readerId": 48696,
+            "seriesName": "Hercules (1982)",
+            "issueNumber": "3",
+            "seriesYear": "1982",
+            "onSale": "1982-11-01T00:00:00+0000",
+            "score": 219
+          },
+          {
+            "sourceId": 2102,
+            "readerId": 1943,
+            "seriesName": "Hercules (2005)",
+            "issueNumber": "3",
+            "seriesYear": "2005",
+            "onSale": "2005-08-01T00:00:00+0000",
+            "score": 143
+          },
+          {
+            "sourceId": 56909,
+            "readerId": 40919,
+            "seriesName": "Hercules (2015 - 2016)",
+            "issueNumber": "3",
+            "seriesYear": "2015",
+            "onSale": "2016-01-20T00:00:00+0000",
+            "score": 143
+          },
+          {
+            "sourceId": 121770,
+            "readerId": 67550,
+            "seriesName": "Hercules: Heart of Chaos (1997 - Present)",
+            "issueNumber": "3",
+            "seriesYear": "1997",
+            "onSale": "1997-10-01T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 43413,
+          "title": "Hercules: Prince Of Power (1984) #3",
+          "availability": "mu",
+          "readerId": 48699,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Hercules: Prince Of Power (1984) #3",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 48699,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48699"
+        }
+      },
+      {
+        "gcdId": 38784,
+        "local": {
+          "gcdId": 38784,
+          "title": "Hercules",
+          "issueNumber": "4",
+          "seriesYear": "1984",
+          "date": "1984-02-28"
+        },
+        "existingSourceId": 0,
+        "confidence": "medium",
+        "ranked": [
+          {
+            "sourceId": 43412,
+            "readerId": 48700,
+            "seriesName": "Hercules: Prince of Power (1984)",
+            "issueNumber": "4",
+            "seriesYear": "1984",
+            "onSale": "1984-06-01T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 43409,
+            "readerId": 48697,
+            "seriesName": "Hercules (1982)",
+            "issueNumber": "4",
+            "seriesYear": "1982",
+            "onSale": "1982-12-01T00:00:00+0000",
+            "score": 219
+          },
+          {
+            "sourceId": 2207,
+            "readerId": 1944,
+            "seriesName": "Hercules (2005)",
+            "issueNumber": "4",
+            "seriesYear": "2005",
+            "onSale": "2005-09-01T00:00:00+0000",
+            "score": 143
+          },
+          {
+            "sourceId": 56910,
+            "readerId": 41220,
+            "seriesName": "Hercules (2015 - 2016)",
+            "issueNumber": "4",
+            "seriesYear": "2015",
+            "onSale": "2016-02-24T00:00:00+0000",
+            "score": 143
+          },
+          {
+            "sourceId": 31207,
+            "readerId": 15881,
+            "seriesName": "Hercules: Twilight of a God (2010)",
+            "issueNumber": "4",
+            "seriesYear": "2010",
+            "onSale": "2010-09-01T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 43412,
+          "title": "Hercules: Prince Of Power (1984) #4",
+          "availability": "mu",
+          "readerId": 48700,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Hercules: Prince Of Power (1984) #4",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 48700,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=48700"
+        }
+      },
+      {
+        "gcdId": 1527942,
+        "local": {
+          "gcdId": 1527942,
+          "title": "Marvel Universe Ultimate Spider-Man Spider-Verse",
+          "issueNumber": "3",
+          "seriesYear": "2016",
+          "date": "2016-01-27"
+        },
+        "existingSourceId": 0,
+        "confidence": "medium",
+        "ranked": [
+          {
+            "sourceId": 55697,
+            "readerId": 41661,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "3",
+            "seriesYear": "2016",
+            "onSale": "2016-04-06T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 57006,
+            "readerId": 41002,
+            "seriesName": "Ultimate Spider-Man Spider-Verse (2015 - 2016)",
+            "issueNumber": "3",
+            "seriesYear": "2015",
+            "onSale": "2016-01-27T00:00:00+0000",
+            "score": 228
+          },
+          {
+            "sourceId": 52578,
+            "readerId": 39236,
+            "seriesName": "Spider-Verse (2015)",
+            "issueNumber": "3",
+            "seriesYear": "2015",
+            "onSale": "2015-07-08T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 79759,
+            "readerId": 53290,
+            "seriesName": "Spider-Verse (2019 - 2020)",
+            "issueNumber": "3",
+            "seriesYear": "2019",
+            "onSale": "2019-12-11T00:00:00+0000",
+            "score": 113
+          },
+          {
+            "sourceId": 75134,
+            "readerId": 53020,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "3",
+            "seriesYear": "2019",
+            "onSale": "2019-12-18T00:00:00+0000",
+            "score": 113
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 55697,
+          "title": "Spider-Man (2016) #3",
+          "availability": "mu",
+          "readerId": 41661,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Spider-Man (2016) #3",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 41661,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41661"
+        }
+      },
+      {
+        "gcdId": 1540393,
+        "local": {
+          "gcdId": 1540393,
+          "title": "Marvel Universe Ultimate Spider-Man Spider-Verse",
+          "issueNumber": "4",
+          "seriesYear": "2016",
+          "date": "2016-02-24"
+        },
+        "existingSourceId": 0,
+        "confidence": "medium",
+        "ranked": [
+          {
+            "sourceId": 55698,
+            "readerId": 41581,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "4",
+            "seriesYear": "2016",
+            "onSale": "2016-05-18T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 57007,
+            "readerId": 41224,
+            "seriesName": "Ultimate Spider-Man Spider-Verse (2015 - 2016)",
+            "issueNumber": "4",
+            "seriesYear": "2015",
+            "onSale": "2016-02-24T00:00:00+0000",
+            "score": 228
+          },
+          {
+            "sourceId": 52579,
+            "readerId": 39741,
+            "seriesName": "Spider-Verse (2015)",
+            "issueNumber": "4",
+            "seriesYear": "2015",
+            "onSale": "2015-08-19T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 75135,
+            "readerId": 53287,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "4",
+            "seriesYear": "2019",
+            "onSale": "2020-09-23T00:00:00+0000",
+            "score": 105
+          },
+          {
+            "sourceId": 79760,
+            "readerId": 53590,
+            "seriesName": "Spider-Verse (2019 - 2020)",
+            "issueNumber": "4",
+            "seriesYear": "2019",
+            "onSale": "2020-01-29T00:00:00+0000",
+            "score": 105
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 55698,
+          "title": "Spider-Man (2016) #4",
+          "availability": "mu",
+          "readerId": 41581,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Spider-Man (2016) #4",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 41581,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41581"
+        }
+      },
+      {
+        "gcdId": 898467,
+        "local": {
+          "gcdId": 898467,
+          "title": "Avengers Origins: The Scarlet Witch & Quicksilver",
+          "issueNumber": "1",
+          "seriesYear": "2012",
+          "date": "2011-11-23"
+        },
+        "existingSourceId": 0,
+        "confidence": "medium",
+        "ranked": [
+          {
+            "sourceId": 43528,
+            "readerId": 28113,
+            "seriesName": "Avengers (2012 - 2015)",
+            "issueNumber": "1",
+            "seriesYear": "2012",
+            "onSale": "2012-12-05T00:00:00+0000",
+            "score": 220
+          },
+          {
+            "sourceId": 32684,
+            "readerId": 24823,
+            "seriesName": "Avengers Origins: Scarlet Witch & Quicksilver (2011)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2011-11-23T00:00:00+0000",
+            "score": 198
+          },
+          {
+            "sourceId": 29195,
+            "readerId": 14632,
+            "seriesName": "Avengers (2010 - 2012)",
+            "issueNumber": "1",
+            "seriesYear": "2010",
+            "onSale": "2010-05-19T00:00:00+0000",
+            "score": 133
+          },
+          {
+            "sourceId": 57094,
+            "readerId": 40660,
+            "seriesName": "Scarlet Witch (2015 - 2017)",
+            "issueNumber": "1",
+            "seriesYear": "2015",
+            "onSale": "2015-12-09T00:00:00+0000",
+            "score": 105
+          },
+          {
+            "sourceId": 61373,
+            "readerId": 43163,
+            "seriesName": "Avengers (2016 - 2018)",
+            "issueNumber": "1",
+            "seriesYear": "2016",
+            "onSale": "2016-11-02T00:00:00+0000",
+            "score": 99
+          }
+        ],
+        "official": {
+          "kind": "exact",
+          "sourceId": 43528,
+          "title": "Avengers (2012) #1",
+          "availability": "mu",
+          "readerId": 28113,
+          "drn": "",
+          "cover": ""
+        },
+        "reader": {
+          "status": 200,
+          "title": "Avengers (2012) #1",
+          "identity": true,
+          "availability": "mu",
+          "readerId": 28113,
+          "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28113"
+        }
+      }
+    ],
+    "noDigital": [],
+    "mismatch": [
+      {
+        "gcdId": 647728,
+        "local": {
+          "gcdId": 647728,
+          "title": "Riftwar",
+          "issueNumber": "1",
+          "seriesYear": "2009",
+          "date": "2009-05-19"
+        },
+        "existingSourceId": 24200,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 24200,
+            "readerId": 16406,
+            "seriesName": "Riftwar (2009)",
+            "issueNumber": "1",
+            "seriesYear": "2009",
+            "onSale": "2009-06-24T00:00:00+0000",
+            "score": 343
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 24200,
+          "title": "Riftwar (2008) #1"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 647729,
+        "local": {
+          "gcdId": 647729,
+          "title": "Riftwar",
+          "issueNumber": "2",
+          "seriesYear": "2009",
+          "date": "2009-06-19"
+        },
+        "existingSourceId": 26202,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 26202,
+            "readerId": 15863,
+            "seriesName": "Riftwar (2009)",
+            "issueNumber": "2",
+            "seriesYear": "2009",
+            "onSale": "2009-07-22T00:00:00+0000",
+            "score": 343
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 26202,
+          "title": "Riftwar (2008) #2"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 647730,
+        "local": {
+          "gcdId": 647730,
+          "title": "Riftwar",
+          "issueNumber": "3",
+          "seriesYear": "2009",
+          "date": "2009-08-19"
+        },
+        "existingSourceId": 26203,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 26203,
+            "readerId": 16393,
+            "seriesName": "Riftwar (2009)",
+            "issueNumber": "3",
+            "seriesYear": "2009",
+            "onSale": "2009-08-26T00:00:00+0000",
+            "score": 343
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 26203,
+          "title": "Riftwar (2008) #3"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 647731,
+        "local": {
+          "gcdId": 647731,
+          "title": "Riftwar",
+          "issueNumber": "4",
+          "seriesYear": "2009",
+          "date": "2009-09-19"
+        },
+        "existingSourceId": 26204,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 26204,
+            "readerId": 16607,
+            "seriesName": "Riftwar (2009)",
+            "issueNumber": "4",
+            "seriesYear": "2009",
+            "onSale": "2009-09-23T00:00:00+0000",
+            "score": 343
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 26204,
+          "title": "Riftwar (2008) #4"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 647732,
+        "local": {
+          "gcdId": 647732,
+          "title": "Riftwar",
+          "issueNumber": "5",
+          "seriesYear": "2009",
+          "date": "2009-10-19"
+        },
+        "existingSourceId": 26205,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 26205,
+            "readerId": 17237,
+            "seriesName": "Riftwar (2009)",
+            "issueNumber": "5",
+            "seriesYear": "2009",
+            "onSale": "2009-10-28T00:00:00+0000",
+            "score": 343
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 26205,
+          "title": "Riftwar (2008) #5"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 311260,
+        "local": {
+          "gcdId": 311260,
+          "title": "Amazing Spider-Girl",
+          "issueNumber": "0",
+          "seriesYear": "2006",
+          "date": "2006-10-04"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 5286,
+            "readerId": 1354,
+            "seriesName": "Amazing Spider-Girl (2006 - 2009)",
+            "issueNumber": "0",
+            "seriesYear": "2006",
+            "onSale": "2006-10-04T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 13325,
+            "readerId": 2453,
+            "seriesName": "Spider-Girl (1998 - 2006)",
+            "issueNumber": "0",
+            "seriesYear": "1998",
+            "onSale": "1998-10-01T00:00:00+0000",
+            "score": 75
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 5286,
+          "title": "Amazing Spider-Girl (2006)"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 695290,
+        "local": {
+          "gcdId": 695290,
+          "title": "Amazing Spider-Man: Extra!",
+          "issueNumber": "1",
+          "seriesYear": "2008",
+          "date": "2008-07-30"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 23069,
+            "readerId": 10677,
+            "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+            "issueNumber": "1",
+            "seriesYear": "2008",
+            "onSale": "2008-07-30T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 21798,
+            "readerId": 10589,
+            "seriesName": "Amazing Spider-Man Family (2008 - 2009)",
+            "issueNumber": "1",
+            "seriesYear": "2008",
+            "onSale": "2008-08-06T00:00:00+0000",
+            "score": 168
+          },
+          {
+            "sourceId": 45798,
+            "readerId": 33592,
+            "seriesName": "The Amazing Spider-Man (2014 - 2015)",
+            "issueNumber": "1",
+            "seriesYear": "2014",
+            "onSale": "2014-04-30T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 55693,
+            "readerId": 41075,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "1",
+            "seriesYear": "2016",
+            "onSale": "2016-02-03T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 37894,
+            "readerId": 16485,
+            "seriesName": "Amazing Spider-Man (1999 - 2013)",
+            "issueNumber": "1",
+            "seriesYear": "1999",
+            "onSale": "1999-01-06T00:00:00+0000",
+            "score": 69
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 23069,
+          "title": "Spider-Man: Brand New Day - Extra!! (2008) #1"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 623362,
+        "local": {
+          "gcdId": 623362,
+          "title": "Marvel Apes",
+          "issueNumber": "0",
+          "seriesYear": "2008",
+          "date": "2008-12-10"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 22927,
+            "readerId": 40370,
+            "seriesName": "Marvel Apes (2008)",
+            "issueNumber": "0",
+            "seriesYear": "2008",
+            "onSale": "2008-12-10T00:00:00+0000",
+            "score": 388
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 22927,
+          "title": "Marvel Apes (2008)"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 875744,
+        "local": {
+          "gcdId": 875744,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "1",
+          "seriesYear": "2011",
+          "date": "2011-09-14"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38394,
+            "readerId": 23712,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2011-09-14T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 39365,
+            "readerId": 28252,
+            "seriesName": "ULTIMATE COMICS SPIDER-MAN BY BRIAN MICHAEL BENDIS VOL. 1 (2011 - Present)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2012-08-15T00:00:00+0000",
+            "score": 220
+          },
+          {
+            "sourceId": 28948,
+            "readerId": 31398,
+            "seriesName": "Ultimate Comics Spider-Man Vol. 2 (2010)",
+            "issueNumber": "1",
+            "seriesYear": "2010",
+            "onSale": "2011-05-18T00:00:00-0400",
+            "score": 183
+          },
+          {
+            "sourceId": 55693,
+            "readerId": 41075,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "1",
+            "seriesYear": "2016",
+            "onSale": "2016-02-03T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 42606,
+            "readerId": 25830,
+            "seriesName": "Ultimate Spider-Man Premiere Comic (2012)",
+            "issueNumber": "1",
+            "seriesYear": "2012",
+            "onSale": "2012-03-21T00:00:00+0000",
+            "score": 85
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38394,
+          "title": "Ultimate Spider-Man (2011) #1"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 879991,
+        "local": {
+          "gcdId": 879991,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "2",
+          "seriesYear": "2011",
+          "date": "2011-09-28"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38395,
+            "readerId": 23843,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "2",
+            "seriesYear": "2011",
+            "onSale": "2011-09-28T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55695,
+            "readerId": 41286,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "2",
+            "seriesYear": "2016",
+            "onSale": "2016-03-02T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 44254,
+            "readerId": 28144,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "2",
+            "seriesYear": "2012",
+            "onSale": "2012-11-28T00:00:00+0000",
+            "score": 85
+          },
+          {
+            "sourceId": 75133,
+            "readerId": 52708,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "2",
+            "seriesYear": "2019",
+            "onSale": "2019-10-16T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 26859,
+            "readerId": 16890,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "2",
+            "seriesYear": "2009",
+            "onSale": "2009-09-02T00:00:00+0000",
+            "score": 44
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38395,
+          "title": "Ultimate Spider-Man (2011) #2"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 885869,
+        "local": {
+          "gcdId": 885869,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "3",
+          "seriesYear": "2011",
+          "date": "2011-10-12"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38396,
+            "readerId": 23930,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "3",
+            "seriesYear": "2011",
+            "onSale": "2011-10-12T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55697,
+            "readerId": 41661,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "3",
+            "seriesYear": "2016",
+            "onSale": "2016-04-06T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 45421,
+            "readerId": 28235,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "3",
+            "seriesYear": "2012",
+            "onSale": "2012-12-12T00:00:00+0000",
+            "score": 85
+          },
+          {
+            "sourceId": 75134,
+            "readerId": 53020,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "3",
+            "seriesYear": "2019",
+            "onSale": "2019-12-18T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 27951,
+            "readerId": 16948,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "3",
+            "seriesYear": "2009",
+            "onSale": "2009-10-07T00:00:00+0000",
+            "score": 44
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38396,
+          "title": "Ultimate Spider-Man (2011) #3"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 893522,
+        "local": {
+          "gcdId": 893522,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "4",
+          "seriesYear": "2011",
+          "date": "2011-11-09"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38400,
+            "readerId": 24567,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2011",
+            "onSale": "2011-11-09T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55698,
+            "readerId": 41581,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "4",
+            "seriesYear": "2016",
+            "onSale": "2016-05-18T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 75135,
+            "readerId": 53287,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "4",
+            "seriesYear": "2019",
+            "onSale": "2020-09-23T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46544,
+            "readerId": 28391,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2012",
+            "onSale": "2013-01-16T00:00:00+0000",
+            "score": 71
+          },
+          {
+            "sourceId": 27952,
+            "readerId": 17672,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "4",
+            "seriesYear": "2009",
+            "onSale": "2009-11-04T00:00:00+0000",
+            "score": 44
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38400,
+          "title": "Ultimate Spider-Man (2011) #4"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 901975,
+        "local": {
+          "gcdId": 901975,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "5",
+          "seriesYear": "2011",
+          "date": "2011-12-21"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38397,
+            "readerId": 18510,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "5",
+            "seriesYear": "2011",
+            "onSale": "2011-12-21T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55699,
+            "readerId": 41847,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "5",
+            "seriesYear": "2016",
+            "onSale": "2016-06-29T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 75136,
+            "readerId": 53588,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "5",
+            "seriesYear": "2019",
+            "onSale": "2020-12-09T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 27953,
+            "readerId": 18511,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "5",
+            "seriesYear": "2009",
+            "onSale": "2009-12-03T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10811,
+            "readerId": 21919,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "5",
+            "seriesYear": "1990",
+            "onSale": "1990-12-01T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38397,
+          "title": "Ultimate Spider-Man (2011) #5"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 905571,
+        "local": {
+          "gcdId": 905571,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "6",
+          "seriesYear": "2011",
+          "date": "2012-01-18"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38401,
+            "readerId": 25256,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "6",
+            "seriesYear": "2011",
+            "onSale": "2012-01-18T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55700,
+            "readerId": 42102,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "6",
+            "seriesYear": "2016",
+            "onSale": "2016-07-20T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27954,
+            "readerId": 18288,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "6",
+            "seriesYear": "2009",
+            "onSale": "2010-01-06T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10822,
+            "readerId": 29672,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "6",
+            "seriesYear": "1990",
+            "onSale": "1991-01-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 99748,
+            "readerId": 62003,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "6",
+            "seriesYear": "2022",
+            "onSale": "2023-03-01T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38401,
+          "title": "Ultimate Spider-Man (2011) #6"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 922487,
+        "local": {
+          "gcdId": 922487,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "7",
+          "seriesYear": "2011",
+          "date": "2012-02-22"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38403,
+            "readerId": 25592,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "7",
+            "seriesYear": "2011",
+            "onSale": "2012-02-22T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55701,
+            "readerId": 42325,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "7",
+            "seriesYear": "2016",
+            "onSale": "2016-08-31T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27955,
+            "readerId": 13830,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "7",
+            "seriesYear": "2009",
+            "onSale": "2010-02-10T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10833,
+            "readerId": 29673,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "7",
+            "seriesYear": "1990",
+            "onSale": "1991-02-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 99749,
+            "readerId": 62229,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "7",
+            "seriesYear": "2022",
+            "onSale": "2023-04-05T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38403,
+          "title": "Ultimate Spider-Man (2011) #7"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 927077,
+        "local": {
+          "gcdId": 927077,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "8",
+          "seriesYear": "2011",
+          "date": "2012-03-07"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38402,
+            "readerId": 25697,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "8",
+            "seriesYear": "2011",
+            "onSale": "2012-03-07T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55702,
+            "readerId": 42646,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "8",
+            "seriesYear": "2016",
+            "onSale": "2016-09-14T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27956,
+            "readerId": 14027,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "8",
+            "seriesYear": "2009",
+            "onSale": "2010-03-10T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10844,
+            "readerId": 29674,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "8",
+            "seriesYear": "1990",
+            "onSale": "1991-03-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 99750,
+            "readerId": 62532,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "8",
+            "seriesYear": "2022",
+            "onSale": "2023-05-03T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38402,
+          "title": "Ultimate Spider-Man (2011) #8"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 934750,
+        "local": {
+          "gcdId": 934750,
+          "title": "Avengers vs. X-Men",
+          "issueNumber": "0",
+          "seriesYear": "2012",
+          "date": "2012-03-28"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 42332,
+            "readerId": 25730,
+            "seriesName": "Avengers Vs. X-Men (2012)",
+            "issueNumber": "0",
+            "seriesYear": "2012",
+            "onSale": "2012-03-28T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 45900,
+            "readerId": 28739,
+            "seriesName": "Avengers Vs. X-Men Companion (2013)",
+            "issueNumber": "0",
+            "seriesYear": "2013",
+            "onSale": "2013-05-08T00:00:00-0400",
+            "score": 160
+          },
+          {
+            "sourceId": 3589,
+            "readerId": 5113,
+            "seriesName": "Avengers (1998 - 2004)",
+            "issueNumber": "0",
+            "seriesYear": "1998",
+            "onSale": "1999-07-01T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 100371,
+            "readerId": 60044,
+            "seriesName": "Avengers Vs. X-Men Omnibus (2022)",
+            "issueNumber": "0",
+            "seriesYear": "2022",
+            "onSale": "2022-11-02T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 42332,
+          "title": "Avengers Vs. X-Men (2012)"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 934844,
+        "local": {
+          "gcdId": 934844,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "9",
+          "seriesYear": "2011",
+          "date": "2012-04-04"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38398,
+            "readerId": 25741,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "9",
+            "seriesYear": "2011",
+            "onSale": "2012-04-04T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55703,
+            "readerId": 42835,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "9",
+            "seriesYear": "2016",
+            "onSale": "2016-11-16T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27957,
+            "readerId": 14367,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "9",
+            "seriesYear": "2009",
+            "onSale": "2010-04-21T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10855,
+            "readerId": 29675,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "9",
+            "seriesYear": "1990",
+            "onSale": "1991-04-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 99751,
+            "readerId": 62787,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "9",
+            "seriesYear": "2022",
+            "onSale": "2023-06-07T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38398,
+          "title": "Ultimate Spider-Man (2011) #9"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 942150,
+        "local": {
+          "gcdId": 942150,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "10",
+          "seriesYear": "2011",
+          "date": "2012-05-02"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38399,
+            "readerId": 25742,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "10",
+            "seriesYear": "2011",
+            "onSale": "2012-05-02T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55704,
+            "readerId": 43276,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "10",
+            "seriesYear": "2016",
+            "onSale": "2016-12-14T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27948,
+            "readerId": 14574,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "10",
+            "seriesYear": "2009",
+            "onSale": "2010-05-12T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10768,
+            "readerId": 29676,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "10",
+            "seriesYear": "1990",
+            "onSale": "1991-05-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 99752,
+            "readerId": 63013,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "10",
+            "seriesYear": "2022",
+            "onSale": "2023-07-05T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38399,
+          "title": "Ultimate Spider-Man (2011) #10"
+        },
+        "reader": null
+      },
+      {
+        "gcdId": 951442,
+        "local": {
+          "gcdId": 951442,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "11",
+          "seriesYear": "2011",
+          "date": "2012-06-06"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38383,
+            "readerId": 25744,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "11",
+            "seriesYear": "2011",
+            "onSale": "2012-06-06T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55705,
+            "readerId": 43383,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "11",
+            "seriesYear": "2016",
+            "onSale": "2016-12-28T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 27949,
+            "readerId": 14900,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "11",
+            "seriesYear": "2009",
+            "onSale": "2010-06-09T00:00:00+0000",
+            "score": 44
+          },
+          {
+            "sourceId": 10769,
+            "readerId": 29677,
+            "seriesName": "Spider-Man (1990 - 1998)",
+            "issueNumber": "11",
+            "seriesYear": "1990",
+            "onSale": "1991-06-10T00:00:00+0000",
+            "score": 43
+          },
+          {
+            "sourceId": 109961,
+            "readerId": 63180,
+            "seriesName": "Spider-Man (2022 - Present)",
+            "issueNumber": "11",
+            "seriesYear": "2022",
+            "onSale": "2023-08-16T00:00:00+0000",
+            "score": 43
+          }
+        ],
+        "official": {
+          "kind": "identity-mismatch",
+          "sourceId": 38383,
+          "title": "Ultimate Spider-Man (2011) #11"
+        },
+        "reader": null
+      }
+    ],
+    "highUnverified": [
+      {
+        "gcdId": 291228,
+        "local": {
+          "gcdId": 291228,
+          "title": "New X-Men",
+          "issueNumber": "1",
+          "seriesYear": "2004",
+          "date": "2004-05-19"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 654,
+            "readerId": 1034,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "1",
+            "seriesYear": "2004",
+            "onSale": "2004-05-19T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 1458,
+            "readerId": 28365,
+            "seriesName": "NEW X-MEN - ACADEMY X VOL. 1: CHOOSING SIDES (2004)",
+            "issueNumber": "1",
+            "seriesYear": "2004",
+            "onSale": "2004-12-22T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 1993,
+            "readerId": 2311,
+            "seriesName": "New X-Men: Hellions (2005)",
+            "issueNumber": "1",
+            "seriesYear": "2005",
+            "onSale": "2005-05-25T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 2578,
+            "readerId": 2310,
+            "seriesName": "NEW X-MEN: ACADEMY X YEARBOOK SPECIAL (2005)",
+            "issueNumber": "1",
+            "seriesYear": "2005",
+            "onSale": "2005-10-26T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 18997,
+            "readerId": 10056,
+            "seriesName": "NEW X-MEN ANNUAL 1 (2001)",
+            "issueNumber": "1",
+            "seriesYear": "2001",
+            "onSale": "2001-09-01T00:00:00+0000",
+            "score": 113
+          }
+        ]
+      },
+      {
+        "gcdId": 291229,
+        "local": {
+          "gcdId": 291229,
+          "title": "New X-Men",
+          "issueNumber": "2",
+          "seriesYear": "2004",
+          "date": "2004-06-16"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 711,
+            "readerId": 3419,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "2",
+            "seriesYear": "2004",
+            "onSale": "2004-06-16T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 2100,
+            "readerId": 2312,
+            "seriesName": "New X-Men: Hellions (2005)",
+            "issueNumber": "2",
+            "seriesYear": "2005",
+            "onSale": "2005-06-29T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 4767,
+            "readerId": 40752,
+            "seriesName": "NEW X-MEN: CHILDHOOD'S END VOL. 2 (2006)",
+            "issueNumber": "2",
+            "seriesYear": "2006",
+            "onSale": "2006-08-02T00:00:00+0000",
+            "score": 119
+          },
+          {
+            "sourceId": 32192,
+            "readerId": 15656,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "2",
+            "seriesYear": "2010",
+            "onSale": "2010-08-11T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43467,
+            "readerId": 28118,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "2",
+            "seriesYear": "2012",
+            "onSale": "2012-11-28T00:00:00+0000",
+            "score": 75
+          }
+        ]
+      },
+      {
+        "gcdId": 291230,
+        "local": {
+          "gcdId": 291230,
+          "title": "New X-Men",
+          "issueNumber": "3",
+          "seriesYear": "2004",
+          "date": "2004-07-21"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 533,
+            "readerId": 3420,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "3",
+            "seriesYear": "2004",
+            "onSale": "2004-07-21T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 2205,
+            "readerId": 2313,
+            "seriesName": "New X-Men: Hellions (2005)",
+            "issueNumber": "3",
+            "seriesYear": "2005",
+            "onSale": "2005-07-20T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 5636,
+            "readerId": 40770,
+            "seriesName": "NEW X-MEN: CHILDHOOD'S END VOL. 3 (2006)",
+            "issueNumber": "3",
+            "seriesYear": "2006",
+            "onSale": "2006-12-06T00:00:00+0000",
+            "score": 119
+          },
+          {
+            "sourceId": 32193,
+            "readerId": 16008,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "3",
+            "seriesYear": "2010",
+            "onSale": "2010-09-09T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43468,
+            "readerId": 28119,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "3",
+            "seriesYear": "2012",
+            "onSale": "2012-12-05T00:00:00+0000",
+            "score": 75
+          }
+        ]
+      },
+      {
+        "gcdId": 291231,
+        "local": {
+          "gcdId": 291231,
+          "title": "New X-Men",
+          "issueNumber": "4",
+          "seriesYear": "2004",
+          "date": "2004-08-18"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 755,
+            "readerId": 3421,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "4",
+            "seriesYear": "2004",
+            "onSale": "2004-08-18T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 2325,
+            "readerId": 2314,
+            "seriesName": "New X-Men: Hellions (2005)",
+            "issueNumber": "4",
+            "seriesYear": "2005",
+            "onSale": "2005-08-17T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 1124,
+            "readerId": 27302,
+            "seriesName": "NEW X-MEN VOL. 4: RIOT AT XAVIER'S (2003)",
+            "issueNumber": "4",
+            "seriesYear": "2003",
+            "onSale": "2006-11-01T00:00:00+0000",
+            "score": 146
+          },
+          {
+            "sourceId": 32196,
+            "readerId": 16755,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2010",
+            "onSale": "2010-10-13T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43469,
+            "readerId": 28120,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "4",
+            "seriesYear": "2012",
+            "onSale": "2012-12-19T00:00:00+0000",
+            "score": 75
+          }
+        ]
+      },
+      {
+        "gcdId": 291232,
+        "local": {
+          "gcdId": 291232,
+          "title": "New X-Men",
+          "issueNumber": "5",
+          "seriesYear": "2004",
+          "date": "2004-09-15"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 827,
+            "readerId": 3422,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "5",
+            "seriesYear": "2004",
+            "onSale": "2004-09-15T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 1182,
+            "readerId": 27483,
+            "seriesName": "NEW X-MEN VOL. 5: ASSAULT ON WEAPON PLUS (2003)",
+            "issueNumber": "5",
+            "seriesYear": "2003",
+            "onSale": "2006-05-17T00:00:00+0000",
+            "score": 146
+          },
+          {
+            "sourceId": 32197,
+            "readerId": 18605,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "5",
+            "seriesYear": "2010",
+            "onSale": "2010-11-17T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43470,
+            "readerId": 28121,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "5",
+            "seriesYear": "2012",
+            "onSale": "2013-01-02T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46786,
+            "readerId": 31507,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "5",
+            "seriesYear": "2013",
+            "onSale": "2013-09-11T00:00:00+0000",
+            "score": 69
+          }
+        ]
+      },
+      {
+        "gcdId": 291233,
+        "local": {
+          "gcdId": 291233,
+          "title": "New X-Men",
+          "issueNumber": "6",
+          "seriesYear": "2004",
+          "date": "2004-10-20"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 910,
+            "readerId": 3423,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "6",
+            "seriesYear": "2004",
+            "onSale": "2004-10-20T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 1246,
+            "readerId": 77039,
+            "seriesName": "NEW X-MEN VOL. 6: PLANET X (2004)",
+            "issueNumber": "6",
+            "seriesYear": "2004",
+            "onSale": "2004-04-01T00:00:00+0000",
+            "score": 243
+          },
+          {
+            "sourceId": 32199,
+            "readerId": 18606,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "6",
+            "seriesYear": "2010",
+            "onSale": "2010-12-22T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43471,
+            "readerId": 28122,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "6",
+            "seriesYear": "2012",
+            "onSale": "2013-01-16T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46788,
+            "readerId": 31681,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "6",
+            "seriesYear": "2013",
+            "onSale": "2013-10-09T00:00:00+0000",
+            "score": 69
+          }
+        ]
+      },
+      {
+        "gcdId": 291234,
+        "local": {
+          "gcdId": 291234,
+          "title": "New X-Men",
+          "issueNumber": "7",
+          "seriesYear": "2004",
+          "date": "2004-12-01"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 80,
+            "readerId": 3424,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "7",
+            "seriesYear": "2004",
+            "onSale": "2004-12-01T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32202,
+            "readerId": 18982,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "7",
+            "seriesYear": "2010",
+            "onSale": "2011-01-26T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43472,
+            "readerId": 28437,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "7",
+            "seriesYear": "2012",
+            "onSale": "2013-02-06T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46789,
+            "readerId": 32298,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "7",
+            "seriesYear": "2013",
+            "onSale": "2013-11-20T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14361,
+            "readerId": 7792,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "7",
+            "seriesYear": "1991",
+            "onSale": "1992-04-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291235,
+        "local": {
+          "gcdId": 291235,
+          "title": "New X-Men",
+          "issueNumber": "8",
+          "seriesYear": "2004",
+          "date": "2005-01-12"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 1483,
+            "readerId": 2308,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "8",
+            "seriesYear": "2004",
+            "onSale": "2005-01-12T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32203,
+            "readerId": 19721,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "8",
+            "seriesYear": "2010",
+            "onSale": "2011-02-23T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43473,
+            "readerId": 28751,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "8",
+            "seriesYear": "2012",
+            "onSale": "2013-03-06T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46790,
+            "readerId": 32299,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "8",
+            "seriesYear": "2013",
+            "onSale": "2013-12-18T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14372,
+            "readerId": 32917,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "8",
+            "seriesYear": "1991",
+            "onSale": "1992-05-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291236,
+        "local": {
+          "gcdId": 291236,
+          "title": "New X-Men",
+          "issueNumber": "9",
+          "seriesYear": "2004",
+          "date": "2005-01-26"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 1568,
+            "readerId": 2309,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "9",
+            "seriesYear": "2004",
+            "onSale": "2005-01-26T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32205,
+            "readerId": 20145,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "9",
+            "seriesYear": "2010",
+            "onSale": "2011-03-23T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43474,
+            "readerId": 28784,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "9",
+            "seriesYear": "2012",
+            "onSale": "2013-03-20T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46791,
+            "readerId": 32838,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "9",
+            "seriesYear": "2013",
+            "onSale": "2014-01-22T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14383,
+            "readerId": 32918,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "9",
+            "seriesYear": "1991",
+            "onSale": "1992-06-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291237,
+        "local": {
+          "gcdId": 291237,
+          "title": "New X-Men",
+          "issueNumber": "10",
+          "seriesYear": "2004",
+          "date": "2005-02-16"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 1657,
+            "readerId": 2295,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "10",
+            "seriesYear": "2004",
+            "onSale": "2005-02-16T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32187,
+            "readerId": 20682,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "10",
+            "seriesYear": "2010",
+            "onSale": "2011-04-27T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43475,
+            "readerId": 29070,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "10",
+            "seriesYear": "2012",
+            "onSale": "2013-04-03T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46792,
+            "readerId": 32999,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "10",
+            "seriesYear": "2013",
+            "onSale": "2014-02-05T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14282,
+            "readerId": 32919,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "10",
+            "seriesYear": "1991",
+            "onSale": "1992-07-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291238,
+        "local": {
+          "gcdId": 291238,
+          "title": "New X-Men",
+          "issueNumber": "11",
+          "seriesYear": "2004",
+          "date": "2005-03-23"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 1751,
+            "readerId": 2296,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "11",
+            "seriesYear": "2004",
+            "onSale": "2005-03-23T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32186,
+            "readerId": 20943,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "11",
+            "seriesYear": "2010",
+            "onSale": "2011-05-11T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43476,
+            "readerId": 29493,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "11",
+            "seriesYear": "2012",
+            "onSale": "2013-05-01T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46793,
+            "readerId": 33020,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "11",
+            "seriesYear": "2013",
+            "onSale": "2014-02-19T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14293,
+            "readerId": 32920,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "11",
+            "seriesYear": "1991",
+            "onSale": "1992-08-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291239,
+        "local": {
+          "gcdId": 291239,
+          "title": "New X-Men",
+          "issueNumber": "12",
+          "seriesYear": "2004",
+          "date": "2005-04-20"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 1857,
+            "readerId": 2297,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "12",
+            "seriesYear": "2004",
+            "onSale": "2005-04-20T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 32188,
+            "readerId": 21299,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "12",
+            "seriesYear": "2010",
+            "onSale": "2011-06-01T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43477,
+            "readerId": 29494,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "12",
+            "seriesYear": "2012",
+            "onSale": "2013-06-05T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48685,
+            "readerId": 33437,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "12",
+            "seriesYear": "2013",
+            "onSale": "2014-03-19T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14298,
+            "readerId": 32921,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "12",
+            "seriesYear": "1991",
+            "onSale": "1992-09-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291240,
+        "local": {
+          "gcdId": 291240,
+          "title": "New X-Men",
+          "issueNumber": "13",
+          "seriesYear": "2004",
+          "date": "2005-05-04"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2007,
+            "readerId": 2298,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "13",
+            "seriesYear": "2004",
+            "onSale": "2005-05-04T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36448,
+            "readerId": 21668,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "13",
+            "seriesYear": "2010",
+            "onSale": "2011-06-15T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43478,
+            "readerId": 29495,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "13",
+            "seriesYear": "2012",
+            "onSale": "2013-06-26T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48686,
+            "readerId": 33534,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "13",
+            "seriesYear": "2013",
+            "onSale": "2014-04-16T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14299,
+            "readerId": 32922,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "13",
+            "seriesYear": "1991",
+            "onSale": "1992-10-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291241,
+        "local": {
+          "gcdId": 291241,
+          "title": "New X-Men",
+          "issueNumber": "14",
+          "seriesYear": "2004",
+          "date": "2005-05-18"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2008,
+            "readerId": 2299,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "14",
+            "seriesYear": "2004",
+            "onSale": "2005-05-18T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36445,
+            "readerId": 22414,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "14",
+            "seriesYear": "2010",
+            "onSale": "2011-07-06T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43479,
+            "readerId": 30503,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "14",
+            "seriesYear": "2012",
+            "onSale": "2013-07-17T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48687,
+            "readerId": 33948,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "14",
+            "seriesYear": "2013",
+            "onSale": "2014-05-21T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14300,
+            "readerId": 28576,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "14",
+            "seriesYear": "1991",
+            "onSale": "1992-11-10T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291242,
+        "local": {
+          "gcdId": 291242,
+          "title": "New X-Men",
+          "issueNumber": "15",
+          "seriesYear": "2004",
+          "date": "2005-06-22"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2112,
+            "readerId": 2300,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "15",
+            "seriesYear": "2004",
+            "onSale": "2005-06-22T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36447,
+            "readerId": 22676,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "15",
+            "seriesYear": "2010",
+            "onSale": "2011-07-20T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43480,
+            "readerId": 30989,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "15",
+            "seriesYear": "2012",
+            "onSale": "2013-08-07T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48688,
+            "readerId": 33873,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "15",
+            "seriesYear": "2013",
+            "onSale": "2014-06-18T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14301,
+            "readerId": 28577,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "15",
+            "seriesYear": "1991",
+            "onSale": "1992-12-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291243,
+        "local": {
+          "gcdId": 291243,
+          "title": "New X-Men",
+          "issueNumber": "16",
+          "seriesYear": "2004",
+          "date": "2005-07-27"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2221,
+            "readerId": 2301,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "16",
+            "seriesYear": "2004",
+            "onSale": "2005-07-27T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36446,
+            "readerId": 23527,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "16",
+            "seriesYear": "2010",
+            "onSale": "2011-08-24T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43481,
+            "readerId": 31351,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "16",
+            "seriesYear": "2012",
+            "onSale": "2013-09-04T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48689,
+            "readerId": 34159,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "16",
+            "seriesYear": "2013",
+            "onSale": "2014-07-16T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14302,
+            "readerId": 28578,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "16",
+            "seriesYear": "1991",
+            "onSale": "1993-01-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291244,
+        "local": {
+          "gcdId": 291244,
+          "title": "New X-Men",
+          "issueNumber": "17",
+          "seriesYear": "2004",
+          "date": "2005-08-24"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2991,
+            "readerId": 4131,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "17",
+            "seriesYear": "2004",
+            "onSale": "2005-08-24T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36444,
+            "readerId": 23752,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "17",
+            "seriesYear": "2010",
+            "onSale": "2011-09-07T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43482,
+            "readerId": 31573,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "17",
+            "seriesYear": "2012",
+            "onSale": "2013-10-02T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48690,
+            "readerId": 34121,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "17",
+            "seriesYear": "2013",
+            "onSale": "2014-07-30T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14303,
+            "readerId": 35657,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "17",
+            "seriesYear": "1991",
+            "onSale": "1993-02-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291245,
+        "local": {
+          "gcdId": 291245,
+          "title": "New X-Men",
+          "issueNumber": "18",
+          "seriesYear": "2004",
+          "date": "2005-09-28"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2466,
+            "readerId": 2303,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "18",
+            "seriesYear": "2004",
+            "onSale": "2005-09-28T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 36443,
+            "readerId": 23912,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "18",
+            "seriesYear": "2010",
+            "onSale": "2011-09-21T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43483,
+            "readerId": 31965,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "18",
+            "seriesYear": "2012",
+            "onSale": "2013-11-13T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48691,
+            "readerId": 34580,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "18",
+            "seriesYear": "2013",
+            "onSale": "2014-08-13T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14304,
+            "readerId": 35658,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "18",
+            "seriesYear": "1991",
+            "onSale": "1993-03-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 291246,
+        "local": {
+          "gcdId": 291246,
+          "title": "New X-Men",
+          "issueNumber": "19",
+          "seriesYear": "2004",
+          "date": "2005-10-26"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 2518,
+            "readerId": 2304,
+            "seriesName": "New X-Men (2004 - 2008)",
+            "issueNumber": "19",
+            "seriesYear": "2004",
+            "onSale": "2005-10-26T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 38083,
+            "readerId": 24144,
+            "seriesName": "X-Men (2010 - 2013)",
+            "issueNumber": "19",
+            "seriesYear": "2010",
+            "onSale": "2011-10-05T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 43484,
+            "readerId": 32356,
+            "seriesName": "All-New X-Men (2012 - 2015)",
+            "issueNumber": "19",
+            "seriesYear": "2012",
+            "onSale": "2013-11-27T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 48692,
+            "readerId": 34753,
+            "seriesName": "X-Men (2013 - 2015)",
+            "issueNumber": "19",
+            "seriesYear": "2013",
+            "onSale": "2014-09-03T00:00:00+0000",
+            "score": 69
+          },
+          {
+            "sourceId": 14305,
+            "readerId": 35663,
+            "seriesName": "X-Men (1991 - 2001)",
+            "issueNumber": "19",
+            "seriesYear": "1991",
+            "onSale": "1993-04-01T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 311260,
+        "local": {
+          "gcdId": 311260,
+          "title": "Amazing Spider-Girl",
+          "issueNumber": "0",
+          "seriesYear": "2006",
+          "date": "2006-10-04"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 5286,
+            "readerId": 1354,
+            "seriesName": "Amazing Spider-Girl (2006 - 2009)",
+            "issueNumber": "0",
+            "seriesYear": "2006",
+            "onSale": "2006-10-04T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 13325,
+            "readerId": 2453,
+            "seriesName": "Spider-Girl (1998 - 2006)",
+            "issueNumber": "0",
+            "seriesYear": "1998",
+            "onSale": "1998-10-01T00:00:00+0000",
+            "score": 75
+          }
+        ]
+      },
+      {
+        "gcdId": 2110772,
+        "local": {
+          "gcdId": 2110772,
+          "title": "Marvel Atlas",
+          "issueNumber": "2",
+          "seriesYear": "2007",
+          "date": "2008-03-26"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 20878,
+            "readerId": 49350,
+            "seriesName": "MARVEL ATLAS (2007 - 2008)",
+            "issueNumber": "2",
+            "seriesYear": "2007",
+            "onSale": "2008-03-26T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 30037,
+            "readerId": 14928,
+            "seriesName": "Atlas (2010)",
+            "issueNumber": "2",
+            "seriesYear": "2010",
+            "onSale": "2010-06-16T00:00:00+0000",
+            "score": 113
+          },
+          {
+            "sourceId": 80470,
+            "readerId": 54628,
+            "seriesName": "Marvel (2020)",
+            "issueNumber": "2",
+            "seriesYear": "2020",
+            "onSale": "2020-11-25T00:00:00+0000",
+            "score": 43
+          }
+        ]
+      },
+      {
+        "gcdId": 695290,
+        "local": {
+          "gcdId": 695290,
+          "title": "Amazing Spider-Man: Extra!",
+          "issueNumber": "1",
+          "seriesYear": "2008",
+          "date": "2008-07-30"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 23069,
+            "readerId": 10677,
+            "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+            "issueNumber": "1",
+            "seriesYear": "2008",
+            "onSale": "2008-07-30T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 21798,
+            "readerId": 10589,
+            "seriesName": "Amazing Spider-Man Family (2008 - 2009)",
+            "issueNumber": "1",
+            "seriesYear": "2008",
+            "onSale": "2008-08-06T00:00:00+0000",
+            "score": 168
+          },
+          {
+            "sourceId": 45798,
+            "readerId": 33592,
+            "seriesName": "The Amazing Spider-Man (2014 - 2015)",
+            "issueNumber": "1",
+            "seriesYear": "2014",
+            "onSale": "2014-04-30T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 55693,
+            "readerId": 41075,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "1",
+            "seriesYear": "2016",
+            "onSale": "2016-02-03T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 37894,
+            "readerId": 16485,
+            "seriesName": "Amazing Spider-Man (1999 - 2013)",
+            "issueNumber": "1",
+            "seriesYear": "1999",
+            "onSale": "1999-01-06T00:00:00+0000",
+            "score": 69
+          }
+        ]
+      },
+      {
+        "gcdId": 623362,
+        "local": {
+          "gcdId": 623362,
+          "title": "Marvel Apes",
+          "issueNumber": "0",
+          "seriesYear": "2008",
+          "date": "2008-12-10"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 22927,
+            "readerId": 40370,
+            "seriesName": "Marvel Apes (2008)",
+            "issueNumber": "0",
+            "seriesYear": "2008",
+            "onSale": "2008-12-10T00:00:00+0000",
+            "score": 388
+          }
+        ]
+      },
+      {
+        "gcdId": 695292,
+        "local": {
+          "gcdId": 695292,
+          "title": "Amazing Spider-Man: Extra!",
+          "issueNumber": "3",
+          "seriesYear": "2008",
+          "date": "2009-03-18"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 23834,
+            "readerId": 19945,
+            "seriesName": "Amazing Spider-Man: Extra! (2008 - 2009)",
+            "issueNumber": "3",
+            "seriesYear": "2008",
+            "onSale": "2009-03-18T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 22979,
+            "readerId": 10913,
+            "seriesName": "Amazing Spider-Man Family (2008 - 2009)",
+            "issueNumber": "3",
+            "seriesYear": "2008",
+            "onSale": "2008-12-17T00:00:00+0000",
+            "score": 145
+          },
+          {
+            "sourceId": 45802,
+            "readerId": 33865,
+            "seriesName": "The Amazing Spider-Man (2014 - 2015)",
+            "issueNumber": "3",
+            "seriesYear": "2014",
+            "onSale": "2014-06-25T00:00:00+0000",
+            "score": 87
+          },
+          {
+            "sourceId": 55697,
+            "readerId": 41661,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "3",
+            "seriesYear": "2016",
+            "onSale": "2016-04-06T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 55301,
+            "readerId": 40377,
+            "seriesName": "The Amazing Spider-Man (2017 - 2018)",
+            "issueNumber": "3",
+            "seriesYear": "2017",
+            "onSale": "2015-11-04T00:00:00+0000",
+            "score": 69
+          }
+        ]
+      },
+      {
+        "gcdId": 802516,
+        "local": {
+          "gcdId": 802516,
+          "title": "Thor: For Asgard",
+          "issueNumber": "6",
+          "seriesYear": "2010",
+          "date": "2011-02-02"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 34715,
+            "readerId": 19116,
+            "seriesName": "Thor: For Asgard (2010 - 2011)",
+            "issueNumber": "6",
+            "seriesYear": "2010",
+            "onSale": "2011-02-02T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 17363,
+            "readerId": 8659,
+            "seriesName": "Thor (2007 - 2011)",
+            "issueNumber": "6",
+            "seriesYear": "2007",
+            "onSale": "2008-02-27T00:00:00+0000",
+            "score": 113
+          },
+          {
+            "sourceId": 52818,
+            "readerId": 36937,
+            "seriesName": "Thor (2014 - 2015)",
+            "issueNumber": "6",
+            "seriesYear": "2014",
+            "onSale": "2015-03-11T00:00:00+0000",
+            "score": 99
+          },
+          {
+            "sourceId": 69928,
+            "readerId": 49530,
+            "seriesName": "Thor (2018 - 2019)",
+            "issueNumber": "6",
+            "seriesYear": "2018",
+            "onSale": "2018-10-17T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 78632,
+            "readerId": 54938,
+            "seriesName": "Thor (2020 - 2023)",
+            "issueNumber": "6",
+            "seriesYear": "2020",
+            "onSale": "2020-08-19T00:00:00+0000",
+            "score": 63
+          }
+        ]
+      },
+      {
+        "gcdId": 811563,
+        "local": {
+          "gcdId": 811563,
+          "title": "Wolverine / Hercules: Myths, Monsters & Mutants",
+          "issueNumber": "1",
+          "seriesYear": "2011",
+          "date": "2011-03-02"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 36096,
+            "readerId": 19825,
+            "seriesName": "Wolverine/Hercules: Myths, Monsters & Mutants (2011)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2011-03-02T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 29763,
+            "readerId": 20372,
+            "seriesName": "Herc (2010 - 2011)",
+            "issueNumber": "1",
+            "seriesYear": "2010",
+            "onSale": "2011-04-06T00:00:00+0000",
+            "score": 183
+          },
+          {
+            "sourceId": 30224,
+            "readerId": 15933,
+            "seriesName": "Wolverine (2010 - 2012)",
+            "issueNumber": "1",
+            "seriesYear": "2010",
+            "onSale": "2010-09-01T00:00:00+0000",
+            "score": 160
+          },
+          {
+            "sourceId": 32159,
+            "readerId": 0,
+            "seriesName": "WOLVERINE/HERCULES: MYTHS, MONSTERS & MUTANTS TPB (2013)",
+            "issueNumber": "1",
+            "seriesYear": "2013",
+            "onSale": "2011-08-10T00:00:00-0400",
+            "score": 153
+          },
+          {
+            "sourceId": 46713,
+            "readerId": 28768,
+            "seriesName": "Wolverine (2013 - 2014)",
+            "issueNumber": "1",
+            "seriesYear": "2013",
+            "onSale": "2013-03-13T00:00:00+0000",
+            "score": 119
+          }
+        ]
+      },
+      {
+        "gcdId": 875744,
+        "local": {
+          "gcdId": 875744,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "1",
+          "seriesYear": "2011",
+          "date": "2011-09-14"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38394,
+            "readerId": 23712,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2011-09-14T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 39365,
+            "readerId": 28252,
+            "seriesName": "ULTIMATE COMICS SPIDER-MAN BY BRIAN MICHAEL BENDIS VOL. 1 (2011 - Present)",
+            "issueNumber": "1",
+            "seriesYear": "2011",
+            "onSale": "2012-08-15T00:00:00+0000",
+            "score": 220
+          },
+          {
+            "sourceId": 28948,
+            "readerId": 31398,
+            "seriesName": "Ultimate Comics Spider-Man Vol. 2 (2010)",
+            "issueNumber": "1",
+            "seriesYear": "2010",
+            "onSale": "2011-05-18T00:00:00-0400",
+            "score": 183
+          },
+          {
+            "sourceId": 55693,
+            "readerId": 41075,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "1",
+            "seriesYear": "2016",
+            "onSale": "2016-02-03T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 42606,
+            "readerId": 25830,
+            "seriesName": "Ultimate Spider-Man Premiere Comic (2012)",
+            "issueNumber": "1",
+            "seriesYear": "2012",
+            "onSale": "2012-03-21T00:00:00+0000",
+            "score": 85
+          }
+        ]
+      },
+      {
+        "gcdId": 879991,
+        "local": {
+          "gcdId": 879991,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "2",
+          "seriesYear": "2011",
+          "date": "2011-09-28"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38395,
+            "readerId": 23843,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "2",
+            "seriesYear": "2011",
+            "onSale": "2011-09-28T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55695,
+            "readerId": 41286,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "2",
+            "seriesYear": "2016",
+            "onSale": "2016-03-02T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 44254,
+            "readerId": 28144,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "2",
+            "seriesYear": "2012",
+            "onSale": "2012-11-28T00:00:00+0000",
+            "score": 85
+          },
+          {
+            "sourceId": 75133,
+            "readerId": 52708,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "2",
+            "seriesYear": "2019",
+            "onSale": "2019-10-16T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 26859,
+            "readerId": 16890,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "2",
+            "seriesYear": "2009",
+            "onSale": "2009-09-02T00:00:00+0000",
+            "score": 44
+          }
+        ]
+      },
+      {
+        "gcdId": 885869,
+        "local": {
+          "gcdId": 885869,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "3",
+          "seriesYear": "2011",
+          "date": "2011-10-12"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38396,
+            "readerId": 23930,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "3",
+            "seriesYear": "2011",
+            "onSale": "2011-10-12T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55697,
+            "readerId": 41661,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "3",
+            "seriesYear": "2016",
+            "onSale": "2016-04-06T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 45421,
+            "readerId": 28235,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "3",
+            "seriesYear": "2012",
+            "onSale": "2012-12-12T00:00:00+0000",
+            "score": 85
+          },
+          {
+            "sourceId": 75134,
+            "readerId": 53020,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "3",
+            "seriesYear": "2019",
+            "onSale": "2019-12-18T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 27951,
+            "readerId": 16948,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "3",
+            "seriesYear": "2009",
+            "onSale": "2009-10-07T00:00:00+0000",
+            "score": 44
+          }
+        ]
+      },
+      {
+        "gcdId": 893522,
+        "local": {
+          "gcdId": 893522,
+          "title": "Ultimate Comics Spider-Man",
+          "issueNumber": "4",
+          "seriesYear": "2011",
+          "date": "2011-11-09"
+        },
+        "existingSourceId": 0,
+        "confidence": "high",
+        "ranked": [
+          {
+            "sourceId": 38400,
+            "readerId": 24567,
+            "seriesName": "Ultimate Comics Spider-Man (2011 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2011",
+            "onSale": "2011-11-09T00:00:00+0000",
+            "score": 388
+          },
+          {
+            "sourceId": 55698,
+            "readerId": 41581,
+            "seriesName": "Spider-Man (2016 - 2018)",
+            "issueNumber": "4",
+            "seriesYear": "2016",
+            "onSale": "2016-05-18T00:00:00+0000",
+            "score": 93
+          },
+          {
+            "sourceId": 75135,
+            "readerId": 53287,
+            "seriesName": "Spider-Man (2019 - 2020)",
+            "issueNumber": "4",
+            "seriesYear": "2019",
+            "onSale": "2020-09-23T00:00:00+0000",
+            "score": 75
+          },
+          {
+            "sourceId": 46544,
+            "readerId": 28391,
+            "seriesName": "Ultimate Comics Iron Man (2012 - 2013)",
+            "issueNumber": "4",
+            "seriesYear": "2012",
+            "onSale": "2013-01-16T00:00:00+0000",
+            "score": 71
+          },
+          {
+            "sourceId": 27952,
+            "readerId": 17672,
+            "seriesName": "Ultimate Spider-Man (2009 - 2012)",
+            "issueNumber": "4",
+            "seriesYear": "2009",
+            "onSale": "2009-11-04T00:00:00+0000",
+            "score": 44
+          }
+        ]
+      }
+    ]
+  },
+  "safety": {
+    "targetStatus": 4,
+    "protectedRows": 26386,
+    "cacheWritten": false
+  }
+}
