@@ -1,0 +1,245 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T17:40:42.011Z",
+  "mode": "diagnostic-only",
+  "writesCache": false,
+  "baseline": {
+    "localCount": 51002,
+    "matched": 25329,
+    "noDigital": 1057,
+    "notListed": 24616,
+    "linkReady": 25322,
+    "linkMissing": 7
+  },
+  "statusCounts": {
+    "unknown": 0,
+    "mu": 25322,
+    "ambiguous": 0,
+    "noDigital": 1057,
+    "notListed": 24616,
+    "muLinkMissing": 7
+  },
+  "safety": {
+    "targetStatus": 4,
+    "targetRows": 24616,
+    "protectedRows": 26386,
+    "protectedRowsSha256": "8b0085d2dab9e5ecf3ca8d7d88062a7bf14f8f4213ad229c9ad74ea98c2a8b84",
+    "targetRowsSha256": "241c2e58686476b600a96dc18fc8d9aae194f407792036f0b1d0f24aa9b32acc"
+  },
+  "identifierCoverage": {
+    "both": 0,
+    "sourceOnly": 5,
+    "readerOnly": 0,
+    "neither": 24611,
+    "directOfficialRouteCandidates": 5,
+    "discoveryRequired": 24611,
+    "directOfficialRoutePct": 0.02,
+    "discoveryRequiredPct": 99.98
+  },
+  "identifierIntegrity": {
+    "sourceIds": {
+      "unique": 5,
+      "duplicateValues": 0,
+      "duplicateRows": 0,
+      "examples": []
+    },
+    "readerIds": {
+      "unique": 0,
+      "duplicateValues": 0,
+      "duplicateRows": 0,
+      "examples": []
+    },
+    "staleDrnCount": 0,
+    "staleCoverCount": 5
+  },
+  "examples": {
+    "both": [],
+    "sourceOnly": [
+      {
+        "gcdId": 647728,
+        "sourceId": 24200,
+        "readerId": 0
+      },
+      {
+        "gcdId": 647729,
+        "sourceId": 26202,
+        "readerId": 0
+      },
+      {
+        "gcdId": 647730,
+        "sourceId": 26203,
+        "readerId": 0
+      },
+      {
+        "gcdId": 647731,
+        "sourceId": 26204,
+        "readerId": 0
+      },
+      {
+        "gcdId": 647732,
+        "sourceId": 26205,
+        "readerId": 0
+      }
+    ],
+    "readerOnly": [],
+    "neither": [
+      {
+        "gcdId": 1672815,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1693244,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1654434,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1363,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1138591,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1580,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1519,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1138592,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1674793,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1460364,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1779,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1814735,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1843,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1709,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1138593,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1729720,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1940,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1516692,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1138595,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2058,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2059,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2108044,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2057,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2124,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 202968,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1138596,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 1127593,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2126,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2128,
+        "sourceId": 0,
+        "readerId": 0
+      },
+      {
+        "gcdId": 2182,
+        "sourceId": 0,
+        "readerId": 0
+      }
+    ],
+    "staleDrn": []
+  },
+  "nextPassPlan": {
+    "phaseA": "Probe marvel.com/comics/issue/<sourceId> for sourceId-bearing NOT_LISTED rows, with strict identity verification.",
+    "phaseB": "Probe share.marvel.com/sharing/reader/<readerId> for readerId-bearing rows and accept Unlimited only on exact comic identity.",
+    "phaseC": "Run candidate discovery only for rows with neither sourceId nor readerId; verify every candidate against an official Marvel page before classification.",
+    "invariant": "Never mutate a row whose current status is not NOT_LISTED; fingerprint all protected rows before publication."
+  }
+}
