@@ -1,0 +1,3975 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T23:41:38.008Z",
+  "mode": "phase6-reader-fallback-71-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31121,
+    "noDigital": 1135,
+    "notListed": 18746,
+    "linkReady": 27288,
+    "readerFallbackReady": 3833,
+    "functionalLinkReady": 31121,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "status4Required": true,
+    "noNegativeClassification": true,
+    "officialSourceOrReaderMuRequired": true,
+    "officialReaderSmartLinkRequired": true,
+    "terminalSourceReaderCollisionProtection": true
+  },
+  "summary": {
+    "targets": 71,
+    "readerMu": 56,
+    "unresolved": 15,
+    "terminalCollision": 0,
+    "exception": 0,
+    "sourceAuthorityMu": 1,
+    "readerAuthorityMu": 56,
+    "smartFunctional": 71,
+    "writesCache": false
+  },
+  "results": [
+    {
+      "origin": "phase5-clean",
+      "gcdId": 27317,
+      "sourceId": 51036,
+      "readerId": 35269,
+      "remoteSeriesName": "Deadly Hands of Kung Fu (1974 - 1977)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "1974-04-01T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Deadly Hands Of Kung Fu (1974) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Deadly Hands Of Kung Fu (1974) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=35269",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 87693,
+      "sourceId": 10541,
+      "readerId": 2360,
+      "remoteSeriesName": "Peter Parker: Spider-Man (1999 - 2003)",
+      "remoteIssueNumber": "31",
+      "remoteOnSale": "2001-05-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": true,
+        "status": 200,
+        "title": "Peter Parker: Spider-Man (1999) #31",
+        "identity": true,
+        "availability": "mu"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Peter Parker: Spider-Man (1999) #31",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2360",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 386796,
+      "sourceId": 21915,
+      "readerId": 13878,
+      "remoteSeriesName": "X-Factor (2005 - 2013)",
+      "remoteIssueNumber": "26",
+      "remoteOnSale": "2007-12-12T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 404,
+        "title": "",
+        "identity": false,
+        "availability": "unknown"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13878",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase6-structural",
+      "gcdId": 565319,
+      "sourceId": 105604,
+      "readerId": 63776,
+      "remoteSeriesName": "Ender's Shadow: Battle School (2009)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2009-07-15T00:00:00-0400",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Ender's Shadow: Battle School (Hardcover)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Ender's Shadow: Battle School (Hardcover)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=63776",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 845982,
+      "sourceId": 33953,
+      "readerId": 78264,
+      "remoteSeriesName": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (2010 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2012-01-11T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (Hardcover)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "DARK TOWER: THE GUNSLINGER - THE BATTLE OF TULL (Hardcover)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=78264",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 868771,
+      "sourceId": 32083,
+      "readerId": 78271,
+      "remoteSeriesName": "THE STAND: THE NIGHT HAS COME (2011)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2012-02-15T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "THE STAND: THE NIGHT HAS COME (Hardcover)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "THE STAND: THE NIGHT HAS COME (Hardcover)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=78271",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1026223,
+      "sourceId": 44512,
+      "readerId": 27612,
+      "remoteSeriesName": "THANOS QUEST (2012)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2012-09-05T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "THANOS QUEST ()",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "THANOS QUEST ()",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27612",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1802007,
+      "sourceId": 66916,
+      "readerId": 47810,
+      "remoteSeriesName": "Marvel Rising (2018)",
+      "remoteIssueNumber": "0",
+      "remoteOnSale": "2018-04-25T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Marvel Rising (2018)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Marvel Rising (2018)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=47810",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1905262,
+      "sourceId": 71646,
+      "readerId": 50328,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2019-01-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50328",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1918092,
+      "sourceId": 71648,
+      "readerId": 50572,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2019-02-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50572",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1924030,
+      "sourceId": 74051,
+      "readerId": 50613,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-02-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50613",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1928559,
+      "sourceId": 74053,
+      "readerId": 50614,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2019-02-27T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50614",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1931991,
+      "sourceId": 71649,
+      "readerId": 50870,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2019-03-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50870",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1939001,
+      "sourceId": 74055,
+      "readerId": 50925,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2019-03-20T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50925",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1944115,
+      "sourceId": 71650,
+      "readerId": 51078,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2019-04-03T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51078",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1947817,
+      "sourceId": 74056,
+      "readerId": 51090,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2019-04-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51090",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1961145,
+      "sourceId": 71651,
+      "readerId": 51353,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2019-05-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51353",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1961162,
+      "sourceId": 74057,
+      "readerId": 51365,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2019-05-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51365",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1978162,
+      "sourceId": 74058,
+      "readerId": 51682,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2019-06-19T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51682",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1980714,
+      "sourceId": 71652,
+      "readerId": 51668,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2019-06-26T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51668",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1987832,
+      "sourceId": 74059,
+      "readerId": 51894,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2019-07-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51894",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2004689,
+      "sourceId": 71653,
+      "readerId": 51991,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2019-07-31T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51991",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2011029,
+      "sourceId": 74060,
+      "readerId": 52324,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2019-08-21T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52324",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2013359,
+      "sourceId": 71654,
+      "readerId": 52484,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2019-09-04T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52484",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2019480,
+      "sourceId": 74061,
+      "readerId": 52501,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2019-09-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52501",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2024833,
+      "sourceId": 74062,
+      "readerId": 52706,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2019-10-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52706",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2028416,
+      "sourceId": 71655,
+      "readerId": 52732,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2019-10-30T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52732",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2037384,
+      "sourceId": 74063,
+      "readerId": 53018,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "11",
+      "remoteOnSale": "2019-11-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #11",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #11",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53018",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2039676,
+      "sourceId": 71656,
+      "readerId": 52979,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "11",
+      "remoteOnSale": "2019-11-20T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #11",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #11",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52979",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2045230,
+      "sourceId": 83856,
+      "readerId": 54191,
+      "remoteSeriesName": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+      "remoteIssueNumber": "0",
+      "remoteOnSale": "2019-12-04T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "True Believers: Conan: Serpent War - The Valley Of The Worm (2019)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54191",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2047436,
+      "sourceId": 74064,
+      "readerId": 53284,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "12",
+      "remoteOnSale": "2019-12-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #12",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #12",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53284",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2063702,
+      "sourceId": 71657,
+      "readerId": 53221,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "12",
+      "remoteOnSale": "2020-01-29T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #12",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #12",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53221",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2072725,
+      "sourceId": 77941,
+      "readerId": 53940,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "13",
+      "remoteOnSale": "2020-02-19T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #13",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #13",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53940",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2077666,
+      "sourceId": 83977,
+      "readerId": 54003,
+      "remoteSeriesName": "Savage Avengers (2019 - 2022)",
+      "remoteIssueNumber": "0",
+      "remoteOnSale": "2020-02-05T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2019)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2019)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54003",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2091079,
+      "sourceId": 77942,
+      "readerId": 54249,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "14",
+      "remoteOnSale": "2020-03-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #14",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #14",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54249",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2157722,
+      "sourceId": 77943,
+      "readerId": 54594,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "15",
+      "remoteOnSale": "2020-10-21T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #15",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #15",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54594",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2161101,
+      "sourceId": 78616,
+      "readerId": 54907,
+      "remoteSeriesName": "Hellstrom: Marvel Tales (2020)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2020-11-04T00:00:00-0500",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Hellstrom: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Hellstrom: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54907",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2168976,
+      "sourceId": 77944,
+      "readerId": 54866,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "16",
+      "remoteOnSale": "2020-11-25T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #16",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #16",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54866",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2174353,
+      "sourceId": 77945,
+      "readerId": 55067,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "17",
+      "remoteOnSale": "2020-12-09T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #17",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #17",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=55067",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2189299,
+      "sourceId": 77946,
+      "readerId": 55792,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "18",
+      "remoteOnSale": "2021-01-27T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #18",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #18",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=55792",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2210003,
+      "sourceId": 77947,
+      "readerId": 56012,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "19",
+      "remoteOnSale": "2021-03-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #19",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #19",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56012",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2214893,
+      "sourceId": 77948,
+      "readerId": 56494,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "20",
+      "remoteOnSale": "2021-04-07T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #20",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #20",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56494",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2225322,
+      "sourceId": 77949,
+      "readerId": 56790,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "21",
+      "remoteOnSale": "2021-05-12T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #21",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #21",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56790",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2229243,
+      "sourceId": 77950,
+      "readerId": 56878,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "22",
+      "remoteOnSale": "2021-06-09T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #22",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #22",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56878",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2251985,
+      "sourceId": 77951,
+      "readerId": 57041,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "23",
+      "remoteOnSale": "2021-07-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #23",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #23",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57041",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2262273,
+      "sourceId": 77952,
+      "readerId": 57166,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "24",
+      "remoteOnSale": "2021-08-25T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #24",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #24",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57166",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2262274,
+      "sourceId": 89589,
+      "readerId": 57649,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "25",
+      "remoteOnSale": "2021-09-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #25",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #25",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57649",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2269907,
+      "sourceId": 92769,
+      "readerId": 57797,
+      "remoteSeriesName": "Ms. Marvel: Marvel Tales (2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-10-13T00:00:00-0400",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Ms. Marvel: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Ms. Marvel: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57797",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2278136,
+      "sourceId": 92771,
+      "readerId": 57904,
+      "remoteSeriesName": "Genis-Vell: Marvel Tales (2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-11-17T00:00:00-0500",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Genis-Vell: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Genis-Vell: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57904",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2295875,
+      "sourceId": 92772,
+      "readerId": 58204,
+      "remoteSeriesName": "The Last Avengers Story: Marvel Tales (2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-12-22T00:00:00-0500",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "The Last Avengers Story: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "The Last Avengers Story: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58204",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2295876,
+      "sourceId": 93610,
+      "readerId": 58185,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-12-22T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58185",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2347925,
+      "sourceId": 93611,
+      "readerId": 58528,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-01-12T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58528",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2363308,
+      "sourceId": 93612,
+      "readerId": 58634,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2022-02-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58634",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2400523,
+      "sourceId": 93613,
+      "readerId": 58817,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2022-05-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58817",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2403728,
+      "sourceId": 98795,
+      "readerId": 59366,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-05-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59366",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2409303,
+      "sourceId": 93614,
+      "readerId": 59146,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2022-06-01T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59146",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2411234,
+      "sourceId": 98797,
+      "readerId": 59626,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-06-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59626",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2417399,
+      "sourceId": 93615,
+      "readerId": 59351,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2022-07-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59351",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2418368,
+      "sourceId": 98799,
+      "readerId": 60013,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2022-07-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60013",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2426095,
+      "sourceId": 98800,
+      "readerId": 60205,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2022-08-17T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60205",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2432561,
+      "sourceId": 98801,
+      "readerId": 60352,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2022-09-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60352",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2439453,
+      "sourceId": 98802,
+      "readerId": 60581,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2022-10-05T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60581",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2447466,
+      "sourceId": 98803,
+      "readerId": 60762,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2022-11-02T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60762",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2456983,
+      "sourceId": 58530,
+      "readerId": 41897,
+      "remoteSeriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-11-23T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41897",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2466514,
+      "sourceId": 98804,
+      "readerId": 61069,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2022-12-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61069",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2479064,
+      "sourceId": 98805,
+      "readerId": 61238,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2023-01-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61238",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2497337,
+      "sourceId": 98806,
+      "readerId": 61868,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2023-02-22T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61868",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2568233,
+      "sourceId": 108996,
+      "readerId": 63682,
+      "remoteSeriesName": "Spine-Tingling Spider-Man (2023 - Present)",
+      "remoteIssueNumber": "0",
+      "remoteOnSale": "2023-09-13T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Spine-Tingling Spider-Man (2023)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Spine-Tingling Spider-Man (2023)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=63682",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2572212,
+      "sourceId": 92765,
+      "readerId": 57670,
+      "remoteSeriesName": "Ka-Zar: Marvel Tales (2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-09-08T00:00:00-0400",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Ka-Zar: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Ka-Zar: Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57670",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2600118,
+      "sourceId": 59979,
+      "readerId": 62519,
+      "remoteSeriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2024-01-17T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=62519",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2791675,
+      "sourceId": 105921,
+      "readerId": 60744,
+      "remoteSeriesName": "Ghost Rider: Danny Ketch - Marvel Tales (2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-11-16T00:00:00+0000",
+      "kind": "unresolved-reader-fallback",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Ghost Rider: Danny Ketch - Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": false,
+        "status": 200,
+        "title": "Ghost Rider: Danny Ketch - Marvel Tales (Trade Paperback)",
+        "identity": false,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60744",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": false
+    }
+  ],
+  "publishable": [
+    {
+      "origin": "phase5-clean",
+      "gcdId": 27317,
+      "sourceId": 51036,
+      "readerId": 35269,
+      "remoteSeriesName": "Deadly Hands of Kung Fu (1974 - 1977)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "1974-04-01T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Deadly Hands Of Kung Fu (1974) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Deadly Hands Of Kung Fu (1974) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=35269",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 87693,
+      "sourceId": 10541,
+      "readerId": 2360,
+      "remoteSeriesName": "Peter Parker: Spider-Man (1999 - 2003)",
+      "remoteIssueNumber": "31",
+      "remoteOnSale": "2001-05-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": true,
+        "status": 200,
+        "title": "Peter Parker: Spider-Man (1999) #31",
+        "identity": true,
+        "availability": "mu"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Peter Parker: Spider-Man (1999) #31",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2360",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1905262,
+      "sourceId": 71646,
+      "readerId": 50328,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2019-01-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50328",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1918092,
+      "sourceId": 71648,
+      "readerId": 50572,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2019-02-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50572",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1924030,
+      "sourceId": 74051,
+      "readerId": 50613,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-02-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50613",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1928559,
+      "sourceId": 74053,
+      "readerId": 50614,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2019-02-27T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50614",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1931991,
+      "sourceId": 71649,
+      "readerId": 50870,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2019-03-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50870",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1939001,
+      "sourceId": 74055,
+      "readerId": 50925,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2019-03-20T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=50925",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1944115,
+      "sourceId": 71650,
+      "readerId": 51078,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2019-04-03T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51078",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1947817,
+      "sourceId": 74056,
+      "readerId": 51090,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2019-04-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51090",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1961145,
+      "sourceId": 71651,
+      "readerId": 51353,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2019-05-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51353",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1961162,
+      "sourceId": 74057,
+      "readerId": 51365,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2019-05-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51365",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1978162,
+      "sourceId": 74058,
+      "readerId": 51682,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2019-06-19T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51682",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1980714,
+      "sourceId": 71652,
+      "readerId": 51668,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2019-06-26T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51668",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 1987832,
+      "sourceId": 74059,
+      "readerId": 51894,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2019-07-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51894",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2004689,
+      "sourceId": 71653,
+      "readerId": 51991,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2019-07-31T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=51991",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2011029,
+      "sourceId": 74060,
+      "readerId": 52324,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2019-08-21T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52324",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2013359,
+      "sourceId": 71654,
+      "readerId": 52484,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2019-09-04T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52484",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2019480,
+      "sourceId": 74061,
+      "readerId": 52501,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2019-09-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52501",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2024833,
+      "sourceId": 74062,
+      "readerId": 52706,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2019-10-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52706",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2028416,
+      "sourceId": 71655,
+      "readerId": 52732,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2019-10-30T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52732",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2037384,
+      "sourceId": 74063,
+      "readerId": 53018,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "11",
+      "remoteOnSale": "2019-11-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #11",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #11",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53018",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2039676,
+      "sourceId": 71656,
+      "readerId": 52979,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "11",
+      "remoteOnSale": "2019-11-20T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #11",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #11",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=52979",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2047436,
+      "sourceId": 74064,
+      "readerId": 53284,
+      "remoteSeriesName": "Savage Sword of Conan (2019)",
+      "remoteIssueNumber": "12",
+      "remoteOnSale": "2019-12-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #12",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Sword Of Conan (2019) #12",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53284",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2063702,
+      "sourceId": 71657,
+      "readerId": 53221,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "12",
+      "remoteOnSale": "2020-01-29T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #12",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #12",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53221",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2072725,
+      "sourceId": 77941,
+      "readerId": 53940,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "13",
+      "remoteOnSale": "2020-02-19T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #13",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #13",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=53940",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2091079,
+      "sourceId": 77942,
+      "readerId": 54249,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "14",
+      "remoteOnSale": "2020-03-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #14",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #14",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54249",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2157722,
+      "sourceId": 77943,
+      "readerId": 54594,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "15",
+      "remoteOnSale": "2020-10-21T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #15",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #15",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54594",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2168976,
+      "sourceId": 77944,
+      "readerId": 54866,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "16",
+      "remoteOnSale": "2020-11-25T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #16",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #16",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=54866",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2174353,
+      "sourceId": 77945,
+      "readerId": 55067,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "17",
+      "remoteOnSale": "2020-12-09T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #17",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #17",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=55067",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2189299,
+      "sourceId": 77946,
+      "readerId": 55792,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "18",
+      "remoteOnSale": "2021-01-27T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #18",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #18",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=55792",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2210003,
+      "sourceId": 77947,
+      "readerId": 56012,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "19",
+      "remoteOnSale": "2021-03-10T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #19",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #19",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56012",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2214893,
+      "sourceId": 77948,
+      "readerId": 56494,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "20",
+      "remoteOnSale": "2021-04-07T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #20",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #20",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56494",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2225322,
+      "sourceId": 77949,
+      "readerId": 56790,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "21",
+      "remoteOnSale": "2021-05-12T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #21",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #21",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56790",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2229243,
+      "sourceId": 77950,
+      "readerId": 56878,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "22",
+      "remoteOnSale": "2021-06-09T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #22",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #22",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=56878",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2251985,
+      "sourceId": 77951,
+      "readerId": 57041,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "23",
+      "remoteOnSale": "2021-07-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #23",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #23",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57041",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2262273,
+      "sourceId": 77952,
+      "readerId": 57166,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "24",
+      "remoteOnSale": "2021-08-25T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #24",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #24",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57166",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2262274,
+      "sourceId": 89589,
+      "readerId": 57649,
+      "remoteSeriesName": "Conan the Barbarian (2019 - 2021)",
+      "remoteIssueNumber": "25",
+      "remoteOnSale": "2021-09-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #25",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Conan The Barbarian (2019) #25",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=57649",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2295876,
+      "sourceId": 93610,
+      "readerId": 58185,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2021-12-22T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58185",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2347925,
+      "sourceId": 93611,
+      "readerId": 58528,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-01-12T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58528",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2363308,
+      "sourceId": 93612,
+      "readerId": 58634,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2022-02-16T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58634",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2400523,
+      "sourceId": 93613,
+      "readerId": 58817,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2022-05-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=58817",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2403728,
+      "sourceId": 98795,
+      "readerId": 59366,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-05-18T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #1",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #1",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59366",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2409303,
+      "sourceId": 93614,
+      "readerId": 59146,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2022-06-01T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59146",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2411234,
+      "sourceId": 98797,
+      "readerId": 59626,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-06-08T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59626",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2417399,
+      "sourceId": 93615,
+      "readerId": 59351,
+      "remoteSeriesName": "King Conan (2021 - 2022)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2022-07-06T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "King Conan (2021) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "King Conan (2021) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=59351",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2418368,
+      "sourceId": 98799,
+      "readerId": 60013,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2022-07-13T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #3",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #3",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60013",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2426095,
+      "sourceId": 98800,
+      "readerId": 60205,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2022-08-17T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #4",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #4",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60205",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2432561,
+      "sourceId": 98801,
+      "readerId": 60352,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2022-09-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #5",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #5",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60352",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2439453,
+      "sourceId": 98802,
+      "readerId": 60581,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "6",
+      "remoteOnSale": "2022-10-05T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #6",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #6",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60581",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2447466,
+      "sourceId": 98803,
+      "readerId": 60762,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2022-11-02T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=60762",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2456983,
+      "sourceId": 58530,
+      "readerId": 41897,
+      "remoteSeriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2022-11-23T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #2",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #2",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=41897",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2466514,
+      "sourceId": 98804,
+      "readerId": 61069,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "8",
+      "remoteOnSale": "2022-12-14T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #8",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #8",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61069",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2479064,
+      "sourceId": 98805,
+      "readerId": 61238,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "9",
+      "remoteOnSale": "2023-01-11T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #9",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #9",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61238",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2497337,
+      "sourceId": 98806,
+      "readerId": 61868,
+      "remoteSeriesName": "Savage Avengers (2022 - 2023)",
+      "remoteIssueNumber": "10",
+      "remoteOnSale": "2023-02-22T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Savage Avengers (2022) #10",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Savage Avengers (2022) #10",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=61868",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    },
+    {
+      "origin": "phase5-clean",
+      "gcdId": 2600118,
+      "sourceId": 59979,
+      "readerId": 62519,
+      "remoteSeriesName": "Miracleman by Gaiman & Buckingham: The Silver Age (2022 - 2023)",
+      "remoteIssueNumber": "7",
+      "remoteOnSale": "2024-01-17T00:00:00+0000",
+      "kind": "reader-mu",
+      "source": {
+        "ok": false,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #7",
+        "identity": true,
+        "availability": "no-digital"
+      },
+      "reader": {
+        "ok": true,
+        "status": 200,
+        "title": "Miracleman By Gaiman & Buckingham: The Silver Age (2022) #7",
+        "identity": true,
+        "availability": "mu"
+      },
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=62519",
+      "smart": {
+        "ok": true,
+        "status": 302,
+        "location": "https://itunes.apple.com/us/app/marvel-unlimited/id607205403?mt=8"
+      },
+      "functional": true
+    }
+  ]
+}
