@@ -1,0 +1,88 @@
+name: Pilot Marvel NOT_LISTED exact title v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/pilot-marvel-not-listed-exact-title-v4.mjs'
+      - '.github/workflows/pilot-marvel-not-listed-exact-title-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marvel-not-listed-exact-title-v4
+  cancel-in-progress: true
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Restore global Marvel discovery catalog
+        uses: actions/cache@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+      - run: node --check scripts/pilot-marvel-not-listed-exact-title-v4.mjs
+      - name: Run exact-title pilot
+        id: pilot
+        continue-on-error: true
+        run: |
+          mkdir -p artifacts/marvel-not-listed-v4
+          set -o pipefail
+          node scripts/pilot-marvel-not-listed-exact-title-v4.mjs 2>&1 | tee artifacts/marvel-not-listed-v4/pilot-exact-title.log
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f artifacts/marvel-not-listed-v4/pilot-exact-title.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/pilot-exact-title.json','utf8'));
+          console.log('## NOT_LISTED V4 · título+número+fecha exactos');
+          console.log(`- Candidatos únicos: ${r.candidateCoverage.uniqueCandidate}`);
+          console.log(`- Ambiguos: ${r.candidateCoverage.ambiguous}`);
+          console.log(`- Sin candidato: ${r.candidateCoverage.noCandidate}`);
+          console.log(`- Piloto: ${r.pilot.checked}`);
+          console.log(`- Identidad oficial exacta: ${r.pilot.exact}`);
+          console.log(`- Unlimited: ${r.pilot.mu}`);
+          console.log(`- NO_DIGITAL: ${r.pilot.noDigital}`);
+          console.log(`- Mismatch: ${r.pilot.identityMismatch}`);
+          console.log(`- Reader route confirmada: ${r.pilot.readerRouteConfirmed}`);
+          NODE
+          fi
+      - name: Preserve artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-not-listed-exact-title-v4-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/pilot-exact-title.json
+            artifacts/marvel-not-listed-v4/pilot-exact-title.log
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Commit research report only
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for f in artifacts/marvel-not-listed-v4/pilot-exact-title.json artifacts/marvel-not-listed-v4/pilot-exact-title.log; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'audit: guardar piloto exact-title NOT_LISTED v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Fail if pilot failed
+        if: steps.pilot.outcome != 'success'
+        run: exit 1
