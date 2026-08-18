@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/investigate-marvel-missing-drn-seven.mjs'
+      - 'scripts/investigate-marvel-drn-routing-v3.mjs'
       - '.github/workflows/investigate-marvel-missing-drn-seven.yml'
 
 permissions:
@@ -36,7 +37,9 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Validate isolated investigator syntax
-        run: node --check scripts/investigate-marvel-missing-drn-seven.mjs
+        run: |
+          node --check scripts/investigate-marvel-missing-drn-seven.mjs
+          node --check scripts/investigate-marvel-drn-routing-v3.mjs
 
       - name: Investigate exactly seven missing DRNs
         id: investigate
@@ -46,14 +49,20 @@ jobs:
           set -o pipefail
           node scripts/investigate-marvel-missing-drn-seven.mjs 2>&1 | tee artifacts/marvel-missing-drn-seven/run.log
 
+      - name: Diagnose exact legacy and applink routing
+        id: routing
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          node scripts/investigate-marvel-drn-routing-v3.mjs 2>&1 | tee artifacts/marvel-missing-drn-seven/routing-v3.log
+
       - name: Publish investigation summary
         if: always()
         run: |
           if [ ! -f artifacts/marvel-missing-drn-seven/investigation.json ]; then
             echo 'No se generó investigation.json. Revisar run.log.' >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          else
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
           const fs=require('fs');
           const r=JSON.parse(fs.readFileSync('artifacts/marvel-missing-drn-seven/investigation.json','utf8'));
           console.log('## Investigación aislada de 7 DRN');
@@ -69,6 +78,20 @@ jobs:
             console.log(`- GCD ${x.gcdId} · ${x.local.title} #${x.local.issueNumber}: **${x.outcome}**${x.resolvedDrn?` · \`${x.resolvedDrn}\``:''}`);
           }
           NODE
+          fi
+          if [ -f artifacts/marvel-missing-drn-seven/routing-v3.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-missing-drn-seven/routing-v3.json','utf8'));
+          console.log('');
+          console.log('## Routing v3');
+          console.log('');
+          console.log(`- Applinks con respuesta HTTP por curl: ${r.summary.applinkWithHttpResponse}/${r.summary.targets}`);
+          console.log(`- Targets con DRN auténtico expuesto: ${r.summary.targetsWithAuthenticDrn}`);
+          console.log(`- DRN aceptados: ${r.summary.acceptedDrnCount}`);
+          console.log(`- DNS applink.marvel.com: ${r.dns['applink.marvel.com']?.ok?'OK':'FALLO'}`);
+          NODE
+          fi
 
       - name: Preserve seven-case investigation artifact
         if: always()
@@ -78,6 +101,8 @@ jobs:
           path: |
             artifacts/marvel-missing-drn-seven/investigation.json
             artifacts/marvel-missing-drn-seven/run.log
+            artifacts/marvel-missing-drn-seven/routing-v3.json
+            artifacts/marvel-missing-drn-seven/routing-v3.log
           retention-days: 14
           if-no-files-found: warn
           overwrite: true
@@ -87,10 +112,13 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artifacts/marvel-missing-drn-seven/run.log
-          if [ -f artifacts/marvel-missing-drn-seven/investigation.json ]; then
-            git add artifacts/marvel-missing-drn-seven/investigation.json
-          fi
+          for f in \
+            artifacts/marvel-missing-drn-seven/run.log \
+            artifacts/marvel-missing-drn-seven/investigation.json \
+            artifacts/marvel-missing-drn-seven/routing-v3.log \
+            artifacts/marvel-missing-drn-seven/routing-v3.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then
             echo 'El diagnóstico no cambió.'
             exit 0
@@ -99,6 +127,6 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
 
-      - name: Fail if isolated investigator failed
-        if: steps.investigate.outcome != 'success'
+      - name: Fail if an isolated diagnostic failed
+        if: steps.investigate.outcome != 'success' || steps.routing.outcome != 'success'
         run: exit 1
