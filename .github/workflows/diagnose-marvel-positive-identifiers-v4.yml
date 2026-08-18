@@ -1,0 +1,40 @@
+name: Diagnose Marvel positive identifiers v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose-marvel-positive-identifiers-v4.mjs'
+      - '.github/workflows/diagnose-marvel-positive-identifiers-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check scripts/diagnose-marvel-positive-identifiers-v4.mjs
+      - run: node scripts/diagnose-marvel-positive-identifiers-v4.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-positive-identifiers-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/positive-identifiers.json
+          retention-days: 14
+      - name: Commit diagnostic only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/positive-identifiers.json
+          git commit -m 'audit: guardar diagnóstico de identificadores positivos v4'
+          git pull --rebase origin main
+          git push origin HEAD:main
