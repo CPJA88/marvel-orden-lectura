@@ -1,0 +1,76 @@
+name: Investigate seven missing Marvel DRNs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/investigate-marvel-missing-drn-seven.mjs'
+      - '.github/workflows/investigate-marvel-missing-drn-seven.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: marvel-missing-drn-seven
+  cancel-in-progress: true
+
+jobs:
+  investigate:
+    name: Inspect only the seven unresolved Unlimited issues
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Validate isolated investigator syntax
+        run: node --check scripts/investigate-marvel-missing-drn-seven.mjs
+
+      - name: Investigate exactly seven missing DRNs
+        run: node scripts/investigate-marvel-missing-drn-seven.mjs
+
+      - name: Publish investigation summary
+        if: always()
+        run: |
+          if [ ! -f artifacts/marvel-missing-drn-seven/investigation.json ]; then
+            echo 'No se generó investigation.json.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-missing-drn-seven/investigation.json','utf8'));
+          console.log('## Investigación aislada de 7 DRN');
+          console.log('');
+          console.log(`- Total: ${r.summary.total}`);
+          console.log(`- Identidad oficial confirmada: ${r.summary.identityMatched}`);
+          console.log(`- Unlimited confirmado en página oficial: ${r.summary.unlimitedConfirmed}`);
+          console.log(`- DRN resueltos y smartlink verificado: ${r.summary.resolved}`);
+          console.log(`- Pendientes: ${r.summary.unresolved}`);
+          console.log(`- Correcciones de cobertura sugeridas: ${r.summary.coverageCorrectionsRecommended}`);
+          console.log('');
+          for(const x of r.results){
+            console.log(`- GCD ${x.gcdId} · ${x.local.title} #${x.local.issueNumber}: **${x.outcome}**${x.resolvedDrn?` · \`${x.resolvedDrn}\``:''}`);
+          }
+          NODE
+
+      - name: Preserve seven-case investigation artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-missing-drn-seven-${{ github.run_id }}
+          path: artifacts/marvel-missing-drn-seven/investigation.json
+          retention-days: 14
+          if-no-files-found: warn
+          overwrite: true
