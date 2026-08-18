@@ -35,28 +35,48 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Validate search/filter patch syntax
+        id: syntax
+        continue-on-error: true
         run: node --check source/search-filter-fix-v131.js
       - name: Build PWA
+        id: build
+        continue-on-error: true
         run: npm run build
       - name: Validate built patch
+        id: built
+        continue-on-error: true
         run: |
           grep -q 'search-filter-fix-v131.js' public/index.html
           grep -q 'search-filter-fix-v131.js' public/sw.js
       - name: Test search and filter data contract
-        id: test
+        id: data
         continue-on-error: true
         run: node scripts/test-ui-search-filters.mjs
+      - name: Write CI result
+        if: always()
+        run: |
+          mkdir -p artifacts
+          cat > artifacts/ui-search-filter-ci-status.json <<JSON
+          {
+            "commit": "${GITHUB_SHA}",
+            "runId": "${GITHUB_RUN_ID}",
+            "syntax": "${{ steps.syntax.outcome }}",
+            "build": "${{ steps.build.outcome }}",
+            "builtPatch": "${{ steps.built.outcome }}",
+            "dataContract": "${{ steps.data.outcome }}"
+          }
+          JSON
       - name: Publish diagnostic report
         if: always()
         run: |
-          test -f artifacts/ui-search-filter-diagnostic.json || exit 1
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artifacts/ui-search-filter-diagnostic.json
+          git add artifacts/ui-search-filter-ci-status.json
+          if test -f artifacts/ui-search-filter-diagnostic.json; then git add artifacts/ui-search-filter-diagnostic.json; fi
           if git diff --cached --quiet; then
-            echo 'El informe no ha cambiado.'
+            echo 'Los informes no han cambiado.'
           else
-            git commit -m 'diagnóstico: resultado de búsqueda y filtros'
+            git commit -m 'diagnóstico: validar búsqueda y filtros v1.2.31'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -65,9 +85,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-search-filter-diagnostic-${{ github.run_id }}
-          path: artifacts/ui-search-filter-diagnostic.json
+          path: |
+            artifacts/ui-search-filter-diagnostic.json
+            artifacts/ui-search-filter-ci-status.json
           retention-days: 3
           if-no-files-found: warn
-      - name: Fail if contract is broken
-        if: steps.test.outcome == 'failure'
+      - name: Fail if UI validation is broken
+        if: steps.syntax.outcome == 'failure' || steps.build.outcome == 'failure' || steps.built.outcome == 'failure' || steps.data.outcome == 'failure'
         run: exit 1
