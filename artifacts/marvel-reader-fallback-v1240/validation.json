@@ -1,8 +1,8 @@
 {
   "version": "1.2.40",
-  "validatedAt": "2026-08-18T17:34:13.451Z",
-  "runId": "32166252653",
-  "testedCommit": "16d0f87229b5284afb05bc98401fc430b179dac7",
+  "validatedAt": "2026-08-18T18:25:18.942Z",
+  "runId": "32170875259",
+  "testedCommit": "4a79c8f0944bac8fe69d922482a16230d9e6c049",
   "targets": 7,
   "fallbackMode": "official-reader-smartlink",
   "cache": {
