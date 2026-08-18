@@ -39,13 +39,18 @@ jobs:
         run: node --check scripts/investigate-marvel-missing-drn-seven.mjs
 
       - name: Investigate exactly seven missing DRNs
-        run: node scripts/investigate-marvel-missing-drn-seven.mjs
+        id: investigate
+        continue-on-error: true
+        run: |
+          mkdir -p artifacts/marvel-missing-drn-seven
+          set -o pipefail
+          node scripts/investigate-marvel-missing-drn-seven.mjs 2>&1 | tee artifacts/marvel-missing-drn-seven/run.log
 
       - name: Publish investigation summary
         if: always()
         run: |
           if [ ! -f artifacts/marvel-missing-drn-seven/investigation.json ]; then
-            echo 'No se generó investigation.json.' >> "$GITHUB_STEP_SUMMARY"
+            echo 'No se generó investigation.json. Revisar run.log.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
@@ -70,21 +75,30 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: marvel-missing-drn-seven-${{ github.run_id }}
-          path: artifacts/marvel-missing-drn-seven/investigation.json
+          path: |
+            artifacts/marvel-missing-drn-seven/investigation.json
+            artifacts/marvel-missing-drn-seven/run.log
           retention-days: 14
           if-no-files-found: warn
           overwrite: true
 
-      - name: Commit research report only
-        if: success()
+      - name: Commit research report and diagnostics only
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artifacts/marvel-missing-drn-seven/investigation.json
+          git add artifacts/marvel-missing-drn-seven/run.log
+          if [ -f artifacts/marvel-missing-drn-seven/investigation.json ]; then
+            git add artifacts/marvel-missing-drn-seven/investigation.json
+          fi
           if git diff --cached --quiet; then
-            echo 'El informe no cambió.'
+            echo 'El diagnóstico no cambió.'
             exit 0
           fi
-          git commit -m 'audit: guardar investigación aislada de 7 DRN'
+          git commit -m 'audit: guardar diagnóstico aislado de 7 DRN'
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Fail if isolated investigator failed
+        if: steps.investigate.outcome != 'success'
+        run: exit 1
