@@ -1,0 +1,66 @@
+name: Audit Marvel segment pilot pending v4
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-segment-pilot-pending-v4.mjs'
+      - '.github/workflows/audit-marvel-segment-pilot-pending-v4.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate auditor syntax
+        run: node --check scripts/audit-marvel-segment-pilot-pending-v4.mjs
+      - name: Snapshot protected files
+        run: |
+          sha256sum source/marvel-cache/index.json > /tmp/cache.sha
+          sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Audit 34 pending rows
+        run: node scripts/audit-marvel-segment-pilot-pending-v4.mjs
+      - name: Verify read-only safety
+        run: |
+          sha256sum -c /tmp/cache.sha
+          sha256sum -c /tmp/fallback.sha
+          node - <<'NODE'
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/segment-pilot-pending-audit-v4.json','utf8'));
+          if(r.writesCache!==false||r.summary.targets!==34) throw new Error('Scope incorrecto');
+          if(r.baseline.matched!==29155||r.baseline.noDigital!==1135||r.baseline.notListed!==20712||r.baseline.functionalLinkMissing!==0) throw new Error('Baseline alterada');
+          console.log(JSON.stringify(r.summary,null,2));
+          NODE
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/segment-pilot-pending-audit-v4.json','utf8'));
+          console.log('## Segment pilot pending audit v4');
+          console.log('');
+          for(const [k,v] of Object.entries(r.summary)) console.log(`- ${k}: ${v}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-segment-pilot-pending-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/segment-pilot-pending-audit-v4.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/segment-pilot-pending-audit-v4.json
+          git commit -m 'audit: guardar 34 pendientes de segmentos certificados v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
