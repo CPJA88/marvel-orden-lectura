@@ -1,0 +1,1517 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T23:52:02.840Z",
+  "mode": "phase6-terminal-ownership-strict-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31177,
+    "noDigital": 1135,
+    "notListed": 18690,
+    "functionalLinkReady": 31177,
+    "functionalLinkMissing": 0
+  },
+  "safety": {
+    "cacheWritten": false,
+    "pendingExactSeriesAliasIssueDate": true,
+    "oldOwnerMustFailExactIdentity": true,
+    "onlyExistingMuStatus1Or5": true,
+    "existingLinkMustRemainVerified": true,
+    "noNegativeClassification": true
+  },
+  "summary": {
+    "inputSafeOwnership": 20,
+    "strictReassignable": 19,
+    "rejected": 1,
+    "status1Transfers": 19,
+    "status5Transfers": 0,
+    "uniquePendingGcd": 19,
+    "uniqueOwnerGcd": 19,
+    "writesCache": false
+  },
+  "decisions": [
+    {
+      "gcdId": 1824075,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "1 (802)",
+      "date": "2018-07-11",
+      "sourceId": 67631,
+      "readerId": 48576,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-07-11T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 1762467,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 1762467,
+        "seriesId": 382,
+        "title": "Amazing Spider-Man: Venom Inc. Alpha",
+        "issueNumber": "1",
+        "date": "2017-12-06",
+        "seriesYear": "2018"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 1827252,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "2 (803)",
+      "date": "2018-07-25",
+      "sourceId": 67633,
+      "readerId": 48577,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2018-07-25T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2239793,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2239793,
+        "seriesId": 313,
+        "title": "Amazing Spider-Man Annual",
+        "issueNumber": "2",
+        "date": "2021-07-07",
+        "seriesYear": "2018"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2020441,
+      "title": "Ghost Rider",
+      "seriesYear": "2019",
+      "issueNumber": "1 (237)",
+      "date": "2019-10-02",
+      "sourceId": 76985,
+      "readerId": 52860,
+      "remoteSeriesName": "Ghost Rider (2019 - 2020)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-10-02T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2024806,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2024806,
+        "seriesId": 4863,
+        "title": "Marvel Tales: Ghost Rider",
+        "issueNumber": "1",
+        "date": "2019-10-16",
+        "seriesYear": "2019"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2177125,
+      "title": "Black Cat",
+      "seriesYear": "2021",
+      "issueNumber": "1 (13)",
+      "date": "2020-12-16",
+      "sourceId": 91367,
+      "readerId": 55786,
+      "remoteSeriesName": "Black Cat (2020 - 2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2020-12-16T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2036865,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2036865,
+        "seriesId": 905,
+        "title": "Black Cat Annual",
+        "issueNumber": "1",
+        "date": "2019-11-13",
+        "seriesYear": "2020"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 3,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2438431,
+      "title": "Spider-Man",
+      "seriesYear": "2022",
+      "issueNumber": "1 (157)",
+      "date": "2022-10-05",
+      "sourceId": 99743,
+      "readerId": 60584,
+      "remoteSeriesName": "Spider-Man (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-10-05T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2295014,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2295014,
+        "seriesId": 7773,
+        "title": "The Darkhold: Spider-Man",
+        "issueNumber": "1",
+        "date": "2021-12-22",
+        "seriesYear": "2022"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2449978,
+      "title": "Fantastic Four",
+      "seriesYear": "2023",
+      "issueNumber": "1 (694)",
+      "date": "2022-11-09",
+      "sourceId": 98724,
+      "readerId": 60739,
+      "remoteSeriesName": "Fantastic Four (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-11-09T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2278135,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2278135,
+        "seriesId": 2610,
+        "title": "Fantastic Four Anniversary Tribute",
+        "issueNumber": "1",
+        "date": "2021-11-17",
+        "seriesYear": "2022"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 3,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2508741,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "1 (427)",
+      "date": "2023-03-22",
+      "sourceId": 105848,
+      "readerId": 61970,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-03-22T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2459920,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2459920,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "1",
+        "date": "2022-11-23",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2519320,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2023",
+      "issueNumber": "1 (181)",
+      "date": "2023-04-12",
+      "sourceId": 105859,
+      "readerId": 62200,
+      "remoteSeriesName": "Guardians of the Galaxy (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-04-12T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2454056,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2454056,
+        "seriesId": 3211,
+        "title": "Guardians of the Galaxy: Cosmic Rewind",
+        "issueNumber": "1",
+        "date": "2022-11-02",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2524212,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "2 (428)",
+      "date": "2023-04-26",
+      "sourceId": 105849,
+      "readerId": 62193,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2023-04-26T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2472746,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2472746,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "2",
+        "date": "2022-12-28",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2538314,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "3 (429)",
+      "date": "2023-05-31",
+      "sourceId": 105850,
+      "readerId": 62500,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2023-05-31T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2487208,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2487208,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "3",
+        "date": "2023-01-25",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2544458,
+      "title": "Loki",
+      "seriesYear": "2023",
+      "issueNumber": "1 (27)",
+      "date": "2023-06-07",
+      "sourceId": 97121,
+      "readerId": 62772,
+      "remoteSeriesName": "Loki (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-07T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2568223,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2568223,
+        "seriesId": 246,
+        "title": "Alligator Loki",
+        "issueNumber": "1",
+        "date": "2023-09-13",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2546677,
+      "title": "Black Panther",
+      "seriesYear": "2023",
+      "issueNumber": "1 (213)",
+      "date": "2023-06-14",
+      "sourceId": 104798,
+      "readerId": 62743,
+      "remoteSeriesName": "Black Panther (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2451131,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2451131,
+        "seriesId": 966,
+        "title": "Black Panther: Unconquered",
+        "issueNumber": "1",
+        "date": "2022-11-09",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2544999,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "4 (430)",
+      "date": "2023-06-14",
+      "sourceId": 105851,
+      "readerId": 62759,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2499010,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2499010,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "4",
+        "date": "2023-02-22",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2644336,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "1 (301)",
+      "date": "2024-07-10",
+      "sourceId": 115440,
+      "readerId": 67890,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2024-07-10T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2584847,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2584847,
+        "seriesId": 9886,
+        "title": "X-Men Blue: Origins",
+        "issueNumber": "1",
+        "date": "2023-11-29",
+        "seriesYear": "2024"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": false,
+      "reason": "owner-count"
+    },
+    {
+      "gcdId": 2728853,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "2 (966)",
+      "date": "2025-04-23",
+      "sourceId": 119344,
+      "readerId": 72707,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2025-04-23T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2784007,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2784007,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "2",
+        "date": "2025-11-12",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2731733,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "3 (967)",
+      "date": "2025-05-07",
+      "sourceId": 119345,
+      "readerId": 73414,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2025-05-07T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2795890,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2795890,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "3",
+        "date": "2025-12-17",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2738714,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "4 (968)",
+      "date": "2025-05-21",
+      "sourceId": 119346,
+      "readerId": 73415,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2025-05-21T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2805480,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2805480,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "4",
+        "date": "2026-01-14",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2744458,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "5 (969)",
+      "date": "2025-06-04",
+      "sourceId": 119347,
+      "readerId": 73959,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2025-06-04T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2814565,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2814565,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "5",
+        "date": "2026-02-11",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2766240,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "21 (321)",
+      "date": "2025-08-27",
+      "sourceId": 119453,
+      "readerId": 74874,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "21",
+      "remoteOnSale": "2025-08-27T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2781717,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2781717,
+        "seriesId": 8934,
+        "title": "Ultimate X-Men",
+        "issueNumber": "21",
+        "date": "2025-11-05",
+        "seriesYear": "2024"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2772207,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "22 (322)",
+      "date": "2025-09-24",
+      "sourceId": 119454,
+      "readerId": 73892,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "22",
+      "remoteOnSale": "2025-09-24T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2790853,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2790853,
+        "seriesId": 8934,
+        "title": "Ultimate X-Men",
+        "issueNumber": "22",
+        "date": "2025-12-03",
+        "seriesYear": "2024"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    }
+  ],
+  "strict": [
+    {
+      "gcdId": 1824075,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "1 (802)",
+      "date": "2018-07-11",
+      "sourceId": 67631,
+      "readerId": 48576,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2018-07-11T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 1762467,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 1762467,
+        "seriesId": 382,
+        "title": "Amazing Spider-Man: Venom Inc. Alpha",
+        "issueNumber": "1",
+        "date": "2017-12-06",
+        "seriesYear": "2018"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 1827252,
+      "title": "Amazing Spider-Man",
+      "seriesYear": "2018",
+      "issueNumber": "2 (803)",
+      "date": "2018-07-25",
+      "sourceId": 67633,
+      "readerId": 48577,
+      "remoteSeriesName": "The Amazing Spider-Man (2018 - 2022)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2018-07-25T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2239793,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2239793,
+        "seriesId": 313,
+        "title": "Amazing Spider-Man Annual",
+        "issueNumber": "2",
+        "date": "2021-07-07",
+        "seriesYear": "2018"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2020441,
+      "title": "Ghost Rider",
+      "seriesYear": "2019",
+      "issueNumber": "1 (237)",
+      "date": "2019-10-02",
+      "sourceId": 76985,
+      "readerId": 52860,
+      "remoteSeriesName": "Ghost Rider (2019 - 2020)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2019-10-02T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2024806,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2024806,
+        "seriesId": 4863,
+        "title": "Marvel Tales: Ghost Rider",
+        "issueNumber": "1",
+        "date": "2019-10-16",
+        "seriesYear": "2019"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2177125,
+      "title": "Black Cat",
+      "seriesYear": "2021",
+      "issueNumber": "1 (13)",
+      "date": "2020-12-16",
+      "sourceId": 91367,
+      "readerId": 55786,
+      "remoteSeriesName": "Black Cat (2020 - 2021)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2020-12-16T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2036865,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2036865,
+        "seriesId": 905,
+        "title": "Black Cat Annual",
+        "issueNumber": "1",
+        "date": "2019-11-13",
+        "seriesYear": "2020"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 3,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2438431,
+      "title": "Spider-Man",
+      "seriesYear": "2022",
+      "issueNumber": "1 (157)",
+      "date": "2022-10-05",
+      "sourceId": 99743,
+      "readerId": 60584,
+      "remoteSeriesName": "Spider-Man (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-10-05T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2295014,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2295014,
+        "seriesId": 7773,
+        "title": "The Darkhold: Spider-Man",
+        "issueNumber": "1",
+        "date": "2021-12-22",
+        "seriesYear": "2022"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2449978,
+      "title": "Fantastic Four",
+      "seriesYear": "2023",
+      "issueNumber": "1 (694)",
+      "date": "2022-11-09",
+      "sourceId": 98724,
+      "readerId": 60739,
+      "remoteSeriesName": "Fantastic Four (2022 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2022-11-09T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2278135,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2278135,
+        "seriesId": 2610,
+        "title": "Fantastic Four Anniversary Tribute",
+        "issueNumber": "1",
+        "date": "2021-11-17",
+        "seriesYear": "2022"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 3,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2508741,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "1 (427)",
+      "date": "2023-03-22",
+      "sourceId": 105848,
+      "readerId": 61970,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-03-22T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2459920,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2459920,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "1",
+        "date": "2022-11-23",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2519320,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2023",
+      "issueNumber": "1 (181)",
+      "date": "2023-04-12",
+      "sourceId": 105859,
+      "readerId": 62200,
+      "remoteSeriesName": "Guardians of the Galaxy (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-04-12T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2454056,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2454056,
+        "seriesId": 3211,
+        "title": "Guardians of the Galaxy: Cosmic Rewind",
+        "issueNumber": "1",
+        "date": "2022-11-02",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2524212,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "2 (428)",
+      "date": "2023-04-26",
+      "sourceId": 105849,
+      "readerId": 62193,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2023-04-26T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2472746,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2472746,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "2",
+        "date": "2022-12-28",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2538314,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "3 (429)",
+      "date": "2023-05-31",
+      "sourceId": 105850,
+      "readerId": 62500,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2023-05-31T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2487208,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2487208,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "3",
+        "date": "2023-01-25",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2544458,
+      "title": "Loki",
+      "seriesYear": "2023",
+      "issueNumber": "1 (27)",
+      "date": "2023-06-07",
+      "sourceId": 97121,
+      "readerId": 62772,
+      "remoteSeriesName": "Loki (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-07T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2568223,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2568223,
+        "seriesId": 246,
+        "title": "Alligator Loki",
+        "issueNumber": "1",
+        "date": "2023-09-13",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2546677,
+      "title": "Black Panther",
+      "seriesYear": "2023",
+      "issueNumber": "1 (213)",
+      "date": "2023-06-14",
+      "sourceId": 104798,
+      "readerId": 62743,
+      "remoteSeriesName": "Black Panther (2023 - Present)",
+      "remoteIssueNumber": "1",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2451131,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2451131,
+        "seriesId": 966,
+        "title": "Black Panther: Unconquered",
+        "issueNumber": "1",
+        "date": "2022-11-09",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2544999,
+      "title": "Doctor Strange",
+      "seriesYear": "2023",
+      "issueNumber": "4 (430)",
+      "date": "2023-06-14",
+      "sourceId": 105851,
+      "readerId": 62759,
+      "remoteSeriesName": "Doctor Strange (2023 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2023-06-14T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2499010,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2499010,
+        "seriesId": 2253,
+        "title": "Doctor Strange: Fall Sunrise",
+        "issueNumber": "4",
+        "date": "2023-02-22",
+        "seriesYear": "2023"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2728853,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "2 (966)",
+      "date": "2025-04-23",
+      "sourceId": 119344,
+      "readerId": 72707,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "2",
+      "remoteOnSale": "2025-04-23T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2784007,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2784007,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "2",
+        "date": "2025-11-12",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2731733,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "3 (967)",
+      "date": "2025-05-07",
+      "sourceId": 119345,
+      "readerId": 73414,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "3",
+      "remoteOnSale": "2025-05-07T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2795890,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2795890,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "3",
+        "date": "2025-12-17",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2738714,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "4 (968)",
+      "date": "2025-05-21",
+      "sourceId": 119346,
+      "readerId": 73415,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "4",
+      "remoteOnSale": "2025-05-21T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2805480,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2805480,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "4",
+        "date": "2026-01-14",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2744458,
+      "title": "The Amazing Spider-Man",
+      "seriesYear": "2025",
+      "issueNumber": "5 (969)",
+      "date": "2025-06-04",
+      "sourceId": 119347,
+      "readerId": 73959,
+      "remoteSeriesName": "The Amazing Spider-Man (2025 - Present)",
+      "remoteIssueNumber": "5",
+      "remoteOnSale": "2025-06-04T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2814565,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2814565,
+        "seriesId": 379,
+        "title": "Amazing Spider-Man: Torn",
+        "issueNumber": "5",
+        "date": "2026-02-11",
+        "seriesYear": "2025"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2766240,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "21 (321)",
+      "date": "2025-08-27",
+      "sourceId": 119453,
+      "readerId": 74874,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "21",
+      "remoteOnSale": "2025-08-27T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2781717,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2781717,
+        "seriesId": 8934,
+        "title": "Ultimate X-Men",
+        "issueNumber": "21",
+        "date": "2025-11-05",
+        "seriesYear": "2024"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    },
+    {
+      "gcdId": 2772207,
+      "title": "X-Men",
+      "seriesYear": "2024",
+      "issueNumber": "22 (322)",
+      "date": "2025-09-24",
+      "sourceId": 119454,
+      "readerId": 73892,
+      "remoteSeriesName": "X-Men (2024 - Present)",
+      "remoteIssueNumber": "22",
+      "remoteOnSale": "2025-09-24T00:00:00+0000",
+      "pendingIdentity": {
+        "series": true,
+        "issue": true,
+        "date": true,
+        "exact": true
+      },
+      "ownerGcdId": 2790853,
+      "ownerStatus": 1,
+      "ownerLocal": {
+        "gcdId": 2790853,
+        "seriesId": 8934,
+        "title": "Ultimate X-Men",
+        "issueNumber": "22",
+        "date": "2025-12-03",
+        "seriesYear": "2024"
+      },
+      "ownerIdentity": {
+        "series": false,
+        "issue": true,
+        "date": false,
+        "exact": false
+      },
+      "scoreGap": 5,
+      "authority": "mu",
+      "strict": true,
+      "reason": "strict-exact-owner-wrong"
+    }
+  ]
+}
