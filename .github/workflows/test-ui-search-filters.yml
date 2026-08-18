@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - 'scripts/test-ui-search-filters.mjs'
+      - 'scripts/prepare.mjs'
       - '.github/workflows/test-ui-search-filters.yml'
       - 'source/app.js'
       - 'source/index.html'
+      - 'source/search-filter-fix-v131.js'
       - 'Marvel_Orden_de_Lectura_PWA.zip'
   workflow_dispatch:
 
@@ -32,6 +34,14 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Validate search/filter patch syntax
+        run: node --check source/search-filter-fix-v131.js
+      - name: Build PWA
+        run: npm run build
+      - name: Validate built patch
+        run: |
+          grep -q 'search-filter-fix-v131.js' public/index.html
+          grep -q 'search-filter-fix-v131.js' public/sw.js
       - name: Test search and filter data contract
         id: test
         continue-on-error: true
