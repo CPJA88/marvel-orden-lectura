@@ -1,0 +1,7746 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T19:37:09.618Z",
+  "mode": "identity-mismatch-link-audit",
+  "writesCache": false,
+  "baseline": {
+    "matched": 28673,
+    "noDigital": 1131,
+    "notListed": 21198
+  },
+  "summary": {
+    "targets": 429,
+    "mu": 429,
+    "functional": 429,
+    "readerFunctional": 429,
+    "uuidFunctional": 0,
+    "missingFunctional": 0,
+    "notFound": 0,
+    "availabilityRegression": 0,
+    "retryable": 0
+  },
+  "results": [
+    {
+      "gcdId": 35133,
+      "sourceId": 13683,
+      "readerId": 3078,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #142",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3078"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35212,
+      "sourceId": 13684,
+      "readerId": 7378,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #143",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7378"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35288,
+      "sourceId": 13685,
+      "readerId": 11726,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #144",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11726"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35355,
+      "sourceId": 13686,
+      "readerId": 11727,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #145",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11727"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35425,
+      "sourceId": 13687,
+      "readerId": 11728,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #146",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11728"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35505,
+      "sourceId": 13688,
+      "readerId": 11729,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #147",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11729"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35583,
+      "sourceId": 13689,
+      "readerId": 11730,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #148",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11730"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35662,
+      "sourceId": 13690,
+      "readerId": 11731,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #149",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11731"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35755,
+      "sourceId": 13691,
+      "readerId": 11732,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #150",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11732"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35826,
+      "sourceId": 13692,
+      "readerId": 7379,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #151",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7379"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 35907,
+      "sourceId": 13693,
+      "readerId": 7380,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #152",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7380"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36039,
+      "sourceId": 13694,
+      "readerId": 7381,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #153",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7381"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36126,
+      "sourceId": 13695,
+      "readerId": 22860,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #154",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22860"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36211,
+      "sourceId": 13696,
+      "readerId": 22862,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #155",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22862"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36294,
+      "sourceId": 13697,
+      "readerId": 22864,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #156",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22864"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36380,
+      "sourceId": 13698,
+      "readerId": 22867,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #157",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22867"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36457,
+      "sourceId": 13699,
+      "readerId": 22872,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #158",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22872"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36533,
+      "sourceId": 13700,
+      "readerId": 22878,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #159",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22878"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36613,
+      "sourceId": 13701,
+      "readerId": 29993,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #160",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=29993"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36688,
+      "sourceId": 13702,
+      "readerId": 29994,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #161",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=29994"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36770,
+      "sourceId": 13703,
+      "readerId": 28713,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #162",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28713"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36852,
+      "sourceId": 13704,
+      "readerId": 30000,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #163",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30000"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 36935,
+      "sourceId": 13705,
+      "readerId": 30007,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #164",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30007"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37068,
+      "sourceId": 13706,
+      "readerId": 33060,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #165",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33060"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37148,
+      "sourceId": 13707,
+      "readerId": 30018,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #166",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30018"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37244,
+      "sourceId": 13708,
+      "readerId": 7382,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #167",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7382"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37333,
+      "sourceId": 13709,
+      "readerId": 7383,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #168",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7383"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37430,
+      "sourceId": 13710,
+      "readerId": 31294,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #169",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31294"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37518,
+      "sourceId": 13711,
+      "readerId": 31295,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #170",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31295"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37614,
+      "sourceId": 13712,
+      "readerId": 22038,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #171",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22038"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37700,
+      "sourceId": 13713,
+      "readerId": 3079,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #172",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3079"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37788,
+      "sourceId": 13714,
+      "readerId": 7384,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #173",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7384"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37878,
+      "sourceId": 13715,
+      "readerId": 31296,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #174",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31296"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 37975,
+      "sourceId": 13716,
+      "readerId": 33121,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #175",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33121"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38075,
+      "sourceId": 13717,
+      "readerId": 33122,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #176",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33122"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38233,
+      "sourceId": 13718,
+      "readerId": 33123,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #177",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33123"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38340,
+      "sourceId": 13719,
+      "readerId": 33124,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #178",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33124"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38464,
+      "sourceId": 13720,
+      "readerId": 33125,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #179",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33125"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38577,
+      "sourceId": 13721,
+      "readerId": 33126,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #180",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33126"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38690,
+      "sourceId": 13722,
+      "readerId": 33127,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #181",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33127"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38795,
+      "sourceId": 13723,
+      "readerId": 7385,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #182",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7385"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 38904,
+      "sourceId": 13724,
+      "readerId": 7386,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #183",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7386"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39015,
+      "sourceId": 13725,
+      "readerId": 33128,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #184",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33128"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39112,
+      "sourceId": 13726,
+      "readerId": 33129,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #185",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33129"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39218,
+      "sourceId": 13727,
+      "readerId": 30052,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #186",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30052"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39323,
+      "sourceId": 13728,
+      "readerId": 33130,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #187",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33130"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39437,
+      "sourceId": 13729,
+      "readerId": 33131,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #188",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33131"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39610,
+      "sourceId": 13730,
+      "readerId": 7387,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #189",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7387"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39716,
+      "sourceId": 13731,
+      "readerId": 33132,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #190",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33132"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39807,
+      "sourceId": 13732,
+      "readerId": 33133,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #191",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33133"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 39920,
+      "sourceId": 13733,
+      "readerId": 33134,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #192",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33134"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40023,
+      "sourceId": 13734,
+      "readerId": 33255,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #193",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33255"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40131,
+      "sourceId": 13735,
+      "readerId": 33257,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #194",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33257"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40239,
+      "sourceId": 13736,
+      "readerId": 23144,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #195",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23144"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40345,
+      "sourceId": 13737,
+      "readerId": 13142,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #196",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13142"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40449,
+      "sourceId": 13738,
+      "readerId": 33258,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #197",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33258"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40561,
+      "sourceId": 13739,
+      "readerId": 30053,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #198",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30053"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40679,
+      "sourceId": 13740,
+      "readerId": 30723,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #199",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30723"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 40792,
+      "sourceId": 13741,
+      "readerId": 22045,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #200",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22045"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41013,
+      "sourceId": 13742,
+      "readerId": 3080,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #201",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3080"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41126,
+      "sourceId": 13743,
+      "readerId": 30054,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #202",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30054"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41227,
+      "sourceId": 13744,
+      "readerId": 30057,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #203",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30057"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41332,
+      "sourceId": 13745,
+      "readerId": 30724,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #204",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30724"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41433,
+      "sourceId": 13746,
+      "readerId": 7389,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #205",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7389"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41537,
+      "sourceId": 13747,
+      "readerId": 30725,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #206",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30725"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41641,
+      "sourceId": 13748,
+      "readerId": 30726,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #207",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30726"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41746,
+      "sourceId": 13749,
+      "readerId": 30727,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #208",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30727"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41848,
+      "sourceId": 13750,
+      "readerId": 30728,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #209",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30728"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 41957,
+      "sourceId": 13751,
+      "readerId": 21148,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #210",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21148"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42076,
+      "sourceId": 13752,
+      "readerId": 4075,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #211",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=4075"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42191,
+      "sourceId": 13753,
+      "readerId": 21149,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #212",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21149"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42401,
+      "sourceId": 13754,
+      "readerId": 3081,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #213",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3081"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42524,
+      "sourceId": 13755,
+      "readerId": 21150,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #214",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21150"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42642,
+      "sourceId": 13756,
+      "readerId": 3082,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #215",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3082"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42763,
+      "sourceId": 13757,
+      "readerId": 33138,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #216",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33138"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42871,
+      "sourceId": 13758,
+      "readerId": 33139,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #217",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33139"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 42990,
+      "sourceId": 13759,
+      "readerId": 7390,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #218",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7390"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43116,
+      "sourceId": 13760,
+      "readerId": 33259,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #219",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33259"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43245,
+      "sourceId": 13761,
+      "readerId": 28007,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #220",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28007"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43360,
+      "sourceId": 13762,
+      "readerId": 28008,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #221",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28008"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43493,
+      "sourceId": 13763,
+      "readerId": 28009,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #222",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28009"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43618,
+      "sourceId": 13764,
+      "readerId": 28010,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #223",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28010"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43746,
+      "sourceId": 13765,
+      "readerId": 7391,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #224",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7391"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 43988,
+      "sourceId": 13766,
+      "readerId": 28011,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #225",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28011"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44112,
+      "sourceId": 13767,
+      "readerId": 28012,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #226",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28012"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44231,
+      "sourceId": 13768,
+      "readerId": 28013,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #227",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28013"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44352,
+      "sourceId": 13769,
+      "readerId": 33140,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #228",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33140"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44471,
+      "sourceId": 13770,
+      "readerId": 33141,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #229",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33141"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44594,
+      "sourceId": 13771,
+      "readerId": 33142,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #230",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33142"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44723,
+      "sourceId": 13772,
+      "readerId": 33143,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #231",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33143"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44851,
+      "sourceId": 13773,
+      "readerId": 33234,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #232",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33234"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 44979,
+      "sourceId": 13774,
+      "readerId": 33235,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #233",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33235"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45015,
+      "sourceId": 13775,
+      "readerId": 33236,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #234",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33236"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45117,
+      "sourceId": 13776,
+      "readerId": 28377,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #235",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28377"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45159,
+      "sourceId": 13777,
+      "readerId": 28378,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #236",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28378"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45262,
+      "sourceId": 13778,
+      "readerId": 28379,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #237",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28379"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45298,
+      "sourceId": 13779,
+      "readerId": 28380,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #238",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28380"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45394,
+      "sourceId": 13780,
+      "readerId": 3083,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #239",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3083"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45765,
+      "sourceId": 13781,
+      "readerId": 18428,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #240",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18428"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 45886,
+      "sourceId": 13782,
+      "readerId": 18429,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #241",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18429"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46010,
+      "sourceId": 13783,
+      "readerId": 18074,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #242",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18074"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46131,
+      "sourceId": 13784,
+      "readerId": 18430,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #243",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18430"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46253,
+      "sourceId": 13785,
+      "readerId": 10011,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #244",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=10011"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46371,
+      "sourceId": 13786,
+      "readerId": 25955,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #245",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25955"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46494,
+      "sourceId": 13787,
+      "readerId": 25956,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #246",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25956"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46611,
+      "sourceId": 13788,
+      "readerId": 25957,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #247",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25957"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46742,
+      "sourceId": 13789,
+      "readerId": 7392,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #248",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7392"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46869,
+      "sourceId": 13790,
+      "readerId": 25960,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #249",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25960"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46898,
+      "sourceId": 13791,
+      "readerId": 25962,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #250",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25962"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 46988,
+      "sourceId": 13792,
+      "readerId": 25964,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #251",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25964"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47043,
+      "sourceId": 13793,
+      "readerId": 25970,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #252",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25970"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47052,
+      "sourceId": 13794,
+      "readerId": 25972,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #253",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25972"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47136,
+      "sourceId": 13795,
+      "readerId": 25974,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #254",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25974"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47197,
+      "sourceId": 13796,
+      "readerId": 25985,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #255",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25985"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47204,
+      "sourceId": 13797,
+      "readerId": 7393,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #256",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7393"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47486,
+      "sourceId": 13798,
+      "readerId": 7394,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #257",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7394"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47598,
+      "sourceId": 13799,
+      "readerId": 7395,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #258",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7395"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47710,
+      "sourceId": 13800,
+      "readerId": 25989,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #259",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25989"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47835,
+      "sourceId": 13801,
+      "readerId": 25994,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #260",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25994"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 47945,
+      "sourceId": 13802,
+      "readerId": 26002,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #261",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=26002"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48081,
+      "sourceId": 13803,
+      "readerId": 26007,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #262",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=26007"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48217,
+      "sourceId": 13804,
+      "readerId": 26013,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #263",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=26013"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48254,
+      "sourceId": 13805,
+      "readerId": 26021,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #264",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=26021"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48348,
+      "sourceId": 13806,
+      "readerId": 19636,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #265",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=19636"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48391,
+      "sourceId": 13807,
+      "readerId": 19637,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #266",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=19637"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48479,
+      "sourceId": 13808,
+      "readerId": 19638,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #267",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=19638"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48529,
+      "sourceId": 13809,
+      "readerId": 7396,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #268",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7396"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48620,
+      "sourceId": 13810,
+      "readerId": 7397,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #269",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7397"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 48866,
+      "sourceId": 13812,
+      "readerId": 28375,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #271",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28375"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49142,
+      "sourceId": 13813,
+      "readerId": 28376,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #272",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28376"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49259,
+      "sourceId": 13814,
+      "readerId": 7398,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #273",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7398"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49383,
+      "sourceId": 13815,
+      "readerId": 7399,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #274",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7399"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49500,
+      "sourceId": 13816,
+      "readerId": 7400,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #275",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7400"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49616,
+      "sourceId": 13817,
+      "readerId": 7401,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #276",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7401"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49727,
+      "sourceId": 13818,
+      "readerId": 7402,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #277",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7402"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49857,
+      "sourceId": 13819,
+      "readerId": 30363,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #278",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30363"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 49989,
+      "sourceId": 13820,
+      "readerId": 30364,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #279",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30364"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 50120,
+      "sourceId": 13821,
+      "readerId": 30365,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #280",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30365"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 50250,
+      "sourceId": 13822,
+      "readerId": 30366,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #281",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30366"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 50380,
+      "sourceId": 13823,
+      "readerId": 30367,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #282",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30367"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 50511,
+      "sourceId": 13824,
+      "readerId": 30368,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #283",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30368"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 50910,
+      "sourceId": 13826,
+      "readerId": 30370,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #285",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30370"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51029,
+      "sourceId": 13827,
+      "readerId": 30416,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #286",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30416"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51143,
+      "sourceId": 13828,
+      "readerId": 22052,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #287",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22052"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51258,
+      "sourceId": 13829,
+      "readerId": 30417,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #288",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30417"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51375,
+      "sourceId": 13830,
+      "readerId": 30418,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #289",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30418"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51512,
+      "sourceId": 13831,
+      "readerId": 30419,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #290",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30419"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51641,
+      "sourceId": 13832,
+      "readerId": 30420,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #291",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30420"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51781,
+      "sourceId": 13833,
+      "readerId": 30421,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #292",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30421"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 51919,
+      "sourceId": 13834,
+      "readerId": 30431,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #293",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30431"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52060,
+      "sourceId": 13835,
+      "readerId": 3085,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #294",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3085"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52191,
+      "sourceId": 13836,
+      "readerId": 28573,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #295",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28573"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52587,
+      "sourceId": 13838,
+      "readerId": 28575,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #297",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28575"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52713,
+      "sourceId": 13839,
+      "readerId": 28851,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #298",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28851"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52847,
+      "sourceId": 13840,
+      "readerId": 28853,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #299",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28853"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 52997,
+      "sourceId": 13841,
+      "readerId": 28854,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #300",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28854"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 53184,
+      "sourceId": 13842,
+      "readerId": 28855,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #301",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28855"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 53356,
+      "sourceId": 13843,
+      "readerId": 28856,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #302",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28856"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 53513,
+      "sourceId": 13844,
+      "readerId": 28857,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #303",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28857"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 53672,
+      "sourceId": 13845,
+      "readerId": 28858,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #304",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28858"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 53837,
+      "sourceId": 13846,
+      "readerId": 28859,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #305",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28859"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 54010,
+      "sourceId": 13847,
+      "readerId": 31261,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #306",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31261"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 54181,
+      "sourceId": 13848,
+      "readerId": 25813,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #307",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25813"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 54462,
+      "sourceId": 13849,
+      "readerId": 30275,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #308",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30275"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 54784,
+      "sourceId": 13851,
+      "readerId": 30445,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #310",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30445"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 54942,
+      "sourceId": 13852,
+      "readerId": 31262,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #311",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31262"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55099,
+      "sourceId": 13853,
+      "readerId": 31263,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #312",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31263"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55263,
+      "sourceId": 13854,
+      "readerId": 31264,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #313",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31264"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55418,
+      "sourceId": 13855,
+      "readerId": 31265,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #314",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31265"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55574,
+      "sourceId": 13856,
+      "readerId": 28860,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #315",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28860"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55721,
+      "sourceId": 13857,
+      "readerId": 23501,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #316",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23501"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 55887,
+      "sourceId": 13858,
+      "readerId": 23502,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #317",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23502"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 56048,
+      "sourceId": 13859,
+      "readerId": 23503,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #318",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23503"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 56208,
+      "sourceId": 13860,
+      "readerId": 30446,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #319",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30446"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 56476,
+      "sourceId": 13861,
+      "readerId": 30448,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #320",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30448"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 56625,
+      "sourceId": 13862,
+      "readerId": 30449,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #321",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30449"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 57381,
+      "sourceId": 13863,
+      "readerId": 30261,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #322",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30261"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 57534,
+      "sourceId": 13864,
+      "readerId": 33237,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #323",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33237"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 57686,
+      "sourceId": 13865,
+      "readerId": 33238,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #324",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33238"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 57830,
+      "sourceId": 13866,
+      "readerId": 33239,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #325",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33239"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 57973,
+      "sourceId": 13867,
+      "readerId": 33240,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #326",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33240"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58118,
+      "sourceId": 13868,
+      "readerId": 33241,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #327",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33241"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58361,
+      "sourceId": 13869,
+      "readerId": 33242,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #328",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=33242"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58480,
+      "sourceId": 13870,
+      "readerId": 31266,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #329",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31266"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58601,
+      "sourceId": 13871,
+      "readerId": 31267,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #330",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31267"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58720,
+      "sourceId": 13872,
+      "readerId": 31268,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #331",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31268"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 58824,
+      "sourceId": 13873,
+      "readerId": 30450,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #332",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30450"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59062,
+      "sourceId": 13875,
+      "readerId": 8727,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #334",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8727"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59186,
+      "sourceId": 13876,
+      "readerId": 8728,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #335",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8728"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59296,
+      "sourceId": 13877,
+      "readerId": 11733,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #336",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11733"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59401,
+      "sourceId": 13878,
+      "readerId": 11734,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #337",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11734"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59511,
+      "sourceId": 13879,
+      "readerId": 30262,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #338",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30262"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59631,
+      "sourceId": 13880,
+      "readerId": 30527,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #339",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30527"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59849,
+      "sourceId": 13881,
+      "readerId": 30528,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #340",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30528"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 59972,
+      "sourceId": 13882,
+      "readerId": 30529,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #341",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30529"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60081,
+      "sourceId": 13883,
+      "readerId": 30263,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #342",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30263"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60194,
+      "sourceId": 13884,
+      "readerId": 30264,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #343",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30264"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60418,
+      "sourceId": 13886,
+      "readerId": 30266,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #345",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30266"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60648,
+      "sourceId": 13887,
+      "readerId": 30269,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #346",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30269"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60778,
+      "sourceId": 13888,
+      "readerId": 30270,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #347",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30270"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 60895,
+      "sourceId": 13889,
+      "readerId": 30271,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #348",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30271"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61018,
+      "sourceId": 13890,
+      "readerId": 31293,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #349",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31293"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61126,
+      "sourceId": 13891,
+      "readerId": 30638,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #350",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30638"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61452,
+      "sourceId": 13893,
+      "readerId": 30347,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #352",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30347"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61559,
+      "sourceId": 13894,
+      "readerId": 30290,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #353",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30290"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61653,
+      "sourceId": 13895,
+      "readerId": 30348,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #354",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30348"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61749,
+      "sourceId": 13896,
+      "readerId": 30349,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #355",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30349"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61842,
+      "sourceId": 13897,
+      "readerId": 30351,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #356",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30351"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 61972,
+      "sourceId": 13898,
+      "readerId": 30352,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #357",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30352"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62043,
+      "sourceId": 13899,
+      "readerId": 30353,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #358",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30353"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62155,
+      "sourceId": 13900,
+      "readerId": 30354,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #359",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30354"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62234,
+      "sourceId": 13901,
+      "readerId": 30836,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #360",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30836"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62313,
+      "sourceId": 13902,
+      "readerId": 30837,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #361",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30837"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62380,
+      "sourceId": 13903,
+      "readerId": 30531,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #362",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30531"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62484,
+      "sourceId": 13904,
+      "readerId": 30530,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #363",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30530"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62514,
+      "sourceId": 13905,
+      "readerId": 30532,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #364",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30532"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62551,
+      "sourceId": 13906,
+      "readerId": 30287,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #365",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30287"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62614,
+      "sourceId": 13907,
+      "readerId": 3086,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #366",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3086"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62666,
+      "sourceId": 13908,
+      "readerId": 3087,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #367",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3087"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62719,
+      "sourceId": 13909,
+      "readerId": 30533,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #368",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30533"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 62767,
+      "sourceId": 13910,
+      "readerId": 30542,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #369",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30542"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84109,
+      "sourceId": 13837,
+      "readerId": 28574,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #296",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28574"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84110,
+      "sourceId": 13874,
+      "readerId": 22599,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #333",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22599"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84111,
+      "sourceId": 13885,
+      "readerId": 30265,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #344",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30265"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84112,
+      "sourceId": 13892,
+      "readerId": 30322,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #351",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30322"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84113,
+      "sourceId": 13911,
+      "readerId": 30544,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #370",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30544"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84114,
+      "sourceId": 13912,
+      "readerId": 30838,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #371",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30838"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84115,
+      "sourceId": 13913,
+      "readerId": 12825,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #372",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12825"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84116,
+      "sourceId": 13914,
+      "readerId": 20855,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #373",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20855"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84117,
+      "sourceId": 13915,
+      "readerId": 20856,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #374",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20856"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84118,
+      "sourceId": 13916,
+      "readerId": 20869,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #375",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20869"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84119,
+      "sourceId": 13917,
+      "readerId": 9936,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #376",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=9936"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84121,
+      "sourceId": 13918,
+      "readerId": 11735,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #377",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11735"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84123,
+      "sourceId": 13919,
+      "readerId": 10319,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #378",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=10319"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84126,
+      "sourceId": 13920,
+      "readerId": 21846,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #379",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21846"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84128,
+      "sourceId": 13921,
+      "readerId": 21848,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #380",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21848"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84130,
+      "sourceId": 13922,
+      "readerId": 30839,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #381",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30839"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84132,
+      "sourceId": 13923,
+      "readerId": 30840,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #382",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30840"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84134,
+      "sourceId": 13924,
+      "readerId": 30841,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #383",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30841"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84137,
+      "sourceId": 13925,
+      "readerId": 30842,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #384",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30842"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84138,
+      "sourceId": 13926,
+      "readerId": 30901,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #385",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30901"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84140,
+      "sourceId": 13927,
+      "readerId": 30902,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #386",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30902"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84141,
+      "sourceId": 13928,
+      "readerId": 21850,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #387",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21850"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84144,
+      "sourceId": 13929,
+      "readerId": 7404,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #388",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7404"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84146,
+      "sourceId": 13930,
+      "readerId": 7405,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #389",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7405"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84148,
+      "sourceId": 13931,
+      "readerId": 7406,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #390",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7406"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84150,
+      "sourceId": 13932,
+      "readerId": 7407,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #391",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7407"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84153,
+      "sourceId": 13933,
+      "readerId": 7408,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #392",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7408"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84155,
+      "sourceId": 13934,
+      "readerId": 7409,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #393",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7409"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84157,
+      "sourceId": 13935,
+      "readerId": 31297,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #394",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31297"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84159,
+      "sourceId": 13936,
+      "readerId": 31298,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #395",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31298"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84161,
+      "sourceId": 13937,
+      "readerId": 31299,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #396",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31299"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84163,
+      "sourceId": 13938,
+      "readerId": 31300,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #397",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31300"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84164,
+      "sourceId": 13939,
+      "readerId": 31301,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #398",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31301"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84167,
+      "sourceId": 13940,
+      "readerId": 28852,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #399",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28852"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84169,
+      "sourceId": 13941,
+      "readerId": 31302,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #400",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31302"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84171,
+      "sourceId": 13942,
+      "readerId": 31303,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #401",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31303"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84172,
+      "sourceId": 13943,
+      "readerId": 31304,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #402",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31304"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 84173,
+      "sourceId": 13944,
+      "readerId": 31305,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #403",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31305"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172388,
+      "sourceId": 13945,
+      "readerId": 31306,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #404",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31306"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172389,
+      "sourceId": 13946,
+      "readerId": 31307,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #405",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31307"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172390,
+      "sourceId": 13947,
+      "readerId": 31308,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #406",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31308"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172391,
+      "sourceId": 13948,
+      "readerId": 31309,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #407",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31309"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172392,
+      "sourceId": 13949,
+      "readerId": 31310,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #408",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31310"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172393,
+      "sourceId": 13950,
+      "readerId": 31311,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #409",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31311"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172394,
+      "sourceId": 13951,
+      "readerId": 28339,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #410",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28339"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172395,
+      "sourceId": 13952,
+      "readerId": 28340,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #411",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28340"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172396,
+      "sourceId": 13953,
+      "readerId": 28341,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #412",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28341"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172397,
+      "sourceId": 13954,
+      "readerId": 28342,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #413",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28342"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172398,
+      "sourceId": 13955,
+      "readerId": 28343,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #414",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28343"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172399,
+      "sourceId": 13956,
+      "readerId": 28344,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #415",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28344"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172400,
+      "sourceId": 13957,
+      "readerId": 3088,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #416",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3088"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172401,
+      "sourceId": 13958,
+      "readerId": 3089,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #417",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3089"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172402,
+      "sourceId": 13959,
+      "readerId": 3090,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #418",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3090"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172403,
+      "sourceId": 13960,
+      "readerId": 3091,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #419",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3091"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172404,
+      "sourceId": 13961,
+      "readerId": 3092,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #420",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=3092"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172405,
+      "sourceId": 13962,
+      "readerId": 7415,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #421",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7415"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172406,
+      "sourceId": 13963,
+      "readerId": 7416,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #422",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7416"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172407,
+      "sourceId": 13964,
+      "readerId": 7417,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #423",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7417"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172408,
+      "sourceId": 13965,
+      "readerId": 7418,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #424",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7418"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172409,
+      "sourceId": 13966,
+      "readerId": 7419,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #425",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7419"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172410,
+      "sourceId": 13967,
+      "readerId": 7420,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #426",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7420"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172411,
+      "sourceId": 13968,
+      "readerId": 7421,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #427",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7421"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172412,
+      "sourceId": 13969,
+      "readerId": 7422,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #428",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7422"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172413,
+      "sourceId": 13970,
+      "readerId": 7423,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #429",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7423"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172414,
+      "sourceId": 13971,
+      "readerId": 7424,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #430",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7424"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172415,
+      "sourceId": 13972,
+      "readerId": 7425,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #431",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7425"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172416,
+      "sourceId": 254,
+      "readerId": 7426,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #432",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7426"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172417,
+      "sourceId": 274,
+      "readerId": 7427,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #433",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7427"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172418,
+      "sourceId": 252,
+      "readerId": 7428,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #434",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7428"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172419,
+      "sourceId": 242,
+      "readerId": 7429,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #435",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7429"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172420,
+      "sourceId": 240,
+      "readerId": 7430,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #436",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7430"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172421,
+      "sourceId": 269,
+      "readerId": 7431,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #437",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7431"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172422,
+      "sourceId": 251,
+      "readerId": 7432,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #438",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7432"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172423,
+      "sourceId": 250,
+      "readerId": 7433,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #439",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7433"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172424,
+      "sourceId": 249,
+      "readerId": 7434,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #440",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7434"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172425,
+      "sourceId": 400,
+      "readerId": 7435,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #441",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7435"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172426,
+      "sourceId": 463,
+      "readerId": 7436,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #442",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7436"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172427,
+      "sourceId": 489,
+      "readerId": 7437,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #443",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7437"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172428,
+      "sourceId": 628,
+      "readerId": 776,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #444",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=776"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172429,
+      "sourceId": 688,
+      "readerId": 7439,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #445",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7439"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172430,
+      "sourceId": 601,
+      "readerId": 7440,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #446",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7440"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 172431,
+      "sourceId": 540,
+      "readerId": 7441,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #447",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7441"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 208293,
+      "sourceId": 798,
+      "readerId": 7442,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #448",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7442"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 208294,
+      "sourceId": 836,
+      "readerId": 7443,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #449",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7443"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 214051,
+      "sourceId": 868,
+      "readerId": 7444,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #450",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7444"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 214052,
+      "sourceId": 908,
+      "readerId": 89,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #451",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=89"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 214053,
+      "sourceId": 15,
+      "readerId": 7446,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #452",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7446"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 214806,
+      "sourceId": 1418,
+      "readerId": 7447,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #453",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7447"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 220187,
+      "sourceId": 1574,
+      "readerId": 2721,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #454",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2721"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 220188,
+      "sourceId": 1663,
+      "readerId": 2722,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #455",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2722"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 220684,
+      "sourceId": 1664,
+      "readerId": 2723,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #456",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2723"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 224265,
+      "sourceId": 1758,
+      "readerId": 2724,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #457",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2724"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 224266,
+      "sourceId": 1863,
+      "readerId": 2725,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #458",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2725"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 243075,
+      "sourceId": 1970,
+      "readerId": 2726,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #459",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2726"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 243076,
+      "sourceId": 2073,
+      "readerId": 2727,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #460",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2727"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 243077,
+      "sourceId": 2074,
+      "readerId": 2728,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #461",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2728"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 243078,
+      "sourceId": 2181,
+      "readerId": 778,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #462",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=778"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 250048,
+      "sourceId": 2301,
+      "readerId": 2730,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #463",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2730"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 250049,
+      "sourceId": 2815,
+      "readerId": 2731,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #464",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2731"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 250050,
+      "sourceId": 2409,
+      "readerId": 2732,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #465",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2732"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 258664,
+      "sourceId": 3001,
+      "readerId": 337,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #466",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=337"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 266770,
+      "sourceId": 3120,
+      "readerId": 2733,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #467",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2733"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 266771,
+      "sourceId": 3143,
+      "readerId": 7450,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #468",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7450"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 273377,
+      "sourceId": 3479,
+      "readerId": 7451,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #469",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7451"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 273378,
+      "sourceId": 3892,
+      "readerId": 7452,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #470",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7452"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 278261,
+      "sourceId": 3893,
+      "readerId": 7453,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #471",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7453"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 278262,
+      "sourceId": 4027,
+      "readerId": 1108,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #472",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=1108"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 291047,
+      "sourceId": 4146,
+      "readerId": 7456,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #473",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7456"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 291048,
+      "sourceId": 4280,
+      "readerId": 7457,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #474",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7457"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 300052,
+      "sourceId": 4434,
+      "readerId": 2735,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #475",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=2735"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 301449,
+      "sourceId": 4435,
+      "readerId": 7458,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #476",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7458"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 301450,
+      "sourceId": 4753,
+      "readerId": 7459,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #477",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7459"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 307368,
+      "sourceId": 5049,
+      "readerId": 7460,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #478",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7460"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 307369,
+      "sourceId": 5201,
+      "readerId": 7461,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #479",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7461"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 321866,
+      "sourceId": 5498,
+      "readerId": 7462,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #480",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7462"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 321867,
+      "sourceId": 5631,
+      "readerId": 7463,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #481",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=7463"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 335216,
+      "sourceId": 5777,
+      "readerId": 8729,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #482",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8729"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 335217,
+      "sourceId": 5942,
+      "readerId": 8730,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #483",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8730"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 345048,
+      "sourceId": 6077,
+      "readerId": 8731,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #484",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8731"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 345049,
+      "sourceId": 6223,
+      "readerId": 8732,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #485",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8732"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 356378,
+      "sourceId": 13423,
+      "readerId": 8733,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #486",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8733"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 356379,
+      "sourceId": 15803,
+      "readerId": 8734,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #487",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8734"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 363202,
+      "sourceId": 15921,
+      "readerId": 8735,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #488",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8735"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 369358,
+      "sourceId": 16102,
+      "readerId": 8736,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #489",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8736"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 371809,
+      "sourceId": 16442,
+      "readerId": 8737,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #490",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8737"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 376775,
+      "sourceId": 16443,
+      "readerId": 8738,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #491",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8738"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 386742,
+      "sourceId": 17206,
+      "readerId": 8739,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #492",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8739"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 386743,
+      "sourceId": 17336,
+      "readerId": 8742,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #493",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=8742"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 386744,
+      "sourceId": 17576,
+      "readerId": 11737,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #494",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11737"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 386745,
+      "sourceId": 20633,
+      "readerId": 10347,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #495",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=10347"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 503644,
+      "sourceId": 20820,
+      "readerId": 11738,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #496",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11738"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 521013,
+      "sourceId": 20959,
+      "readerId": 11739,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #497",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11739"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 533840,
+      "sourceId": 21168,
+      "readerId": 11740,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #498",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11740"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 533841,
+      "sourceId": 21318,
+      "readerId": 11741,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #499",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11741"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 533842,
+      "sourceId": 33565,
+      "readerId": 14212,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #500",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14212"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 538243,
+      "sourceId": 21699,
+      "readerId": 11742,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #501",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11742"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 538244,
+      "sourceId": 21924,
+      "readerId": 11743,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #502",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11743"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 538245,
+      "sourceId": 22255,
+      "readerId": 11744,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #503",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11744"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 538246,
+      "sourceId": 22463,
+      "readerId": 11745,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #504",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11745"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 559214,
+      "sourceId": 22858,
+      "readerId": 11746,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #505",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=11746"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 559215,
+      "sourceId": 23564,
+      "readerId": 13143,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #506",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13143"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 559216,
+      "sourceId": 23735,
+      "readerId": 13146,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #507",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13146"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 605731,
+      "sourceId": 23920,
+      "readerId": 13041,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #508",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13041"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 605732,
+      "sourceId": 23921,
+      "readerId": 15356,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #509",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=15356"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 605733,
+      "sourceId": 24131,
+      "readerId": 15442,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #510",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=15442"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 645036,
+      "sourceId": 26964,
+      "readerId": 12592,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #511",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12592"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 647477,
+      "sourceId": 26965,
+      "readerId": 12715,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #512",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12715"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 647478,
+      "sourceId": 26966,
+      "readerId": 12766,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #513",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=12766"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 647479,
+      "sourceId": 26967,
+      "readerId": 16919,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #514",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=16919"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 647480,
+      "sourceId": 26968,
+      "readerId": 13478,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #515",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13478"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 690094,
+      "sourceId": 26969,
+      "readerId": 17070,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #516",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=17070"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 690095,
+      "sourceId": 26970,
+      "readerId": 17325,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #517",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=17325"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 690096,
+      "sourceId": 26971,
+      "readerId": 18508,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #518",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18508"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 691849,
+      "sourceId": 26972,
+      "readerId": 18507,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #519",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18507"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 703426,
+      "sourceId": 26973,
+      "readerId": 18123,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #520",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18123"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 722020,
+      "sourceId": 26974,
+      "readerId": 13903,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #521",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=13903"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 739563,
+      "sourceId": 30619,
+      "readerId": 14149,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #522",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14149"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 743398,
+      "sourceId": 32564,
+      "readerId": 14265,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #523",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14265"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 752950,
+      "sourceId": 30621,
+      "readerId": 14490,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #524",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14490"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 760878,
+      "sourceId": 30622,
+      "readerId": 14902,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #525",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14902"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 770948,
+      "sourceId": 30623,
+      "readerId": 15413,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #526",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=15413"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 772069,
+      "sourceId": 30624,
+      "readerId": 15754,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #527",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=15754"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 780356,
+      "sourceId": 30625,
+      "readerId": 16184,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #528",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=16184"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 783441,
+      "sourceId": 30626,
+      "readerId": 17048,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #529",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=17048"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 790324,
+      "sourceId": 30627,
+      "readerId": 17927,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #530",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=17927"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 794341,
+      "sourceId": 30628,
+      "readerId": 14757,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #531",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=14757"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 799536,
+      "sourceId": 36329,
+      "readerId": 19008,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #532",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=19008"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 808175,
+      "sourceId": 36324,
+      "readerId": 19732,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #533",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=19732"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 814965,
+      "sourceId": 36323,
+      "readerId": 20140,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #534",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20140"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 817115,
+      "sourceId": 39850,
+      "readerId": 20376,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #534.1",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20376"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 817747,
+      "sourceId": 36331,
+      "readerId": 20473,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #535",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20473"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 824334,
+      "sourceId": 36321,
+      "readerId": 20686,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #536",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=20686"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 839711,
+      "sourceId": 36328,
+      "readerId": 21214,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #537",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21214"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 847280,
+      "sourceId": 36326,
+      "readerId": 21667,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #538",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21667"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 851438,
+      "sourceId": 36325,
+      "readerId": 21996,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #539",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=21996"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 853044,
+      "sourceId": 36320,
+      "readerId": 22438,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #540",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22438"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 860792,
+      "sourceId": 36330,
+      "readerId": 22695,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #541",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=22695"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 869500,
+      "sourceId": 36322,
+      "readerId": 23468,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #542",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23468"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 878140,
+      "sourceId": 36327,
+      "readerId": 23927,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #543",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23927"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 879991,
+      "sourceId": 38395,
+      "readerId": 23843,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #2",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23843"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 885869,
+      "sourceId": 38396,
+      "readerId": 23930,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #3",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=23930"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 887173,
+      "sourceId": 37942,
+      "readerId": 24364,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "X-Men (1963) #544",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=24364"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 893522,
+      "sourceId": 38400,
+      "readerId": 24567,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #4",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=24567"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 901975,
+      "sourceId": 38397,
+      "readerId": 18510,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #5",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=18510"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 905571,
+      "sourceId": 38401,
+      "readerId": 25256,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #6",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25256"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 922487,
+      "sourceId": 38403,
+      "readerId": 25592,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #7",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25592"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 927077,
+      "sourceId": 38402,
+      "readerId": 25697,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #8",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25697"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 934844,
+      "sourceId": 38398,
+      "readerId": 25741,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #9",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25741"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 942150,
+      "sourceId": 38399,
+      "readerId": 25742,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #10",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25742"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 951442,
+      "sourceId": 38383,
+      "readerId": 25744,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #11",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25744"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 956089,
+      "sourceId": 38384,
+      "readerId": 25746,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #12",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=25746"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 977494,
+      "sourceId": 40758,
+      "readerId": 27346,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #13",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27346"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 998033,
+      "sourceId": 40760,
+      "readerId": 27594,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #14",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27594"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1005578,
+      "sourceId": 40759,
+      "readerId": 27680,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #15",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27680"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1016432,
+      "sourceId": 40763,
+      "readerId": 27832,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #16",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27832"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1029054,
+      "sourceId": 46915,
+      "readerId": 27904,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #16.1",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=27904"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1034797,
+      "sourceId": 40762,
+      "readerId": 28016,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #17",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28016"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1039413,
+      "sourceId": 40761,
+      "readerId": 28283,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #18",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28283"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1042227,
+      "sourceId": 41138,
+      "readerId": 28305,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #19",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28305"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1070977,
+      "sourceId": 41137,
+      "readerId": 28499,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #20",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28499"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1095458,
+      "sourceId": 46546,
+      "readerId": 28986,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #21",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=28986"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1106036,
+      "sourceId": 46547,
+      "readerId": 29572,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #22",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=29572"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1111817,
+      "sourceId": 46548,
+      "readerId": 29385,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #23",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=29385"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1120963,
+      "sourceId": 46549,
+      "readerId": 30243,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #24",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30243"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1129345,
+      "sourceId": 46550,
+      "readerId": 30656,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #25",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=30656"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1139403,
+      "sourceId": 46551,
+      "readerId": 31341,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #26",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31341"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1142569,
+      "sourceId": 46552,
+      "readerId": 31594,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #27",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31594"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    },
+    {
+      "gcdId": 1149601,
+      "sourceId": 46553,
+      "readerId": 31733,
+      "drn": "",
+      "cover": "",
+      "kind": "mu",
+      "reader": {
+        "ok": true,
+        "title": "Ultimate Spider-Man (2011) #28",
+        "smartLink": "https://marvel.smart.link/fiir7ec77?type=reader&drn=31733"
+      },
+      "uuid": {
+        "ok": false,
+        "reason": "missing-drn"
+      },
+      "functional": true
+    }
+  ]
+}
