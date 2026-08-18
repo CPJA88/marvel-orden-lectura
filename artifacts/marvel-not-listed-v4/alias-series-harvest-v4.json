@@ -1,0 +1,2203 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-18T20:41:04.015Z",
+  "mode": "alias-series-harvest-v4",
+  "baseline": {
+    "matched": 29106,
+    "noDigital": 1131,
+    "notListed": 20765
+  },
+  "summary": {
+    "targets": 54,
+    "unique": 35,
+    "mu": 31,
+    "noDigital": 4,
+    "ambiguous": 0,
+    "noCandidate": 19,
+    "writesCache": false
+  },
+  "pageDiagnostics": [
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013?offset=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013?offset=40",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013?offset=60",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013?offset=20&limit=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 13831,
+      "url": "https://www.marvel.com/comics/series/13831/ultimate_comics_spiderman_2011_2013?limit=100",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015?offset=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015?offset=40",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015?offset=60",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015?offset=20&limit=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 17602,
+      "url": "https://www.marvel.com/comics/series/17602/uncanny_x-men_2013_-_2015?limit=100",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019?offset=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019?offset=40",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019?offset=60",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019?offset=20&limit=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 26038,
+      "url": "https://www.marvel.com/comics/series/26038/uncanny_x-men_2018_-_2019?limit=100",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present?offset=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present?offset=40",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present?offset=60",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present?offset=20&limit=20",
+      "issueIds": 26
+    },
+    {
+      "seriesId": 39425,
+      "url": "https://www.marvel.com/comics/series/39425/uncanny_x-men_2024_-_present?limit=100",
+      "issueIds": 26
+    }
+  ],
+  "rows": [
+    {
+      "gcdId": 875744,
+      "seriesId": 8816,
+      "localTitle": "Ultimate Comics Spider-Man",
+      "issueNumber": "1",
+      "date": "2011-09-14",
+      "aliasId": "ultimate comics spider man=>ultimate spider man",
+      "remoteNorm": "ultimate spider man",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 13831,
+      "harvestedIds": 27
+    },
+    {
+      "gcdId": 1168417,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "15.INH",
+      "date": "2013-12-11",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 48673,
+          "officialTitle": "Uncanny X-Men (2013) #15",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 32303,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2013) #15"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 48673,
+        "officialTitle": "Uncanny X-Men (2013) #15",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 32303,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2013) #15"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 17602,
+      "harvestedIds": 27
+    },
+    {
+      "gcdId": 1875095,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "1 (620)",
+      "date": "2018-11-14",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71457,
+          "officialTitle": "Uncanny X-Men (2018) #1",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 49769,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #1"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71457,
+        "officialTitle": "Uncanny X-Men (2018) #1",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 49769,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #1"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 27
+    },
+    {
+      "gcdId": 1875111,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "2 (621)",
+      "date": "2018-11-21",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1876441,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "3 (622)",
+      "date": "2018-11-28",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71460,
+          "officialTitle": "Uncanny X-Men (2018) #3",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 49771,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #3"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71460,
+        "officialTitle": "Uncanny X-Men (2018) #3",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 49771,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #3"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1878672,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "4 (623)",
+      "date": "2018-12-05",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71461,
+          "officialTitle": "Uncanny X-Men (2018) #4",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50014,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #4"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71461,
+        "officialTitle": "Uncanny X-Men (2018) #4",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50014,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #4"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1883393,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "5 (624)",
+      "date": "2018-12-12",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71462,
+          "officialTitle": "Uncanny X-Men (2018) #5",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50015,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #5"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71462,
+        "officialTitle": "Uncanny X-Men (2018) #5",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50015,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #5"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1884056,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "6 (625)",
+      "date": "2018-12-19",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71463,
+          "officialTitle": "Uncanny X-Men (2018) #6",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50016,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #6"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71463,
+        "officialTitle": "Uncanny X-Men (2018) #6",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50016,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #6"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1887275,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "7 (626)",
+      "date": "2018-12-26",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71464,
+          "officialTitle": "Uncanny X-Men (2018) #7",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50017,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #7"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71464,
+        "officialTitle": "Uncanny X-Men (2018) #7",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50017,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #7"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1905233,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "10 (629)",
+      "date": "2019-01-16",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 71620,
+          "officialTitle": "Uncanny X-Men (2018) #10",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50355,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #10"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 71620,
+        "officialTitle": "Uncanny X-Men (2018) #10",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50355,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #10"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1918109,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "11 (630)",
+      "date": "2019-02-06",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73033,
+          "officialTitle": "Uncanny X-Men (2018) #11",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50587,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #11"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73033,
+        "officialTitle": "Uncanny X-Men (2018) #11",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50587,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #11"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1925829,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "12 (631)",
+      "date": "2019-02-20",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73034,
+          "officialTitle": "Uncanny X-Men (2018) #12",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50588,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #12"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73034,
+        "officialTitle": "Uncanny X-Men (2018) #12",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50588,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #12"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1932200,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "13 (632)",
+      "date": "2019-03-06",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73035,
+          "officialTitle": "Uncanny X-Men (2018) #13",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50896,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #13"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73035,
+        "officialTitle": "Uncanny X-Men (2018) #13",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50896,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #13"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1939004,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "14 (633)",
+      "date": "2019-03-20",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73036,
+          "officialTitle": "Uncanny X-Men (2018) #14",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 50897,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #14"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73036,
+        "officialTitle": "Uncanny X-Men (2018) #14",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 50897,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #14"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1944269,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "15 (634)",
+      "date": "2019-04-03",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73037,
+          "officialTitle": "Uncanny X-Men (2018) #15",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51102,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #15"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73037,
+        "officialTitle": "Uncanny X-Men (2018) #15",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51102,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #15"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1950751,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "16 (635)",
+      "date": "2019-04-17",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73038,
+          "officialTitle": "Uncanny X-Men (2018) #16",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51103,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #16"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73038,
+        "officialTitle": "Uncanny X-Men (2018) #16",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51103,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #16"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1955616,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "17 (639)",
+      "date": "2019-05-01",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73039,
+          "officialTitle": "Uncanny X-Men (2018) #17",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51377,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #17"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73039,
+        "officialTitle": "Uncanny X-Men (2018) #17",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51377,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #17"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1964722,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "18 (640)",
+      "date": "2019-05-15",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73040,
+          "officialTitle": "Uncanny X-Men (2018) #18",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51378,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #18"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73040,
+        "officialTitle": "Uncanny X-Men (2018) #18",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51378,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #18"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1974693,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "19 (641)",
+      "date": "2019-06-05",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73041,
+          "officialTitle": "Uncanny X-Men (2018) #19",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51693,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #19"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73041,
+        "officialTitle": "Uncanny X-Men (2018) #19",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51693,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #19"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1978219,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "20 (642)",
+      "date": "2019-06-19",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73042,
+          "officialTitle": "Uncanny X-Men (2018) #20",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51694,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #20"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73042,
+        "officialTitle": "Uncanny X-Men (2018) #20",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51694,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #20"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1987310,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "21 (643)",
+      "date": "2019-07-03",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73043,
+          "officialTitle": "Uncanny X-Men (2018) #21",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51908,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #21"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73043,
+        "officialTitle": "Uncanny X-Men (2018) #21",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51908,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #21"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 1997661,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "22 (644)",
+      "date": "2019-07-17",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 73044,
+          "officialTitle": "Uncanny X-Men (2018) #22",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 51909,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2018) #22"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 73044,
+        "officialTitle": "Uncanny X-Men (2018) #22",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 51909,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2018) #22"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 26038,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2649993,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "1 (701)",
+      "date": "2024-08-07",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 115380,
+          "officialTitle": "Uncanny X-Men (2024) #1",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 68016,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #1"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 115380,
+        "officialTitle": "Uncanny X-Men (2024) #1",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 68016,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #1"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 27
+    },
+    {
+      "gcdId": 2656662,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "2 (702)",
+      "date": "2024-09-11",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2660595,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "3 (703)",
+      "date": "2024-09-25",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2667492,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "4 (704)",
+      "date": "2024-10-16",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2677596,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "5 (705)",
+      "date": "2024-11-13",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2683449,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "6 (706)",
+      "date": "2024-11-27",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2686316,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "7 (707)",
+      "date": "2024-12-11",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2694917,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "8 (708)",
+      "date": "2025-01-08",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2703220,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "9 (709)",
+      "date": "2025-01-22",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2711655,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "10 (710)",
+      "date": "2025-02-19",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2716445,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "11 (711)",
+      "date": "2025-03-05",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2719439,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "12 (712)",
+      "date": "2025-03-26",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2722988,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "13 (713)",
+      "date": "2025-04-09",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2734699,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "14 (714)",
+      "date": "2025-05-14",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2741307,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "15 (715)",
+      "date": "2025-05-28",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2749778,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "16 (716)",
+      "date": "2025-06-25",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2755222,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "17 (717)",
+      "date": "2025-07-09",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2757179,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "18 (718)",
+      "date": "2025-07-23",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 115397,
+          "officialTitle": "Uncanny X-Men (2024) #18",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 74291,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #18"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 115397,
+        "officialTitle": "Uncanny X-Men (2024) #18",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 74291,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #18"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2761075,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "19 (719)",
+      "date": "2025-08-06",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 119441,
+          "officialTitle": "Uncanny X-Men (2024) #19",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 75159,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #19"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 119441,
+        "officialTitle": "Uncanny X-Men (2024) #19",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 75159,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #19"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2767858,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "20 (720)",
+      "date": "2025-09-03",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "none",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [],
+      "selected": null,
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2770575,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "21 (721)",
+      "date": "2025-09-17",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 119443,
+          "officialTitle": "Uncanny X-Men (2024) #21",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 75543,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #21"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 119443,
+        "officialTitle": "Uncanny X-Men (2024) #21",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 75543,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #21"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2802380,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "22 (722)",
+      "date": "2026-01-14",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 119444,
+          "officialTitle": "Uncanny X-Men (2024) #22",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 74492,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #22"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 119444,
+        "officialTitle": "Uncanny X-Men (2024) #22",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 74492,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #22"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2811518,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "23 (723)",
+      "date": "2026-02-04",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127660,
+          "officialTitle": "Uncanny X-Men (2024) #23",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72160,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #23"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127660,
+        "officialTitle": "Uncanny X-Men (2024) #23",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72160,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #23"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2815938,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "24 (724)",
+      "date": "2026-02-18",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127661,
+          "officialTitle": "Uncanny X-Men (2024) #24",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72161,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #24"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127661,
+        "officialTitle": "Uncanny X-Men (2024) #24",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72161,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #24"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2823947,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "25 (725)",
+      "date": "2026-03-25",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127662,
+          "officialTitle": "Uncanny X-Men (2024) #25",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72162,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #25"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127662,
+        "officialTitle": "Uncanny X-Men (2024) #25",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72162,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #25"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2826470,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "26 (726)",
+      "date": "2026-04-08",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127663,
+          "officialTitle": "Uncanny X-Men (2024) #26",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72163,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #26"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127663,
+        "officialTitle": "Uncanny X-Men (2024) #26",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72163,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #26"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2830559,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "27 (727)",
+      "date": "2026-04-29",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [],
+      "validCandidates": [
+        {
+          "sourceId": 127664,
+          "officialTitle": "Uncanny X-Men (2024) #27",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72164,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #27"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127664,
+        "officialTitle": "Uncanny X-Men (2024) #27",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72164,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #27"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2833623,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "28 (728)",
+      "date": "2026-05-13",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [],
+      "validCandidates": [
+        {
+          "sourceId": 127665,
+          "officialTitle": "Uncanny X-Men (2024) #28",
+          "officialDate": "",
+          "availability": "mu",
+          "readerId": 72165,
+          "reader": {
+            "ok": true,
+            "title": "Uncanny X-Men (2024) #28"
+          },
+          "functional": true
+        }
+      ],
+      "selected": {
+        "sourceId": 127665,
+        "officialTitle": "Uncanny X-Men (2024) #28",
+        "officialDate": "",
+        "availability": "mu",
+        "readerId": 72165,
+        "reader": {
+          "ok": true,
+          "title": "Uncanny X-Men (2024) #28"
+        },
+        "functional": true
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2838620,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "29 (729)",
+      "date": "2026-06-03",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127666,
+          "officialTitle": "Uncanny X-Men (2024) #29",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false
+        }
+      ],
+      "selected": {
+        "sourceId": 127666,
+        "officialTitle": "Uncanny X-Men (2024) #29",
+        "officialDate": "",
+        "availability": "no-digital",
+        "readerId": 0,
+        "reader": {
+          "ok": false
+        },
+        "functional": false
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2843000,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "30 (730)",
+      "date": "2026-06-17",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127667,
+          "officialTitle": "Uncanny X-Men (2024) #30",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false
+        }
+      ],
+      "selected": {
+        "sourceId": 127667,
+        "officialTitle": "Uncanny X-Men (2024) #30",
+        "officialDate": "",
+        "availability": "no-digital",
+        "readerId": 0,
+        "reader": {
+          "ok": false
+        },
+        "functional": false
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2848886,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "31 (731)",
+      "date": "2026-07-08",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127668,
+          "officialTitle": "Uncanny X-Men (2024) #31",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false
+        }
+      ],
+      "selected": {
+        "sourceId": 127668,
+        "officialTitle": "Uncanny X-Men (2024) #31",
+        "officialDate": "",
+        "availability": "no-digital",
+        "readerId": 0,
+        "reader": {
+          "ok": false
+        },
+        "functional": false
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    },
+    {
+      "gcdId": 2852968,
+      "seriesId": 9002,
+      "localTitle": "Uncanny X-Men",
+      "issueNumber": "32 (732)",
+      "date": "2026-07-22",
+      "aliasId": "uncanny x men=>x men",
+      "remoteNorm": "x men",
+      "kind": "unique",
+      "candidate": null,
+      "searchIds": [
+        131912,
+        134099,
+        133103,
+        135243,
+        130562,
+        132894
+      ],
+      "validCandidates": [
+        {
+          "sourceId": 127669,
+          "officialTitle": "Uncanny X-Men (2024) #32",
+          "officialDate": "",
+          "availability": "no-digital",
+          "readerId": 0,
+          "reader": {
+            "ok": false
+          },
+          "functional": false
+        }
+      ],
+      "selected": {
+        "sourceId": 127669,
+        "officialTitle": "Uncanny X-Men (2024) #32",
+        "officialDate": "",
+        "availability": "no-digital",
+        "readerId": 0,
+        "reader": {
+          "ok": false
+        },
+        "functional": false
+      },
+      "officialSeriesId": 39425,
+      "harvestedIds": 26
+    }
+  ]
+}
