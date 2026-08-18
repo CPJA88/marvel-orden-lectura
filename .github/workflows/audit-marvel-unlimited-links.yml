@@ -2,7 +2,7 @@ name: Audit Marvel Unlimited links
 
 on:
   workflow_run:
-    workflows: ['Prebuild Marvel cache']
+    workflows: ['Prebuild Marvel cache', 'Audit official Marvel Unlimited coverage']
     types: [completed]
   workflow_dispatch:
 
