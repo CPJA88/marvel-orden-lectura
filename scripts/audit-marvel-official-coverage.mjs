@@ -11,7 +11,7 @@ const mode=process.argv[2]||'scan';
 const shard=Number(process.env.SHARD_INDEX||0);
 const shardCount=Math.max(1,Number(process.env.SHARD_COUNT)||1);
 const concurrency=Math.max(1,Math.min(2,Number(process.env.COVERAGE_CONCURRENCY)||1));
-const checkpointDir=path.join(root,'.cache','marvel-official-coverage-v1');
+const checkpointDir=path.join(root,'.cache','marvel-official-coverage-v2');
 const checkpointFile=path.join(checkpointDir,`shard-${shard}.json`);
 const UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
 const SEARCH='https://www.marvel.com/search';
@@ -29,7 +29,15 @@ const decodeHtml=v=>str(v).replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replac
 const plainHtml=html=>decodeHtml(str(html).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim();
 const pageTitle=html=>decodeHtml(str(html).match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||str(html).match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i)?.[1]||'').replace(/\s*\|\s*Comic Issues\s*\|\s*Marvel.*$/i,'').trim();
 const parseIssueTitle=title=>{const m=decodeHtml(title).trim().match(/^(.*?)\s*(?:\(\s*(\d{4})(?:\s*-\s*(?:\d{4}|present))?\s*\))?\s*#\s*([^\s|]+)/i);return m?{series:m[1].trim(),year:m[2]||'',issue:m[3].trim()}:null};
-const availability=html=>{const t=plainHtml(html).toLowerCase();if(/digital issue (?:is )?not currently available/.test(t))return'no-digital';if(/members get unlimited access to this issue/.test(t)||/get unlimited access to this issue/.test(t))return'mu';return'unknown'};
+function availability(html){
+  const t=plainHtml(html).toLowerCase();
+  const mu=/members get unlimited access to this issue/.test(t)||/get unlimited access to this issue/.test(t);
+  const no=/digital issue (?:is )?not currently available/.test(t);
+  if(mu&&!no)return'mu';
+  if(no&&!mu)return'no-digital';
+  if(mu&&no)return'conflict';
+  return'unknown';
+}
 const extractDrn=v=>str(v).replace(/\\u003A/gi,':').replace(/%3A/gi,':').match(DRN_RE)?.[0]||'';
 const extractReaderId=html=>{const s=str(html);for(const re of [/sharing\/legacy\/(\d+)/i,/read\.marvel\.com\/#\/book\/(\d+)/i,/["'](?:digitalId|readerId)["']\s*:\s*["']?(\d+)/i,/(?:digitalId|readerId)%22%3A(?:%22)?(\d+)/i]){const m=s.match(re);if(m)return Number(m[1])||0}return 0};
 const extractCover=html=>decodeHtml(str(html).match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1]||'').replace(/^http:/i,'https:');
@@ -89,7 +97,8 @@ async function resolveDrn(readerId){
 async function inspectOfficialIssue(local,sourceId){
   const r=await request(ISSUE+sourceId,{tries:4});if(!r)return null;
   const html=await r.text(),title=pageTitle(html);if(!sameIdentity(local,title))return null;
-  const av=availability(html),cover=extractCover(html);let readerId=extractReaderId(html),drn=extractDrn(html);
+  let av=availability(html);const cover=extractCover(html);let readerId=extractReaderId(html),drn=extractDrn(html);
+  if(av==='conflict'&&(readerId||drn))av='mu';
   if(av==='mu'&&!drn&&readerId)drn=await resolveDrn(readerId);
   return{sourceId,readerId,drn,cover,title,availability:av};
 }
@@ -106,12 +115,12 @@ async function verifyLocal(local){
     if(found.availability==='no-digital')return{kind:'no-digital',...found,row:[local.gcdId,found.sourceId,0,STATUS.NO_DIGITAL,found.cover||'','']};
     exactUnknown=found;
   }
-  if(exactUnknown)return{kind:'retryable',reason:'official-page-availability-unknown',sourceId:exactUnknown.sourceId,title:exactUnknown.title};
+  if(exactUnknown)return{kind:'retryable',reason:exactUnknown.availability==='conflict'?'official-page-conflicting-availability':'official-page-availability-unknown',sourceId:exactUnknown.sourceId,title:exactUnknown.title};
   return{kind:'not-found',reason:ids.length?'no-exact-official-match':'official-search-no-candidates'};
 }
 
 async function readCheckpoint(signature){try{const p=JSON.parse(await fs.readFile(checkpointFile,'utf8'));return p?.signature===signature&&p?.results?p:null}catch{return null}}
-async function saveCheckpoint(signature,results,processed,total){await fs.mkdir(checkpointDir,{recursive:true});const tmp=checkpointFile+'.tmp';await fs.writeFile(tmp,JSON.stringify({version:1,signature,updatedAt:new Date().toISOString(),processed,total,results}));await fs.rename(tmp,checkpointFile)}
+async function saveCheckpoint(signature,results,processed,total){await fs.mkdir(checkpointDir,{recursive:true});const tmp=checkpointFile+'.tmp';await fs.writeFile(tmp,JSON.stringify({version:2,signature,updatedAt:new Date().toISOString(),processed,total,results}));await fs.rename(tmp,checkpointFile)}
 
 async function pilot(){
   const local=await loadLocal();const x=local.byId.get(8972);if(!x)throw new Error('No existe GCD 8972 (Strange Tales #1) en la biblioteca local.');
@@ -123,12 +132,16 @@ async function pilot(){
 async function scan(){
   const [local,pack]=await Promise.all([loadLocal(),fs.readFile(cacheFile,'utf8').then(JSON.parse)]);
   if(Number(pack.version)<3||!Array.isArray(pack.entries)||pack.localCount<50000)throw new Error('Caché V3 inválida.');
-  const all=pack.entries.filter(r=>Number(r?.[3])===STATUS.NOT_LISTED).map(r=>Number(r[0])).sort((a,b)=>a-b);
+  const previousCoverageComplete=Boolean(pack.officialCoverageAudit?.completed&&Number(pack.officialCoverageAudit?.version)>=1);
+  const statuses=previousCoverageComplete?[STATUS.NO_DIGITAL]:[STATUS.NO_DIGITAL,STATUS.NOT_LISTED];
+  const all=pack.entries.filter(r=>statuses.includes(Number(r?.[3]))).map(r=>Number(r[0])).sort((a,b)=>a-b);
+  const countNoDigital=pack.entries.filter(r=>Number(r?.[3])===STATUS.NO_DIGITAL).length;
+  const countNotListed=pack.entries.filter(r=>Number(r?.[3])===STATUS.NOT_LISTED).length;
   const targets=all.filter((_,i)=>i%shardCount===shard);
-  const signature=[pack.generatedAt,pack.localCount,pack.entries.length,all.length,shardCount,shard].join('|');
+  const signature=[pack.generatedAt,pack.localCount,pack.entries.length,statuses.join(','),all.length,shardCount,shard].join('|');
   const cp=await readCheckpoint(signature),results=cp?.results||{};
   let done=Object.keys(results).length;
-  console.log(`Cobertura oficial: status4=${all.length}; shard ${shard+1}/${shardCount}; objetivos=${targets.length}; checkpoint=${done}.`);
+  console.log(`Cobertura oficial v2: noDigital=${countNoDigital}; notListed=${countNotListed}; reauditar=${statuses.join(',')}; shard ${shard+1}/${shardCount}; objetivos=${targets.length}; checkpoint=${done}.`);
   const pending=targets.filter(id=>!results[id]);let cursor=0;
   async function worker(){
     while(cursor<pending.length){const i=cursor++,id=pending[i],x=local.byId.get(id);if(!x){results[id]={kind:'retryable',reason:'missing-local-row'};continue}
@@ -139,7 +152,7 @@ async function scan(){
   }
   await Promise.all(Array.from({length:concurrency},worker));await saveCheckpoint(signature,results,targets.length,targets.length);
   const values=Object.entries(results).map(([gcdId,v])=>({gcdId:Number(gcdId),...v}));
-  const report={version:1,generatedAt:new Date().toISOString(),cacheGeneratedAt:pack.generatedAt,shard,shardCount,totalNotListed:all.length,targetCount:targets.length,mu:values.filter(v=>v.kind==='mu').length,noDigital:values.filter(v=>v.kind==='no-digital').length,notFound:values.filter(v=>v.kind==='not-found').length,retryable:values.filter(v=>v.kind==='retryable').length,results:values};
+  const report={version:2,generatedAt:new Date().toISOString(),cacheGeneratedAt:pack.generatedAt,shard,shardCount,scannedStatuses:statuses,totalNoDigital:countNoDigital,totalNotListed:countNotListed,targetCount:targets.length,mu:values.filter(v=>v.kind==='mu').length,noDigital:values.filter(v=>v.kind==='no-digital').length,notFound:values.filter(v=>v.kind==='not-found').length,retryable:values.filter(v=>v.kind==='retryable').length,results:values};
   await fs.mkdir(artifactRoot,{recursive:true});await fs.writeFile(path.join(artifactRoot,`shard-${shard}.json`),JSON.stringify(report,null,2)+'\n');
   if(report.retryable)throw new Error(`Shard ${shard}: ${report.retryable} resultados transitorios/no verificables; conservar checkpoint y reintentar.`);
 }
@@ -151,13 +164,30 @@ function recompute(pack){
 }
 
 async function merge(){
-  const pack=JSON.parse(await fs.readFile(cacheFile,'utf8')),before={matched:pack.matched,notListed:pack.notListed,noDigital:pack.noDigital,linkReady:pack.linkReady,linkMissing:pack.linkMissing};
+  const pack=JSON.parse(await fs.readFile(cacheFile,'utf8')),before={matched:pack.matched,notListed:pack.notListed,noDigital:pack.noDigital,linkReady:pack.linkReady,linkMissing:pack.linkMissing,officialCoverageAudit:pack.officialCoverageAudit||null};
   const files=[];async function walk(dir){for(const e of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())await walk(p);else if(/^shard-\d+\.json$/.test(e.name))files.push(p)}}await walk(artifactRoot);
   if(files.length!==shardCount)throw new Error(`Se esperaban ${shardCount} shards y llegaron ${files.length}.`);
   const reports=await Promise.all(files.map(f=>fs.readFile(f,'utf8').then(JSON.parse)));if(reports.some(r=>r.retryable))throw new Error('Hay shards con resultados transitorios.');
-  const byId=new Map(pack.entries.map((r,i)=>[Number(r[0]),i]));let promotedMU=0,promotedNoDigital=0,checked=0,notFound=0;
-  for(const rep of reports)for(const v of rep.results){checked++;if(v.kind==='not-found'){notFound++;continue}if(!Array.isArray(v.row))continue;const pos=byId.get(Number(v.gcdId));if(pos==null)continue;if(Number(pack.entries[pos][3])!==STATUS.NOT_LISTED)continue;pack.entries[pos]=v.row;if(v.kind==='mu')promotedMU++;if(v.kind==='no-digital')promotedNoDigital++}
-  recompute(pack);pack.generatedAt=new Date().toISOString();pack.officialCoverageAudit={version:1,completed:true,completedAt:pack.generatedAt,authority:'marvel.com/search + marvel.com/comics/issue',previousNotListed:Number(before.notListed)||0,checked,promotedMU,promotedNoDigital,notFound,remainingNotListed:pack.notListed};
+  const byId=new Map(pack.entries.map((r,i)=>[Number(r[0]),i]));let promotedMU=0,promotedMUFromNoDigital=0,promotedMUFromNotListed=0,confirmedNoDigital=0,promotedNoDigitalFromNotListed=0,checked=0,notFound=0;
+  for(const rep of reports)for(const v of rep.results){
+    checked++;
+    if(v.kind==='not-found'){notFound++;continue}
+    if(!Array.isArray(v.row))continue;
+    const pos=byId.get(Number(v.gcdId));if(pos==null)continue;
+    const oldStatus=Number(pack.entries[pos][3]);if(![STATUS.NO_DIGITAL,STATUS.NOT_LISTED].includes(oldStatus))continue;
+    pack.entries[pos]=v.row;
+    if(v.kind==='mu'){
+      promotedMU++;
+      if(oldStatus===STATUS.NO_DIGITAL)promotedMUFromNoDigital++;
+      if(oldStatus===STATUS.NOT_LISTED)promotedMUFromNotListed++;
+    }
+    if(v.kind==='no-digital'){
+      confirmedNoDigital++;
+      if(oldStatus===STATUS.NOT_LISTED)promotedNoDigitalFromNotListed++;
+    }
+  }
+  recompute(pack);pack.generatedAt=new Date().toISOString();
+  pack.officialCoverageAudit={version:2,completed:true,completedAt:pack.generatedAt,authority:'marvel.com/search + marvel.com/comics/issue',previousNotListed:Number(before.notListed)||0,previousNoDigital:Number(before.noDigital)||0,checked,promotedMU,promotedMUFromNoDigital,promotedMUFromNotListed,confirmedNoDigital,promotedNoDigitalFromNotListed,notFound,remainingNotListed:pack.notListed,remainingNoDigital:pack.noDigital};
   const strange=pack.entries.find(r=>Number(r[0])===8972);if(!strange||![STATUS.MU,STATUS.MU_LINK_MISSING].includes(Number(strange[3]))||Number(strange[1])!==11016)throw new Error(`Regresión Strange Tales #1: ${JSON.stringify(strange)}`);
   if(pack.unknown||pack.ambiguous)throw new Error(`No se publica con unknown=${pack.unknown}, ambiguous=${pack.ambiguous}.`);
   await fs.writeFile(cacheFile,JSON.stringify(pack));await fs.mkdir(artifactRoot,{recursive:true});await fs.writeFile(path.join(artifactRoot,'summary.json'),JSON.stringify({before,after:{matched:pack.matched,notListed:pack.notListed,noDigital:pack.noDigital,linkReady:pack.linkReady,linkMissing:pack.linkMissing},...pack.officialCoverageAudit},null,2)+'\n');
