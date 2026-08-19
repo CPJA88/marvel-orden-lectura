@@ -1,0 +1,7829 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-19T00:03:48.842Z",
+  "mode": "phase7-series-directory-map-summary-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31177,
+    "noDigital": 1135,
+    "notListed": 18690,
+    "functionalLinkReady": 31177,
+    "functionalLinkMissing": 0
+  },
+  "summary": {
+    "pending": 18690,
+    "catalogNoCandidate": 18633,
+    "directorySeries": 5432,
+    "directoryUniqueRows": 5670,
+    "directoryAmbiguousRows": 25,
+    "directoryUnmappedRows": 12938,
+    "uniqueSegments": 712,
+    "segmentsWithAtLeast5": 262,
+    "segmentsWithAtLeast10": 128,
+    "writesCache": false
+  },
+  "topSegments": [
+    {
+      "localSeriesId": 4850,
+      "localTitle": "Marvel Tales",
+      "localSeriesYear": "1966",
+      "officialSeriesId": 19065,
+      "officialLabel": "Marvel Tales (1966 - 1994)",
+      "officialHref": "/comics/series/19065/marvel_tales_(1966_-_1994)",
+      "pendingRows": 288,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 20190,
+          "issueNumber": "3",
+          "date": "1966-04-05",
+          "year": 1966
+        },
+        {
+          "gcdId": 20357,
+          "issueNumber": "4",
+          "date": "1966-06-09",
+          "year": 1966
+        },
+        {
+          "gcdId": 20516,
+          "issueNumber": "5",
+          "date": "1966-08-09",
+          "year": 1966
+        },
+        {
+          "gcdId": 20684,
+          "issueNumber": "6",
+          "date": "1966-10-11",
+          "year": 1966
+        },
+        {
+          "gcdId": 20838,
+          "issueNumber": "7",
+          "date": "1966-12-08",
+          "year": 1966
+        },
+        {
+          "gcdId": 20985,
+          "issueNumber": "8",
+          "date": "1967-02-02",
+          "year": 1967
+        },
+        {
+          "gcdId": 21132,
+          "issueNumber": "9",
+          "date": "1967-04-04",
+          "year": 1967
+        },
+        {
+          "gcdId": 21286,
+          "issueNumber": "10",
+          "date": "1967-06-01",
+          "year": 1967
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4041,
+      "localTitle": "Kid Colt Outlaw",
+      "localSeriesYear": "1949",
+      "officialSeriesId": 30117,
+      "officialLabel": "Kid Colt: Outlaw (1949 - 1979)",
+      "officialHref": "/comics/series/30117/kid_colt:_outlaw_(1949_-_1979)",
+      "pendingRows": 220,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 216644,
+          "issueNumber": "5",
+          "date": "1949-02-10",
+          "year": 1949
+        },
+        {
+          "gcdId": 216645,
+          "issueNumber": "6",
+          "date": "1949-04-06",
+          "year": 1949
+        },
+        {
+          "gcdId": 216646,
+          "issueNumber": "7",
+          "date": "1949-08-01",
+          "year": 1949
+        },
+        {
+          "gcdId": 216647,
+          "issueNumber": "8",
+          "date": "1949-10-23",
+          "year": 1949
+        },
+        {
+          "gcdId": 216648,
+          "issueNumber": "9",
+          "date": "1950-01-24",
+          "year": 1950
+        },
+        {
+          "gcdId": 216649,
+          "issueNumber": "10",
+          "date": "1950-03-26",
+          "year": 1950
+        },
+        {
+          "gcdId": 216650,
+          "issueNumber": "11",
+          "date": "1950-06-18",
+          "year": 1950
+        },
+        {
+          "gcdId": 216651,
+          "issueNumber": "12",
+          "date": "1950-09-28",
+          "year": 1950
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5255,
+      "localTitle": "Millie the Model Comics",
+      "localSeriesYear": "1945",
+      "officialSeriesId": 3707,
+      "officialLabel": "Millie The Model (1945 - 1973)",
+      "officialHref": "/comics/series/3707/millie_the_model_(1945_-_1973)",
+      "pendingRows": 137,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 111444,
+          "issueNumber": "1",
+          "date": "1945-08-10",
+          "year": 1945
+        },
+        {
+          "gcdId": 111445,
+          "issueNumber": "2",
+          "date": "1946-07-08",
+          "year": 1946
+        },
+        {
+          "gcdId": 111446,
+          "issueNumber": "3",
+          "date": "1946-08-28",
+          "year": 1946
+        },
+        {
+          "gcdId": 111447,
+          "issueNumber": "4",
+          "date": "1946-10-31",
+          "year": 1946
+        },
+        {
+          "gcdId": 111448,
+          "issueNumber": "5",
+          "date": "1946-12-30",
+          "year": 1946
+        },
+        {
+          "gcdId": 111449,
+          "issueNumber": "6",
+          "date": "1947-02-18",
+          "year": 1947
+        },
+        {
+          "gcdId": 111450,
+          "issueNumber": "7",
+          "date": "1947-04-17",
+          "year": 1947
+        },
+        {
+          "gcdId": 111451,
+          "issueNumber": "8",
+          "date": "1947-06-16",
+          "year": 1947
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8773,
+      "localTitle": "Two Gun Kid",
+      "localSeriesYear": "1953",
+      "officialSeriesId": 3662,
+      "officialLabel": "Two-Gun Kid (1948 - 1977)",
+      "officialHref": "/comics/series/3662/two-gun_kid_(1948_-_1977)",
+      "pendingRows": 122,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 10917,
+          "issueNumber": "11",
+          "date": "1953-08-21",
+          "year": 1953
+        },
+        {
+          "gcdId": 11079,
+          "issueNumber": "12",
+          "date": "1953-11-05",
+          "year": 1953
+        },
+        {
+          "gcdId": 11247,
+          "issueNumber": "13",
+          "date": "1954-01-12",
+          "year": 1954
+        },
+        {
+          "gcdId": 11388,
+          "issueNumber": "14",
+          "date": "1954-03-14",
+          "year": 1954
+        },
+        {
+          "gcdId": 11516,
+          "issueNumber": "15",
+          "date": "1954-05-14",
+          "year": 1954
+        },
+        {
+          "gcdId": 11575,
+          "issueNumber": "16",
+          "date": "1954-06-14",
+          "year": 1954
+        },
+        {
+          "gcdId": 11636,
+          "issueNumber": "17",
+          "date": "1954-07-14",
+          "year": 1954
+        },
+        {
+          "gcdId": 11698,
+          "issueNumber": "18",
+          "date": "1954-08-05",
+          "year": 1954
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8043,
+      "localTitle": "The Savage Sword of Conan",
+      "localSeriesYear": "1974",
+      "officialSeriesId": 26260,
+      "officialLabel": "The Savage Sword Of Conan (1974 - 1995)",
+      "officialHref": "/comics/series/26260/the_savage_sword_of_conan_(1974_-_1995)",
+      "pendingRows": 119,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 174723,
+          "issueNumber": "117",
+          "date": "1985-08-01",
+          "year": 1985
+        },
+        {
+          "gcdId": 174724,
+          "issueNumber": "118",
+          "date": "1985-09-01",
+          "year": 1985
+        },
+        {
+          "gcdId": 174725,
+          "issueNumber": "119",
+          "date": "1985-10-01",
+          "year": 1985
+        },
+        {
+          "gcdId": 174726,
+          "issueNumber": "120",
+          "date": "1985-11-01",
+          "year": 1985
+        },
+        {
+          "gcdId": 174727,
+          "issueNumber": "121",
+          "date": "1985-12-02",
+          "year": 1985
+        },
+        {
+          "gcdId": 174728,
+          "issueNumber": "122",
+          "date": "1985-12-30",
+          "year": 1985
+        },
+        {
+          "gcdId": 174729,
+          "issueNumber": "123",
+          "date": "1986-01-14",
+          "year": 1986
+        },
+        {
+          "gcdId": 174730,
+          "issueNumber": "124",
+          "date": "1986-02-11",
+          "year": 1986
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5753,
+      "localTitle": "Patsy Walker",
+      "localSeriesYear": "1945",
+      "officialSeriesId": 31240,
+      "officialLabel": "Patsy Walker (1945 - 1965)",
+      "officialHref": "/comics/series/31240/patsy_walker_(1945_-_1965)",
+      "pendingRows": 118,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 93166,
+          "issueNumber": "1",
+          "date": "1945-06-30",
+          "year": 1945
+        },
+        {
+          "gcdId": 93167,
+          "issueNumber": "2",
+          "date": "1945-10-23",
+          "year": 1945
+        },
+        {
+          "gcdId": 93168,
+          "issueNumber": "3",
+          "date": "1946-01-05",
+          "year": 1946
+        },
+        {
+          "gcdId": 93169,
+          "issueNumber": "4",
+          "date": "1946-02-05",
+          "year": 1946
+        },
+        {
+          "gcdId": 93170,
+          "issueNumber": "5",
+          "date": "1946-04-02",
+          "year": 1946
+        },
+        {
+          "gcdId": 93171,
+          "issueNumber": "6",
+          "date": "1946-06-04",
+          "year": 1946
+        },
+        {
+          "gcdId": 93172,
+          "issueNumber": "7",
+          "date": "1946-08-06",
+          "year": 1946
+        },
+        {
+          "gcdId": 93173,
+          "issueNumber": "8",
+          "date": "1946-10-06",
+          "year": 1946
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8014,
+      "localTitle": "The Rawhide Kid",
+      "localSeriesYear": "1960",
+      "officialSeriesId": 2988,
+      "officialLabel": "Rawhide Kid (1955 - 1979)",
+      "officialHref": "/comics/series/2988/rawhide_kid_(1955_-_1979)",
+      "pendingRows": 114,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 18057,
+          "issueNumber": "37",
+          "date": "1963-09-10",
+          "year": 1963
+        },
+        {
+          "gcdId": 18241,
+          "issueNumber": "38",
+          "date": "1963-11-12",
+          "year": 1963
+        },
+        {
+          "gcdId": 18341,
+          "issueNumber": "39",
+          "date": "1964-01-10",
+          "year": 1964
+        },
+        {
+          "gcdId": 18570,
+          "issueNumber": "41",
+          "date": "1964-05-12",
+          "year": 1964
+        },
+        {
+          "gcdId": 18696,
+          "issueNumber": "42",
+          "date": "1964-07-09",
+          "year": 1964
+        },
+        {
+          "gcdId": 18825,
+          "issueNumber": "43",
+          "date": "1964-09-08",
+          "year": 1964
+        },
+        {
+          "gcdId": 18972,
+          "issueNumber": "44",
+          "date": "1964-11-10",
+          "year": 1964
+        },
+        {
+          "gcdId": 19106,
+          "issueNumber": "45",
+          "date": "1965-01-12",
+          "year": 1965
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5750,
+      "localTitle": "Patsy and Hedy",
+      "localSeriesYear": "1952",
+      "officialSeriesId": 31239,
+      "officialLabel": "Patsy And Hedy (1952 - 1967)",
+      "officialHref": "/comics/series/31239/patsy_and_hedy_(1952_-_1967)",
+      "pendingRows": 105,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 97547,
+          "issueNumber": "1",
+          "date": "1951-11-08",
+          "year": 1951
+        },
+        {
+          "gcdId": 97548,
+          "issueNumber": "2",
+          "date": "1952-01-07",
+          "year": 1952
+        },
+        {
+          "gcdId": 97549,
+          "issueNumber": "3",
+          "date": "1952-02-06",
+          "year": 1952
+        },
+        {
+          "gcdId": 97550,
+          "issueNumber": "4",
+          "date": "1952-03-08",
+          "year": 1952
+        },
+        {
+          "gcdId": 97551,
+          "issueNumber": "5",
+          "date": "1952-04-07",
+          "year": 1952
+        },
+        {
+          "gcdId": 97552,
+          "issueNumber": "6",
+          "date": "1952-05-08",
+          "year": 1952
+        },
+        {
+          "gcdId": 97553,
+          "issueNumber": "7",
+          "date": "1952-06-08",
+          "year": 1952
+        },
+        {
+          "gcdId": 97554,
+          "issueNumber": "8",
+          "date": "1952-07-08",
+          "year": 1952
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4208,
+      "localTitle": "Love Romances",
+      "localSeriesYear": "1949",
+      "officialSeriesId": 2033,
+      "officialLabel": "Love Romances (1949 - 1963)",
+      "officialHref": "/comics/series/2033/love_romances_(1949_-_1963)",
+      "pendingRows": 97,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 216675,
+          "issueNumber": "6",
+          "date": "1949-02-02",
+          "year": 1949
+        },
+        {
+          "gcdId": 216676,
+          "issueNumber": "7",
+          "date": "1949-04-11",
+          "year": 1949
+        },
+        {
+          "gcdId": 216677,
+          "issueNumber": "8",
+          "date": "1949-06-06",
+          "year": 1949
+        },
+        {
+          "gcdId": 216678,
+          "issueNumber": "9",
+          "date": "1949-08-26",
+          "year": 1949
+        },
+        {
+          "gcdId": 216679,
+          "issueNumber": "10",
+          "date": "1949-12-01",
+          "year": 1949
+        },
+        {
+          "gcdId": 216680,
+          "issueNumber": "11",
+          "date": "1950-02-28",
+          "year": 1950
+        },
+        {
+          "gcdId": 216681,
+          "issueNumber": "12",
+          "date": "1950-04-30",
+          "year": 1950
+        },
+        {
+          "gcdId": 216682,
+          "issueNumber": "13",
+          "date": "1950-07-31",
+          "year": 1950
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4841,
+      "localTitle": "Marvel Super-Heroes",
+      "localSeriesYear": "1967",
+      "officialSeriesId": 2300,
+      "officialLabel": "Marvel Super-Heroes (1967 - 1982)",
+      "officialHref": "/comics/series/2300/marvel_super-heroes_(1967_-_1982)",
+      "pendingRows": 85,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 22846,
+          "issueNumber": "21",
+          "date": "1969-04-10",
+          "year": 1969
+        },
+        {
+          "gcdId": 22971,
+          "issueNumber": "22",
+          "date": "1969-06-17",
+          "year": 1969
+        },
+        {
+          "gcdId": 23104,
+          "issueNumber": "23",
+          "date": "1969-08-19",
+          "year": 1969
+        },
+        {
+          "gcdId": 23236,
+          "issueNumber": "24",
+          "date": "1969-10-21",
+          "year": 1969
+        },
+        {
+          "gcdId": 23350,
+          "issueNumber": "25",
+          "date": "1969-12-23",
+          "year": 1969
+        },
+        {
+          "gcdId": 23467,
+          "issueNumber": "26",
+          "date": "1970-02-24",
+          "year": 1970
+        },
+        {
+          "gcdId": 23587,
+          "issueNumber": "27",
+          "date": "1970-04-21",
+          "year": 1970
+        },
+        {
+          "gcdId": 23781,
+          "issueNumber": "28",
+          "date": "1970-06-23",
+          "year": 1970
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6354,
+      "localTitle": "Sgt. Fury",
+      "localSeriesYear": "1963",
+      "officialSeriesId": 2067,
+      "officialLabel": "Sgt. Fury (1963 - 1981)",
+      "officialHref": "/comics/series/2067/sgt._fury_(1963_-_1981)",
+      "pendingRows": 77,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 21133,
+          "issueNumber": "44",
+          "date": "1967-05-02",
+          "year": 1967
+        },
+        {
+          "gcdId": 21218,
+          "issueNumber": "45",
+          "date": "1967-06-01",
+          "year": 1967
+        },
+        {
+          "gcdId": 21288,
+          "issueNumber": "46",
+          "date": "1967-06-29",
+          "year": 1967
+        },
+        {
+          "gcdId": 21370,
+          "issueNumber": "47",
+          "date": "1967-08-01",
+          "year": 1967
+        },
+        {
+          "gcdId": 21450,
+          "issueNumber": "48",
+          "date": "1967-08-31",
+          "year": 1967
+        },
+        {
+          "gcdId": 21522,
+          "issueNumber": "49",
+          "date": "1967-10-03",
+          "year": 1967
+        },
+        {
+          "gcdId": 21596,
+          "issueNumber": "50",
+          "date": "1967-11-02",
+          "year": 1967
+        },
+        {
+          "gcdId": 21665,
+          "issueNumber": "51",
+          "date": "1967-11-30",
+          "year": 1967
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5253,
+      "localTitle": "Millie the Model",
+      "localSeriesYear": "1966",
+      "officialSeriesId": 3707,
+      "officialLabel": "Millie The Model (1945 - 1973)",
+      "officialHref": "/comics/series/3707/millie_the_model_(1945_-_1973)",
+      "pendingRows": 64,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 111587,
+          "issueNumber": "144",
+          "date": "1966-09-08",
+          "year": 1966
+        },
+        {
+          "gcdId": 111588,
+          "issueNumber": "145",
+          "date": "1966-10-11",
+          "year": 1966
+        },
+        {
+          "gcdId": 111589,
+          "issueNumber": "146",
+          "date": "1966-11-10",
+          "year": 1966
+        },
+        {
+          "gcdId": 111590,
+          "issueNumber": "147",
+          "date": "1966-12-06",
+          "year": 1966
+        },
+        {
+          "gcdId": 111591,
+          "issueNumber": "148",
+          "date": "1967-01-10",
+          "year": 1967
+        },
+        {
+          "gcdId": 111592,
+          "issueNumber": "149",
+          "date": "1967-02-02",
+          "year": 1967
+        },
+        {
+          "gcdId": 111593,
+          "issueNumber": "150",
+          "date": "1967-03-02",
+          "year": 1967
+        },
+        {
+          "gcdId": 111594,
+          "issueNumber": "151",
+          "date": "1967-04-04",
+          "year": 1967
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9298,
+      "localTitle": "Web of Spider-Man",
+      "localSeriesYear": "1985",
+      "officialSeriesId": 2092,
+      "officialLabel": "Web Of Spider-Man (1985 - 1995)",
+      "officialHref": "/comics/series/2092/web_of_spider-man_(1985_-_1995)",
+      "pendingRows": 64,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 44113,
+          "issueNumber": "35",
+          "date": "1987-10-06",
+          "year": 1987
+        },
+        {
+          "gcdId": 44233,
+          "issueNumber": "36",
+          "date": "1987-11-03",
+          "year": 1987
+        },
+        {
+          "gcdId": 44473,
+          "issueNumber": "38",
+          "date": "1988-01-05",
+          "year": 1988
+        },
+        {
+          "gcdId": 44595,
+          "issueNumber": "39",
+          "date": "1988-02-04",
+          "year": 1988
+        },
+        {
+          "gcdId": 44725,
+          "issueNumber": "40",
+          "date": "1988-03-01",
+          "year": 1988
+        },
+        {
+          "gcdId": 44852,
+          "issueNumber": "41",
+          "date": "1988-04-05",
+          "year": 1988
+        },
+        {
+          "gcdId": 44981,
+          "issueNumber": "42",
+          "date": "1988-05-03",
+          "year": 1988
+        },
+        {
+          "gcdId": 45118,
+          "issueNumber": "43",
+          "date": "1988-06-07",
+          "year": 1988
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8066,
+      "localTitle": "The Spectacular Spider-Man",
+      "localSeriesYear": "1976",
+      "officialSeriesId": 43439,
+      "officialLabel": "Spectacular Spider-Man (1976 - 1998)",
+      "officialHref": "/comics/series/43439/spectacular_spider-man_(1976_-_1998)",
+      "pendingRows": 59,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 39910,
+          "issueNumber": "101",
+          "date": "1985-01-15",
+          "year": 1985
+        },
+        {
+          "gcdId": 40015,
+          "issueNumber": "102",
+          "date": "1985-02-12",
+          "year": 1985
+        },
+        {
+          "gcdId": 40126,
+          "issueNumber": "103",
+          "date": "1985-03-19",
+          "year": 1985
+        },
+        {
+          "gcdId": 40230,
+          "issueNumber": "104",
+          "date": "1985-04-16",
+          "year": 1985
+        },
+        {
+          "gcdId": 40340,
+          "issueNumber": "105",
+          "date": "1985-05-14",
+          "year": 1985
+        },
+        {
+          "gcdId": 40442,
+          "issueNumber": "106",
+          "date": "1985-06-18",
+          "year": 1985
+        },
+        {
+          "gcdId": 41222,
+          "issueNumber": "112",
+          "date": "1985-12-17",
+          "year": 1985
+        },
+        {
+          "gcdId": 41328,
+          "issueNumber": "113",
+          "date": "1986-01-14",
+          "year": 1986
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4750,
+      "localTitle": "Marvel Mystery Comics",
+      "localSeriesYear": "1939",
+      "officialSeriesId": 2981,
+      "officialLabel": "Marvel Mystery Comics (1939 - 1949)",
+      "officialHref": "/comics/series/2981/marvel_mystery_comics_(1939_-_1949)",
+      "pendingRows": 58,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 2057,
+          "issueNumber": "29",
+          "date": "1942-01-16",
+          "year": 1942
+        },
+        {
+          "gcdId": 2126,
+          "issueNumber": "30",
+          "date": "1942-02-18",
+          "year": 1942
+        },
+        {
+          "gcdId": 2181,
+          "issueNumber": "31",
+          "date": "1942-03-17",
+          "year": 1942
+        },
+        {
+          "gcdId": 2231,
+          "issueNumber": "32",
+          "date": "1942-04-13",
+          "year": 1942
+        },
+        {
+          "gcdId": 2287,
+          "issueNumber": "33",
+          "date": "1942-05-08",
+          "year": 1942
+        },
+        {
+          "gcdId": 2347,
+          "issueNumber": "34",
+          "date": "1942-06-19",
+          "year": 1942
+        },
+        {
+          "gcdId": 2392,
+          "issueNumber": "35",
+          "date": "1942-07-15",
+          "year": 1942
+        },
+        {
+          "gcdId": 2454,
+          "issueNumber": "36",
+          "date": "1942-08-18",
+          "year": 1942
+        }
+      ]
+    },
+    {
+      "localSeriesId": 492,
+      "localTitle": "Astonishing",
+      "localSeriesYear": "1951",
+      "officialSeriesId": 2982,
+      "officialLabel": "Astonishing (1951 - 1957)",
+      "officialHref": "/comics/series/2982/astonishing_(1951_-_1957)",
+      "pendingRows": 57,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 174105,
+          "issueNumber": "7",
+          "date": "1951-08-20",
+          "year": 1951
+        },
+        {
+          "gcdId": 174106,
+          "issueNumber": "8",
+          "date": "1951-09-20",
+          "year": 1951
+        },
+        {
+          "gcdId": 174107,
+          "issueNumber": "9",
+          "date": "1951-10-20",
+          "year": 1951
+        },
+        {
+          "gcdId": 174108,
+          "issueNumber": "10",
+          "date": "1951-11-20",
+          "year": 1951
+        },
+        {
+          "gcdId": 174109,
+          "issueNumber": "11",
+          "date": "1951-12-20",
+          "year": 1951
+        },
+        {
+          "gcdId": 174110,
+          "issueNumber": "12",
+          "date": "1952-01-20",
+          "year": 1952
+        },
+        {
+          "gcdId": 174111,
+          "issueNumber": "13",
+          "date": "1952-02-20",
+          "year": 1952
+        },
+        {
+          "gcdId": 174112,
+          "issueNumber": "14",
+          "date": "1952-03-20",
+          "year": 1952
+        }
+      ]
+    },
+    {
+      "localSeriesId": 248,
+      "localTitle": "Alpha Flight",
+      "localSeriesYear": "1983",
+      "officialSeriesId": 2116,
+      "officialLabel": "Alpha Flight (1983 - 1994)",
+      "officialHref": "/comics/series/2116/alpha_flight_(1983_-_1994)",
+      "pendingRows": 55,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 46107,
+          "issueNumber": "69",
+          "date": "1988-12-12",
+          "year": 1988
+        },
+        {
+          "gcdId": 46346,
+          "issueNumber": "71",
+          "date": "1989-02-11",
+          "year": 1989
+        },
+        {
+          "gcdId": 46471,
+          "issueNumber": "72",
+          "date": "1989-03-13",
+          "year": 1989
+        },
+        {
+          "gcdId": 46589,
+          "issueNumber": "73",
+          "date": "1989-04-13",
+          "year": 1989
+        },
+        {
+          "gcdId": 46716,
+          "issueNumber": "74",
+          "date": "1989-05-14",
+          "year": 1989
+        },
+        {
+          "gcdId": 46841,
+          "issueNumber": "75",
+          "date": "1989-06-13",
+          "year": 1989
+        },
+        {
+          "gcdId": 46960,
+          "issueNumber": "76",
+          "date": "1989-07-14",
+          "year": 1989
+        },
+        {
+          "gcdId": 47022,
+          "issueNumber": "77",
+          "date": "1989-07-14",
+          "year": 1989
+        }
+      ]
+    },
+    {
+      "localSeriesId": 3015,
+      "localTitle": "Ghost Rider",
+      "localSeriesYear": "1990",
+      "officialSeriesId": 6255,
+      "officialLabel": "Ghost Rider (1990 - 1998)",
+      "officialHref": "/comics/series/6255/ghost_rider_(1990_-_1998)",
+      "pendingRows": 51,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 85528,
+          "issueNumber": "41",
+          "date": "1993-07-13",
+          "year": 1993
+        },
+        {
+          "gcdId": 85529,
+          "issueNumber": "42",
+          "date": "1993-08-12",
+          "year": 1993
+        },
+        {
+          "gcdId": 85530,
+          "issueNumber": "43",
+          "date": "1993-09-12",
+          "year": 1993
+        },
+        {
+          "gcdId": 85533,
+          "issueNumber": "46",
+          "date": "1993-12-13",
+          "year": 1993
+        },
+        {
+          "gcdId": 85534,
+          "issueNumber": "47",
+          "date": "1994-01-10",
+          "year": 1994
+        },
+        {
+          "gcdId": 85535,
+          "issueNumber": "48",
+          "date": "1994-02-10",
+          "year": 1994
+        },
+        {
+          "gcdId": 85536,
+          "issueNumber": "49",
+          "date": "1994-03-12",
+          "year": 1994
+        },
+        {
+          "gcdId": 85537,
+          "issueNumber": "50",
+          "date": "1994-04-12",
+          "year": 1994
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8000,
+      "localTitle": "The Punisher War Journal",
+      "localSeriesYear": "1988",
+      "officialSeriesId": 5860,
+      "officialLabel": "Punisher War Journal (1988 - 1995)",
+      "officialHref": "/comics/series/5860/punisher_war_journal_(1988_-_1995)",
+      "pendingRows": 50,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 48210,
+          "issueNumber": "20",
+          "date": "1990-05-29",
+          "year": 1990
+        },
+        {
+          "gcdId": 48341,
+          "issueNumber": "21",
+          "date": "1990-06-26",
+          "year": 1990
+        },
+        {
+          "gcdId": 48473,
+          "issueNumber": "22",
+          "date": "1990-07-31",
+          "year": 1990
+        },
+        {
+          "gcdId": 48614,
+          "issueNumber": "23",
+          "date": "1990-08-28",
+          "year": 1990
+        },
+        {
+          "gcdId": 48737,
+          "issueNumber": "24",
+          "date": "1990-09-25",
+          "year": 1990
+        },
+        {
+          "gcdId": 48860,
+          "issueNumber": "25",
+          "date": "1990-10-30",
+          "year": 1990
+        },
+        {
+          "gcdId": 49136,
+          "issueNumber": "26",
+          "date": "1990-11-27",
+          "year": 1990
+        },
+        {
+          "gcdId": 49253,
+          "issueNumber": "27",
+          "date": "1990-12-25",
+          "year": 1990
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7439,
+      "localTitle": "Strange Tales",
+      "localSeriesYear": "1951",
+      "officialSeriesId": 2076,
+      "officialLabel": "Strange Tales (1951 - 1976)",
+      "officialHref": "/comics/series/2076/strange_tales_(1951_-_1976)",
+      "pendingRows": 49,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 13540,
+          "issueNumber": "58",
+          "date": "1957-02-01",
+          "year": 1957
+        },
+        {
+          "gcdId": 13648,
+          "issueNumber": "59",
+          "date": "1957-04-03",
+          "year": 1957
+        },
+        {
+          "gcdId": 13945,
+          "issueNumber": "60",
+          "date": "1957-08-01",
+          "year": 1957
+        },
+        {
+          "gcdId": 14246,
+          "issueNumber": "61",
+          "date": "1957-09-27",
+          "year": 1957
+        },
+        {
+          "gcdId": 14356,
+          "issueNumber": "62",
+          "date": "1957-11-25",
+          "year": 1957
+        },
+        {
+          "gcdId": 14442,
+          "issueNumber": "63",
+          "date": "1958-01-28",
+          "year": 1958
+        },
+        {
+          "gcdId": 14536,
+          "issueNumber": "64",
+          "date": "1958-03-27",
+          "year": 1958
+        },
+        {
+          "gcdId": 14678,
+          "issueNumber": "65",
+          "date": "1958-06-24",
+          "year": 1958
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1191,
+      "localTitle": "Captain America Comics",
+      "localSeriesYear": "1941",
+      "officialSeriesId": 1998,
+      "officialLabel": "Captain America Comics (1941 - 1954)",
+      "officialHref": "/comics/series/1998/captain_america_comics_(1941_-_1954)",
+      "pendingRows": 48,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 2854,
+          "issueNumber": "25",
+          "date": "1943-02-13",
+          "year": 1943
+        },
+        {
+          "gcdId": 2912,
+          "issueNumber": "26",
+          "date": "1943-03-19",
+          "year": 1943
+        },
+        {
+          "gcdId": 2957,
+          "issueNumber": "27",
+          "date": "1943-04-23",
+          "year": 1943
+        },
+        {
+          "gcdId": 3013,
+          "issueNumber": "28",
+          "date": "1943-05-20",
+          "year": 1943
+        },
+        {
+          "gcdId": 3075,
+          "issueNumber": "29",
+          "date": "1943-06-16",
+          "year": 1943
+        },
+        {
+          "gcdId": 3126,
+          "issueNumber": "30",
+          "date": "1943-07-25",
+          "year": 1943
+        },
+        {
+          "gcdId": 3188,
+          "issueNumber": "31",
+          "date": "1943-08-23",
+          "year": 1943
+        },
+        {
+          "gcdId": 3251,
+          "issueNumber": "32",
+          "date": "1943-09-21",
+          "year": 1943
+        }
+      ]
+    },
+    {
+      "localSeriesId": 3234,
+      "localTitle": "Gunsmoke Western",
+      "localSeriesYear": "1955",
+      "officialSeriesId": 33878,
+      "officialLabel": "Gunsmoke Western (1955 - 1963)",
+      "officialHref": "/comics/series/33878/gunsmoke_western_(1955_-_1963)",
+      "pendingRows": 44,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 12510,
+          "issueNumber": "32",
+          "date": "1955-09-30",
+          "year": 1955
+        },
+        {
+          "gcdId": 12651,
+          "issueNumber": "33",
+          "date": "1955-12-01",
+          "year": 1955
+        },
+        {
+          "gcdId": 12766,
+          "issueNumber": "34",
+          "date": "1956-01-30",
+          "year": 1956
+        },
+        {
+          "gcdId": 12868,
+          "issueNumber": "35",
+          "date": "1956-03-31",
+          "year": 1956
+        },
+        {
+          "gcdId": 13007,
+          "issueNumber": "36",
+          "date": "1956-05-31",
+          "year": 1956
+        },
+        {
+          "gcdId": 13121,
+          "issueNumber": "37",
+          "date": "1956-06-22",
+          "year": 1956
+        },
+        {
+          "gcdId": 13223,
+          "issueNumber": "38",
+          "date": "1956-09-30",
+          "year": 1956
+        },
+        {
+          "gcdId": 13353,
+          "issueNumber": "39",
+          "date": "1956-12-01",
+          "year": 1956
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7984,
+      "localTitle": "The Punisher",
+      "localSeriesYear": "1987",
+      "officialSeriesId": 21468,
+      "officialLabel": "The Punisher (1987 - 1995)",
+      "officialHref": "/comics/series/21468/the_punisher_(1987_-_1995)",
+      "pendingRows": 40,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 47127,
+          "issueNumber": "27",
+          "date": "1989-09-19",
+          "year": 1989
+        },
+        {
+          "gcdId": 49721,
+          "issueNumber": "49",
+          "date": "1991-04-16",
+          "year": 1991
+        },
+        {
+          "gcdId": 49851,
+          "issueNumber": "50",
+          "date": "1991-05-21",
+          "year": 1991
+        },
+        {
+          "gcdId": 49983,
+          "issueNumber": "51",
+          "date": "1991-06-18",
+          "year": 1991
+        },
+        {
+          "gcdId": 50114,
+          "issueNumber": "52",
+          "date": "1991-07-16",
+          "year": 1991
+        },
+        {
+          "gcdId": 50243,
+          "issueNumber": "53",
+          "date": "1991-08-20",
+          "year": 1991
+        },
+        {
+          "gcdId": 50372,
+          "issueNumber": "54",
+          "date": "1991-09-03",
+          "year": 1991
+        },
+        {
+          "gcdId": 50420,
+          "issueNumber": "55",
+          "date": "1991-09-17",
+          "year": 1991
+        }
+      ]
+    },
+    {
+      "localSeriesId": 3981,
+      "localTitle": "Journey into Mystery",
+      "localSeriesYear": "1952",
+      "officialSeriesId": 2032,
+      "officialLabel": "Journey Into Mystery (1952 - 1966)",
+      "officialHref": "/comics/series/2032/journey_into_mystery_(1952_-_1966)",
+      "pendingRows": 39,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 13225,
+          "issueNumber": "41",
+          "date": "1956-08-22",
+          "year": 1956
+        },
+        {
+          "gcdId": 13300,
+          "issueNumber": "42",
+          "date": "1956-09-21",
+          "year": 1956
+        },
+        {
+          "gcdId": 13355,
+          "issueNumber": "43",
+          "date": "1956-10-22",
+          "year": 1956
+        },
+        {
+          "gcdId": 13418,
+          "issueNumber": "44",
+          "date": "1956-11-23",
+          "year": 1956
+        },
+        {
+          "gcdId": 13478,
+          "issueNumber": "45",
+          "date": "1956-12-21",
+          "year": 1956
+        },
+        {
+          "gcdId": 13535,
+          "issueNumber": "46",
+          "date": "1957-01-21",
+          "year": 1957
+        },
+        {
+          "gcdId": 13584,
+          "issueNumber": "47",
+          "date": "1957-02-25",
+          "year": 1957
+        },
+        {
+          "gcdId": 13713,
+          "issueNumber": "48",
+          "date": "1957-04-25",
+          "year": 1957
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5450,
+      "localTitle": "Namor, the Sub-Mariner",
+      "localSeriesYear": "1990",
+      "officialSeriesId": 23530,
+      "officialLabel": "Namor The Sub-Mariner (1990 - 1995)",
+      "officialHref": "/comics/series/23530/namor_the_sub-mariner_(1990_-_1995)",
+      "pendingRows": 39,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 50240,
+          "issueNumber": "19",
+          "date": "1991-08-06",
+          "year": 1991
+        },
+        {
+          "gcdId": 50369,
+          "issueNumber": "20",
+          "date": "1991-09-03",
+          "year": 1991
+        },
+        {
+          "gcdId": 50500,
+          "issueNumber": "21",
+          "date": "1991-10-01",
+          "year": 1991
+        },
+        {
+          "gcdId": 50787,
+          "issueNumber": "22",
+          "date": "1991-11-05",
+          "year": 1991
+        },
+        {
+          "gcdId": 93405,
+          "issueNumber": "23",
+          "date": "1991-12-03",
+          "year": 1991
+        },
+        {
+          "gcdId": 93406,
+          "issueNumber": "24",
+          "date": "1992-01-07",
+          "year": 1992
+        },
+        {
+          "gcdId": 93407,
+          "issueNumber": "25",
+          "date": "1992-02-04",
+          "year": 1992
+        },
+        {
+          "gcdId": 93408,
+          "issueNumber": "26",
+          "date": "1992-03-03",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5414,
+      "localTitle": "My Love",
+      "localSeriesYear": "1969",
+      "officialSeriesId": 30438,
+      "officialLabel": "My Love (1969 - 1976)",
+      "officialHref": "/comics/series/30438/my_love_(1969_-_1976)",
+      "pendingRows": 38,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 211740,
+          "issueNumber": "1",
+          "date": "1969-06-10",
+          "year": 1969
+        },
+        {
+          "gcdId": 211741,
+          "issueNumber": "2",
+          "date": "1969-08-19",
+          "year": 1969
+        },
+        {
+          "gcdId": 211742,
+          "issueNumber": "3",
+          "date": "1969-10-21",
+          "year": 1969
+        },
+        {
+          "gcdId": 211743,
+          "issueNumber": "4",
+          "date": "1969-12-23",
+          "year": 1969
+        },
+        {
+          "gcdId": 211744,
+          "issueNumber": "5",
+          "date": "1970-02-24",
+          "year": 1970
+        },
+        {
+          "gcdId": 211745,
+          "issueNumber": "6",
+          "date": "1970-04-21",
+          "year": 1970
+        },
+        {
+          "gcdId": 211746,
+          "issueNumber": "7",
+          "date": "1970-06-23",
+          "year": 1970
+        },
+        {
+          "gcdId": 211747,
+          "issueNumber": "8",
+          "date": "1970-08-25",
+          "year": 1970
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5723,
+      "localTitle": "Our Love Story",
+      "localSeriesYear": "1969",
+      "officialSeriesId": 2058,
+      "officialLabel": "Our Love Story (1969 - 1976)",
+      "officialHref": "/comics/series/2058/our_love_story_(1969_-_1976)",
+      "pendingRows": 37,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 211891,
+          "issueNumber": "1",
+          "date": "1969-07-22",
+          "year": 1969
+        },
+        {
+          "gcdId": 211892,
+          "issueNumber": "2",
+          "date": "1969-09-23",
+          "year": 1969
+        },
+        {
+          "gcdId": 211893,
+          "issueNumber": "3",
+          "date": "1969-11-25",
+          "year": 1969
+        },
+        {
+          "gcdId": 211894,
+          "issueNumber": "4",
+          "date": "1970-01-20",
+          "year": 1970
+        },
+        {
+          "gcdId": 211896,
+          "issueNumber": "6",
+          "date": "1970-05-19",
+          "year": 1970
+        },
+        {
+          "gcdId": 211897,
+          "issueNumber": "7",
+          "date": "1970-07-21",
+          "year": 1970
+        },
+        {
+          "gcdId": 211898,
+          "issueNumber": "8",
+          "date": "1970-09-15",
+          "year": 1970
+        },
+        {
+          "gcdId": 211899,
+          "issueNumber": "9",
+          "date": "1970-11-17",
+          "year": 1970
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1591,
+      "localTitle": "Conan the Barbarian",
+      "localSeriesYear": "1970",
+      "officialSeriesId": 25758,
+      "officialLabel": "Conan The Barbarian (1970 - 1993)",
+      "officialHref": "/comics/series/25758/conan_the_barbarian_(1970_-_1993)",
+      "pendingRows": 36,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 25828,
+          "issueNumber": "22",
+          "date": "1972-10-17",
+          "year": 1972
+        },
+        {
+          "gcdId": 49235,
+          "issueNumber": "241",
+          "date": "1990-11-15",
+          "year": 1990
+        },
+        {
+          "gcdId": 49363,
+          "issueNumber": "242",
+          "date": "1990-12-13",
+          "year": 1990
+        },
+        {
+          "gcdId": 49479,
+          "issueNumber": "243",
+          "date": "1991-01-13",
+          "year": 1991
+        },
+        {
+          "gcdId": 125410,
+          "issueNumber": "244",
+          "date": "1991-02-12",
+          "year": 1991
+        },
+        {
+          "gcdId": 125411,
+          "issueNumber": "245",
+          "date": "1991-03-15",
+          "year": 1991
+        },
+        {
+          "gcdId": 125412,
+          "issueNumber": "246",
+          "date": "1991-04-14",
+          "year": 1991
+        },
+        {
+          "gcdId": 125413,
+          "issueNumber": "247",
+          "date": "1991-05-15",
+          "year": 1991
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9356,
+      "localTitle": "What If...?",
+      "localSeriesYear": "1989",
+      "officialSeriesId": 3648,
+      "officialLabel": "What If? (1989 - 1998)",
+      "officialHref": "/comics/series/3648/what_if?_(1989_-_1998)",
+      "pendingRows": 36,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 53157,
+          "issueNumber": "50",
+          "date": "1993-04-20",
+          "year": 1993
+        },
+        {
+          "gcdId": 57512,
+          "issueNumber": "76",
+          "date": "1995-06-27",
+          "year": 1995
+        },
+        {
+          "gcdId": 57807,
+          "issueNumber": "78",
+          "date": "1995-08-22",
+          "year": 1995
+        },
+        {
+          "gcdId": 57953,
+          "issueNumber": "79",
+          "date": "1995-09-19",
+          "year": 1995
+        },
+        {
+          "gcdId": 58102,
+          "issueNumber": "80",
+          "date": "1995-10-17",
+          "year": 1995
+        },
+        {
+          "gcdId": 58467,
+          "issueNumber": "82",
+          "date": "1995-12-19",
+          "year": 1995
+        },
+        {
+          "gcdId": 58585,
+          "issueNumber": "83",
+          "date": "1996-01-16",
+          "year": 1996
+        },
+        {
+          "gcdId": 58697,
+          "issueNumber": "84",
+          "date": "1996-02-20",
+          "year": 1996
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7660,
+      "localTitle": "The 'Nam",
+      "localSeriesYear": "1986",
+      "officialSeriesId": 13608,
+      "officialLabel": "The 'Nam (1986 - 1993)",
+      "officialHref": "/comics/series/13608/the_&#x27;nam_(1986_-_1993)",
+      "pendingRows": 34,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 211056,
+          "issueNumber": "46",
+          "date": "1990-05-29",
+          "year": 1990
+        },
+        {
+          "gcdId": 211057,
+          "issueNumber": "47",
+          "date": "1990-06-26",
+          "year": 1990
+        },
+        {
+          "gcdId": 48507,
+          "issueNumber": "48",
+          "date": "1990-07-31",
+          "year": 1990
+        },
+        {
+          "gcdId": 211058,
+          "issueNumber": "49",
+          "date": "1990-08-28",
+          "year": 1990
+        },
+        {
+          "gcdId": 211059,
+          "issueNumber": "50",
+          "date": "1990-09-25",
+          "year": 1990
+        },
+        {
+          "gcdId": 211060,
+          "issueNumber": "51",
+          "date": "1990-10-30",
+          "year": 1990
+        },
+        {
+          "gcdId": 211063,
+          "issueNumber": "54",
+          "date": "1991-01-29",
+          "year": 1991
+        },
+        {
+          "gcdId": 211064,
+          "issueNumber": "55",
+          "date": "1991-02-26",
+          "year": 1991
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5900,
+      "localTitle": "Punisher 2099",
+      "localSeriesYear": "1993",
+      "officialSeriesId": 20020,
+      "officialLabel": "Punisher 2099 (1993 - 1995)",
+      "officialHref": "/comics/series/20020/punisher_2099_(1993_-_1995)",
+      "pendingRows": 33,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 212051,
+          "issueNumber": "1",
+          "date": "1992-12-22",
+          "year": 1992
+        },
+        {
+          "gcdId": 212052,
+          "issueNumber": "2",
+          "date": "1993-01-26",
+          "year": 1993
+        },
+        {
+          "gcdId": 212053,
+          "issueNumber": "3",
+          "date": "1993-03-23",
+          "year": 1993
+        },
+        {
+          "gcdId": 212054,
+          "issueNumber": "4",
+          "date": "1993-03-23",
+          "year": 1993
+        },
+        {
+          "gcdId": 212055,
+          "issueNumber": "5",
+          "date": "1993-04-27",
+          "year": 1993
+        },
+        {
+          "gcdId": 212056,
+          "issueNumber": "6",
+          "date": "1993-05-25",
+          "year": 1993
+        },
+        {
+          "gcdId": 212057,
+          "issueNumber": "7",
+          "date": "1993-06-22",
+          "year": 1993
+        },
+        {
+          "gcdId": 212058,
+          "issueNumber": "8",
+          "date": "1993-07-27",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6442,
+      "localTitle": "Silver Sable and the Wild Pack",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 16367,
+      "officialLabel": "Silver Sable And The Wild Pack (1992 - 1995)",
+      "officialHref": "/comics/series/16367/silver_sable_and_the_wild_pack_(1992_-_1995)",
+      "pendingRows": 33,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 87625,
+          "issueNumber": "2",
+          "date": "1992-05-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 87626,
+          "issueNumber": "3",
+          "date": "1992-06-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 87627,
+          "issueNumber": "4",
+          "date": "1992-07-19",
+          "year": 1992
+        },
+        {
+          "gcdId": 87628,
+          "issueNumber": "5",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 87629,
+          "issueNumber": "6",
+          "date": "1992-09-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 87630,
+          "issueNumber": "7",
+          "date": "1992-10-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 87631,
+          "issueNumber": "8",
+          "date": "1992-11-14",
+          "year": 1992
+        },
+        {
+          "gcdId": 87632,
+          "issueNumber": "9",
+          "date": "1992-12-15",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4874,
+      "localTitle": "Marvel Team-Up",
+      "localSeriesYear": "1972",
+      "officialSeriesId": 3716,
+      "officialLabel": "Marvel Team-Up (1972 - 1985)",
+      "officialHref": "/comics/series/3716/marvel_team-up_(1972_-_1985)",
+      "pendingRows": 32,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 30770,
+          "issueNumber": "54",
+          "date": "1976-11-23",
+          "year": 1976
+        },
+        {
+          "gcdId": 30954,
+          "issueNumber": "56",
+          "date": "1977-01-25",
+          "year": 1977
+        },
+        {
+          "gcdId": 31133,
+          "issueNumber": "58",
+          "date": "1977-03-22",
+          "year": 1977
+        },
+        {
+          "gcdId": 33220,
+          "issueNumber": "79",
+          "date": "1978-12-19",
+          "year": 1978
+        },
+        {
+          "gcdId": 34296,
+          "issueNumber": "92",
+          "date": "1980-01-22",
+          "year": 1980
+        },
+        {
+          "gcdId": 34459,
+          "issueNumber": "94",
+          "date": "1980-03-25",
+          "year": 1980
+        },
+        {
+          "gcdId": 34696,
+          "issueNumber": "97",
+          "date": "1980-06-24",
+          "year": 1980
+        },
+        {
+          "gcdId": 34849,
+          "issueNumber": "99",
+          "date": "1980-08-26",
+          "year": 1980
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6017,
+      "localTitle": "Ravage 2099",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 20021,
+      "officialLabel": "Ravage 2099 (1992 - 1995)",
+      "officialHref": "/comics/series/20021/ravage_2099_(1992_-_1995)",
+      "pendingRows": 32,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 212085,
+          "issueNumber": "1",
+          "date": "1992-10-13",
+          "year": 1992
+        },
+        {
+          "gcdId": 212086,
+          "issueNumber": "2",
+          "date": "1992-11-10",
+          "year": 1992
+        },
+        {
+          "gcdId": 212087,
+          "issueNumber": "3",
+          "date": "1992-12-08",
+          "year": 1992
+        },
+        {
+          "gcdId": 212088,
+          "issueNumber": "4",
+          "date": "1993-01-12",
+          "year": 1993
+        },
+        {
+          "gcdId": 212089,
+          "issueNumber": "5",
+          "date": "1993-02-09",
+          "year": 1993
+        },
+        {
+          "gcdId": 212090,
+          "issueNumber": "6",
+          "date": "1993-03-09",
+          "year": 1993
+        },
+        {
+          "gcdId": 212091,
+          "issueNumber": "7",
+          "date": "1993-04-13",
+          "year": 1993
+        },
+        {
+          "gcdId": 212092,
+          "issueNumber": "8",
+          "date": "1993-05-11",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6520,
+      "localTitle": "Sleepwalker",
+      "localSeriesYear": "1991",
+      "officialSeriesId": 21939,
+      "officialLabel": "Sleepwalker (1991 - 1994)",
+      "officialHref": "/comics/series/21939/sleepwalker_(1991_-_1994)",
+      "pendingRows": 32,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 69693,
+          "issueNumber": "1",
+          "date": "1991-04-09",
+          "year": 1991
+        },
+        {
+          "gcdId": 69694,
+          "issueNumber": "2",
+          "date": "1991-05-14",
+          "year": 1991
+        },
+        {
+          "gcdId": 69695,
+          "issueNumber": "3",
+          "date": "1991-06-11",
+          "year": 1991
+        },
+        {
+          "gcdId": 69696,
+          "issueNumber": "4",
+          "date": "1991-07-09",
+          "year": 1991
+        },
+        {
+          "gcdId": 69697,
+          "issueNumber": "5",
+          "date": "1991-08-13",
+          "year": 1991
+        },
+        {
+          "gcdId": 69698,
+          "issueNumber": "6",
+          "date": "1991-09-10",
+          "year": 1991
+        },
+        {
+          "gcdId": 69700,
+          "issueNumber": "8",
+          "date": "1991-11-12",
+          "year": 1991
+        },
+        {
+          "gcdId": 69701,
+          "issueNumber": "9",
+          "date": "1991-12-12",
+          "year": 1991
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4003,
+      "localTitle": "Justice",
+      "localSeriesYear": "1986",
+      "officialSeriesId": 25865,
+      "officialLabel": "Justice (1986 - 1989)",
+      "officialHref": "/comics/series/25865/justice_(1986_-_1989)",
+      "pendingRows": 31,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 42067,
+          "issueNumber": "1",
+          "date": "1986-07-15",
+          "year": 1986
+        },
+        {
+          "gcdId": 69361,
+          "issueNumber": "2",
+          "date": "1986-08-19",
+          "year": 1986
+        },
+        {
+          "gcdId": 69362,
+          "issueNumber": "3",
+          "date": "1986-09-16",
+          "year": 1986
+        },
+        {
+          "gcdId": 69363,
+          "issueNumber": "4",
+          "date": "1986-10-21",
+          "year": 1986
+        },
+        {
+          "gcdId": 69364,
+          "issueNumber": "5",
+          "date": "1986-11-18",
+          "year": 1986
+        },
+        {
+          "gcdId": 69365,
+          "issueNumber": "6",
+          "date": "1986-12-16",
+          "year": 1986
+        },
+        {
+          "gcdId": 69366,
+          "issueNumber": "7",
+          "date": "1987-01-20",
+          "year": 1987
+        },
+        {
+          "gcdId": 69367,
+          "issueNumber": "8",
+          "date": "1987-02-17",
+          "year": 1987
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6631,
+      "localTitle": "Spider-Man",
+      "localSeriesYear": "1990",
+      "officialSeriesId": 2069,
+      "officialLabel": "Spider-Man (1990 - 1998)",
+      "officialHref": "/comics/series/2069/spider-man_(1990_-_1998)",
+      "pendingRows": 31,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 83593,
+          "issueNumber": "26",
+          "date": "1992-07-21",
+          "year": 1992
+        },
+        {
+          "gcdId": 51917,
+          "issueNumber": "27",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 52057,
+          "issueNumber": "28",
+          "date": "1992-09-15",
+          "year": 1992
+        },
+        {
+          "gcdId": 52710,
+          "issueNumber": "32",
+          "date": "1993-01-19",
+          "year": 1993
+        },
+        {
+          "gcdId": 52843,
+          "issueNumber": "33",
+          "date": "1993-02-16",
+          "year": 1993
+        },
+        {
+          "gcdId": 52993,
+          "issueNumber": "34",
+          "date": "1993-03-16",
+          "year": 1993
+        },
+        {
+          "gcdId": 53645,
+          "issueNumber": "38",
+          "date": "1993-07-20",
+          "year": 1993
+        },
+        {
+          "gcdId": 53813,
+          "issueNumber": "39",
+          "date": "1993-08-17",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9760,
+      "localTitle": "X-Factor",
+      "localSeriesYear": "1986",
+      "officialSeriesId": 2098,
+      "officialLabel": "X-Factor (1986 - 1998)",
+      "officialHref": "/comics/series/2098/x-factor_(1986_-_1998)",
+      "pendingRows": 31,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 47612,
+          "issueNumber": "51",
+          "date": "1989-12-26",
+          "year": 1989
+        },
+        {
+          "gcdId": 47714,
+          "issueNumber": "52",
+          "date": "1990-01-23",
+          "year": 1990
+        },
+        {
+          "gcdId": 47838,
+          "issueNumber": "53",
+          "date": "1990-02-27",
+          "year": 1990
+        },
+        {
+          "gcdId": 47948,
+          "issueNumber": "54",
+          "date": "1990-03-27",
+          "year": 1990
+        },
+        {
+          "gcdId": 48220,
+          "issueNumber": "56",
+          "date": "1990-05-22",
+          "year": 1990
+        },
+        {
+          "gcdId": 48351,
+          "issueNumber": "57",
+          "date": "1990-06-26",
+          "year": 1990
+        },
+        {
+          "gcdId": 48500,
+          "issueNumber": "58",
+          "date": "1990-07-24",
+          "year": 1990
+        },
+        {
+          "gcdId": 48624,
+          "issueNumber": "59",
+          "date": "1990-08-28",
+          "year": 1990
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1916,
+      "localTitle": "Darkhawk",
+      "localSeriesYear": "1991",
+      "officialSeriesId": 18153,
+      "officialLabel": "Darkhawk (1991 - 1995)",
+      "officialHref": "/comics/series/18153/darkhawk_(1991_-_1995)",
+      "pendingRows": 30,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 50527,
+          "issueNumber": "10",
+          "date": "1991-10-01",
+          "year": 1991
+        },
+        {
+          "gcdId": 50812,
+          "issueNumber": "11",
+          "date": "1991-11-05",
+          "year": 1991
+        },
+        {
+          "gcdId": 50928,
+          "issueNumber": "12",
+          "date": "1991-12-03",
+          "year": 1991
+        },
+        {
+          "gcdId": 51275,
+          "issueNumber": "15",
+          "date": "1992-03-03",
+          "year": 1992
+        },
+        {
+          "gcdId": 51392,
+          "issueNumber": "16",
+          "date": "1992-04-07",
+          "year": 1992
+        },
+        {
+          "gcdId": 51529,
+          "issueNumber": "17",
+          "date": "1992-05-05",
+          "year": 1992
+        },
+        {
+          "gcdId": 51664,
+          "issueNumber": "18",
+          "date": "1992-06-02",
+          "year": 1992
+        },
+        {
+          "gcdId": 51799,
+          "issueNumber": "19",
+          "date": "1992-07-07",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5285,
+      "localTitle": "Modeling with Millie",
+      "localSeriesYear": "1963",
+      "officialSeriesId": 3705,
+      "officialLabel": "Modeling With Millie (1963 - 1967)",
+      "officialHref": "/comics/series/3705/modeling_with_millie_(1963_-_1967)",
+      "pendingRows": 30,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 112084,
+          "issueNumber": "21",
+          "date": "1962-12-03",
+          "year": 1962
+        },
+        {
+          "gcdId": 112085,
+          "issueNumber": "22",
+          "date": "1963-02-05",
+          "year": 1963
+        },
+        {
+          "gcdId": 112086,
+          "issueNumber": "23",
+          "date": "1963-04-02",
+          "year": 1963
+        },
+        {
+          "gcdId": 112087,
+          "issueNumber": "24",
+          "date": "1963-06-04",
+          "year": 1963
+        },
+        {
+          "gcdId": 112089,
+          "issueNumber": "26",
+          "date": "1963-08-01",
+          "year": 1963
+        },
+        {
+          "gcdId": 112090,
+          "issueNumber": "27",
+          "date": "1963-09-03",
+          "year": 1963
+        },
+        {
+          "gcdId": 112091,
+          "issueNumber": "28",
+          "date": "1963-10-01",
+          "year": 1963
+        },
+        {
+          "gcdId": 112092,
+          "issueNumber": "29",
+          "date": "1963-12-02",
+          "year": 1963
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5849,
+      "localTitle": "Powers",
+      "localSeriesYear": "2004",
+      "officialSeriesId": 796,
+      "officialLabel": "Powers (2004 - 2008)",
+      "officialHref": "/comics/series/796/powers_(2004_-_2008)",
+      "pendingRows": 30,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 215487,
+          "issueNumber": "1",
+          "date": "2004-05-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 215488,
+          "issueNumber": "2",
+          "date": "2004-05-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 215489,
+          "issueNumber": "3",
+          "date": "2004-06-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 215490,
+          "issueNumber": "4",
+          "date": "2004-07-19",
+          "year": 2004
+        },
+        {
+          "gcdId": 215491,
+          "issueNumber": "5",
+          "date": "2004-08-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 215492,
+          "issueNumber": "6",
+          "date": "2004-09-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 215493,
+          "issueNumber": "7",
+          "date": "2004-10-18",
+          "year": 2004
+        },
+        {
+          "gcdId": 263155,
+          "issueNumber": "8",
+          "date": "2004-11-19",
+          "year": 2004
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9821,
+      "localTitle": "X-Man",
+      "localSeriesYear": "1995",
+      "officialSeriesId": 3643,
+      "officialLabel": "X-Man (1995 - 2001)",
+      "officialHref": "/comics/series/3643/x-man_(1995_-_2001)",
+      "pendingRows": 30,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 60513,
+          "issueNumber": "-1",
+          "date": "1997-05-19",
+          "year": 1997
+        },
+        {
+          "gcdId": 60867,
+          "issueNumber": "31",
+          "date": "1997-08-19",
+          "year": 1997
+        },
+        {
+          "gcdId": 60989,
+          "issueNumber": "32",
+          "date": "1997-09-19",
+          "year": 1997
+        },
+        {
+          "gcdId": 61100,
+          "issueNumber": "33",
+          "date": "1997-10-19",
+          "year": 1997
+        },
+        {
+          "gcdId": 61302,
+          "issueNumber": "34",
+          "date": "1997-11-19",
+          "year": 1997
+        },
+        {
+          "gcdId": 61424,
+          "issueNumber": "35",
+          "date": "1997-12-20",
+          "year": 1997
+        },
+        {
+          "gcdId": 61584,
+          "issueNumber": "36",
+          "date": "1998-01-21",
+          "year": 1998
+        },
+        {
+          "gcdId": 61634,
+          "issueNumber": "37",
+          "date": "1998-02-17",
+          "year": 1998
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7974,
+      "localTitle": "The Outlaw Kid",
+      "localSeriesYear": "1970",
+      "officialSeriesId": 23669,
+      "officialLabel": "Outlaw Kid (1970 - 1975)",
+      "officialHref": "/comics/series/23669/outlaw_kid_(1970_-_1975)",
+      "pendingRows": 29,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 23659,
+          "issueNumber": "1",
+          "date": "1970-05-12",
+          "year": 1970
+        },
+        {
+          "gcdId": 23783,
+          "issueNumber": "2",
+          "date": "1970-07-21",
+          "year": 1970
+        },
+        {
+          "gcdId": 23906,
+          "issueNumber": "3",
+          "date": "1970-09-15",
+          "year": 1970
+        },
+        {
+          "gcdId": 24048,
+          "issueNumber": "4",
+          "date": "1970-11-17",
+          "year": 1970
+        },
+        {
+          "gcdId": 24171,
+          "issueNumber": "5",
+          "date": "1971-01-19",
+          "year": 1971
+        },
+        {
+          "gcdId": 24303,
+          "issueNumber": "6",
+          "date": "1971-03-16",
+          "year": 1971
+        },
+        {
+          "gcdId": 24431,
+          "issueNumber": "7",
+          "date": "1971-05-18",
+          "year": 1971
+        },
+        {
+          "gcdId": 24572,
+          "issueNumber": "8",
+          "date": "1971-07-20",
+          "year": 1971
+        }
+      ]
+    },
+    {
+      "localSeriesId": 162,
+      "localTitle": "Alias",
+      "localSeriesYear": "2001",
+      "officialSeriesId": 672,
+      "officialLabel": "Alias (2001 - 2003)",
+      "officialHref": "/comics/series/672/alias_(2001_-_2003)",
+      "pendingRows": 28,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 97432,
+          "issueNumber": "1",
+          "date": "2001-09-05",
+          "year": 2001
+        },
+        {
+          "gcdId": 97433,
+          "issueNumber": "2",
+          "date": "2001-10-03",
+          "year": 2001
+        },
+        {
+          "gcdId": 97434,
+          "issueNumber": "3",
+          "date": "2001-11-07",
+          "year": 2001
+        },
+        {
+          "gcdId": 97435,
+          "issueNumber": "4",
+          "date": "2001-12-05",
+          "year": 2001
+        },
+        {
+          "gcdId": 97436,
+          "issueNumber": "5",
+          "date": "2002-01-02",
+          "year": 2002
+        },
+        {
+          "gcdId": 128605,
+          "issueNumber": "6",
+          "date": "2002-02-06",
+          "year": 2002
+        },
+        {
+          "gcdId": 128606,
+          "issueNumber": "7",
+          "date": "2002-03-06",
+          "year": 2002
+        },
+        {
+          "gcdId": 128607,
+          "issueNumber": "8",
+          "date": "2002-04-03",
+          "year": 2002
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4448,
+      "localTitle": "Marvel Fanfare",
+      "localSeriesYear": "1982",
+      "officialSeriesId": 3719,
+      "officialLabel": "Marvel Fanfare (1982 - 1991)",
+      "officialHref": "/comics/series/3719/marvel_fanfare_(1982_-_1991)",
+      "pendingRows": 27,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 40012,
+          "issueNumber": "20",
+          "date": "1985-01-15",
+          "year": 1985
+        },
+        {
+          "gcdId": 40226,
+          "issueNumber": "21",
+          "date": "1985-03-19",
+          "year": 1985
+        },
+        {
+          "gcdId": 41634,
+          "issueNumber": "27",
+          "date": "1986-03-18",
+          "year": 1986
+        },
+        {
+          "gcdId": 42635,
+          "issueNumber": "31",
+          "date": "1986-11-18",
+          "year": 1986
+        },
+        {
+          "gcdId": 42863,
+          "issueNumber": "32",
+          "date": "1987-01-20",
+          "year": 1987
+        },
+        {
+          "gcdId": 43105,
+          "issueNumber": "33",
+          "date": "1987-03-19",
+          "year": 1987
+        },
+        {
+          "gcdId": 44584,
+          "issueNumber": "38",
+          "date": "1988-02-18",
+          "year": 1988
+        },
+        {
+          "gcdId": 44840,
+          "issueNumber": "39",
+          "date": "1988-04-19",
+          "year": 1988
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4533,
+      "localTitle": "Marvel Knights 4",
+      "localSeriesYear": "2004",
+      "officialSeriesId": 725,
+      "officialLabel": "Marvel Knights 4 (2004 - 2006)",
+      "officialHref": "/comics/series/725/marvel_knights_4_(2004_-_2006)",
+      "pendingRows": 27,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 165622,
+          "issueNumber": "1",
+          "date": "2004-02-11",
+          "year": 2004
+        },
+        {
+          "gcdId": 165623,
+          "issueNumber": "2",
+          "date": "2004-02-25",
+          "year": 2004
+        },
+        {
+          "gcdId": 165624,
+          "issueNumber": "3",
+          "date": "2004-03-10",
+          "year": 2004
+        },
+        {
+          "gcdId": 165625,
+          "issueNumber": "4",
+          "date": "2004-04-14",
+          "year": 2004
+        },
+        {
+          "gcdId": 165626,
+          "issueNumber": "5",
+          "date": "2004-04-28",
+          "year": 2004
+        },
+        {
+          "gcdId": 165627,
+          "issueNumber": "6",
+          "date": "2004-06-02",
+          "year": 2004
+        },
+        {
+          "gcdId": 165628,
+          "issueNumber": "7",
+          "date": "2004-07-14",
+          "year": 2004
+        },
+        {
+          "gcdId": 165629,
+          "issueNumber": "8",
+          "date": "2004-07-28",
+          "year": 2004
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5350,
+      "localTitle": "Morbius: The Living Vampire",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 22918,
+      "officialLabel": "Morbius: The Living Vampire (1992 - 1995)",
+      "officialHref": "/comics/series/22918/morbius:_the_living_vampire_(1992_-_1995)",
+      "pendingRows": 27,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 51913,
+          "issueNumber": "2",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 52051,
+          "issueNumber": "3",
+          "date": "1992-09-15",
+          "year": 1992
+        },
+        {
+          "gcdId": 52183,
+          "issueNumber": "4",
+          "date": "1992-10-20",
+          "year": 1992
+        },
+        {
+          "gcdId": 52457,
+          "issueNumber": "5",
+          "date": "1992-11-17",
+          "year": 1992
+        },
+        {
+          "gcdId": 52579,
+          "issueNumber": "6",
+          "date": "1992-12-15",
+          "year": 1992
+        },
+        {
+          "gcdId": 52704,
+          "issueNumber": "7",
+          "date": "1993-01-19",
+          "year": 1993
+        },
+        {
+          "gcdId": 52837,
+          "issueNumber": "8",
+          "date": "1993-02-16",
+          "year": 1993
+        },
+        {
+          "gcdId": 53145,
+          "issueNumber": "10",
+          "date": "1993-04-20",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8175,
+      "localTitle": "The X-Men",
+      "localSeriesYear": "1963",
+      "officialSeriesId": 2258,
+      "officialLabel": "X-Men (1963 - 2011)",
+      "officialHref": "/comics/series/2258/x-men_(1963_-_2011)",
+      "pendingRows": 27,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 23912,
+          "issueNumber": "67",
+          "date": "1970-09-22",
+          "year": 1970
+        },
+        {
+          "gcdId": 24054,
+          "issueNumber": "68",
+          "date": "1970-11-24",
+          "year": 1970
+        },
+        {
+          "gcdId": 24177,
+          "issueNumber": "69",
+          "date": "1971-01-26",
+          "year": 1971
+        },
+        {
+          "gcdId": 24309,
+          "issueNumber": "70",
+          "date": "1971-03-23",
+          "year": 1971
+        },
+        {
+          "gcdId": 24436,
+          "issueNumber": "71",
+          "date": "1971-05-25",
+          "year": 1971
+        },
+        {
+          "gcdId": 24576,
+          "issueNumber": "72",
+          "date": "1971-07-20",
+          "year": 1971
+        },
+        {
+          "gcdId": 24721,
+          "issueNumber": "73",
+          "date": "1971-09-14",
+          "year": 1971
+        },
+        {
+          "gcdId": 24890,
+          "issueNumber": "74",
+          "date": "1971-11-16",
+          "year": 1971
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4339,
+      "localTitle": "Marvel Adventures Flip Magazine",
+      "localSeriesYear": "2005",
+      "officialSeriesId": 927,
+      "officialLabel": "Marvel Adventures Flip Magazine (2005 - 2007)",
+      "officialHref": "/comics/series/927/marvel_adventures_flip_magazine_(2005_-_2007)",
+      "pendingRows": 26,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 353135,
+          "issueNumber": "1",
+          "date": "2005-05-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353136,
+          "issueNumber": "2",
+          "date": "2005-06-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353137,
+          "issueNumber": "3",
+          "date": "2005-07-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353138,
+          "issueNumber": "4",
+          "date": "2005-08-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353139,
+          "issueNumber": "5",
+          "date": "2005-09-29",
+          "year": 2005
+        },
+        {
+          "gcdId": 353140,
+          "issueNumber": "6",
+          "date": "2005-10-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353141,
+          "issueNumber": "7",
+          "date": "2005-11-30",
+          "year": 2005
+        },
+        {
+          "gcdId": 353142,
+          "issueNumber": "8",
+          "date": "2005-12-28",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9698,
+      "localTitle": "Wonder Man",
+      "localSeriesYear": "1991",
+      "officialSeriesId": 3645,
+      "officialLabel": "Wonder Man (1991 - 1994)",
+      "officialHref": "/comics/series/3645/wonder_man_(1991_-_1994)",
+      "pendingRows": 26,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 50123,
+          "issueNumber": "1",
+          "date": "1991-07-09",
+          "year": 1991
+        },
+        {
+          "gcdId": 50253,
+          "issueNumber": "2",
+          "date": "1991-08-13",
+          "year": 1991
+        },
+        {
+          "gcdId": 132560,
+          "issueNumber": "3",
+          "date": "1991-09-10",
+          "year": 1991
+        },
+        {
+          "gcdId": 132561,
+          "issueNumber": "4",
+          "date": "1991-10-08",
+          "year": 1991
+        },
+        {
+          "gcdId": 132562,
+          "issueNumber": "5",
+          "date": "1991-11-12",
+          "year": 1991
+        },
+        {
+          "gcdId": 132563,
+          "issueNumber": "6",
+          "date": "1991-12-10",
+          "year": 1991
+        },
+        {
+          "gcdId": 132565,
+          "issueNumber": "10",
+          "date": "1992-04-14",
+          "year": 1992
+        },
+        {
+          "gcdId": 132566,
+          "issueNumber": "11",
+          "date": "1992-05-12",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9437,
+      "localTitle": "What The--?!",
+      "localSeriesYear": "1988",
+      "officialSeriesId": 27910,
+      "officialLabel": "What The--?! (1988 - 1993)",
+      "officialHref": "/comics/series/27910/what_the--?!_(1988_-_1993)",
+      "pendingRows": 25,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 66045,
+          "issueNumber": "1",
+          "date": "1988-04-05",
+          "year": 1988
+        },
+        {
+          "gcdId": 66046,
+          "issueNumber": "2",
+          "date": "1988-05-05",
+          "year": 1988
+        },
+        {
+          "gcdId": 66047,
+          "issueNumber": "3",
+          "date": "1988-06-07",
+          "year": 1988
+        },
+        {
+          "gcdId": 66048,
+          "issueNumber": "4",
+          "date": "1988-07-05",
+          "year": 1988
+        },
+        {
+          "gcdId": 237825,
+          "issueNumber": "5",
+          "date": "1989-03-07",
+          "year": 1989
+        },
+        {
+          "gcdId": 66049,
+          "issueNumber": "6",
+          "date": "1989-11-07",
+          "year": 1989
+        },
+        {
+          "gcdId": 66050,
+          "issueNumber": "7",
+          "date": "1990-02-06",
+          "year": 1990
+        },
+        {
+          "gcdId": 66051,
+          "issueNumber": "8",
+          "date": "1990-05-01",
+          "year": 1990
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4029,
+      "localTitle": "Kathy",
+      "localSeriesYear": "1959",
+      "officialSeriesId": 30212,
+      "officialLabel": "Kathy (1959 - 1964)",
+      "officialHref": "/comics/series/30212/kathy_(1959_-_1964)",
+      "pendingRows": 24,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 203079,
+          "issueNumber": "1",
+          "date": "1959-08-02",
+          "year": 1959
+        },
+        {
+          "gcdId": 203080,
+          "issueNumber": "2",
+          "date": "1959-10-02",
+          "year": 1959
+        },
+        {
+          "gcdId": 203081,
+          "issueNumber": "3",
+          "date": "1959-12-03",
+          "year": 1959
+        },
+        {
+          "gcdId": 203082,
+          "issueNumber": "4",
+          "date": "1959-12-28",
+          "year": 1959
+        },
+        {
+          "gcdId": 203083,
+          "issueNumber": "5",
+          "date": "1960-02-29",
+          "year": 1960
+        },
+        {
+          "gcdId": 203084,
+          "issueNumber": "6",
+          "date": "1960-04-27",
+          "year": 1960
+        },
+        {
+          "gcdId": 203085,
+          "issueNumber": "7",
+          "date": "1960-06-27",
+          "year": 1960
+        },
+        {
+          "gcdId": 203086,
+          "issueNumber": "8",
+          "date": "1960-08-29",
+          "year": 1960
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4878,
+      "localTitle": "Marvel Treasury Edition",
+      "localSeriesYear": "1974",
+      "officialSeriesId": 19832,
+      "officialLabel": "Marvel Treasury Edition (1974 - 1981)",
+      "officialHref": "/comics/series/19832/marvel_treasury_edition_(1974_-_1981)",
+      "pendingRows": 24,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 27017,
+          "issueNumber": "1",
+          "date": "1974-06-18",
+          "year": 1974
+        },
+        {
+          "gcdId": 28060,
+          "issueNumber": "3",
+          "date": "1974-07-01",
+          "year": 1974
+        },
+        {
+          "gcdId": 28029,
+          "issueNumber": "2",
+          "date": "1974-09-17",
+          "year": 1974
+        },
+        {
+          "gcdId": 28080,
+          "issueNumber": "4",
+          "date": "1975-02-04",
+          "year": 1975
+        },
+        {
+          "gcdId": 28081,
+          "issueNumber": "5",
+          "date": "1975-03-13",
+          "year": 1975
+        },
+        {
+          "gcdId": 28082,
+          "issueNumber": "6",
+          "date": "1975-07-01",
+          "year": 1975
+        },
+        {
+          "gcdId": 28084,
+          "issueNumber": "8",
+          "date": "1975-07-01",
+          "year": 1975
+        },
+        {
+          "gcdId": 28083,
+          "issueNumber": "7",
+          "date": "1975-07-22",
+          "year": 1975
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1699,
+      "localTitle": "D.P. 7",
+      "localSeriesYear": "1986",
+      "officialSeriesId": 3747,
+      "officialLabel": "D.p.7 (1986 - 1989)",
+      "officialHref": "/comics/series/3747/d.p.7_(1986_-_1989)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 43230,
+          "issueNumber": "10",
+          "date": "1987-04-21",
+          "year": 1987
+        },
+        {
+          "gcdId": 43345,
+          "issueNumber": "11",
+          "date": "1987-05-19",
+          "year": 1987
+        },
+        {
+          "gcdId": 43477,
+          "issueNumber": "12",
+          "date": "1987-06-16",
+          "year": 1987
+        },
+        {
+          "gcdId": 43599,
+          "issueNumber": "13",
+          "date": "1987-07-21",
+          "year": 1987
+        },
+        {
+          "gcdId": 43732,
+          "issueNumber": "14",
+          "date": "1987-08-18",
+          "year": 1987
+        },
+        {
+          "gcdId": 43969,
+          "issueNumber": "15",
+          "date": "1987-09-17",
+          "year": 1987
+        },
+        {
+          "gcdId": 44097,
+          "issueNumber": "16",
+          "date": "1987-10-18",
+          "year": 1987
+        },
+        {
+          "gcdId": 44216,
+          "issueNumber": "17",
+          "date": "1987-11-17",
+          "year": 1987
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5180,
+      "localTitle": "Men's Adventures",
+      "localSeriesYear": "1950",
+      "officialSeriesId": 6678,
+      "officialLabel": "Men's Adventures (1950 - 1954)",
+      "officialHref": "/comics/series/6678/men&#x27;s_adventures_(1950_-_1954)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 8402,
+          "issueNumber": "4",
+          "date": "1950-04-26",
+          "year": 1950
+        },
+        {
+          "gcdId": 228911,
+          "issueNumber": "5",
+          "date": "1950-07-27",
+          "year": 1950
+        },
+        {
+          "gcdId": 228912,
+          "issueNumber": "6",
+          "date": "1950-10-22",
+          "year": 1950
+        },
+        {
+          "gcdId": 228913,
+          "issueNumber": "7",
+          "date": "1950-12-20",
+          "year": 1950
+        },
+        {
+          "gcdId": 8971,
+          "issueNumber": "8",
+          "date": "1951-02-19",
+          "year": 1951
+        },
+        {
+          "gcdId": 228914,
+          "issueNumber": "9",
+          "date": "1951-04-21",
+          "year": 1951
+        },
+        {
+          "gcdId": 228915,
+          "issueNumber": "10",
+          "date": "1951-06-21",
+          "year": 1951
+        },
+        {
+          "gcdId": 228916,
+          "issueNumber": "11",
+          "date": "1951-08-21",
+          "year": 1951
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5886,
+      "localTitle": "Psi-Force",
+      "localSeriesYear": "1986",
+      "officialSeriesId": 5265,
+      "officialLabel": "Psi-Force (1986 - 1989)",
+      "officialHref": "/comics/series/5265/psi-force_(1986_-_1989)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 224756,
+          "issueNumber": "10",
+          "date": "1987-04-07",
+          "year": 1987
+        },
+        {
+          "gcdId": 224757,
+          "issueNumber": "11",
+          "date": "1987-05-05",
+          "year": 1987
+        },
+        {
+          "gcdId": 224758,
+          "issueNumber": "12",
+          "date": "1987-06-02",
+          "year": 1987
+        },
+        {
+          "gcdId": 224759,
+          "issueNumber": "13",
+          "date": "1987-07-07",
+          "year": 1987
+        },
+        {
+          "gcdId": 224760,
+          "issueNumber": "14",
+          "date": "1987-08-04",
+          "year": 1987
+        },
+        {
+          "gcdId": 224763,
+          "issueNumber": "17",
+          "date": "1987-11-03",
+          "year": 1987
+        },
+        {
+          "gcdId": 224764,
+          "issueNumber": "18",
+          "date": "1987-12-01",
+          "year": 1987
+        },
+        {
+          "gcdId": 224765,
+          "issueNumber": "19",
+          "date": "1988-01-07",
+          "year": 1988
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6443,
+      "localTitle": "Silver Surfer",
+      "localSeriesYear": "1987",
+      "officialSeriesId": 2288,
+      "officialLabel": "Silver Surfer (1987 - 1998)",
+      "officialHref": "/comics/series/2288/silver_surfer_(1987_-_1998)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 54589,
+          "issueNumber": "89",
+          "date": "1994-01-05",
+          "year": 1994
+        },
+        {
+          "gcdId": 54750,
+          "issueNumber": "90",
+          "date": "1994-02-02",
+          "year": 1994
+        },
+        {
+          "gcdId": 54913,
+          "issueNumber": "91",
+          "date": "1994-02-24",
+          "year": 1994
+        },
+        {
+          "gcdId": 55071,
+          "issueNumber": "92",
+          "date": "1994-03-26",
+          "year": 1994
+        },
+        {
+          "gcdId": 55227,
+          "issueNumber": "93",
+          "date": "1994-04-26",
+          "year": 1994
+        },
+        {
+          "gcdId": 55388,
+          "issueNumber": "94",
+          "date": "1994-05-26",
+          "year": 1994
+        },
+        {
+          "gcdId": 55534,
+          "issueNumber": "95",
+          "date": "1994-06-26",
+          "year": 1994
+        },
+        {
+          "gcdId": 55690,
+          "issueNumber": "96",
+          "date": "1994-07-27",
+          "year": 1994
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7833,
+      "localTitle": "The Human Torch",
+      "localSeriesYear": "1940",
+      "officialSeriesId": 2019,
+      "officialLabel": "Human Torch Comics (1940 - 1954)",
+      "officialHref": "/comics/series/2019/human_torch_comics_(1940_-_1954)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 1519,
+          "issueNumber": "5[a]",
+          "date": "1941-06-11",
+          "year": 1941
+        },
+        {
+          "gcdId": 1709,
+          "issueNumber": "5[b]",
+          "date": "1941-10-08",
+          "year": 1941
+        },
+        {
+          "gcdId": 3189,
+          "issueNumber": "13",
+          "date": "1943-10-10",
+          "year": 1943
+        },
+        {
+          "gcdId": 3390,
+          "issueNumber": "14",
+          "date": "1943-12-30",
+          "year": 1943
+        },
+        {
+          "gcdId": 3556,
+          "issueNumber": "15",
+          "date": "1944-04-12",
+          "year": 1944
+        },
+        {
+          "gcdId": 3892,
+          "issueNumber": "16",
+          "date": "1944-08-23",
+          "year": 1944
+        },
+        {
+          "gcdId": 4033,
+          "issueNumber": "17",
+          "date": "1944-11-30",
+          "year": 1944
+        },
+        {
+          "gcdId": 4308,
+          "issueNumber": "18",
+          "date": "1945-03-12",
+          "year": 1945
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8359,
+      "localTitle": "Thunderstrike",
+      "localSeriesYear": "1993",
+      "officialSeriesId": 22636,
+      "officialLabel": "Thunderstrike (1993 - 1995)",
+      "officialHref": "/comics/series/22636/thunderstrike_(1993_-_1995)",
+      "pendingRows": 23,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 54022,
+          "issueNumber": "2",
+          "date": "1993-09-07",
+          "year": 1993
+        },
+        {
+          "gcdId": 54193,
+          "issueNumber": "3",
+          "date": "1993-10-05",
+          "year": 1993
+        },
+        {
+          "gcdId": 54473,
+          "issueNumber": "4",
+          "date": "1993-11-02",
+          "year": 1993
+        },
+        {
+          "gcdId": 54628,
+          "issueNumber": "5",
+          "date": "1993-12-07",
+          "year": 1993
+        },
+        {
+          "gcdId": 54795,
+          "issueNumber": "6",
+          "date": "1994-01-18",
+          "year": 1994
+        },
+        {
+          "gcdId": 54953,
+          "issueNumber": "7",
+          "date": "1994-02-15",
+          "year": 1994
+        },
+        {
+          "gcdId": 55109,
+          "issueNumber": "8",
+          "date": "1994-03-15",
+          "year": 1994
+        },
+        {
+          "gcdId": 55276,
+          "issueNumber": "9",
+          "date": "1994-05-17",
+          "year": 1994
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5993,
+      "localTitle": "PunisherMax",
+      "localSeriesYear": "2010",
+      "officialSeriesId": 8991,
+      "officialLabel": "Punishermax (2009 - 2012)",
+      "officialHref": "/comics/series/8991/punishermax_(2009_-_2012)",
+      "pendingRows": 22,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 733701,
+          "issueNumber": "1",
+          "date": "2009-11-11",
+          "year": 2009
+        },
+        {
+          "gcdId": 733702,
+          "issueNumber": "2",
+          "date": "2009-12-09",
+          "year": 2009
+        },
+        {
+          "gcdId": 733703,
+          "issueNumber": "3",
+          "date": "2010-01-13",
+          "year": 2010
+        },
+        {
+          "gcdId": 733704,
+          "issueNumber": "4",
+          "date": "2010-02-10",
+          "year": 2010
+        },
+        {
+          "gcdId": 733705,
+          "issueNumber": "5",
+          "date": "2010-03-10",
+          "year": 2010
+        },
+        {
+          "gcdId": 745774,
+          "issueNumber": "6",
+          "date": "2010-04-14",
+          "year": 2010
+        },
+        {
+          "gcdId": 755456,
+          "issueNumber": "7",
+          "date": "2010-05-12",
+          "year": 2010
+        },
+        {
+          "gcdId": 760871,
+          "issueNumber": "8",
+          "date": "2010-06-09",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5999,
+      "localTitle": "Quasar",
+      "localSeriesYear": "1989",
+      "officialSeriesId": 3695,
+      "officialLabel": "Quasar (1989 - 1994)",
+      "officialHref": "/comics/series/3695/quasar_(1989_-_1994)",
+      "pendingRows": 22,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 50374,
+          "issueNumber": "28",
+          "date": "1991-09-17",
+          "year": 1991
+        },
+        {
+          "gcdId": 50506,
+          "issueNumber": "29",
+          "date": "1991-10-17",
+          "year": 1991
+        },
+        {
+          "gcdId": 50905,
+          "issueNumber": "31",
+          "date": "1991-12-19",
+          "year": 1991
+        },
+        {
+          "gcdId": 51637,
+          "issueNumber": "37",
+          "date": "1992-06-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 51777,
+          "issueNumber": "38",
+          "date": "1992-07-19",
+          "year": 1992
+        },
+        {
+          "gcdId": 51914,
+          "issueNumber": "39",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 52052,
+          "issueNumber": "40",
+          "date": "1992-09-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 52705,
+          "issueNumber": "44",
+          "date": "1993-01-12",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5294,
+      "localTitle": "Monsters on the Prowl",
+      "localSeriesYear": "1971",
+      "officialSeriesId": 33890,
+      "officialLabel": "Monsters On The Prowl (1971 - 1974)",
+      "officialHref": "/comics/series/33890/monsters_on_the_prowl_(1971_-_1974)",
+      "pendingRows": 21,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 63595,
+          "issueNumber": "9",
+          "date": "1970-11-24",
+          "year": 1970
+        },
+        {
+          "gcdId": 63596,
+          "issueNumber": "10",
+          "date": "1971-01-26",
+          "year": 1971
+        },
+        {
+          "gcdId": 63597,
+          "issueNumber": "11",
+          "date": "1971-03-23",
+          "year": 1971
+        },
+        {
+          "gcdId": 63598,
+          "issueNumber": "12",
+          "date": "1971-05-25",
+          "year": 1971
+        },
+        {
+          "gcdId": 63599,
+          "issueNumber": "13",
+          "date": "1971-07-27",
+          "year": 1971
+        },
+        {
+          "gcdId": 63600,
+          "issueNumber": "14",
+          "date": "1971-09-21",
+          "year": 1971
+        },
+        {
+          "gcdId": 63601,
+          "issueNumber": "15",
+          "date": "1971-11-23",
+          "year": 1971
+        },
+        {
+          "gcdId": 63603,
+          "issueNumber": "17",
+          "date": "1972-03-14",
+          "year": 1972
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8010,
+      "localTitle": "The Punisher: War Zone",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 2065,
+      "officialLabel": "The Punisher War Zone (1992 - 1995)",
+      "officialHref": "/comics/series/2065/the_punisher_war_zone_(1992_-_1995)",
+      "pendingRows": 20,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 97162,
+          "issueNumber": "7",
+          "date": "1992-07-14",
+          "year": 1992
+        },
+        {
+          "gcdId": 97163,
+          "issueNumber": "8",
+          "date": "1992-08-11",
+          "year": 1992
+        },
+        {
+          "gcdId": 97164,
+          "issueNumber": "9",
+          "date": "1992-09-08",
+          "year": 1992
+        },
+        {
+          "gcdId": 97165,
+          "issueNumber": "10",
+          "date": "1992-10-13",
+          "year": 1992
+        },
+        {
+          "gcdId": 97166,
+          "issueNumber": "11",
+          "date": "1992-11-10",
+          "year": 1992
+        },
+        {
+          "gcdId": 97167,
+          "issueNumber": "12",
+          "date": "1992-12-08",
+          "year": 1992
+        },
+        {
+          "gcdId": 97168,
+          "issueNumber": "13",
+          "date": "1993-01-12",
+          "year": 1993
+        },
+        {
+          "gcdId": 97169,
+          "issueNumber": "14",
+          "date": "1993-02-09",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1116,
+      "localTitle": "Cage",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 20944,
+      "officialLabel": "Cage (1992 - 1993)",
+      "officialHref": "/comics/series/20944/cage_(1992_-_1993)",
+      "pendingRows": 19,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 51162,
+          "issueNumber": "1",
+          "date": "1992-02-17",
+          "year": 1992
+        },
+        {
+          "gcdId": 51277,
+          "issueNumber": "2",
+          "date": "1992-03-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 51394,
+          "issueNumber": "3",
+          "date": "1992-04-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 225215,
+          "issueNumber": "5",
+          "date": "1992-06-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 225216,
+          "issueNumber": "6",
+          "date": "1992-07-19",
+          "year": 1992
+        },
+        {
+          "gcdId": 225217,
+          "issueNumber": "7",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 225218,
+          "issueNumber": "8",
+          "date": "1992-09-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 225219,
+          "issueNumber": "9",
+          "date": "1992-10-18",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1653,
+      "localTitle": "Creatures on the Loose",
+      "localSeriesYear": "1971",
+      "officialSeriesId": 23757,
+      "officialLabel": "Creatures On The Loose (1971 - 1975)",
+      "officialHref": "/comics/series/23757/creatures_on_the_loose_(1971_-_1975)",
+      "pendingRows": 19,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 24228,
+          "issueNumber": "11",
+          "date": "1971-02-23",
+          "year": 1971
+        },
+        {
+          "gcdId": 24359,
+          "issueNumber": "12",
+          "date": "1971-04-27",
+          "year": 1971
+        },
+        {
+          "gcdId": 24493,
+          "issueNumber": "13",
+          "date": "1971-06-22",
+          "year": 1971
+        },
+        {
+          "gcdId": 24635,
+          "issueNumber": "14",
+          "date": "1971-08-24",
+          "year": 1971
+        },
+        {
+          "gcdId": 24799,
+          "issueNumber": "15",
+          "date": "1971-10-26",
+          "year": 1971
+        },
+        {
+          "gcdId": 24946,
+          "issueNumber": "16",
+          "date": "1971-12-21",
+          "year": 1971
+        },
+        {
+          "gcdId": 25103,
+          "issueNumber": "17",
+          "date": "1972-02-29",
+          "year": 1972
+        },
+        {
+          "gcdId": 25272,
+          "issueNumber": "18",
+          "date": "1972-04-25",
+          "year": 1972
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5611,
+      "localTitle": "Nomad",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 20373,
+      "officialLabel": "Nomad (1992 - 1994)",
+      "officialHref": "/comics/series/20373/nomad_(1992_-_1994)",
+      "pendingRows": 19,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 64903,
+          "issueNumber": "1",
+          "date": "1992-03-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 64904,
+          "issueNumber": "2",
+          "date": "1992-04-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 64905,
+          "issueNumber": "3",
+          "date": "1992-05-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 64909,
+          "issueNumber": "7",
+          "date": "1992-09-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 64910,
+          "issueNumber": "8",
+          "date": "1992-10-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 64911,
+          "issueNumber": "9",
+          "date": "1992-11-14",
+          "year": 1992
+        },
+        {
+          "gcdId": 64912,
+          "issueNumber": "10",
+          "date": "1992-12-15",
+          "year": 1992
+        },
+        {
+          "gcdId": 64913,
+          "issueNumber": "11",
+          "date": "1993-01-12",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7512,
+      "localTitle": "Supreme Power",
+      "localSeriesYear": "2003",
+      "officialSeriesId": 631,
+      "officialLabel": "Supreme Power (2003 - 2005)",
+      "officialHref": "/comics/series/631/supreme_power_(2003_-_2005)",
+      "pendingRows": 19,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 213945,
+          "issueNumber": "1",
+          "date": "2003-08-06",
+          "year": 2003
+        },
+        {
+          "gcdId": 769548,
+          "issueNumber": "1 - Special Edition",
+          "date": "2003-08-06",
+          "year": 2003
+        },
+        {
+          "gcdId": 213946,
+          "issueNumber": "2",
+          "date": "2003-09-10",
+          "year": 2003
+        },
+        {
+          "gcdId": 213947,
+          "issueNumber": "3",
+          "date": "2003-10-01",
+          "year": 2003
+        },
+        {
+          "gcdId": 213948,
+          "issueNumber": "4",
+          "date": "2003-11-05",
+          "year": 2003
+        },
+        {
+          "gcdId": 213949,
+          "issueNumber": "5",
+          "date": "2003-12-03",
+          "year": 2003
+        },
+        {
+          "gcdId": 213950,
+          "issueNumber": "6",
+          "date": "2004-01-07",
+          "year": 2004
+        },
+        {
+          "gcdId": 213951,
+          "issueNumber": "7",
+          "date": "2004-02-04",
+          "year": 2004
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7681,
+      "localTitle": "The Amazing Spider-Man",
+      "localSeriesYear": "2025",
+      "officialSeriesId": 41731,
+      "officialLabel": "The Amazing Spider-Man (2025 - Present)",
+      "officialHref": "/comics/series/41731/the_amazing_spider-man_(2025_-_present)",
+      "pendingRows": 19,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 2781805,
+          "issueNumber": "15 (979)",
+          "date": "2025-11-05",
+          "year": 2025
+        },
+        {
+          "gcdId": 2785596,
+          "issueNumber": "16 (980)",
+          "date": "2025-11-19",
+          "year": 2025
+        },
+        {
+          "gcdId": 2793961,
+          "issueNumber": "17 (981)",
+          "date": "2025-12-10",
+          "year": 2025
+        },
+        {
+          "gcdId": 2797720,
+          "issueNumber": "18 (982)",
+          "date": "2025-12-24",
+          "year": 2025
+        },
+        {
+          "gcdId": 2803030,
+          "issueNumber": "19 (983)",
+          "date": "2026-01-07",
+          "year": 2026
+        },
+        {
+          "gcdId": 2808208,
+          "issueNumber": "20 (984)",
+          "date": "2026-01-21",
+          "year": 2026
+        },
+        {
+          "gcdId": 2811592,
+          "issueNumber": "21 (985)",
+          "date": "2026-02-04",
+          "year": 2026
+        },
+        {
+          "gcdId": 2815946,
+          "issueNumber": "22 (986)",
+          "date": "2026-02-18",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2105,
+      "localTitle": "Deathlok",
+      "localSeriesYear": "1991",
+      "officialSeriesId": 20006,
+      "officialLabel": "Deathlok (1991 - 1994)",
+      "officialHref": "/comics/series/20006/deathlok_(1991_-_1994)",
+      "pendingRows": 18,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 97216,
+          "issueNumber": "16",
+          "date": "1992-08-25",
+          "year": 1992
+        },
+        {
+          "gcdId": 97217,
+          "issueNumber": "17",
+          "date": "1992-09-22",
+          "year": 1992
+        },
+        {
+          "gcdId": 97218,
+          "issueNumber": "18",
+          "date": "1992-10-27",
+          "year": 1992
+        },
+        {
+          "gcdId": 97219,
+          "issueNumber": "19",
+          "date": "1992-11-24",
+          "year": 1992
+        },
+        {
+          "gcdId": 97220,
+          "issueNumber": "20",
+          "date": "1992-12-22",
+          "year": 1992
+        },
+        {
+          "gcdId": 97221,
+          "issueNumber": "21",
+          "date": "1993-01-26",
+          "year": 1993
+        },
+        {
+          "gcdId": 97222,
+          "issueNumber": "22",
+          "date": "1993-02-23",
+          "year": 1993
+        },
+        {
+          "gcdId": 97223,
+          "issueNumber": "23",
+          "date": "1993-03-23",
+          "year": 1993
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7439,
+      "localTitle": "Strange Tales",
+      "localSeriesYear": "1987",
+      "officialSeriesId": 5849,
+      "officialLabel": "Strange Tales (1987 - 1988)",
+      "officialHref": "/comics/series/5849/strange_tales_(1987_-_1988)",
+      "pendingRows": 18,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 42760,
+          "issueNumber": "1",
+          "date": "1986-12-09",
+          "year": 1986
+        },
+        {
+          "gcdId": 42868,
+          "issueNumber": "2",
+          "date": "1987-01-10",
+          "year": 1987
+        },
+        {
+          "gcdId": 42987,
+          "issueNumber": "3",
+          "date": "1987-02-10",
+          "year": 1987
+        },
+        {
+          "gcdId": 43112,
+          "issueNumber": "4",
+          "date": "1987-03-12",
+          "year": 1987
+        },
+        {
+          "gcdId": 43242,
+          "issueNumber": "5",
+          "date": "1987-04-12",
+          "year": 1987
+        },
+        {
+          "gcdId": 43356,
+          "issueNumber": "6",
+          "date": "1987-05-13",
+          "year": 1987
+        },
+        {
+          "gcdId": 43614,
+          "issueNumber": "8",
+          "date": "1987-07-13",
+          "year": 1987
+        },
+        {
+          "gcdId": 43743,
+          "issueNumber": "9",
+          "date": "1987-08-12",
+          "year": 1987
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1662,
+      "localTitle": "Criminal",
+      "localSeriesYear": "2006",
+      "officialSeriesId": 1138,
+      "officialLabel": "Criminal (2006 - 2007)",
+      "officialHref": "/comics/series/1138/criminal_(2006_-_2007)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 315794,
+          "issueNumber": "1",
+          "date": "2006-08-19",
+          "year": 2006
+        },
+        {
+          "gcdId": 315795,
+          "issueNumber": "2",
+          "date": "2006-09-19",
+          "year": 2006
+        },
+        {
+          "gcdId": 315796,
+          "issueNumber": "3",
+          "date": "2006-10-19",
+          "year": 2006
+        },
+        {
+          "gcdId": 336083,
+          "issueNumber": "4",
+          "date": "2006-11-17",
+          "year": 2006
+        },
+        {
+          "gcdId": 345033,
+          "issueNumber": "5",
+          "date": "2006-12-18",
+          "year": 2006
+        },
+        {
+          "gcdId": 359065,
+          "issueNumber": "6",
+          "date": "2007-03-17",
+          "year": 2007
+        },
+        {
+          "gcdId": 363200,
+          "issueNumber": "7",
+          "date": "2007-04-17",
+          "year": 2007
+        },
+        {
+          "gcdId": 369918,
+          "issueNumber": "8",
+          "date": "2007-05-17",
+          "year": 2007
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2817,
+      "localTitle": "Frankenstein",
+      "localSeriesYear": "1973",
+      "officialSeriesId": 20998,
+      "officialLabel": "Frankenstein (1973 - 1975)",
+      "officialHref": "/comics/series/20998/frankenstein_(1973_-_1975)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 25832,
+          "issueNumber": "1",
+          "date": "1972-10-24",
+          "year": 1972
+        },
+        {
+          "gcdId": 26212,
+          "issueNumber": "3",
+          "date": "1973-02-27",
+          "year": 1973
+        },
+        {
+          "gcdId": 26436,
+          "issueNumber": "4",
+          "date": "1973-04-24",
+          "year": 1973
+        },
+        {
+          "gcdId": 26642,
+          "issueNumber": "5",
+          "date": "1973-06-12",
+          "year": 1973
+        },
+        {
+          "gcdId": 26767,
+          "issueNumber": "6",
+          "date": "1973-07-10",
+          "year": 1973
+        },
+        {
+          "gcdId": 26878,
+          "issueNumber": "7",
+          "date": "1973-08-07",
+          "year": 1973
+        },
+        {
+          "gcdId": 27093,
+          "issueNumber": "8",
+          "date": "1973-10-16",
+          "year": 1973
+        },
+        {
+          "gcdId": 27244,
+          "issueNumber": "9",
+          "date": "1973-12-04",
+          "year": 1973
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4203,
+      "localTitle": "Lorna the Jungle Girl",
+      "localSeriesYear": "1954",
+      "officialSeriesId": 24975,
+      "officialLabel": "Lorna The Jungle Girl (1954 - 1957)",
+      "officialHref": "/comics/series/24975/lorna_the_jungle_girl_(1954_-_1957)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 11681,
+          "issueNumber": "10",
+          "date": "1954-08-10",
+          "year": 1954
+        },
+        {
+          "gcdId": 11834,
+          "issueNumber": "11",
+          "date": "1954-10-11",
+          "year": 1954
+        },
+        {
+          "gcdId": 11950,
+          "issueNumber": "12",
+          "date": "1954-11-30",
+          "year": 1954
+        },
+        {
+          "gcdId": 12061,
+          "issueNumber": "13",
+          "date": "1955-02-08",
+          "year": 1955
+        },
+        {
+          "gcdId": 12204,
+          "issueNumber": "14",
+          "date": "1955-04-10",
+          "year": 1955
+        },
+        {
+          "gcdId": 12324,
+          "issueNumber": "15",
+          "date": "1955-06-11",
+          "year": 1955
+        },
+        {
+          "gcdId": 12453,
+          "issueNumber": "16",
+          "date": "1955-08-11",
+          "year": 1955
+        },
+        {
+          "gcdId": 12601,
+          "issueNumber": "17",
+          "date": "1955-10-05",
+          "year": 1955
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4887,
+      "localTitle": "Marvel Two-in-One",
+      "localSeriesYear": "2007",
+      "officialSeriesId": 2545,
+      "officialLabel": "Marvel Two-In-One (2007 - 2008)",
+      "officialHref": "/comics/series/2545/marvel_two-in-one_(2007_-_2008)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 369746,
+          "issueNumber": "1",
+          "date": "2007-07-04",
+          "year": 2007
+        },
+        {
+          "gcdId": 369747,
+          "issueNumber": "2",
+          "date": "2007-08-01",
+          "year": 2007
+        },
+        {
+          "gcdId": 369748,
+          "issueNumber": "3",
+          "date": "2007-09-05",
+          "year": 2007
+        },
+        {
+          "gcdId": 404115,
+          "issueNumber": "4",
+          "date": "2007-10-03",
+          "year": 2007
+        },
+        {
+          "gcdId": 404116,
+          "issueNumber": "5",
+          "date": "2007-11-07",
+          "year": 2007
+        },
+        {
+          "gcdId": 404117,
+          "issueNumber": "6",
+          "date": "2007-12-05",
+          "year": 2007
+        },
+        {
+          "gcdId": 407907,
+          "issueNumber": "7",
+          "date": "2008-01-02",
+          "year": 2008
+        },
+        {
+          "gcdId": 407908,
+          "issueNumber": "8",
+          "date": "2008-02-06",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6776,
+      "localTitle": "Spider-Man Unlimited",
+      "localSeriesYear": "1993",
+      "officialSeriesId": 13695,
+      "officialLabel": "Spider-Man Unlimited (1993 - 1998)",
+      "officialHref": "/comics/series/13695/spider-man_unlimited_(1993_-_1998)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 76083,
+          "issueNumber": "2",
+          "date": "1993-06-29",
+          "year": 1993
+        },
+        {
+          "gcdId": 76084,
+          "issueNumber": "3",
+          "date": "1993-09-28",
+          "year": 1993
+        },
+        {
+          "gcdId": 76085,
+          "issueNumber": "4",
+          "date": "1993-12-28",
+          "year": 1993
+        },
+        {
+          "gcdId": 76086,
+          "issueNumber": "5",
+          "date": "1994-03-29",
+          "year": 1994
+        },
+        {
+          "gcdId": 76087,
+          "issueNumber": "6",
+          "date": "1994-06-28",
+          "year": 1994
+        },
+        {
+          "gcdId": 76090,
+          "issueNumber": "9",
+          "date": "1995-03-28",
+          "year": 1995
+        },
+        {
+          "gcdId": 76096,
+          "issueNumber": "15",
+          "date": "1996-12-24",
+          "year": 1996
+        },
+        {
+          "gcdId": 76097,
+          "issueNumber": "16",
+          "date": "1997-03-26",
+          "year": 1997
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7035,
+      "localTitle": "Spider-Woman",
+      "localSeriesYear": "1999",
+      "officialSeriesId": 23928,
+      "officialLabel": "Spider-Woman (1999 - 2000)",
+      "officialHref": "/comics/series/23928/spider-woman_(1999_-_2000)",
+      "pendingRows": 17,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 102184,
+          "issueNumber": "1",
+          "date": "1999-05-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102185,
+          "issueNumber": "2",
+          "date": "1999-06-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102186,
+          "issueNumber": "3",
+          "date": "1999-07-06",
+          "year": 1999
+        },
+        {
+          "gcdId": 102187,
+          "issueNumber": "4",
+          "date": "1999-08-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102188,
+          "issueNumber": "5",
+          "date": "1999-09-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102189,
+          "issueNumber": "6",
+          "date": "1999-10-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102190,
+          "issueNumber": "7",
+          "date": "1999-11-05",
+          "year": 1999
+        },
+        {
+          "gcdId": 102191,
+          "issueNumber": "8",
+          "date": "1999-12-01",
+          "year": 1999
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5894,
+      "localTitle": "Punisher",
+      "localSeriesYear": "1995",
+      "officialSeriesId": 6681,
+      "officialLabel": "Punisher (1995 - 1997)",
+      "officialHref": "/comics/series/6681/punisher_(1995_-_1997)",
+      "pendingRows": 16,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 244350,
+          "issueNumber": "1",
+          "date": "1995-09-19",
+          "year": 1995
+        },
+        {
+          "gcdId": 244351,
+          "issueNumber": "2",
+          "date": "1995-10-24",
+          "year": 1995
+        },
+        {
+          "gcdId": 244352,
+          "issueNumber": "3",
+          "date": "1995-11-28",
+          "year": 1995
+        },
+        {
+          "gcdId": 244354,
+          "issueNumber": "5",
+          "date": "1996-01-16",
+          "year": 1996
+        },
+        {
+          "gcdId": 244355,
+          "issueNumber": "6",
+          "date": "1996-02-20",
+          "year": 1996
+        },
+        {
+          "gcdId": 244356,
+          "issueNumber": "7",
+          "date": "1996-03-19",
+          "year": 1996
+        },
+        {
+          "gcdId": 244357,
+          "issueNumber": "8",
+          "date": "1996-04-17",
+          "year": 1996
+        },
+        {
+          "gcdId": 244358,
+          "issueNumber": "9",
+          "date": "1996-05-22",
+          "year": 1996
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6019,
+      "localTitle": "Rawhide Kid",
+      "localSeriesYear": "1955",
+      "officialSeriesId": 2988,
+      "officialLabel": "Rawhide Kid (1955 - 1979)",
+      "officialHref": "/comics/series/2988/rawhide_kid_(1955_-_1979)",
+      "pendingRows": 16,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 11952,
+          "issueNumber": "1",
+          "date": "1954-11-30",
+          "year": 1954
+        },
+        {
+          "gcdId": 12063,
+          "issueNumber": "2",
+          "date": "1955-01-30",
+          "year": 1955
+        },
+        {
+          "gcdId": 12207,
+          "issueNumber": "3",
+          "date": "1955-04-01",
+          "year": 1955
+        },
+        {
+          "gcdId": 12327,
+          "issueNumber": "4",
+          "date": "1955-06-02",
+          "year": 1955
+        },
+        {
+          "gcdId": 12456,
+          "issueNumber": "5",
+          "date": "1955-08-02",
+          "year": 1955
+        },
+        {
+          "gcdId": 12604,
+          "issueNumber": "6",
+          "date": "1955-09-26",
+          "year": 1955
+        },
+        {
+          "gcdId": 12714,
+          "issueNumber": "7",
+          "date": "1955-11-25",
+          "year": 1955
+        },
+        {
+          "gcdId": 12821,
+          "issueNumber": "8",
+          "date": "1956-01-25",
+          "year": 1956
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6525,
+      "localTitle": "Slingers",
+      "localSeriesYear": "1998",
+      "officialSeriesId": 24126,
+      "officialLabel": "Slingers (1998 - 1999)",
+      "officialHref": "/comics/series/24126/slingers_(1998_-_1999)",
+      "pendingRows": 15,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 219521,
+          "issueNumber": "1 [Dusk]",
+          "date": "1998-10-28",
+          "year": 1998
+        },
+        {
+          "gcdId": 219522,
+          "issueNumber": "1 [Hornet]",
+          "date": "1998-10-28",
+          "year": 1998
+        },
+        {
+          "gcdId": 219523,
+          "issueNumber": "1 [Prodigy]",
+          "date": "1998-10-28",
+          "year": 1998
+        },
+        {
+          "gcdId": 219524,
+          "issueNumber": "1 [Ricochet]",
+          "date": "1998-10-28",
+          "year": 1998
+        },
+        {
+          "gcdId": 219525,
+          "issueNumber": "2",
+          "date": "1998-12-02",
+          "year": 1998
+        },
+        {
+          "gcdId": 219526,
+          "issueNumber": "3",
+          "date": "1998-12-30",
+          "year": 1998
+        },
+        {
+          "gcdId": 219527,
+          "issueNumber": "4",
+          "date": "1999-02-10",
+          "year": 1999
+        },
+        {
+          "gcdId": 219528,
+          "issueNumber": "5",
+          "date": "1999-02-24",
+          "year": 1999
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6753,
+      "localTitle": "Spider-Man Magazine",
+      "localSeriesYear": "2008",
+      "officialSeriesId": 5041,
+      "officialLabel": "Spider-Man Magazine (2008 - 2011)",
+      "officialHref": "/comics/series/5041/spider-man_magazine_(2008_-_2011)",
+      "pendingRows": 15,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 754586,
+          "issueNumber": "1",
+          "date": "2008-06-18",
+          "year": 2008
+        },
+        {
+          "gcdId": 754587,
+          "issueNumber": "2",
+          "date": "2008-08-18",
+          "year": 2008
+        },
+        {
+          "gcdId": 754588,
+          "issueNumber": "3",
+          "date": "2008-10-18",
+          "year": 2008
+        },
+        {
+          "gcdId": 754589,
+          "issueNumber": "4",
+          "date": "2008-12-20",
+          "year": 2008
+        },
+        {
+          "gcdId": 754590,
+          "issueNumber": "5",
+          "date": "2009-02-17",
+          "year": 2009
+        },
+        {
+          "gcdId": 754591,
+          "issueNumber": "6",
+          "date": "2009-06-19",
+          "year": 2009
+        },
+        {
+          "gcdId": 754592,
+          "issueNumber": "7",
+          "date": "2009-08-19",
+          "year": 2009
+        },
+        {
+          "gcdId": 754593,
+          "issueNumber": "8",
+          "date": "2009-10-19",
+          "year": 2009
+        }
+      ]
+    },
+    {
+      "localSeriesId": 651,
+      "localTitle": "Avengers Spotlight",
+      "localSeriesYear": "1989",
+      "officialSeriesId": 24456,
+      "officialLabel": "Avengers Spotlight (1989 - 1991)",
+      "officialHref": "/comics/series/24456/avengers_spotlight_(1989_-_1991)",
+      "pendingRows": 14,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 46718,
+          "issueNumber": "22",
+          "date": "1989-05-09",
+          "year": 1989
+        },
+        {
+          "gcdId": 46843,
+          "issueNumber": "23",
+          "date": "1989-06-13",
+          "year": 1989
+        },
+        {
+          "gcdId": 46962,
+          "issueNumber": "24",
+          "date": "1989-07-11",
+          "year": 1989
+        },
+        {
+          "gcdId": 47024,
+          "issueNumber": "25",
+          "date": "1989-08-08",
+          "year": 1989
+        },
+        {
+          "gcdId": 47688,
+          "issueNumber": "30",
+          "date": "1990-01-09",
+          "year": 1990
+        },
+        {
+          "gcdId": 47809,
+          "issueNumber": "31",
+          "date": "1990-02-13",
+          "year": 1990
+        },
+        {
+          "gcdId": 47923,
+          "issueNumber": "32",
+          "date": "1990-03-13",
+          "year": 1990
+        },
+        {
+          "gcdId": 48050,
+          "issueNumber": "33",
+          "date": "1990-04-10",
+          "year": 1990
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2578,
+      "localTitle": "Fantastic Force",
+      "localSeriesYear": "1994",
+      "officialSeriesId": 22634,
+      "officialLabel": "Fantastic Force (1994 - 1996)",
+      "officialHref": "/comics/series/22634/fantastic_force_(1994_-_1996)",
+      "pendingRows": 14,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 56215,
+          "issueNumber": "2",
+          "date": "1994-10-16",
+          "year": 1994
+        },
+        {
+          "gcdId": 56483,
+          "issueNumber": "3",
+          "date": "1994-11-19",
+          "year": 1994
+        },
+        {
+          "gcdId": 56632,
+          "issueNumber": "4",
+          "date": "1994-12-20",
+          "year": 1994
+        },
+        {
+          "gcdId": 56785,
+          "issueNumber": "5",
+          "date": "1995-01-17",
+          "year": 1995
+        },
+        {
+          "gcdId": 56942,
+          "issueNumber": "6",
+          "date": "1995-02-17",
+          "year": 1995
+        },
+        {
+          "gcdId": 57542,
+          "issueNumber": "10",
+          "date": "1995-06-19",
+          "year": 1995
+        },
+        {
+          "gcdId": 57691,
+          "issueNumber": "11",
+          "date": "1995-07-20",
+          "year": 1995
+        },
+        {
+          "gcdId": 57835,
+          "issueNumber": "12",
+          "date": "1995-08-19",
+          "year": 1995
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6560,
+      "localTitle": "Special Marvel Edition",
+      "localSeriesYear": "1971",
+      "officialSeriesId": 24266,
+      "officialLabel": "Special Marvel Edition (1971 - 1974)",
+      "officialHref": "/comics/series/24266/special_marvel_edition_(1971_-_1974)",
+      "pendingRows": 14,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 23986,
+          "issueNumber": "1",
+          "date": "1970-09-01",
+          "year": 1970
+        },
+        {
+          "gcdId": 24174,
+          "issueNumber": "2",
+          "date": "1970-12-01",
+          "year": 1970
+        },
+        {
+          "gcdId": 24505,
+          "issueNumber": "3",
+          "date": "1971-04-01",
+          "year": 1971
+        },
+        {
+          "gcdId": 24886,
+          "issueNumber": "4",
+          "date": "1971-09-21",
+          "year": 1971
+        },
+        {
+          "gcdId": 25288,
+          "issueNumber": "5",
+          "date": "1972-04-11",
+          "year": 1972
+        },
+        {
+          "gcdId": 25454,
+          "issueNumber": "6",
+          "date": "1972-06-13",
+          "year": 1972
+        },
+        {
+          "gcdId": 25648,
+          "issueNumber": "7",
+          "date": "1972-08-08",
+          "year": 1972
+        },
+        {
+          "gcdId": 25848,
+          "issueNumber": "8",
+          "date": "1972-10-10",
+          "year": 1972
+        }
+      ]
+    },
+    {
+      "localSeriesId": 897,
+      "localTitle": "Bishop: The Last X-Man",
+      "localSeriesYear": "1999",
+      "officialSeriesId": 3753,
+      "officialLabel": "Bishop: The Last X-Man (1999 - 2001)",
+      "officialHref": "/comics/series/3753/bishop:_the_last_x-man_(1999_-_2001)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 84869,
+          "issueNumber": "1",
+          "date": "1999-08-11",
+          "year": 1999
+        },
+        {
+          "gcdId": 84870,
+          "issueNumber": "2",
+          "date": "1999-09-16",
+          "year": 1999
+        },
+        {
+          "gcdId": 84872,
+          "issueNumber": "4",
+          "date": "1999-11-17",
+          "year": 1999
+        },
+        {
+          "gcdId": 63190,
+          "issueNumber": "5",
+          "date": "1999-12-17",
+          "year": 1999
+        },
+        {
+          "gcdId": 84873,
+          "issueNumber": "6",
+          "date": "2000-01-15",
+          "year": 2000
+        },
+        {
+          "gcdId": 84874,
+          "issueNumber": "7",
+          "date": "2000-02-16",
+          "year": 2000
+        },
+        {
+          "gcdId": 84875,
+          "issueNumber": "8",
+          "date": "2000-03-15",
+          "year": 2000
+        },
+        {
+          "gcdId": 84876,
+          "issueNumber": "9",
+          "date": "2000-04-19",
+          "year": 2000
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2911,
+      "localTitle": "Fury Max",
+      "localSeriesYear": "2012",
+      "officialSeriesId": 14248,
+      "officialLabel": "Fury Max (2012 - 2013)",
+      "officialHref": "/comics/series/14248/fury_max_(2012_-_2013)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 943445,
+          "issueNumber": "1",
+          "date": "2012-05-09",
+          "year": 2012
+        },
+        {
+          "gcdId": 944844,
+          "issueNumber": "2",
+          "date": "2012-05-16",
+          "year": 2012
+        },
+        {
+          "gcdId": 951445,
+          "issueNumber": "3",
+          "date": "2012-06-06",
+          "year": 2012
+        },
+        {
+          "gcdId": 956094,
+          "issueNumber": "4",
+          "date": "2012-07-04",
+          "year": 2012
+        },
+        {
+          "gcdId": 977498,
+          "issueNumber": "5",
+          "date": "2012-08-01",
+          "year": 2012
+        },
+        {
+          "gcdId": 1011422,
+          "issueNumber": "6",
+          "date": "2012-09-26",
+          "year": 2012
+        },
+        {
+          "gcdId": 1037152,
+          "issueNumber": "7",
+          "date": "2012-12-05",
+          "year": 2012
+        },
+        {
+          "gcdId": 1042229,
+          "issueNumber": "8",
+          "date": "2013-01-02",
+          "year": 2013
+        }
+      ]
+    },
+    {
+      "localSeriesId": 4769,
+      "localTitle": "Marvel Preview",
+      "localSeriesYear": "1975",
+      "officialSeriesId": 3718,
+      "officialLabel": "Marvel Preview (1975 - 1980)",
+      "officialHref": "/comics/series/3718/marvel_preview_(1975_-_1980)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 28163,
+          "issueNumber": "1",
+          "date": "1975-02-04",
+          "year": 1975
+        },
+        {
+          "gcdId": 29756,
+          "issueNumber": "5",
+          "date": "1976-01-06",
+          "year": 1976
+        },
+        {
+          "gcdId": 29781,
+          "issueNumber": "6",
+          "date": "1976-04-06",
+          "year": 1976
+        },
+        {
+          "gcdId": 30525,
+          "issueNumber": "9",
+          "date": "1976-12-01",
+          "year": 1976
+        },
+        {
+          "gcdId": 31549,
+          "issueNumber": "12",
+          "date": "1977-11-01",
+          "year": 1977
+        },
+        {
+          "gcdId": 31874,
+          "issueNumber": "13",
+          "date": "1978-01-10",
+          "year": 1978
+        },
+        {
+          "gcdId": 32700,
+          "issueNumber": "16",
+          "date": "1978-11-28",
+          "year": 1978
+        },
+        {
+          "gcdId": 33031,
+          "issueNumber": "17",
+          "date": "1979-02-06",
+          "year": 1979
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5355,
+      "localTitle": "Mortal Thor",
+      "localSeriesYear": "2025",
+      "officialSeriesId": 43910,
+      "officialLabel": "Mortal Thor (2025 - Present)",
+      "officialHref": "/comics/series/43910/mortal_thor_(2025_-_present)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 2766346,
+          "issueNumber": "1 (787)",
+          "date": "2025-08-27",
+          "year": 2025
+        },
+        {
+          "gcdId": 2772216,
+          "issueNumber": "2 (788)",
+          "date": "2025-09-24",
+          "year": 2025
+        },
+        {
+          "gcdId": 2780668,
+          "issueNumber": "3 (789)",
+          "date": "2025-10-29",
+          "year": 2025
+        },
+        {
+          "gcdId": 2788447,
+          "issueNumber": "4 (790)",
+          "date": "2025-11-26",
+          "year": 2025
+        },
+        {
+          "gcdId": 2795903,
+          "issueNumber": "5 (791)",
+          "date": "2025-12-17",
+          "year": 2025
+        },
+        {
+          "gcdId": 2808288,
+          "issueNumber": "6 (792)",
+          "date": "2026-01-21",
+          "year": 2026
+        },
+        {
+          "gcdId": 2817899,
+          "issueNumber": "7 (793)",
+          "date": "2026-02-25",
+          "year": 2026
+        },
+        {
+          "gcdId": 2822862,
+          "issueNumber": "8 (794)",
+          "date": "2026-03-18",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7510,
+      "localTitle": "Supernatural Thrillers",
+      "localSeriesYear": "1972",
+      "officialSeriesId": 23760,
+      "officialLabel": "Supernatural Thrillers (1972 - 1975)",
+      "officialHref": "/comics/series/23760/supernatural_thrillers_(1972_-_1975)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 25745,
+          "issueNumber": "1",
+          "date": "1972-08-29",
+          "year": 1972
+        },
+        {
+          "gcdId": 25952,
+          "issueNumber": "2",
+          "date": "1972-11-14",
+          "year": 1972
+        },
+        {
+          "gcdId": 26335,
+          "issueNumber": "4",
+          "date": "1973-03-20",
+          "year": 1973
+        },
+        {
+          "gcdId": 26899,
+          "issueNumber": "6",
+          "date": "1973-08-14",
+          "year": 1973
+        },
+        {
+          "gcdId": 27492,
+          "issueNumber": "7",
+          "date": "1974-03-18",
+          "year": 1974
+        },
+        {
+          "gcdId": 27661,
+          "issueNumber": "8",
+          "date": "1974-05-21",
+          "year": 1974
+        },
+        {
+          "gcdId": 27855,
+          "issueNumber": "9",
+          "date": "1974-07-16",
+          "year": 1974
+        },
+        {
+          "gcdId": 28039,
+          "issueNumber": "10",
+          "date": "1974-09-17",
+          "year": 1974
+        }
+      ]
+    },
+    {
+      "localSeriesId": 7622,
+      "localTitle": "Terror Inc.",
+      "localSeriesYear": "1992",
+      "officialSeriesId": 21940,
+      "officialLabel": "Terror Inc. (1992 - 1993)",
+      "officialHref": "/comics/series/21940/terror_inc._(1992_-_1993)",
+      "pendingRows": 13,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 51433,
+          "issueNumber": "1",
+          "date": "1992-05-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 51566,
+          "issueNumber": "2",
+          "date": "1992-06-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 51702,
+          "issueNumber": "3",
+          "date": "1992-07-19",
+          "year": 1992
+        },
+        {
+          "gcdId": 51835,
+          "issueNumber": "4",
+          "date": "1992-08-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 51973,
+          "issueNumber": "5",
+          "date": "1992-09-18",
+          "year": 1992
+        },
+        {
+          "gcdId": 52221,
+          "issueNumber": "6",
+          "date": "1992-10-27",
+          "year": 1992
+        },
+        {
+          "gcdId": 52379,
+          "issueNumber": "7",
+          "date": "1992-11-14",
+          "year": 1992
+        },
+        {
+          "gcdId": 52506,
+          "issueNumber": "8",
+          "date": "1992-12-15",
+          "year": 1992
+        }
+      ]
+    },
+    {
+      "localSeriesId": 216,
+      "localTitle": "All-New Official Handbook of the Marvel Universe A to Z",
+      "localSeriesYear": "2006",
+      "officialSeriesId": 1023,
+      "officialLabel": "All-New Official Handbook Of The Marvel Universe A To Z (2006)",
+      "officialHref": "/comics/series/1023/all-new_official_handbook_of_the_marvel_universe_a_to_z_(2006)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 275414,
+          "issueNumber": "1",
+          "date": "2006-01-25",
+          "year": 2006
+        },
+        {
+          "gcdId": 275415,
+          "issueNumber": "2",
+          "date": "2006-02-22",
+          "year": 2006
+        },
+        {
+          "gcdId": 275416,
+          "issueNumber": "3",
+          "date": "2006-03-22",
+          "year": 2006
+        },
+        {
+          "gcdId": 275417,
+          "issueNumber": "4",
+          "date": "2006-04-26",
+          "year": 2006
+        },
+        {
+          "gcdId": 275418,
+          "issueNumber": "5",
+          "date": "2006-05-31",
+          "year": 2006
+        },
+        {
+          "gcdId": 275419,
+          "issueNumber": "6",
+          "date": "2006-06-01",
+          "year": 2006
+        },
+        {
+          "gcdId": 275422,
+          "issueNumber": "9",
+          "date": "2006-07-01",
+          "year": 2006
+        },
+        {
+          "gcdId": 275424,
+          "issueNumber": "11",
+          "date": "2006-11-22",
+          "year": 2006
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1276,
+      "localTitle": "Captain America: Sentinel of Liberty",
+      "localSeriesYear": "1998",
+      "officialSeriesId": 22902,
+      "officialLabel": "Captain America Sentinel Of Liberty (1998 - 1999)",
+      "officialHref": "/comics/series/22902/captain_america_sentinel_of_liberty_(1998_-_1999)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 238821,
+          "issueNumber": "1",
+          "date": "1998-07-01",
+          "year": 1998
+        },
+        {
+          "gcdId": 238822,
+          "issueNumber": "2",
+          "date": "1998-08-06",
+          "year": 1998
+        },
+        {
+          "gcdId": 238823,
+          "issueNumber": "3",
+          "date": "1998-09-06",
+          "year": 1998
+        },
+        {
+          "gcdId": 238824,
+          "issueNumber": "4",
+          "date": "1998-10-07",
+          "year": 1998
+        },
+        {
+          "gcdId": 238825,
+          "issueNumber": "5",
+          "date": "1998-11-04",
+          "year": 1998
+        },
+        {
+          "gcdId": 238826,
+          "issueNumber": "6",
+          "date": "1998-12-07",
+          "year": 1998
+        },
+        {
+          "gcdId": 238827,
+          "issueNumber": "7",
+          "date": "1999-01-06",
+          "year": 1999
+        },
+        {
+          "gcdId": 238828,
+          "issueNumber": "8",
+          "date": "1999-02-04",
+          "year": 1999
+        }
+      ]
+    },
+    {
+      "localSeriesId": 1474,
+      "localTitle": "Civil War Chronicles",
+      "localSeriesYear": "2007",
+      "officialSeriesId": 2546,
+      "officialLabel": "Civil War Chronicles (2007 - 2008)",
+      "officialHref": "/comics/series/2546/civil_war_chronicles_(2007_-_2008)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 369705,
+          "issueNumber": "1",
+          "date": "2007-07-11",
+          "year": 2007
+        },
+        {
+          "gcdId": 369706,
+          "issueNumber": "2",
+          "date": "2007-08-08",
+          "year": 2007
+        },
+        {
+          "gcdId": 369707,
+          "issueNumber": "3",
+          "date": "2007-09-12",
+          "year": 2007
+        },
+        {
+          "gcdId": 369708,
+          "issueNumber": "4",
+          "date": "2007-10-10",
+          "year": 2007
+        },
+        {
+          "gcdId": 407275,
+          "issueNumber": "5",
+          "date": "2007-11-14",
+          "year": 2007
+        },
+        {
+          "gcdId": 407276,
+          "issueNumber": "6",
+          "date": "2007-12-12",
+          "year": 2007
+        },
+        {
+          "gcdId": 407277,
+          "issueNumber": "7",
+          "date": "2008-01-09",
+          "year": 2008
+        },
+        {
+          "gcdId": 417550,
+          "issueNumber": "8",
+          "date": "2008-02-13",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2010,
+      "localTitle": "Deadpool Max",
+      "localSeriesYear": "2010",
+      "officialSeriesId": 9887,
+      "officialLabel": "Deadpool Max (2010 - 2011)",
+      "officialHref": "/comics/series/9887/deadpool_max_(2010_-_2011)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 781655,
+          "issueNumber": "1",
+          "date": "2010-10-06",
+          "year": 2010
+        },
+        {
+          "gcdId": 787967,
+          "issueNumber": "2",
+          "date": "2010-11-17",
+          "year": 2010
+        },
+        {
+          "gcdId": 793579,
+          "issueNumber": "3",
+          "date": "2010-12-15",
+          "year": 2010
+        },
+        {
+          "gcdId": 797812,
+          "issueNumber": "4",
+          "date": "2011-01-19",
+          "year": 2011
+        },
+        {
+          "gcdId": 807228,
+          "issueNumber": "5",
+          "date": "2011-02-16",
+          "year": 2011
+        },
+        {
+          "gcdId": 814946,
+          "issueNumber": "6",
+          "date": "2011-03-23",
+          "year": 2011
+        },
+        {
+          "gcdId": 823499,
+          "issueNumber": "7",
+          "date": "2011-04-20",
+          "year": 2011
+        },
+        {
+          "gcdId": 834990,
+          "issueNumber": "8",
+          "date": "2011-05-18",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "localSeriesId": 2733,
+      "localTitle": "Fantastic Four: World's Greatest Comics Magazine",
+      "localSeriesYear": "2001",
+      "officialSeriesId": 26239,
+      "officialLabel": "Fantastic Four: World's Greatest Comics Magazine (2001 - 2002)",
+      "officialHref": "/comics/series/26239/fantastic_four:_world&#x27;s_greatest_comics_magazine_(2001_-_2002)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 69152,
+          "issueNumber": "1",
+          "date": "2000-12-20",
+          "year": 2000
+        },
+        {
+          "gcdId": 69153,
+          "issueNumber": "2",
+          "date": "2001-01-17",
+          "year": 2001
+        },
+        {
+          "gcdId": 69154,
+          "issueNumber": "3",
+          "date": "2001-02-21",
+          "year": 2001
+        },
+        {
+          "gcdId": 69155,
+          "issueNumber": "4",
+          "date": "2001-04-04",
+          "year": 2001
+        },
+        {
+          "gcdId": 69156,
+          "issueNumber": "5",
+          "date": "2001-04-04",
+          "year": 2001
+        },
+        {
+          "gcdId": 69157,
+          "issueNumber": "6",
+          "date": "2001-05-16",
+          "year": 2001
+        },
+        {
+          "gcdId": 69158,
+          "issueNumber": "7",
+          "date": "2001-06-20",
+          "year": 2001
+        },
+        {
+          "gcdId": 69159,
+          "issueNumber": "8",
+          "date": "2001-07-18",
+          "year": 2001
+        }
+      ]
+    },
+    {
+      "localSeriesId": 3632,
+      "localTitle": "Incredible Hulk",
+      "localSeriesYear": "2000",
+      "officialSeriesId": 2021,
+      "officialLabel": "Incredible Hulk (1962 - 1999)",
+      "officialHref": "/comics/series/2021/incredible_hulk_(1962_-_1999)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 63820,
+          "issueNumber": "12",
+          "date": "2000-01-19",
+          "year": 2000
+        },
+        {
+          "gcdId": 63821,
+          "issueNumber": "13",
+          "date": "2000-02-16",
+          "year": 2000
+        },
+        {
+          "gcdId": 63822,
+          "issueNumber": "14",
+          "date": "2000-03-15",
+          "year": 2000
+        },
+        {
+          "gcdId": 63823,
+          "issueNumber": "15",
+          "date": "2000-04-19",
+          "year": 2000
+        },
+        {
+          "gcdId": 63824,
+          "issueNumber": "16",
+          "date": "2000-05-24",
+          "year": 2000
+        },
+        {
+          "gcdId": 63825,
+          "issueNumber": "17",
+          "date": "2000-06-21",
+          "year": 2000
+        },
+        {
+          "gcdId": 63826,
+          "issueNumber": "18",
+          "date": "2000-07-26",
+          "year": 2000
+        },
+        {
+          "gcdId": 63827,
+          "issueNumber": "19",
+          "date": "2000-08-16",
+          "year": 2000
+        }
+      ]
+    },
+    {
+      "localSeriesId": 3632,
+      "localTitle": "Incredible Hulk",
+      "localSeriesYear": "2009",
+      "officialSeriesId": 24897,
+      "officialLabel": "Incredible Hulk (2009 - 2010)",
+      "officialHref": "/comics/series/24897/incredible_hulk_(2009_-_2010)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 666228,
+          "issueNumber": "600",
+          "date": "2009-07-22",
+          "year": 2009
+        },
+        {
+          "gcdId": 666229,
+          "issueNumber": "601",
+          "date": "2009-08-26",
+          "year": 2009
+        },
+        {
+          "gcdId": 666230,
+          "issueNumber": "602",
+          "date": "2009-09-23",
+          "year": 2009
+        },
+        {
+          "gcdId": 697796,
+          "issueNumber": "603",
+          "date": "2009-10-21",
+          "year": 2009
+        },
+        {
+          "gcdId": 697797,
+          "issueNumber": "604",
+          "date": "2009-11-18",
+          "year": 2009
+        },
+        {
+          "gcdId": 697798,
+          "issueNumber": "605",
+          "date": "2009-12-09",
+          "year": 2009
+        },
+        {
+          "gcdId": 703409,
+          "issueNumber": "606",
+          "date": "2010-01-20",
+          "year": 2010
+        },
+        {
+          "gcdId": 721976,
+          "issueNumber": "607",
+          "date": "2010-02-17",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "localSeriesId": 5894,
+      "localTitle": "Punisher",
+      "localSeriesYear": "2004",
+      "officialSeriesId": 6601,
+      "officialLabel": "Punisher (2009 - 2010)",
+      "officialHref": "/comics/series/6601/punisher_(2009_-_2010)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 541247,
+          "issueNumber": "54",
+          "date": "2008-01-23",
+          "year": 2008
+        },
+        {
+          "gcdId": 541248,
+          "issueNumber": "55",
+          "date": "2008-03-12",
+          "year": 2008
+        },
+        {
+          "gcdId": 541249,
+          "issueNumber": "56",
+          "date": "2008-04-09",
+          "year": 2008
+        },
+        {
+          "gcdId": 541250,
+          "issueNumber": "57",
+          "date": "2008-05-14",
+          "year": 2008
+        },
+        {
+          "gcdId": 541251,
+          "issueNumber": "58",
+          "date": "2008-06-18",
+          "year": 2008
+        },
+        {
+          "gcdId": 541252,
+          "issueNumber": "59",
+          "date": "2008-07-16",
+          "year": 2008
+        },
+        {
+          "gcdId": 541253,
+          "issueNumber": "60",
+          "date": "2008-08-13",
+          "year": 2008
+        },
+        {
+          "gcdId": 541254,
+          "issueNumber": "61",
+          "date": "2008-08-20",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "localSeriesId": 6687,
+      "localTitle": "Spider-Man Adventures",
+      "localSeriesYear": "1994",
+      "officialSeriesId": 29351,
+      "officialLabel": "Spider-Man Adventures (1994 - 1996)",
+      "officialHref": "/comics/series/29351/spider-man_adventures_(1994_-_1996)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 172956,
+          "issueNumber": "1",
+          "date": "1994-10-25",
+          "year": 1994
+        },
+        {
+          "gcdId": 172957,
+          "issueNumber": "2",
+          "date": "1994-11-29",
+          "year": 1994
+        },
+        {
+          "gcdId": 172958,
+          "issueNumber": "3",
+          "date": "1994-12-27",
+          "year": 1994
+        },
+        {
+          "gcdId": 172959,
+          "issueNumber": "4",
+          "date": "1995-01-03",
+          "year": 1995
+        },
+        {
+          "gcdId": 172960,
+          "issueNumber": "5",
+          "date": "1995-02-28",
+          "year": 1995
+        },
+        {
+          "gcdId": 172961,
+          "issueNumber": "6",
+          "date": "1995-03-28",
+          "year": 1995
+        },
+        {
+          "gcdId": 172962,
+          "issueNumber": "7",
+          "date": "1995-04-25",
+          "year": 1995
+        },
+        {
+          "gcdId": 172966,
+          "issueNumber": "11",
+          "date": "1995-08-31",
+          "year": 1995
+        }
+      ]
+    },
+    {
+      "localSeriesId": 8795,
+      "localTitle": "Ultimate Avengers",
+      "localSeriesYear": "2009",
+      "officialSeriesId": 8498,
+      "officialLabel": "Ultimate Avengers (2009 - 2010)",
+      "officialHref": "/comics/series/8498/ultimate_avengers_(2009_-_2010)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 755543,
+          "issueNumber": "7",
+          "date": "2010-04-28",
+          "year": 2010
+        },
+        {
+          "gcdId": 757346,
+          "issueNumber": "8",
+          "date": "2010-05-19",
+          "year": 2010
+        },
+        {
+          "gcdId": 760876,
+          "issueNumber": "9",
+          "date": "2010-06-09",
+          "year": 2010
+        },
+        {
+          "gcdId": 763320,
+          "issueNumber": "10",
+          "date": "2010-06-23",
+          "year": 2010
+        },
+        {
+          "gcdId": 769619,
+          "issueNumber": "11",
+          "date": "2010-07-21",
+          "year": 2010
+        },
+        {
+          "gcdId": 771503,
+          "issueNumber": "12",
+          "date": "2010-08-04",
+          "year": 2010
+        },
+        {
+          "gcdId": 771843,
+          "issueNumber": "13",
+          "date": "2010-08-11",
+          "year": 2010
+        },
+        {
+          "gcdId": 776258,
+          "issueNumber": "14",
+          "date": "2010-09-09",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "localSeriesId": 9479,
+      "localTitle": "Wolverine",
+      "localSeriesYear": "2024",
+      "officialSeriesId": 38960,
+      "officialLabel": "Wolverine (2024 - Present)",
+      "officialHref": "/comics/series/38960/wolverine_(2024_-_present)",
+      "pendingRows": 12,
+      "matchModes": [
+        "exact-title"
+      ],
+      "sampleRows": [
+        {
+          "gcdId": 2684970,
+          "issueNumber": "4 (395) [396]",
+          "date": "2024-12-04",
+          "year": 2024
+        },
+        {
+          "gcdId": 2802762,
+          "issueNumber": "14 (406)",
+          "date": "2026-01-07",
+          "year": 2026
+        },
+        {
+          "gcdId": 2811275,
+          "issueNumber": "15 (407)",
+          "date": "2026-02-04",
+          "year": 2026
+        },
+        {
+          "gcdId": 2815416,
+          "issueNumber": "16 (408)",
+          "date": "2026-02-18",
+          "year": 2026
+        },
+        {
+          "gcdId": 2819544,
+          "issueNumber": "17 (409)",
+          "date": "2026-03-04",
+          "year": 2026
+        },
+        {
+          "gcdId": 2826008,
+          "issueNumber": "18 (410)",
+          "date": "2026-04-08",
+          "year": 2026
+        },
+        {
+          "gcdId": 2829200,
+          "issueNumber": "19 (411)",
+          "date": "2026-04-22",
+          "year": 2026
+        },
+        {
+          "gcdId": 2833409,
+          "issueNumber": "20 (412)",
+          "date": "2026-05-13",
+          "year": 2026
+        }
+      ]
+    }
+  ],
+  "topUnmappedSeries": [
+    {
+      "seriesId": 3979,
+      "title": "Joker",
+      "seriesYear": "1969",
+      "count": 180
+    },
+    {
+      "seriesId": 2933,
+      "title": "G.I. Joe, a Real American Hero",
+      "seriesYear": "1982",
+      "count": 158
+    },
+    {
+      "seriesId": 6350,
+      "title": "Sergio Aragonés Groo the Wanderer",
+      "seriesYear": "1985",
+      "count": 120
+    },
+    {
+      "seriesId": 1409,
+      "title": "Cartoons and Gags",
+      "seriesYear": "1959",
+      "count": 101
+    },
+    {
+      "seriesId": 1589,
+      "title": "Conan Saga",
+      "seriesYear": "1987",
+      "count": 97
+    },
+    {
+      "seriesId": 1651,
+      "title": "Crazy Magazine",
+      "seriesYear": "1973",
+      "count": 94
+    },
+    {
+      "seriesId": 3632,
+      "title": "Incredible Hulk",
+      "seriesYear": "2000",
+      "count": 90
+    },
+    {
+      "seriesId": 4130,
+      "title": "Laugh Parade",
+      "seriesYear": "1961",
+      "count": 86
+    },
+    {
+      "seriesId": 3964,
+      "title": "Jest",
+      "seriesYear": "1941",
+      "count": 83
+    },
+    {
+      "seriesId": 5274,
+      "title": "Miss America Magazine",
+      "seriesYear": "1944",
+      "count": 82
+    },
+    {
+      "seriesId": 5825,
+      "title": "Popular Jokes",
+      "seriesYear": "1961",
+      "count": 81
+    },
+    {
+      "seriesId": 8102,
+      "title": "The Transformers",
+      "seriesYear": "1984",
+      "count": 80
+    },
+    {
+      "seriesId": 5188,
+      "title": "Micronauts",
+      "seriesYear": "1984",
+      "count": 79
+    },
+    {
+      "seriesId": 1574,
+      "title": "Comedy",
+      "seriesYear": "1951",
+      "count": 78
+    },
+    {
+      "seriesId": 6119,
+      "title": "Rom",
+      "seriesYear": "1979",
+      "count": 75
+    },
+    {
+      "seriesId": 5016,
+      "title": "Marvel's Greatest Comics",
+      "seriesYear": "1969",
+      "count": 74
+    },
+    {
+      "seriesId": 5417,
+      "title": "My Own Romance",
+      "seriesYear": "1949",
+      "count": 73
+    },
+    {
+      "seriesId": 1407,
+      "title": "Cartoon Laughs",
+      "seriesYear": "1962",
+      "count": 72
+    },
+    {
+      "seriesId": 841,
+      "title": "Battle",
+      "seriesYear": "1951",
+      "count": 70
+    },
+    {
+      "seriesId": 8993,
+      "title": "Uncanny Tales",
+      "seriesYear": "1973",
+      "count": 68
+    },
+    {
+      "seriesId": 4850,
+      "title": "Marvel Tales",
+      "seriesYear": "1949",
+      "count": 67
+    },
+    {
+      "seriesId": 9900,
+      "title": "X-Men Classic",
+      "seriesYear": "1990",
+      "count": 65
+    },
+    {
+      "seriesId": 4213,
+      "title": "Lovers",
+      "seriesYear": "1949",
+      "count": 64
+    },
+    {
+      "seriesId": 835,
+      "title": "Barbie",
+      "seriesYear": "1991",
+      "count": 63
+    },
+    {
+      "seriesId": 5422,
+      "title": "Mystic",
+      "seriesYear": "1951",
+      "count": 61
+    },
+    {
+      "seriesId": 5828,
+      "title": "Power Man and Iron Fist",
+      "seriesYear": "1981",
+      "count": 59
+    },
+    {
+      "seriesId": 7626,
+      "title": "Terry-Toons Comics",
+      "seriesYear": "1942",
+      "count": 59
+    },
+    {
+      "seriesId": 3990,
+      "title": "Journey into Unknown Worlds",
+      "seriesYear": "1950",
+      "count": 58
+    },
+    {
+      "seriesId": 7063,
+      "title": "Spidey Super Stories",
+      "seriesYear": "1974",
+      "count": 57
+    },
+    {
+      "seriesId": 3311,
+      "title": "Heathcliff",
+      "seriesYear": "1985",
+      "count": 56
+    },
+    {
+      "seriesId": 683,
+      "title": "Avengers West Coast",
+      "seriesYear": "1989",
+      "count": 55
+    },
+    {
+      "seriesId": 1056,
+      "title": "Breezy",
+      "seriesYear": "1969",
+      "count": 55
+    },
+    {
+      "seriesId": 5824,
+      "title": "Popular Cartoons",
+      "seriesYear": "1968",
+      "count": 55
+    },
+    {
+      "seriesId": 9459,
+      "title": "Wild Western",
+      "seriesYear": "1948",
+      "count": 55
+    },
+    {
+      "seriesId": 5421,
+      "title": "Mystery Tales",
+      "seriesYear": "1952",
+      "count": 54
+    },
+    {
+      "seriesId": 837,
+      "title": "Barbie Fashion",
+      "seriesYear": "1991",
+      "count": 53
+    },
+    {
+      "seriesId": 1571,
+      "title": "Combat Kelly",
+      "seriesYear": "1972",
+      "count": 53
+    },
+    {
+      "seriesId": 4003,
+      "title": "Justice",
+      "seriesYear": "1947",
+      "count": 52
+    },
+    {
+      "seriesId": 10396,
+      "title": "Zip",
+      "seriesYear": "1964",
+      "count": 52
+    },
+    {
+      "seriesId": 2904,
+      "title": "Fun House Comedy",
+      "seriesYear": "1964",
+      "count": 51
+    },
+    {
+      "seriesId": 156,
+      "title": "ALF",
+      "seriesYear": "1988",
+      "count": 50
+    },
+    {
+      "seriesId": 9220,
+      "title": "War Comics",
+      "seriesYear": "1950",
+      "count": 49
+    },
+    {
+      "seriesId": 846,
+      "title": "Battlefront",
+      "seriesYear": "1952",
+      "count": 48
+    },
+    {
+      "seriesId": 1401,
+      "title": "Cartoon Capers",
+      "seriesYear": "1966",
+      "count": 47
+    },
+    {
+      "seriesId": 4882,
+      "title": "Marvel Triple Action",
+      "seriesYear": "1972",
+      "count": 47
+    },
+    {
+      "seriesId": 6357,
+      "title": "Sgt. Fury and His Howling Commandos",
+      "seriesYear": "1974",
+      "count": 47
+    },
+    {
+      "seriesId": 5412,
+      "title": "My Friend Irma",
+      "seriesYear": "1950",
+      "count": 46
+    },
+    {
+      "seriesId": 7928,
+      "title": "The Mighty Marvel Western",
+      "seriesYear": "1968",
+      "count": 46
+    },
+    {
+      "seriesId": 8016,
+      "title": "The Ren & Stimpy Show",
+      "seriesYear": "1992",
+      "count": 44
+    },
+    {
+      "seriesId": 5271,
+      "title": "Miss America",
+      "seriesYear": "1953",
+      "count": 43
+    },
+    {
+      "seriesId": 7964,
+      "title": "The Official Handbook of the Marvel Universe",
+      "seriesYear": "1989",
+      "count": 43
+    },
+    {
+      "seriesId": 3980,
+      "title": "Joker Comics",
+      "seriesYear": "1942",
+      "count": 42
+    },
+    {
+      "seriesId": 9338,
+      "title": "Western Gunfighters",
+      "seriesYear": "1970",
+      "count": 41
+    },
+    {
+      "seriesId": 2215,
+      "title": "Doctor Aphra",
+      "seriesYear": "2017",
+      "count": 40
+    },
+    {
+      "seriesId": 2967,
+      "title": "Gee-Whiz!",
+      "seriesYear": "1955",
+      "count": 40
+    },
+    {
+      "seriesId": 4210,
+      "title": "Love Tales",
+      "seriesYear": "1949",
+      "count": 39
+    },
+    {
+      "seriesId": 155,
+      "title": "Akira",
+      "seriesYear": "1988",
+      "count": 38
+    },
+    {
+      "seriesId": 170,
+      "title": "Alien Legion",
+      "seriesYear": "1987",
+      "count": 38
+    },
+    {
+      "seriesId": 5894,
+      "title": "Punisher",
+      "seriesYear": "2004",
+      "count": 38
+    },
+    {
+      "seriesId": 8764,
+      "title": "True Secrets",
+      "seriesYear": "1950",
+      "count": 38
+    },
+    {
+      "seriesId": 9441,
+      "title": "Where Monsters Dwell",
+      "seriesYear": "1970",
+      "count": 38
+    },
+    {
+      "seriesId": 4840,
+      "title": "Marvel Super Special",
+      "seriesYear": "1978",
+      "count": 37
+    },
+    {
+      "seriesId": 1575,
+      "title": "Comedy Comics",
+      "seriesYear": "1948",
+      "count": 36
+    },
+    {
+      "seriesId": 1603,
+      "title": "Conan the King",
+      "seriesYear": "1984",
+      "count": 36
+    },
+    {
+      "seriesId": 3012,
+      "title": "Georgie Comics",
+      "seriesYear": "1945",
+      "count": 36
+    },
+    {
+      "seriesId": 4407,
+      "title": "Marvel Classics Comics",
+      "seriesYear": "1976",
+      "count": 36
+    },
+    {
+      "seriesId": 5470,
+      "title": "Nellie the Nurse Comics",
+      "seriesYear": "1945",
+      "count": 36
+    },
+    {
+      "seriesId": 7965,
+      "title": "The Official Handbook of the Marvel Universe: Master Edition",
+      "seriesYear": "1990",
+      "count": 36
+    },
+    {
+      "seriesId": 2430,
+      "title": "Epic Illustrated",
+      "seriesYear": "1980",
+      "count": 34
+    },
+    {
+      "seriesId": 6530,
+      "title": "Snappy",
+      "seriesYear": "1955",
+      "count": 34
+    },
+    {
+      "seriesId": 6576,
+      "title": "Spellbound",
+      "seriesYear": "1952",
+      "count": 34
+    },
+    {
+      "seriesId": 7810,
+      "title": "The Further Adventures of Indiana Jones",
+      "seriesYear": "1983",
+      "count": 34
+    },
+    {
+      "seriesId": 9728,
+      "title": "Wyatt Earp",
+      "seriesYear": "1955",
+      "count": 34
+    },
+    {
+      "seriesId": 1408,
+      "title": "Cartoon Parade",
+      "seriesYear": "1972",
+      "count": 32
+    },
+    {
+      "seriesId": 1457,
+      "title": "Chicks and Chuckles",
+      "seriesYear": "1955",
+      "count": 32
+    },
+    {
+      "seriesId": 2374,
+      "title": "ElfQuest",
+      "seriesYear": "1985",
+      "count": 32
+    },
+    {
+      "seriesId": 4806,
+      "title": "Marvel Super Action",
+      "seriesYear": "2011",
+      "count": 32
+    },
+    {
+      "seriesId": 105,
+      "title": "Adventures into Terror",
+      "seriesYear": "1950",
+      "count": 31
+    },
+    {
+      "seriesId": 2739,
+      "title": "Fear",
+      "seriesYear": "1970",
+      "count": 31
+    },
+    {
+      "seriesId": 6987,
+      "title": "Spider-Man: The Manga",
+      "seriesYear": "1997",
+      "count": 31
+    },
+    {
+      "seriesId": 8945,
+      "title": "Ultimates",
+      "seriesYear": "2011",
+      "count": 31
+    },
+    {
+      "seriesId": 106,
+      "title": "Adventures into Weird Worlds",
+      "seriesYear": "1952",
+      "count": 30
+    },
+    {
+      "seriesId": 842,
+      "title": "Battle Action",
+      "seriesYear": "1952",
+      "count": 30
+    },
+    {
+      "seriesId": 1404,
+      "title": "Cartoon Fun and Comedy",
+      "seriesYear": "1975",
+      "count": 30
+    },
+    {
+      "seriesId": 6044,
+      "title": "Red Sonja",
+      "seriesYear": "1983",
+      "count": 30
+    },
+    {
+      "seriesId": 8032,
+      "title": "The Ringo Kid",
+      "seriesYear": "1970",
+      "count": 30
+    },
+    {
+      "seriesId": 1570,
+      "title": "Combat Casey",
+      "seriesYear": "1953",
+      "count": 29
+    },
+    {
+      "seriesId": 5752,
+      "title": "Patsy and Her Pals",
+      "seriesYear": "1953",
+      "count": 29
+    },
+    {
+      "seriesId": 5804,
+      "title": "Planet of the Apes",
+      "seriesYear": "1974",
+      "count": 29
+    },
+    {
+      "seriesId": 7522,
+      "title": "Suspense",
+      "seriesYear": "1949",
+      "count": 29
+    },
+    {
+      "seriesId": 7602,
+      "title": "Tarzan",
+      "seriesYear": "1977",
+      "count": 29
+    },
+    {
+      "seriesId": 854,
+      "title": "Beavis & Butt-Head",
+      "seriesYear": "1994",
+      "count": 28
+    },
+    {
+      "seriesId": 2930,
+      "title": "G.I. Joe Special Missions",
+      "seriesYear": "1986",
+      "count": 28
+    },
+    {
+      "seriesId": 3972,
+      "title": "John Carter, Warlord of Mars",
+      "seriesYear": "1977",
+      "count": 28
+    },
+    {
+      "seriesId": 4104,
+      "title": "Krazy Komics",
+      "seriesYear": "1948",
+      "count": 28
+    },
+    {
+      "seriesId": 4265,
+      "title": "Man Comics",
+      "seriesYear": "1949",
+      "count": 28
+    },
+    {
+      "seriesId": 864,
+      "title": "Best Cartoons from the Editors of Male & Stag",
+      "seriesYear": "1970",
+      "count": 26
+    },
+    {
+      "seriesId": 1461,
+      "title": "Chili",
+      "seriesYear": "1969",
+      "count": 26
+    },
+    {
+      "seriesId": 2325,
+      "title": "Dreadstar",
+      "seriesYear": "1982",
+      "count": 26
+    },
+    {
+      "seriesId": 3408,
+      "title": "Homer, the Happy Ghost",
+      "seriesYear": "1969",
+      "count": 26
+    }
+  ],
+  "ambiguousSample": [
+    {
+      "gcdId": 2802839,
+      "seriesId": 4345,
+      "title": "Marvel Adventures Spider-Man",
+      "seriesYear": "2007",
+      "issueNumber": "6 [Food Lion Giveaway]",
+      "date": "2007-01-15",
+      "candidates": [
+        {
+          "seriesId": 866,
+          "href": "/comics/series/866/marvel_adventures_spider-man_(2005_-_2010)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2010)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9748,
+          "href": "/comics/series/9748/marvel_adventures_spider-man_(2005_-_2012)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2012)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 629098,
+      "seriesId": 313,
+      "title": "Amazing Spider-Man Annual",
+      "seriesYear": "2008",
+      "issueNumber": "1 (35)",
+      "date": "2008-10-29",
+      "candidates": [
+        {
+          "seriesId": 2984,
+          "href": "/comics/series/2984/amazing_spider-man_annual_(1964_-_2018)",
+          "label": "Amazing Spider-Man Annual (1964 - 2018)",
+          "baseTitle": "Amazing Spider-Man Annual",
+          "startYear": 1964,
+          "endYear": 2018,
+          "present": false,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 46091,
+          "href": "/comics/series/46091/amazing_spider-man_annual_(2009_-_present)",
+          "label": "AMAZING SPIDER-MAN ANNUAL (2009 - Present)",
+          "baseTitle": "AMAZING SPIDER-MAN ANNUAL",
+          "startYear": 2009,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 758105,
+      "seriesId": 4345,
+      "title": "Marvel Adventures Spider-Man",
+      "seriesYear": "2010",
+      "issueNumber": "2",
+      "date": "2010-05-26",
+      "candidates": [
+        {
+          "seriesId": 866,
+          "href": "/comics/series/866/marvel_adventures_spider-man_(2005_-_2010)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2010)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9748,
+          "href": "/comics/series/9748/marvel_adventures_spider-man_(2005_-_2012)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2012)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 770933,
+      "seriesId": 4345,
+      "title": "Marvel Adventures Spider-Man",
+      "seriesYear": "2010",
+      "issueNumber": "4",
+      "date": "2010-07-28",
+      "candidates": [
+        {
+          "seriesId": 866,
+          "href": "/comics/series/866/marvel_adventures_spider-man_(2005_-_2010)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2010)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9748,
+          "href": "/comics/series/9748/marvel_adventures_spider-man_(2005_-_2012)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2012)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 772250,
+      "seriesId": 4345,
+      "title": "Marvel Adventures Spider-Man",
+      "seriesYear": "2010",
+      "issueNumber": "5",
+      "date": "2010-08-25",
+      "candidates": [
+        {
+          "seriesId": 866,
+          "href": "/comics/series/866/marvel_adventures_spider-man_(2005_-_2010)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2010)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9748,
+          "href": "/comics/series/9748/marvel_adventures_spider-man_(2005_-_2012)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2012)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 814931,
+      "seriesId": 4345,
+      "title": "Marvel Adventures Spider-Man",
+      "seriesYear": "2010",
+      "issueNumber": "12",
+      "date": "2011-03-23",
+      "candidates": [
+        {
+          "seriesId": 866,
+          "href": "/comics/series/866/marvel_adventures_spider-man_(2005_-_2010)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2010)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9748,
+          "href": "/comics/series/9748/marvel_adventures_spider-man_(2005_-_2012)",
+          "label": "Marvel Adventures Spider-Man (2005 - 2012)",
+          "baseTitle": "Marvel Adventures Spider-Man",
+          "startYear": 2005,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "marvel adventures spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 817103,
+      "seriesId": 313,
+      "title": "Amazing Spider-Man Annual",
+      "seriesYear": "2008",
+      "issueNumber": "38",
+      "date": "2011-04-06",
+      "candidates": [
+        {
+          "seriesId": 2984,
+          "href": "/comics/series/2984/amazing_spider-man_annual_(1964_-_2018)",
+          "label": "Amazing Spider-Man Annual (1964 - 2018)",
+          "baseTitle": "Amazing Spider-Man Annual",
+          "startYear": 1964,
+          "endYear": 2018,
+          "present": false,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 46091,
+          "href": "/comics/series/46091/amazing_spider-man_annual_(2009_-_present)",
+          "label": "AMAZING SPIDER-MAN ANNUAL (2009 - Present)",
+          "baseTitle": "AMAZING SPIDER-MAN ANNUAL",
+          "startYear": 2009,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 9802,
+          "href": "/comics/series/9802/amazing_spider-man_annual_(2010)",
+          "label": "Amazing Spider-Man Annual (2010)",
+          "baseTitle": "Amazing Spider-Man Annual",
+          "startYear": 2010,
+          "endYear": 2010,
+          "present": false,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 46103,
+          "href": "/comics/series/46103/amazing_spider-man_annual_(2012_-_present)",
+          "label": "AMAZING SPIDER-MAN ANNUAL (2012 - Present)",
+          "baseTitle": "AMAZING SPIDER-MAN ANNUAL",
+          "startYear": 2012,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1096843,
+      "seriesId": 2579,
+      "title": "Fantastic Four",
+      "seriesYear": "2013",
+      "issueNumber": "5AU",
+      "date": "2013-03-27",
+      "candidates": [
+        {
+          "seriesId": 421,
+          "href": "/comics/series/421/fantastic_four_(1998_-_2012)",
+          "label": "Fantastic Four (1998 - 2012)",
+          "baseTitle": "Fantastic Four",
+          "startYear": 1998,
+          "endYear": 2012,
+          "present": false,
+          "normTitle": "fantastic four",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 16557,
+          "href": "/comics/series/16557/fantastic_four_(2012_-_2014)",
+          "label": "Fantastic Four (2012 - 2014)",
+          "baseTitle": "Fantastic Four",
+          "startYear": 2012,
+          "endYear": 2014,
+          "present": false,
+          "normTitle": "fantastic four",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 18700,
+          "href": "/comics/series/18700/fantastic_four_(2014_-_2015)",
+          "label": "Fantastic Four (2014 - 2015)",
+          "baseTitle": "Fantastic Four",
+          "startYear": 2014,
+          "endYear": 2015,
+          "present": false,
+          "normTitle": "fantastic four",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1671853,
+      "seriesId": 229,
+      "title": "All-New X-Men",
+      "seriesYear": "2016",
+      "issueNumber": "1.MU",
+      "date": "2017-02-01",
+      "candidates": [
+        {
+          "seriesId": 20622,
+          "href": "/comics/series/20622/all-new_x-men_(2015_-_2017)",
+          "label": "All-New X-Men (2015 - 2017)",
+          "baseTitle": "All-New X-Men",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "all new x men",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19988,
+          "href": "/comics/series/19988/all-new_x-men_(2015_-_2017)",
+          "label": "All-New X-Men (2015 - 2017)",
+          "baseTitle": "All-New X-Men",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "all new x men",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1680026,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2015",
+      "issueNumber": "1.MU",
+      "date": "2017-03-08",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1687134,
+      "seriesId": 538,
+      "title": "Avengers",
+      "seriesYear": "2017",
+      "issueNumber": "5.1",
+      "date": "2017-03-29",
+      "candidates": [
+        {
+          "seriesId": 24229,
+          "href": "/comics/series/24229/avengers_(2018_-_2023)",
+          "label": "Avengers (2018 - 2023)",
+          "baseTitle": "Avengers",
+          "startYear": 2018,
+          "endYear": 2023,
+          "present": false,
+          "normTitle": "avengers",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 22547,
+          "href": "/comics/series/22547/avengers_(2016_-_2018)",
+          "label": "Avengers (2016 - 2018)",
+          "baseTitle": "Avengers",
+          "startYear": 2016,
+          "endYear": 2018,
+          "present": false,
+          "normTitle": "avengers",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1747048,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2018",
+      "issueNumber": "146",
+      "date": "2017-11-01",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1757711,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2018",
+      "issueNumber": "147",
+      "date": "2017-11-15",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1762589,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2018",
+      "issueNumber": "148",
+      "date": "2017-12-06",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1769741,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2018",
+      "issueNumber": "149",
+      "date": "2017-12-20",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1773378,
+      "seriesId": 3184,
+      "title": "Guardians of the Galaxy",
+      "seriesYear": "2018",
+      "issueNumber": "150",
+      "date": "2018-01-03",
+      "candidates": [
+        {
+          "seriesId": 20465,
+          "href": "/comics/series/20465/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians of the Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians of the Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 19440,
+          "href": "/comics/series/19440/guardians_of_the_galaxy_(2015_-_2017)",
+          "label": "Guardians Of The Galaxy (2015 - 2017)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2015,
+          "endYear": 2017,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 26480,
+          "href": "/comics/series/26480/guardians_of_the_galaxy_(2019)",
+          "label": "Guardians Of The Galaxy (2019)",
+          "baseTitle": "Guardians Of The Galaxy",
+          "startYear": 2019,
+          "endYear": 2019,
+          "present": false,
+          "normTitle": "guardians of the galaxy",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 1785543,
+      "seriesId": 313,
+      "title": "Amazing Spider-Man Annual",
+      "seriesYear": "2017",
+      "issueNumber": "42",
+      "date": "2018-02-14",
+      "candidates": [
+        {
+          "seriesId": 2984,
+          "href": "/comics/series/2984/amazing_spider-man_annual_(1964_-_2018)",
+          "label": "Amazing Spider-Man Annual (1964 - 2018)",
+          "baseTitle": "Amazing Spider-Man Annual",
+          "startYear": 1964,
+          "endYear": 2018,
+          "present": false,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 46091,
+          "href": "/comics/series/46091/amazing_spider-man_annual_(2009_-_present)",
+          "label": "AMAZING SPIDER-MAN ANNUAL (2009 - Present)",
+          "baseTitle": "AMAZING SPIDER-MAN ANNUAL",
+          "startYear": 2009,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 46103,
+          "href": "/comics/series/46103/amazing_spider-man_annual_(2012_-_present)",
+          "label": "AMAZING SPIDER-MAN ANNUAL (2012 - Present)",
+          "baseTitle": "AMAZING SPIDER-MAN ANNUAL",
+          "startYear": 2012,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 26267,
+          "href": "/comics/series/26267/amazing_spider-man_annual_(2018)",
+          "label": "Amazing Spider-Man Annual (2018)",
+          "baseTitle": "Amazing Spider-Man Annual",
+          "startYear": 2018,
+          "endYear": 2018,
+          "present": false,
+          "normTitle": "amazing spider man annual",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2781807,
+      "seriesId": 5236,
+      "title": "Miles Morales: Spider-Man",
+      "seriesYear": "2023",
+      "issueNumber": "40 (322)",
+      "date": "2025-11-05",
+      "candidates": [
+        {
+          "seriesId": 35645,
+          "href": "/comics/series/35645/miles_morales:_spider-man_(2022_-_2026)",
+          "label": "Miles Morales: Spider-Man (2022 - 2026)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2022,
+          "endYear": 2026,
+          "present": false,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 44996,
+          "href": "/comics/series/44996/miles_morales:_spider-man_(2026_-_present)",
+          "label": "Miles Morales: Spider-Man (2026 - Present)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2785597,
+      "seriesId": 1476,
+      "title": "Civil War Facsimile Edition",
+      "seriesYear": "2025",
+      "issueNumber": "4",
+      "date": "2025-11-19",
+      "candidates": [
+        {
+          "seriesId": 43627,
+          "href": "/comics/series/43627/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43629,
+          "href": "/comics/series/43629/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43630,
+          "href": "/comics/series/43630/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43632,
+          "href": "/comics/series/43632/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43633,
+          "href": "/comics/series/43633/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2791434,
+      "seriesId": 2227,
+      "title": "Doctor Strange",
+      "seriesYear": "2026",
+      "issueNumber": "1 (451)",
+      "date": "2025-12-03",
+      "candidates": [
+        {
+          "seriesId": 36592,
+          "href": "/comics/series/36592/doctor_strange_(2023_-_2024)",
+          "label": "Doctor Strange (2023 - 2024)",
+          "baseTitle": "Doctor Strange",
+          "startYear": 2023,
+          "endYear": 2024,
+          "present": false,
+          "normTitle": "doctor strange",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 42596,
+          "href": "/comics/series/42596/doctor_strange_(2025_-_2026)",
+          "label": "Doctor Strange (2025 - 2026)",
+          "baseTitle": "Doctor Strange",
+          "startYear": 2025,
+          "endYear": 2026,
+          "present": false,
+          "normTitle": "doctor strange",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2791416,
+      "seriesId": 5236,
+      "title": "Miles Morales: Spider-Man",
+      "seriesYear": "2023",
+      "issueNumber": "41 (323)",
+      "date": "2025-12-03",
+      "candidates": [
+        {
+          "seriesId": 35645,
+          "href": "/comics/series/35645/miles_morales:_spider-man_(2022_-_2026)",
+          "label": "Miles Morales: Spider-Man (2022 - 2026)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2022,
+          "endYear": 2026,
+          "present": false,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 44996,
+          "href": "/comics/series/44996/miles_morales:_spider-man_(2026_-_present)",
+          "label": "Miles Morales: Spider-Man (2026 - Present)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2795895,
+      "seriesId": 1476,
+      "title": "Civil War Facsimile Edition",
+      "seriesYear": "2025",
+      "issueNumber": "5",
+      "date": "2025-12-17",
+      "candidates": [
+        {
+          "seriesId": 43627,
+          "href": "/comics/series/43627/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43629,
+          "href": "/comics/series/43629/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43630,
+          "href": "/comics/series/43630/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43632,
+          "href": "/comics/series/43632/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43633,
+          "href": "/comics/series/43633/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2808277,
+      "seriesId": 1476,
+      "title": "Civil War Facsimile Edition",
+      "seriesYear": "2025",
+      "issueNumber": "6",
+      "date": "2026-01-21",
+      "candidates": [
+        {
+          "seriesId": 43627,
+          "href": "/comics/series/43627/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43629,
+          "href": "/comics/series/43629/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43630,
+          "href": "/comics/series/43630/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43632,
+          "href": "/comics/series/43632/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43633,
+          "href": "/comics/series/43633/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2810013,
+      "seriesId": 5236,
+      "title": "Miles Morales: Spider-Man",
+      "seriesYear": "2023",
+      "issueNumber": "42 (324)",
+      "date": "2026-01-28",
+      "candidates": [
+        {
+          "seriesId": 35645,
+          "href": "/comics/series/35645/miles_morales:_spider-man_(2022_-_2026)",
+          "label": "Miles Morales: Spider-Man (2022 - 2026)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2022,
+          "endYear": 2026,
+          "present": false,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 44996,
+          "href": "/comics/series/44996/miles_morales:_spider-man_(2026_-_present)",
+          "label": "Miles Morales: Spider-Man (2026 - Present)",
+          "baseTitle": "Miles Morales: Spider-Man",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "miles morales spider man",
+          "matchMode": "exact-title"
+        }
+      ]
+    },
+    {
+      "gcdId": 2816022,
+      "seriesId": 1476,
+      "title": "Civil War Facsimile Edition",
+      "seriesYear": "2025",
+      "issueNumber": "7",
+      "date": "2026-02-18",
+      "candidates": [
+        {
+          "seriesId": 43627,
+          "href": "/comics/series/43627/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43629,
+          "href": "/comics/series/43629/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43630,
+          "href": "/comics/series/43630/civil_war_facsimile_edition_(2025_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2025 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2025,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43632,
+          "href": "/comics/series/43632/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        },
+        {
+          "seriesId": 43633,
+          "href": "/comics/series/43633/civil_war_facsimile_edition_(2026_-_present)",
+          "label": "CIVIL WAR FACSIMILE EDITION (2026 - Present)",
+          "baseTitle": "CIVIL WAR FACSIMILE EDITION",
+          "startYear": 2026,
+          "endYear": 9999,
+          "present": true,
+          "normTitle": "civil war facsimile edition",
+          "matchMode": "exact-title"
+        }
+      ]
+    }
+  ]
+}
