@@ -1,0 +1,74 @@
+name: Build Marvel phase7 series directory map v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-marvel-phase7-series-directory-map-v4.mjs'
+      - '.github/workflows/build-marvel-phase7-series-directory-map-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-marvel-phase7-series-directory-map-v4
+  cancel-in-progress: false
+
+jobs:
+  map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Restore global Marvel catalog
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+      - name: Snapshot protected files
+        run: |
+          sha256sum source/marvel-cache/index.json > /tmp/cache.sha
+          sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Validate mapper
+        run: node --check scripts/build-marvel-phase7-series-directory-map-v4.mjs
+      - name: Build official series directory map
+        run: node scripts/build-marvel-phase7-series-directory-map-v4.mjs
+      - name: Validate read-only result
+        run: |
+          sha256sum -c /tmp/cache.sha
+          sha256sum -c /tmp/fallback.sha
+          node - <<'NODE'
+          const fs=require('fs');const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/phase7-series-directory-map-v4.json','utf8'));
+          if(r.mode!=='phase7-series-directory-map-v4'||r.writesCache!==false||r.summary.pending!==18690||r.baseline.matched!==31177||r.baseline.noDigital!==1135||r.baseline.notListed!==18690||r.baseline.functionalLinkMissing!==0)throw new Error('Mapa fase 7 inválido');
+          if(r.summary.directoryUniqueRows+r.summary.directoryAmbiguousRows+r.summary.directoryUnmappedRows!==r.summary.catalogNoCandidate)throw new Error('Desglose fase 7 no cuadra');
+          if(r.summary.directorySeries<1000)throw new Error('Directorio oficial incompleto');
+          console.log(JSON.stringify(r.summary,null,2));
+          NODE
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');const r=JSON.parse(fs.readFileSync('artifacts/marvel-not-listed-v4/phase7-series-directory-map-v4.json','utf8'));
+          console.log('## Fase 7 · mapa oficial de series');for(const [k,v] of Object.entries(r.summary))console.log(`- ${k}: ${v}`);console.log('');for(const x of r.segments.slice(0,30))console.log(`- ${x.localTitle} -> ${x.officialLabel}: ${x.pendingRows}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-phase7-series-directory-map-v4-${{ github.run_id }}
+          path: artifacts/marvel-not-listed-v4/phase7-series-directory-map-v4.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/phase7-series-directory-map-v4.json
+          git commit -m 'audit: guardar mapa oficial de series fase 7 v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
