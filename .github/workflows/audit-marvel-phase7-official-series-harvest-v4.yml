@@ -1,0 +1,91 @@
+name: Audit Marvel phase7 official series harvest v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-phase7-official-series-harvest-v4.mjs'
+      - '.github/workflows/audit-marvel-phase7-official-series-harvest-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-phase7-official-series-harvest-v4
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      SHARD_INDEX: ${{ matrix.shard }}
+      SHARD_COUNT: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Snapshot protected files
+        run: |
+          sha256sum source/marvel-cache/index.json > /tmp/cache.sha
+          sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Validate harvester
+        run: node --check scripts/audit-marvel-phase7-official-series-harvest-v4.mjs
+      - name: Harvest official series pages
+        run: node scripts/audit-marvel-phase7-official-series-harvest-v4.mjs
+      - name: Verify read-only
+        run: |
+          sha256sum -c /tmp/cache.sha
+          sha256sum -c /tmp/fallback.sha
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase7-series-harvest-shard-${{ matrix.shard }}
+          path: artifacts/marvel-not-listed-v4/phase7-series-harvest-shards/shard-${{ matrix.shard }}.json
+          retention-days: 14
+
+  aggregate:
+    needs: harvest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: phase7-series-harvest-shard-*
+          path: artifacts/marvel-not-listed-v4/phase7-series-harvest-shards
+          merge-multiple: true
+      - name: Aggregate harvest
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),path=require('path');const dir='artifacts/marvel-not-listed-v4/phase7-series-harvest-shards';const files=fs.readdirSync(dir).filter(x=>/^shard-\d+\.json$/.test(x)).sort((a,b)=>Number(a.match(/\d+/)[0])-Number(b.match(/\d+/)[0]));if(files.length!==12)throw new Error(`Shards=${files.length}`);const shards=files.map(f=>JSON.parse(fs.readFileSync(path.join(dir,f),'utf8')));if(shards.some(x=>x.mode!=='phase7-official-series-harvest-v4-shard'||x.writesCache!==false||x.totalSegments!==712))throw new Error('Shard incompatible');const results=shards.flatMap(x=>x.results);if(results.length!==712||new Set(results.map(x=>`${x.localSeriesId}|${x.officialSeriesId}`)).size!==712)throw new Error('Segmentos incompletos/duplicados');const ids=[...new Set(results.flatMap(x=>x.harvestedIssueIds))].sort((a,b)=>a-b);const summary={segments:712,segmentsWithIssues:results.filter(x=>x.harvestedCount>0).length,segmentsZeroIssues:results.filter(x=>x.harvestedCount===0).length,reportedComplete:results.filter(x=>x.completeByReportedTotal).length,reportedTruncated:results.filter(x=>x.likelyTruncated).length,harvestedIssueIds:ids.length,totalPendingRows:results.reduce((a,x)=>a+Number(x.pendingRows||0),0),writesCache:false};const report={version:4,generatedAt:new Date().toISOString(),mode:'phase7-official-series-harvest-v4',writesCache:false,safety:{cacheWritten:false,officialSeriesPagesOnly:true,noAvailabilityInference:true,noNegativeClassification:true},summary,harvestedIssueIds:ids,results};fs.writeFileSync('artifacts/marvel-not-listed-v4/phase7-official-series-harvest-v4.json',JSON.stringify(report,null,2)+'\n');fs.writeFileSync('artifacts/marvel-not-listed-v4/phase7-official-series-harvest-summary-v4.json',JSON.stringify({version:4,generatedAt:report.generatedAt,mode:'phase7-official-series-harvest-summary-v4',writesCache:false,summary,topByHarvest:[...results].sort((a,b)=>b.harvestedCount-a.harvestedCount).slice(0,100).map(x=>({localSeriesId:x.localSeriesId,localTitle:x.localTitle,officialSeriesId:x.officialSeriesId,officialLabel:x.officialLabel,pendingRows:x.pendingRows,reportedTotal:x.reportedTotal,harvestedCount:x.harvestedCount,completeByReportedTotal:x.completeByReportedTotal,likelyTruncated:x.likelyTruncated}))},null,2)+'\n');console.log(JSON.stringify(summary,null,2));
+          NODE
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const r=require('./artifacts/marvel-not-listed-v4/phase7-official-series-harvest-summary-v4.json');console.log('## Fase 7 · harvest oficial de series');for(const [k,v] of Object.entries(r.summary))console.log(`- ${k}: ${v}`);console.log('');for(const x of r.topByHarvest.slice(0,30))console.log(`- ${x.localTitle} -> ${x.officialLabel}: harvested=${x.harvestedCount}, reported=${x.reportedTotal}, pending=${x.pendingRows}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-phase7-official-series-harvest-v4-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/phase7-official-series-harvest-v4.json
+            artifacts/marvel-not-listed-v4/phase7-official-series-harvest-summary-v4.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/phase7-official-series-harvest-v4.json artifacts/marvel-not-listed-v4/phase7-official-series-harvest-summary-v4.json
+          git commit -m 'audit: guardar harvest oficial de series fase 7 v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
