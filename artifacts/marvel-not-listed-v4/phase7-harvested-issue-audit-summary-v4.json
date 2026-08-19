@@ -1,0 +1,1243 @@
+{
+  "version": 4,
+  "generatedAt": "2026-08-19T00:33:42.011Z",
+  "mode": "phase7-harvested-issue-audit-summary-v4",
+  "writesCache": false,
+  "baseline": {
+    "matched": 31177,
+    "noDigital": 1135,
+    "notListed": 18690,
+    "functionalLinkReady": 31177,
+    "functionalLinkMissing": 0
+  },
+  "summary": {
+    "totalSourceIds": 4812,
+    "muUuidRaw": 706,
+    "muReaderRaw": 0,
+    "noDigitalRaw": 1046,
+    "publishableMU": 624,
+    "publishableUuid": 624,
+    "publishableReader": 0,
+    "publishableNoDigital": 1037,
+    "crossResultCollision": 91,
+    "noTarget": 2772,
+    "dateMismatch": 0,
+    "targetAmbiguous": 10,
+    "sourceCollision": 3,
+    "readerCollision": 251,
+    "unresolved": 0,
+    "other": 24,
+    "writesCache": false
+  },
+  "kinds": {
+    "mu-uuid": 706,
+    "no-digital": 1046,
+    "no-target": 2772,
+    "target-ambiguous": 10,
+    "reader-collision": 251,
+    "issue-unparsed": 24,
+    "source-collision": 3
+  },
+  "publishableSample": [
+    {
+      "gcdId": 266225,
+      "sourceId": 52,
+      "readerId": 2138,
+      "kind": "mu-uuid",
+      "officialTitle": "Marvel Knights 4 (2004) #12",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:7b3b9949-34da-4917-b9fe-a0b27aab9073",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A7b3b9949-34da-4917-b9fe-a0b27aab9073&sourceId=52"
+    },
+    {
+      "gcdId": 213949,
+      "sourceId": 180,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Supreme Power (2003) #5",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 172576,
+      "sourceId": 586,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Kabuki (2004) #1",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 266226,
+      "sourceId": 1496,
+      "readerId": 2139,
+      "kind": "mu-uuid",
+      "officialTitle": "Marvel Knights 4 (2004) #13",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:392906b7-e7dc-4159-a022-6ff51479df24",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A392906b7-e7dc-4159-a022-6ff51479df24&sourceId=1496"
+    },
+    {
+      "gcdId": 266231,
+      "sourceId": 1977,
+      "readerId": 2144,
+      "kind": "mu-uuid",
+      "officialTitle": "Marvel Knights 4 (2004) #18",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:bdb86808-8627-4343-bbe9-dc66a35ca6a0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Abdb86808-8627-4343-bbe9-dc66a35ca6a0&sourceId=1977"
+    },
+    {
+      "gcdId": 266234,
+      "sourceId": 2343,
+      "readerId": 2148,
+      "kind": "mu-uuid",
+      "officialTitle": "Marvel Knights 4 (2004) #21",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:fc0dc7a9-142e-46e0-a3b9-01901d3101f0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afc0dc7a9-142e-46e0-a3b9-01901d3101f0&sourceId=2343"
+    },
+    {
+      "gcdId": 251065,
+      "sourceId": 2968,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Supreme Power (2003) #18",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 262862,
+      "sourceId": 3185,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Supreme Power: Hyperion (2005) #4",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 274478,
+      "sourceId": 3417,
+      "readerId": 1920,
+      "kind": "mu-uuid",
+      "officialTitle": "Generation M (2005) #3",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:90e8f8d8-4555-4177-8523-98a7d34a9479",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A90e8f8d8-4555-4177-8523-98a7d34a9479&sourceId=3417"
+    },
+    {
+      "gcdId": 360504,
+      "sourceId": 4312,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Haunt Of Horror: Edgar Allan Poe (2006) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 369926,
+      "sourceId": 5097,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Powers (2004) #21",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 740438,
+      "sourceId": 5624,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Zombie (2006) #4",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 353155,
+      "sourceId": 5833,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Adventures Flip Magazine (2005) #21",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 562438,
+      "sourceId": 6147,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punisher Presents: Barracuda Max (2007) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 336168,
+      "sourceId": 6325,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "All-New Official Handbook Of The Marvel Universe A To Z: Update (2007) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 62909,
+      "sourceId": 9663,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "J2 (1998) #12",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 211911,
+      "sourceId": 10467,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Our Love Story (1969) #21",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 211923,
+      "sourceId": 10480,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Our Love Story (1969) #33",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 97194,
+      "sourceId": 10630,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "The Punisher War Zone (1992) #39",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 26227,
+      "sourceId": 10657,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Sgt. Fury (1963) #110",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 84755,
+      "sourceId": 12216,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "X-Factor (1986) #137",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 84767,
+      "sourceId": 12229,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "X-Factor (1986) #149",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 23724,
+      "sourceId": 15398,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Tower Of Shadows (1969) #7",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 89059,
+      "sourceId": 15500,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Super-Heroes (1967) #89",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 393734,
+      "sourceId": 15822,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Powers (2004) #27",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 371180,
+      "sourceId": 16603,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Halo: Uprising (2007) #4",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 173809,
+      "sourceId": 16849,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Astonishing (1951) #50",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 174143,
+      "sourceId": 16862,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Astonishing (1951) #62",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 31655,
+      "sourceId": 16969,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Rawhide Kid (1955) #142",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 645044,
+      "sourceId": 17292,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Ultimates Saga (2007) #1",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 404117,
+      "sourceId": 17419,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Two-In-One (2007) #6",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 94201,
+      "sourceId": 18235,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "X-Man (1995) #62",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 94213,
+      "sourceId": 18248,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "X-Man (1995) #74",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 132571,
+      "sourceId": 18264,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Wonder Man (1991) #16",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 132583,
+      "sourceId": 18277,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Wonder Man (1991) #28",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 61808,
+      "sourceId": 18305,
+      "readerId": 80823,
+      "kind": "mu-uuid",
+      "officialTitle": "What If? (1989) #109",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:130cdfdc-61f4-4bfa-a3b3-5b167d3e57a7",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A130cdfdc-61f4-4bfa-a3b3-5b167d3e57a7&sourceId=18305"
+    },
+    {
+      "gcdId": 27678,
+      "sourceId": 18515,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Two-Gun Kid (1948) #119",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 30142,
+      "sourceId": 18529,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Two-Gun Kid (1948) #131",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 54747,
+      "sourceId": 18946,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Quasar (1989) #56",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 112100,
+      "sourceId": 19014,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Modeling With Millie (1963) #37",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 112112,
+      "sourceId": 19026,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Modeling With Millie (1963) #49",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 111637,
+      "sourceId": 19138,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Millie The Model (1945) #194",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 111649,
+      "sourceId": 19152,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Millie The Model (1945) #206",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 34055,
+      "sourceId": 19770,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Preview (1975) #20",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 46120,
+      "sourceId": 19819,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Fanfare (1982) #43",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 49246,
+      "sourceId": 19832,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Marvel Fanfare (1982) #55",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 45097,
+      "sourceId": 20479,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "D.p.7 (1986) #24",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 951676,
+      "sourceId": 21215,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Foolkiller (2007) #5",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 533857,
+      "sourceId": 21517,
+      "readerId": 11140,
+      "kind": "mu-uuid",
+      "officialTitle": "Iron Man: Director Of S.h.i.e.l.d. (2008) #31",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:fd15e6de-ad94-4cd0-96a5-f2257c4bbdee",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afd15e6de-ad94-4cd0-96a5-f2257c4bbdee&sourceId=21517"
+    },
+    {
+      "gcdId": 224760,
+      "sourceId": 21656,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Psi-Force (1986) #14",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 224772,
+      "sourceId": 21669,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Psi-Force (1986) #26",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 543237,
+      "sourceId": 21946,
+      "readerId": 11142,
+      "kind": "mu-uuid",
+      "officialTitle": "Iron Man: Director Of S.h.i.e.l.d. (2008) #33",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:6f68b505-4df4-4246-bb1b-82f4c51265f0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A6f68b505-4df4-4246-bb1b-82f4c51265f0&sourceId=21946"
+    },
+    {
+      "gcdId": 44228,
+      "sourceId": 22102,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Strange Tales (1987) #12",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 43356,
+      "sourceId": 22114,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Strange Tales (1987) #6",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 28038,
+      "sourceId": 22129,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Strange Tales (1951) #177",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 97147,
+      "sourceId": 22231,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punisher War Journal (1988) #72",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 541801,
+      "sourceId": 22514,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Dark Tower: Treachery (2008) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 244365,
+      "sourceId": 23396,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punisher (1995) #16",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 1252828,
+      "sourceId": 23850,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Dark Tower: Sorcerer (2009) #1",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 628971,
+      "sourceId": 24182,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Terror, Inc. - Apocalypse Soon (2009) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 646345,
+      "sourceId": 24882,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Dark Tower: The Fall Of Gilead (2009) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 670286,
+      "sourceId": 25009,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Dominic Fortune (2009) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 676525,
+      "sourceId": 26179,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punisher: Frank Castle Max (2009) #74",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 583803,
+      "sourceId": 26613,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "The Stand: American Nightmares (2009) #4",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 2649389,
+      "sourceId": 27146,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Wolverine Magazine (2009) #4",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 732994,
+      "sourceId": 29002,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Powers (2009) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 754595,
+      "sourceId": 29665,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Spider-Man Magazine (2008) #10",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 745774,
+      "sourceId": 29858,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punishermax (2009) #6",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 806389,
+      "sourceId": 30215,
+      "readerId": 19004,
+      "kind": "mu-uuid",
+      "officialTitle": "Ultimate Doom (2010) #2",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:36cfe12c-dfc6-476a-a207-721974833963",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A36cfe12c-dfc6-476a-a207-721974833963&sourceId=30215"
+    },
+    {
+      "gcdId": 763250,
+      "sourceId": 30548,
+      "readerId": 14664,
+      "kind": "mu-uuid",
+      "officialTitle": "The Marvelous Land Of Oz (2009) #6",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:c39f9073-8c67-4149-82cf-b5d38909fea0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ac39f9073-8c67-4149-82cf-b5d38909fea0&sourceId=30548"
+    },
+    {
+      "gcdId": 760232,
+      "sourceId": 31192,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Electric Ant (2010) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 815745,
+      "sourceId": 31340,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "The Stand: No Man's Land (2011) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 834990,
+      "sourceId": 32240,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Deadpool Max (2010) #8",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 806132,
+      "sourceId": 32621,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Casanova: Gula (2011) #2",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 920788,
+      "sourceId": 33867,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Halo: Fall Of Reach - Invasion (2012) #1",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 784402,
+      "sourceId": 34919,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Scarlet (2010) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 128613,
+      "sourceId": 37261,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Alias (2001) #14",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 163812,
+      "sourceId": 37274,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Alias (2001) #26",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 1011422,
+      "sourceId": 39271,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Fury Max (2012) #6",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 1116779,
+      "sourceId": 40432,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Fury Max (2012) #12",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 1478246,
+      "sourceId": 41942,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Strikeforce: Morituri - We Who Are About to Die (2011) #1",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 940736,
+      "sourceId": 42621,
+      "readerId": 38869,
+      "kind": "mu-uuid",
+      "officialTitle": "Marvel's The Avengers Prelude: Fury's Big Week (2012) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:d96279b1-c23d-47e8-ae3b-5ef614f7cce2",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ad96279b1-c23d-47e8-ae3b-5ef614f7cce2&sourceId=42621"
+    },
+    {
+      "gcdId": 1248512,
+      "sourceId": 49630,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Miracleman (2014) #10",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 58456,
+      "sourceId": 51178,
+      "readerId": 35904,
+      "kind": "mu-uuid",
+      "officialTitle": "Archangel (1996) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:28b053af-6f84-40d2-b06f-299e747880a6",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A28b053af-6f84-40d2-b06f-299e747880a6&sourceId=51178"
+    },
+    {
+      "gcdId": 1438694,
+      "sourceId": 51631,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Dark Tower: The Drawing Of The Three - House Of Cards (2015) #5",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 1430070,
+      "sourceId": 53631,
+      "readerId": 39070,
+      "kind": "mu-uuid",
+      "officialTitle": "Korvac Saga (2015) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:c3cbbcf9-f2a6-4e70-92a3-9799d3818f6e",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ac3cbbcf9-f2a6-4e70-92a3-9799d3818f6e&sourceId=53631"
+    },
+    {
+      "gcdId": 212240,
+      "sourceId": 54975,
+      "readerId": 43362,
+      "kind": "mu-uuid",
+      "officialTitle": "Scarlet Witch (1994) #2",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:5c7d78c6-fb6e-44eb-b316-f3270716e7d3",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5c7d78c6-fb6e-44eb-b316-f3270716e7d3&sourceId=54975"
+    },
+    {
+      "gcdId": 225217,
+      "sourceId": 57518,
+      "readerId": 39860,
+      "kind": "mu-uuid",
+      "officialTitle": "Cage (1992) #7",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:a9f13acb-5ea2-4d7f-aa78-5f101e32ecdc",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Aa9f13acb-5ea2-4d7f-aa78-5f101e32ecdc&sourceId=57518"
+    },
+    {
+      "gcdId": 26878,
+      "sourceId": 57636,
+      "readerId": 40021,
+      "kind": "mu-uuid",
+      "officialTitle": "Frankenstein (1973) #7",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:a4501dc4-3ba1-48c7-a345-34964dac04cb",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Aa4501dc4-3ba1-48c7-a345-34964dac04cb&sourceId=57636"
+    },
+    {
+      "gcdId": 172531,
+      "sourceId": 58621,
+      "readerId": 40698,
+      "kind": "mu-uuid",
+      "officialTitle": "Nightcrawler (1985) #2",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:fcb001da-8a51-49bb-812e-022bd43e78d6",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afcb001da-8a51-49bb-812e-022bd43e78d6&sourceId=58621"
+    },
+    {
+      "gcdId": 1578428,
+      "sourceId": 59340,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Empress (2016) #3",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 246570,
+      "sourceId": 59813,
+      "readerId": 41469,
+      "kind": "mu-uuid",
+      "officialTitle": "Spider-Man: Maximum Clonage Alpha (1995) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:1db3c577-47e6-4218-af4b-1a0ae92b8df4",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A1db3c577-47e6-4218-af4b-1a0ae92b8df4&sourceId=59813"
+    },
+    {
+      "gcdId": 238824,
+      "sourceId": 62357,
+      "readerId": 43293,
+      "kind": "mu-uuid",
+      "officialTitle": "Captain America Sentinel Of Liberty (1998) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:7f518ced-3f7a-4efe-9aa7-00bd4303ea8a",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A7f518ced-3f7a-4efe-9aa7-00bd4303ea8a&sourceId=62357"
+    },
+    {
+      "gcdId": 68898,
+      "sourceId": 62381,
+      "readerId": 43326,
+      "kind": "mu-uuid",
+      "officialTitle": "Storm (1996) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:b87d81d9-aab2-4d3e-8fe8-4b2ff34e8195",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ab87d81d9-aab2-4d3e-8fe8-4b2ff34e8195&sourceId=62381"
+    },
+    {
+      "gcdId": 236166,
+      "sourceId": 69829,
+      "readerId": 80260,
+      "kind": "mu-uuid",
+      "officialTitle": "The Punisher (1987) #79",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:d3ff0325-4e32-43e0-a20a-54d5ad55a937",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ad3ff0325-4e32-43e0-a20a-54d5ad55a937&sourceId=69829"
+    },
+    {
+      "gcdId": 69162,
+      "sourceId": 71980,
+      "readerId": 49429,
+      "kind": "mu-uuid",
+      "officialTitle": "Fantastic Four: World's Greatest Comics Magazine (2001) #11",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:ae95adb5-0514-45ab-8b80-3e1091234285",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Aae95adb5-0514-45ab-8b80-3e1091234285&sourceId=71980"
+    },
+    {
+      "gcdId": 1987304,
+      "sourceId": 76949,
+      "readerId": 51903,
+      "kind": "mu-uuid",
+      "officialTitle": "Ms. Marvel Annual (2019) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:4e6caf65-27d9-400d-9634-b434e60534ca",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4e6caf65-27d9-400d-9634-b434e60534ca&sourceId=76949"
+    },
+    {
+      "gcdId": 2790853,
+      "sourceId": 113919,
+      "readerId": 77426,
+      "kind": "mu-uuid",
+      "officialTitle": "Ultimate X-Men (2024) #22",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:76502c88-367f-4a82-94d2-142f9e61cd4d",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A76502c88-367f-4a82-94d2-142f9e61cd4d&sourceId=113919"
+    },
+    {
+      "gcdId": 2793178,
+      "sourceId": 115301,
+      "readerId": 71447,
+      "kind": "mu-uuid",
+      "officialTitle": "Nova: Centurion (2025) #2",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:35b9a744-8cf4-4af2-b4a7-09157bd28825",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A35b9a744-8cf4-4af2-b4a7-09157bd28825&sourceId=115301"
+    },
+    {
+      "gcdId": 2783939,
+      "sourceId": 122244,
+      "readerId": 70023,
+      "kind": "mu-uuid",
+      "officialTitle": "Star Wars: Han Solo - Hunt For The Falcon (2025) #3",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:b9b582da-a156-4cca-bf86-80ac77aeaa78",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ab9b582da-a156-4cca-bf86-80ac77aeaa78&sourceId=122244"
+    },
+    {
+      "gcdId": 2795462,
+      "sourceId": 122261,
+      "readerId": 70033,
+      "kind": "mu-uuid",
+      "officialTitle": "Star Wars: Jedi Knights (2025) #10",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:5b13c099-53bb-4c76-b74e-69bcd10e56bb",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5b13c099-53bb-4c76-b74e-69bcd10e56bb&sourceId=122261"
+    },
+    {
+      "gcdId": 2784008,
+      "sourceId": 122800,
+      "readerId": 70903,
+      "kind": "mu-uuid",
+      "officialTitle": "Fantastic Four (2025) #5",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:046642b2-dd77-4dfb-925f-d19e5e156843",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A046642b2-dd77-4dfb-925f-d19e5e156843&sourceId=122800"
+    },
+    {
+      "gcdId": 2810014,
+      "sourceId": 123396,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "Punisher: Red Band (2025) #5",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 2801285,
+      "sourceId": 124669,
+      "readerId": 75208,
+      "kind": "mu-uuid",
+      "officialTitle": "Sorcerer Supreme (2025) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:33ab91b4-0a14-4294-85aa-62e04c4698c7",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A33ab91b4-0a14-4294-85aa-62e04c4698c7&sourceId=124669"
+    },
+    {
+      "gcdId": 2787117,
+      "sourceId": 126685,
+      "readerId": 71360,
+      "kind": "mu-uuid",
+      "officialTitle": "Black Cat (2025) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:8eb6e31d-77bd-4c21-af35-8e9d5814ad69",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A8eb6e31d-77bd-4c21-af35-8e9d5814ad69&sourceId=126685"
+    },
+    {
+      "gcdId": 2811274,
+      "sourceId": 126925,
+      "readerId": 71746,
+      "kind": "mu-uuid",
+      "officialTitle": "Spirits Of Violence (2025) #5",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:63bdf0c5-10cd-444d-b778-0cd0f45bd5ce",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A63bdf0c5-10cd-444d-b778-0cd0f45bd5ce&sourceId=126925"
+    },
+    {
+      "gcdId": 2826464,
+      "sourceId": 127579,
+      "readerId": 72076,
+      "kind": "mu-uuid",
+      "officialTitle": "The Amazing Spider-Man (2025) #26",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:1ec6f435-6f16-40e1-94f4-b9e4e89278c9",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A1ec6f435-6f16-40e1-94f4-b9e4e89278c9&sourceId=127579"
+    },
+    {
+      "gcdId": 2781806,
+      "sourceId": 127591,
+      "readerId": 72088,
+      "kind": "mu-uuid",
+      "officialTitle": "Avengers (2023) #32",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:df78d9e3-e7e7-494d-948e-240e7ec2727e",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Adf78d9e3-e7e7-494d-948e-240e7ec2727e&sourceId=127591"
+    },
+    {
+      "gcdId": 2822862,
+      "sourceId": 127649,
+      "readerId": 72150,
+      "kind": "mu-uuid",
+      "officialTitle": "Mortal Thor (2025) #8",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:5470bb2d-d69b-4de5-819a-64949fed54fb",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A5470bb2d-d69b-4de5-819a-64949fed54fb&sourceId=127649"
+    },
+    {
+      "gcdId": 2845372,
+      "sourceId": 127685,
+      "readerId": 0,
+      "kind": "no-digital",
+      "officialTitle": "X-Men (2024) #32",
+      "officialDate": "",
+      "drn": "",
+      "smartLink": ""
+    },
+    {
+      "gcdId": 2826008,
+      "sourceId": 127814,
+      "readerId": 72353,
+      "kind": "mu-uuid",
+      "officialTitle": "Wolverine (2024) #18",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:fe82e9f1-024a-41d6-ad99-d3438b3cace3",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Afe82e9f1-024a-41d6-ad99-d3438b3cace3&sourceId=127814"
+    },
+    {
+      "gcdId": 2813919,
+      "sourceId": 128936,
+      "readerId": 73155,
+      "kind": "mu-uuid",
+      "officialTitle": "Venom (2025) #254",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:b79d25a9-9c32-41fb-9a50-089ae25f5b60",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3Ab79d25a9-9c32-41fb-9a50-089ae25f5b60&sourceId=128936"
+    },
+    {
+      "gcdId": 2793156,
+      "sourceId": 129212,
+      "readerId": 73412,
+      "kind": "mu-uuid",
+      "officialTitle": "All-New Spider-Gwen: The Ghost-Spider (2025) #5",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:30f39e12-37a0-41f5-99ee-0a6c2912705a",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A30f39e12-37a0-41f5-99ee-0a6c2912705a&sourceId=129212"
+    },
+    {
+      "gcdId": 2813916,
+      "sourceId": 129643,
+      "readerId": 73787,
+      "kind": "mu-uuid",
+      "officialTitle": "Alien Vs. Captain America (2025) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:785ab9da-d9ad-4964-bbe6-ec79ec84890a",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A785ab9da-d9ad-4964-bbe6-ec79ec84890a&sourceId=129643"
+    },
+    {
+      "gcdId": 2809990,
+      "sourceId": 129666,
+      "readerId": 73840,
+      "kind": "mu-uuid",
+      "officialTitle": "1776 (2025) #3",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:1e2dc18c-5048-4f65-b5b5-f7badab3f858",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A1e2dc18c-5048-4f65-b5b5-f7badab3f858&sourceId=129666"
+    },
+    {
+      "gcdId": 2815657,
+      "sourceId": 130482,
+      "readerId": 74318,
+      "kind": "mu-uuid",
+      "officialTitle": "Deadly Hands Of K'un-Lun (2026) #1",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:45716ae4-ddc8-49ee-ae5b-2a6fc0e96f39",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A45716ae4-ddc8-49ee-ae5b-2a6fc0e96f39&sourceId=130482"
+    },
+    {
+      "gcdId": 2827196,
+      "sourceId": 130501,
+      "readerId": 74337,
+      "kind": "mu-uuid",
+      "officialTitle": "Inglorious X-Force (2026) #4",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:4ee6e902-3aec-4a70-8ff7-79dad6a676f0",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4ee6e902-3aec-4a70-8ff7-79dad6a676f0&sourceId=130501"
+    },
+    {
+      "gcdId": 2797313,
+      "sourceId": 130538,
+      "readerId": 74363,
+      "kind": "mu-uuid",
+      "officialTitle": "Cloak Or Dagger (2025) #3",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:63005d71-2bb1-4932-b755-02d7226849ab",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A63005d71-2bb1-4932-b755-02d7226849ab&sourceId=130538"
+    },
+    {
+      "gcdId": 2795900,
+      "sourceId": 130550,
+      "readerId": 74375,
+      "kind": "mu-uuid",
+      "officialTitle": "Radioactive Spider-Man (2025) #3",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:506ddf38-303a-4b1d-906d-e0655d3aa9ab",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A506ddf38-303a-4b1d-906d-e0655d3aa9ab&sourceId=130550"
+    },
+    {
+      "gcdId": 2785519,
+      "sourceId": 130565,
+      "readerId": 74388,
+      "kind": "mu-uuid",
+      "officialTitle": "Unbreakable X-Men (2025) #2",
+      "officialDate": "",
+      "drn": "drn:src:marvel:unison::prod:4942b51b-dc6f-4205-ad81-bd9bd9c67b50",
+      "smartLink": "https://marvel.smart.link/fiir7ec77?type=issue&drn=drn%3Asrc%3Amarvel%3Aunison%3A%3Aprod%3A4942b51b-dc6f-4205-ad81-bd9bd9c67b50&sourceId=130565"
+    }
+  ]
+}
