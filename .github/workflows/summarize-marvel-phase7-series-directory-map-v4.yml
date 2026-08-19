@@ -1,0 +1,40 @@
+name: Summarize Marvel phase7 series directory map v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/summarize-marvel-phase7-series-directory-map-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Build compact summary
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const src='artifacts/marvel-not-listed-v4/phase7-series-directory-map-v4.json';
+          const out='artifacts/marvel-not-listed-v4/phase7-series-directory-map-summary-v4.json';
+          const r=JSON.parse(fs.readFileSync(src,'utf8'));
+          if(r.mode!=='phase7-series-directory-map-v4'||r.writesCache!==false)throw new Error('Mapa incompatible');
+          const s={version:4,generatedAt:new Date().toISOString(),mode:'phase7-series-directory-map-summary-v4',writesCache:false,baseline:r.baseline,summary:r.summary,topSegments:(r.segments||[]).slice(0,100).map(x=>({localSeriesId:x.localSeriesId,localTitle:x.localTitle,localSeriesYear:x.localSeriesYear,officialSeriesId:x.officialSeriesId,officialLabel:x.officialLabel,officialHref:x.officialHref,pendingRows:x.pendingRows,matchModes:x.matchModes,sampleRows:x.sampleRows})),topUnmappedSeries:(r.unmappedSeries||[]).slice(0,100),ambiguousSample:(r.ambiguousTop||[]).slice(0,40)};
+          fs.writeFileSync(out,JSON.stringify(s,null,2)+'\n');
+          console.log(JSON.stringify(s.summary,null,2));
+          NODE
+      - name: Commit compact summary
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/phase7-series-directory-map-summary-v4.json
+          git commit -m 'audit: resumir mapa oficial de series fase 7 v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
