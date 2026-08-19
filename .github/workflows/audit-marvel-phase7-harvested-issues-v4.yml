@@ -1,0 +1,98 @@
+name: Audit Marvel phase7 harvested issues v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-marvel-phase7-harvested-issues-v4.mjs'
+      - '.github/workflows/audit-marvel-phase7-harvested-issues-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-marvel-phase7-harvested-issues-v4
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11]
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      SHARD_INDEX: ${{ matrix.shard }}
+      SHARD_COUNT: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Restore global Marvel catalog
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/marvel-global-catalog-v4.json
+          key: marvel-global-catalog-v4-20260818
+          fail-on-cache-miss: true
+      - name: Snapshot protected files
+        run: |
+          sha256sum source/marvel-cache/index.json > /tmp/cache.sha
+          sha256sum source/marvel-reader-fallback-v1240.js > /tmp/fallback.sha
+      - name: Validate auditor
+        run: node --check scripts/audit-marvel-phase7-harvested-issues-v4.mjs
+      - name: Audit harvested issue IDs
+        run: node scripts/audit-marvel-phase7-harvested-issues-v4.mjs
+      - name: Verify read-only
+        run: |
+          sha256sum -c /tmp/cache.sha
+          sha256sum -c /tmp/fallback.sha
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase7-harvested-issue-audit-shard-${{ matrix.shard }}
+          path: artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-shards/shard-${{ matrix.shard }}.json
+          retention-days: 14
+
+  aggregate:
+    needs: audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: phase7-harvested-issue-audit-shard-*
+          path: artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-shards
+          merge-multiple: true
+      - name: Aggregate and collision-filter
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),path=require('path');const dir='artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-shards';const files=fs.readdirSync(dir).filter(x=>/^shard-\d+\.json$/.test(x)).sort((a,b)=>Number(a.match(/\d+/)[0])-Number(b.match(/\d+/)[0]));if(files.length!==12)throw new Error(`Shards=${files.length}`);const shards=files.map(f=>JSON.parse(fs.readFileSync(path.join(dir,f),'utf8')));if(shards.some(x=>x.mode!=='phase7-harvested-issue-audit-v4-shard'||x.writesCache!==false||x.totalSourceIds!==4812))throw new Error('Shard incompatible');const results=shards.flatMap(x=>x.results);if(results.length!==4812||new Set(results.map(x=>x.sourceId)).size!==4812)throw new Error('Source IDs incompletos/duplicados');const positive=results.filter(x=>x.kind==='mu-uuid'||x.kind==='mu-reader'||x.kind==='no-digital');const counts=(arr,key)=>{const m=new Map();for(const x of arr){const v=x[key];if(v==null||v===''||v===0)continue;m.set(v,(m.get(v)||0)+1)}return m};const g=counts(positive,'gcdId'),s=counts(positive,'sourceId'),rd=counts(positive.filter(x=>x.kind!=='no-digital'),'readerId'),d=counts(positive.filter(x=>x.kind==='mu-uuid'),'drn');for(const x of results){if(!positive.includes(x)){x.publishable=false;continue}const coll=(g.get(x.gcdId)||0)>1||(s.get(x.sourceId)||0)>1||(x.kind!=='no-digital'&&(rd.get(x.readerId)||0)>1)||(x.kind==='mu-uuid'&&(d.get(x.drn)||0)>1);x.publishable=!coll;x.crossResultCollision=coll}const publishable=results.filter(x=>x.publishable);const kinds={};for(const x of results)kinds[x.kind]=(kinds[x.kind]||0)+1;const summary={totalSourceIds:4812,muUuidRaw:results.filter(x=>x.kind==='mu-uuid').length,muReaderRaw:results.filter(x=>x.kind==='mu-reader').length,noDigitalRaw:results.filter(x=>x.kind==='no-digital').length,publishableMU:publishable.filter(x=>x.kind==='mu-uuid'||x.kind==='mu-reader').length,publishableUuid:publishable.filter(x=>x.kind==='mu-uuid').length,publishableReader:publishable.filter(x=>x.kind==='mu-reader').length,publishableNoDigital:publishable.filter(x=>x.kind==='no-digital').length,crossResultCollision:results.filter(x=>x.crossResultCollision).length,noTarget:results.filter(x=>x.kind==='no-target').length,dateMismatch:results.filter(x=>x.kind==='date-mismatch').length,targetAmbiguous:results.filter(x=>x.kind==='target-ambiguous').length,sourceCollision:results.filter(x=>x.kind==='source-collision').length,readerCollision:results.filter(x=>x.kind==='reader-collision').length,unresolved:results.filter(x=>x.kind==='unresolved').length,other:results.filter(x=>!['mu-uuid','mu-reader','no-digital','no-target','date-mismatch','target-ambiguous','source-collision','reader-collision','unresolved'].includes(x.kind)).length,writesCache:false};const report={version:4,generatedAt:new Date().toISOString(),mode:'phase7-harvested-issue-audit-v4',writesCache:false,baseline:shards[0].baseline,safety:{cacheWritten:false,segmentMembershipRequired:true,exactIssueRequired:true,dateExactWhenOfficialDatePresent:true,terminalCollisionProtection:true,crossResultCollisionProtection:true,noDigitalExplicitOnly:true,noNegativeInference:true},summary,kinds,results};fs.writeFileSync('artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-v4.json',JSON.stringify(report,null,2)+'\n');fs.writeFileSync('artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-summary-v4.json',JSON.stringify({version:4,generatedAt:report.generatedAt,mode:'phase7-harvested-issue-audit-summary-v4',writesCache:false,baseline:report.baseline,summary,kinds,publishableSample:publishable.slice(0,120).map(x=>({gcdId:x.gcdId,sourceId:x.sourceId,readerId:x.readerId,kind:x.kind,officialTitle:x.officialTitle,officialDate:x.officialDate,drn:x.drn||'',smartLink:x.smartLink||''}))},null,2)+'\n');console.log(JSON.stringify({summary,kinds},null,2));
+          NODE
+      - name: Add job summary
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const r=require('./artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-summary-v4.json');console.log('## Fase 7 · auditoría de issues cosechados');for(const [k,v] of Object.entries(r.summary))console.log(`- ${k}: ${v}`);
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marvel-phase7-harvested-issue-audit-v4-${{ github.run_id }}
+          path: |
+            artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-v4.json
+            artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-summary-v4.json
+          retention-days: 14
+      - name: Commit research result only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-v4.json artifacts/marvel-not-listed-v4/phase7-harvested-issue-audit-summary-v4.json
+          git commit -m 'audit: guardar auditoría de issues cosechados fase 7 v4' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
