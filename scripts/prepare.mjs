@@ -7,7 +7,7 @@ const archive=path.join(root,'Marvel_Orden_de_Lectura_PWA.zip');
 const output=path.join(root,'public');
 const source=path.join(root,'source');
 const marvelCacheSource=path.join(source,'marvel-cache');
-const uiBaseVersion='v1.3.0-characters-android';
+const uiBaseVersion='v1.2.35-official-negative-reaudit-v1.3.0-characters-android';
 const sourceFiles=['index.html','styles.css','enhancements.css','characters.css','diagnostics.css','app.js','diagnostics.js','resolver-ui.js','cache-ui.js','cache-authority-v129.js','marvel-reader-fallback-v1240.js','coverage-truth-v135.js','marmota-ui.js','stability-v22.js','diagnostic-v22.js','search-filter-fix-v132.js','character-matching-v130.js','characters-ui-v130.js','android-unlimited-v130.js'];
 
 for(const name of sourceFiles){
