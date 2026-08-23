@@ -1,0 +1,34 @@
+/* Marvel Lector v1.3.0 — biblioteca por personajes */
+.character-intro{margin:4px 14px 14px;color:#696a71;font-size:12px;line-height:1.5}
+.character-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px 7px;padding:8px 10px 20px}
+.character-choice{display:flex;min-width:0;flex-direction:column;align-items:center;border:0;background:transparent;color:var(--text);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.character-choice:active .character-portrait{transform:scale(.95)}
+.character-choice strong{display:block;width:100%;margin-top:8px;overflow:hidden;font-size:10.5px;font-weight:850;line-height:1.15;text-align:center;text-overflow:ellipsis}
+.character-choice small{display:block;margin-top:3px;color:#99979b;font-size:8.5px;font-weight:750;text-transform:uppercase;letter-spacing:.05em}
+.character-portrait{position:relative;display:grid;place-items:center;width:clamp(62px,20vw,82px);height:clamp(62px,20vw,82px);overflow:hidden;border:3px solid #fff;border-radius:50%;background:linear-gradient(145deg,#e62429,#870e15);box-shadow:0 7px 19px rgba(56,42,35,.17);transition:transform .14s ease}
+.character-portrait::after{content:"";position:absolute;inset:0;border:1px solid rgba(20,12,8,.12);border-radius:inherit;pointer-events:none}
+.character-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 19%;background:#d9d4ca}
+.character-fallback{color:#fff;font-size:18px;font-weight:950;letter-spacing:-.05em}
+.character-other .character-portrait{border-color:#f7d6d7;background:radial-gradient(circle at 35% 25%,#f85d62,#e62429 52%,#9e1117)}
+.character-other-mark{color:#fff;font-size:38px;font-weight:300;line-height:1}
+.character-method{margin:3px 12px 24px;padding:12px 13px;border:1px solid var(--line-soft);border-radius:14px;background:rgba(255,255,255,.62);color:#85848a;font-size:10.5px;line-height:1.5}
+.character-method a,.character-source-line a{color:var(--red);font-weight:800;text-decoration:none}
+.character-search-panel{margin:0 12px 16px;padding:13px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 8px 24px rgba(47,39,30,.08)}
+.character-search-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
+.character-lookup-status{min-height:18px;margin:10px 2px 0;color:var(--muted);font-size:10.5px}
+.character-lookup-results{display:grid;gap:6px;margin-top:4px}
+.character-result{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:44px;border:1px solid var(--line-soft);border-radius:12px;padding:9px 11px;background:#faf8f4;color:#37383d;text-align:left;cursor:pointer}
+.character-result span{min-width:0;overflow:hidden;font-size:11px;font-weight:750;line-height:1.3;text-overflow:ellipsis}
+.character-result b{flex:0 0 auto;color:var(--red);font-size:17px}
+.character-back{margin:0 0 9px;padding:0;border:0;background:transparent;color:var(--red);font-size:11px;font-weight:850;cursor:pointer}
+.character-library-head{align-items:flex-start}
+.character-controls{padding-bottom:15px}
+.character-coverage{min-height:18px;margin:0 14px 8px;color:#85848a;font-size:10.5px;line-height:1.45}
+.character-coverage strong{color:#4f5056}
+.character-source-line{margin:-10px 14px 28px;text-align:center;font-size:10.5px}
+.character-loading{margin:8px 12px;padding:22px;border:1px solid var(--line-soft);border-radius:16px;background:var(--surface);color:var(--muted);font-size:12px;text-align:center}
+@media(max-width:350px){.character-grid{gap:14px 3px;padding-left:5px;padding-right:5px}.character-choice strong{font-size:9.5px}}
+@media(min-width:580px){.character-grid{grid-template-columns:repeat(8,minmax(0,1fr));gap:16px 8px;padding-left:18px;padding-right:18px}.character-portrait{width:82px;height:82px}.character-intro{max-width:680px}.character-search-panel{max-width:620px}.character-method{max-width:760px}}
+@media(min-width:780px){.character-intro{margin-left:22px}.character-grid{padding-left:18px;padding-right:18px}.character-method{margin-left:20px}.character-search-panel{margin-left:20px}.character-coverage{margin-left:22px}.character-source-line{text-align:left;margin-left:22px}.character-controls{grid-template-columns:minmax(260px,1.2fr) 2fr}}
+@media(min-width:1160px){.character-intro{margin-left:2px}.character-grid{padding-left:0;padding-right:0}.character-method,.character-search-panel{margin-left:0}.character-coverage,.character-source-line{margin-left:2px}}
+

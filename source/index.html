@@ -13,6 +13,7 @@
   <link rel="icon" href="icons/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="characters.css">
   <link rel="stylesheet" href="diagnostics.css">
   <title>Marvel · Orden de lectura</title>
 </head>
@@ -42,7 +43,7 @@
       <div class="hero-actions"><button id="continueBtn" class="primary"><span class="button-icon">▶</span>Continuar</button><button id="randomBtn" class="secondary"><span class="button-icon">⌖</span>Mi posición</button></div>
       <div class="stats-row"><div><span class="stat-label">LEÍDOS</span><strong id="readCount">0</strong></div><div><span class="stat-label">PENDIENTES</span><strong id="pendingCount">—</strong></div><div><span class="stat-label">COMPLETADO</span><strong id="percentCount">0%</strong></div></div>
     </section>
-    <nav class="tabs" aria-label="Secciones principales"><button class="tab active" data-view="principal"><span class="tab-glyph">▤</span><span>Lectura</span></button><button class="tab" data-view="recop"><span class="tab-glyph">▱</span><span>Ediciones</span></button><button class="tab" data-view="info"><span class="tab-glyph">ⓘ</span><span>Guía</span></button></nav>
+    <nav class="tabs" aria-label="Secciones principales"><button class="tab active" data-view="principal"><span class="tab-glyph">▤</span><span>Lectura</span></button><button class="tab" data-view="characters"><span class="tab-glyph">◎</span><span>Personajes</span></button><button class="tab" data-view="info"><span class="tab-glyph">ⓘ</span><span>Guía</span></button></nav>
     <section id="principalView" class="view active">
       <div class="view-head"><div><span class="eyebrow">ORDEN PRINCIPAL</span><h1>Biblioteca</h1></div><span class="view-head-note">Publicación cronológica</span></div>
       <div class="controls sticky-controls">
@@ -58,16 +59,50 @@
       </div>
       <div id="issueList" class="issue-list" aria-live="polite"></div><button id="loadMore" class="load-more hidden">Mostrar más</button>
     </section>
-    <section id="recopView" class="view">
-      <div class="view-head"><div><span class="eyebrow">EDICIONES APARTE</span><h1>Recopilatorios</h1></div><span class="view-head-note">Sin duplicar lecturas</span></div>
-      <div class="notice">Tomos, recopilatorios y otras ediciones se mantienen separados para que el orden principal no te obligue a releer material.</div>
-      <div class="controls recop-controls"><select id="recopDecade" aria-label="Década de recopilatorios"></select></div><div id="recopList" class="issue-list"></div><button id="recopMore" class="load-more hidden">Mostrar más</button>
+    <section id="charactersView" class="view">
+      <div id="characterHome">
+        <div class="view-head"><div><span class="eyebrow">APARICIONES NARRATIVAS</span><h1>Personajes</h1></div><span class="view-head-note">Orden de publicación</span></div>
+        <p class="character-intro">Elige un personaje para ver sus apariciones dentro de la biblioteca, sin portadas, anuncios ni simples menciones.</p>
+        <div class="character-grid" aria-label="Personajes destacados">
+          <button type="button" class="character-choice" data-character-name="SPIDER-MAN/PETER BENJAMIN PARKER" data-character-label="Spider-Man" data-character-path="spidey.php" data-character-anchor="SPIDER"><span class="character-portrait"><span class="character-fallback">SM</span><img src="/api/marvel/cover?sourceId=16926" alt="" loading="lazy"></span><strong>Spider-Man</strong></button>
+          <button type="button" class="character-choice" data-character-name="CAPTAIN AMERICA/STEVE ROGERS" data-character-label="Capitán América" data-character-path="capa.php" data-character-anchor="AMERICA"><span class="character-portrait"><span class="character-fallback">CA</span><img src="/api/marvel/cover?sourceId=7849" alt="" loading="lazy"></span><strong>Capitán América</strong></button>
+          <button type="button" class="character-choice" data-character-name="IRON MAN/ANTHONY EDWARD &quot;TONY&quot; STARK/&quot;RICHARD FRANCO&quot;" data-character-label="Iron Man" data-character-path="ironman.php" data-character-anchor="IRON"><span class="character-portrait"><span class="character-fallback">IM</span><img src="/api/marvel/cover?sourceId=11280" alt="" loading="lazy"></span><strong>Iron Man</strong></button>
+          <button type="button" class="character-choice" data-character-name="THOR/THOR ODINSON" data-character-label="Thor" data-character-path="t.php" data-character-anchor="THOR"><span class="character-portrait"><span class="character-fallback">TH</span><img src="/api/marvel/cover?sourceId=9779" alt="" loading="lazy"></span><strong>Thor</strong></button>
+          <button type="button" class="character-choice" data-character-name="HULK/DR. ROBERT BRUCE BANNER" data-character-label="Hulk" data-character-path="hulk.php" data-character-anchor="HULK"><span class="character-portrait"><span class="character-fallback">HK</span><img src="/api/marvel/cover?sourceId=8906" alt="" loading="lazy"></span><strong>Hulk</strong></button>
+          <button type="button" class="character-choice" data-character-name="WOLVERINE/&quot;LOGAN&quot;/JAMES HOWLETT" data-character-label="Lobezno" data-character-path="w.php" data-character-anchor="WOLVERINE"><span class="character-portrait"><span class="character-fallback">LO</span><img src="/api/marvel/cover?sourceId=12168" alt="" loading="lazy"></span><strong>Lobezno</strong><small>X-Men</small></button>
+          <button type="button" class="character-choice" data-character-name="STORM/ORORO MUNROE" data-character-label="Tormenta" data-character-path="storm.php" data-character-anchor=""><span class="character-portrait"><span class="character-fallback">TO</span><img src="/api/marvel/cover?sourceId=50894" alt="" loading="lazy"></span><strong>Tormenta</strong><small>X-Men</small></button>
+          <button type="button" id="otherCharacterBtn" class="character-choice character-other"><span class="character-portrait"><span class="character-other-mark">+</span></span><strong>OTRO</strong><small>Buscar</small></button>
+        </div>
+        <div id="characterSearchPanel" class="character-search-panel hidden">
+          <label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="characterLookupInput" type="search" placeholder="Buscar otro personaje…" autocomplete="off"></label>
+          <div class="character-search-actions"><button id="characterLookupBtn" type="button" class="primary">Buscar</button><button id="characterLookupClose" type="button" class="secondary">Cancelar</button></div>
+          <div id="characterLookupStatus" class="character-lookup-status" role="status"></div>
+          <div id="characterLookupResults" class="character-lookup-results"></div>
+        </div>
+        <div class="character-method">Las apariciones proceden de <a href="https://www.chronologyproject.com/" target="_blank" rel="noopener">Marvel Chronology Project</a> y se reordenan con la fecha de publicación GCD de esta app. El progreso es el mismo que en Biblioteca.</div>
+      </div>
+      <div id="characterLibrary" class="hidden">
+        <div class="view-head character-library-head"><div><button id="characterBack" type="button" class="character-back">← Personajes</button><span class="eyebrow">ORDEN POR PERSONAJE</span><h1 id="characterTitle">Personaje</h1></div><span class="view-head-note">Publicación cronológica</span></div>
+        <div class="controls sticky-controls character-controls">
+          <label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="characterIssueSearch" type="search" placeholder="Buscar serie o número…" autocomplete="off"></label>
+          <div class="filter-grid">
+            <select id="characterStatusFilter" aria-label="Estado"><option value="all">Todos</option><option value="pending">Pendientes</option><option value="read">Leídos</option><option value="skipped">Reimpresiones omitidas</option><option value="new-material">Solo material nuevo</option></select>
+            <select id="characterContentFilter" aria-label="Contenido"><option value="all">Todo el contenido</option><option value="original">Originales</option><option value="mixto">Mixtos</option><option value="reimpresion">Reimpresiones</option><option value="sin-datos">Sin datos</option></select>
+            <select id="characterEraFilter" aria-label="Etapa"><option value="all">Todas las etapas</option><option value="timely">Timely / Edad de Oro</option><option value="atlas">Atlas / pre-Marvel</option><option value="marvel">Marvel</option></select>
+            <select id="characterDecadeFilter" aria-label="Década"></select>
+          </div>
+          <div class="result-line"><span id="characterResultCount">Preparando orden…</span><button id="characterClearFilters" class="link-btn">Restablecer</button></div>
+        </div>
+        <div id="characterCoverage" class="character-coverage"></div>
+        <div id="characterIssueList" class="issue-list" aria-live="polite"></div><button id="characterLoadMore" class="load-more hidden">Mostrar más</button>
+        <p class="character-source-line"><a id="characterSourceLink" href="https://www.chronologyproject.com/" target="_blank" rel="noopener">Consultar la cronología fuente</a></p>
+      </div>
     </section>
     <section id="infoView" class="view prose">
       <div class="view-head prose-head"><div><span class="eyebrow">METODOLOGÍA</span><h1>Cómo se construye el orden</h1></div></div>
-      <div class="prose-card"><p>La guía parte del volcado de <strong>Grand Comics Database (GCD)</strong> fechado el <strong id="dumpDate"></strong>, usando el grupo editorial Marvel de GCD. Incluye la etapa Timely, Atlas y Marvel.</p><p>El orden usa primero la <strong>fecha de venta</strong> registrada por GCD. Cuando falta, emplea una fecha estimada a partir de la información de publicación disponible.</p><p>Las <strong>reimpresiones completas</strong> pueden marcarse como omitidas sin quedar pendientes. En los números <strong>mixtos</strong> puede marcarse únicamente el material nuevo como leído. El export compacto actual conserva la clasificación por número, pero no el desglose por historia; la app no inventa qué páginas son reimpresas.</p><p>Las portadas y los enlaces de Marvel Unlimited se resuelven solo cuando hacen falta y se guardan en caché local para no repetir búsquedas.</p></div>
+      <div class="prose-card"><p>La guía parte del volcado de <strong>Grand Comics Database (GCD)</strong> fechado el <strong id="dumpDate"></strong>, usando el grupo editorial Marvel de GCD. Incluye la etapa Timely, Atlas y Marvel.</p><p>El orden usa primero la <strong>fecha de venta</strong> registrada por GCD. Cuando falta, emplea una fecha estimada a partir de la información de publicación disponible.</p><p>Los órdenes de <strong>Personajes</strong> cruzan las apariciones narrativas documentadas por Marvel Chronology Project con los números GCD de esta biblioteca y vuelven a ordenarlas por publicación. Se excluyen portadas, anuncios, simples menciones y entradas «behind the scenes».</p><p>Las <strong>reimpresiones completas</strong> pueden marcarse como omitidas sin quedar pendientes. En los números <strong>mixtos</strong> puede marcarse únicamente el material nuevo como leído. El export compacto actual conserva la clasificación por número, pero no el desglose por historia; la app no inventa qué páginas son reimpresas.</p><p>Las portadas y los enlaces de Marvel Unlimited se resuelven solo cuando hacen falta y se guardan en caché local para no repetir búsquedas.</p></div>
       <h2>Guardado</h2><div class="prose-card"><p>Tu progreso y la caché de enlaces se guardan en este dispositivo mediante IndexedDB. Puedes exportar e importar el progreso. Los datos de lectura no se envían a ningún servidor.</p></div>
-      <h2>Alcance</h2><dl class="scope"><div><dt>Números principales</dt><dd id="scopeMain">—</dd></div><div><dt>Recopilatorios/ediciones</dt><dd id="scopeRecop">—</dd></div><div><dt>Primera fecha</dt><dd id="scopeFirst">—</dd></div><div><dt>Última fecha</dt><dd id="scopeLast">—</dd></div></dl>
+      <h2>Alcance</h2><dl class="scope"><div><dt>Números principales</dt><dd id="scopeMain">—</dd></div><div><dt>Progreso</dt><dd>Compartido</dd></div><div><dt>Primera fecha</dt><dd id="scopeFirst">—</dd></div><div><dt>Última fecha</dt><dd id="scopeLast">—</dd></div></dl>
     </section>
   </main>
 

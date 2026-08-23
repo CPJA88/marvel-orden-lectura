@@ -226,6 +226,12 @@
     installBindings();
     if(!bindingsInstalled)setTimeout(waitForInit,100);
   }
+  globalThis.MarvelLibraryBridge={
+    ensureAllIssues,
+    getAllIssues:()=>allIssues||[],
+    getIssueDecade:id=>issueDecade.get(Number(id))||'',
+    normalize
+  };
   bootProgress(1,'Iniciando Marvel Lector','Preparando biblioteca…');
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',waitForInit,{once:true});
   else waitForInit();
