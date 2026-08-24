@@ -1,11 +1,11 @@
 {
-  "commit": "3cac744d39dbbb1556a25c05f0c35059cc4a2896",
-  "runId": "32692159248",
+  "commit": "53bf16d0d29f437dca2303246f5b7edf18fda6f3",
+  "runId": "32709352591",
   "syntax": "success",
   "build": "success",
   "tests": "success",
   "sagas": "success",
-  "builtPatch": "success",
+  "builtPatch": "failure",
   "dataContract": "success",
   "behavior": "success"
 }
