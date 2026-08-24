@@ -21,7 +21,7 @@ const ids=events.map(event=>event.id);
 const duplicateCatalogIds=[...new Set(ids.filter((id,index)=>ids.indexOf(id)!==index))];
 const titleYears=events.map(event=>`${event.year}\u0000${event.title}`);
 const duplicateCatalogTitleYears=[...new Set(titleYears.filter((key,index)=>titleYears.indexOf(key)!==index))];
-const invalidCatalogEvents=events.filter(event=>!/^[-a-z0-9]+$/.test(String(event.id||''))||!String(event.title||'').trim()||!Number.isInteger(Number(event.year))||!['planned','available'].includes(event.status)||!String(event.catalogSource||'').trim()||(event.coverIssueId!=null&&!Number.isInteger(Number(event.coverIssueId)))||(event.dataFile!=null&&!/^data\/sagas\/[-a-z0-9]+\.json$/.test(String(event.dataFile))));
+const invalidCatalogEvents=events.filter(event=>!/^[-a-z0-9]+$/.test(String(event.id||''))||!String(event.title||'').trim()||!Number.isInteger(Number(event.year))||!['planned','available'].includes(event.status)||!String(event.catalogSource||'').trim()||(event.coverIssueId!=null&&!Number.isInteger(Number(event.coverIssueId)))||(event.dataFile!=null&&!/^data\/sagas\/[-a-z0-9]+\.json$/.test(String(event.dataFile)))||(event.dataKey!=null&&!/^[-a-z0-9]+$/.test(String(event.dataKey))));
 const deterministicCatalog=events.every((event,index)=>{
   if(!index)return true;
   const previous=events[index-1];
@@ -29,21 +29,26 @@ const deterministicCatalog=events.every((event,index)=>{
 });
 const available=events.filter(event=>event.status==='available');
 const missingDataFiles=available.filter(event=>!event.dataFile).map(event=>event.id);
-const duplicateDataFiles=[...new Set(available.map(event=>event.dataFile).filter((file,index,list)=>file&&list.indexOf(file)!==index))];
+const dataLocators=available.map(event=>`${event.dataFile||''}#${event.dataKey||''}`);
+const duplicateDataLocators=[...new Set(dataLocators.filter((locator,index,list)=>locator&&list.indexOf(locator)!==index))];
 const coverIds=events.map(event=>Number(event.coverIssueId)).filter(Boolean);
 const missingCovers=coverIds.filter(id=>!issueById.has(id));
 const modeRank={principal:0,essential:1,complete:2};
 const reports=[];
+const dataFileCache=new Map();
 
 for(const meta of available){
   if(!meta.dataFile)continue;
   const relative=String(meta.dataFile).replace(/^data\/sagas\//,'');
-  const saga=JSON.parse(await fs.readFile(path.join(sagasRoot,relative),'utf8'));
+  if(!dataFileCache.has(relative))dataFileCache.set(relative,JSON.parse(await fs.readFile(path.join(sagasRoot,relative),'utf8')));
+  const raw=dataFileCache.get(relative);
+  const saga=meta.dataKey?raw?.events?.[meta.dataKey]:raw;
+  if(!saga){reports.push({id:meta.id,valid:false,error:`No existe ${meta.dataKey||meta.id} en ${meta.dataFile}`});continue}
   const entries=core.orderedEntries(saga);
   const structure=core.validateSaga(saga);
   const missing=entries.filter(entry=>!issueById.has(Number(entry.issueId))).map(entry=>entry.issueId);
   const unresolved=Array.isArray(saga.unresolvedReferences)?saga.unresolvedReferences:[];
-  const unresolvedNowLinked=unresolved.filter(reference=>issueById.has(Number(reference.gcdIssueId))).map(reference=>reference.gcdIssueId);
+  const unresolvedNowLinked=unresolved.filter(reference=>Number.isInteger(Number(reference.gcdIssueId))&&issueById.has(Number(reference.gcdIssueId))).map(reference=>reference.gcdIssueId);
   const counts=Object.fromEntries(Object.keys(modeRank).map(mode=>[mode,core.entriesForMode(saga,mode).length]));
   const targetCounts=Object.fromEntries(Object.keys(modeRank).map(mode=>[
     mode,
@@ -65,6 +70,7 @@ for(const meta of available){
     duplicateIssueIds:structure.duplicateIssueIds,
     duplicateOrders:structure.duplicateOrders,
     duplicateUnresolvedGcdIds:structure.duplicateUnresolvedGcdIds,
+    duplicateUnresolvedReferenceIds:structure.duplicateUnresolvedReferenceIds,
     deterministicOrder:structure.deterministic,
     principalInEssential:structure.principalInEssential,
     essentialInComplete:structure.essentialInComplete,
@@ -84,11 +90,11 @@ const report={
   duplicateCatalogIds,
   duplicateCatalogTitleYears,
   invalidCatalogEvents:invalidCatalogEvents.map(event=>event.id||event.title||null),
-  duplicateDataFiles,
+  duplicateDataLocators,
   missingDataFiles,
   catalogCoverIdsMissingFromLibrary:missingCovers,
   sagas:reports,
-  valid:deterministicCatalog&&!duplicateCatalogIds.length&&!duplicateCatalogTitleYears.length&&!invalidCatalogEvents.length&&!duplicateDataFiles.length&&!missingDataFiles.length&&!missingCovers.length&&reports.length===available.length&&reports.every(saga=>saga.valid)
+  valid:deterministicCatalog&&!duplicateCatalogIds.length&&!duplicateCatalogTitleYears.length&&!invalidCatalogEvents.length&&!duplicateDataLocators.length&&!missingDataFiles.length&&!missingCovers.length&&reports.length===available.length&&reports.every(saga=>saga.valid)
 };
 
 console.log(JSON.stringify(report,null,2));

@@ -1,0 +1,3353 @@
+{
+  "generatedAt": "2026-08-24",
+  "timelineUrl": "https://comicbookreadingorders.com/marvel/event-timeline/",
+  "curatedEvents": [
+    "secret-wars-1984",
+    "infinity-gauntlet",
+    "secret-wars-2015"
+  ],
+  "totals": {
+    "events": 166,
+    "available": 166,
+    "sourceReferences": 5160,
+    "linkedReferences": 5014,
+    "unresolvedReferences": 146
+  },
+  "curatedTotals": {
+    "events": 3,
+    "available": 3,
+    "sourceReferences": 372,
+    "linkedReferences": 370,
+    "unresolvedReferences": 2
+  },
+  "catalogTotals": {
+    "events": 170,
+    "available": 169,
+    "planned": 1,
+    "sourceReferences": 5532,
+    "linkedReferences": 5384,
+    "unresolvedReferences": 148
+  },
+  "events": [
+    {
+      "id": "reed-richards-and-sue-storms-wedding-1965",
+      "title": "Reed Richards and Sue Storm’s Wedding",
+      "year": 1965,
+      "status": "available",
+      "sourceReferences": 1,
+      "linkedReferences": 1,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 1,
+        "essential": 1,
+        "complete": 1
+      },
+      "targetCounts": {
+        "principal": 1,
+        "essential": 1,
+        "complete": 1
+      },
+      "error": null
+    },
+    {
+      "id": "kree-skrull-war-1971",
+      "title": "Kree-Skrull War",
+      "year": 1971,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-defenders-war-1973",
+      "title": "Avengers/Defenders War",
+      "year": 1973,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "original-clone-saga-1973",
+      "title": "Original Clone Saga",
+      "year": 1973,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "thanos-war-1973",
+      "title": "Thanos War",
+      "year": 1973,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "the-night-gwen-stacy-died-1973",
+      "title": "The Night Gwen Stacy Died",
+      "year": 1973,
+      "status": "available",
+      "sourceReferences": 2,
+      "linkedReferences": 2,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 2
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 2
+      },
+      "error": null
+    },
+    {
+      "id": "phoenix-saga-1976",
+      "title": "Phoenix Saga",
+      "year": 1976,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "dark-phoenix-saga-1980",
+      "title": "Dark Phoenix Saga",
+      "year": 1980,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "days-of-future-past-1981",
+      "title": "Days of Future Past",
+      "year": 1981,
+      "status": "available",
+      "sourceReferences": 2,
+      "linkedReferences": 2,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 2
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 2
+      },
+      "error": null
+    },
+    {
+      "id": "contest-of-champions-1982",
+      "title": "Contest of Champions",
+      "year": 1982,
+      "status": "available",
+      "sourceReferences": 3,
+      "linkedReferences": 3,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 3
+      },
+      "targetCounts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 3
+      },
+      "error": null
+    },
+    {
+      "id": "wraith-war-1984",
+      "title": "Wraith War",
+      "year": 1984,
+      "status": "available",
+      "sourceReferences": 36,
+      "linkedReferences": 35,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 35,
+        "essential": 35,
+        "complete": 35
+      },
+      "targetCounts": {
+        "principal": 36,
+        "essential": 36,
+        "complete": 36
+      },
+      "error": null
+    },
+    {
+      "id": "secret-wars-ii-1985",
+      "title": "Secret Wars II",
+      "year": 1985,
+      "status": "available",
+      "sourceReferences": 42,
+      "linkedReferences": 42,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 42
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 42
+      },
+      "error": null
+    },
+    {
+      "id": "mutant-massacre-1986",
+      "title": "Mutant Massacre",
+      "year": 1986,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "kravens-last-hunt-1987",
+      "title": "Kraven’s Last Hunt",
+      "year": 1987,
+      "status": "available",
+      "sourceReferences": 7,
+      "linkedReferences": 7,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "error": null
+    },
+    {
+      "id": "fall-of-the-mutants-1988",
+      "title": "Fall of the Mutants",
+      "year": 1988,
+      "status": "available",
+      "sourceReferences": 29,
+      "linkedReferences": 29,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 29,
+        "essential": 29,
+        "complete": 29
+      },
+      "targetCounts": {
+        "principal": 29,
+        "essential": 29,
+        "complete": 29
+      },
+      "error": null
+    },
+    {
+      "id": "inferno-1988",
+      "title": "Inferno",
+      "year": 1988,
+      "status": "available",
+      "sourceReferences": 39,
+      "linkedReferences": 38,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 38,
+        "essential": 38,
+        "complete": 38
+      },
+      "targetCounts": {
+        "principal": 39,
+        "essential": 39,
+        "complete": 39
+      },
+      "error": null
+    },
+    {
+      "id": "the-evolutionary-war-1988",
+      "title": "The Evolutionary War",
+      "year": 1988,
+      "status": "available",
+      "sourceReferences": 11,
+      "linkedReferences": 10,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "error": null
+    },
+    {
+      "id": "acts-of-vengeance-1989",
+      "title": "Acts of Vengeance",
+      "year": 1989,
+      "status": "available",
+      "sourceReferences": 70,
+      "linkedReferences": 70,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 70,
+        "essential": 70,
+        "complete": 70
+      },
+      "targetCounts": {
+        "principal": 70,
+        "essential": 70,
+        "complete": 70
+      },
+      "error": null
+    },
+    {
+      "id": "atlantis-attacks-1989",
+      "title": "Atlantis Attacks",
+      "year": 1989,
+      "status": "available",
+      "sourceReferences": 17,
+      "linkedReferences": 15,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 15,
+        "essential": 15,
+        "complete": 15
+      },
+      "targetCounts": {
+        "principal": 17,
+        "essential": 17,
+        "complete": 17
+      },
+      "error": null
+    },
+    {
+      "id": "days-of-future-present-1990",
+      "title": "Days of Future Present",
+      "year": 1990,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 3,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 3
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "x-tinction-agenda-1990",
+      "title": "X-Tinction Agenda",
+      "year": 1990,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "muir-island-saga-1991",
+      "title": "Muir Island Saga",
+      "year": 1991,
+      "status": "available",
+      "sourceReferences": 5,
+      "linkedReferences": 5,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "error": null
+    },
+    {
+      "id": "dead-mans-hand-1992",
+      "title": "Dead Man’s Hand",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-war-1992",
+      "title": "Infinity War",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 52,
+      "linkedReferences": 52,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 52
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 52
+      },
+      "error": null
+    },
+    {
+      "id": "marvel-2099-1992",
+      "title": "Marvel 2099",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 271,
+      "linkedReferences": 271,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 271,
+        "essential": 271,
+        "complete": 271
+      },
+      "targetCounts": {
+        "principal": 271,
+        "essential": 271,
+        "complete": 271
+      },
+      "error": null
+    },
+    {
+      "id": "operation-galactic-storm-1992",
+      "title": "Operation: Galactic Storm",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 22,
+      "linkedReferences": 22,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 22,
+        "essential": 22,
+        "complete": 22
+      },
+      "targetCounts": {
+        "principal": 22,
+        "essential": 22,
+        "complete": 22
+      },
+      "error": null
+    },
+    {
+      "id": "rise-of-the-midnight-sons-1992",
+      "title": "Rise of the Midnight Sons",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "x-cutioners-song-1992",
+      "title": "X-Cutioner’s Song",
+      "year": 1992,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "blood-and-thunder-1993",
+      "title": "Blood and Thunder",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 12,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "bloodties-1993",
+      "title": "Bloodties",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 5,
+      "linkedReferences": 5,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "error": null
+    },
+    {
+      "id": "fatal-attractions-1993",
+      "title": "Fatal Attractions",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "for-love-nor-money-1993",
+      "title": "For Love Nor Money",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-crusade-1993",
+      "title": "Infinity Crusade",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 47,
+      "linkedReferences": 47,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 47
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 47
+      },
+      "error": null
+    },
+    {
+      "id": "maximum-carnage-1993",
+      "title": "Maximum Carnage",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 14,
+      "linkedReferences": 14,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "targetCounts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "error": null
+    },
+    {
+      "id": "midnight-massacre-1993",
+      "title": "Midnight Massacre",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 5,
+      "linkedReferences": 5,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "error": null
+    },
+    {
+      "id": "mys-tech-wars-1993",
+      "title": "Mys-Tech Wars",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 0,
+      "unresolvedReferences": 4,
+      "counts": {
+        "principal": 0,
+        "essential": 0,
+        "complete": 0
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "road-to-vengeance-missing-link-1993",
+      "title": "Road to Vengeance: Missing Link",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "siege-of-darkness-1993",
+      "title": "Siege of Darkness",
+      "year": 1993,
+      "status": "available",
+      "sourceReferences": 18,
+      "linkedReferences": 18,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 18
+      },
+      "targetCounts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 18
+      },
+      "error": null
+    },
+    {
+      "id": "childs-play-1994",
+      "title": "Child’s Play",
+      "year": 1994,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 4,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "phalanx-covenant-1994",
+      "title": "Phalanx Covenant",
+      "year": 1994,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "second-clone-saga-1994",
+      "title": "Second Clone Saga",
+      "year": 1994,
+      "status": "available",
+      "sourceReferences": 161,
+      "linkedReferences": 158,
+      "unresolvedReferences": 3,
+      "counts": {
+        "principal": 158,
+        "essential": 158,
+        "complete": 158
+      },
+      "targetCounts": {
+        "principal": 161,
+        "essential": 161,
+        "complete": 161
+      },
+      "error": null
+    },
+    {
+      "id": "time-and-time-again-1994",
+      "title": "Time and Time Again",
+      "year": 1994,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "age-of-apocalypse",
+      "title": "Age of Apocalypse",
+      "year": 1995,
+      "status": "available",
+      "sourceReferences": 60,
+      "linkedReferences": 59,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 59,
+        "essential": 59,
+        "complete": 59
+      },
+      "targetCounts": {
+        "principal": 60,
+        "essential": 60,
+        "complete": 60
+      },
+      "error": null
+    },
+    {
+      "id": "countdown-1995",
+      "title": "Countdown",
+      "year": 1995,
+      "status": "available",
+      "sourceReferences": 5,
+      "linkedReferences": 5,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "error": null
+    },
+    {
+      "id": "legion-quest-1995",
+      "title": "Legion Quest",
+      "year": 1995,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "over-the-edge-1995",
+      "title": "Over the Edge",
+      "year": 1995,
+      "status": "available",
+      "sourceReferences": 7,
+      "linkedReferences": 7,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "error": null
+    },
+    {
+      "id": "heroes-reborn-1996",
+      "title": "Heroes Reborn",
+      "year": 1996,
+      "status": "available",
+      "sourceReferences": 63,
+      "linkedReferences": 63,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 63,
+        "essential": 63,
+        "complete": 63
+      },
+      "targetCounts": {
+        "principal": 63,
+        "essential": 63,
+        "complete": 63
+      },
+      "error": null
+    },
+    {
+      "id": "marvel-vs-dc-1996",
+      "title": "Marvel vs DC",
+      "year": 1996,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 2,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 2
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "onslaught-saga-1996",
+      "title": "Onslaught Saga",
+      "year": 1996,
+      "status": "available",
+      "sourceReferences": 58,
+      "linkedReferences": 55,
+      "unresolvedReferences": 3,
+      "counts": {
+        "principal": 55,
+        "essential": 55,
+        "complete": 55
+      },
+      "targetCounts": {
+        "principal": 58,
+        "essential": 58,
+        "complete": 58
+      },
+      "error": null
+    },
+    {
+      "id": "operation-zero-tolerance-1997",
+      "title": "Operation: Zero Tolerance",
+      "year": 1997,
+      "status": "available",
+      "sourceReferences": 20,
+      "linkedReferences": 20,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 20,
+        "essential": 20,
+        "complete": 20
+      },
+      "targetCounts": {
+        "principal": 20,
+        "essential": 20,
+        "complete": 20
+      },
+      "error": null
+    },
+    {
+      "id": "mc2-1998",
+      "title": "MC2",
+      "year": 1998,
+      "status": "available",
+      "sourceReferences": 224,
+      "linkedReferences": 211,
+      "unresolvedReferences": 13,
+      "counts": {
+        "principal": 211,
+        "essential": 211,
+        "complete": 211
+      },
+      "targetCounts": {
+        "principal": 224,
+        "essential": 224,
+        "complete": 224
+      },
+      "error": null
+    },
+    {
+      "id": "spider-man-identity-crisis-1998",
+      "title": "Spider-Man: Identity Crisis",
+      "year": 1998,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "the-hunt-for-xavier-1998",
+      "title": "The Hunt for Xavier",
+      "year": 1998,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "earth-x-1999",
+      "title": "Earth X",
+      "year": 1999,
+      "status": "available",
+      "sourceReferences": 61,
+      "linkedReferences": 54,
+      "unresolvedReferences": 7,
+      "counts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 54
+      },
+      "targetCounts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 61
+      },
+      "error": null
+    },
+    {
+      "id": "eighth-day-1999",
+      "title": "Eighth Day",
+      "year": 1999,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 4,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "magneto-war-1999",
+      "title": "Magneto War",
+      "year": 1999,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "apocalypse-the-twelve-2000",
+      "title": "Apocalypse: The Twelve",
+      "year": 2000,
+      "status": "available",
+      "sourceReferences": 51,
+      "linkedReferences": 49,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 49,
+        "essential": 49,
+        "complete": 49
+      },
+      "targetCounts": {
+        "principal": 51,
+        "essential": 51,
+        "complete": 51
+      },
+      "error": null
+    },
+    {
+      "id": "maximum-security-2000",
+      "title": "Maximum Security",
+      "year": 2000,
+      "status": "available",
+      "sourceReferences": 28,
+      "linkedReferences": 28,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 28
+      },
+      "targetCounts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 28
+      },
+      "error": null
+    },
+    {
+      "id": "eve-of-destruction-2001",
+      "title": "Eve of Destruction",
+      "year": 2001,
+      "status": "available",
+      "sourceReferences": 19,
+      "linkedReferences": 19,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 19,
+        "essential": 19,
+        "complete": 19
+      },
+      "targetCounts": {
+        "principal": 19,
+        "essential": 19,
+        "complete": 19
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-abyss-2002",
+      "title": "Infinity Abyss",
+      "year": 2002,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "marvel-1602-2003",
+      "title": "Marvel 1602",
+      "year": 2003,
+      "status": "available",
+      "sourceReferences": 23,
+      "linkedReferences": 23,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 23
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 23
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-disassembled-2004",
+      "title": "Avengers Disassembled",
+      "year": 2004,
+      "status": "available",
+      "sourceReferences": 34,
+      "linkedReferences": 34,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 34,
+        "essential": 34,
+        "complete": 34
+      },
+      "targetCounts": {
+        "principal": 34,
+        "essential": 34,
+        "complete": 34
+      },
+      "error": null
+    },
+    {
+      "id": "secret-war-2004",
+      "title": "Secret War",
+      "year": 2004,
+      "status": "available",
+      "sourceReferences": 5,
+      "linkedReferences": 5,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "error": null
+    },
+    {
+      "id": "house-of-m",
+      "title": "House of M",
+      "year": 2005,
+      "status": "available",
+      "sourceReferences": 65,
+      "linkedReferences": 63,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 63
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 65
+      },
+      "error": null
+    },
+    {
+      "id": "iron-man-extremis-2005",
+      "title": "Iron Man: Extremis",
+      "year": 2005,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "spider-man-the-other-2005",
+      "title": "Spider-Man: The Other",
+      "year": 2005,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "annihilation-2006",
+      "title": "Annihilation",
+      "year": 2006,
+      "status": "available",
+      "sourceReferences": 33,
+      "linkedReferences": 32,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 32
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 33
+      },
+      "error": null
+    },
+    {
+      "id": "civil-war",
+      "title": "Civil War",
+      "year": 2006,
+      "status": "available",
+      "sourceReferences": 132,
+      "linkedReferences": 130,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 130
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 132
+      },
+      "error": null
+    },
+    {
+      "id": "decimation-2006",
+      "title": "Decimation",
+      "year": 2006,
+      "status": "available",
+      "sourceReferences": 53,
+      "linkedReferences": 53,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 53,
+        "essential": 53,
+        "complete": 53
+      },
+      "targetCounts": {
+        "principal": 53,
+        "essential": 53,
+        "complete": 53
+      },
+      "error": null
+    },
+    {
+      "id": "planet-hulk-2006",
+      "title": "Planet Hulk",
+      "year": 2006,
+      "status": "available",
+      "sourceReferences": 23,
+      "linkedReferences": 23,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 23,
+        "essential": 23,
+        "complete": 23
+      },
+      "targetCounts": {
+        "principal": 23,
+        "essential": 23,
+        "complete": 23
+      },
+      "error": null
+    },
+    {
+      "id": "rise-and-fall-of-the-shiar-empire-2006",
+      "title": "Rise and Fall of the Shi’ar Empire",
+      "year": 2006,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 12,
+        "essential": 12,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "annihilation-conquest-2007",
+      "title": "Annihilation: Conquest",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 33,
+      "linkedReferences": 33,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 33
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 33
+      },
+      "error": null
+    },
+    {
+      "id": "one-more-day-2007",
+      "title": "One More Day",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 4,
+      "linkedReferences": 4,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 4
+      },
+      "error": null
+    },
+    {
+      "id": "silent-war-2007",
+      "title": "Silent War",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "the-initiative-2007",
+      "title": "The Initiative",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 80,
+      "linkedReferences": 80,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 80,
+        "essential": 80,
+        "complete": 80
+      },
+      "targetCounts": {
+        "principal": 80,
+        "essential": 80,
+        "complete": 80
+      },
+      "error": null
+    },
+    {
+      "id": "world-war-hulk-2007",
+      "title": "World War Hulk",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 52,
+      "linkedReferences": 51,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 51
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 52
+      },
+      "error": null
+    },
+    {
+      "id": "world-war-hulk-aftersmash-2007",
+      "title": "World War Hulk: Aftersmash",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-endangered-species-2007",
+      "title": "X-Men: Endangered Species",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 17,
+      "linkedReferences": 17,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 17,
+        "essential": 17,
+        "complete": 17
+      },
+      "targetCounts": {
+        "principal": 17,
+        "essential": 17,
+        "complete": 17
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-messiah-complex-2007",
+      "title": "X-Men: Messiah Complex",
+      "year": 2007,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "dark-reign-2008",
+      "title": "Dark Reign",
+      "year": 2008,
+      "status": "available",
+      "sourceReferences": 290,
+      "linkedReferences": 284,
+      "unresolvedReferences": 6,
+      "counts": {
+        "principal": 284,
+        "essential": 284,
+        "complete": 284
+      },
+      "targetCounts": {
+        "principal": 290,
+        "essential": 290,
+        "complete": 290
+      },
+      "error": null
+    },
+    {
+      "id": "secret-invasion",
+      "title": "Secret Invasion",
+      "year": 2008,
+      "status": "available",
+      "sourceReferences": 126,
+      "linkedReferences": 125,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 125
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 126
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-divided-we-stand-2008",
+      "title": "X-Men: Divided We Stand",
+      "year": 2008,
+      "status": "available",
+      "sourceReferences": 40,
+      "linkedReferences": 40,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 40
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 40
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-manifest-destiny-2008",
+      "title": "X-Men: Manifest Destiny",
+      "year": 2008,
+      "status": "available",
+      "sourceReferences": 35,
+      "linkedReferences": 34,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 34
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 35
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-original-sin-2008",
+      "title": "X-Men: Original Sin",
+      "year": 2008,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "fall-of-the-hulks-2009",
+      "title": "Fall of the Hulks",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 15,
+      "linkedReferences": 15,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 15,
+        "essential": 15,
+        "complete": 15
+      },
+      "targetCounts": {
+        "principal": 15,
+        "essential": 15,
+        "complete": 15
+      },
+      "error": null
+    },
+    {
+      "id": "messiah-war-2009",
+      "title": "Messiah War",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 7,
+      "linkedReferences": 7,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "error": null
+    },
+    {
+      "id": "necrosha-2009",
+      "title": "Necrosha",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 14,
+      "linkedReferences": 13,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "error": null
+    },
+    {
+      "id": "utopia-2009",
+      "title": "Utopia",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "war-of-kings-2009",
+      "title": "War of Kings",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 54,
+      "linkedReferences": 53,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 53
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 54
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-nation-x-2009",
+      "title": "X-Men: Nation X",
+      "year": 2009,
+      "status": "available",
+      "sourceReferences": 21,
+      "linkedReferences": 21,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 21
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 21
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-the-childrens-crusade-2010",
+      "title": "Avengers: The Children’s Crusade",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "chaos-war-2010",
+      "title": "Chaos War",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 19,
+      "linkedReferences": 19,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 19
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 19
+      },
+      "error": null
+    },
+    {
+      "id": "curse-of-the-mutants-2010",
+      "title": "Curse of the Mutants",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 19,
+      "linkedReferences": 19,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 19,
+        "essential": 19,
+        "complete": 19
+      },
+      "targetCounts": {
+        "principal": 19,
+        "essential": 19,
+        "complete": 19
+      },
+      "error": null
+    },
+    {
+      "id": "doomwar-2010",
+      "title": "Doomwar",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "heroic-age-2010",
+      "title": "Heroic Age",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 116,
+      "linkedReferences": 113,
+      "unresolvedReferences": 3,
+      "counts": {
+        "principal": 113,
+        "essential": 113,
+        "complete": 113
+      },
+      "targetCounts": {
+        "principal": 116,
+        "essential": 116,
+        "complete": 116
+      },
+      "error": null
+    },
+    {
+      "id": "realm-of-kings-2010",
+      "title": "Realm of Kings",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 24,
+      "linkedReferences": 24,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 24,
+        "essential": 24,
+        "complete": 24
+      },
+      "targetCounts": {
+        "principal": 24,
+        "essential": 24,
+        "complete": 24
+      },
+      "error": null
+    },
+    {
+      "id": "shadowland-2010",
+      "title": "Shadowland",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 31,
+      "linkedReferences": 31,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 31
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 31
+      },
+      "error": null
+    },
+    {
+      "id": "siege",
+      "title": "Siege",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 44,
+      "linkedReferences": 42,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 42
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 44
+      },
+      "error": null
+    },
+    {
+      "id": "the-thanos-imperative-2010",
+      "title": "The Thanos Imperative",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 10,
+      "linkedReferences": 10,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 10
+      },
+      "error": null
+    },
+    {
+      "id": "wolverine-goes-to-hell-2010",
+      "title": "Wolverine Goes to Hell",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 14,
+      "linkedReferences": 14,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "targetCounts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "error": null
+    },
+    {
+      "id": "world-war-hulks-2010",
+      "title": "World War Hulks",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-second-coming-2010",
+      "title": "X-Men: Second Coming",
+      "year": 2010,
+      "status": "available",
+      "sourceReferences": 21,
+      "linkedReferences": 21,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 21
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 21
+      },
+      "error": null
+    },
+    {
+      "id": "age-of-x-2011",
+      "title": "Age of X",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 11,
+      "linkedReferences": 11,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "error": null
+    },
+    {
+      "id": "fear-itself-2011",
+      "title": "Fear Itself",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 121,
+      "linkedReferences": 120,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 120
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 121
+      },
+      "error": null
+    },
+    {
+      "id": "shattered-heroes-2011",
+      "title": "Shattered Heroes",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 74,
+      "linkedReferences": 74,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 74,
+        "essential": 74,
+        "complete": 74
+      },
+      "targetCounts": {
+        "principal": 74,
+        "essential": 74,
+        "complete": 74
+      },
+      "error": null
+    },
+    {
+      "id": "spider-island-2011",
+      "title": "Spider-Island",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 32,
+      "linkedReferences": 31,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 31,
+        "essential": 31,
+        "complete": 31
+      },
+      "targetCounts": {
+        "principal": 32,
+        "essential": 32,
+        "complete": 32
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-regenesis-2011",
+      "title": "X-Men: Regenesis",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 46,
+      "linkedReferences": 46,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 46,
+        "essential": 46,
+        "complete": 46
+      },
+      "targetCounts": {
+        "principal": 46,
+        "essential": 46,
+        "complete": 46
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-schism-2011",
+      "title": "X-Men: Schism",
+      "year": 2011,
+      "status": "available",
+      "sourceReferences": 11,
+      "linkedReferences": 11,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 11
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 11
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-vs-x-men",
+      "title": "Avengers vs. X-Men",
+      "year": 2012,
+      "status": "available",
+      "sourceReferences": 71,
+      "linkedReferences": 71,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 71
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 71
+      },
+      "error": null
+    },
+    {
+      "id": "dying-wish-2012",
+      "title": "Dying Wish",
+      "year": 2012,
+      "status": "available",
+      "sourceReferences": 3,
+      "linkedReferences": 3,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 3
+      },
+      "targetCounts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 3
+      },
+      "error": null
+    },
+    {
+      "id": "minimum-carnage-2012",
+      "title": "Minimum Carnage",
+      "year": 2012,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "age-of-ultron-2013",
+      "title": "Age of Ultron",
+      "year": 2013,
+      "status": "available",
+      "sourceReferences": 19,
+      "linkedReferences": 15,
+      "unresolvedReferences": 4,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 15
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 19
+      },
+      "error": null
+    },
+    {
+      "id": "battle-of-the-atom-2013",
+      "title": "Battle of the Atom",
+      "year": 2013,
+      "status": "available",
+      "sourceReferences": 10,
+      "linkedReferences": 10,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "error": null
+    },
+    {
+      "id": "goblin-nation-2013",
+      "title": "Goblin Nation",
+      "year": 2013,
+      "status": "available",
+      "sourceReferences": 11,
+      "linkedReferences": 10,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-2013",
+      "title": "Infinity",
+      "year": 2013,
+      "status": "available",
+      "sourceReferences": 54,
+      "linkedReferences": 51,
+      "unresolvedReferences": 3,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 51
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 54
+      },
+      "error": null
+    },
+    {
+      "id": "x-termination-2013",
+      "title": "X-Termination",
+      "year": 2013,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-and-x-men-axis-2014",
+      "title": "Avengers & X-Men: AXIS",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 56,
+      "linkedReferences": 56,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 56
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 56
+      },
+      "error": null
+    },
+    {
+      "id": "death-of-wolverine-2014",
+      "title": "Death of Wolverine",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 23,
+      "linkedReferences": 23,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 23
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 23
+      },
+      "error": null
+    },
+    {
+      "id": "inhumanity-2014",
+      "title": "Inhumanity",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 21,
+      "linkedReferences": 19,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 19
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 21
+      },
+      "error": null
+    },
+    {
+      "id": "original-sin-2014",
+      "title": "Original Sin",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 67,
+      "linkedReferences": 65,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 65
+      },
+      "targetCounts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 67
+      },
+      "error": null
+    },
+    {
+      "id": "revolutionary-war-2014",
+      "title": "Revolutionary War",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "spider-verse-2014",
+      "title": "Spider-Verse",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 32,
+      "linkedReferences": 30,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 0,
+        "essential": 0,
+        "complete": 30
+      },
+      "targetCounts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 32
+      },
+      "error": null
+    },
+    {
+      "id": "the-trial-of-jean-grey-2014",
+      "title": "The Trial of Jean Grey",
+      "year": 2014,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 5,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 5
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "the-black-vortex-2015",
+      "title": "The Black Vortex",
+      "year": 2015,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "apocalypse-wars-2016",
+      "title": "Apocalypse Wars",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-standoff-2016",
+      "title": "Avengers: Standoff!",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 18,
+      "linkedReferences": 18,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 18
+      },
+      "targetCounts": {
+        "principal": 18,
+        "essential": 18,
+        "complete": 18
+      },
+      "error": null
+    },
+    {
+      "id": "civil-war-ii",
+      "title": "Civil War II",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 152,
+      "linkedReferences": 148,
+      "unresolvedReferences": 4,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 148
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 152
+      },
+      "error": null
+    },
+    {
+      "id": "dead-no-more-the-clone-conspiracy-2016",
+      "title": "Dead No More: The Clone Conspiracy",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 24,
+      "linkedReferences": 23,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 23,
+        "essential": 23,
+        "complete": 23
+      },
+      "targetCounts": {
+        "principal": 24,
+        "essential": 24,
+        "complete": 24
+      },
+      "error": null
+    },
+    {
+      "id": "inhumans-vs-x-men-2016",
+      "title": "Inhumans vs. X-Men",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 24,
+      "linkedReferences": 24,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 24
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 24
+      },
+      "error": null
+    },
+    {
+      "id": "spider-women-2016",
+      "title": "Spider-Women",
+      "year": 2016,
+      "status": "available",
+      "sourceReferences": 8,
+      "linkedReferences": 8,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "targetCounts": {
+        "principal": 8,
+        "essential": 8,
+        "complete": 8
+      },
+      "error": null
+    },
+    {
+      "id": "monsters-unleashed-2017",
+      "title": "Monsters Unleashed",
+      "year": 2017,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "secret-empire-2017",
+      "title": "Secret Empire",
+      "year": 2017,
+      "status": "available",
+      "sourceReferences": 77,
+      "linkedReferences": 77,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 77
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 77
+      },
+      "error": null
+    },
+    {
+      "id": "venomverse-2017",
+      "title": "Venomverse",
+      "year": 2017,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "damnation-2018",
+      "title": "Damnation",
+      "year": 2018,
+      "status": "available",
+      "sourceReferences": 15,
+      "linkedReferences": 15,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 15,
+        "essential": 15,
+        "complete": 15
+      },
+      "targetCounts": {
+        "principal": 15,
+        "essential": 15,
+        "complete": 15
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-countdown-2018",
+      "title": "Infinity Countdown",
+      "year": 2018,
+      "status": "available",
+      "sourceReferences": 16,
+      "linkedReferences": 16,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 16
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 16
+      },
+      "error": null
+    },
+    {
+      "id": "infinity-wars-2018",
+      "title": "Infinity Wars",
+      "year": 2018,
+      "status": "available",
+      "sourceReferences": 31,
+      "linkedReferences": 31,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 31
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 31
+      },
+      "error": null
+    },
+    {
+      "id": "spider-geddon-2018",
+      "title": "Spider-Geddon",
+      "year": 2018,
+      "status": "available",
+      "sourceReferences": 26,
+      "linkedReferences": 26,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 26
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 26
+      },
+      "error": null
+    },
+    {
+      "id": "venom-inc-2018",
+      "title": "Venom Inc.",
+      "year": 2018,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "2099-2019",
+      "title": "2099",
+      "year": 2019,
+      "status": "available",
+      "sourceReferences": 14,
+      "linkedReferences": 14,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "targetCounts": {
+        "principal": 14,
+        "essential": 14,
+        "complete": 14
+      },
+      "error": null
+    },
+    {
+      "id": "absolute-carnage-2019",
+      "title": "Absolute Carnage",
+      "year": 2019,
+      "status": "available",
+      "sourceReferences": 30,
+      "linkedReferences": 30,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 30
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 30
+      },
+      "error": null
+    },
+    {
+      "id": "age-of-x-man-2019",
+      "title": "Age of X-Man",
+      "year": 2019,
+      "status": "available",
+      "sourceReferences": 32,
+      "linkedReferences": 32,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 32,
+        "essential": 32,
+        "complete": 32
+      },
+      "targetCounts": {
+        "principal": 32,
+        "essential": 32,
+        "complete": 32
+      },
+      "error": null
+    },
+    {
+      "id": "annihilation-scourge-2019",
+      "title": "Annihilation: Scourge",
+      "year": 2019,
+      "status": "available",
+      "sourceReferences": 6,
+      "linkedReferences": 6,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "error": null
+    },
+    {
+      "id": "war-of-the-realms-2019",
+      "title": "War of the Realms",
+      "year": 2019,
+      "status": "available",
+      "sourceReferences": 63,
+      "linkedReferences": 63,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 63
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 63
+      },
+      "error": null
+    },
+    {
+      "id": "empyre-2020",
+      "title": "Empyre",
+      "year": 2020,
+      "status": "available",
+      "sourceReferences": 38,
+      "linkedReferences": 38,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 38
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 38
+      },
+      "error": null
+    },
+    {
+      "id": "iron-man-2020-2020",
+      "title": "Iron Man 2020",
+      "year": 2020,
+      "status": "available",
+      "sourceReferences": 18,
+      "linkedReferences": 16,
+      "unresolvedReferences": 2,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 16
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 18
+      },
+      "error": null
+    },
+    {
+      "id": "king-in-black",
+      "title": "King in Black",
+      "year": 2020,
+      "status": "available",
+      "sourceReferences": 65,
+      "linkedReferences": 64,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 64
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 65
+      },
+      "error": null
+    },
+    {
+      "id": "x-of-swords-2020",
+      "title": "X of Swords",
+      "year": 2020,
+      "status": "available",
+      "sourceReferences": 22,
+      "linkedReferences": 22,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 22,
+        "essential": 22,
+        "complete": 22
+      },
+      "targetCounts": {
+        "principal": 22,
+        "essential": 22,
+        "complete": 22
+      },
+      "error": null
+    },
+    {
+      "id": "death-of-doctor-strange-2021",
+      "title": "Death of Doctor Strange",
+      "year": 2021,
+      "status": "available",
+      "sourceReferences": 12,
+      "linkedReferences": 12,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 12
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 12
+      },
+      "error": null
+    },
+    {
+      "id": "hellfire-gala-2021",
+      "title": "Hellfire Gala",
+      "year": 2021,
+      "status": "available",
+      "sourceReferences": 13,
+      "linkedReferences": 13,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "targetCounts": {
+        "principal": 13,
+        "essential": 13,
+        "complete": 13
+      },
+      "error": null
+    },
+    {
+      "id": "heroes-reborn-2021",
+      "title": "Heroes Reborn",
+      "year": 2021,
+      "status": "available",
+      "sourceReferences": 18,
+      "linkedReferences": 18,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 18
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 18
+      },
+      "error": null
+    },
+    {
+      "id": "last-annihilation-2021",
+      "title": "Last Annihilation",
+      "year": 2021,
+      "status": "available",
+      "sourceReferences": 7,
+      "linkedReferences": 6,
+      "unresolvedReferences": 1,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 7,
+        "essential": 7,
+        "complete": 7
+      },
+      "error": null
+    },
+    {
+      "id": "axe-judgment-day",
+      "title": "A.X.E.: Judgment Day",
+      "year": 2022,
+      "status": "available",
+      "sourceReferences": 35,
+      "linkedReferences": 35,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 35
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 35
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-assemble-2022",
+      "title": "Avengers Assemble",
+      "year": 2022,
+      "status": "available",
+      "sourceReferences": 10,
+      "linkedReferences": 10,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "error": null
+    },
+    {
+      "id": "dark-web-2022",
+      "title": "Dark Web",
+      "year": 2022,
+      "status": "available",
+      "sourceReferences": 21,
+      "linkedReferences": 21,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 21,
+        "essential": 21,
+        "complete": 21
+      },
+      "targetCounts": {
+        "principal": 21,
+        "essential": 21,
+        "complete": 21
+      },
+      "error": null
+    },
+    {
+      "id": "devils-reign-2022",
+      "title": "Devil’s Reign",
+      "year": 2022,
+      "status": "available",
+      "sourceReferences": 25,
+      "linkedReferences": 25,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 25
+      },
+      "targetCounts": {
+        "principal": 6,
+        "essential": 6,
+        "complete": 25
+      },
+      "error": null
+    },
+    {
+      "id": "gang-war-2023",
+      "title": "Gang War",
+      "year": 2023,
+      "status": "available",
+      "sourceReferences": 31,
+      "linkedReferences": 31,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 31,
+        "essential": 31,
+        "complete": 31
+      },
+      "targetCounts": {
+        "principal": 31,
+        "essential": 31,
+        "complete": 31
+      },
+      "error": null
+    },
+    {
+      "id": "sins-of-sinister-2023",
+      "title": "Sins of Sinister",
+      "year": 2023,
+      "status": "available",
+      "sourceReferences": 11,
+      "linkedReferences": 11,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "targetCounts": {
+        "principal": 11,
+        "essential": 11,
+        "complete": 11
+      },
+      "error": null
+    },
+    {
+      "id": "blood-hunt",
+      "title": "Blood Hunt",
+      "year": 2024,
+      "status": "available",
+      "sourceReferences": 54,
+      "linkedReferences": 48,
+      "unresolvedReferences": 6,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 48
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 54
+      },
+      "error": null
+    },
+    {
+      "id": "venom-war-2024",
+      "title": "Venom War",
+      "year": 2024,
+      "status": "available",
+      "sourceReferences": 37,
+      "linkedReferences": 37,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 37
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 37
+      },
+      "error": null
+    },
+    {
+      "id": "imperial-2025",
+      "title": "Imperial",
+      "year": 2025,
+      "status": "available",
+      "sourceReferences": 9,
+      "linkedReferences": 9,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 9
+      },
+      "targetCounts": {
+        "principal": 4,
+        "essential": 4,
+        "complete": 9
+      },
+      "error": null
+    },
+    {
+      "id": "one-world-under-doom-2025",
+      "title": "One World Under Doom",
+      "year": 2025,
+      "status": "available",
+      "sourceReferences": 85,
+      "linkedReferences": 79,
+      "unresolvedReferences": 6,
+      "counts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 79
+      },
+      "targetCounts": {
+        "principal": 9,
+        "essential": 9,
+        "complete": 85
+      },
+      "error": null
+    },
+    {
+      "id": "x-men-age-of-revelation-2025",
+      "title": "X-Men: Age of Revelation",
+      "year": 2025,
+      "status": "available",
+      "sourceReferences": 66,
+      "linkedReferences": 54,
+      "unresolvedReferences": 12,
+      "counts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 54
+      },
+      "targetCounts": {
+        "principal": 3,
+        "essential": 3,
+        "complete": 66
+      },
+      "error": null
+    },
+    {
+      "id": "amazing-spider-man-venom-death-spiral-2026",
+      "title": "Amazing Spider-Man/Venom: Death Spiral",
+      "year": 2026,
+      "status": "available",
+      "sourceReferences": 10,
+      "linkedReferences": 10,
+      "unresolvedReferences": 0,
+      "counts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "targetCounts": {
+        "principal": 10,
+        "essential": 10,
+        "complete": 10
+      },
+      "error": null
+    },
+    {
+      "id": "avengers-armageddon-2026",
+      "title": "Avengers: Armageddon",
+      "year": 2026,
+      "status": "available",
+      "sourceReferences": 22,
+      "linkedReferences": 16,
+      "unresolvedReferences": 6,
+      "counts": {
+        "principal": 2,
+        "essential": 2,
+        "complete": 16
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 22
+      },
+      "error": null
+    },
+    {
+      "id": "dnx-2026",
+      "title": "DNX",
+      "year": 2026,
+      "status": "available",
+      "sourceReferences": 14,
+      "linkedReferences": 0,
+      "unresolvedReferences": 14,
+      "counts": {
+        "principal": 0,
+        "essential": 0,
+        "complete": 0
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 14
+      },
+      "error": null
+    },
+    {
+      "id": "queen-in-black-2026",
+      "title": "Queen in Black",
+      "year": 2026,
+      "status": "available",
+      "sourceReferences": 19,
+      "linkedReferences": 6,
+      "unresolvedReferences": 13,
+      "counts": {
+        "principal": 1,
+        "essential": 1,
+        "complete": 6
+      },
+      "targetCounts": {
+        "principal": 5,
+        "essential": 5,
+        "complete": 19
+      },
+      "error": null
+    }
+  ]
+}

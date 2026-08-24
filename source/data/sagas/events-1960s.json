@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-24",
+  "source": "Comic Book Reading Orders + biblioteca local GCD",
+  "events": {
+    "reed-richards-and-sue-storms-wedding-1965": {
+      "schemaVersion": 3,
+      "id": "reed-richards-and-sue-storms-wedding-1965",
+      "title": "Reed Richards and Sue Storm’s Wedding",
+      "year": 1965,
+      "description": "Orden documentado de Reed Richards and Sue Storm’s Wedding: 1 referencias de fuente, 1 enlazadas con la biblioteca local.",
+      "defaultMode": "principal",
+      "modes": {
+        "principal": "El evento no tiene una miniserie central inequívoca: se conserva como principal todo el orden narrativo documentado.",
+        "essential": "Coincide con Principal porque el propio evento se articula a través de este orden cruzado.",
+        "complete": "Todas las referencias incluidas por la fuente; las ausencias de biblioteca se documentan sin crear issueId."
+      },
+      "editorialPolicy": {
+        "kind": "bulk-source-order",
+        "centralSeries": [],
+        "essentialPolicy": "no-auto-curation",
+        "sectionsPolicy": "Fases estructurales respecto a la serie central y partes de 50 números para listas extensas."
+      },
+      "sources": [
+        {
+          "name": "Comic Book Reading Orders — Marvel Event Timeline",
+          "url": "https://comicbookreadingorders.com/marvel/event-timeline/",
+          "role": "Cronología e inclusión del evento."
+        }
+      ],
+      "expectedCounts": {
+        "principal": 1,
+        "essential": 1,
+        "complete": 1
+      },
+      "targetCounts": {
+        "principal": 1,
+        "essential": 1,
+        "complete": 1
+      },
+      "entries": [
+        {
+          "issueId": 18847,
+          "order": 1,
+          "section": "Orden principal",
+          "type": "main",
+          "importance": "principal"
+        }
+      ],
+      "unresolvedReferences": []
+    }
+  }
+}

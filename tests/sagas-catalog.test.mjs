@@ -17,9 +17,14 @@ vm.createContext(context);
 vm.runInContext(coreSource,context);
 const core=context.MarvelSagasCore;
 const available=catalog.events.filter(event=>event.status==='available');
+const sagaDocuments=new Map();
 const sagaFiles=available.map(meta=>({
   meta,
-  saga:JSON.parse(fs.readFileSync(path.join(root,'source',meta.dataFile),'utf8'))
+  saga:(()=>{
+    if(!sagaDocuments.has(meta.dataFile))sagaDocuments.set(meta.dataFile,JSON.parse(fs.readFileSync(path.join(root,'source',meta.dataFile),'utf8')));
+    const raw=sagaDocuments.get(meta.dataFile);
+    return meta.dataKey?raw?.events?.[meta.dataKey]:raw;
+  })()
 }));
 let tempDir,issues,issueById;
 
@@ -35,7 +40,7 @@ before(async()=>{
 after(async()=>{if(tempDir)await fsp.rm(tempDir,{recursive:true,force:true})});
 
 test('el catálogo base contiene al menos 170 eventos ordenados y con identificadores únicos',()=>{
-  assert.equal(catalog.schemaVersion,2);
+  assert.equal(catalog.schemaVersion,3);
   assert.ok(catalog.events.length>=170);
   assert.equal(new Set(catalog.events.map(event=>event.id)).size,catalog.events.length);
   assert.equal(new Set(catalog.events.map(event=>`${event.year}\u0000${event.title}`)).size,catalog.events.length);
@@ -47,6 +52,7 @@ test('el catálogo base contiene al menos 170 eventos ordenados y con identifica
     assert.ok(event.catalogSource);
     if(event.coverIssueId!=null)assert.ok(Number.isInteger(event.coverIssueId));
     if(event.dataFile!=null)assert.match(event.dataFile,/^data\/sagas\/[-a-z0-9]+\.json$/);
+    if(event.dataKey!=null)assert.match(event.dataKey,/^[-a-z0-9]+$/);
   }
   assert.equal(catalog.events.every((event,index)=>{
     if(!index)return true;
@@ -58,6 +64,9 @@ test('el catálogo base contiene al menos 170 eventos ordenados y con identifica
   assert.equal(required.every(id=>ids.has(id)),true);
   const availableIds=new Set(available.map(event=>event.id));
   assert.equal(['secret-wars-1984','infinity-gauntlet','secret-wars-2015'].every(id=>availableIds.has(id)),true);
+  assert.equal(['amazing-spider-man-venom-death-spiral-2026','avengers-armageddon-2026','dnx-2026','queen-in-black-2026'].every(id=>availableIds.has(id)),true);
+  assert.deepEqual(catalog.events.filter(event=>event.status==='planned').map(event=>event.id),['star-wars-marvel-hope-assembles-2027']);
+  assert.equal(new Set(available.map(event=>`${event.dataFile}#${event.dataKey||''}`)).size,available.length);
 });
 
 test('todos los eventos disponibles superan el mismo contrato estructural',()=>{
@@ -68,6 +77,7 @@ test('todos los eventos disponibles superan el mismo contrato estructural',()=>{
     assert.deepEqual(Array.from(result.duplicateIssueIds),[],meta.id);
     assert.deepEqual(Array.from(result.duplicateOrders),[],meta.id);
     assert.deepEqual(Array.from(result.duplicateUnresolvedGcdIds),[],meta.id);
+    assert.deepEqual(Array.from(result.duplicateUnresolvedReferenceIds),[],meta.id);
     assert.equal(result.deterministic,true,meta.id);
     assert.equal(result.principalInEssential,true,meta.id);
     assert.equal(result.essentialInComplete,true,meta.id);
@@ -75,6 +85,17 @@ test('todos los eventos disponibles superan el mismo contrato estructural',()=>{
       assert.deepEqual(Object.keys(entry).sort(),['importance','issueId','order','section','type']);
     }
   }
+});
+
+test('los paquetes por década exponen exactamente cada saga mediante dataKey',()=>{
+  for(const{meta,saga}of sagaFiles){
+    assert.ok(saga,meta.id);
+    if(meta.dataKey){
+      assert.equal(meta.dataKey,meta.id);
+      assert.match(meta.dataFile,/^data\/sagas\/events-\d{4}s\.json$/);
+    }
+  }
+  assert.ok(new Set(available.map(event=>event.dataFile)).size<available.length,'los paquetes deben compartirse entre eventos');
 });
 
 test('todos los issueId disponibles y todas las portadas apuntan a la biblioteca',()=>{
@@ -93,7 +114,23 @@ test('los conteos enlazados y editoriales son deterministas en los tres modos',(
       const unresolved=(saga.unresolvedReferences||[]).filter(reference=>ranks[reference.importance]<=ranks[mode]).length;
       const targetCounts=saga.targetCounts||saga.expectedCounts;
       assert.equal(linked+unresolved,targetCounts[mode],`${meta.id} target ${mode}`);
+      assert.equal(core.unresolvedForMode(saga,mode).length,unresolved,`${meta.id} unresolved ${mode}`);
     }
+  }
+});
+
+test('los cuatro eventos de 2026 conservan las referencias futuras sin asignar IDs antiguos',()=>{
+  const expectedTargets=new Map([
+    ['amazing-spider-man-venom-death-spiral-2026',10],
+    ['avengers-armageddon-2026',22],
+    ['dnx-2026',14],
+    ['queen-in-black-2026',19]
+  ]);
+  for(const[id,total]of expectedTargets){
+    const saga=sagaFiles.find(item=>item.meta.id===id).saga;
+    assert.equal(saga.targetCounts.complete,total,id);
+    assert.equal(saga.entries.length+(saga.unresolvedReferences||[]).length,total,id);
+    assert.equal((saga.unresolvedReferences||[]).every(reference=>!Object.hasOwn(reference,'issueId')&&reference.referenceId&&reference.reason),true,id);
   }
 });
 

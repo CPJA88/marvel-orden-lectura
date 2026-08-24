@@ -1,9 +1,10 @@
 {
   "name": "marvel-orden-lectura",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "build": "node scripts/prepare.mjs",
+    "import:sagas": "node scripts/import-all-sagas.mjs",
     "test": "node --test tests/*.test.mjs",
     "validate:sagas": "npm run build && node scripts/validate-sagas.mjs",
     "deploy": "wrangler deploy"

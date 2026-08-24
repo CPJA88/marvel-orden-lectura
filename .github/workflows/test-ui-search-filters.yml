@@ -7,6 +7,8 @@ on:
       - 'scripts/test-ui-search-filters-v132.mjs'
       - 'scripts/prepare.mjs'
       - 'scripts/validate-sagas.mjs'
+      - 'scripts/import-all-sagas.mjs'
+      - 'scripts/saga-importer-lib.mjs'
       - '.github/workflows/test-ui-search-filters.yml'
       - 'package.json'
       - 'package-lock.json'
@@ -56,6 +58,8 @@ jobs:
           node --check source/sagas-core.js
           node --check source/sagas-ui.js
           node --check scripts/validate-sagas.mjs
+          node --check scripts/import-all-sagas.mjs
+          node --check scripts/saga-importer-lib.mjs
       - name: Build PWA
         id: build
         continue-on-error: true
@@ -84,12 +88,14 @@ jobs:
           grep -q 'data/sagas/catalog.json' public/sw.js
           grep -q 'data/sagas/secret-wars-1984.json' public/sw.js
           grep -q 'data/sagas/infinity-gauntlet.json' public/sw.js
+          grep -q 'data/sagas/events-1960s.json' public/sw.js
+          grep -q 'data/sagas/events-2020s.json' public/sw.js
           grep -q 'id="bootScreen"' public/index.html
           grep -q 'id="bootBar"' public/index.html
           grep -q 'id="bootRetry"' public/index.html
           grep -q 'boot-screen' public/enhancements.css
           grep -q 'v1.2.33' public/search-filter-fix-v132.js
-          grep -q 'v1.2.35-official-negative-reaudit-v1.4.0-saga-catalog' public/sw.js
+          grep -q 'v1.2.35-official-negative-reaudit-v1.5.0-all-sagas' public/sw.js
           ! grep -q 'search-filter-fix-v131.js' public/index.html
       - name: Test search and filter data contract
         id: data
@@ -127,7 +133,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Los informes no han cambiado.'
           else
-            git commit -m 'diagnóstico: validar UI y catálogo de sagas v1.4.0'
+            git commit -m 'diagnóstico: validar UI y catálogo de sagas v1.5.0'
             git pull --rebase origin main
             git push origin HEAD:main
           fi

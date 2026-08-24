@@ -118,6 +118,8 @@ test('la UI de Sagas reutiliza tarjetas, detalles, portadas y navegación existe
   assert.match(uiSource,/observeVisibleCards\('#sagaIssueList'\)/);
   assert.match(uiSource,/\/api\/gcd\/cover-image\?id=/);
   assert.match(uiSource,/await openReader\(issue\)/);
+  assert.match(uiSource,/dataFileCache:new Map\(\)/);
+  assert.match(uiSource,/raw\?\.events\?\.\[meta\.dataKey\]/);
   assert.doesNotMatch(uiSource,/function\s+marvelQuery|\/api\/marvel\/open/);
   assert.match(html,/id="charactersView"/);
   assert.match(html,/id="sagasView"/);
@@ -144,4 +146,3 @@ test('cambiar repetidamente entre Lectura, Personajes, Sagas y Guía no produce 
   assert.equal(views.info.classList.contains('active'),true);
   assert.equal(Object.values(views).filter(view=>view.classList.contains('active')).length,1);
 });
-

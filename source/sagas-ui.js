@@ -1,4 +1,4 @@
-/* Marvel Lector v1.4.0 — catálogo y órdenes de lectura de sagas */
+/* Marvel Lector v1.5.0 — catálogo y órdenes de lectura de sagas */
 (() => {
   'use strict';
 
@@ -6,7 +6,7 @@
   const MODE_LABELS={principal:'Principal',essential:'Esencial',complete:'Completo'};
   const IMPORTANCE_LABELS={principal:'Serie principal',essential:'Esencial',complete:'Completo'};
   const sagaState={
-    catalog:[],catalogPromise:null,showAll:false,eventCache:new Map(),activeMeta:null,activeSaga:null,
+    catalog:[],catalogPromise:null,showAll:false,eventCache:new Map(),dataFileCache:new Map(),activeMeta:null,activeSaga:null,
     issuesById:new Map(),mode:'essential',filtered:[],page:0,loading:false,request:0,missing:[]
   };
   let catalogTimer=null,filterTimer=null,catalogProgressObserver=null;
@@ -69,7 +69,12 @@
   async function loadSagaData(meta){
     if(!meta?.dataFile)throw new Error('Este orden todavía está en preparación.');
     if(sagaState.eventCache.has(meta.id))return sagaState.eventCache.get(meta.id);
-    const request=fetchJSON(meta.dataFile).then(data=>{
+    if(!sagaState.dataFileCache.has(meta.dataFile)){
+      sagaState.dataFileCache.set(meta.dataFile,fetchJSON(meta.dataFile).catch(error=>{sagaState.dataFileCache.delete(meta.dataFile);throw error}));
+    }
+    const request=sagaState.dataFileCache.get(meta.dataFile).then(raw=>{
+      const data=meta.dataKey?raw?.events?.[meta.dataKey]:raw;
+      if(!data)throw new Error(`El paquete ${meta.dataFile} no contiene ${meta.dataKey||meta.id}.`);
       const validation=core().validateSaga(data);
       if(!validation.valid)throw new Error('El archivo de la saga no supera la validación estructural.');
       return data;
@@ -179,12 +184,13 @@
   function refreshSagaProgress(){
     if(!sagaState.activeSaga)return;
     const stats=core().sagaProgress(sagaState.activeSaga,state.progress,sagaState.mode);
+    const unresolved=core().unresolvedForMode(sagaState.activeSaga,sagaState.mode).length;
     const percent=stats.percent<10?stats.percent.toFixed(1):Math.round(stats.percent).toString();
     if(el('sagaProgressTitle'))el('sagaProgressTitle').textContent=`${sagaState.activeSaga.title} · ${modeLabel(sagaState.mode)}`;
-    if(el('sagaProgressText'))el('sagaProgressText').textContent=`${fmt.format(stats.resolved)} / ${fmt.format(stats.total)} resueltos · ${percent}%`;
+    if(el('sagaProgressText'))el('sagaProgressText').textContent=`${fmt.format(stats.resolved)} / ${fmt.format(stats.total)} resueltos · ${percent}%${unresolved?` · ${fmt.format(unresolved)} aún sin issueId`:''}`;
     if(el('sagaProgressBar'))el('sagaProgressBar').style.width=`${Math.min(stats.percent,100)}%`;
     const button=el('sagaContinue');
-    if(button){button.disabled=!stats.pending;button.textContent=stats.pending?'Continuar saga':'Saga completada'}
+    if(button){button.disabled=!stats.pending;button.textContent=stats.pending?'Continuar saga':unresolved?`${fmt.format(unresolved)} aún no disponibles`:'Saga completada'}
     if(el('sagaModeDescription'))el('sagaModeDescription').textContent=sagaState.activeSaga.modes?.[sagaState.mode]||'';
   }
 

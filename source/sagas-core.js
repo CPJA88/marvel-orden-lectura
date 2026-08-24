@@ -1,4 +1,4 @@
-/* Marvel Lector v1.4.0 — funciones puras para órdenes de sagas */
+/* Marvel Lector v1.5.0 — funciones puras para órdenes de sagas */
 ((root) => {
   'use strict';
 
@@ -46,6 +46,11 @@
     return entriesForMode(saga,mode).find(entry=>!isResolved(progress,entry.issueId))||null;
   }
 
+  function unresolvedForMode(saga, mode='essential'){
+    const selected=normalizeMode(mode,saga?.defaultMode||'essential');
+    return(Array.isArray(saga?.unresolvedReferences)?saga.unresolvedReferences:[]).filter(reference=>MODE_RANK[normalizeMode(reference.importance,'complete')]<=MODE_RANK[selected]);
+  }
+
   function filterEntries(entries, issuesById, progress, filters={}){
     const status=filters.status||'all';
     const content=filters.content||'all';
@@ -81,10 +86,15 @@
     const orders=entries.map(entry=>Number(entry.order));
     const duplicateIssueIds=[...new Set(issueIds.filter((id,index)=>issueIds.indexOf(id)!==index))];
     const duplicateOrders=[...new Set(orders.filter((order,index)=>orders.indexOf(order)!==index))];
-    const unresolvedGcdIds=unresolvedReferences.map(reference=>Number(reference.gcdIssueId));
+    const unresolvedGcdIds=unresolvedReferences.filter(reference=>Number.isInteger(Number(reference.gcdIssueId))).map(reference=>Number(reference.gcdIssueId));
+    const unresolvedReferenceIds=unresolvedReferences.map(reference=>String(reference.referenceId||'').trim()).filter(Boolean);
     const duplicateUnresolvedGcdIds=[...new Set(unresolvedGcdIds.filter((id,index)=>unresolvedGcdIds.indexOf(id)!==index))];
+    const duplicateUnresolvedReferenceIds=[...new Set(unresolvedReferenceIds.filter((id,index)=>unresolvedReferenceIds.indexOf(id)!==index))];
     const invalidEntries=entries.filter(entry=>!Number.isInteger(Number(entry.issueId))||!Number.isInteger(Number(entry.order))||!hasOwn(MODE_RANK,entry.importance)||!['main','tie-in'].includes(entry.type)||!String(entry.section||'').trim());
-    const invalidUnresolvedReferences=unresolvedReferences.filter(reference=>!Number.isInteger(Number(reference.gcdIssueId))||hasOwn(reference,'issueId')||!String(reference.series||'').trim()||!String(reference.number||'').trim()||!String(reference.reason||'').trim()||!hasOwn(MODE_RANK,reference.importance));
+    const invalidUnresolvedReferences=unresolvedReferences.filter(reference=>{
+      const hasStableReference=Number.isInteger(Number(reference.gcdIssueId))||Boolean(String(reference.referenceId||'').trim());
+      return!hasStableReference||hasOwn(reference,'issueId')||!String(reference.series||'').trim()||!String(reference.number||'').trim()||!Number.isInteger(Number(reference.targetOrder))||!String(reference.reason||'').trim()||!hasOwn(MODE_RANK,reference.importance);
+    });
     const deterministic=orders.every((order,index)=>order===index+1)&&duplicateOrders.length===0;
     const principal=new Set(entriesForMode(saga,'principal').map(entry=>entry.issueId));
     const essential=new Set(entriesForMode(saga,'essential').map(entry=>entry.issueId));
@@ -92,10 +102,11 @@
     const principalInEssential=[...principal].every(id=>essential.has(id));
     const essentialInComplete=[...essential].every(id=>complete.has(id));
     return{
-      valid:!duplicateIssueIds.length&&!duplicateOrders.length&&!duplicateUnresolvedGcdIds.length&&!invalidEntries.length&&!invalidUnresolvedReferences.length&&deterministic&&principalInEssential&&essentialInComplete,
+      valid:!duplicateIssueIds.length&&!duplicateOrders.length&&!duplicateUnresolvedGcdIds.length&&!duplicateUnresolvedReferenceIds.length&&!invalidEntries.length&&!invalidUnresolvedReferences.length&&deterministic&&principalInEssential&&essentialInComplete,
       duplicateIssueIds,
       duplicateOrders,
       duplicateUnresolvedGcdIds,
+      duplicateUnresolvedReferenceIds,
       invalidEntries,
       invalidUnresolvedReferences,
       deterministic,
@@ -104,5 +115,5 @@
     };
   }
 
-  root.MarvelSagasCore={MODE_RANK,RESOLVED_STATUSES,normalizeMode,orderedEntries,entriesForMode,progressStatus,isResolved,sagaProgress,firstPending,filterEntries,validateSaga};
+  root.MarvelSagasCore={MODE_RANK,RESOLVED_STATUSES,normalizeMode,orderedEntries,entriesForMode,unresolvedForMode,progressStatus,isResolved,sagaProgress,firstPending,filterEntries,validateSaga};
 })(globalThis);
