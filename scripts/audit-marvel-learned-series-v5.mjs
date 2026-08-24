@@ -37,6 +37,9 @@ const normSeries=v=>norm(str(v).replace(/\(\s*\d{4}(?:\s*-\s*(?:\d{4}|present))?
 const normIssue=v=>{let s=str(v).trim().toUpperCase().replace(/\s+/g,'');if(/^0+\d+$/.test(s))s=String(Number(s));return s};
 const yearOf=v=>Number(str(v).match(/\b((?:19|20)\d{2})\b/)?.[1]||0);
 const dateOnly=v=>str(v).slice(0,10);
+const dayMs=86400000;
+function dateSkewDays(a,b){const x=new Date(dateOnly(a)),y=new Date(dateOnly(b));return Number.isNaN(x.valueOf())||Number.isNaN(y.valueOf())?Infinity:Math.round(Math.abs(x-y)/dayMs)}
+function compatibleDate(a,b){return!dateOnly(a)||!dateOnly(b)||dateSkewDays(a,b)<=120}
 const unique=a=>[...new Set(a)];
 const count=(p,s)=>p.entries.filter(r=>Number(r?.[3])===s).length;
 
@@ -139,7 +142,7 @@ function parseSeriesPage(html){
   return{issueIds:ids,reportedTotal:Number(text.match(/Showing\s+\d+\s+of\s+(\d+)\s+results/i)?.[1]||0)};
 }
 async function harvestSeries(segment){
-  if(!segment.officialHref)return{issueIds:[],reportedTotal:0,chosenUrl:'',complete:false,diagnostics:[],proofOk:segment.proofMode==='catalog-only'};
+  if(!segment.officialHref)return{issueIds:[],reportedTotal:0,chosenUrl:'',complete:false,diagnostics:[],proofOk:segment.proofMode==='catalog-only'||segment.proofMode==='directory-fuzzy'};
   const rel=str(segment.officialHref).startsWith('/')?str(segment.officialHref):`/${segment.officialHref}`;
   const bases=[SERIES_SHARE+rel,SERIES_WWW+rel],ids=new Set(),diagnostics=[];let chosen='',reportedTotal=0;
   for(const base of bases){
@@ -154,8 +157,8 @@ async function harvestSeries(segment){
     }
   }
   const proofHits=(segment.proofSourceIds||[]).filter(x=>ids.has(Number(x))).length;
-  const proofNeed=segment.proofMode==='terminal-anchor'?1:Math.min(2,(segment.proofSourceIds||[]).length);
-  return{issueIds:[...ids].sort((a,b)=>a-b),reportedTotal,chosenUrl:chosen,complete:Boolean(reportedTotal&&ids.size>=reportedTotal),proofHits,proofNeed,proofOk:proofHits>=proofNeed,diagnostics};
+  const proofNeed=segment.proofMode==='terminal-anchor'?1:segment.proofMode==='date-seed'?Math.min(2,(segment.proofSourceIds||[]).length):0;
+  return{issueIds:[...ids].sort((a,b)=>a-b),reportedTotal,chosenUrl:chosen,complete:Boolean(reportedTotal&&ids.size>=reportedTotal),proofHits,proofNeed,proofOk:proofNeed===0||proofHits>=proofNeed,diagnostics};
 }
 
 async function plan(){
@@ -163,12 +166,13 @@ async function plan(){
   const baseline=validatePack(pack);
   if(!Array.isArray(catalogPack?.issues)||catalogPack.issues.length<30000)throw new Error('Catálogo global incompleto');
   const directory=parseDirectory(await dirResponse.text());if(directory.length<1000)throw new Error(`Directorio oficial incompleto: ${directory.length}`);
-  const cacheBy=new Map(pack.entries.map(r=>[Number(r[0]),r])),localSeries=new Map(),catalogBySource=new Map(),catalogByDateIssue=new Map(),catalogBySeriesIssue=new Map();
+  const cacheBy=new Map(pack.entries.map(r=>[Number(r[0]),r])),localSeries=new Map(),catalogBySource=new Map(),catalogByDateIssue=new Map(),catalogByIssue=new Map(),catalogBySeriesIssue=new Map();
   for(const x of local.values()){const g=localSeries.get(x.seriesId)||{seriesId:x.seriesId,title:x.title,seriesYear:x.seriesYear,rows:[]};g.rows.push(x);localSeries.set(x.seriesId,g)}
   for(const c of catalogPack.issues){
     const item={sourceId:Number(c.sourceId)||0,readerId:Number(c.readerId)||0,seriesName:str(c.seriesName),remoteNorm:normSeries(c.seriesName),issueNumber:str(c.issueNumber),issueNorm:normIssue(c.issueNumber),onSale:dateOnly(c.onSale),yearPage:Number(c.yearPage)||0};
     if(!item.sourceId||!item.remoteNorm||!item.issueNorm)continue;catalogBySource.set(item.sourceId,item);
     const di=`${item.onSale}|${item.issueNorm}`,da=catalogByDateIssue.get(di)||[];da.push(item);catalogByDateIssue.set(di,da);
+    const ia=catalogByIssue.get(item.issueNorm)||[];ia.push(item);catalogByIssue.set(item.issueNorm,ia);
     const si=`${item.remoteNorm}|${item.issueNorm}`,sa=catalogBySeriesIssue.get(si)||[];sa.push(item);catalogBySeriesIssue.set(si,sa);
   }
   const dirByNorm=new Map();for(const s of directory){const a=dirByNorm.get(s.normTitle)||[];a.push(s);dirByNorm.set(s.normTitle,a)}
@@ -183,16 +187,19 @@ async function plan(){
     for(const row of pending){
       const d=dateOnly(row.date);if(!d)continue;
       const seenNorm=new Set();
-      for(const iv of issueVariants(row.issueNumber))for(const item of catalogByDateIssue.get(`${d}|${iv}`)||[]){if(seenNorm.has(item.remoteNorm))continue;seenNorm.add(item.remoteNorm);add(item.remoteNorm,item.seriesName,'seed',row,item)}
+      for(const iv of issueVariants(row.issueNumber)){
+        const candidates=[...(catalogByDateIssue.get(`${d}|${iv}`)||[]),...(catalogByIssue.get(iv)||[]).filter(item=>compatibleDate(d,item.onSale))];
+        for(const item of candidates){if(seenNorm.has(item.remoteNorm))continue;seenNorm.add(item.remoteNorm);add(item.remoteNorm,item.seriesName,'seed',row,item)}
+      }
     }
     const ranked=[...evidence.values()].map(e=>({...e,anchorCount:e.anchors.size,seedCount:e.seeds.size,similarity:tokenSimilarity(g.title,e.remoteTitle),score:e.anchors.size*20+e.seeds.size})).sort((a,b)=>b.score-a.score||b.similarity-a.similarity);
     const accepted=[];
     for(const e of ranked){
       const anchored=e.anchorCount>=2;
-      const seeded=e.seedCount>=3&&e.similarity>=0.5&&(e===ranked[0]||e.seedCount>=Math.max(3,(ranked[0]?.seedCount||0)*0.75));
+      const seeded=e.seedCount>=4&&e.similarity>=0.5&&(e===ranked[0]||e.seedCount>=Math.max(4,(ranked[0]?.seedCount||0)*0.75));
       if(anchored||seeded)accepted.push({...e,proofMode:anchored?'terminal-anchor':'date-seed'});
     }
-    if(!accepted.length){uncovered.push({seriesId:g.seriesId,title:g.title,pendingRows:pending.length,topEvidence:ranked.slice(0,3).map(e=>({remoteTitle:e.remoteTitle,anchors:e.anchorCount,seeds:e.seedCount,similarity:e.similarity}))});continue}
+    if(!accepted.length)uncovered.push({seriesId:g.seriesId,title:g.title,pendingRows:pending.length,topEvidence:ranked.slice(0,3).map(e=>({remoteTitle:e.remoteTitle,anchors:e.anchorCount,seeds:e.seedCount,similarity:e.similarity}))});
     for(const e of accepted){
       const years=unique([...e.anchors.values(),...e.seeds.values()].map(x=>yearOf(x.date)||yearOf(x.remoteDate)).filter(Boolean));
       let official=(dirByNorm.get(e.remoteNorm)||[]).filter(s=>!years.length||years.some(y=>compatibleYear(y,s)));
@@ -203,7 +210,7 @@ async function plan(){
       for(const row of pending){
         let cs=[];for(const iv of issueVariants(row.issueNumber))cs.push(...(catalogBySeriesIssue.get(`${e.remoteNorm}|${iv}`)||[]));
         cs=[...new Map(cs.map(c=>[c.sourceId,c])).values()];const d=dateOnly(row.date),ly=yearOf(row.date)||yearOf(row.seriesYear);
-        if(d){const exact=cs.filter(c=>c.onSale===d);if(exact.length)cs=exact}
+        if(d){const exact=cs.filter(c=>c.onSale===d);cs=exact.length?exact:cs.filter(c=>compatibleDate(d,c.onSale))}
         cs=cs.filter(c=>{const cy=yearOf(c.onSale)||c.yearPage;return!ly||!cy||Math.abs(ly-cy)<=1}).slice(0,6);
         catalogCandidates.set(row.gcdId,cs.map(c=>c.sourceId));
       }
@@ -215,10 +222,22 @@ async function plan(){
       }
       aliases.push({localSeriesId:g.seriesId,localTitle:g.title,remoteNorm:e.remoteNorm,remoteTitle:e.remoteTitle,proofMode:e.proofMode,anchorCount:e.anchorCount,seedCount:e.seedCount,similarity:e.similarity,officialSeriesIds:official.map(s=>s.seriesId)});
     }
+    const acceptedNorms=new Set(accepted.map(e=>e.remoteNorm)),fuzzy=[];
+    for(const s of directory){
+      if(s.normTitle===normSeries(g.title)||acceptedNorms.has(s.normTitle)||tokenSimilarity(g.title,s.baseTitle)<0.8)continue;
+      const rows=pending.filter(r=>compatibleYear(yearOf(r.date)||yearOf(r.seriesYear),s));if(rows.length<3)continue;
+      fuzzy.push({s,rows,coverage:rows.length,similarity:tokenSimilarity(g.title,s.baseTitle)});
+    }
+    fuzzy.sort((a,b)=>b.coverage-a.coverage||b.similarity-a.similarity||a.s.seriesId-b.s.seriesId);
+    for(const f of fuzzy.slice(0,3)){
+      const rows=f.rows.map(r=>({gcdId:r.gcdId,issueNumber:r.issueNumber,date:dateOnly(r.date),seriesYear:r.seriesYear,catalogSourceIds:[]}));
+      segments.push({localSeriesId:g.seriesId,localTitle:g.title,localSeriesYear:g.seriesYear,remoteNorm:f.s.normTitle,remoteTitle:f.s.baseTitle,proofMode:'directory-fuzzy',proofSourceIds:[],anchorCount:0,seedCount:0,similarity:f.similarity,officialSeriesId:f.s.seriesId,officialLabel:f.s.label,officialHref:f.s.href,officialStartYear:f.s.startYear,officialEndYear:f.s.endYear,pendingRows:rows.length,rows});
+      aliases.push({localSeriesId:g.seriesId,localTitle:g.title,remoteNorm:f.s.normTitle,remoteTitle:f.s.baseTitle,proofMode:'directory-fuzzy',anchorCount:0,seedCount:0,similarity:f.similarity,officialSeriesIds:[f.s.seriesId]});
+    }
   }
   segments.sort((a,b)=>b.pendingRows-a.pendingRows||a.localTitle.localeCompare(b.localTitle)||a.officialSeriesId-b.officialSeriesId);
   const covered=new Set(segments.flatMap(s=>s.rows.map(r=>r.gcdId))),examples=aliases.filter(a=>/power man|incredible hulk/i.test(a.localTitle));
-  const report={version:5,generatedAt:new Date().toISOString(),mode:'learned-series-plan-v5',writesCache:false,baseline,catalogIssues:catalogBySource.size,directorySeries:directory.length,summary:{pending:baseline.notListed,learnedAliases:aliases.length,segments:segments.length,coveredPending:covered.size,uncoveredPending:baseline.notListed-covered.size,anchoredAliases:aliases.filter(a=>a.proofMode==='terminal-anchor').length,dateSeedAliases:aliases.filter(a=>a.proofMode==='date-seed').length},safety:{cacheWritten:false,terminalEvidenceRequiresTwoAnchors:true,dateSeedRequiresThreeExactDateIssueRows:true,dateSeedTitleTokenContainmentAtLeastHalf:true,officialDirectoryDiscoveryOnly:true,allPromotionsRequireOfficialIssueVerification:true,noNegativeInference:true},examples,aliases,segments,uncoveredSeries:uncovered.sort((a,b)=>b.pendingRows-a.pendingRows).slice(0,1000)};
+  const report={version:5,generatedAt:new Date().toISOString(),mode:'learned-series-plan-v5',writesCache:false,baseline,catalogIssues:catalogBySource.size,directorySeries:directory.length,summary:{pending:baseline.notListed,learnedAliases:aliases.length,segments:segments.length,coveredPending:covered.size,uncoveredPending:baseline.notListed-covered.size,anchoredAliases:aliases.filter(a=>a.proofMode==='terminal-anchor').length,dateSeedAliases:aliases.filter(a=>a.proofMode==='date-seed').length,fuzzyDirectoryAliases:aliases.filter(a=>a.proofMode==='directory-fuzzy').length},safety:{cacheWritten:false,terminalEvidenceRequiresTwoAnchors:true,dateSeedRequiresFourIssueRowsWithin120Days:true,dateSeedTitleTokenContainmentAtLeastHalf:true,fuzzyDirectoryRequiresAtLeastThreeVerifiedIssueIdentities:true,officialDirectoryDiscoveryOnly:true,allPromotionsRequireOfficialIssueVerification:true,noNegativeInference:true},examples,aliases,segments,uncoveredSeries:uncovered.sort((a,b)=>b.pendingRows-a.pendingRows).slice(0,1000)};
   await fs.mkdir(outDir,{recursive:true});await fs.writeFile(planFile,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({summary:report.summary,examples},null,2));
 }
 
@@ -231,7 +250,7 @@ async function inspectSource(sourceId,segment,rowsByIssue,terminal){
   let rows=[];for(const iv of issueVariants(parsed.issue))rows.push(...(rowsByIssue.get(iv)||[]));rows=[...new Map(rows.map(x=>[x.gcdId,x])).values()];
   const pd=pageDate(html);if(rows.length>1&&pd){const exact=rows.filter(x=>dateOnly(x.date)===pd);if(exact.length===1)rows=exact}
   if(rows.length!==1)return{sourceId,kind:rows.length?'target-ambiguous':'no-target',officialTitle:ts[0]||'',parsed,officialDate:pd,targetGcdIds:rows.map(x=>x.gcdId)};
-  const row=rows[0];if(pd&&row.date&&dateOnly(row.date)!==pd)return{sourceId,gcdId:row.gcdId,kind:'date-mismatch',officialTitle:ts[0]||'',officialDate:pd,localDate:dateOnly(row.date)};
+  const row=rows[0];if(pd&&row.date&&!compatibleDate(row.date,pd))return{sourceId,gcdId:row.gcdId,kind:'date-mismatch',officialTitle:ts[0]||'',officialDate:pd,localDate:dateOnly(row.date),dateSkewDays:dateSkewDays(row.date,pd)};
   const sourceOwners=(terminal.source.get(sourceId)||[]).filter(x=>x!==row.gcdId);if(sourceOwners.length)return{sourceId,gcdId:row.gcdId,kind:'source-collision',owners:sourceOwners};
   const av=availability(html),rid=readerId(html),pageDrn=extractDrn(html);
   let reader={ok:false,availability:'unknown',identity:false};
@@ -265,8 +284,10 @@ async function scan(){
     if(harvested.proofOk||segment.proofMode==='catalog-only')for(const sid of candidateIds){
       const r=await inspectSource(Number(sid),segment,rowsByIssue,terminal).catch(e=>({sourceId:Number(sid),kind:'exception',error:e?.message||String(e)}));candidateResults.push(r);inspected++;if(inspected%20===0)console.log(`Shard ${shard}: ${inspected} páginas verificadas`);await sleep(45);
     }
+    const identityHits=new Set(candidateResults.filter(r=>r.gcdId&&!['date-mismatch','remote-series-mismatch','target-ambiguous','no-target'].includes(r.kind)).map(r=>Number(r.gcdId))).size;
+    if(segment.proofMode==='directory-fuzzy'&&identityHits<3)for(const r of candidateResults)if(r.publishable)r.publishable=false;
     const kinds={};for(const r of candidateResults)kinds[r.kind]=(kinds[r.kind]||0)+1;
-    results.push({segment:{localSeriesId:segment.localSeriesId,localTitle:segment.localTitle,remoteNorm:segment.remoteNorm,remoteTitle:segment.remoteTitle,proofMode:segment.proofMode,officialSeriesId:segment.officialSeriesId,officialLabel:segment.officialLabel,pendingRows:segment.pendingRows},harvest:{issueIds:harvested.issueIds.length,reportedTotal:harvested.reportedTotal,complete:harvested.complete,proofHits:harvested.proofHits,proofNeed:harvested.proofNeed,proofOk:harvested.proofOk,chosenUrl:harvested.chosenUrl},candidateIds:candidateIds.length,summary:kinds,results:candidateResults});
+    results.push({segment:{localSeriesId:segment.localSeriesId,localTitle:segment.localTitle,remoteNorm:segment.remoteNorm,remoteTitle:segment.remoteTitle,proofMode:segment.proofMode,officialSeriesId:segment.officialSeriesId,officialLabel:segment.officialLabel,pendingRows:segment.pendingRows},harvest:{issueIds:harvested.issueIds.length,reportedTotal:harvested.reportedTotal,complete:harvested.complete,proofHits:harvested.proofHits,proofNeed:harvested.proofNeed,proofOk:harvested.proofOk,chosenUrl:harvested.chosenUrl},candidateIds:candidateIds.length,identityHits,summary:kinds,results:candidateResults});
     if((i+1)%5===0)console.log(`Shard ${shard}: ${i+1}/${segments.length} segmentos`);
   }
   const flat=results.flatMap(x=>x.results),kinds={};for(const r of flat)kinds[r.kind]=(kinds[r.kind]||0)+1;

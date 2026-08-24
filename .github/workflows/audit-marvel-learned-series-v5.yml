@@ -15,7 +15,7 @@ env:
 
 concurrency:
   group: marvel-learned-series-v5
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   plan:
