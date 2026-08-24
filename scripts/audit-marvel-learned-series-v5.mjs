@@ -91,6 +91,12 @@ function tokenSimilarity(a,b){
   if(!aa.size||!bb.size)return 0;let both=0;for(const x of aa)if(bb.has(x))both++;
   return both/Math.min(aa.size,bb.size);
 }
+function tokenEquivalence(a,b){
+  const stop=new Set(['the','a','an','and','of','marvel','comics','comic']);
+  const aa=new Set(normSeries(a).split(' ').filter(x=>x&&!stop.has(x))),bb=new Set(normSeries(b).split(' ').filter(x=>x&&!stop.has(x)));
+  if(!aa.size||!bb.size)return 0;let both=0;for(const x of aa)if(bb.has(x))both++;
+  return both/Math.max(aa.size,bb.size);
+}
 function compatibleYear(y,s){return!y||!s.startYear||(y>=s.startYear-1&&y<=s.endYear+1)}
 function terminalMaps(pack){
   const source=new Map(),reader=new Map(),drn=new Map();
@@ -137,28 +143,29 @@ function parseDirectory(html){
   return out;
 }
 function parseSeriesPage(html){
-  const text=plain(html),ids=[],seen=new Set();
+  const text=plain(html),ids=[],seen=new Set(),hints={};
   for(const m of str(html).matchAll(/(?:https?:\/\/(?:www\.|share\.)?marvel\.com)?\/comics\/issue\/(\d+)/gi)){const id=Number(m[1]);if(id&&!seen.has(id)){seen.add(id);ids.push(id)}}
-  return{issueIds:ids,reportedTotal:Number(text.match(/Showing\s+\d+\s+of\s+(\d+)\s+results/i)?.[1]||0)};
+  for(const m of str(html).matchAll(/<a\b[^>]*href=["'][^"']*\/comics\/issue\/(\d+)\/[^"']*["'][^>]*>([\s\S]*?)<\/a>/gi)){const id=Number(m[1]),parsed=parseIssueTitle(plain(m[2]));if(id&&parsed)hints[id]={series:normSeries(parsed.series),issue:normIssue(parsed.issue)}}
+  return{issueIds:ids,issueHints:hints,reportedTotal:Number(text.match(/Showing\s+\d+\s+of\s+(\d+)\s+results/i)?.[1]||0)};
 }
 async function harvestSeries(segment){
   if(!segment.officialHref)return{issueIds:[],reportedTotal:0,chosenUrl:'',complete:false,diagnostics:[],proofOk:segment.proofMode==='catalog-only'||segment.proofMode==='directory-fuzzy'};
   const rel=str(segment.officialHref).startsWith('/')?str(segment.officialHref):`/${segment.officialHref}`;
-  const bases=[SERIES_SHARE+rel,SERIES_WWW+rel],ids=new Set(),diagnostics=[];let chosen='',reportedTotal=0;
+  const bases=[SERIES_SHARE+rel,SERIES_WWW+rel],ids=new Set(),hints={},diagnostics=[];let chosen='',reportedTotal=0;
   for(const base of bases){
-    try{const r=await get(base),p=r.ok?parseSeriesPage(await r.text()):{issueIds:[],reportedTotal:0};p.issueIds.forEach(x=>ids.add(x));reportedTotal=Math.max(reportedTotal,p.reportedTotal);diagnostics.push({url:base,status:r.status,issueIds:p.issueIds.length,reportedTotal:p.reportedTotal});if(r.ok&&(p.issueIds.length||p.reportedTotal)){chosen=base;break}}catch(e){diagnostics.push({url:base,error:e?.message||String(e)})}
+    try{const r=await get(base),p=r.ok?parseSeriesPage(await r.text()):{issueIds:[],issueHints:{},reportedTotal:0};p.issueIds.forEach(x=>ids.add(x));Object.assign(hints,p.issueHints);reportedTotal=Math.max(reportedTotal,p.reportedTotal);diagnostics.push({url:base,status:r.status,issueIds:p.issueIds.length,reportedTotal:p.reportedTotal});if(r.ok&&(p.issueIds.length||p.reportedTotal)){chosen=base;break}}catch(e){diagnostics.push({url:base,error:e?.message||String(e)})}
   }
   if(chosen){
     let stale=0;
     for(let off=20;off<=2000&&stale<2&&(reportedTotal===0||ids.size<reportedTotal);off+=20){
       const u=`${chosen}?offset=${off}`;
-      try{const r=await get(u);if(!r.ok)break;const p=parseSeriesPage(await r.text()),before=ids.size;p.issueIds.forEach(x=>ids.add(x));reportedTotal=Math.max(reportedTotal,p.reportedTotal);stale=ids.size===before?stale+1:0}catch(e){diagnostics.push({url:u,error:e?.message||String(e)});break}
+      try{const r=await get(u);if(!r.ok)break;const p=parseSeriesPage(await r.text()),before=ids.size;p.issueIds.forEach(x=>ids.add(x));Object.assign(hints,p.issueHints);reportedTotal=Math.max(reportedTotal,p.reportedTotal);stale=ids.size===before?stale+1:0}catch(e){diagnostics.push({url:u,error:e?.message||String(e)});break}
       await sleep(40);
     }
   }
   const proofHits=(segment.proofSourceIds||[]).filter(x=>ids.has(Number(x))).length;
   const proofNeed=segment.proofMode==='terminal-anchor'?1:segment.proofMode==='date-seed'?Math.min(2,(segment.proofSourceIds||[]).length):0;
-  return{issueIds:[...ids].sort((a,b)=>a-b),reportedTotal,chosenUrl:chosen,complete:Boolean(reportedTotal&&ids.size>=reportedTotal),proofHits,proofNeed,proofOk:proofNeed===0||proofHits>=proofNeed,diagnostics};
+  return{issueIds:[...ids].sort((a,b)=>a-b),issueHints:hints,reportedTotal,chosenUrl:chosen,complete:Boolean(reportedTotal&&ids.size>=reportedTotal),proofHits,proofNeed,proofOk:proofNeed===0||proofHits>=proofNeed,diagnostics};
 }
 
 async function plan(){
@@ -224,9 +231,9 @@ async function plan(){
     }
     const acceptedNorms=new Set(accepted.map(e=>e.remoteNorm)),fuzzy=[];
     for(const s of directory){
-      if(s.normTitle===normSeries(g.title)||acceptedNorms.has(s.normTitle)||tokenSimilarity(g.title,s.baseTitle)<0.8)continue;
+      if(s.normTitle===normSeries(g.title)||acceptedNorms.has(s.normTitle)||tokenSimilarity(g.title,s.baseTitle)<0.8||tokenEquivalence(g.title,s.baseTitle)<0.5)continue;
       const rows=pending.filter(r=>compatibleYear(yearOf(r.date)||yearOf(r.seriesYear),s));if(rows.length<3)continue;
-      fuzzy.push({s,rows,coverage:rows.length,similarity:tokenSimilarity(g.title,s.baseTitle)});
+      fuzzy.push({s,rows,coverage:rows.length,similarity:tokenEquivalence(g.title,s.baseTitle)});
     }
     fuzzy.sort((a,b)=>b.coverage-a.coverage||b.similarity-a.similarity||a.s.seriesId-b.s.seriesId);
     for(const f of fuzzy.slice(0,3)){
@@ -279,7 +286,8 @@ async function scan(){
   const terminal=terminalMaps(pack),segments=(planData.segments||[]).filter((_,i)=>i%shardCount===shard),results=[];let inspected=0;
   for(const [i,segment] of segments.entries()){
     const harvested=await harvestSeries(segment);const rowsByIssue=new Map();for(const row of segment.rows)for(const iv of issueVariants(row.issueNumber)){const a=rowsByIssue.get(iv)||[];a.push(row);rowsByIssue.set(iv,a)}
-    const catalogIds=segment.rows.flatMap(r=>r.catalogSourceIds||[]),candidateIds=unique([...(harvested.proofOk?harvested.issueIds:[]),...catalogIds]).filter(id=>!(terminal.source.get(Number(id))||[]).length).sort((a,b)=>a-b);
+    const harvestIds=harvested.proofOk?harvested.issueIds.filter(id=>{const h=harvested.issueHints?.[id];return!h||h.series!==segment.remoteNorm||rowsByIssue.has(h.issue)}):[];
+    const catalogIds=segment.rows.flatMap(r=>r.catalogSourceIds||[]),candidateIds=unique([...harvestIds,...catalogIds]).filter(id=>!(terminal.source.get(Number(id))||[]).length).sort((a,b)=>a-b);
     const candidateResults=[];
     if(harvested.proofOk||segment.proofMode==='catalog-only')for(const sid of candidateIds){
       const r=await inspectSource(Number(sid),segment,rowsByIssue,terminal).catch(e=>({sourceId:Number(sid),kind:'exception',error:e?.message||String(e)}));candidateResults.push(r);inspected++;if(inspected%20===0)console.log(`Shard ${shard}: ${inspected} páginas verificadas`);await sleep(45);

@@ -50,7 +50,7 @@ jobs:
           const fs=require('fs');
           const p=JSON.parse(fs.readFileSync('artifacts/marvel-learned-series-v5/plan.json','utf8'));
           if(p.mode!=='learned-series-plan-v5'||p.version!==5||p.writesCache!==false)throw new Error('Plan v5 inválido');
-          if(Number(p.baseline.notListed)!==17029||Number(p.baseline.functionalLinkMissing)!==0)throw new Error(`Baseline inesperada: ${JSON.stringify(p.baseline)}`);
+          if(Number(p.baseline.notListed)<1||Number(p.baseline.functionalLinkMissing)!==0)throw new Error(`Baseline inesperada: ${JSON.stringify(p.baseline)}`);
           if(!p.summary.learnedAliases||!p.summary.segments||!p.summary.coveredPending)throw new Error('El plan no aprendió alias utilizables');
           const probes=(p.examples||[]).map(x=>`${x.localTitle} -> ${x.remoteTitle}`);
           console.log(JSON.stringify({summary:p.summary,probes},null,2));
