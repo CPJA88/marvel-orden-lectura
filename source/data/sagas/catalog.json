@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "secret-wars-1984",
+      "title": "Secret Wars",
+      "year": 1984,
+      "description": "Héroes y villanos son transportados al Battleworld original.",
+      "coverIssueId": 76314,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "infinity-gauntlet",
+      "title": "Infinity Gauntlet",
+      "year": 1991,
+      "description": "Thanos reúne las Gemas del Infinito y altera el universo.",
+      "coverIssueId": 49842,
+      "featured": true,
+      "status": "planned"
+    },
+    {
+      "id": "age-of-apocalypse",
+      "title": "Age of Apocalypse",
+      "year": 1995,
+      "description": "Una realidad alternativa donde Apocalipsis domina el mundo.",
+      "coverIssueId": 247659,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "house-of-m",
+      "title": "House of M",
+      "year": 2005,
+      "description": "La Bruja Escarlata transforma la realidad de héroes y mutantes.",
+      "coverIssueId": 233880,
+      "featured": true,
+      "status": "planned"
+    },
+    {
+      "id": "civil-war",
+      "title": "Civil War",
+      "year": 2006,
+      "description": "El registro superheroico divide a la comunidad Marvel.",
+      "coverIssueId": 290453,
+      "featured": true,
+      "status": "planned"
+    },
+    {
+      "id": "secret-invasion",
+      "title": "Secret Invasion",
+      "year": 2008,
+      "description": "La infiltración skrull pone en duda la identidad de todos.",
+      "coverIssueId": 512390,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "siege",
+      "title": "Siege",
+      "year": 2010,
+      "description": "Norman Osborn lanza el asalto definitivo contra Asgard.",
+      "coverIssueId": 700436,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "avengers-vs-x-men",
+      "title": "Avengers vs. X-Men",
+      "year": 2012,
+      "description": "La Fuerza Fénix enfrenta a los Vengadores con los X-Men.",
+      "coverIssueId": 934752,
+      "featured": true,
+      "status": "planned"
+    },
+    {
+      "id": "secret-wars-2015",
+      "title": "Secret Wars",
+      "year": 2015,
+      "description": "El Multiverso colapsa y sus supervivientes despiertan en Battleworld.",
+      "coverIssueId": 1352220,
+      "featured": true,
+      "status": "available",
+      "defaultMode": "essential",
+      "dataFile": "data/sagas/secret-wars-2015.json"
+    },
+    {
+      "id": "civil-war-ii",
+      "title": "Civil War II",
+      "year": 2016,
+      "description": "La predicción del futuro vuelve a dividir a los héroes.",
+      "coverIssueId": 1576787,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "king-in-black",
+      "title": "King in Black",
+      "year": 2020,
+      "description": "Knull y su ejército de simbiontes invaden la Tierra.",
+      "coverIssueId": 2171671,
+      "featured": true,
+      "status": "planned"
+    },
+    {
+      "id": "axe-judgment-day",
+      "title": "A.X.E.: Judgment Day",
+      "year": 2022,
+      "description": "Eternos, mutantes y Vengadores afrontan el juicio del Celestial.",
+      "coverIssueId": 2419945,
+      "featured": false,
+      "status": "planned"
+    },
+    {
+      "id": "blood-hunt",
+      "title": "Blood Hunt",
+      "year": 2024,
+      "description": "La noche eterna desata una invasión vampírica global.",
+      "coverIssueId": 2627387,
+      "featured": true,
+      "status": "planned"
+    }
+  ]
+}

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="enhancements.css">
   <link rel="stylesheet" href="characters.css">
+  <link rel="stylesheet" href="sagas.css">
   <link rel="stylesheet" href="diagnostics.css">
   <title>Marvel · Orden de lectura</title>
 </head>
@@ -43,7 +44,7 @@
       <div class="hero-actions"><button id="continueBtn" class="primary"><span class="button-icon">▶</span>Continuar</button><button id="randomBtn" class="secondary"><span class="button-icon">⌖</span>Mi posición</button></div>
       <div class="stats-row"><div><span class="stat-label">LEÍDOS</span><strong id="readCount">0</strong></div><div><span class="stat-label">PENDIENTES</span><strong id="pendingCount">—</strong></div><div><span class="stat-label">COMPLETADO</span><strong id="percentCount">0%</strong></div></div>
     </section>
-    <nav class="tabs" aria-label="Secciones principales"><button class="tab active" data-view="principal"><span class="tab-glyph">▤</span><span>Lectura</span></button><button class="tab" data-view="characters"><span class="tab-glyph">◎</span><span>Personajes</span></button><button class="tab" data-view="info"><span class="tab-glyph">ⓘ</span><span>Guía</span></button></nav>
+    <nav class="tabs" aria-label="Secciones principales"><button class="tab active" data-view="principal"><span class="tab-glyph">▤</span><span>Lectura</span></button><button class="tab" data-view="characters"><span class="tab-glyph">◎</span><span>Personajes</span></button><button class="tab" data-view="sagas"><span class="tab-glyph">✦</span><span>Sagas</span></button><button class="tab" data-view="info"><span class="tab-glyph">ⓘ</span><span>Guía</span></button></nav>
     <section id="principalView" class="view active">
       <div class="view-head"><div><span class="eyebrow">ORDEN PRINCIPAL</span><h1>Biblioteca</h1></div><span class="view-head-note">Publicación cronológica</span></div>
       <div class="controls sticky-controls">
@@ -98,9 +99,47 @@
         <p class="character-source-line"><a id="characterSourceLink" href="https://www.chronologyproject.com/" target="_blank" rel="noopener">Consultar la cronología fuente</a></p>
       </div>
     </section>
+    <section id="sagasView" class="view">
+      <div id="sagaHome">
+        <div class="view-head"><div><span class="eyebrow">EVENTOS MARVEL</span><h1>Sagas</h1></div><span class="view-head-note">Orden cronológico</span></div>
+        <p class="saga-intro">Explora eventos construidos con los mismos números de la Biblioteca. Todo lo que marques aquí comparte el progreso con Lectura y Personajes.</p>
+        <div class="saga-catalog-controls">
+          <label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="sagaCatalogSearch" type="search" placeholder="Buscar saga o evento…" autocomplete="off"></label>
+          <div class="result-line"><span id="sagaCatalogCount">Preparando catálogo…</span><span>Ordenado por año</span></div>
+        </div>
+        <div id="sagaCatalogGrid" class="saga-grid" aria-live="polite"></div>
+        <button id="otherSagaBtn" type="button" class="saga-other-button"><span aria-hidden="true">＋</span><strong>OTRA SAGA</strong><small>Ver catálogo completo</small></button>
+        <div class="saga-method">Los eventos enlazan por <strong>issueId</strong> con la biblioteca principal: no crean copias de cómics ni guardan porcentajes independientes.</div>
+      </div>
+      <div id="sagaLibrary" class="hidden">
+        <div class="view-head saga-library-head"><div><button id="sagaBack" type="button" class="saga-back">← Sagas</button><span class="eyebrow">ORDEN DE EVENTO</span><h1 id="sagaTitle">Saga</h1><p id="sagaDescription" class="saga-description"></p></div><span id="sagaYear" class="view-head-note"></span></div>
+        <div class="saga-progress-card">
+          <div class="saga-progress-head"><div><span id="sagaProgressTitle">Saga · Esencial</span><strong id="sagaProgressText">0 / 0 resueltos · 0%</strong></div><button id="sagaContinue" type="button" class="primary">Continuar saga</button></div>
+          <div class="saga-progress-track" aria-label="Progreso de la saga"><div id="sagaProgressBar" class="saga-progress-bar"></div></div>
+        </div>
+        <div id="sagaModeSelector" class="saga-mode-selector" role="group" aria-label="Nivel del orden de lectura">
+          <button type="button" data-saga-mode="principal">Principal</button><button type="button" data-saga-mode="essential" class="active">Esencial</button><button type="button" data-saga-mode="complete">Completo</button>
+        </div>
+        <p id="sagaModeDescription" class="saga-mode-description"></p>
+        <div class="controls sticky-controls saga-controls">
+          <label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="sagaIssueSearch" type="search" placeholder="Buscar serie o número…" autocomplete="off"></label>
+          <div class="filter-grid">
+            <select id="sagaStatusFilter" aria-label="Estado"><option value="all">Todos</option><option value="pending">Pendientes</option><option value="read">Leídos</option></select>
+            <select id="sagaContentFilter" aria-label="Contenido"><option value="all">Todo el contenido</option><option value="original">Originales</option><option value="mixto">Mixtos</option><option value="reimpresion">Reimpresiones</option><option value="sin-datos">Sin datos</option></select>
+            <select id="sagaEraFilter" aria-label="Etapa"><option value="all">Todas las etapas</option><option value="timely">Timely / Edad de Oro</option><option value="atlas">Atlas / pre-Marvel</option><option value="marvel">Marvel</option></select>
+            <select id="sagaDecadeFilter" aria-label="Década"></select>
+          </div>
+          <div class="result-line"><span id="sagaResultCount">Preparando orden…</span><button id="sagaClearFilters" type="button" class="link-btn">Restablecer</button></div>
+        </div>
+        <div id="sagaCoverage" class="saga-coverage"></div>
+        <div id="sagaIssueList" class="saga-issue-list" aria-live="polite"></div>
+        <button id="sagaLoadMore" type="button" class="load-more hidden">Mostrar más números</button>
+        <p id="sagaSourceLine" class="saga-source-line"></p>
+      </div>
+    </section>
     <section id="infoView" class="view prose">
       <div class="view-head prose-head"><div><span class="eyebrow">METODOLOGÍA</span><h1>Cómo se construye el orden</h1></div></div>
-      <div class="prose-card"><p>La guía parte del volcado de <strong>Grand Comics Database (GCD)</strong> fechado el <strong id="dumpDate"></strong>, usando el grupo editorial Marvel de GCD. Incluye la etapa Timely, Atlas y Marvel.</p><p>El orden usa primero la <strong>fecha de venta</strong> registrada por GCD. Cuando falta, emplea una fecha estimada a partir de la información de publicación disponible.</p><p>Los órdenes de <strong>Personajes</strong> cruzan las apariciones narrativas documentadas por Marvel Chronology Project con los números GCD de esta biblioteca y vuelven a ordenarlas por publicación. Se excluyen portadas, anuncios, simples menciones y entradas «behind the scenes».</p><p>Las <strong>reimpresiones completas</strong> pueden marcarse como omitidas sin quedar pendientes. En los números <strong>mixtos</strong> puede marcarse únicamente el material nuevo como leído. El export compacto actual conserva la clasificación por número, pero no el desglose por historia; la app no inventa qué páginas son reimpresas.</p><p>Las portadas y los enlaces de Marvel Unlimited se resuelven solo cuando hacen falta y se guardan en caché local para no repetir búsquedas.</p></div>
+      <div class="prose-card"><p>La guía parte del volcado de <strong>Grand Comics Database (GCD)</strong> fechado el <strong id="dumpDate"></strong>, usando el grupo editorial Marvel de GCD. Incluye la etapa Timely, Atlas y Marvel.</p><p>El orden usa primero la <strong>fecha de venta</strong> registrada por GCD. Cuando falta, emplea una fecha estimada a partir de la información de publicación disponible.</p><p>Los órdenes de <strong>Personajes</strong> cruzan las apariciones narrativas documentadas por Marvel Chronology Project con los números GCD de esta biblioteca y vuelven a ordenarlas por publicación. Se excluyen portadas, anuncios, simples menciones y entradas «behind the scenes».</p><p>Los órdenes de <strong>Sagas</strong> referencian esos mismos números por su ID GCD estable, pero aplican una secuencia narrativa propia y niveles Principal, Esencial y Completo. Su progreso se calcula en el momento desde las mismas marcas de lectura de Biblioteca.</p><p>Las <strong>reimpresiones completas</strong> pueden marcarse como omitidas sin quedar pendientes. En los números <strong>mixtos</strong> puede marcarse únicamente el material nuevo como leído. El export compacto actual conserva la clasificación por número, pero no el desglose por historia; la app no inventa qué páginas son reimpresas.</p><p>Las portadas y los enlaces de Marvel Unlimited se resuelven solo cuando hacen falta y se guardan en caché local para no repetir búsquedas.</p></div>
       <h2>Guardado</h2><div class="prose-card"><p>Tu progreso y la caché de enlaces se guardan en este dispositivo mediante IndexedDB. Puedes exportar e importar el progreso. Los datos de lectura no se envían a ningún servidor.</p></div>
       <h2>Alcance</h2><dl class="scope"><div><dt>Números principales</dt><dd id="scopeMain">—</dd></div><div><dt>Progreso</dt><dd>Compartido</dd></div><div><dt>Primera fecha</dt><dd id="scopeFirst">—</dd></div><div><dt>Última fecha</dt><dd id="scopeLast">—</dd></div></dl>
     </section>

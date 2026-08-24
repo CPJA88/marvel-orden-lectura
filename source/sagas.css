@@ -1,0 +1,60 @@
+/* Marvel Lector v1.3.1 — biblioteca de sagas y eventos */
+.saga-intro{margin:4px 14px 13px;color:#696a71;font-size:12px;line-height:1.5}
+.saga-catalog-controls{padding:3px 12px 10px}
+.saga-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:1px 12px 14px}
+.saga-card{position:relative;min-width:0;overflow:hidden;border:1px solid var(--line-soft);border-radius:18px;padding:0;background:var(--surface);color:var(--text);box-shadow:0 5px 17px rgba(47,39,30,.07);text-align:left;cursor:pointer}
+.saga-card:active{transform:scale(.987);background:var(--surface-2)}
+.saga-card-cover{position:relative;display:grid;place-items:center;width:100%;aspect-ratio:3/4;overflow:hidden;background:linear-gradient(145deg,#e62429,#810e14)}
+.saga-card-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,8,8,.56));pointer-events:none}
+.saga-card-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;background:#d9d4ca}
+.saga-card-fallback{color:#fff;font-size:29px;font-weight:950;letter-spacing:-.08em}
+.saga-card-year{position:absolute;right:8px;bottom:7px;z-index:1;padding:4px 7px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:rgba(34,11,12,.7);color:#fff;font-size:9px;font-weight:850;letter-spacing:.06em}
+.saga-card-body{display:block;min-height:103px;padding:11px 11px 12px}
+.saga-card-title{display:block;overflow:hidden;font-size:13px;font-weight:870;line-height:1.2;text-overflow:ellipsis;white-space:nowrap}
+.saga-card-copy{display:-webkit-box;min-height:30px;margin-top:5px;overflow:hidden;color:#85848a;font-size:9.5px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.saga-card-status{display:flex;align-items:center;justify-content:space-between;gap:5px;margin-top:9px;color:#99979b;font-size:8px;font-weight:820;text-transform:uppercase;letter-spacing:.055em}
+.saga-card-status .available{color:var(--green)}
+.saga-card-progress{font-variant-numeric:tabular-nums}
+.saga-other-button{display:grid;grid-template-columns:43px 1fr;grid-template-rows:auto auto;align-items:center;width:calc(100% - 24px);min-height:66px;margin:0 12px 13px;border:1px solid #efbfc1;border-radius:17px;padding:10px 13px;background:linear-gradient(135deg,#fff,#fff3f3);color:var(--text);text-align:left;cursor:pointer}
+.saga-other-button>span{grid-row:1/3;display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:var(--red);color:#fff;font-size:25px;font-weight:350}
+.saga-other-button strong{align-self:end;font-size:11px;font-weight:900;letter-spacing:.08em}
+.saga-other-button small{align-self:start;margin-top:2px;color:#96959a;font-size:9px}
+.saga-method{margin:0 12px 24px;padding:12px 13px;border:1px solid var(--line-soft);border-radius:14px;background:rgba(255,255,255,.62);color:#85848a;font-size:10.5px;line-height:1.5}
+.saga-method strong{color:#4f5056}
+.saga-library-head{align-items:flex-start}
+.saga-library-head>div{min-width:0}
+.saga-back{margin:0 0 9px;padding:0;border:0;background:transparent;color:var(--red);font-size:11px;font-weight:850;cursor:pointer}
+.saga-description{max-width:690px;margin:8px 0 0;color:#74757c;font-size:11.5px;line-height:1.5}
+.saga-progress-card{margin:8px 12px 10px;padding:15px;border:1px solid rgba(124,8,14,.14);border-radius:20px;background:linear-gradient(145deg,#ed2a2f,#b3131a 60%,#861018);color:#fff;box-shadow:0 12px 28px rgba(178,19,26,.16)}
+.saga-progress-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.saga-progress-head>div{min-width:0}
+.saga-progress-head span{display:block;color:#ffd7d8;font-size:9px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.saga-progress-head strong{display:block;margin-top:5px;font-size:13px;font-weight:850;font-variant-numeric:tabular-nums}
+.saga-progress-head .primary{flex:0 0 auto;min-height:39px;padding:8px 12px;background:#fff;color:#a90f16;box-shadow:0 6px 14px rgba(72,0,4,.15);font-size:10.5px}
+.saga-progress-head .primary:disabled{opacity:.62;cursor:default}
+.saga-progress-track{height:7px;overflow:hidden;margin-top:12px;border-radius:999px;background:rgba(60,0,4,.3)}
+.saga-progress-bar{height:100%;width:0;border-radius:inherit;background:#fff;transition:width .25s ease}
+.saga-mode-selector{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:11px 12px 0;padding:4px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.saga-mode-selector button{min-height:38px;border:0;border-radius:10px;background:transparent;color:#77777e;font-size:10.5px;font-weight:850;cursor:pointer}
+.saga-mode-selector button.active{background:var(--red);color:#fff;box-shadow:0 4px 12px rgba(230,36,41,.16)}
+.saga-mode-description{min-height:31px;margin:7px 14px 1px;color:#85848a;font-size:10px;line-height:1.45}
+.saga-controls{padding-bottom:15px}
+.saga-coverage{min-height:18px;margin:0 14px 7px;color:#85848a;font-size:10.5px;line-height:1.45}
+.saga-coverage strong{color:#4f5056}
+.saga-issue-list{padding-bottom:18px}
+.saga-phase{margin:10px 0 18px}
+.saga-phase-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 12px 6px;padding:10px 11px 8px;border-bottom:2px solid var(--red);color:#33343a}
+.saga-phase-head h2{margin:0;font-size:12px;font-weight:920;letter-spacing:.08em;text-transform:uppercase}
+.saga-phase-head span{color:#929196;font-size:9px;font-weight:800;font-variant-numeric:tabular-nums}
+.saga-phase .issue-list{padding-bottom:0}
+.saga-entry{position:relative}
+.saga-entry-note{display:flex;align-items:center;gap:5px;margin:0 13px -3px;color:#96959a;font-size:8px;font-weight:850;letter-spacing:.045em;text-transform:uppercase}
+.saga-entry-note .main{color:var(--red)}
+.saga-entry-note .essential{color:var(--purple)}
+.saga-source-line{margin:-3px 14px 28px;color:#85848a;font-size:10.5px;line-height:1.5;text-align:center}
+.saga-source-line a{color:var(--red);font-weight:800;text-decoration:none}
+.saga-loading{margin:8px 12px;padding:24px;border:1px solid var(--line-soft);border-radius:17px;background:var(--surface);color:var(--muted);font-size:12px;text-align:center}
+@media(max-width:350px){.tab{font-size:9px}.saga-grid{gap:7px;padding-left:8px;padding-right:8px}.saga-card-body{padding-left:9px;padding-right:9px}.saga-progress-head{align-items:flex-start;flex-direction:column}.saga-progress-head .primary{width:100%}}
+@media(min-width:600px){.saga-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:780px){.saga-grid{grid-template-columns:repeat(4,minmax(0,1fr));padding-left:20px;padding-right:20px}.saga-catalog-controls{padding-left:20px;padding-right:20px}.saga-other-button,.saga-method,.saga-progress-card,.saga-mode-selector{margin-left:20px;margin-right:20px}.saga-other-button{width:calc(100% - 40px)}.saga-mode-selector{max-width:520px}.saga-mode-description{margin-left:22px}.saga-phase-head{margin-left:20px;margin-right:20px}.saga-phase .issue-list{padding-left:18px;padding-right:18px}}
+@media(min-width:1160px){.saga-grid{padding-left:0;padding-right:0}.saga-catalog-controls{padding-left:0;padding-right:0}.saga-other-button,.saga-method,.saga-progress-card,.saga-mode-selector{margin-left:0;margin-right:0}.saga-other-button{width:100%}.saga-mode-description{margin-left:2px}.saga-phase-head{margin-left:0;margin-right:0}.saga-phase .issue-list{padding-left:0;padding-right:0}}

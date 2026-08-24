@@ -7,6 +7,7 @@
   let searchTimer=null;
   let bootFinished=false;
   const issueDecade=new Map();
+  const issueById=new Map();
 
   const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   const normalize=v=>String(v??'')
@@ -89,7 +90,7 @@
       bootProgress(7,'Preparando biblioteca',`0 / ${fmt.format(total)} cómics`);
       const loaded=await Promise.all(chunks.map(async c=>{
         const rows=await loadPrincipalChunk(c);
-        for(const x of rows)issueDecade.set(Number(x.id),String(c.id));
+        for(const x of rows){issueDecade.set(Number(x.id),String(c.id));issueById.set(Number(x.id),x)}
         loadedRows+=rows.length;
         completedChunks++;
         const pct=7+(loadedRows/total)*83;
@@ -114,6 +115,16 @@
     const n=String(x.n??'');
     const hay=normalize(`${s.original||''} ${s.es||''} ${n} #${n} ${x.t||''}`);
     return tokens.every(t=>hay.includes(t));
+  }
+
+  async function ensureIssuesByIds(ids=[]){
+    await ensureAllIssues();
+    const found=new Map();
+    for(const value of ids){
+      const id=Number(value),issue=issueById.get(id);
+      if(issue)found.set(id,issue);
+    }
+    return found;
   }
 
   async function refreshV133(){
@@ -228,7 +239,9 @@
   }
   globalThis.MarvelLibraryBridge={
     ensureAllIssues,
+    ensureIssuesByIds,
     getAllIssues:()=>allIssues||[],
+    getIssueById:id=>issueById.get(Number(id))||null,
     getIssueDecade:id=>issueDecade.get(Number(id))||'',
     normalize
   };
