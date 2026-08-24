@@ -1,0 +1,73 @@
+{
+  "version": 5,
+  "generatedAt": "2026-08-24T09:29:46.021Z",
+  "mode": "learned-series-audit-v5",
+  "writesCache": true,
+  "safety": {
+    "officialVerificationRequired": true,
+    "collisionsDiscarded": true,
+    "ambiguousDiscarded": true,
+    "noNegativeInference": true
+  },
+  "summary": {
+    "version": 5,
+    "publishedAt": "2026-08-24T09:29:46.021Z",
+    "baseline": {
+      "matched": 31801,
+      "noDigital": 2172,
+      "notListed": 17029,
+      "linkReady": 27912,
+      "readerFallbackReady": 3889,
+      "functionalLinkReady": 31801,
+      "functionalLinkMissing": 0
+    },
+    "plan": {
+      "pending": 17029,
+      "learnedAliases": 295,
+      "segments": 257,
+      "coveredPending": 3389,
+      "uncoveredPending": 13640,
+      "anchoredAliases": 270,
+      "dateSeedAliases": 25
+    },
+    "scanned": {
+      "pages": 1462,
+      "publishable": 282
+    },
+    "changedRows": 278,
+    "promotedMU": 270,
+    "promotedUuid": 270,
+    "promotedReader": 0,
+    "confirmedNoDigital": 8,
+    "ambiguous": 1,
+    "after": {
+      "matched": 32071,
+      "noDigital": 2180,
+      "notListed": 16751,
+      "linkReady": 28182,
+      "linkMissing": 3889,
+      "readerFallbackReady": 3889,
+      "functionalLinkReady": 32071,
+      "functionalLinkMissing": 0
+    }
+  },
+  "ambiguous": [
+    {
+      "gcdId": 974127,
+      "candidates": [
+        {
+          "kind": "mu-uuid",
+          "sourceId": 40770,
+          "readerId": 27286,
+          "officialTitle": "Ultimate Comics Ultimates (2011) #13"
+        },
+        {
+          "kind": "mu-uuid",
+          "sourceId": 43104,
+          "readerId": 31504,
+          "officialTitle": "Ultimate Comics Ultimates (2011) #13"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-/* Marvel Lector v1.2.63 — fallback reader oficial verificado; generado por auditoría */
+/* Marvel Lector v1.2.64 — fallback reader oficial verificado; generado por auditoría v5 */
 (() => {
   const SMART_BASE='https://marvel.smart.link/fiir7ec77';
   const TARGETS=new Map([
