@@ -1,15 +1,17 @@
 {
-  "version": "1.2.40",
-  "validatedAt": "2026-08-18T18:25:18.942Z",
-  "runId": "32170875259",
-  "testedCommit": "4a79c8f0944bac8fe69d922482a16230d9e6c049",
-  "targets": 7,
+  "version": "1.2.41",
+  "validatedAt": "2026-08-24T09:02:32.148Z",
+  "runId": "32709352753",
+  "testedCommit": "53bf16d0d29f437dca2303246f5b7edf18fda6f3",
+  "targets": 3889,
   "fallbackMode": "official-reader-smartlink",
   "cache": {
     "localCount": 51002,
-    "matched": 25329,
-    "uuidLinkReady": 25322,
-    "uuidLinkMissing": 7
+    "matched": 31801,
+    "uuidLinkReady": 27912,
+    "readerFallbackReady": 3889,
+    "functionalLinkReady": 31801,
+    "functionalLinkMissing": 0
   },
   "result": "pass"
 }
