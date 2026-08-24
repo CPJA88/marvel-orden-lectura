@@ -57,3 +57,10 @@ motivo. Nunca se reemplaza por una reimpresión para ocultar el hueco.
 
 El resto del catálogo permanece en `planned` hasta que su orden y sus IDs
 superen la misma validación.
+
+## Informes de validación
+
+- [Catálogo v2](../../../artifacts/sagas/catalog-v2-validation.md)
+- [Secret Wars (1984)](../../../artifacts/sagas/secret-wars-1984-validation.md)
+- [Infinity Gauntlet (1991)](../../../artifacts/sagas/infinity-gauntlet-validation.md)
+- [Secret Wars (2015)](../../../artifacts/sagas/secret-wars-2015-validation.md)
