@@ -1,4 +1,4 @@
-/* Marvel Lector v1.3.1 — catálogo y órdenes de lectura de sagas */
+/* Marvel Lector v1.4.0 — catálogo y órdenes de lectura de sagas */
 (() => {
   'use strict';
 
@@ -9,7 +9,7 @@
     catalog:[],catalogPromise:null,showAll:false,eventCache:new Map(),activeMeta:null,activeSaga:null,
     issuesById:new Map(),mode:'essential',filtered:[],page:0,loading:false,request:0,missing:[]
   };
-  let catalogTimer=null,filterTimer=null;
+  let catalogTimer=null,filterTimer=null,catalogProgressObserver=null;
 
   const el=id=>document.getElementById(id);
   const bridge=()=>globalThis.MarvelLibraryBridge;
@@ -37,7 +37,7 @@
   function sagaCard(meta){
     const available=meta.status==='available'&&meta.dataFile;
     const status=available?'Disponible':'Próximamente';
-    return `<button type="button" class="saga-card" data-saga-id="${esc(meta.id)}" aria-label="${esc(meta.title)} (${esc(meta.year)})${available?'':' · orden en preparación'}"><span class="saga-card-cover"><span class="saga-card-fallback">${esc(initials(meta.title))}</span>${meta.coverIssueId?`<img src="/api/gcd/cover-image?id=${Number(meta.coverIssueId)}" alt="" loading="lazy" decoding="async">`:''}<span class="saga-card-year">${esc(meta.year)}</span></span><span class="saga-card-body"><strong class="saga-card-title">${esc(meta.title)}</strong><span class="saga-card-copy">${esc(meta.description||'')}</span><span class="saga-card-status"><span class="${available?'available':''}">${status}</span><span class="saga-card-progress" data-saga-progress="${esc(meta.id)}">${available?'Calculando…':'—'}</span></span></span></button>`;
+    return `<button type="button" class="saga-card" data-saga-id="${esc(meta.id)}" aria-label="${esc(meta.title)} (${esc(meta.year)})${available?'':' · orden en preparación'}"><span class="saga-card-cover"><span class="saga-card-fallback">${esc(initials(meta.title))}</span>${meta.coverIssueId?`<img src="/api/gcd/cover-image?id=${Number(meta.coverIssueId)}" alt="" loading="lazy" decoding="async">`:''}<span class="saga-card-year">${esc(meta.year)}</span></span><span class="saga-card-body"><strong class="saga-card-title">${esc(meta.title)}</strong><span class="saga-card-copy">${esc(meta.description||'Orden documentado en preparación.')}</span><span class="saga-card-status"><span class="${available?'available':''}">${status}</span><span class="saga-card-progress" data-saga-progress="${esc(meta.id)}">${available?'Calculando…':'—'}</span></span></span></button>`;
   }
 
   function bindCatalogCards(){
@@ -63,7 +63,7 @@
       other.querySelector('small').textContent=sagaState.showAll?'Volver a la selección inicial':'Ver catálogo completo';
     }
     bindCatalogCards();
-    refreshCatalogProgress();
+    observeCatalogProgress();
   }
 
   async function loadSagaData(meta){
@@ -78,8 +78,9 @@
     return request;
   }
 
-  async function refreshCatalogProgress(){
-    const available=sagaState.catalog.filter(meta=>meta.status==='available'&&meta.dataFile);
+  async function refreshCatalogProgress(ids=null){
+    const selected=ids?new Set(ids):new Set([...document.querySelectorAll('[data-saga-progress]')].map(node=>node.dataset.sagaProgress));
+    const available=sagaState.catalog.filter(meta=>selected.has(meta.id)&&meta.status==='available'&&meta.dataFile);
     await Promise.all(available.map(async meta=>{
       try{
         const saga=await loadSagaData(meta);
@@ -89,6 +90,20 @@
         document.querySelectorAll(`[data-saga-progress="${meta.id}"]`).forEach(node=>{node.textContent='No disponible'});
       }
     }));
+  }
+
+  function observeCatalogProgress(){
+    const nodes=[...document.querySelectorAll('#sagaCatalogGrid [data-saga-progress]')].filter(node=>node.textContent!=='—');
+    catalogProgressObserver?.disconnect();
+    if(!('IntersectionObserver'in globalThis)){refreshCatalogProgress(nodes.map(node=>node.dataset.sagaProgress));return}
+    catalogProgressObserver=new IntersectionObserver(entries=>{
+      for(const entry of entries){
+        if(!entry.isIntersecting)continue;
+        catalogProgressObserver.unobserve(entry.target);
+        refreshCatalogProgress([entry.target.dataset.sagaProgress]);
+      }
+    },{rootMargin:'480px 0px'});
+    nodes.forEach(node=>catalogProgressObserver.observe(node));
   }
 
   function fillDecades(){
@@ -177,7 +192,8 @@
     const root=el('sagaCoverage');if(!root||!sagaState.activeSaga)return;
     const seriesCount=new Set([...sagaState.issuesById.values()].map(issue=>Number(issue.s))).size;
     const linked=sagaState.activeSaga.entries.length-sagaState.missing.length;
-    root.innerHTML=`<strong>${fmt.format(linked)}</strong> referencias enlazadas · <strong>${fmt.format(seriesCount)}</strong> series${sagaState.missing.length?` · <strong>${fmt.format(sagaState.missing.length)}</strong> sin correspondencia`:''}.`;
+    const unresolved=Array.isArray(sagaState.activeSaga.unresolvedReferences)?sagaState.activeSaga.unresolvedReferences.length:0;
+    root.innerHTML=`<strong>${fmt.format(linked)}</strong> referencias enlazadas · <strong>${fmt.format(seriesCount)}</strong> series${sagaState.missing.length?` · <strong>${fmt.format(sagaState.missing.length)}</strong> sin correspondencia`:''}${unresolved?` · <strong>${fmt.format(unresolved)}</strong> ausentes documentadas`:''}.`;
   }
 
   function renderSources(){
@@ -262,7 +278,7 @@
     document.addEventListener('marvel:view-change',event=>{if(event.detail?.view==='sagas'){fillDecades();showSagas()}});
     document.addEventListener('marvel:progress-change',()=>{
       if(sagaState.activeSaga&&!sagaState.loading)filterSaga();
-      refreshCatalogProgress();
+      refreshCatalogProgress([...sagaState.eventCache.keys()]);
     });
   }
 

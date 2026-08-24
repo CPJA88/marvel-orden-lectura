@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "id": "infinity-gauntlet",
+  "title": "Infinity Gauntlet",
+  "year": 1991,
+  "description": "Thanos reúne las Gemas del Infinito y obliga a los héroes cósmicos y terrestres a enfrentarse al poder absoluto.",
+  "coverIssueId": 49842,
+  "defaultMode": "essential",
+  "modes": {
+    "principal": "Infinity Gauntlet (1991) #1–6.",
+    "essential": "Serie principal y el preludio editorial Rebirth of Thanos / Infinity Gauntlet Prologue disponible en la biblioteca.",
+    "complete": "Orden de 51 capítulos documentado por Comic Book Reading Orders; 49 están enlazados y dos originales de Thanos Quest quedan señalados como ausencia de cobertura."
+  },
+  "sources": [
+    {
+      "name": "Marvel — Infinity Gauntlet (1991)",
+      "kind": "official",
+      "url": "https://www.marvel.com/comics/series/2023/infinity_gauntlet_1991",
+      "usedFor": "Identificación de la miniserie central de seis números."
+    },
+    {
+      "name": "Marvel — Infinity Gauntlet Prologue",
+      "kind": "official",
+      "url": "https://www.marvel.com/comics/issue/66434/infinity_gauntlet_prologue_hardcover",
+      "usedFor": "Alcance oficial del preludio: Silver Surfer #34–38, #40, #44–50 y Thanos Quest #1–2."
+    },
+    {
+      "name": "Comic Book Reading Orders — Infinity Gauntlet",
+      "kind": "reading-order",
+      "url": "https://comicbookreadingorders.com/marvel/events/infinity-gauntlet-reading-order/",
+      "usedFor": "Secuencia issue por issue de los 51 capítulos, incluidos tie-ins y epílogo."
+    }
+  ],
+  "editorialNotes": [
+    "Principal contiene exclusivamente Infinity Gauntlet #1–6.",
+    "Esencial añade el contenido del hardcover oficial Infinity Gauntlet Prologue. Los dos números originales de The Thanos Quest no están en la biblioteca y no se sustituyen por reimpresiones.",
+    "Completo sigue la secuencia de 51 capítulos de Comic Book Reading Orders y termina con Warlock and the Infinity Watch #1.",
+    "El porcentaje de progreso se calcula sobre las 49 referencias realmente enlazadas. La cobertura editorial objetivo sigue siendo 51 y la diferencia queda visible y validada.",
+    "No se han usado las ediciones newsstand, variantes ni la reimpresión de The Thanos Quest publicada en 2000."
+  ],
+  "expectedCounts": {
+    "principal": 6,
+    "essential": 19,
+    "complete": 49
+  },
+  "targetCounts": {
+    "principal": 6,
+    "essential": 21,
+    "complete": 51
+  },
+  "unresolvedReferences": [
+    {
+      "gcdIssueId": 47348,
+      "series": "The Thanos Quest",
+      "number": "1",
+      "targetOrder": 6,
+      "importance": "essential",
+      "reason": "El original de 1990 no existe en la biblioteca principal; la reimpresión de 2000 no se usa como sustituto."
+    },
+    {
+      "gcdIssueId": 47386,
+      "series": "The Thanos Quest",
+      "number": "2",
+      "targetOrder": 7,
+      "importance": "essential",
+      "reason": "El original de 1990 no existe en la biblioteca principal; la reimpresión de 2000 no se usa como sustituto."
+    }
+  ],
+  "entries": [
+    {
+      "issueId": 47595,
+      "order": 1,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 47707,
+      "order": 2,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 47833,
+      "order": 3,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 47943,
+      "order": 4,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 48079,
+      "order": 5,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 48345,
+      "order": 6,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 48477,
+      "order": 7,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 48618,
+      "order": 8,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 48741,
+      "order": 9,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 48864,
+      "order": 10,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49140,
+      "order": 11,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 251476,
+      "order": 12,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 251477,
+      "order": 13,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 83584,
+      "order": 14,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49257,
+      "order": 15,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49381,
+      "order": 16,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49498,
+      "order": 17,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49614,
+      "order": 18,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49725,
+      "order": 19,
+      "section": "Preludio: El regreso de Thanos",
+      "type": "tie-in",
+      "importance": "essential"
+    },
+    {
+      "issueId": 49842,
+      "order": 20,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 69698,
+      "order": 21,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50116,
+      "order": 22,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50245,
+      "order": 23,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49873,
+      "order": 24,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49841,
+      "order": 25,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49855,
+      "order": 26,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49987,
+      "order": 27,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49973,
+      "order": 28,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 50003,
+      "order": 29,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50024,
+      "order": 30,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50118,
+      "order": 31,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50105,
+      "order": 32,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 50132,
+      "order": 33,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50156,
+      "order": 34,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50248,
+      "order": 35,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50235,
+      "order": 36,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 50266,
+      "order": 37,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 49972,
+      "order": 38,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50395,
+      "order": 39,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50287,
+      "order": 40,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50378,
+      "order": 41,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50365,
+      "order": 42,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 50421,
+      "order": 43,
+      "section": "Guerra por el Guantelete",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50496,
+      "order": 44,
+      "section": "Guerra por el Guantelete",
+      "type": "main",
+      "importance": "principal"
+    },
+    {
+      "issueId": 50104,
+      "order": 45,
+      "section": "Epílogo",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 69699,
+      "order": 46,
+      "section": "Epílogo",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50509,
+      "order": 47,
+      "section": "Epílogo",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50524,
+      "order": 48,
+      "section": "Epílogo",
+      "type": "tie-in",
+      "importance": "complete"
+    },
+    {
+      "issueId": 50923,
+      "order": 49,
+      "section": "Epílogo",
+      "type": "tie-in",
+      "importance": "complete"
+    }
+  ]
+}
+

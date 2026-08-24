@@ -1,124 +1,1730 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "catalogVersion": "2026-08-24",
+  "scope": {
+    "label": "Eventos, crossovers y sagas narrativas de Marvel",
+    "inclusion": "Cronología amplia de eventos globales, cruces de franquicia, miniseries-evento y arcos con orden de lectura propio.",
+    "exclusions": [
+      "Variantes, facsímiles y reimpresiones sin material narrativo nuevo.",
+      "Apariciones compartidas sin continuidad narrativa ni orden de lectura documentable."
+    ],
+    "caveat": "Marvel no mantiene una taxonomía histórica única y cerrada para «todas las sagas». Este catálogo base combina una cronología especializada con comprobación editorial oficial y conserva el origen de cada registro."
+  },
+  "sources": [
+    {
+      "name": "Comic Book Reading Orders — Marvel Event Timeline",
+      "url": "https://comicbookreadingorders.com/marvel/event-timeline/",
+      "role": "Cronología base de 165 eventos hasta 2025."
+    },
+    {
+      "name": "Marvel — Comic Reading Lists",
+      "url": "https://www.marvel.com/comics/guides",
+      "role": "Contraste editorial y guías oficiales por evento."
+    },
+    {
+      "name": "Publication history of Marvel Comics crossover events",
+      "url": "https://en.wikipedia.org/wiki/Publication_history_of_Marvel_Comics_crossover_events",
+      "role": "Auditoría secundaria de cruces de franquicia y eventos recientes."
+    }
+  ],
   "events": [
+    {
+      "id": "reed-richards-and-sue-storms-wedding-1965",
+      "title": "Reed Richards and Sue Storm’s Wedding",
+      "year": 1965,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "kree-skrull-war-1971",
+      "title": "Kree-Skrull War",
+      "year": 1971,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "avengers-defenders-war-1973",
+      "title": "Avengers/Defenders War",
+      "year": 1973,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-defenders-war-reading-order/"
+    },
+    {
+      "id": "original-clone-saga-1973",
+      "title": "Original Clone Saga",
+      "year": 1973,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "thanos-war-1973",
+      "title": "Thanos War",
+      "year": 1973,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/thanos-war-reading-order/"
+    },
+    {
+      "id": "the-night-gwen-stacy-died-1973",
+      "title": "The Night Gwen Stacy Died",
+      "year": 1973,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "phoenix-saga-1976",
+      "title": "Phoenix Saga",
+      "year": 1976,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "dark-phoenix-saga-1980",
+      "title": "Dark Phoenix Saga",
+      "year": 1980,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "days-of-future-past-1981",
+      "title": "Days of Future Past",
+      "year": 1981,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "contest-of-champions-1982",
+      "title": "Contest of Champions",
+      "year": 1982,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
     {
       "id": "secret-wars-1984",
       "title": "Secret Wars",
       "year": 1984,
       "description": "Héroes y villanos son transportados al Battleworld original.",
+      "featured": true,
+      "status": "available",
+      "catalogSource": "cbro-timeline",
       "coverIssueId": 76314,
+      "defaultMode": "essential",
+      "dataFile": "data/sagas/secret-wars-1984.json"
+    },
+    {
+      "id": "wraith-war-1984",
+      "title": "Wraith War",
+      "year": 1984,
+      "description": "Orden de lectura documentado en preparación.",
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/wraith-war-reading-order/"
+    },
+    {
+      "id": "secret-wars-ii-1985",
+      "title": "Secret Wars II",
+      "year": 1985,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/secret-wars-ii-reading-order/"
+    },
+    {
+      "id": "mutant-massacre-1986",
+      "title": "Mutant Massacre",
+      "year": 1986,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/mutant-massacre-reading-order/"
+    },
+    {
+      "id": "kravens-last-hunt-1987",
+      "title": "Kraven’s Last Hunt",
+      "year": 1987,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/kravens-last-hunt-reading-order/"
+    },
+    {
+      "id": "fall-of-the-mutants-1988",
+      "title": "Fall of the Mutants",
+      "year": 1988,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/fall-of-the-mutants-reading-order/"
+    },
+    {
+      "id": "inferno-1988",
+      "title": "Inferno",
+      "year": 1988,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/inferno-reading-order/"
+    },
+    {
+      "id": "the-evolutionary-war-1988",
+      "title": "The Evolutionary War",
+      "year": 1988,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/evolutionary-war-reading-order/"
+    },
+    {
+      "id": "acts-of-vengeance-1989",
+      "title": "Acts of Vengeance",
+      "year": 1989,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/acts-of-vengeance-reading-order/"
+    },
+    {
+      "id": "atlantis-attacks-1989",
+      "title": "Atlantis Attacks",
+      "year": 1989,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/atlantis-attacks-reading-order/"
+    },
+    {
+      "id": "days-of-future-present-1990",
+      "title": "Days of Future Present",
+      "year": 1990,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/days-of-future-present-reading-order/"
+    },
+    {
+      "id": "x-tinction-agenda-1990",
+      "title": "X-Tinction Agenda",
+      "year": 1990,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-tinction-agenda-reading-order/"
     },
     {
       "id": "infinity-gauntlet",
       "title": "Infinity Gauntlet",
       "year": 1991,
       "description": "Thanos reúne las Gemas del Infinito y altera el universo.",
-      "coverIssueId": 49842,
       "featured": true,
-      "status": "planned"
+      "status": "available",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 49842,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-gauntlet-reading-order/",
+      "defaultMode": "essential",
+      "dataFile": "data/sagas/infinity-gauntlet.json"
+    },
+    {
+      "id": "muir-island-saga-1991",
+      "title": "Muir Island Saga",
+      "year": 1991,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/muir-island-saga-reading-order/"
+    },
+    {
+      "id": "dead-mans-hand-1992",
+      "title": "Dead Man’s Hand",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/dead-mans-hand-reading-order/"
+    },
+    {
+      "id": "infinity-war-1992",
+      "title": "Infinity War",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-war-reading-order/"
+    },
+    {
+      "id": "marvel-2099-1992",
+      "title": "Marvel 2099",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/marvel-2099-reading-order/"
+    },
+    {
+      "id": "operation-galactic-storm-1992",
+      "title": "Operation: Galactic Storm",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/operation-galactic-storm-reading-order/"
+    },
+    {
+      "id": "rise-of-the-midnight-sons-1992",
+      "title": "Rise of the Midnight Sons",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/rise-of-the-midnight-sons-reading-order/"
+    },
+    {
+      "id": "x-cutioners-song-1992",
+      "title": "X-Cutioner’s Song",
+      "year": 1992,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-cutioners-song-reading-order/"
+    },
+    {
+      "id": "blood-and-thunder-1993",
+      "title": "Blood and Thunder",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/blood-and-thunder-reading-order/"
+    },
+    {
+      "id": "bloodties-1993",
+      "title": "Bloodties",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/bloodties-reading-order/"
+    },
+    {
+      "id": "fatal-attractions-1993",
+      "title": "Fatal Attractions",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/fatal-attractions-reading-order/"
+    },
+    {
+      "id": "for-love-nor-money-1993",
+      "title": "For Love Nor Money",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/for-love-nor-money-reading-order/"
+    },
+    {
+      "id": "infinity-crusade-1993",
+      "title": "Infinity Crusade",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-crusade-reading-order/"
+    },
+    {
+      "id": "maximum-carnage-1993",
+      "title": "Maximum Carnage",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/maximum-carnage-reading-order/"
+    },
+    {
+      "id": "midnight-massacre-1993",
+      "title": "Midnight Massacre",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/midnight-massacre-reading-order/"
+    },
+    {
+      "id": "mys-tech-wars-1993",
+      "title": "Mys-Tech Wars",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "road-to-vengeance-missing-link-1993",
+      "title": "Road to Vengeance: Missing Link",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/road-to-vengeance-missing-link-reading-order/"
+    },
+    {
+      "id": "siege-of-darkness-1993",
+      "title": "Siege of Darkness",
+      "year": 1993,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/siege-of-darkness-reading-order/"
+    },
+    {
+      "id": "childs-play-1994",
+      "title": "Child’s Play",
+      "year": 1994,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/childs-play-reading-order/"
+    },
+    {
+      "id": "phalanx-covenant-1994",
+      "title": "Phalanx Covenant",
+      "year": 1994,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/phalanx-covenant-reading-order/"
+    },
+    {
+      "id": "second-clone-saga-1994",
+      "title": "Second Clone Saga",
+      "year": 1994,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/second-clone-saga-reading-order/"
+    },
+    {
+      "id": "time-and-time-again-1994",
+      "title": "Time and Time Again",
+      "year": 1994,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/time-and-time-again-reading-order/"
     },
     {
       "id": "age-of-apocalypse",
       "title": "Age of Apocalypse",
       "year": 1995,
       "description": "Una realidad alternativa donde Apocalipsis domina el mundo.",
-      "coverIssueId": 247659,
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 247659,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/age-of-apocalypse-reading-order/"
+    },
+    {
+      "id": "countdown-1995",
+      "title": "Countdown",
+      "year": 1995,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/countdown-reading-order/"
+    },
+    {
+      "id": "legion-quest-1995",
+      "title": "Legion Quest",
+      "year": 1995,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "over-the-edge-1995",
+      "title": "Over the Edge",
+      "year": 1995,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/over-the-edge-reading-order/"
+    },
+    {
+      "id": "heroes-reborn-1996",
+      "title": "Heroes Reborn",
+      "year": 1996,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/heroes-reborn-reading-order/"
+    },
+    {
+      "id": "marvel-vs-dc-1996",
+      "title": "Marvel vs DC",
+      "year": 1996,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "onslaught-saga-1996",
+      "title": "Onslaught Saga",
+      "year": 1996,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/onslaught-saga-reading-order/"
+    },
+    {
+      "id": "operation-zero-tolerance-1997",
+      "title": "Operation: Zero Tolerance",
+      "year": 1997,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/operation-zero-tolerance-reading-order/"
+    },
+    {
+      "id": "mc2-1998",
+      "title": "MC2",
+      "year": 1998,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/mc2-reading-order/"
+    },
+    {
+      "id": "spider-man-identity-crisis-1998",
+      "title": "Spider-Man: Identity Crisis",
+      "year": 1998,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-man-identity-crisis-reading-order/"
+    },
+    {
+      "id": "the-hunt-for-xavier-1998",
+      "title": "The Hunt for Xavier",
+      "year": 1998,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/hunt-for-xavier-reading-order/"
+    },
+    {
+      "id": "earth-x-1999",
+      "title": "Earth X",
+      "year": 1999,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/earth-x-reading-order/"
+    },
+    {
+      "id": "eighth-day-1999",
+      "title": "Eighth Day",
+      "year": 1999,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/eighth-day-reading-order/"
+    },
+    {
+      "id": "magneto-war-1999",
+      "title": "Magneto War",
+      "year": 1999,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/magneto-war-reading-order/"
+    },
+    {
+      "id": "apocalypse-the-twelve-2000",
+      "title": "Apocalypse: The Twelve",
+      "year": 2000,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/apocalypse-the-twelve-reading-order/"
+    },
+    {
+      "id": "maximum-security-2000",
+      "title": "Maximum Security",
+      "year": 2000,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/maximum-security-reading-order/"
+    },
+    {
+      "id": "eve-of-destruction-2001",
+      "title": "Eve of Destruction",
+      "year": 2001,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/eve-of-destruction-reading-order/"
+    },
+    {
+      "id": "infinity-abyss-2002",
+      "title": "Infinity Abyss",
+      "year": 2002,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "marvel-1602-2003",
+      "title": "Marvel 1602",
+      "year": 2003,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/marvel-1602-reading-order/"
+    },
+    {
+      "id": "avengers-disassembled-2004",
+      "title": "Avengers Disassembled",
+      "year": 2004,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-disassembled-reading-order/"
+    },
+    {
+      "id": "secret-war-2004",
+      "title": "Secret War",
+      "year": 2004,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
     },
     {
       "id": "house-of-m",
       "title": "House of M",
       "year": 2005,
       "description": "La Bruja Escarlata transforma la realidad de héroes y mutantes.",
-      "coverIssueId": 233880,
       "featured": true,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 233880,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/house-of-m-reading-order/"
+    },
+    {
+      "id": "iron-man-extremis-2005",
+      "title": "Iron Man: Extremis",
+      "year": 2005,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "spider-man-the-other-2005",
+      "title": "Spider-Man: The Other",
+      "year": 2005,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-man-the-other-reading-order/"
+    },
+    {
+      "id": "annihilation-2006",
+      "title": "Annihilation",
+      "year": 2006,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/annihilation-reading-order/"
     },
     {
       "id": "civil-war",
       "title": "Civil War",
       "year": 2006,
       "description": "El registro superheroico divide a la comunidad Marvel.",
-      "coverIssueId": 290453,
       "featured": true,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 290453,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/civil-war-reading-order/"
+    },
+    {
+      "id": "decimation-2006",
+      "title": "Decimation",
+      "year": 2006,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/decimation-reading-order/"
+    },
+    {
+      "id": "planet-hulk-2006",
+      "title": "Planet Hulk",
+      "year": 2006,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/planet-hulk-reading-order/"
+    },
+    {
+      "id": "rise-and-fall-of-the-shiar-empire-2006",
+      "title": "Rise and Fall of the Shi’ar Empire",
+      "year": 2006,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "annihilation-conquest-2007",
+      "title": "Annihilation: Conquest",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/annihilation-conquest-reading-order/"
+    },
+    {
+      "id": "one-more-day-2007",
+      "title": "One More Day",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/one-more-day-reading-order/"
+    },
+    {
+      "id": "silent-war-2007",
+      "title": "Silent War",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "the-initiative-2007",
+      "title": "The Initiative",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/the-initiative-reading-order/"
+    },
+    {
+      "id": "world-war-hulk-2007",
+      "title": "World War Hulk",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/world-war-hulk-reading-order/"
+    },
+    {
+      "id": "world-war-hulk-aftersmash-2007",
+      "title": "World War Hulk: Aftersmash",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "x-men-endangered-species-2007",
+      "title": "X-Men: Endangered Species",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-endangered-species-reading-order/"
+    },
+    {
+      "id": "x-men-messiah-complex-2007",
+      "title": "X-Men: Messiah Complex",
+      "year": 2007,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-messiah-complex-reading-order/"
+    },
+    {
+      "id": "dark-reign-2008",
+      "title": "Dark Reign",
+      "year": 2008,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/dark-reign-reading-order/"
     },
     {
       "id": "secret-invasion",
       "title": "Secret Invasion",
       "year": 2008,
       "description": "La infiltración skrull pone en duda la identidad de todos.",
-      "coverIssueId": 512390,
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 512390,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/secret-invasion-reading-order/"
+    },
+    {
+      "id": "x-men-divided-we-stand-2008",
+      "title": "X-Men: Divided We Stand",
+      "year": 2008,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-divided-we-stand-reading-order/"
+    },
+    {
+      "id": "x-men-manifest-destiny-2008",
+      "title": "X-Men: Manifest Destiny",
+      "year": 2008,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-manifest-destiny-reading-order/"
+    },
+    {
+      "id": "x-men-original-sin-2008",
+      "title": "X-Men: Original Sin",
+      "year": 2008,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-original-sin-reading-order/"
+    },
+    {
+      "id": "fall-of-the-hulks-2009",
+      "title": "Fall of the Hulks",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/fall-of-the-hulks-reading-order/"
+    },
+    {
+      "id": "messiah-war-2009",
+      "title": "Messiah War",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/messiah-war-reading-order/"
+    },
+    {
+      "id": "necrosha-2009",
+      "title": "Necrosha",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/necrosha-reading-order/"
+    },
+    {
+      "id": "utopia-2009",
+      "title": "Utopia",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/utopia-reading-order/"
+    },
+    {
+      "id": "war-of-kings-2009",
+      "title": "War of Kings",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/war-of-kings-reading-order/"
+    },
+    {
+      "id": "x-men-nation-x-2009",
+      "title": "X-Men: Nation X",
+      "year": 2009,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-nation-x-reading-order/"
+    },
+    {
+      "id": "avengers-the-childrens-crusade-2010",
+      "title": "Avengers: The Children’s Crusade",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "chaos-war-2010",
+      "title": "Chaos War",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/chaos-war-reading-order/"
+    },
+    {
+      "id": "curse-of-the-mutants-2010",
+      "title": "Curse of the Mutants",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/curse-of-the-mutants-reading-order/"
+    },
+    {
+      "id": "doomwar-2010",
+      "title": "Doomwar",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "heroic-age-2010",
+      "title": "Heroic Age",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/heroic-age-reading-order/"
+    },
+    {
+      "id": "realm-of-kings-2010",
+      "title": "Realm of Kings",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/realm-of-kings-reading-order/"
+    },
+    {
+      "id": "shadowland-2010",
+      "title": "Shadowland",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/shadowland-reading-order/"
     },
     {
       "id": "siege",
       "title": "Siege",
       "year": 2010,
       "description": "Norman Osborn lanza el asalto definitivo contra Asgard.",
-      "coverIssueId": 700436,
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 700436,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/siege-reading-order/"
+    },
+    {
+      "id": "the-thanos-imperative-2010",
+      "title": "The Thanos Imperative",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/thanos-imperative-reading-order/"
+    },
+    {
+      "id": "wolverine-goes-to-hell-2010",
+      "title": "Wolverine Goes to Hell",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/wolverine-goes-to-hell-reading-order/"
+    },
+    {
+      "id": "world-war-hulks-2010",
+      "title": "World War Hulks",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/world-war-hulks-reading-order/"
+    },
+    {
+      "id": "x-men-second-coming-2010",
+      "title": "X-Men: Second Coming",
+      "year": 2010,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-second-coming-reading-order/"
+    },
+    {
+      "id": "age-of-x-2011",
+      "title": "Age of X",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/age-of-x-reading-order/"
+    },
+    {
+      "id": "fear-itself-2011",
+      "title": "Fear Itself",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/fear-itself-reading-order/"
+    },
+    {
+      "id": "shattered-heroes-2011",
+      "title": "Shattered Heroes",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/shattered-heroes-reading-order/"
+    },
+    {
+      "id": "spider-island-2011",
+      "title": "Spider-Island",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-island-reading-order/"
+    },
+    {
+      "id": "x-men-regenesis-2011",
+      "title": "X-Men: Regenesis",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-regenesis-reading-order/"
+    },
+    {
+      "id": "x-men-schism-2011",
+      "title": "X-Men: Schism",
+      "year": 2011,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-schism-reading-order/"
     },
     {
       "id": "avengers-vs-x-men",
       "title": "Avengers vs. X-Men",
       "year": 2012,
       "description": "La Fuerza Fénix enfrenta a los Vengadores con los X-Men.",
-      "coverIssueId": 934752,
       "featured": true,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 934752,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-vs-x-men-reading-order/"
+    },
+    {
+      "id": "dying-wish-2012",
+      "title": "Dying Wish",
+      "year": 2012,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline"
+    },
+    {
+      "id": "minimum-carnage-2012",
+      "title": "Minimum Carnage",
+      "year": 2012,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/minimum-carnage-reading-order/"
+    },
+    {
+      "id": "age-of-ultron-2013",
+      "title": "Age of Ultron",
+      "year": 2013,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/age-of-ultron-reading-order/"
+    },
+    {
+      "id": "battle-of-the-atom-2013",
+      "title": "Battle of the Atom",
+      "year": 2013,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/battle-of-the-atom-reading-order/"
+    },
+    {
+      "id": "goblin-nation-2013",
+      "title": "Goblin Nation",
+      "year": 2013,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/goblin-nation-reading-order/"
+    },
+    {
+      "id": "infinity-2013",
+      "title": "Infinity",
+      "year": 2013,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-reading-order/"
+    },
+    {
+      "id": "x-termination-2013",
+      "title": "X-Termination",
+      "year": 2013,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-termination-reading-order/"
+    },
+    {
+      "id": "avengers-and-x-men-axis-2014",
+      "title": "Avengers & X-Men: AXIS",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-x-men-axis-reading-order/"
+    },
+    {
+      "id": "death-of-wolverine-2014",
+      "title": "Death of Wolverine",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/death-of-wolverine-reading-order/"
+    },
+    {
+      "id": "inhumanity-2014",
+      "title": "Inhumanity",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/inhumanity-reading-order/"
+    },
+    {
+      "id": "original-sin-2014",
+      "title": "Original Sin",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/original-sin-reading-order/"
+    },
+    {
+      "id": "revolutionary-war-2014",
+      "title": "Revolutionary War",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/revolutionary-war-reading-order/"
+    },
+    {
+      "id": "spider-verse-2014",
+      "title": "Spider-Verse",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-verse-reading-order/"
+    },
+    {
+      "id": "the-trial-of-jean-grey-2014",
+      "title": "The Trial of Jean Grey",
+      "year": 2014,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/trial-of-jean-grey-reading-order/"
     },
     {
       "id": "secret-wars-2015",
       "title": "Secret Wars",
       "year": 2015,
       "description": "El Multiverso colapsa y sus supervivientes despiertan en Battleworld.",
-      "coverIssueId": 1352220,
       "featured": true,
       "status": "available",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 1352220,
       "defaultMode": "essential",
-      "dataFile": "data/sagas/secret-wars-2015.json"
+      "dataFile": "data/sagas/secret-wars-2015.json",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/secret-wars-2015-reading-order/"
+    },
+    {
+      "id": "the-black-vortex-2015",
+      "title": "The Black Vortex",
+      "year": 2015,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/black-vortex-reading-order/"
+    },
+    {
+      "id": "apocalypse-wars-2016",
+      "title": "Apocalypse Wars",
+      "year": 2016,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/apocalypse-wars-reading-order/"
+    },
+    {
+      "id": "avengers-standoff-2016",
+      "title": "Avengers: Standoff!",
+      "year": 2016,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-standoff-reading-order/"
     },
     {
       "id": "civil-war-ii",
       "title": "Civil War II",
       "year": 2016,
       "description": "La predicción del futuro vuelve a dividir a los héroes.",
-      "coverIssueId": 1576787,
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 1576787,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/civil-war-ii-reading-order/"
+    },
+    {
+      "id": "dead-no-more-the-clone-conspiracy-2016",
+      "title": "Dead No More: The Clone Conspiracy",
+      "year": 2016,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/dead-no-more-clone-conspiracy-reading-order/"
+    },
+    {
+      "id": "inhumans-vs-x-men-2016",
+      "title": "Inhumans vs. X-Men",
+      "year": 2016,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/inhumans-vs-x-men-reading-order/"
+    },
+    {
+      "id": "spider-women-2016",
+      "title": "Spider-Women",
+      "year": 2016,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-women-reading-order/"
+    },
+    {
+      "id": "monsters-unleashed-2017",
+      "title": "Monsters Unleashed",
+      "year": 2017,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/monsters-unleashed-reading-order/"
+    },
+    {
+      "id": "secret-empire-2017",
+      "title": "Secret Empire",
+      "year": 2017,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/secret-empire-reading-order/"
+    },
+    {
+      "id": "venomverse-2017",
+      "title": "Venomverse",
+      "year": 2017,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/venomverse-reading-order/"
+    },
+    {
+      "id": "damnation-2018",
+      "title": "Damnation",
+      "year": 2018,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/damnation-reading-order/"
+    },
+    {
+      "id": "infinity-countdown-2018",
+      "title": "Infinity Countdown",
+      "year": 2018,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-countdown-reading-order/"
+    },
+    {
+      "id": "infinity-wars-2018",
+      "title": "Infinity Wars",
+      "year": 2018,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/infinity-wars-reading-order/"
+    },
+    {
+      "id": "spider-geddon-2018",
+      "title": "Spider-Geddon",
+      "year": 2018,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/spider-geddon-reading-order/"
+    },
+    {
+      "id": "venom-inc-2018",
+      "title": "Venom Inc.",
+      "year": 2018,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/venom-inc-reading-order/"
+    },
+    {
+      "id": "2099-2019",
+      "title": "2099",
+      "year": 2019,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/2099-reading-order/"
+    },
+    {
+      "id": "absolute-carnage-2019",
+      "title": "Absolute Carnage",
+      "year": 2019,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/absolute-carnage-reading-order/"
+    },
+    {
+      "id": "age-of-x-man-2019",
+      "title": "Age of X-Man",
+      "year": 2019,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/age-of-x-man-reading-order/"
+    },
+    {
+      "id": "annihilation-scourge-2019",
+      "title": "Annihilation: Scourge",
+      "year": 2019,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/annihilation-scourge-reading-order/"
+    },
+    {
+      "id": "war-of-the-realms-2019",
+      "title": "War of the Realms",
+      "year": 2019,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/war-of-the-realms-reading-order/"
+    },
+    {
+      "id": "empyre-2020",
+      "title": "Empyre",
+      "year": 2020,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/empyre-reading-order/"
+    },
+    {
+      "id": "iron-man-2020-2020",
+      "title": "Iron Man 2020",
+      "year": 2020,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/iron-man-2020/"
     },
     {
       "id": "king-in-black",
       "title": "King in Black",
       "year": 2020,
       "description": "Knull y su ejército de simbiontes invaden la Tierra.",
-      "coverIssueId": 2171671,
       "featured": true,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 2171671,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/king-in-black-reading-order/"
+    },
+    {
+      "id": "x-of-swords-2020",
+      "title": "X of Swords",
+      "year": 2020,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-of-swords-reading-order/"
+    },
+    {
+      "id": "death-of-doctor-strange-2021",
+      "title": "Death of Doctor Strange",
+      "year": 2021,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/death-of-doctor-strange-reading-order/"
+    },
+    {
+      "id": "hellfire-gala-2021",
+      "title": "Hellfire Gala",
+      "year": 2021,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/hellfire-gala-reading-order/"
+    },
+    {
+      "id": "heroes-reborn-2021",
+      "title": "Heroes Reborn",
+      "year": 2021,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/heroes-reborn-2021-reading-order/"
+    },
+    {
+      "id": "last-annihilation-2021",
+      "title": "Last Annihilation",
+      "year": 2021,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/last-annihilation-reading-order/"
     },
     {
       "id": "axe-judgment-day",
       "title": "A.X.E.: Judgment Day",
       "year": 2022,
       "description": "Eternos, mutantes y Vengadores afrontan el juicio del Celestial.",
-      "coverIssueId": 2419945,
       "featured": false,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 2419945,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/a-x-e-judgment-day-reading-order/"
+    },
+    {
+      "id": "avengers-assemble-2022",
+      "title": "Avengers Assemble",
+      "year": 2022,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/avengers-assemble-reading-order/"
+    },
+    {
+      "id": "dark-web-2022",
+      "title": "Dark Web",
+      "year": 2022,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/dark-web-reading-order/"
+    },
+    {
+      "id": "devils-reign-2022",
+      "title": "Devil’s Reign",
+      "year": 2022,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/devils-reign-reading-order/"
+    },
+    {
+      "id": "gang-war-2023",
+      "title": "Gang War",
+      "year": 2023,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/gang-war-reading-order/"
+    },
+    {
+      "id": "sins-of-sinister-2023",
+      "title": "Sins of Sinister",
+      "year": 2023,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/sins-of-sinister-reading-order/"
     },
     {
       "id": "blood-hunt",
       "title": "Blood Hunt",
       "year": 2024,
       "description": "La noche eterna desata una invasión vampírica global.",
-      "coverIssueId": 2627387,
       "featured": true,
-      "status": "planned"
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "coverIssueId": 2627387,
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/blood-hunt-reading-order/"
+    },
+    {
+      "id": "venom-war-2024",
+      "title": "Venom War",
+      "year": 2024,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/venom-war-reading-order/"
+    },
+    {
+      "id": "imperial-2025",
+      "title": "Imperial",
+      "year": 2025,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/imperial-reading-order/"
+    },
+    {
+      "id": "one-world-under-doom-2025",
+      "title": "One World Under Doom",
+      "year": 2025,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/one-world-under-doom-reading-order/"
+    },
+    {
+      "id": "x-men-age-of-revelation-2025",
+      "title": "X-Men: Age of Revelation",
+      "year": 2025,
+      "description": "Orden de lectura documentado en preparación.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "cbro-timeline",
+      "referenceUrl": "https://comicbookreadingorders.com/marvel/events/x-men-age-of-revelation-reading-order/"
+    },
+    {
+      "id": "amazing-spider-man-venom-death-spiral-2026",
+      "title": "Amazing Spider-Man/Venom: Death Spiral",
+      "year": 2026,
+      "description": "Spider-Man, Venom y Carnage se cruzan en una historia compartida contra Torment.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "marvel-official",
+      "referenceUrl": "https://www.marvel.com/articles/comics/amazing-spider-man-venom-death-spiral-1-preview-al-ewing-joe-kelly-interview-carnage-crossover"
+    },
+    {
+      "id": "avengers-armageddon-2026",
+      "title": "Avengers: Armageddon",
+      "year": 2026,
+      "description": "El gran evento de los Vengadores de 2026 altera el equilibrio del Universo Marvel.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "marvel-official",
+      "referenceUrl": "https://www.marvel.com/articles/comics/armageddon-assembles-marvel-comics-event-june-2026"
+    },
+    {
+      "id": "dnx-2026",
+      "title": "DNX",
+      "year": 2026,
+      "description": "X-Men y Fantastic Four afrontan la propagación del virus X.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "marvel-official",
+      "referenceUrl": "https://www.marvel.com/articles/comics/the-official-dnx-reading-guide"
+    },
+    {
+      "id": "queen-in-black-2026",
+      "title": "Queen in Black",
+      "year": 2026,
+      "description": "Hela y Knull desatan una guerra cósmica de simbiontes sobre la Tierra.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "marvel-official",
+      "referenceUrl": "https://www.marvel.com/articles/comics/queen-in-black-2-variant-covers-event-tie-in-issues-july-2026"
+    },
+    {
+      "id": "star-wars-marvel-hope-assembles-2027",
+      "title": "Star Wars/Marvel: Hope Assembles",
+      "year": 2027,
+      "description": "Crossover anunciado entre los universos de Star Wars y Marvel.",
+      "featured": false,
+      "status": "planned",
+      "catalogSource": "marvel-official",
+      "referenceUrl": "https://www.marvel.com/articles/comics/star-wars-marvel-hope-assembles-crossover-comic-series-january-2027"
     }
   ]
 }

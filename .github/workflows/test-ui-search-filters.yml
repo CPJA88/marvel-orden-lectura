@@ -6,13 +6,21 @@ on:
       - 'scripts/test-ui-search-filters.mjs'
       - 'scripts/test-ui-search-filters-v132.mjs'
       - 'scripts/prepare.mjs'
+      - 'scripts/validate-sagas.mjs'
       - '.github/workflows/test-ui-search-filters.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tests/**'
       - 'source/app.js'
       - 'source/index.html'
       - 'source/enhancements.css'
       - 'source/search-filter-fix-v132.js'
       - 'source/cache-authority-v129.js'
       - 'source/coverage-truth-v135.js'
+      - 'source/sagas-core.js'
+      - 'source/sagas-ui.js'
+      - 'source/sagas.css'
+      - 'source/data/sagas/**'
       - 'Marvel_Orden_de_Lectura_PWA.zip'
   workflow_dispatch:
 
@@ -45,10 +53,24 @@ jobs:
           node --check source/search-filter-fix-v132.js
           node --check source/cache-authority-v129.js
           node --check source/coverage-truth-v135.js
+          node --check source/sagas-core.js
+          node --check source/sagas-ui.js
+          node --check scripts/validate-sagas.mjs
       - name: Build PWA
         id: build
         continue-on-error: true
         run: npm run build
+      - name: Run unit and integration tests
+        id: tests
+        continue-on-error: true
+        run: npm test
+      - name: Validate saga catalog against the library
+        id: sagas
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          node scripts/validate-sagas.mjs | tee artifacts/sagas-validation.json
       - name: Validate built patches and boot screen
         id: built
         continue-on-error: true
@@ -57,12 +79,17 @@ jobs:
           grep -q 'search-filter-fix-v132.js' public/sw.js
           grep -q 'coverage-truth-v135.js' public/index.html
           grep -q 'coverage-truth-v135.js' public/sw.js
+          grep -q 'sagas-core.js' public/index.html
+          grep -q 'sagas-ui.js' public/index.html
+          grep -q 'data/sagas/catalog.json' public/sw.js
+          grep -q 'data/sagas/secret-wars-1984.json' public/sw.js
+          grep -q 'data/sagas/infinity-gauntlet.json' public/sw.js
           grep -q 'id="bootScreen"' public/index.html
           grep -q 'id="bootBar"' public/index.html
           grep -q 'id="bootRetry"' public/index.html
           grep -q 'boot-screen' public/enhancements.css
           grep -q 'v1.2.33' public/search-filter-fix-v132.js
-          grep -q 'v1.2.35-official-negative-reaudit' public/sw.js
+          grep -q 'v1.2.35-official-negative-reaudit-v1.4.0-saga-catalog' public/sw.js
           ! grep -q 'search-filter-fix-v131.js' public/index.html
       - name: Test search and filter data contract
         id: data
@@ -82,6 +109,8 @@ jobs:
             "runId": "${GITHUB_RUN_ID}",
             "syntax": "${{ steps.syntax.outcome }}",
             "build": "${{ steps.build.outcome }}",
+            "tests": "${{ steps.tests.outcome }}",
+            "sagas": "${{ steps.sagas.outcome }}",
             "builtPatch": "${{ steps.built.outcome }}",
             "dataContract": "${{ steps.data.outcome }}",
             "behavior": "${{ steps.behavior.outcome }}"
@@ -98,7 +127,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Los informes no han cambiado.'
           else
-            git commit -m 'diagnóstico: validar UI y reauditoría Unlimited v1.2.35'
+            git commit -m 'diagnóstico: validar UI y catálogo de sagas v1.4.0'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -111,8 +140,9 @@ jobs:
             artifacts/ui-search-filter-diagnostic.json
             artifacts/ui-filter-v132-behavior.json
             artifacts/ui-search-filter-ci-status.json
+            artifacts/sagas-validation.json
           retention-days: 3
           if-no-files-found: warn
       - name: Fail if UI validation is broken
-        if: steps.syntax.outcome == 'failure' || steps.build.outcome == 'failure' || steps.built.outcome == 'failure' || steps.data.outcome == 'failure' || steps.behavior.outcome == 'failure'
+        if: steps.syntax.outcome == 'failure' || steps.build.outcome == 'failure' || steps.tests.outcome == 'failure' || steps.sagas.outcome == 'failure' || steps.built.outcome == 'failure' || steps.data.outcome == 'failure' || steps.behavior.outcome == 'failure'
         run: exit 1

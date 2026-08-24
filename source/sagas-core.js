@@ -1,4 +1,4 @@
-/* Marvel Lector v1.3.1 — funciones puras para órdenes de sagas */
+/* Marvel Lector v1.4.0 — funciones puras para órdenes de sagas */
 ((root) => {
   'use strict';
 
@@ -76,11 +76,15 @@
 
   function validateSaga(saga){
     const entries=orderedEntries(saga);
+    const unresolvedReferences=Array.isArray(saga?.unresolvedReferences)?saga.unresolvedReferences:[];
     const issueIds=entries.map(entry=>Number(entry.issueId));
     const orders=entries.map(entry=>Number(entry.order));
     const duplicateIssueIds=[...new Set(issueIds.filter((id,index)=>issueIds.indexOf(id)!==index))];
     const duplicateOrders=[...new Set(orders.filter((order,index)=>orders.indexOf(order)!==index))];
+    const unresolvedGcdIds=unresolvedReferences.map(reference=>Number(reference.gcdIssueId));
+    const duplicateUnresolvedGcdIds=[...new Set(unresolvedGcdIds.filter((id,index)=>unresolvedGcdIds.indexOf(id)!==index))];
     const invalidEntries=entries.filter(entry=>!Number.isInteger(Number(entry.issueId))||!Number.isInteger(Number(entry.order))||!hasOwn(MODE_RANK,entry.importance)||!['main','tie-in'].includes(entry.type)||!String(entry.section||'').trim());
+    const invalidUnresolvedReferences=unresolvedReferences.filter(reference=>!Number.isInteger(Number(reference.gcdIssueId))||hasOwn(reference,'issueId')||!String(reference.series||'').trim()||!String(reference.number||'').trim()||!String(reference.reason||'').trim()||!hasOwn(MODE_RANK,reference.importance));
     const deterministic=orders.every((order,index)=>order===index+1)&&duplicateOrders.length===0;
     const principal=new Set(entriesForMode(saga,'principal').map(entry=>entry.issueId));
     const essential=new Set(entriesForMode(saga,'essential').map(entry=>entry.issueId));
@@ -88,10 +92,12 @@
     const principalInEssential=[...principal].every(id=>essential.has(id));
     const essentialInComplete=[...essential].every(id=>complete.has(id));
     return{
-      valid:!duplicateIssueIds.length&&!duplicateOrders.length&&!invalidEntries.length&&deterministic&&principalInEssential&&essentialInComplete,
+      valid:!duplicateIssueIds.length&&!duplicateOrders.length&&!duplicateUnresolvedGcdIds.length&&!invalidEntries.length&&!invalidUnresolvedReferences.length&&deterministic&&principalInEssential&&essentialInComplete,
       duplicateIssueIds,
       duplicateOrders,
+      duplicateUnresolvedGcdIds,
       invalidEntries,
+      invalidUnresolvedReferences,
       deterministic,
       principalInEssential,
       essentialInComplete
