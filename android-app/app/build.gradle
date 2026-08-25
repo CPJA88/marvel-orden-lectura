@@ -10,8 +10,8 @@ android {
         applicationId 'es.pokeapps.marvellectura'
         minSdk 24
         targetSdk 35
-        versionCode 1
-        versionName '1.0.0'
+        versionCode 16
+        versionName '1.5.0'
 
         buildConfigField 'String', 'APP_URL', '"https://marvel-orden-lectura.pokeapps.workers.dev/"'
     }
