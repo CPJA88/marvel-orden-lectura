@@ -112,13 +112,13 @@ public class MainActivity extends Activity {
                 return;
             } catch (ActivityNotFoundException ignored) {
                 String fallbackUrl = intent.getStringExtra("browser_fallback_url");
-                if (fallbackUrl != null && !fallbackUrl.isBlank()) {
+                if (fallbackUrl != null && !fallbackUrl.trim().isEmpty()) {
                     openExternal(Uri.parse(fallbackUrl));
                     return;
                 }
 
                 String packageName = intent.getPackage();
-                if (packageName != null && !packageName.isBlank()) {
+                if (packageName != null && !packageName.trim().isEmpty()) {
                     if (!openExternal(Uri.parse("market://details?id=" + packageName))) {
                         openExternal(Uri.parse("https://play.google.com/store/apps/details?id=" + packageName));
                     }
