@@ -1,0 +1,144 @@
+name: Android APK
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'android-app/**'
+      - 'source/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'Marvel_Orden_de_Lectura_PWA.zip'
+      - '.github/workflows/android-apk.yml'
+  push:
+    branches:
+      - android-apk
+    paths:
+      - 'android-app/**'
+      - 'source/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'Marvel_Orden_de_Lectura_PWA.zip'
+      - '.github/workflows/android-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Construir PWA completa
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - name: Validar contenido offline
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const fail = message => { console.error(message); process.exit(1); };
+
+          const required = [
+            'public/index.html',
+            'public/app.js',
+            'public/data/meta.json',
+            'public/data/search.json',
+            'public/data/series.json',
+            'public/data/marvel-cache/index.json',
+            'public/data/sagas/catalog.json'
+          ];
+          for (const file of required) if (!fs.existsSync(file)) fail(`Falta ${file}`);
+
+          const meta = JSON.parse(fs.readFileSync('public/data/meta.json', 'utf8'));
+          if (Number(meta.mainCount || 0) < 50000) fail(`Biblioteca incompleta: ${meta.mainCount || 0}`);
+
+          const cache = JSON.parse(fs.readFileSync('public/data/marvel-cache/index.json', 'utf8'));
+          if (!cache.ready || Number(cache.localCount || 0) < 50000) {
+            fail(`Caché Marvel incompleta: ready=${Boolean(cache.ready)} localCount=${cache.localCount || 0}`);
+          }
+          if (!Array.isArray(cache.entries) || cache.entries.length < 50000) {
+            fail(`Entradas de caché insuficientes: ${Array.isArray(cache.entries) ? cache.entries.length : 0}`);
+          }
+
+          const catalog = JSON.parse(fs.readFileSync('public/data/sagas/catalog.json', 'utf8'));
+          if (!Array.isArray(catalog.events) || catalog.events.length < 160) {
+            fail(`Catálogo de Sagas incompleto: ${Array.isArray(catalog.events) ? catalog.events.length : 0}`);
+          }
+          let packagedEvents = 0;
+          for (const event of catalog.events) {
+            if (!event.dataFile) {
+              if (event.status === 'available') fail(`Saga disponible sin dataFile: ${event.id}`);
+              continue;
+            }
+            packagedEvents++;
+            if (!fs.existsSync(path.join('public', event.dataFile))) fail(`Falta ${event.dataFile} para ${event.id}`);
+          }
+          if (packagedEvents < 160) fail(`Muy pocas Sagas empaquetadas: ${packagedEvents}`);
+
+          console.log(`Offline validado: ${meta.mainCount} cómics; ${cache.localCount} entradas Marvel; ${catalog.events.length} sagas (${packagedEvents} con datos locales).`);
+          NODE
+
+      - name: Empaquetar PWA dentro de Android
+        run: |
+          rm -rf android-app/app/src/main/assets/www
+          mkdir -p android-app/app/src/main/assets/www
+          cp -a public/. android-app/app/src/main/assets/www/
+          test -f android-app/app/src/main/assets/www/index.html
+          test -f android-app/app/src/main/assets/www/data/marvel-cache/index.json
+          test -f android-app/app/src/main/assets/www/data/sagas/catalog.json
+          du -sh android-app/app/src/main/assets/www
+
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Instalar SDK 35
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+
+      - name: Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Compilar APK release
+        run: gradle -p android-app --no-daemon :app:assembleRelease
+
+      - name: Verificar contenido de la APK
+        run: |
+          APK='android-app/app/build/outputs/apk/release/app-release-unsigned.apk'
+          test -f "$APK"
+          unzip -t "$APK" >/dev/null
+          unzip -l "$APK" | grep -q 'assets/www/index.html'
+          unzip -l "$APK" | grep -q 'assets/www/data/marvel-cache/index.json'
+          unzip -l "$APK" | grep -q 'assets/www/data/sagas/catalog.json'
+          cp "$APK" Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk
+          sha256sum Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk | tee Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.sha256
+
+      - name: Subir release sin clave privada
+        uses: actions/upload-artifact@v4
+        with:
+          name: Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED
+          path: |
+            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk
+            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.sha256
+          if-no-files-found: error
+          retention-days: 30
