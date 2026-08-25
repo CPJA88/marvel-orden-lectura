@@ -78,12 +78,18 @@ jobs:
           if (!Array.isArray(catalog.events) || catalog.events.length < 160) {
             fail(`Catálogo de Sagas incompleto: ${Array.isArray(catalog.events) ? catalog.events.length : 0}`);
           }
+          let packagedEvents = 0;
           for (const event of catalog.events) {
-            if (!event.dataFile) fail(`Saga sin dataFile: ${event.id}`);
+            if (!event.dataFile) {
+              if (event.status === 'available') fail(`Saga disponible sin dataFile: ${event.id}`);
+              continue;
+            }
+            packagedEvents++;
             if (!fs.existsSync(path.join('public', event.dataFile))) fail(`Falta ${event.dataFile} para ${event.id}`);
           }
+          if (packagedEvents < 160) fail(`Muy pocas Sagas empaquetadas: ${packagedEvents}`);
 
-          console.log(`Offline validado: ${meta.mainCount} cómics; ${cache.localCount} entradas Marvel; ${catalog.events.length} sagas.`);
+          console.log(`Offline validado: ${meta.mainCount} cómics; ${cache.localCount} entradas Marvel; ${catalog.events.length} sagas (${packagedEvents} con datos locales).`);
           NODE
 
       - name: Empaquetar PWA dentro de Android
