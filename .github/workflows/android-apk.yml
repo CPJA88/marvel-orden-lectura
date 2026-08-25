@@ -119,26 +119,26 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Compilar APK instalable
-        run: gradle -p android-app --no-daemon :app:assembleDebug
+      - name: Compilar APK release
+        run: gradle -p android-app --no-daemon :app:assembleRelease
 
       - name: Verificar contenido de la APK
         run: |
-          APK='android-app/app/build/outputs/apk/debug/app-debug.apk'
+          APK='android-app/app/build/outputs/apk/release/app-release-unsigned.apk'
           test -f "$APK"
           unzip -t "$APK" >/dev/null
           unzip -l "$APK" | grep -q 'assets/www/index.html'
           unzip -l "$APK" | grep -q 'assets/www/data/marvel-cache/index.json'
           unzip -l "$APK" | grep -q 'assets/www/data/sagas/catalog.json'
-          cp "$APK" Marvel-Orden-de-Lectura-v1.5.0-OFFLINE.apk
-          sha256sum Marvel-Orden-de-Lectura-v1.5.0-OFFLINE.apk | tee Marvel-Orden-de-Lectura-v1.5.0-OFFLINE.sha256
+          cp "$APK" Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk
+          sha256sum Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk | tee Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.sha256
 
-      - name: Subir APK
+      - name: Subir release sin clave privada
         uses: actions/upload-artifact@v4
         with:
-          name: Marvel-Orden-de-Lectura-v1.5.0-OFFLINE
+          name: Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED
           path: |
-            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE.apk
-            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE.sha256
+            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.apk
+            Marvel-Orden-de-Lectura-v1.5.0-OFFLINE-UNSIGNED.sha256
           if-no-files-found: error
           retention-days: 30
